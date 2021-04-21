@@ -3,6 +3,103 @@ const qsa = (text) => document.querySelectorAll(text);
 
 var completeForm = [false, false, false, false];
 
+/*---Datos estadisticos de paises organizado para programación orientada a objetos---*/
+const countries = {
+    argentina: {
+        cpm: 0,
+        cpc: 0,
+        rateLeads: 0,
+        rateAppDownlaod: 0,
+        rateOnlineSell: 0,
+    },
+    chile: {
+        cpm: 0,
+        cpc: 0,
+        rateLeads: 0,
+        rateAppDownlaod: 0,
+        rateOnlineSell: 0,
+    },
+    paraguay: {
+        cpm: 0,
+        cpc: 0,
+        rateLeads: 0,
+        rateAppDownlaod: 0,
+        rateOnlineSell: 0,
+    },
+    uruguay: {
+        cpm: 0,
+        cpc: 0,
+        rateLeads: 0,
+        rateAppDownlaod: 0,
+        rateOnlineSell: 0,
+    },
+    brasil: {
+        cpm: 0,
+        cpc: 0,
+        rateLeads: 0,
+        rateAppDownlaod: 0,
+        rateOnlineSell: 0,
+    },
+    bolivia: {
+        cpm: 0,
+        cpc: 0,
+        rateLeads: 0,
+        rateAppDownlaod: 0,
+        rateOnlineSell: 0,
+    },
+    peru: {
+        cpm: 0,
+        cpc: 0,
+        rateLeads: 0,
+        rateAppDownlaod: 0,
+        rateOnlineSell: 0,
+    },
+    ecuador: {
+        cpm: 0,
+        cpc: 0,
+        rateLeads: 0,
+        rateAppDownlaod: 0,
+        rateOnlineSell: 0,
+    },
+    colombia: {
+        cpm: 0,
+        cpc: 0,
+        rateLeads: 0,
+        rateAppDownlaod: 0,
+        rateOnlineSell: 0,
+    },
+    costaRica: {
+        cpm: 0,
+        cpc: 0,
+        rateLeads: 0,
+        rateAppDownlaod: 0,
+        rateOnlineSell: 0,
+    },
+    mexico: {
+        cpm: 0,
+        cpc: 0,
+        rateLeads: 0,
+        rateAppDownlaod: 0,
+        rateOnlineSell: 0,
+    },
+    eeuu: {
+        cpm: 0,
+        cpc: 0,
+        rateLeads: 0,
+        rateAppDownlaod: 0,
+        rateOnlineSell: 0,
+    },
+    espana: {
+        cpm: 0,
+        cpc: 0,
+        rateLeads: 0,
+        rateAppDownlaod: 0,
+        rateOnlineSell: 0,
+    }
+}
+/*--Así se accedería a cada valor de dicho objeto---*/
+console.log(countries.mexico.cpc)
+
 /*---Se captura el selector de país de los proveedores--*/
 var countrySupplier = qs('#country-supplier');
     if (countrySupplier.value != '') {
@@ -92,5 +189,12 @@ window.addEventListener('change', function() {
     console.log(completeForm)
 });
 
-
+/*---Se capturan los contenedores para inyectar luego los resultados---*/
+var resultGoogleFacebookAds = qs('#result-googleads-facebookads');
+var resultEmail = qs('#result-email');
+var resultServiceFee = qs('#result-service-fee');
+var resultServiceFee = qs('#result-once-fee');
+var resultMonthlyTotal = qs('#monthly-total');
+var resultEstimatedEarning = qs('#estimated-earning');
+var resultAgencyOnceFee = qs('#agency-once-fee');
 
