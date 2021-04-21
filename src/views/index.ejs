@@ -9,8 +9,8 @@
     <h1><%= title %></h1>
     <form action="">
       <h3>¿De qué país es el proveedor de servicios que querés contratar?</h3>
-      <div class="country-container">    
-        <select name="country" id="country">
+      <div class="country-supplier-container">    
+        <select name="country-supplier" id="country-supplier">
           <option value="argentina">Argentina</option>
           <option value="chile">Chile</option>
           <option value="paraguay">Paraguay</option>
@@ -70,7 +70,23 @@
         <input type="number" name="email-ammount" id="email-ammount">
       </div>
       <h3>¿En qué país querés que aparezcan tus anuncios?</h3>
-      <select name="" id=""></select>
+      <div class="country-announce-container">    
+        <select name="country-announce" id="country-announce">
+          <option value="argentina">Argentina</option>
+          <option value="chile">Chile</option>
+          <option value="paraguay">Paraguay</option>
+          <option value="uruguay">Uruguay</option>
+          <option value="brasil">Brasil</option>
+          <option value="bolivia">Bolivia</option>
+          <option value="peru">Perú</option>
+          <option value="ecuador">Ecuador</option>
+          <option value="colombia">Colombia</option>
+          <option value="costa-rica">Costa Rica</option>
+          <option value="mexico">México</option>
+          <option value="estados-unidos">Estados Unidos</option>
+          <option value="españa">España</option>
+        </select>
+      </div>
 
       <h3>¿Cuál es el objetivo de tu campaña?</h3>
       <div>
@@ -83,7 +99,9 @@
       </div>
 
     </form>
+
     <section id="results-container">
+      <h3>Resultados:</h3>
       <div>
         <p>Inversión en Medios Digitales (Google Ads y Facebook Ads) mensual:</p> <p>Result</p>
       </div>

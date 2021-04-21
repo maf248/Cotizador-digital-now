@@ -16,7 +16,7 @@ p {
   flex-direction: row;
 }
 
-.country-container {
+.country-supplier-container, .country-announce-container {
   margin: 20px;
 }
 .services-container {
@@ -29,5 +29,8 @@ p {
   padding: 5px;
 }
 .email-ammount-container {
+  display: none;
+}
+.results-container {
   display: none;
 }
