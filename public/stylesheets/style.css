@@ -6,3 +6,28 @@ body {
 a {
   color: #00B7FF;
 }
+p {
+  max-width: fit-content;
+  display: inline-block;
+}
+
+.flex-row {
+  display: flex;
+  flex-direction: row;
+}
+
+.country-container {
+  margin: 20px;
+}
+.services-container {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid black;
+  margin: 20px;
+}
+.services-container div {
+  padding: 5px;
+}
+.email-ammount-container {
+  display: none;
+}
