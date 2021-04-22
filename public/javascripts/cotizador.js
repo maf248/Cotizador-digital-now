@@ -6,99 +6,216 @@ var completeForm = [false, false, false, false];
 /*---Datos estadisticos de paises organizado para programación orientada a objetos---*/
 const countries = {
     argentina: {
-        cpm: 0,
-        cpc: 0,
-        rateLeads: 0,
-        rateAppDownlaod: 0,
-        rateOnlineSell: 0,
+        facebook: {
+            cpm: 1.08,
+            cpc: 0.04,
+            rateLeads: 0,
+            rateAppDownlaod: 0,
+            rateOnlineSell: 0,
+        },
+        google: {
+            cpm: 0,
+            cpc: 0,
+            rateLeads: 0,
+            rateAppDownlaod: 0,
+            rateOnlineSell: 0, 
+        }
     },
     chile: {
-        cpm: 0,
-        cpc: 0,
-        rateLeads: 0,
-        rateAppDownlaod: 0,
-        rateOnlineSell: 0,
+        facebook: {
+            cpm: 0.9,
+            cpc: 0.05,
+            rateLeads: 0,
+            rateAppDownlaod: 0,
+            rateOnlineSell: 0,
+        },
+        google: {
+            cpm: 0,
+            cpc: 0,
+            rateLeads: 0,
+            rateAppDownlaod: 0,
+            rateOnlineSell: 0, 
+        }
     },
     paraguay: {
-        cpm: 0,
-        cpc: 0,
-        rateLeads: 0,
-        rateAppDownlaod: 0,
-        rateOnlineSell: 0,
+        facebook: {
+            cpm: 0.68,
+            cpc: 0.02,
+            rateLeads: 0,
+            rateAppDownlaod: 0,
+            rateOnlineSell: 0,
+        },
+        google: {
+            cpm: 0,
+            cpc: 0,
+            rateLeads: 0,
+            rateAppDownlaod: 0,
+            rateOnlineSell: 0, 
+        }
     },
     uruguay: {
-        cpm: 0,
-        cpc: 0,
-        rateLeads: 0,
-        rateAppDownlaod: 0,
-        rateOnlineSell: 0,
+        facebook: {
+            cpm: 0.68,
+            cpc: 0.02,
+            rateLeads: 0,
+            rateAppDownlaod: 0,
+            rateOnlineSell: 0,
+        },
+        google: {
+            cpm: 0,
+            cpc: 0,
+            rateLeads: 0,
+            rateAppDownlaod: 0,
+            rateOnlineSell: 0, 
+        }
     },
     brasil: {
-        cpm: 0,
-        cpc: 0,
-        rateLeads: 0,
-        rateAppDownlaod: 0,
-        rateOnlineSell: 0,
+        facebook: {
+            cpm: 1.02,
+            cpc: 0.04,
+            rateLeads: 0,
+            rateAppDownlaod: 0,
+            rateOnlineSell: 0,
+        },
+        google: {
+            cpm: 0,
+            cpc: 0,
+            rateLeads: 0,
+            rateAppDownlaod: 0,
+            rateOnlineSell: 0, 
+        }
     },
     bolivia: {
-        cpm: 0,
-        cpc: 0,
-        rateLeads: 0,
-        rateAppDownlaod: 0,
-        rateOnlineSell: 0,
+        facebook: {
+            cpm: 0.71,
+            cpc: 0.01,
+            rateLeads: 0,
+            rateAppDownlaod: 0,
+            rateOnlineSell: 0,
+        },
+        google: {
+            cpm: 0,
+            cpc: 0,
+            rateLeads: 0,
+            rateAppDownlaod: 0,
+            rateOnlineSell: 0, 
+        }
     },
     peru: {
-        cpm: 0,
-        cpc: 0,
-        rateLeads: 0,
-        rateAppDownlaod: 0,
-        rateOnlineSell: 0,
+        facebook: {
+            cpm: 0.85,
+            cpc: 0.02,
+            rateLeads: 0,
+            rateAppDownlaod: 0,
+            rateOnlineSell: 0,
+        },
+        google: {
+            cpm: 0,
+            cpc: 0,
+            rateLeads: 0,
+            rateAppDownlaod: 0,
+            rateOnlineSell: 0, 
+        }
     },
     ecuador: {
-        cpm: 0,
-        cpc: 0,
-        rateLeads: 0,
-        rateAppDownlaod: 0,
-        rateOnlineSell: 0,
+        facebook: {
+            cpm: 0.55,
+            cpc: 0.02,
+            rateLeads: 0,
+            rateAppDownlaod: 0,
+            rateOnlineSell: 0,
+        },
+        google: {
+            cpm: 0,
+            cpc: 0,
+            rateLeads: 0,
+            rateAppDownlaod: 0,
+            rateOnlineSell: 0, 
+        }
     },
     colombia: {
-        cpm: 0,
-        cpc: 0,
-        rateLeads: 0,
-        rateAppDownlaod: 0,
-        rateOnlineSell: 0,
+        facebook: {
+            cpm: 0.42,
+            cpc: 0.02,
+            rateLeads: 0,
+            rateAppDownlaod: 0,
+            rateOnlineSell: 0,
+        },
+        google: {
+            cpm: 0,
+            cpc: 0,
+            rateLeads: 0,
+            rateAppDownlaod: 0,
+            rateOnlineSell: 0, 
+        }
     },
     costaRica: {
-        cpm: 0,
-        cpc: 0,
-        rateLeads: 0,
-        rateAppDownlaod: 0,
-        rateOnlineSell: 0,
+        facebook: {
+            cpm: 1.20,
+            cpc: 0.08,
+            rateLeads: 0,
+            rateAppDownlaod: 0,
+            rateOnlineSell: 0,
+        },
+        google: {
+            cpm: 0,
+            cpc: 0,
+            rateLeads: 0,
+            rateAppDownlaod: 0,
+            rateOnlineSell: 0, 
+        }
     },
     mexico: {
-        cpm: 0,
-        cpc: 0,
-        rateLeads: 0,
-        rateAppDownlaod: 0,
-        rateOnlineSell: 0,
+        facebook: {
+            cpm: 0.76,
+            cpc: 0.03,
+            rateLeads: 0,
+            rateAppDownlaod: 0,
+            rateOnlineSell: 0,
+        },
+        google: {
+            cpm: 0,
+            cpc: 0,
+            rateLeads: 0,
+            rateAppDownlaod: 0,
+            rateOnlineSell: 0, 
+        }
     },
     eeuu: {
-        cpm: 0,
-        cpc: 0,
-        rateLeads: 0,
-        rateAppDownlaod: 0,
-        rateOnlineSell: 0,
+        facebook: {
+            cpm: 2.29,
+            cpc: 0.13,
+            rateLeads: 0,
+            rateAppDownlaod: 0,
+            rateOnlineSell: 0,
+        },
+        google: {
+            cpm: 0,
+            cpc: 0,
+            rateLeads: 0,
+            rateAppDownlaod: 0,
+            rateOnlineSell: 0, 
+        }
     },
     espana: {
-        cpm: 0,
-        cpc: 0,
-        rateLeads: 0,
-        rateAppDownlaod: 0,
-        rateOnlineSell: 0,
+        facebook: {
+            cpm: 2.42,
+            cpc: 0.09,
+            rateLeads: 0,
+            rateAppDownlaod: 0,
+            rateOnlineSell: 0,
+        },
+        google: {
+            cpm: 0,
+            cpc: 0,
+            rateLeads: 0,
+            rateAppDownlaod: 0,
+            rateOnlineSell: 0, 
+        }
     }
 }
 /*--Así se accedería a cada valor de dicho objeto---*/
-console.log(countries.mexico.cpc)
+console.log(countries.espana.facebook.cpc)
 
 /*---Se captura el selector de país de los proveedores--*/
 var countrySupplier = qs('#country-supplier');
@@ -155,7 +272,8 @@ var countryAnnounce = qs('#country-announce');
     }
 
 countryAnnounce.addEventListener('change', function() {
-    console.log(this.value)
+    /*---Accede a los datos del pais que se elija---*/
+    console.log(countries[this.value])
     if (countryAnnounce.value != '') {
         completeForm[2] = true;
     }
@@ -197,4 +315,3 @@ var resultServiceFee = qs('#result-once-fee');
 var resultMonthlyTotal = qs('#monthly-total');
 var resultEstimatedEarning = qs('#estimated-earning');
 var resultAgencyOnceFee = qs('#agency-once-fee');
-
