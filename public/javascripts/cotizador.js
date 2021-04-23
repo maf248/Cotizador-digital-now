@@ -291,7 +291,7 @@ countrySupplier.addEventListener('change', function() {
 });
 
 /*---Se capturan los checkboxes en conjunto, de los servicios requeridos---*/
-var checkboxesServices = qsa('input[type=checkbox]');
+var checkboxesServices = qsa('input[class=services-check]');
 var checkboxesValidate = [false, false, false, false, false, false, false, false, false];
 
 checkboxesServices.forEach((checkboxService, i) => {
@@ -346,7 +346,7 @@ objectives.forEach(objective => {
 /*---Se captura el bloque que muestra los resultados, y se muestra solamente al seleccionar todas las opciones requeridas---*/
 var resultsContainer = qs('#results-container');
 
-/*--Evento general para validar si mostrar resultados o no, en base a lo seleccionado---*/
+/*--Evento general para validar si mostrar resultados o no, y actualizar los mismos en base a lo seleccionado---*/
 window.addEventListener('change', function() {
     if (checkboxesValidate.includes(true)) {
         completeForm[1] = true;
@@ -390,12 +390,13 @@ window.addEventListener('change', function() {
         if (mantenimientoWeb.checked) { totalServiceFee += services.mantenimientoWeb.price; }
 
         resultServiceFee.innerHTML = `USD ${totalServiceFee}`;
-        
+
     } else {
         serviceResultContainer.style.display = 'none';
     }
 
-    console.log(`SERVICIOS PRECIO ${totalServiceFee}`)
+    // resultMonthlyTotal.innerHTML = "el total mensual sería -> fee de gestión + estimación de inversión mensual en facebook ads y google ads";
+
     console.log(objectiveSelected)
     console.log(completeForm)
 });
