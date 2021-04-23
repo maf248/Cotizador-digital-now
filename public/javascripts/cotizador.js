@@ -305,19 +305,29 @@ window.addEventListener('change', function() {
     } else {
         completeForm[1] = false;
     }
-    /*---Se muestran los resultados de email marketing solamente si esta opcion fue seleccionada---*/
+    /*---Se valida que esten todas las etapas seleccionadas, para mostrar los resultados u ocultarlos---*/
+    if (!completeForm.includes(false)) {
+        resultsContainer.style.display = 'block';
+    } else {
+        resultsContainer.style.display = 'none';
+    }
+    /*---Se muestran los resultados particulares de email marketing solamente si esta opcion fue seleccionada---*/
     if (email.checked && !completeForm.includes(false)) {
         emailResultContainer.style.display = 'block';
         emailAmmountContainer.style.display = 'block';
+        
     } else {
         emailResultContainer.style.display = 'none';
         emailAmmountContainer.style.display = 'none';
+       
     }
-    /*---Se muestran los resultados de google/facebook ads solamente si esta opcion fue seleccionada---*/
+    /*---Se muestran los resultados particulares de google/facebook ads solamente si esta opcion fue seleccionada---*/
     if (googleFacebookAds.checked && !completeForm.includes(false)) {
         googleFacebookAdsResultContainer.style.display = 'block';
+       
     } else {
-         googleFacebookAdsResultContainer.style.display = 'none';
+        googleFacebookAdsResultContainer.style.display = 'none';
+       
     }
 
 
