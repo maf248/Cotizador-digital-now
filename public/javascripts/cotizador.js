@@ -254,16 +254,21 @@ var email = qs('#email');
 var logoMarca = qs('#logo-marca');
 var mantenimiento = qs('#mantenimiento');
 
-/*---Se captura el bloque que pide cantidad de contactos EMAIL al tildar dicho checkbox mediante evento cambio---*/
+/*---Se captura el bloque que pide cantidad de contactos EMAIL y el contenedor de resultados mail---*/
 var emailAmmountContainer = qs('#email-ammount-container');
+var emailResultContainer = qs('#email-result-container');
 
-email.addEventListener('change', function() {
-    if (this.checked) {
-      emailAmmountContainer.style.display = 'block';
-    } else {
-      emailAmmountContainer.style.display = 'none';
-    }
-  });
+/*---Se captura la cantidad de mails seleccionados para Marketing digital , y se actualiza el resultado---*/
+var emailAmmount = qs('#email-ammount');
+
+emailAmmount.addEventListener('change', function() {
+
+    resultEmail.innerHTML = `USD ${emailAmmount.value}`
+
+});
+
+/*---Se captura el contenedor de resultados de Google y Facebook ads---*/
+var googleFacebookAdsResultContainer = qs('#result-googleads-facebookads-container')
 
 /*---Se captura el selector de país de los anuncios--*/
 var countryAnnounce = qs('#country-announce');
@@ -292,6 +297,7 @@ objectives.forEach(objective => {
 
 /*---Se captura el bloque que muestra los resultados, y se muestra solamente al seleccionar todas las opciones requeridas---*/
 var resultsContainer = qs('#results-container');
+
 /*--Evento general para validar si mostrar resultados o no, en base a lo seleccionado---*/
 window.addEventListener('change', function() {
     if (checkboxesValidate.includes(true)) {
@@ -299,11 +305,22 @@ window.addEventListener('change', function() {
     } else {
         completeForm[1] = false;
     }
-    if(completeForm.includes(false)) {
-        resultsContainer.style.display = 'none';
+    /*---Se muestran los resultados de email marketing solamente si esta opcion fue seleccionada---*/
+    if (email.checked && !completeForm.includes(false)) {
+        emailResultContainer.style.display = 'block';
+        emailAmmountContainer.style.display = 'block';
     } else {
-        resultsContainer.style.display = 'block';
+        emailResultContainer.style.display = 'none';
+        emailAmmountContainer.style.display = 'none';
     }
+    /*---Se muestran los resultados de google/facebook ads solamente si esta opcion fue seleccionada---*/
+    if (googleFacebookAds.checked && !completeForm.includes(false)) {
+        googleFacebookAdsResultContainer.style.display = 'block';
+    } else {
+         googleFacebookAdsResultContainer.style.display = 'none';
+    }
+
+
     console.log(completeForm)
 });
 
@@ -315,3 +332,9 @@ var resultServiceFee = qs('#result-once-fee');
 var resultMonthlyTotal = qs('#monthly-total');
 var resultEstimatedEarning = qs('#estimated-earning');
 var resultAgencyOnceFee = qs('#agency-once-fee');
+
+
+// var regexDolar = new RegExp(/<\s*td[^>]*>(\d{2},\d{4})<\s*/\s*td>/g);
+// $.getJSON('http://www.whateverorigin.org/get?url=' + encodeURIComponent('https://www.bna.com.ar/Personas') + '&callback=?', function(data){
+// 	console.log(data.contents.match(regexDolar));
+// });

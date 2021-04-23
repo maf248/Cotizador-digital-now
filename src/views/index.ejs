@@ -4,6 +4,10 @@
     <title><%= title %></title>
     <link rel='stylesheet' href='/stylesheets/style.css' />
     <script src="/javascripts/cotizador.js" defer></script>
+    <script
+  src="https://code.jquery.com/jquery-3.6.0.js"
+  integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+  crossorigin="anonymous"></script>
   </head>
   <body>
     <h1><%= title %></h1>
@@ -65,9 +69,34 @@
           <label for="mantenimiento">Mantenimiento Web</label>
         </div>
       </div>
-      <div class="email-ammount-container" id="email-ammount-container">
-        <label for="email-ammount">Escribí el número de contactos que querés usar para tus campañas de Email Marketing para estimar el costo mensual de la plataforma de envíos</label>
-        <input type="number" name="email-ammount" id="email-ammount">
+      <div class="email-ammount-container" id="email-ammount-container" style="display: none;">
+        <label for="email-ammount">Selecciona el número de contactos que querés usar para tus campañas de Email Marketing para estimar el costo mensual de la plataforma de envíos:</label>
+        <select name="email-ammount" id="email-ammount">
+          <option value="">-</option>
+          <option value="12">1.000</option>
+          <option value="25">2.500</option>
+          <option value="44">5.000</option>
+          <option value="54">7.500</option>
+          <option value="65">10.000</option>
+          <option value="83">15.000</option>
+          <option value="101">20.000</option>
+          <option value="119">25.000</option>
+          <option value="137">30.000</option>
+          <option value="155">35.000</option>
+          <option value="173">40.000</option>
+          <option value="191">45.000</option>
+          <option value="210">50.000</option>
+          <option value="229">55.000</option>
+          <option value="248">60.000</option>
+          <option value="267">65.000</option>
+          <option value="286">70.000</option>
+          <option value="305">75.000</option>
+          <option value="324">80.000</option>
+          <option value="343">85.000</option>
+          <option value="362">90.000</option>
+          <option value="381">95.000</option>
+          <option value="400">10.000</option>
+        </select>
       </div>
       <h3>¿En qué país querés que aparezcan tus anuncios?</h3>
       <div class="country-announce-container">    
@@ -102,10 +131,10 @@
 
     <section class="results-container" id="results-container">
       <h2>Resultados:</h2>
-      <div>
+      <div id="result-googleads-facebookads-container" style="display: none;">
         <p>Inversión en Medios Digitales (Google Ads y Facebook Ads) mensual:</p> <p id="result-googleads-facebookads">-</p>
       </div>
-      <div>
+      <div id="email-result-container" style="display: none;">
         <p>Costo de plataforma de Email Marketing mensual:</p> <p id="result-email">-</p>
       </div>
       <div>
