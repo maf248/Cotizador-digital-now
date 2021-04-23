@@ -16,7 +16,7 @@ p {
   flex-direction: row;
 }
 
-.country-supplier-container, .country-announce-container {
+.country-supplier-container {
   margin: 20px;
 }
 .services-container {
@@ -28,3 +28,15 @@ p {
 .services-container div {
   padding: 5px;
 }
+
+.country-announce-container {
+  border: 1px solid black;
+  padding: 10px;
+  margin: 20px;
+}
+.country-announce-container div {
+  display: inline-block;
+  width: 20%;
+  padding: 5px;
+}
+

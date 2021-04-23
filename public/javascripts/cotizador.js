@@ -292,14 +292,14 @@ countrySupplier.addEventListener('change', function() {
 
 /*---Se capturan los checkboxes en conjunto, de los servicios requeridos---*/
 var checkboxesServices = qsa('input[class=services-check]');
-var checkboxesValidate = [false, false, false, false, false, false, false, false, false];
+var checkboxesServicesValidate = [false, false, false, false, false, false, false, false, false];
 
 checkboxesServices.forEach((checkboxService, i) => {
     checkboxService.addEventListener('change', function() {
         if (this.checked) {
-            checkboxesValidate[i] = true;
+            checkboxesServicesValidate[i] = true;
         } else {
-            checkboxesValidate[i] = false;
+            checkboxesServicesValidate[i] = false;
         }
     });
 })
@@ -315,19 +315,22 @@ emailAmmount.addEventListener('change', function() {
 
 });
 
-/*---Se captura el selector de país de los anuncios--*/
-var countryAnnounce = qs('#country-announce');
-    if (countryAnnounce.value != '') {
-        completeForm[2] = true;
-    }
+/*---Se capturan los checkboxes de los paises para anunciarse---*/
+var countriesAnnounce = qsa('input[class=country-announce]');
+var checkboxesCountriesValidate = [false, false, false, false, false, false, false, false, false];
 
-countryAnnounce.addEventListener('change', function() {
-    /*---Accede a los datos del pais que se elija---*/
-    console.log(countries[this.value])
-    if (countryAnnounce.value != '') {
-        completeForm[2] = true;
-    }
-});
+countriesAnnounce.forEach((countryAnnounce, i) => {
+    countryAnnounce.addEventListener('change', function() {
+        if (this.checked) {
+            console.log(countries[this.id.slice(17)]);
+            
+            checkboxesCountriesValidate[i] = true;
+        } else {
+            checkboxesCountriesValidate[i] = false;
+        }
+    });
+})
+
 
 /*---Se capturan los inputs radio que determinan el tipo de objetivo en la campaña de marketing---*/
 var objectives = qsa('input[name="objetivo"]');
@@ -348,10 +351,15 @@ var resultsContainer = qs('#results-container');
 
 /*--Evento general para validar si mostrar resultados o no, y actualizar los mismos en base a lo seleccionado---*/
 window.addEventListener('change', function() {
-    if (checkboxesValidate.includes(true)) {
+    if (checkboxesServicesValidate.includes(true)) {
         completeForm[1] = true;
     } else {
         completeForm[1] = false;
+    }
+    if (checkboxesCountriesValidate.includes(true)) {
+        completeForm[2] = true;
+    } else {
+        completeForm[2] = false;
     }
     /*---Se valida que esten todas las etapas seleccionadas, para mostrar los resultados u ocultarlos---*/
     if (!completeForm.includes(false)) {
