@@ -1,7 +1,42 @@
 const qs = (text) => document.querySelector(text);
 const qsa = (text) => document.querySelectorAll(text);
 
+/*---Array de validación de las 4 etapas---*/
 var completeForm = [false, false, false, false];
+
+/*---Se capturan los checkboxes individualmente, de los servicios requeridos---*/
+var googleFacebookAds = qs('#google-facebook-ads');
+var seo = qs('#seo');
+var wordpress = qs('#wordpress');
+var tiendaNube = qs('#tiendaNube');
+var woocommerce = qs('#woocommerce');
+var redesSociales = qs('#redesSociales');
+var email = qs('#email');
+var logoMarca = qs('#logoMarca');
+var mantenimientoWeb = qs('#mantenimientoWeb');
+
+/*---Se capturan los CONTENEDORES de los distintos resultados---*/
+var googleFacebookAdsResultContainer = qs('#result-googleads-facebookads-container');
+var emailResultContainer = qs('#result-email-container');
+var serviceResultContainer = qs('#result-service-fee-container');
+var serviceOnceFeeContainer = qs('#result-once-fee-container');
+
+var resultTotalMonth = qs('#result-total-month');
+var resultEstimated = qs('#result-estimated');
+var resultAgencyOnceFee = qs('#result-agency-once-fee');
+
+/*---Se captura el bloque que pide cantidad de contactos EMAIL y el contenedor de resultados mail---*/
+var emailAmmountContainer = qs('#email-ammount-container');
+
+/*---Se capturan los bloques que muestran los RESULTADOS, para inyectar los valores luego de calcular---*/
+var resultGoogleFacebookAds = qs('#result-googleads-facebookads');
+var resultEmail = qs('#result-email');
+var resultServiceFee = qs('#result-service-fee');
+var resultServiceOnceFee = qs('#result-once-fee');
+var resultMonthlyTotal = qs('#monthly-total');
+var resultEstimatedEarning = qs('#estimated-earning');
+var resultAgencyOnceFee = qs('#agency-once-fee');
+
 
 /*---Datos estadisticos de paises organizado para programación orientada a objetos---*/
 const countries = {
@@ -217,6 +252,31 @@ const countries = {
 /*--Así se accedería a cada valor de dicho objeto---*/
 console.log(countries.espana.facebook.cpc)
 
+/*---Datos de los servicios brindados, organizado para programación orientada a objetos---*/
+const services = {
+    seo: {
+        price: 1000
+    },
+    wordpress: {
+        price: 2000
+    },
+    tiendaNube: {
+        price: 3000
+    },
+    woocommerce: {
+        price: 4000
+    },
+    redesSociales: {
+        price: 5000
+    },
+    logoMarca: {
+        price: 6000
+    },
+    mantenimientoWeb: {
+        price: 7000
+    }
+}
+
 /*---Se captura el selector de país de los proveedores--*/
 var countrySupplier = qs('#country-supplier');
     if (countrySupplier.value != '') {
@@ -229,6 +289,7 @@ countrySupplier.addEventListener('change', function() {
         completeForm[0] = true;
     }
 });
+
 /*---Se capturan los checkboxes en conjunto, de los servicios requeridos---*/
 var checkboxesServices = qsa('input[type=checkbox]');
 var checkboxesValidate = [false, false, false, false, false, false, false, false, false];
@@ -243,20 +304,7 @@ checkboxesServices.forEach((checkboxService, i) => {
     });
 })
 
-/*---Se capturan los checkboxes individualmente, de los servicios requeridos---*/
-var googleFacebookAds = qs('#google-facebook-ads');
-var seo = qs('#seo');
-var wordpress = qs('#wordpress');
-var tiendaNube = qs('#tienda-nube');
-var woocommerce = qs('#woocommerce');
-var redesSociales = qs('#redes-sociales');
-var email = qs('#email');
-var logoMarca = qs('#logo-marca');
-var mantenimiento = qs('#mantenimiento');
 
-/*---Se captura el bloque que pide cantidad de contactos EMAIL y el contenedor de resultados mail---*/
-var emailAmmountContainer = qs('#email-ammount-container');
-var emailResultContainer = qs('#email-result-container');
 
 /*---Se captura la cantidad de mails seleccionados para Marketing digital , y se actualiza el resultado---*/
 var emailAmmount = qs('#email-ammount');
@@ -266,9 +314,6 @@ emailAmmount.addEventListener('change', function() {
     resultEmail.innerHTML = `USD ${emailAmmount.value}`
 
 });
-
-/*---Se captura el contenedor de resultados de Google y Facebook ads---*/
-var googleFacebookAdsResultContainer = qs('#result-googleads-facebookads-container')
 
 /*---Se captura el selector de país de los anuncios--*/
 var countryAnnounce = qs('#country-announce');
@@ -286,11 +331,14 @@ countryAnnounce.addEventListener('change', function() {
 
 /*---Se capturan los inputs radio que determinan el tipo de objetivo en la campaña de marketing---*/
 var objectives = qsa('input[name="objetivo"]');
+/*--Se guarda en una variable el objetivo seleccionado--*/
+var objectiveSelected = null;
 /*-Se recorren para detectar cuando alguno de los 3 es tildado-*/
 objectives.forEach(objective => {
     objective.addEventListener('change', function() {
         if (this.checked) {
             completeForm[3] = true;
+            objectiveSelected = this.id;
         }
     });
 })
@@ -311,40 +359,44 @@ window.addEventListener('change', function() {
     } else {
         resultsContainer.style.display = 'none';
     }
+
+    /*---Se muestran los resultados particulares de google/facebook ads solamente si esta opcion fue seleccionada---*/
+    if (googleFacebookAds.checked && !completeForm.includes(false)) {
+        googleFacebookAdsResultContainer.style.display = 'block';
+    } else {
+        googleFacebookAdsResultContainer.style.display = 'none';
+    }
+
     /*---Se muestran los resultados particulares de email marketing solamente si esta opcion fue seleccionada---*/
     if (email.checked && !completeForm.includes(false)) {
         emailResultContainer.style.display = 'block';
         emailAmmountContainer.style.display = 'block';
-        
     } else {
         emailResultContainer.style.display = 'none';
         emailAmmountContainer.style.display = 'none';
-       
     }
-    /*---Se muestran los resultados particulares de google/facebook ads solamente si esta opcion fue seleccionada---*/
-    if (googleFacebookAds.checked && !completeForm.includes(false)) {
-        googleFacebookAdsResultContainer.style.display = 'block';
-       
+    /*---Se muestra u oculta "fee de servicio mensual" en caso que se haya seleccionado o no alguno---*/
+    var totalServiceFee = 0;
+    if ((seo.checked || wordpress.checked || tiendaNube.checked || woocommerce.checked || redesSociales.checked || logoMarca.checked || mantenimientoWeb.checked) && !completeForm.includes(false)) {
+        serviceResultContainer.style.display = 'block';
+        /*---Chequea que servicios estan tildados y los suma al total---*/
+        if (seo.checked) { totalServiceFee += services.seo.price; }
+        if (wordpress.checked) { totalServiceFee += services.wordpress.price; }
+        if (tiendaNube.checked) { totalServiceFee += services.tiendaNube.price; }
+        if (woocommerce.checked) { totalServiceFee += services.woocommerce.price; }
+        if (tiendaNube.checked) { totalServiceFee += services.tiendaNube.price; }
+        if (redesSociales.checked) { totalServiceFee += services.redesSociales.price; }
+        if (logoMarca.checked) { totalServiceFee += services.logoMarca.price; }
+        if (mantenimientoWeb.checked) { totalServiceFee += services.mantenimientoWeb.price; }
+
+        resultServiceFee.innerHTML = `USD ${totalServiceFee}`;
+        
     } else {
-        googleFacebookAdsResultContainer.style.display = 'none';
-       
+        serviceResultContainer.style.display = 'none';
     }
 
-
+    console.log(`SERVICIOS PRECIO ${totalServiceFee}`)
+    console.log(objectiveSelected)
     console.log(completeForm)
 });
 
-/*---Se capturan los contenedores para inyectar luego los resultados---*/
-var resultGoogleFacebookAds = qs('#result-googleads-facebookads');
-var resultEmail = qs('#result-email');
-var resultServiceFee = qs('#result-service-fee');
-var resultServiceFee = qs('#result-once-fee');
-var resultMonthlyTotal = qs('#monthly-total');
-var resultEstimatedEarning = qs('#estimated-earning');
-var resultAgencyOnceFee = qs('#agency-once-fee');
-
-
-// var regexDolar = new RegExp(/<\s*td[^>]*>(\d{2},\d{4})<\s*/\s*td>/g);
-// $.getJSON('http://www.whateverorigin.org/get?url=' + encodeURIComponent('https://www.bna.com.ar/Personas') + '&callback=?', function(data){
-// 	console.log(data.contents.match(regexDolar));
-// });
