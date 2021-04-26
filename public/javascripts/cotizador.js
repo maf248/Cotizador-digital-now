@@ -51,371 +51,241 @@ var resultAgencyOnceFee = qs('#agency-once-fee');
 /*---Datos estadisticos de paises organizado para programación orientada a objetos---*/
 const countries = {
     argentina: {
-        facebook: {
+        facebookAds: {
             cpm: 1.08,
-            cpc: 0.04,
-            rateLeads: 0,
-            rateAppDownlaod: 0,
-            rateOnlineSell: 0,
+            cpc: 0.04
         },
-        google: {
+        googleSearchAds: {
             cpm: 0,
-            cpc: 0,
-            rateLeads: 0,
-            rateAppDownlaod: 0,
-            rateOnlineSell: 0, 
+            cpc: 0 
+        },
+        googleDisplayAds: {
+            cpa: {
+
+            },
+            cpc: {
+
+            }
         }
     },
     australia: {
         facebook: {
             cpm: 0,
-            cpc: 0,
-            rateLeads: 0,
-            rateAppDownlaod: 0,
-            rateOnlineSell: 0,
+            cpc: 0
         },
         google: {
             cpm: 0,
-            cpc: 0,
-            rateLeads: 0,
-            rateAppDownlaod: 0,
-            rateOnlineSell: 0, 
+            cpc: 0 
         }
     },
     chile: {
         facebook: {
             cpm: 0.9,
-            cpc: 0.05,
-            rateLeads: 0,
-            rateAppDownlaod: 0,
-            rateOnlineSell: 0,
+            cpc: 0.05
         },
         google: {
             cpm: 0,
-            cpc: 0,
-            rateLeads: 0,
-            rateAppDownlaod: 0,
-            rateOnlineSell: 0, 
+            cpc: 0 
         }
     },
     paraguay: {
         facebook: {
             cpm: 0.68,
-            cpc: 0.02,
-            rateLeads: 0,
-            rateAppDownlaod: 0,
-            rateOnlineSell: 0,
+            cpc: 0.02
         },
         google: {
             cpm: 0,
-            cpc: 0,
-            rateLeads: 0,
-            rateAppDownlaod: 0,
-            rateOnlineSell: 0, 
+            cpc: 0 
         }
     },
     uruguay: {
         facebook: {
             cpm: 0.68,
-            cpc: 0.02,
-            rateLeads: 0,
-            rateAppDownlaod: 0,
-            rateOnlineSell: 0,
+            cpc: 0.02
         },
         google: {
             cpm: 0,
-            cpc: 0,
-            rateLeads: 0,
-            rateAppDownlaod: 0,
-            rateOnlineSell: 0, 
+            cpc: 0 
         }
     },
     brasil: {
         facebook: {
             cpm: 1.02,
-            cpc: 0.04,
-            rateLeads: 0,
-            rateAppDownlaod: 0,
-            rateOnlineSell: 0,
+            cpc: 0.04
         },
         google: {
             cpm: 0,
-            cpc: 0,
-            rateLeads: 0,
-            rateAppDownlaod: 0,
-            rateOnlineSell: 0, 
+            cpc: 0 
         }
     },
     bolivia: {
         facebook: {
             cpm: 0.71,
-            cpc: 0.01,
-            rateLeads: 0,
-            rateAppDownlaod: 0,
-            rateOnlineSell: 0,
+            cpc: 0.01
         },
         google: {
             cpm: 0,
-            cpc: 0,
-            rateLeads: 0,
-            rateAppDownlaod: 0,
-            rateOnlineSell: 0, 
+            cpc: 0 
         }
     },
     peru: {
         facebook: {
             cpm: 0.85,
-            cpc: 0.02,
-            rateLeads: 0,
-            rateAppDownlaod: 0,
-            rateOnlineSell: 0,
+            cpc: 0.02
         },
         google: {
             cpm: 0,
-            cpc: 0,
-            rateLeads: 0,
-            rateAppDownlaod: 0,
-            rateOnlineSell: 0, 
+            cpc: 0 
         }
     },
     ecuador: {
         facebook: {
             cpm: 0.55,
-            cpc: 0.02,
-            rateLeads: 0,
-            rateAppDownlaod: 0,
-            rateOnlineSell: 0,
+            cpc: 0.02
         },
         google: {
             cpm: 0,
-            cpc: 0,
-            rateLeads: 0,
-            rateAppDownlaod: 0,
-            rateOnlineSell: 0, 
+            cpc: 0 
         }
     },
     colombia: {
         facebook: {
             cpm: 0.42,
-            cpc: 0.02,
-            rateLeads: 0,
-            rateAppDownlaod: 0,
-            rateOnlineSell: 0,
+            cpc: 0.02
         },
         google: {
             cpm: 0,
-            cpc: 0,
-            rateLeads: 0,
-            rateAppDownlaod: 0,
-            rateOnlineSell: 0, 
+            cpc: 0 
         }
     },
     costaRica: {
         facebook: {
             cpm: 1.20,
-            cpc: 0.08,
-            rateLeads: 0,
-            rateAppDownlaod: 0,
-            rateOnlineSell: 0,
+            cpc: 0.08
         },
         google: {
             cpm: 0,
-            cpc: 0,
-            rateLeads: 0,
-            rateAppDownlaod: 0,
-            rateOnlineSell: 0, 
+            cpc: 0 
         }
     },
     mexico: {
         facebook: {
             cpm: 0.76,
-            cpc: 0.03,
-            rateLeads: 0,
-            rateAppDownlaod: 0,
-            rateOnlineSell: 0,
+            cpc: 0.03
         },
         google: {
             cpm: 0,
-            cpc: 0,
-            rateLeads: 0,
-            rateAppDownlaod: 0,
-            rateOnlineSell: 0, 
+            cpc: 0 
         }
     },
     eeuu: {
         facebook: {
             cpm: 2.29,
-            cpc: 0.13,
-            rateLeads: 0,
-            rateAppDownlaod: 0,
-            rateOnlineSell: 0,
+            cpc: 0.13
         },
         google: {
             cpm: 0,
-            cpc: 0,
-            rateLeads: 0,
-            rateAppDownlaod: 0,
-            rateOnlineSell: 0, 
+            cpc: 0 
         }
     },
     espana: {
         facebook: {
             cpm: 2.42,
-            cpc: 0.09,
-            rateLeads: 0,
-            rateAppDownlaod: 0,
-            rateOnlineSell: 0,
+            cpc: 0.09
         },
         google: {
             cpm: 0,
-            cpc: 0,
-            rateLeads: 0,
-            rateAppDownlaod: 0,
-            rateOnlineSell: 0, 
+            cpc: 0 
         }
     },
     inglaterra: {
         facebook: {
             cpm: 2.42,
-            cpc: 0.09,
-            rateLeads: 0,
-            rateAppDownlaod: 0,
-            rateOnlineSell: 0,
+            cpc: 0.09
         },
         google: {
             cpm: 0,
-            cpc: 0,
-            rateLeads: 0,
-            rateAppDownlaod: 0,
-            rateOnlineSell: 0, 
+            cpc: 0 
         }
     },
     republicaCheca: {
         facebook: {
             cpm: 0,
-            cpc: 0,
-            rateLeads: 0,
-            rateAppDownlaod: 0,
-            rateOnlineSell: 0,
+            cpc: 0
         },
         google: {
             cpm: 0,
-            cpc: 0,
-            rateLeads: 0,
-            rateAppDownlaod: 0,
-            rateOnlineSell: 0, 
+            cpc: 0 
         }
     },
     sudafrica: {
         facebook: {
             cpm: 0,
-            cpc: 0,
-            rateLeads: 0,
-            rateAppDownlaod: 0,
-            rateOnlineSell: 0,
+            cpc: 0
         },
         google: {
             cpm: 0,
-            cpc: 0,
-            rateLeads: 0,
-            rateAppDownlaod: 0,
-            rateOnlineSell: 0, 
+            cpc: 0 
         }
     },
     india: {
         facebook: {
             cpm: 0,
-            cpc: 0,
-            rateLeads: 0,
-            rateAppDownlaod: 0,
-            rateOnlineSell: 0,
+            cpc: 0
         },
         google: {
             cpm: 0,
-            cpc: 0,
-            rateLeads: 0,
-            rateAppDownlaod: 0,
-            rateOnlineSell: 0, 
+            cpc: 0 
         }
     },
     filipinas: {
         facebook: {
             cpm: 0,
-            cpc: 0,
-            rateLeads: 0,
-            rateAppDownlaod: 0,
-            rateOnlineSell: 0,
+            cpc: 0
         },
         google: {
             cpm: 0,
-            cpc: 0,
-            rateLeads: 0,
-            rateAppDownlaod: 0,
-            rateOnlineSell: 0, 
+            cpc: 0 
         }
     },
     venezuela: {
         facebook: {
             cpm: 0,
-            cpc: 0,
-            rateLeads: 0,
-            rateAppDownlaod: 0,
-            rateOnlineSell: 0,
+            cpc: 0
         },
         google: {
             cpm: 0,
-            cpc: 0,
-            rateLeads: 0,
-            rateAppDownlaod: 0,
-            rateOnlineSell: 0, 
+            cpc: 0 
         }
     },
     republicaDominicana: {
         facebook: {
             cpm: 0,
-            cpc: 0,
-            rateLeads: 0,
-            rateAppDownlaod: 0,
-            rateOnlineSell: 0,
+            cpc: 0
         },
         google: {
             cpm: 0,
-            cpc: 0,
-            rateLeads: 0,
-            rateAppDownlaod: 0,
-            rateOnlineSell: 0, 
+            cpc: 0 
         }
     },
     bangladesh: {
         facebook: {
             cpm: 0,
-            cpc: 0,
-            rateLeads: 0,
-            rateAppDownlaod: 0,
-            rateOnlineSell: 0,
+            cpc: 0
         },
         google: {
             cpm: 0,
-            cpc: 0,
-            rateLeads: 0,
-            rateAppDownlaod: 0,
-            rateOnlineSell: 0, 
+            cpc: 0 
         }
     },
     ucrania: {
         facebook: {
             cpm: 0,
-            cpc: 0,
-            rateLeads: 0,
-            rateAppDownlaod: 0,
-            rateOnlineSell: 0,
+            cpc: 0
         },
         google: {
             cpm: 0,
-            cpc: 0,
-            rateLeads: 0,
-            rateAppDownlaod: 0,
-            rateOnlineSell: 0, 
+            cpc: 0 
         }
     }
 }
@@ -483,6 +353,17 @@ emailAmmount.addEventListener('change', function() {
 
 });
 
+/*---Se captura la industria seleccionada para calcular google/facebook ads---*/
+var industryAdsSelectorContainer = qs('#industry-ads-selector-container');
+var industryAdsSelector = qs('#industry-ads-selector');
+
+industryAdsSelector.addEventListener('change', function() {
+
+    console.log(`Industria elegida: ${industryAdsSelector.value}`)
+
+});
+
+
 /*---Se capturan los checkboxes de los paises para anunciarse---*/
 var countriesAnnounce = qsa('input[class=country-announce]');
 var checkboxesCountriesValidate = [false, false, false, false, false, false, false, false, false];
@@ -524,7 +405,10 @@ window.addEventListener('change', function() {
 
     /*---Se muestran los resultados particulares de google/facebook ads solamente si esta opcion fue seleccionada---*/
     if ((googleSearchAds.checked || googleDisplayAds.checked || facebookAds.checked) && !completeForm.includes(false)) {
+
         googleFacebookAdsResultContainer.style.display = 'block';
+        industryAdsSelectorContainer.style.display = 'block';
+
         if (googleSearchAds.checked) {
             googleSearchAdsResultContainer.style.display = 'block';
         } else {
@@ -542,6 +426,7 @@ window.addEventListener('change', function() {
         }
     } else {
         googleFacebookAdsResultContainer.style.display = 'none';
+        industryAdsSelectorContainer.style.display = 'none';
     }
 
     /*---Se muestran los resultados particulares de email marketing solamente si esta opcion fue seleccionada---*/
