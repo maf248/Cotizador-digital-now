@@ -1,19 +1,21 @@
 const qs = (text) => document.querySelector(text);
 const qsa = (text) => document.querySelectorAll(text);
 
-/*---Array de validación de las 4 etapas---*/
-var completeForm = [false, false, false, false];
+/*---Array de validación de las 3 etapas---*/
+var completeForm = [false, false, false];
 
 /*---Se capturan los checkboxes individualmente, de los servicios requeridos---*/
-var googleFacebookAds = qs('#google-facebook-ads');
-var seo = qs('#seo');
-var wordpress = qs('#wordpress');
-var tiendaNube = qs('#tiendaNube');
-var woocommerce = qs('#woocommerce');
+var googleSearchAds = qs('#google-search-ads');
+var googleDisplayAds = qs('#google-display-ads');
+var facebookAds = qs('#facebook-ads');
 var redesSociales = qs('#redesSociales');
-var email = qs('#email');
+var seo = qs('#seo');
+var conversionWeb = qs('#conversionWeb');
+var wordpress = qs('#wordpress');
+var ecommerceWeb = qs('#ecommerceWeb');
+var landingPage = qs('#landingPage');
 var logoMarca = qs('#logoMarca');
-var mantenimientoWeb = qs('#mantenimientoWeb');
+var email = qs('#email');
 
 /*---Se capturan los CONTENEDORES de los distintos resultados---*/
 var googleFacebookAdsResultContainer = qs('#result-googleads-facebookads-container');
@@ -44,6 +46,22 @@ const countries = {
         facebook: {
             cpm: 1.08,
             cpc: 0.04,
+            rateLeads: 0,
+            rateAppDownlaod: 0,
+            rateOnlineSell: 0,
+        },
+        google: {
+            cpm: 0,
+            cpc: 0,
+            rateLeads: 0,
+            rateAppDownlaod: 0,
+            rateOnlineSell: 0, 
+        }
+    },
+    australia: {
+        facebook: {
+            cpm: 0,
+            cpc: 0,
             rateLeads: 0,
             rateAppDownlaod: 0,
             rateOnlineSell: 0,
@@ -247,6 +265,150 @@ const countries = {
             rateAppDownlaod: 0,
             rateOnlineSell: 0, 
         }
+    },
+    inglaterra: {
+        facebook: {
+            cpm: 2.42,
+            cpc: 0.09,
+            rateLeads: 0,
+            rateAppDownlaod: 0,
+            rateOnlineSell: 0,
+        },
+        google: {
+            cpm: 0,
+            cpc: 0,
+            rateLeads: 0,
+            rateAppDownlaod: 0,
+            rateOnlineSell: 0, 
+        }
+    },
+    republicaCheca: {
+        facebook: {
+            cpm: 0,
+            cpc: 0,
+            rateLeads: 0,
+            rateAppDownlaod: 0,
+            rateOnlineSell: 0,
+        },
+        google: {
+            cpm: 0,
+            cpc: 0,
+            rateLeads: 0,
+            rateAppDownlaod: 0,
+            rateOnlineSell: 0, 
+        }
+    },
+    sudafrica: {
+        facebook: {
+            cpm: 0,
+            cpc: 0,
+            rateLeads: 0,
+            rateAppDownlaod: 0,
+            rateOnlineSell: 0,
+        },
+        google: {
+            cpm: 0,
+            cpc: 0,
+            rateLeads: 0,
+            rateAppDownlaod: 0,
+            rateOnlineSell: 0, 
+        }
+    },
+    india: {
+        facebook: {
+            cpm: 0,
+            cpc: 0,
+            rateLeads: 0,
+            rateAppDownlaod: 0,
+            rateOnlineSell: 0,
+        },
+        google: {
+            cpm: 0,
+            cpc: 0,
+            rateLeads: 0,
+            rateAppDownlaod: 0,
+            rateOnlineSell: 0, 
+        }
+    },
+    filipinas: {
+        facebook: {
+            cpm: 0,
+            cpc: 0,
+            rateLeads: 0,
+            rateAppDownlaod: 0,
+            rateOnlineSell: 0,
+        },
+        google: {
+            cpm: 0,
+            cpc: 0,
+            rateLeads: 0,
+            rateAppDownlaod: 0,
+            rateOnlineSell: 0, 
+        }
+    },
+    venezuela: {
+        facebook: {
+            cpm: 0,
+            cpc: 0,
+            rateLeads: 0,
+            rateAppDownlaod: 0,
+            rateOnlineSell: 0,
+        },
+        google: {
+            cpm: 0,
+            cpc: 0,
+            rateLeads: 0,
+            rateAppDownlaod: 0,
+            rateOnlineSell: 0, 
+        }
+    },
+    republicaDominicana: {
+        facebook: {
+            cpm: 0,
+            cpc: 0,
+            rateLeads: 0,
+            rateAppDownlaod: 0,
+            rateOnlineSell: 0,
+        },
+        google: {
+            cpm: 0,
+            cpc: 0,
+            rateLeads: 0,
+            rateAppDownlaod: 0,
+            rateOnlineSell: 0, 
+        }
+    },
+    bangladesh: {
+        facebook: {
+            cpm: 0,
+            cpc: 0,
+            rateLeads: 0,
+            rateAppDownlaod: 0,
+            rateOnlineSell: 0,
+        },
+        google: {
+            cpm: 0,
+            cpc: 0,
+            rateLeads: 0,
+            rateAppDownlaod: 0,
+            rateOnlineSell: 0, 
+        }
+    },
+    ucrania: {
+        facebook: {
+            cpm: 0,
+            cpc: 0,
+            rateLeads: 0,
+            rateAppDownlaod: 0,
+            rateOnlineSell: 0,
+        },
+        google: {
+            cpm: 0,
+            cpc: 0,
+            rateLeads: 0,
+            rateAppDownlaod: 0,
+            rateOnlineSell: 0, 
+        }
     }
 }
 /*--Así se accedería a cada valor de dicho objeto---*/
@@ -254,26 +416,26 @@ console.log(countries.espana.facebook.cpc)
 
 /*---Datos de los servicios brindados, organizado para programación orientada a objetos---*/
 const services = {
+    redesSociales: {
+        price: 500,
+    },
     seo: {
         price: 1000
+    },
+    conversionWeb: {
+        price: 1500,
     },
     wordpress: {
         price: 2000
     },
-    tiendaNube: {
+    ecommerceWeb: {
+        price: 2500
+    },
+    landingPage: {
         price: 3000
     },
-    woocommerce: {
-        price: 4000
-    },
-    redesSociales: {
-        price: 5000
-    },
     logoMarca: {
-        price: 6000
-    },
-    mantenimientoWeb: {
-        price: 7000
+        price: 3500
     }
 }
 
@@ -292,7 +454,7 @@ countrySupplier.addEventListener('change', function() {
 
 /*---Se capturan los checkboxes en conjunto, de los servicios requeridos---*/
 var checkboxesServices = qsa('input[class=services-check]');
-var checkboxesServicesValidate = [false, false, false, false, false, false, false, false, false];
+var checkboxesServicesValidate = [false, false, false, false, false, false, false, false, false, false, false];
 
 checkboxesServices.forEach((checkboxService, i) => {
     checkboxService.addEventListener('change', function() {
@@ -303,8 +465,6 @@ checkboxesServices.forEach((checkboxService, i) => {
         }
     });
 })
-
-
 
 /*---Se captura la cantidad de mails seleccionados para Marketing digital , y se actualiza el resultado---*/
 var emailAmmount = qs('#email-ammount');
@@ -332,20 +492,6 @@ countriesAnnounce.forEach((countryAnnounce, i) => {
 })
 
 
-/*---Se capturan los inputs radio que determinan el tipo de objetivo en la campaña de marketing---*/
-var objectives = qsa('input[name="objetivo"]');
-/*--Se guarda en una variable el objetivo seleccionado--*/
-var objectiveSelected = null;
-/*-Se recorren para detectar cuando alguno de los 3 es tildado-*/
-objectives.forEach(objective => {
-    objective.addEventListener('change', function() {
-        if (this.checked) {
-            completeForm[3] = true;
-            objectiveSelected = this.id;
-        }
-    });
-})
-
 /*---Se captura el bloque que muestra los resultados, y se muestra solamente al seleccionar todas las opciones requeridas---*/
 var resultsContainer = qs('#results-container');
 
@@ -369,7 +515,7 @@ window.addEventListener('change', function() {
     }
 
     /*---Se muestran los resultados particulares de google/facebook ads solamente si esta opcion fue seleccionada---*/
-    if (googleFacebookAds.checked && !completeForm.includes(false)) {
+    if ((googleSearchAds.checked || googleDisplayAds.checked || facebookAds.checked) && !completeForm.includes(false)) {
         googleFacebookAdsResultContainer.style.display = 'block';
     } else {
         googleFacebookAdsResultContainer.style.display = 'none';
@@ -385,17 +531,16 @@ window.addEventListener('change', function() {
     }
     /*---Se muestra u oculta "fee de servicio mensual" en caso que se haya seleccionado o no alguno---*/
     var totalServiceFee = 0;
-    if ((seo.checked || wordpress.checked || tiendaNube.checked || woocommerce.checked || redesSociales.checked || logoMarca.checked || mantenimientoWeb.checked) && !completeForm.includes(false)) {
+    if ((redesSociales.checked || seo.checked || conversionWeb.checked || wordpress.checked || ecommerceWeb.checked || landingPage.checked || logoMarca.checked) && !completeForm.includes(false)) {
         serviceResultContainer.style.display = 'block';
         /*---Chequea que servicios estan tildados y los suma al total---*/
-        if (seo.checked) { totalServiceFee += services.seo.price; }
-        if (wordpress.checked) { totalServiceFee += services.wordpress.price; }
-        if (tiendaNube.checked) { totalServiceFee += services.tiendaNube.price; }
-        if (woocommerce.checked) { totalServiceFee += services.woocommerce.price; }
-        if (tiendaNube.checked) { totalServiceFee += services.tiendaNube.price; }
         if (redesSociales.checked) { totalServiceFee += services.redesSociales.price; }
+        if (seo.checked) { totalServiceFee += services.seo.price; }
+        if (conversionWeb.checked) { totalServiceFee += services.conversionWeb.price; }
+        if (wordpress.checked) { totalServiceFee += services.wordpress.price; }
+        if (ecommerceWeb.checked) { totalServiceFee += services.ecommerceWeb.price; }
+        if (landingPage.checked) { totalServiceFee += services.landingPage.price; }
         if (logoMarca.checked) { totalServiceFee += services.logoMarca.price; }
-        if (mantenimientoWeb.checked) { totalServiceFee += services.mantenimientoWeb.price; }
 
         resultServiceFee.innerHTML = `USD ${totalServiceFee}`;
 
@@ -405,7 +550,6 @@ window.addEventListener('change', function() {
 
     // resultMonthlyTotal.innerHTML = "el total mensual sería -> fee de gestión + estimación de inversión mensual en facebook ads y google ads";
 
-    console.log(objectiveSelected)
     console.log(completeForm)
 });
 

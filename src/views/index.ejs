@@ -16,58 +16,81 @@
       <div class="country-supplier-container">    
         <select name="country-supplier" id="country-supplier">
           <option value="argentina">Argentina</option>
-          <option value="chile">Chile</option>
-          <option value="paraguay">Paraguay</option>
-          <option value="uruguay">Uruguay</option>
-          <option value="brasil">Brasil</option>
+          <option value="australia">Australia</option>
+          <option value="bangladesh">Bangladesh</option>
           <option value="bolivia">Bolivia</option>
-          <option value="peru">Perú</option>
-          <option value="ecuador">Ecuador</option>
+          <option value="brasil">Brasil</option>
+          <option value="chile">Chile</option>
           <option value="colombia">Colombia</option>
           <option value="costaRica">Costa Rica</option>
-          <option value="mexico">México</option>
-          <option value="eeuu">Estados Unidos</option>
+          <option value="ecuador">Ecuador</option>
           <option value="espana">España</option>
+          <option value="eeuu">Estados Unidos</option>
+          <option value="filipinas">Filipinas</option>
+          <option value="india">India</option>
+          <option value="inglaterra">Inglaterra</option>
+          <option value="mexico">México</option>
+          <option value="paraguay">Paraguay</option>
+          <option value="peru">Perú</option>
+          <option value="republicaCheca">República Checa</option>
+          <option value="republicaDominicana">República Dominicana</option>
+          <option value="sudafrica">Sudafrica</option>
+          <option value="ucrania">Ucrania</option>
+          <option value="uruguay">Uruguay</option>                    
+          <option value="venezuela">Venezuela</option>
         </select>
       </div>
       <h3>Elegí los servicios requeridos:</h3>
       <div class="services-container">
         <div>
-          <input type="checkbox" name="google-facebook-ads" id="google-facebook-ads" class="services-check">
-          <label for="google-facebook-ads">Gestión de campañas pagas en Google Ads y Facebook Ads</label>
+          <input type="checkbox" name="google-search-ads" id="google-search-ads" class="services-check">
+          <label for="google-facebook-ads">Google Ads Search <small>(Anuncios en búsquedas de Google)</small></label>
         </div>
         <div>
-          <input type="checkbox" name="seo" id="seo" class="services-check">
-          <label for="seo">SEO (Posicionamiento orgánico en Google)</label>
+          <input type="checkbox" name="google-display-ads" id="google-display-ads" class="services-check">
+          <label for="google-facebook-ads">Google Ads Display <small>(Anuncios en sitios web)</small></label>
         </div>
         <div>
-          <input type="checkbox" name="wordpress" id="wordpress" class="services-check">
-          <label for="wordpress">Sitio Web Standard de Wordpress en base a una plantilla</label>
+          <input type="checkbox" name="facebook-ads" id="facebook-ads" class="services-check">
+          <label for="google-facebook-ads">Facebook Ads <small>(Anuncios en Facebook e Instagram)</small></label>
         </div>
-        <div>
-          <input type="checkbox" name="tienda-nube" id="tiendaNube" class="services-check">
-          <label for="tienda-nube">Sitio Web de Ecommerce con Tienda Nube</label>
-        </div>
-        <div>
-          <input type="checkbox" name="woocommerce" id="woocommerce" class="services-check">
-          <label for="woocommerce">Sitio Web de Ecommerce con plantilla de Wordpress y Woocommerce</label>
-        </div>
+
         <div>
           <input type="checkbox" name="redes-sociales" id="redesSociales" class="services-check">
-          <label for="redes-sociales">Gestión Completa de Redes Sociales <small>(Creación de 20 piezas gráficas por mes, planificación de calendario, redacción de textos y publicar contenido)</small></label>
+          <label for="redes-sociales">Manejo de Redes Sociales</label>
+        </div>
+
+        <div>
+          <input type="checkbox" name="seo" id="seo" class="services-check">
+          <label for="seo">SEO <small>(Posicionamiento orgánico en Google)</small></label>
+        </div>
+        <div>
+          <input type="checkbox" name="conversionWeb" id="conversionWeb" class="services-check">
+          <label for="conversionWeb">Optimización de tasa de conversión web</label>
+        </div>
+        
+        <div>
+          <input type="checkbox" name="wordpress" id="wordpress" class="services-check">
+          <label for="wordpress">Diseño de sitio web standard con 5 secciones en Wordpress.</label>
+        </div>
+        <div>
+          <input type="checkbox" name="ecommerce-web" id="ecommerceWeb" class="services-check">
+          <label for="ecommerce-web">Diseño de sitio web de E-commerce <small>(Carga de 50 productos)</small></label>
+        </div>
+        <div>
+          <input type="checkbox" name="landing-page" id="landingPage" class="services-check">
+          <label for="landing-page">Diseño de Landing page</label>
+        </div>
+
+        <div>
+          <input type="checkbox" name="logo-marca" id="logoMarca" class="services-check">
+          <label for="logo-marca">Diseño de Logo y Manual de Marca</label>
         </div>
         <div>
           <input type="checkbox" name="email" id="email" class="services-check">
-          <label for="email">Email Marketing <small>(8 Envíos por mes con Plantillas HTML; prediseñadas)</small></label>
+          <label for="email">Email Marketing</label>
         </div>
-        <div>
-          <input type="checkbox" name="logo-marca" id="logoMarca" class="services-check">
-          <label for="logo-marca">Diseño de Logo + Manual de Marca <small>(Tipografía, Paleta de colores y Concepto de Marca)</small></label>
-        </div>
-        <div>
-          <input type="checkbox" name="mantenimiento" id="mantenimientoWeb" class="services-check">
-          <label for="mantenimiento">Mantenimiento Web</label>
-        </div>
+        
       </div>
       <div class="email-ammount-container" id="email-ammount-container" style="display: none;">
         <label for="email-ammount">Selecciona el número de contactos que querés usar para tus campañas de Email Marketing para estimar el costo mensual de la plataforma de envíos:</label>
@@ -152,16 +175,6 @@
           <input type="checkbox" name="country-announce" id="country-announce-espana" class="country-announce">
           <label for="country-announce">España</label> 
         </div>
-      </div>
-
-      <h3>¿Cuál es el objetivo de tu campaña?</h3>
-      <div>
-        <input type="radio" name="objetivo" id="leads">
-        <label for="objetivo">Leads</label>
-        <input type="radio" name="objetivo" id="descargas">
-        <label for="objetivo">Descargas</label>
-        <input type="radio" name="objetivo" id="ventas">
-        <label for="objetivo">Ventas</label>
       </div>
 
     </form>
