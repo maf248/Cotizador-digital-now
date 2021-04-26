@@ -52,12 +52,93 @@ var resultAgencyOnceFee = qs('#agency-once-fee');
 const countries = {
     argentina: {
         facebookAds: {
-            cpm: 1.08,
-            cpc: 0.04
+            cpm: 0,
+            cpc: 0
         },
         googleSearchAds: {
+            cpa: {
+                autos: 4.351915008, 
+                negocioANegocio: 15.07720435,
+                serviciosAlConsumidor: 11.77561728, 
+                citas: 9.965781504,
+                eCommerce: 5.877422208,
+                educacion: 9.43867008,
+                serviciosDeEmpleos: 6.237052416,
+                finanzasYSeguros: 10.63700467,
+                salud: 10.13845594,
+                articulosParaElHogar: 11.31212275,
+                serviciosIndustriales: 10.29295411,
+                serviciosLegales: 11.16801101,
+                realEstate: 15.13952294,
+                tecnologia: 17.33495501,
+                viajes: 5.807313792
+            },
+            cpc: {
+                autos: 0.305496576, 
+                negocioANegocio: 0.413538048,
+                serviciosAlConsumidor: 0.79478784, 
+                citas: 0.345235968,
+                eCommerce: 0.144055296,
+                educacion: 0.29804544,
+                serviciosDeEmpleos: 0.253338624,
+                finanzasYSeguros: 0.427198464,
+                salud: 0.325366272,
+                articulosParaElHogar: 0.365105664,
+                serviciosIndustriales: 0.317915136,
+                serviciosLegales: 0.8382528,
+                realEstate: 0.294319872,
+                tecnologia: 0.47190528,
+                viajes: 0.190003968
+            }
+        },
+        googleDisplayAds: {
+            cpa: {
+                autos: 1.659974808, 
+                negocioANegocio: 9.13406746,
+                serviciosAlConsumidor: 4.239665387,
+                citas: 4.222140315,
+                eCommerce: 4.612598917,
+                educacion: 10.04957721,
+                serviciosDeEmpleos: 4.168864097,
+                finanzasYSeguros: 3.978892318,
+                salud: 5.087878866,
+                articulosParaElHogar: 8.143550397,
+                serviciosIndustriales: 3.615772829,
+                serviciosLegales: 2.770363362,
+                realEstate: 5.242800501,
+                tecnologia: 7.262389784,
+                viajes: 6.939928461
+            },
+            cpc: {
+                autos: 0.075301632, 
+                negocioANegocio: 0.102566016,
+                serviciosAlConsumidor: 0.105162624,
+                citas: 0.193447296,
+                eCommerce: 0.05842368,
+                educacion: 0.061020288,
+                serviciosDeEmpleos: 0.101267712,
+                finanzasYSeguros: 0.111654144,
+                salud: 0.081793152,
+                articulosParaElHogar: 0.07789824,
+                serviciosIndustriales: 0.070108416,
+                serviciosLegales: 0.093477888,
+                realEstate: 0.0973728,
+                tecnologia: 0.066213504,
+                viajes: 0.057125376
+            }
+        },
+    australia: {
+        facebookAds: {
             cpm: 0,
-            cpc: 0 
+            cpc: 0
+        },
+        googleSearchAds: {
+            cpa: {
+
+            },
+            cpc: {
+
+            }
         },
         googleDisplayAds: {
             cpa: {
@@ -68,229 +149,471 @@ const countries = {
             }
         }
     },
-    australia: {
-        facebook: {
+    chile: {
+        facebookAds: {
             cpm: 0,
             cpc: 0
         },
-        google: {
-            cpm: 0,
-            cpc: 0 
-        }
-    },
-    chile: {
-        facebook: {
-            cpm: 0.9,
-            cpc: 0.05
+        googleSearchAds: {
+            cpa: {
+
+            },
+            cpc: {
+
+            }
         },
-        google: {
-            cpm: 0,
-            cpc: 0 
+        googleDisplayAds: {
+            cpa: {
+
+            },
+            cpc: {
+
+            }
         }
     },
     paraguay: {
-        facebook: {
-            cpm: 0.68,
-            cpc: 0.02
-        },
-        google: {
+        facebookAds: {
             cpm: 0,
-            cpc: 0 
+            cpc: 0
+        },
+        googleSearchAds: {
+            cpa: {
+
+            },
+            cpc: {
+
+            }
+        },
+        googleDisplayAds: {
+            cpa: {
+
+            },
+            cpc: {
+
+            }
         }
     },
     uruguay: {
-        facebook: {
-            cpm: 0.68,
-            cpc: 0.02
-        },
-        google: {
+        facebookAds: {
             cpm: 0,
-            cpc: 0 
+            cpc: 0
+        },
+        googleSearchAds: {
+            cpa: {
+
+            },
+            cpc: {
+
+            }
+        },
+        googleDisplayAds: {
+            cpa: {
+
+            },
+            cpc: {
+
+            }
         }
     },
     brasil: {
-        facebook: {
-            cpm: 1.02,
-            cpc: 0.04
-        },
-        google: {
+        facebookAds: {
             cpm: 0,
-            cpc: 0 
+            cpc: 0
+        },
+        googleSearchAds: {
+            cpa: {
+
+            },
+            cpc: {
+
+            }
+        },
+        googleDisplayAds: {
+            cpa: {
+
+            },
+            cpc: {
+
+            }
         }
     },
     bolivia: {
-        facebook: {
-            cpm: 0.71,
-            cpc: 0.01
-        },
-        google: {
+        facebookAds: {
             cpm: 0,
-            cpc: 0 
+            cpc: 0
+        },
+        googleSearchAds: {
+            cpa: {
+
+            },
+            cpc: {
+
+            }
+        },
+        googleDisplayAds: {
+            cpa: {
+
+            },
+            cpc: {
+
+            }
         }
     },
     peru: {
-        facebook: {
-            cpm: 0.85,
-            cpc: 0.02
-        },
-        google: {
+        facebookAds: {
             cpm: 0,
-            cpc: 0 
+            cpc: 0
+        },
+        googleSearchAds: {
+            cpa: {
+
+            },
+            cpc: {
+
+            }
+        },
+        googleDisplayAds: {
+            cpa: {
+
+            },
+            cpc: {
+
+            }
         }
     },
     ecuador: {
-        facebook: {
-            cpm: 0.55,
-            cpc: 0.02
-        },
-        google: {
+        facebookAds: {
             cpm: 0,
-            cpc: 0 
+            cpc: 0
+        },
+        googleSearchAds: {
+            cpa: {
+
+            },
+            cpc: {
+
+            }
+        },
+        googleDisplayAds: {
+            cpa: {
+
+            },
+            cpc: {
+
+            }
         }
     },
     colombia: {
-        facebook: {
-            cpm: 0.42,
-            cpc: 0.02
-        },
-        google: {
+        facebookAds: {
             cpm: 0,
-            cpc: 0 
+            cpc: 0
+        },
+        googleSearchAds: {
+            cpa: {
+
+            },
+            cpc: {
+
+            }
+        },
+        googleDisplayAds: {
+            cpa: {
+
+            },
+            cpc: {
+
+            }
         }
     },
     costaRica: {
-        facebook: {
-            cpm: 1.20,
-            cpc: 0.08
-        },
-        google: {
+        facebookAds: {
             cpm: 0,
-            cpc: 0 
+            cpc: 0
+        },
+        googleSearchAds: {
+            cpa: {
+
+            },
+            cpc: {
+
+            }
+        },
+        googleDisplayAds: {
+            cpa: {
+
+            },
+            cpc: {
+
+            }
         }
     },
     mexico: {
-        facebook: {
-            cpm: 0.76,
-            cpc: 0.03
-        },
-        google: {
+        facebookAds: {
             cpm: 0,
-            cpc: 0 
+            cpc: 0
+        },
+        googleSearchAds: {
+            cpa: {
+
+            },
+            cpc: {
+
+            }
+        },
+        googleDisplayAds: {
+            cpa: {
+
+            },
+            cpc: {
+
+            }
         }
     },
     eeuu: {
-        facebook: {
-            cpm: 2.29,
-            cpc: 0.13
-        },
-        google: {
+        facebookAds: {
             cpm: 0,
-            cpc: 0 
+            cpc: 0
+        },
+        googleSearchAds: {
+            cpa: {
+
+            },
+            cpc: {
+
+            }
+        },
+        googleDisplayAds: {
+            cpa: {
+
+            },
+            cpc: {
+
+            }
         }
     },
     espana: {
-        facebook: {
-            cpm: 2.42,
-            cpc: 0.09
-        },
-        google: {
+        facebookAds: {
             cpm: 0,
-            cpc: 0 
+            cpc: 0
+        },
+        googleSearchAds: {
+            cpa: {
+
+            },
+            cpc: {
+
+            }
+        },
+        googleDisplayAds: {
+            cpa: {
+
+            },
+            cpc: {
+
+            }
         }
     },
     inglaterra: {
-        facebook: {
-            cpm: 2.42,
-            cpc: 0.09
-        },
-        google: {
+        facebookAds: {
             cpm: 0,
-            cpc: 0 
+            cpc: 0
+        },
+        googleSearchAds: {
+            cpa: {
+
+            },
+            cpc: {
+
+            }
+        },
+        googleDisplayAds: {
+            cpa: {
+
+            },
+            cpc: {
+
+            }
         }
     },
     republicaCheca: {
-        facebook: {
+        facebookAds: {
             cpm: 0,
             cpc: 0
         },
-        google: {
-            cpm: 0,
-            cpc: 0 
+        googleSearchAds: {
+            cpa: {
+
+            },
+            cpc: {
+
+            }
+        },
+        googleDisplayAds: {
+            cpa: {
+
+            },
+            cpc: {
+
+            }
         }
     },
     sudafrica: {
-        facebook: {
+        facebookAds: {
             cpm: 0,
             cpc: 0
         },
-        google: {
-            cpm: 0,
-            cpc: 0 
+        googleSearchAds: {
+            cpa: {
+
+            },
+            cpc: {
+
+            }
+        },
+        googleDisplayAds: {
+            cpa: {
+
+            },
+            cpc: {
+
+            }
         }
     },
     india: {
-        facebook: {
+        facebookAds: {
             cpm: 0,
             cpc: 0
         },
-        google: {
-            cpm: 0,
-            cpc: 0 
+        googleSearchAds: {
+            cpa: {
+
+            },
+            cpc: {
+
+            }
+        },
+        googleDisplayAds: {
+            cpa: {
+
+            },
+            cpc: {
+
+            }
         }
     },
     filipinas: {
-        facebook: {
+        facebookAds: {
             cpm: 0,
             cpc: 0
         },
-        google: {
-            cpm: 0,
-            cpc: 0 
+        googleSearchAds: {
+            cpa: {
+
+            },
+            cpc: {
+
+            }
+        },
+        googleDisplayAds: {
+            cpa: {
+
+            },
+            cpc: {
+
+            }
         }
     },
     venezuela: {
-        facebook: {
+        facebookAds: {
             cpm: 0,
             cpc: 0
         },
-        google: {
-            cpm: 0,
-            cpc: 0 
+        googleSearchAds: {
+            cpa: {
+
+            },
+            cpc: {
+
+            }
+        },
+        googleDisplayAds: {
+            cpa: {
+
+            },
+            cpc: {
+
+            }
         }
     },
     republicaDominicana: {
-        facebook: {
+        facebookAds: {
             cpm: 0,
             cpc: 0
         },
-        google: {
-            cpm: 0,
-            cpc: 0 
+        googleSearchAds: {
+            cpa: {
+
+            },
+            cpc: {
+
+            }
+        },
+        googleDisplayAds: {
+            cpa: {
+
+            },
+            cpc: {
+
+            }
         }
     },
     bangladesh: {
-        facebook: {
+        facebookAds: {
             cpm: 0,
             cpc: 0
         },
-        google: {
-            cpm: 0,
-            cpc: 0 
+        googleSearchAds: {
+            cpa: {
+
+            },
+            cpc: {
+
+            }
+        },
+        googleDisplayAds: {
+            cpa: {
+
+            },
+            cpc: {
+
+            }
         }
     },
-    ucrania: {
-        facebook: {
+    ucrania:{
+        facebookAds: {
             cpm: 0,
             cpc: 0
         },
-        google: {
-            cpm: 0,
-            cpc: 0 
+        googleSearchAds: {
+            cpa: {
+
+            },
+            cpc: {
+
+            }
+        },
+        googleDisplayAds: {
+            cpa: {
+
+            },
+            cpc: {
+
+            }
         }
     }
 }
 /*--Así se accedería a cada valor de dicho objeto---*/
-console.log(countries.espana.facebook.cpc)
+console.log(countries.argentina.googleSearchAds.cpa.eCommerce)
 
 /*---Datos de los servicios brindados, organizado para programación orientada a objetos---*/
 const services = {
