@@ -19,6 +19,10 @@ var email = qs('#email');
 
 /*---Se capturan los CONTENEDORES de los distintos resultados---*/
 var googleFacebookAdsResultContainer = qs('#result-googleads-facebookads-container');
+var googleSearchAdsResultContainer = qs('#result-google-search-ads-container');
+var googleDisplayAdsResultContainer = qs('#result-google-display-ads-container');
+var facebookAdsResultContainer = qs('#result-facebook-ads-container');
+
 var emailResultContainer = qs('#result-email-container');
 var serviceResultContainer = qs('#result-service-fee-container');
 var serviceOnceFeeContainer = qs('#result-once-fee-container');
@@ -32,6 +36,10 @@ var emailAmmountContainer = qs('#email-ammount-container');
 
 /*---Se capturan los bloques que muestran los RESULTADOS, para inyectar los valores luego de calcular---*/
 var resultGoogleFacebookAds = qs('#result-googleads-facebookads');
+var resultGoogleSearch = qs('#result-google-search');
+var resultGoogleDisplay = qs('#result-google-display');
+var resultFacebookAds = qs('#result-facebook-ads');
+
 var resultEmail = qs('#result-email');
 var resultServiceFee = qs('#result-service-fee');
 var resultServiceOnceFee = qs('#result-once-fee');
@@ -517,6 +525,21 @@ window.addEventListener('change', function() {
     /*---Se muestran los resultados particulares de google/facebook ads solamente si esta opcion fue seleccionada---*/
     if ((googleSearchAds.checked || googleDisplayAds.checked || facebookAds.checked) && !completeForm.includes(false)) {
         googleFacebookAdsResultContainer.style.display = 'block';
+        if (googleSearchAds.checked) {
+            googleSearchAdsResultContainer.style.display = 'block';
+        } else {
+            googleSearchAdsResultContainer.style.display = 'none';
+        }
+        if (googleDisplayAds.checked) {
+            googleDisplayAdsResultContainer.style.display = 'block';
+        } else {
+            googleDisplayAdsResultContainer.style.display = 'none';
+        }
+        if (facebookAds.checked) {
+            facebookAdsResultContainer.style.display = 'block';
+        } else {
+            facebookAdsResultContainer.style.display = 'none';
+        }
     } else {
         googleFacebookAdsResultContainer.style.display = 'none';
     }
