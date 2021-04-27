@@ -37,13 +37,15 @@ p {
   margin-right: auto;
   margin-left: auto;
 }
+.country-announce-container i {
+  cursor: pointer;
+}
 .country-announce-selector {
   text-align: center;
 }
 
 .selected-country-announce {
-  width: 50%;
+  text-align: center;
   margin-top: 10px;
-  margin-left: auto;
-  margin-right: auto
+  
 }

@@ -705,21 +705,40 @@ countryAnnounce.addEventListener('change', function() {
 /*---Se capturan los botones y lista para agregar países de anuncios dinamicamente---*/
 var buttonAddCountryAnnounce = qs('#add-country-announce');
 var listSelectedCountriesAnnounce = qs('#selected-country-announce');
-var jsSeletectCountriesAnnounce = [];
+/*--Array con nombre de paises formateados para mostrar en la lista---*/
+var selectedCountriesAnnounceDisplay = [];
+/*--Array con nombre de paises camelCase para luego operar durante los calculos---*/
+var selectedCountriesAnnounceOperate = [];
+
+/*---Funcion encargada de eliminar paises de la lista paises para anunciar, luego actualiza la lista---*/
+function deleteCountry (countryPosition) {
+
+    selectedCountriesAnnounceDisplay.splice(countryPosition, 1);
+    selectedCountriesAnnounceOperate.splice(countryPosition, 1);
+
+    listSelectedCountriesAnnounce.innerHTML = '';
+        for (let i=0; i < selectedCountriesAnnounceDisplay.length; i++) {
+            listSelectedCountriesAnnounce.innerHTML += `<li>${selectedCountriesAnnounceDisplay[i]}  <i class="fas fa-trash-alt" onClick="deleteCountry(${i}); return false;"></i></li>`;
+        }
+    console.log(selectedCountriesAnnounceDisplay)
+    console.log(selectedCountriesAnnounceOperate)
+}
 
 buttonAddCountryAnnounce.addEventListener('click', function(event) {
     event.preventDefault();
     var countrySelected = countryAnnounce.options[countryAnnounce.selectedIndex].text;
     
-    if (!jsSeletectCountriesAnnounce.includes(countrySelected)) {
-        jsSeletectCountriesAnnounce.push(countrySelected)
+    if (!selectedCountriesAnnounceDisplay.includes(countrySelected)) {
+        selectedCountriesAnnounceDisplay.push(countrySelected);
+        selectedCountriesAnnounceOperate.push(countryAnnounce.value);
+
         listSelectedCountriesAnnounce.innerHTML = '';
-        for (let i=0; i < jsSeletectCountriesAnnounce.length; i++) {
-            listSelectedCountriesAnnounce.innerHTML += `<li>${jsSeletectCountriesAnnounce[i]}</li>`;
+        for (let i=0; i < selectedCountriesAnnounceDisplay.length; i++) {
+            listSelectedCountriesAnnounce.innerHTML += `<li>${selectedCountriesAnnounceDisplay[i]}  <i class="fas fa-trash-alt" onClick="deleteCountry(${i}); return false;"></i></li>`;
         }
         
     }
-    console.log(jsSeletectCountriesAnnounce)
+    console.log(selectedCountriesAnnounceDisplay)
 });
 
 
