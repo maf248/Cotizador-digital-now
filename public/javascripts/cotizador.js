@@ -614,7 +614,7 @@ const countries = {
     }
 }
 /*--Así se accedería a cada valor de dicho objeto---*/
-// console.log(countries.argentina.googleSearchAds.cpa.eCommerce);
+console.log(countries.argentina.googleSearchAds.cpa.eCommerce);
 
 /*---Datos de los servicios brindados, organizado para programación orientada a objetos---*/
 const services = {
@@ -689,20 +689,31 @@ industryAdsSelector.addEventListener('change', function() {
 
 
 /*---Se capturan los checkboxes de los paises para anunciarse---*/
-var countriesAnnounce = qsa('input[class=country-announce]');
-var checkboxesCountriesValidate = [false, false, false, false, false, false, false, false, false];
+var countryAnnounce = qs('#country-announce');
+    if (countryAnnounce.value != '') {
+        completeForm[2] = true;
+    }
 
-countriesAnnounce.forEach((countryAnnounce, i) => {
-    countryAnnounce.addEventListener('change', function() {
-        if (this.checked) {
-            // console.log(countries[this.id.slice(17)]);
-            
-            checkboxesCountriesValidate[i] = true;
-        } else {
-            checkboxesCountriesValidate[i] = false;
-        }
-    });
-})
+countryAnnounce.addEventListener('change', function() {
+    if (countryAnnounce.value != '') {
+        completeForm[2] = true;
+    } else {
+        completeForm[2] = false;
+    }
+});
+
+/*---Se capturan los botones y lista para agregar países de anuncios dinamicamente---*/
+var buttonAddCountryAnnounce = qs('#add-country-announce');
+var listSelectedCountriesAnnounce = qs('#selected-country-announce');
+var jsSeletectCountriesAnnounce = [];
+
+buttonAddCountryAnnounce.addEventListener('click', function(event) {
+    event.preventDefault();
+    if (!jsSeletectCountriesAnnounce.includes(countryAnnounce.value)) {
+        jsSeletectCountriesAnnounce.push(countryAnnounce.value)
+    }
+    console.log(jsSeletectCountriesAnnounce)
+});
 
 
 /*---Se captura el bloque que muestra los resultados, y se muestra solamente al seleccionar todas las opciones requeridas---*/
@@ -715,11 +726,7 @@ window.addEventListener('change', function() {
     } else {
         completeForm[1] = false;
     }
-    if (checkboxesCountriesValidate.includes(true)) {
-        completeForm[2] = true;
-    } else {
-        completeForm[2] = false;
-    }
+    
     /*---Se valida que esten todas las etapas seleccionadas, para mostrar los resultados u ocultarlos---*/
     if (!completeForm.includes(false)) {
         resultsContainer.style.display = 'block';

@@ -147,57 +147,36 @@
       
       <h3>¿En qué país querés que aparezcan tus anuncios?</h3>
       <div class="country-announce-container">
-        <div>
-          <input type="checkbox" name="country-announce" id="country-announce-argentina" class="country-announce">
-          <label for="country-announce">Argentina</label> 
-        </div>
-        <div>
-          <input type="checkbox" name="country-announce" id="country-announce-chile" class="country-announce">
-          <label for="country-announce">Chile</label> 
-        </div>
-        <div>
-          <input type="checkbox" name="country-announce" id="country-announce-paraguay" class="country-announce">
-          <label for="country-announce">Paraguay</label> 
-        </div>
-        <div>
-          <input type="checkbox" name="country-announce" id="country-announce-uruguay" class="country-announce">
-          <label for="country-announce">Uruguay</label> 
-        </div>
-        <div>
-          <input type="checkbox" name="country-announce" id="country-announce-brasil" class="country-announce">
-          <label for="country-announce">Brasil</label> 
-        </div>
-        <div>
-          <input type="checkbox" name="country-announce" id="country-announce-bolivia" class="country-announce">
-          <label for="country-announce">Bolivia</label> 
-        </div>
-        <div>
-          <input type="checkbox" name="country-announce" id="country-announce-peru" class="country-announce">
-          <label for="country-announce">Perú</label> 
-        </div>
-        <div>
-          <input type="checkbox" name="country-announce" id="country-announce-ecuador" class="country-announce">
-          <label for="country-announce">Ecuador</label> 
-        </div>
-        <div>
-          <input type="checkbox" name="country-announce" id="country-announce-colombia" class="country-announce">
-          <label for="country-announce">Colombia</label> 
-        </div>
-        <div>
-          <input type="checkbox" name="country-announce" id="country-announce-costaRica" class="country-announce">
-          <label for="country-announce">Costa Rica</label> 
-        </div>
-        <div>
-          <input type="checkbox" name="country-announce" id="country-announce-mexico" class="country-announce">
-          <label for="country-announce">México</label> 
-        </div>
-        <div>
-          <input type="checkbox" name="country-announce" id="country-announce-eeuu" class="country-announce">
-          <label for="country-announce">Estados Unidos</label> 
-        </div>
-        <div>
-          <input type="checkbox" name="country-announce" id="country-announce-espana" class="country-announce">
-          <label for="country-announce">España</label> 
+        <select name="country-announce" id="country-announce">
+          <option value="argentina">Argentina</option>
+          <option value="australia">Australia</option>
+          <option value="bangladesh">Bangladesh</option>
+          <option value="bolivia">Bolivia</option>
+          <option value="brasil">Brasil</option>
+          <option value="chile">Chile</option>
+          <option value="colombia">Colombia</option>
+          <option value="costaRica">Costa Rica</option>
+          <option value="ecuador">Ecuador</option>
+          <option value="espana">España</option>
+          <option value="eeuu">Estados Unidos</option>
+          <option value="filipinas">Filipinas</option>
+          <option value="india">India</option>
+          <option value="inglaterra">Inglaterra</option>
+          <option value="mexico">México</option>
+          <option value="paraguay">Paraguay</option>
+          <option value="peru">Perú</option>
+          <option value="republicaCheca">República Checa</option>
+          <option value="republicaDominicana">República Dominicana</option>
+          <option value="sudafrica">Sudafrica</option>
+          <option value="ucrania">Ucrania</option>
+          <option value="uruguay">Uruguay</option>                    
+          <option value="venezuela">Venezuela</option>
+        </select>
+        <form>
+          <button id="add-country-announce">+</button>
+        </form>
+        <div id="selected-country-announce">
+
         </div>
       </div>
 
