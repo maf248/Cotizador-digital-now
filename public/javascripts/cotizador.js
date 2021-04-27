@@ -709,8 +709,15 @@ var jsSeletectCountriesAnnounce = [];
 
 buttonAddCountryAnnounce.addEventListener('click', function(event) {
     event.preventDefault();
-    if (!jsSeletectCountriesAnnounce.includes(countryAnnounce.value)) {
-        jsSeletectCountriesAnnounce.push(countryAnnounce.value)
+    var countrySelected = countryAnnounce.options[countryAnnounce.selectedIndex].text;
+    
+    if (!jsSeletectCountriesAnnounce.includes(countrySelected)) {
+        jsSeletectCountriesAnnounce.push(countrySelected)
+        listSelectedCountriesAnnounce.innerHTML = '';
+        for (let i=0; i < jsSeletectCountriesAnnounce.length; i++) {
+            listSelectedCountriesAnnounce.innerHTML += `<li>${jsSeletectCountriesAnnounce[i]}</li>`;
+        }
+        
     }
     console.log(jsSeletectCountriesAnnounce)
 });
