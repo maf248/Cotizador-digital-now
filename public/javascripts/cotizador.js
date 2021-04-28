@@ -438,8 +438,9 @@ var resultTotalMonth = qs('#result-total-month');
 var resultEstimated = qs('#result-estimated');
 var resultAgencyOnceFee = qs('#result-agency-once-fee');
 
-/*---Se captura el bloque que pide cantidad de contactos EMAIL y el contenedor de resultados mail---*/
+/*---Se captura el bloque que pide cantidad de contactos EMAIL y el menu desplegable con valores---*/
 var emailAmmountContainer = qs('#email-ammount-container');
+var emailAmmount = qs('#email-ammount');
 
 /*---Se capturan los bloques que muestran los RESULTADOS, para inyectar los valores luego de calcular---*/
 var resultGoogleFacebookAds = qs('#result-googleads-facebookads');
@@ -454,6 +455,7 @@ var resultMonthlyTotal = qs('#monthly-total');
 var resultEstimatedEarning = qs('#estimated-earning');
 var resultAgencyOnceFee = qs('#agency-once-fee');
 
+var errorMessages = qs('#error-messages');
 
 /*---Se captura el selector de país de los proveedores--*/
 var countrySupplier = qs('#country-supplier');
@@ -500,15 +502,6 @@ email.addEventListener('change', function() {
     } else {
         emailAmmountContainer.style.display = 'none';
     }
-});
-
-/*---Se captura la cantidad de mails seleccionados para Marketing digital , y se actualiza el resultado en caso de cambiar selección---*/
-var emailAmmount = qs('#email-ammount');
-
-emailAmmount.addEventListener('change', function() {
-
-    resultEmail.innerHTML = `USD ${emailAmmount.value}`
-
 });
 
 /*---Se captura la industria seleccionada para calcular google/facebook ads---*/
@@ -581,10 +574,20 @@ var resultsContainer = qs('#results-container');
 function calculate() {
     
     /*---Se valida que esten todas las etapas seleccionadas, para mostrar los resultados u ocultarlos---*/
-    if (!completeForm.includes(false)) {
-        resultsContainer.style.display = 'block';
-    } else {
+    if (completeForm.includes(false)) {
+
         resultsContainer.style.display = 'none';
+        if (completeForm[1] == false && completeForm[2] == false) {
+            errorMessages.innerHTML = 'Debés seleccionar mínimo un servicio y agregar un país a la lista';
+        } else if (completeForm[1] == false) {
+            errorMessages.innerHTML = 'Debés seleccionar mínimo un servicio';
+        } else if (completeForm[2] == false) {
+            errorMessages.innerHTML = 'Debés agregar mínimo un país a la lista';
+        }
+      
+    } else {
+        resultsContainer.style.display = 'block';
+        errorMessages.innerHTML = '';
     }
 
     /*---Se muestran los resultados particulares de google/facebook ads solamente si esta opcion fue seleccionada---*/
@@ -628,6 +631,8 @@ function calculate() {
 
     /*---Se muestran los resultados particulares de email marketing solamente si esta opcion fue seleccionada---*/
     if (email.checked && !completeForm.includes(false)) {
+        /*--Muestra el valor correspondiente a la cantidad de contactos seleccionados---*/
+        resultEmail.innerHTML = `USD ${emailAmmount.value}`;
         emailResultContainer.style.display = 'block';
         
     } else {
