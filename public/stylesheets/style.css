@@ -30,6 +30,7 @@ p {
 }
 
 .country-announce-container {
+  display: none;
   border: 1px solid black;
   padding: 10px;
   margin: 20px;

@@ -409,7 +409,8 @@ const qs = (text) => document.querySelector(text);
 const qsa = (text) => document.querySelectorAll(text);
 
 /*---Array de validación de las 3 etapas---*/
-var completeFormValidate = [false, false, false];
+var completeFormValidate = [false, false];
+var errorType = 0;
 
 /*---Se capturan los checkboxes individualmente, de los servicios requeridos---*/
 var googleSearchAds = qs('#google-search-ads');
@@ -426,6 +427,7 @@ var email = qs('#email');
 
 /*---Se capturan los CONTENEDORES de los distintos resultados---*/
 var googleFacebookAdsResultContainer = qs('#result-googleads-facebookads-container');
+
 var googleSearchAdsResultContainer = qs('#result-google-search-ads-container');
 var googleDisplayAdsResultContainer = qs('#result-google-display-ads-container');
 var facebookAdsResultContainer = qs('#result-facebook-ads-container');
@@ -437,6 +439,9 @@ var serviceOnceFeeContainer = qs('#result-once-fee-container');
 var resultTotalMonth = qs('#result-total-month');
 var resultEstimated = qs('#result-estimated');
 var resultAgencyOnceFee = qs('#result-agency-once-fee');
+
+/*---Se captura el bloque CONTENEDOR que pide los PAISES donde se desea ANUNCIAR---*/
+var countryAnnounceContainer = qs('#country-announce-container');
 
 /*---Se captura el bloque que pide cantidad de contactos EMAIL y el menu desplegable con valores---*/
 var emailAmmountContainer = qs('#email-ammount-container');
@@ -455,7 +460,9 @@ var resultMonthlyTotal = qs('#monthly-total');
 var resultEstimatedEarning = qs('#estimated-earning');
 var resultAgencyOnceFee = qs('#agency-once-fee');
 
+/*--Contenedor para los mensajes de error y validación--*/
 var errorMessages = qs('#error-messages');
+
 
 /*---Se captura el selector de país de los proveedores--*/
 var countrySupplier = qs('#country-supplier');
@@ -480,6 +487,10 @@ checkboxesServices.forEach((checkboxService, i) => {
     checkboxService.addEventListener('change', function() {
         if (this.checked) {
             checkboxesServicesValidate[i] = true;
+            /*-Desctiva el mensaje de error tipo 1 al tildar un servicio-*/
+            if (errorType == 1) {
+                errorMessages.innerHTML = '';
+            }
         } else {
             checkboxesServicesValidate[i] = false;
         }
@@ -491,21 +502,29 @@ checkboxesServices.forEach((checkboxService, i) => {
         /*--Muestra u oculta la seleccion del tipo de industria en caso de seleccionarse google / facebook ads (las primeras 3 opciones)---*/
         if (checkboxesServicesValidate.slice(0, 3).includes(true)) {
             industryAdsSelectorContainer.style.display = "block";
+            countryAnnounceContainer.style.display = "block";
             /*-Valida true / false el tipo de industria en caso de estar seleccionado o no-*/
             if (industryAdsSelector.value == '') {
                 completeFormValidate[3] = false;
             } else {
                 completeFormValidate[3] = true;
             }
+            /*-Valida true / false el tipo de industria en caso de estar seleccionado o no-*/
+            if (selectedCountriesAnnounceOperate.length < 1) {
+                completeFormValidate[2] = false;
+            } else {
+                completeFormValidate[2] = true;
+            }
             
         } else {
             industryAdsSelectorContainer.style.display = "none";
-            /*-Elimina la posicion 3 del array de validacion, correspondiente a la seleccion de industria en caso que no se elijan anuncios-*/
-            completeFormValidate.splice(3, 4)
+            countryAnnounceContainer.style.display = "none";
+            /*-Elimina las posiciones 2 y 3 del array de validacion, correspondiente a la seleccion de paises donde anunciar e industria en caso que no se elijan anuncios-*/
+            completeFormValidate.splice(2, 4)
             
         }
     });
-})
+});
 
 /*---Se piden cantidad de mails en caso de tildar "Email Marketing"---*/
 email.addEventListener('change', function() {
@@ -528,6 +547,10 @@ emailAmmount.addEventListener('change', function() {
         completeFormValidate[4] = false;
     } else {
         completeFormValidate[4] = true;
+        /*-Desctiva el mensaje de error tipo 5 seleccionar cantidad de contactos email marketing-*/
+        if (errorType == 5) {
+            errorMessages.innerHTML = '';
+        } 
     }
 });
 
@@ -540,6 +563,10 @@ industryAdsSelector.addEventListener('change', function() {
     console.log(`Industria elegida: ${industryAdsSelector.value}`)
     if (industryAdsSelector.value != '') {
         completeFormValidate[3] = true;
+        /*-Desctiva el mensaje de error tipo 4 seleccionar una industria-*/
+        if (errorType == 4) {
+            errorMessages.innerHTML = '';
+        } 
     } else {
         completeFormValidate[3] = false;
     }
@@ -593,6 +620,10 @@ buttonAddCountryAnnounce.addEventListener('click', function(event) {
         completeFormValidate[2] = false;
     } else {
         completeFormValidate[2] = true;
+        /*-Desctiva el mensaje de error tipo 3 al agregar un país a la lista-*/
+        if (errorType == 3) {
+            errorMessages.innerHTML = '';
+        } 
     }
     console.log(selectedCountriesAnnounceOperate)
 });
@@ -608,16 +639,21 @@ function calculate() {
     if (completeFormValidate.includes(false)) {
 
         resultsContainer.style.display = 'none';
-        if (completeFormValidate[1] == false && completeFormValidate[2] == false) {
-            errorMessages.innerHTML = 'Debés seleccionar mínimo un servicio y agregar un país a la lista';
-        } else if (completeFormValidate[1] == false) {
+        if (completeFormValidate[1] == false) {
             errorMessages.innerHTML = 'Debés seleccionar mínimo un servicio';
+            errorType = 1;
+        } else if (completeFormValidate[2] == false && completeFormValidate[3] == false) {
+            errorMessages.innerHTML = 'Debés agregar mínimo un país a la lista y seleccionar una categoría corresponde tu industria';
+            errorType = 2;
         } else if (completeFormValidate[2] == false) {
             errorMessages.innerHTML = 'Debés agregar mínimo un país a la lista';
+            errorType = 3;
         } else if (completeFormValidate[3] == false) {
             errorMessages.innerHTML = 'Debés seleccionar a que categoría corresponde tu industria, para poder calcular los anuncios';
+            errorType = 4;
         } else if (completeFormValidate[4] == false) {
             errorMessages.innerHTML = 'Debés seleccionar la cantidad de contactos para Email Marketing';
+            errorType = 5;
         }
       
     } else {
