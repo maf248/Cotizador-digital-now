@@ -409,7 +409,7 @@ const qs = (text) => document.querySelector(text);
 const qsa = (text) => document.querySelectorAll(text);
 
 /*---Array de validación de las 3 etapas---*/
-var completeForm = [false, false, false];
+var completeFormValidate = [false, false, false];
 
 /*---Se capturan los checkboxes individualmente, de los servicios requeridos---*/
 var googleSearchAds = qs('#google-search-ads');
@@ -460,13 +460,15 @@ var errorMessages = qs('#error-messages');
 /*---Se captura el selector de país de los proveedores--*/
 var countrySupplier = qs('#country-supplier');
     if (countrySupplier.value != '') {
-        completeForm[0] = true;
+        completeFormValidate[0] = true;
     }
 
 countrySupplier.addEventListener('change', function() {
     console.log(this.value)
     if (countrySupplier.value != '') {
-        completeForm[0] = true;
+        completeFormValidate[0] = true;
+    } else {
+        completeFormValidate[0] = false;
     }
 });
 
@@ -482,25 +484,50 @@ checkboxesServices.forEach((checkboxService, i) => {
             checkboxesServicesValidate[i] = false;
         }
         if (checkboxesServicesValidate.includes(true)) {
-            completeForm[1] = true;
+            completeFormValidate[1] = true;
         } else {
-            completeForm[1] = false;
+            completeFormValidate[1] = false;
         }
         /*--Muestra u oculta la seleccion del tipo de industria en caso de seleccionarse google / facebook ads (las primeras 3 opciones)---*/
         if (checkboxesServicesValidate.slice(0, 3).includes(true)) {
             industryAdsSelectorContainer.style.display = "block";
+            /*-Valida true / false el tipo de industria en caso de estar seleccionado o no-*/
+            if (industryAdsSelector.value == '') {
+                completeFormValidate[3] = false;
+            } else {
+                completeFormValidate[3] = true;
+            }
+            
         } else {
             industryAdsSelectorContainer.style.display = "none";
+            /*-Elimina la posicion 3 del array de validacion, correspondiente a la seleccion de industria en caso que no se elijan anuncios-*/
+            completeFormValidate.splice(3, 4)
+            
         }
     });
 })
 
-/*---Se piden cantidad de mails en caso de tilda "Email Marketing"---*/
+/*---Se piden cantidad de mails en caso de tildar "Email Marketing"---*/
 email.addEventListener('change', function() {
     if (this.checked) {
         emailAmmountContainer.style.display = 'block';
+        if (emailAmmount.value == '') {
+            completeFormValidate[4] = false;
+        } else {
+            completeFormValidate[4] = true;
+        }
     } else {
         emailAmmountContainer.style.display = 'none';
+        /*-Elimina la posicion 4 del array de validacion, correspondiente a la seleccion de cantidad de mails marketing-*/
+        completeFormValidate.splice(4, 5)
+    }
+});
+emailAmmount.addEventListener('change', function() {
+    /*-Valida true / false la cantidad de mails en caso de estar seleccionados o no-*/
+    if (this.value == '') {
+        completeFormValidate[4] = false;
+    } else {
+        completeFormValidate[4] = true;
     }
 });
 
@@ -511,7 +538,11 @@ var industryAdsSelector = qs('#industry-ads-selector');
 industryAdsSelector.addEventListener('change', function() {
 
     console.log(`Industria elegida: ${industryAdsSelector.value}`)
-
+    if (industryAdsSelector.value != '') {
+        completeFormValidate[3] = true;
+    } else {
+        completeFormValidate[3] = false;
+    }
 });
 
 /*---Se captura el menu desplegable de los paises para anunciarse---*/
@@ -531,9 +562,9 @@ function deleteCountry (countryPosition) {
     selectedCountriesAnnounceOperate.splice(countryPosition, 1);
     /*--Valida si hay países o no seleccionados, luego de eliminar uno--*/
     if (selectedCountriesAnnounceOperate.length < 1) {
-        completeForm[2] = false;
+        completeFormValidate[2] = false;
     } else {
-        completeForm[2] = true;
+        completeFormValidate[2] = true;
     }
     listSelectedCountriesAnnounce.innerHTML = '';
         for (let i=0; i < selectedCountriesAnnounceDisplay.length; i++) {
@@ -559,9 +590,9 @@ buttonAddCountryAnnounce.addEventListener('click', function(event) {
     }
     /*--Valida si hay países o no seleccionados, luego de agregar uno--*/
     if (selectedCountriesAnnounceOperate.length < 1) {
-        completeForm[2] = false;
+        completeFormValidate[2] = false;
     } else {
-        completeForm[2] = true;
+        completeFormValidate[2] = true;
     }
     console.log(selectedCountriesAnnounceOperate)
 });
@@ -574,15 +605,19 @@ var resultsContainer = qs('#results-container');
 function calculate() {
     
     /*---Se valida que esten todas las etapas seleccionadas, para mostrar los resultados u ocultarlos---*/
-    if (completeForm.includes(false)) {
+    if (completeFormValidate.includes(false)) {
 
         resultsContainer.style.display = 'none';
-        if (completeForm[1] == false && completeForm[2] == false) {
+        if (completeFormValidate[1] == false && completeFormValidate[2] == false) {
             errorMessages.innerHTML = 'Debés seleccionar mínimo un servicio y agregar un país a la lista';
-        } else if (completeForm[1] == false) {
+        } else if (completeFormValidate[1] == false) {
             errorMessages.innerHTML = 'Debés seleccionar mínimo un servicio';
-        } else if (completeForm[2] == false) {
+        } else if (completeFormValidate[2] == false) {
             errorMessages.innerHTML = 'Debés agregar mínimo un país a la lista';
+        } else if (completeFormValidate[3] == false) {
+            errorMessages.innerHTML = 'Debés seleccionar a que categoría corresponde tu industria, para poder calcular los anuncios';
+        } else if (completeFormValidate[4] == false) {
+            errorMessages.innerHTML = 'Debés seleccionar la cantidad de contactos para Email Marketing';
         }
       
     } else {
@@ -591,7 +626,7 @@ function calculate() {
     }
 
     /*---Se muestran los resultados particulares de google/facebook ads solamente si esta opcion fue seleccionada---*/
-    if ((googleSearchAds.checked || googleDisplayAds.checked || facebookAds.checked) && !completeForm.includes(false)) {
+    if ((googleSearchAds.checked || googleDisplayAds.checked || facebookAds.checked) && !completeFormValidate.includes(false)) {
 
         googleFacebookAdsResultContainer.style.display = 'block';
 
@@ -630,7 +665,7 @@ function calculate() {
     }
 
     /*---Se muestran los resultados particulares de email marketing solamente si esta opcion fue seleccionada---*/
-    if (email.checked && !completeForm.includes(false)) {
+    if (email.checked && !completeFormValidate.includes(false)) {
         /*--Muestra el valor correspondiente a la cantidad de contactos seleccionados---*/
         resultEmail.innerHTML = `USD ${emailAmmount.value}`;
         emailResultContainer.style.display = 'block';
@@ -641,7 +676,7 @@ function calculate() {
     }
     /*---Se muestra u oculta "fee de servicio mensual" en caso que se haya seleccionado o no alguno---*/
     var totalServiceFee = 0;
-    if ((redesSociales.checked || seo.checked || conversionWeb.checked || wordpress.checked || ecommerceWeb.checked || landingPage.checked || logoMarca.checked) && !completeForm.includes(false)) {
+    if ((redesSociales.checked || seo.checked || conversionWeb.checked || wordpress.checked || ecommerceWeb.checked || landingPage.checked || logoMarca.checked) && !completeFormValidate.includes(false)) {
         serviceResultContainer.style.display = 'block';
         /*---Chequea que servicios estan tildados y los suma al total---*/
         if (redesSociales.checked) { totalServiceFee += services.redesSociales.price; }
@@ -664,6 +699,6 @@ function calculate() {
     
 };
 window.addEventListener('change', function () {
-    console.log(completeForm)
+    console.log(completeFormValidate)
 })
 
