@@ -49,3 +49,13 @@ p {
   margin-top: 10px;
   
 }
+.form-calculate-container {
+  display: flex;
+  flex-direction: column;
+}
+.calculate {
+  width: auto;
+  margin-right: 45%;
+  margin-left: 45%;
+  cursor: pointer;
+}

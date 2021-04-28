@@ -8,7 +8,7 @@
   </head>
   <body>
     <h1><%= title %></h1>
-    <form action="">
+    <form action="" id="form-calculate-container">
       <h3>¿De qué país es el proveedor de servicios que querés contratar?</h3>
       <div class="country-supplier-container">    
         <select name="country-supplier" id="country-supplier">
@@ -90,30 +90,8 @@
         
       </div>
 
-      <div id="industry-ads-selector-container" style="display: none;">
-        <label for="industry-ads-selector">Selecciona la categoría que más represente tu industria:</label>
-        <select name="industry-ads-selector" id="industry-ads-selector">
-          <option value="">-</option>
-          <option value="autos">Autos</option>
-          <option value="negocioANegocio">Negocio a negocio (B2B)</option>
-          <option value="serviciosAlConsumidor">Servicios al consumidor</option>
-          <option value="citas">Citas</option>
-          <option value="eCommerce">E-Commerce</option>
-          <option value="educacion">Educación</option>
-          <option value="serviciosDeEmpleos">Servicios de Empleos</option>
-          <option value="finanzasYSeguros">Finanzas y Seguros</option>
-          <option value="salud">Salud</option>
-          <option value="articulosParaElHogar">Artículos para el Hogar</option>
-          <option value="serviciosIndustriales">Servicios industriales</option>
-          <option value="serviciosLegales">Servicios Legales</option>
-          <option value="realEstate">Real Estate</option>
-          <option value="tecnologia">Tecnología</option>
-          <option value="viajes">Viajes</option>
-        </select>
-      </div>
-
-      <div class="email-ammount-container" id="email-ammount-container" style="display: none;">
-        <label for="email-ammount">Selecciona el número de contactos que querés usar para tus campañas de Email Marketing para estimar el costo mensual de la plataforma de envíos:</label>
+      <div class="email-ammount-container" id="email-ammount-container" style="display: none; padding: 10px;">
+        <label for="email-ammount"><strong>Email Marketing:</strong> Selecciona el número de contactos que querés usar para tus campañas, para estimar el costo mensual de la plataforma de envíos:</label>
         <select name="email-ammount" id="email-ammount">
           <option value="">-</option>
           <option value="12">1.000</option>
@@ -139,6 +117,28 @@
           <option value="362">90.000</option>
           <option value="381">95.000</option>
           <option value="400">10.000</option>
+        </select>
+      </div>
+
+      <div id="industry-ads-selector-container" style="display: none; padding: 10px;">
+        <label for="industry-ads-selector"><strong>Anuncios: </strong>Selecciona la categoría que más represente tu industria:</label>
+        <select name="industry-ads-selector" id="industry-ads-selector">
+          <option value="">-</option>
+          <option value="autos">Autos</option>
+          <option value="negocioANegocio">Negocio a negocio (B2B)</option>
+          <option value="serviciosAlConsumidor">Servicios al consumidor</option>
+          <option value="citas">Citas</option>
+          <option value="eCommerce">E-Commerce</option>
+          <option value="educacion">Educación</option>
+          <option value="serviciosDeEmpleos">Servicios de Empleos</option>
+          <option value="finanzasYSeguros">Finanzas y Seguros</option>
+          <option value="salud">Salud</option>
+          <option value="articulosParaElHogar">Artículos para el Hogar</option>
+          <option value="serviciosIndustriales">Servicios industriales</option>
+          <option value="serviciosLegales">Servicios Legales</option>
+          <option value="realEstate">Real Estate</option>
+          <option value="tecnologia">Tecnología</option>
+          <option value="viajes">Viajes</option>
         </select>
       </div>
       
@@ -178,7 +178,7 @@
 
         </div>
       </div>
-
+      <button type="submit" class="calculate" onClick="calculate(); return false;">¡Calcular!</button>
     </form>
 
     <section class="results-container" id="results-container" style="display: none;">

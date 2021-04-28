@@ -83,7 +83,7 @@ const absoluteStatsCountries = {
 /* DATOS RELATIVOS DE VARIOS PAISES PARA REALIZAR LOS CALCULOS */
 const relativeStatsCountries = {
         argentina: {
-            relativeRateToUSA: 0
+            relativeRateToUSA: 0.1298304000596659
         },
         emiratosArabes: {
             relativeRateToUSA: 1.08
@@ -376,8 +376,8 @@ const relativeStatsCountries = {
 
 }
 /*--Así se accedería a cada valor de dicho objeto---*/
-console.log("Prueba - valor EEUU en USD google search ads CPA autos: " + absoluteStatsCountries.eeuu.googleSearchAds.cpa.autos);
-console.log("Prueba - valor Moldova en USD google search ads CPA autos: " + absoluteStatsCountries.eeuu.googleSearchAds.cpa.autos * relativeStatsCountries.moldova.relativeRateToUSA);
+// console.log("Prueba - valor EEUU en USD google search ads CPA autos: " + absoluteStatsCountries.eeuu.googleSearchAds.cpa.autos);
+// console.log("Prueba - valor Moldova en USD google search ads CPA autos: " + absoluteStatsCountries.eeuu.googleSearchAds.cpa.autos * relativeStatsCountries.moldova.relativeRateToUSA);
 
 /*---Datos de los servicios brindados, organizado para programación orientada a objetos---*/
 const services = {
@@ -479,10 +479,30 @@ checkboxesServices.forEach((checkboxService, i) => {
         } else {
             checkboxesServicesValidate[i] = false;
         }
+        if (checkboxesServicesValidate.includes(true)) {
+            completeForm[1] = true;
+        } else {
+            completeForm[1] = false;
+        }
+        /*--Muestra u oculta la seleccion del tipo de industria en caso de seleccionarse google / facebook ads (las primeras 3 opciones)---*/
+        if (checkboxesServicesValidate.slice(0, 3).includes(true)) {
+            industryAdsSelectorContainer.style.display = "block";
+        } else {
+            industryAdsSelectorContainer.style.display = "none";
+        }
     });
 })
 
-/*---Se captura la cantidad de mails seleccionados para Marketing digital , y se actualiza el resultado---*/
+/*---Se piden cantidad de mails en caso de tilda "Email Marketing"---*/
+email.addEventListener('change', function() {
+    if (this.checked) {
+        emailAmmountContainer.style.display = 'block';
+    } else {
+        emailAmmountContainer.style.display = 'none';
+    }
+});
+
+/*---Se captura la cantidad de mails seleccionados para Marketing digital , y se actualiza el resultado en caso de cambiar selección---*/
 var emailAmmount = qs('#email-ammount');
 
 emailAmmount.addEventListener('change', function() {
@@ -501,20 +521,8 @@ industryAdsSelector.addEventListener('change', function() {
 
 });
 
-
-/*---Se capturan los checkboxes de los paises para anunciarse---*/
+/*---Se captura el menu desplegable de los paises para anunciarse---*/
 var countryAnnounce = qs('#country-announce');
-    if (countryAnnounce.value != '') {
-        completeForm[2] = true;
-    }
-
-countryAnnounce.addEventListener('change', function() {
-    if (countryAnnounce.value != '') {
-        completeForm[2] = true;
-    } else {
-        completeForm[2] = false;
-    }
-});
 
 /*---Se capturan los botones y lista para agregar países de anuncios dinamicamente---*/
 var buttonAddCountryAnnounce = qs('#add-country-announce');
@@ -526,10 +534,14 @@ var selectedCountriesAnnounceOperate = [];
 
 /*---Funcion encargada de eliminar paises de la lista paises para anunciar, luego actualiza la lista---*/
 function deleteCountry (countryPosition) {
-
     selectedCountriesAnnounceDisplay.splice(countryPosition, 1);
     selectedCountriesAnnounceOperate.splice(countryPosition, 1);
-
+    /*--Valida si hay países o no seleccionados, luego de eliminar uno--*/
+    if (selectedCountriesAnnounceOperate.length < 1) {
+        completeForm[2] = false;
+    } else {
+        completeForm[2] = true;
+    }
     listSelectedCountriesAnnounce.innerHTML = '';
         for (let i=0; i < selectedCountriesAnnounceDisplay.length; i++) {
             listSelectedCountriesAnnounce.innerHTML += `<li>${selectedCountriesAnnounceDisplay[i]}  <i class="fas fa-trash-alt" onClick="deleteCountry(${i}); return false;"></i></li>`;
@@ -537,7 +549,7 @@ function deleteCountry (countryPosition) {
     console.log(selectedCountriesAnnounceDisplay)
     console.log(selectedCountriesAnnounceOperate)
 }
-
+/*---Evento del botón para agregar paises donde se quiere anunciar---*/
 buttonAddCountryAnnounce.addEventListener('click', function(event) {
     event.preventDefault();
     var countrySelected = countryAnnounce.options[countryAnnounce.selectedIndex].text;
@@ -552,7 +564,13 @@ buttonAddCountryAnnounce.addEventListener('click', function(event) {
         }
         
     }
-    console.log(selectedCountriesAnnounceDisplay)
+    /*--Valida si hay países o no seleccionados, luego de agregar uno--*/
+    if (selectedCountriesAnnounceOperate.length < 1) {
+        completeForm[2] = false;
+    } else {
+        completeForm[2] = true;
+    }
+    console.log(selectedCountriesAnnounceOperate)
 });
 
 
@@ -560,12 +578,7 @@ buttonAddCountryAnnounce.addEventListener('click', function(event) {
 var resultsContainer = qs('#results-container');
 
 /*--Evento general para validar si mostrar resultados o no, y actualizar los mismos en base a lo seleccionado---*/
-window.addEventListener('change', function() {
-    if (checkboxesServicesValidate.includes(true)) {
-        completeForm[1] = true;
-    } else {
-        completeForm[1] = false;
-    }
+function calculate() {
     
     /*---Se valida que esten todas las etapas seleccionadas, para mostrar los resultados u ocultarlos---*/
     if (!completeForm.includes(false)) {
@@ -578,10 +591,24 @@ window.addEventListener('change', function() {
     if ((googleSearchAds.checked || googleDisplayAds.checked || facebookAds.checked) && !completeForm.includes(false)) {
 
         googleFacebookAdsResultContainer.style.display = 'block';
-        industryAdsSelectorContainer.style.display = 'block';
 
         if (googleSearchAds.checked) {
             googleSearchAdsResultContainer.style.display = 'block';
+            
+            if (selectedCountriesAnnounceOperate !== [] && industryAdsSelector.value !== '') {
+                selectedCountriesAnnounceOperate.forEach(selectedCountry => {
+                    if (selectedCountry !== "eeuu") {
+                        console.log(`Datos Google Search Ads CPA y CPC de ${selectedCountry} en industria ${industryAdsSelector.value}`)
+                        console.log(absoluteStatsCountries.eeuu.googleSearchAds.cpa[industryAdsSelector.value] * relativeStatsCountries[selectedCountry].relativeRateToUSA);
+                        console.log(absoluteStatsCountries.eeuu.googleSearchAds.cpc[industryAdsSelector.value] * relativeStatsCountries[selectedCountry].relativeRateToUSA);
+                    } else if (selectedCountry !== "eeuu") {
+                        console.log(`Datos Google Search Ads CPA y CPC de ${selectedCountry} en industria ${industryAdsSelector.value}`)
+                        console.log(absoluteStatsCountries.eeuu.googleSearchAds.cpa[industryAdsSelector.value]);
+                        console.log(absoluteStatsCountries.eeuu.googleSearchAds.cpc[industryAdsSelector.value]);
+                    }
+                })
+            }
+            
         } else {
             googleSearchAdsResultContainer.style.display = 'none';
         }
@@ -597,16 +624,15 @@ window.addEventListener('change', function() {
         }
     } else {
         googleFacebookAdsResultContainer.style.display = 'none';
-        industryAdsSelectorContainer.style.display = 'none';
     }
 
     /*---Se muestran los resultados particulares de email marketing solamente si esta opcion fue seleccionada---*/
     if (email.checked && !completeForm.includes(false)) {
         emailResultContainer.style.display = 'block';
-        emailAmmountContainer.style.display = 'block';
+        
     } else {
         emailResultContainer.style.display = 'none';
-        emailAmmountContainer.style.display = 'none';
+        
     }
     /*---Se muestra u oculta "fee de servicio mensual" en caso que se haya seleccionado o no alguno---*/
     var totalServiceFee = 0;
@@ -630,6 +656,9 @@ window.addEventListener('change', function() {
     // resultMonthlyTotal.innerHTML = "el total mensual sería -> fee de gestión + estimación de inversión mensual en facebook ads y google ads";
 
     // // Validación de las 3 etapas completadas
-    // console.log(completeForm)
-});
+    
+};
+window.addEventListener('change', function () {
+    console.log(completeForm)
+})
 
