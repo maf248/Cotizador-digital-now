@@ -381,14 +381,41 @@ const relativeStatsCountries = {
 
 /*---Datos de los servicios brindados, organizado para programación orientada a objetos---*/
 const services = {
+    googleSearchAds: {
+        implementationHours: 8,
+        maintenanceHours: 4,
+        costPerHour: 26,
+    },
+    googleDisplayAds: {
+        implementationHours: 2,
+        maintenanceHours: 2,
+        costPerHour: 26,
+    },
+    facebookAds: {
+        implementationHours: 8,
+        maintenanceHours: 4,
+        costPerHour: 26,
+    },
     redesSociales: {
         price: 500,
+        skillsAcquired: ["Community Management", "Redacciones", "Creación de piezas gráficas (3 Carrousels y 8 gráficas individuales)", "Creación de 1 video (Menos de 30 seg)"],
+        implementationHours: [8, 0, 0, 0],
+        maintenanceHours: [8, 4, 24, 4],
+        costPerHour: [13, 19, 30, 30],
     },
     seo: {
-        price: 1000
+        price: 1000,
+        skillsAcquired: ["SEO", "Redacciones", "Creación de piezas graficas (8 piezas gráficas)"],
+        implementationHours: [0, 0, 0],
+        maintenanceHours: [4, 16, 8],
+        costPerHour: [31, 19, 30],
     },
     conversionWeb: {
         price: 1500,
+        skillsAcquired: ["Google Ads / Facebook Ads", "Diseño Web UX / UI"],
+        implementationHours: [0, 0],
+        maintenanceHours: [4, 8],
+        costPerHour: [26, 35],
     },
     wordpress: {
         price: 2000
@@ -719,7 +746,7 @@ function calculate() {
         }
         if (facebookAds.checked) {
             facebookAdsResultContainer.style.display = 'block';
-            
+
 
         } else {
             facebookAdsResultContainer.style.display = 'none';
