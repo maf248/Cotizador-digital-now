@@ -640,7 +640,6 @@ buttonAddCountryAnnounce.addEventListener('click', function(event) {
     console.log(selectedCountriesAnnounceOperate)
 });
 
-
 /*---Se captura el bloque que muestra los resultados, y se muestra solamente al seleccionar todas las opciones requeridas---*/
 var resultsContainer = qs('#results-container');
 
@@ -687,7 +686,7 @@ function calculate() {
                         console.log(`Datos Google Search Ads CPA y CPC de ${selectedCountry} en industria ${industryAdsSelector.value}`)
                         console.log(absoluteStatsCountries.eeuu.googleSearchAds.cpa[industryAdsSelector.value] * relativeStatsCountries[selectedCountry].relativeRateToUSA);
                         console.log(absoluteStatsCountries.eeuu.googleSearchAds.cpc[industryAdsSelector.value] * relativeStatsCountries[selectedCountry].relativeRateToUSA);
-                    } else if (selectedCountry !== "eeuu") {
+                    } else if (selectedCountry === "eeuu") {
                         console.log(`Datos Google Search Ads CPA y CPC de ${selectedCountry} en industria ${industryAdsSelector.value}`)
                         console.log(absoluteStatsCountries.eeuu.googleSearchAds.cpa[industryAdsSelector.value]);
                         console.log(absoluteStatsCountries.eeuu.googleSearchAds.cpc[industryAdsSelector.value]);
@@ -700,11 +699,28 @@ function calculate() {
         }
         if (googleDisplayAds.checked) {
             googleDisplayAdsResultContainer.style.display = 'block';
+
+            if (selectedCountriesAnnounceOperate !== [] && industryAdsSelector.value !== '') {
+                selectedCountriesAnnounceOperate.forEach(selectedCountry => {
+                    if (selectedCountry !== "eeuu") {
+                        console.log(`Datos Google Display Ads CPA y CPC de ${selectedCountry} en industria ${industryAdsSelector.value}`)
+                        console.log(absoluteStatsCountries.eeuu.googleDisplayAds.cpa[industryAdsSelector.value] * relativeStatsCountries[selectedCountry].relativeRateToUSA);
+                        console.log(absoluteStatsCountries.eeuu.googleDisplayAds.cpc[industryAdsSelector.value] * relativeStatsCountries[selectedCountry].relativeRateToUSA);
+                    } else if (selectedCountry === "eeuu") {
+                        console.log(`Datos Google Display Ads CPA y CPC de ${selectedCountry} en industria ${industryAdsSelector.value}`)
+                        console.log(absoluteStatsCountries.eeuu.googleDisplayAds.cpa[industryAdsSelector.value]);
+                        console.log(absoluteStatsCountries.eeuu.googleDisplayAds.cpc[industryAdsSelector.value]);
+                    }
+                })
+            }
+
         } else {
             googleDisplayAdsResultContainer.style.display = 'none';
         }
         if (facebookAds.checked) {
             facebookAdsResultContainer.style.display = 'block';
+            
+
         } else {
             facebookAdsResultContainer.style.display = 'none';
         }
