@@ -470,6 +470,15 @@ var resultAgencyOnceFee = qs('#result-agency-once-fee');
 /*---Se captura el bloque CONTENEDOR que pide los PAISES donde se desea ANUNCIAR---*/
 var countryAnnounceContainer = qs('#country-announce-container');
 
+/*---Se capturan los bloques CONTENEDORES que piden inversion en google ads / facebook ads---*/
+var investmentGoogleSearchAdsContainer = qs('#investment-google-search-ads');
+var investmentGoogleDisplayAdsContainer = qs('#investment-google-display-ads');
+var investmentFacebookAdsContainer = qs('#investment-facebook-ads');
+/*--Se capturan los MONTOS de inversion introducidos---*/
+var investmentGoogleSearchAdsAmmount = qs('#investment-google-search-ads input[type="number"]');
+var investmentGoogleDisplayAdsAmmount = qs('#investment-google-display-ads input[type="number"]');
+var investmentFacebookAdsAmmount = qs('#investment-facebook-ads input[type="number"]');
+
 /*---Se captura el bloque que pide cantidad de contactos EMAIL y el menu desplegable con valores---*/
 var emailAmmountContainer = qs('#email-ammount-container');
 var emailAmmount = qs('#email-ammount');
@@ -530,6 +539,22 @@ checkboxesServices.forEach((checkboxService, i) => {
         if (checkboxesServicesValidate.slice(0, 3).includes(true)) {
             industryAdsSelectorContainer.style.display = "block";
             countryAnnounceContainer.style.display = "block";
+            /*--Muestra según el caso : Inversión en Google Ads Search, Inversión en Google Ads Display e Inversión en Facebook Ads--*/
+            if (checkboxesServicesValidate[0]) {
+                investmentGoogleSearchAdsContainer.style.display = "block";
+            } else {
+                investmentGoogleSearchAdsContainer.style.display = "none";
+            }
+            if (checkboxesServicesValidate[1]) {
+                investmentGoogleDisplayAdsContainer.style.display = "block";
+            } else {
+                investmentGoogleDisplayAdsContainer.style.display = "none";
+            }
+            if (checkboxesServicesValidate[2]) {
+                investmentFacebookAdsContainer.style.display = "block";
+            } else {
+                investmentFacebookAdsContainer.style.display = "none";
+            }
             /*-Valida true / false el tipo de industria en caso de estar seleccionado o no-*/
             if (industryAdsSelector.value == '') {
                 completeFormValidate[3] = false;
@@ -632,7 +657,7 @@ function deleteCountry (countryPosition) {
 buttonAddCountryAnnounce.addEventListener('click', function(event) {
     event.preventDefault();
     /*--Se captura la opcion del país elegido, en caso de elegir se agrega, caso contrario alerta--*/
-    var countryNameOperate = qs("#country-announce-list"  + " option[value='" + countryAnnounce.value + "']");
+    var countryNameOperate = qs(`#country-announce-list option[value="${countryAnnounce.value}"]`);
     
     if (countryNameOperate !== null) {
         /*--Si el país no fue previamente seleccionado lo agrega--*/
@@ -672,7 +697,10 @@ var resultsContainer = qs('#results-container');
 
 /*--Evento general para validar si mostrar resultados o no, y actualizar los mismos en base a lo seleccionado---*/
 function calculate() {
-    
+
+    // /*--Así se obtienen las inversiones ingresadas-*/
+    // console.log(investmentGoogleSearchAdsAmmount.value)
+
     /*---Se valida que esten todas las etapas seleccionadas, para mostrar los resultados u ocultarlos---*/
     if (completeFormValidate.includes(false)) {
 
