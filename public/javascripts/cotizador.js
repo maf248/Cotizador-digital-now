@@ -507,7 +507,7 @@ var countrySupplier = qs('#country-supplier');
     }
 
 countrySupplier.addEventListener('change', function() {
-    console.log(this.value)
+    
     if (countrySupplier.value != '') {
         completeFormValidate[0] = true;
     } else {
@@ -542,18 +542,39 @@ checkboxesServices.forEach((checkboxService, i) => {
             /*--Muestra según el caso : Inversión en Google Ads Search, Inversión en Google Ads Display e Inversión en Facebook Ads--*/
             if (checkboxesServicesValidate[0]) {
                 investmentGoogleSearchAdsContainer.style.display = "block";
+                /*-Valida true / false el monto google search ads en caso de estar completado o no-*/
+                if (investmentGoogleSearchAdsAmmount.value == '') {
+                    completeFormValidate[5] = false;
+                } else {
+                    completeFormValidate[5] = true;
+                }
             } else {
                 investmentGoogleSearchAdsContainer.style.display = "none";
+                completeFormValidate.slice(5, 6);
             }
             if (checkboxesServicesValidate[1]) {
                 investmentGoogleDisplayAdsContainer.style.display = "block";
+                /*-Valida true / false el monto google display ads en caso de estar completado o no-*/
+                if (investmentGoogleDisplayAdsAmmount.value == '') {
+                    completeFormValidate[6] = false;
+                } else {
+                    completeFormValidate[6] = true;
+                }
             } else {
                 investmentGoogleDisplayAdsContainer.style.display = "none";
+                completeFormValidate.slice(6, 7);
             }
             if (checkboxesServicesValidate[2]) {
                 investmentFacebookAdsContainer.style.display = "block";
+                /*-Valida true / false el monto facebook ads en caso de estar completado o no-*/
+                if (investmentFacebookAdsAmmount.value.length == '') {
+                    completeFormValidate[7] = false;
+                } else {
+                    completeFormValidate[7] = true;
+                }
             } else {
                 investmentFacebookAdsContainer.style.display = "none";
+                completeFormValidate.slice(7, 8);
             }
             /*-Valida true / false el tipo de industria en caso de estar seleccionado o no-*/
             if (industryAdsSelector.value == '') {
@@ -561,18 +582,23 @@ checkboxesServices.forEach((checkboxService, i) => {
             } else {
                 completeFormValidate[3] = true;
             }
-            /*-Valida true / false el tipo de industria en caso de estar seleccionado o no-*/
+            /*-Valida true / false los paises anuncio, en caso de estar seleccionados o no-*/
             if (selectedCountriesAnnounceOperate.length < 1) {
-                completeFormValidate[2] = false;
+                completeFormValidate[4] = false;
             } else {
-                completeFormValidate[2] = true;
+                completeFormValidate[4] = true;
             }
+            
             
         } else {
             industryAdsSelectorContainer.style.display = "none";
             countryAnnounceContainer.style.display = "none";
-            /*-Elimina las posiciones 2 y 3 del array de validacion, correspondiente a la seleccion de paises donde anunciar e industria en caso que no se elijan anuncios-*/
-            completeFormValidate.splice(2, 4)
+            /*-Elimina las posiciones 3 y 4 del array de validacion, correspondiente a la seleccion de paises donde anunciar e industria en caso que no se elijan anuncios-*/
+            completeFormValidate.splice(3, 5)
+
+            investmentGoogleSearchAdsContainer.style.display = "none";
+            investmentGoogleDisplayAdsContainer.style.display = "none";
+            investmentFacebookAdsContainer.style.display = "none";
             
         }
     });
@@ -583,24 +609,24 @@ email.addEventListener('change', function() {
     if (this.checked) {
         emailAmmountContainer.style.display = 'block';
         if (emailAmmount.value == '') {
-            completeFormValidate[4] = false;
+            completeFormValidate[2] = false;
         } else {
-            completeFormValidate[4] = true;
+            completeFormValidate[2] = true;
         }
     } else {
         emailAmmountContainer.style.display = 'none';
-        /*-Elimina la posicion 4 del array de validacion, correspondiente a la seleccion de cantidad de mails marketing-*/
-        completeFormValidate.splice(4, 5)
+        /*-Elimina la posicion 2 del array de validacion, correspondiente a la seleccion de cantidad de mails marketing-*/
+        completeFormValidate.splice(2, 3)
     }
 });
 emailAmmount.addEventListener('change', function() {
     /*-Valida true / false la cantidad de mails en caso de estar seleccionados o no-*/
     if (this.value == '') {
-        completeFormValidate[4] = false;
+        completeFormValidate[2] = false;
     } else {
-        completeFormValidate[4] = true;
+        completeFormValidate[2] = true;
         /*-Desctiva el mensaje de error tipo 5 seleccionar cantidad de contactos email marketing-*/
-        if (errorType == 5) {
+        if (errorType == 3) {
             errorMessages.innerHTML = '';
         } 
     }
@@ -612,8 +638,9 @@ var industryAdsSelector = qs('#industry-ads-selector');
 
 industryAdsSelector.addEventListener('change', function() {
 
-    console.log(`Industria elegida: ${industryAdsSelector.value}`)
-    if (industryAdsSelector.value != '') {
+    console.log(`Industria elegida: ${industryAdsSelector.options[industryAdsSelector.selectedIndex].text} codigo: ${industryAdsSelector.value}`)
+
+    if (this.value != '') {
         completeFormValidate[3] = true;
         /*-Desctiva el mensaje de error tipo 4 seleccionar una industria-*/
         if (errorType == 4) {
@@ -621,6 +648,41 @@ industryAdsSelector.addEventListener('change', function() {
         } 
     } else {
         completeFormValidate[3] = false;
+    }
+});
+
+/*--Eventos sobre los inputs de monto a invertir (google /facebook ads)--*/
+investmentGoogleSearchAdsAmmount.addEventListener('change', function() {
+    if (this.value > 0) {
+        completeFormValidate[5] = true;
+        /*-Desctiva el mensaje de error tipo 6-*/
+        if (errorType == 6) {
+            errorMessages.innerHTML = '';
+        } 
+    } else {
+        completeFormValidate[5] = false;
+    }
+});
+investmentGoogleDisplayAdsAmmount.addEventListener('change', function() {
+    if (this.value > 0) {
+        completeFormValidate[6] = true;
+        /*-Desctiva el mensaje de error tipo 7-*/
+        if (errorType == 7) {
+            errorMessages.innerHTML = '';
+        } 
+    } else {
+        completeFormValidate[6] = false;
+    }
+});
+investmentFacebookAdsAmmount.addEventListener('change', function() {
+    if (this.value > 0) {
+        completeFormValidate[7] = true;
+        /*-Desctiva el mensaje de error tipo 8-*/
+        if (errorType == 8) {
+            errorMessages.innerHTML = '';
+        } 
+    } else {
+        completeFormValidate[7] = false;
     }
 });
 
@@ -641,9 +703,9 @@ function deleteCountry (countryPosition) {
     selectedCountriesAnnounceOperate.splice(countryPosition, 1);
     /*--Valida si hay países o no seleccionados, luego de eliminar uno--*/
     if (selectedCountriesAnnounceOperate.length < 1) {
-        completeFormValidate[2] = false;
+        completeFormValidate[4] = false;
     } else {
-        completeFormValidate[2] = true;
+        completeFormValidate[4] = true;
     }
     listSelectedCountriesAnnounce.innerHTML = '';
         for (let i=0; i < selectedCountriesAnnounceDisplay.length; i++) {
@@ -681,11 +743,11 @@ buttonAddCountryAnnounce.addEventListener('click', function(event) {
     
     /*--Valida si hay países o no seleccionados, luego de agregar uno--*/
     if (selectedCountriesAnnounceOperate.length < 1) {
-        completeFormValidate[2] = false;
+        completeFormValidate[4] = false;
     } else {
-        completeFormValidate[2] = true;
+        completeFormValidate[4] = true;
         /*-Desctiva el mensaje de error tipo 3 al agregar un país a la lista-*/
-        if (errorType == 3) {
+        if (errorType == 5) {
             errorMessages.innerHTML = '';
         } 
     }
@@ -697,7 +759,10 @@ var resultsContainer = qs('#results-container');
 
 /*--Evento general para validar si mostrar resultados o no, y actualizar los mismos en base a lo seleccionado---*/
 function calculate() {
-
+    /*--Se resetean los resultados necesarios al volver a calcular--*/
+    resultGoogleSearch.innerHTML = '';
+    resultGoogleDisplay.innerHTML = '';
+    resultFacebookAds.innerHTML = '';
     // /*--Así se obtienen las inversiones ingresadas-*/
     // console.log(investmentGoogleSearchAdsAmmount.value)
 
@@ -706,20 +771,29 @@ function calculate() {
 
         resultsContainer.style.display = 'none';
         if (completeFormValidate[1] == false) {
-            errorMessages.innerHTML = 'Debés seleccionar mínimo un servicio';
+            errorMessages.innerHTML = 'Debes seleccionar mínimo un servicio';
             errorType = 1;
-        } else if (completeFormValidate[2] == false && completeFormValidate[3] == false) {
-            errorMessages.innerHTML = 'Debés agregar mínimo un país a la lista y seleccionar una categoría corresponde tu industria';
-            errorType = 2;
         } else if (completeFormValidate[2] == false) {
-            errorMessages.innerHTML = 'Debés agregar mínimo un país a la lista';
+            errorMessages.innerHTML = 'Debes seleccionar la cantidad de contactos para Email Marketing';
             errorType = 3;
+        } else if (completeFormValidate[3] == false && completeFormValidate[4] == false) {
+            errorMessages.innerHTML = 'Debes agregar mínimo un país a la lista y seleccionar una categoría corresponde tu industria';
+            errorType = 2;
         } else if (completeFormValidate[3] == false) {
-            errorMessages.innerHTML = 'Debés seleccionar a que categoría corresponde tu industria, para poder calcular los anuncios';
+            errorMessages.innerHTML = 'Debes seleccionar a que categoría corresponde tu industria, para poder calcular los anuncios';
             errorType = 4;
         } else if (completeFormValidate[4] == false) {
-            errorMessages.innerHTML = 'Debés seleccionar la cantidad de contactos para Email Marketing';
+            errorMessages.innerHTML = 'Debes agregar mínimo un país a la lista';
             errorType = 5;
+        } else if (completeFormValidate[5] == false) {
+            errorMessages.innerHTML = 'Debes introducir el monto a invertir en Google Search Ads';
+            errorType = 6;
+        } else if (completeFormValidate[6] == false) {
+            errorMessages.innerHTML = 'Debes introducir el monto a invertir en Google Display Ads';
+            errorType = 7;
+        } else if (completeFormValidate[7] == false) {
+            errorMessages.innerHTML = 'Debes introducir el monto a invertir en Facebook Ads';
+            errorType = 8;
         }
       
     } else {
@@ -736,8 +810,9 @@ function calculate() {
             googleSearchAdsResultContainer.style.display = 'block';
             
             if (selectedCountriesAnnounceOperate !== [] && industryAdsSelector.value !== '') {
-                selectedCountriesAnnounceOperate.forEach(selectedCountry => {
+                selectedCountriesAnnounceOperate.forEach((selectedCountry, i) => {
                     if (selectedCountry !== "eeuu") {
+                        resultGoogleSearch.innerHTML += `<strong>${selectedCountriesAnnounceDisplay[i]}</strong> en industria <strong>${industryAdsSelector.options[industryAdsSelector.selectedIndex].text}</strong>: <strong>CPA:</strong> ${absoluteStatsCountries.eeuu.googleSearchAds.cpa[industryAdsSelector.value] * relativeStatsCountries[selectedCountry].relativeRateToUSA} <strong>CPC:</strong> ${(absoluteStatsCountries.eeuu.googleSearchAds.cpc[industryAdsSelector.value] * relativeStatsCountries[selectedCountry].relativeRateToUSA) }<br>`;
                         console.log(`Datos Google Search Ads CPA y CPC de ${selectedCountry} en industria ${industryAdsSelector.value}`)
                         console.log(absoluteStatsCountries.eeuu.googleSearchAds.cpa[industryAdsSelector.value] * relativeStatsCountries[selectedCountry].relativeRateToUSA);
                         console.log(absoluteStatsCountries.eeuu.googleSearchAds.cpc[industryAdsSelector.value] * relativeStatsCountries[selectedCountry].relativeRateToUSA);
@@ -774,7 +849,6 @@ function calculate() {
         }
         if (facebookAds.checked) {
             facebookAdsResultContainer.style.display = 'block';
-
 
         } else {
             facebookAdsResultContainer.style.display = 'none';
