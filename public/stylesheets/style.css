@@ -1,5 +1,5 @@
 body {
-  padding: 50px;
+  padding: 35px 70px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
 
@@ -22,7 +22,11 @@ p {
 .services-container {
   display: flex;
   flex-direction: column;
+  border-radius: 5px;
   border: 1px solid black;
+  min-width: fit-content;
+  max-width: 100%;
+  padding: 10px;
   margin: 20px;
 }
 .services-container div {
@@ -65,5 +69,4 @@ p {
   width: auto;
   margin-right: 45%;
   margin-left: 45%;
-  cursor: pointer;
 }

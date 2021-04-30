@@ -763,8 +763,6 @@ function calculate() {
     resultGoogleSearch.innerHTML = '';
     resultGoogleDisplay.innerHTML = '';
     resultFacebookAds.innerHTML = '';
-    // /*--Así se obtienen las inversiones ingresadas-*/
-    // console.log(investmentGoogleSearchAdsAmmount.value)
 
     /*---Se valida que esten todas las etapas seleccionadas, para mostrar los resultados u ocultarlos---*/
     if (completeFormValidate.includes(false)) {
@@ -813,6 +811,7 @@ function calculate() {
                 selectedCountriesAnnounceOperate.forEach((selectedCountry, i) => {
                     if (selectedCountry !== "eeuu") {
                         resultGoogleSearch.innerHTML += `<strong>${selectedCountriesAnnounceDisplay[i]}</strong> en industria <strong>${industryAdsSelector.options[industryAdsSelector.selectedIndex].text}</strong>: <strong>CPA:</strong> ${absoluteStatsCountries.eeuu.googleSearchAds.cpa[industryAdsSelector.value] * relativeStatsCountries[selectedCountry].relativeRateToUSA} <strong>CPC:</strong> ${(absoluteStatsCountries.eeuu.googleSearchAds.cpc[industryAdsSelector.value] * relativeStatsCountries[selectedCountry].relativeRateToUSA) }<br>`;
+                        resultGoogleSearch.innerHTML += `Inversión elegida: USD ${investmentGoogleSearchAdsAmmount.value}<br>`
                         console.log(`Datos Google Search Ads CPA y CPC de ${selectedCountry} en industria ${industryAdsSelector.value}`)
                         console.log(absoluteStatsCountries.eeuu.googleSearchAds.cpa[industryAdsSelector.value] * relativeStatsCountries[selectedCountry].relativeRateToUSA);
                         console.log(absoluteStatsCountries.eeuu.googleSearchAds.cpc[industryAdsSelector.value] * relativeStatsCountries[selectedCountry].relativeRateToUSA);
