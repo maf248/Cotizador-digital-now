@@ -550,7 +550,7 @@ checkboxesServices.forEach((checkboxService, i) => {
                 }
             } else {
                 investmentGoogleSearchAdsContainer.style.display = "none";
-                completeFormValidate.slice(5, 6);
+                completeFormValidate.splice(5, 6);
             }
             if (checkboxesServicesValidate[1]) {
                 investmentGoogleDisplayAdsContainer.style.display = "block";
@@ -562,7 +562,7 @@ checkboxesServices.forEach((checkboxService, i) => {
                 }
             } else {
                 investmentGoogleDisplayAdsContainer.style.display = "none";
-                completeFormValidate.slice(6, 7);
+                completeFormValidate.splice(6, 7);
             }
             if (checkboxesServicesValidate[2]) {
                 investmentFacebookAdsContainer.style.display = "block";
@@ -574,7 +574,8 @@ checkboxesServices.forEach((checkboxService, i) => {
                 }
             } else {
                 investmentFacebookAdsContainer.style.display = "none";
-                completeFormValidate.slice(7, 8);
+                console.log("no anda el slice, pero llega acá")
+                completeFormValidate.splice(7, 8);
             }
             /*-Valida true / false el tipo de industria en caso de estar seleccionado o no-*/
             if (industryAdsSelector.value == '') {
