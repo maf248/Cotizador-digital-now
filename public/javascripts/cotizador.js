@@ -397,21 +397,18 @@ const services = {
         costPerHour: 26,
     },
     redesSociales: {
-        price: 500,
         skillsAcquired: ["Community Management", "Redacciones", "Creación de piezas gráficas (3 Carrousels y 8 gráficas individuales)", "Creación de 1 video (Menos de 30 seg)"],
         implementationHours: [8, 0, 0, 0],
         maintenanceHours: [8, 4, 24, 4],
         costPerHour: [13, 19, 30, 30],
     },
     seo: {
-        price: 1000,
         skillsAcquired: ["SEO", "Redacciones", "Creación de piezas graficas (8 piezas gráficas)"],
         implementationHours: [0, 0, 0],
         maintenanceHours: [4, 16, 8],
         costPerHour: [31, 19, 30],
     },
     conversionWeb: {
-        price: 1500,
         skillsAcquired: ["Google Ads / Facebook Ads", "Diseño Web UX / UI"],
         implementationHours: [0, 0],
         maintenanceHours: [4, 8],
@@ -873,20 +870,66 @@ function calculate() {
         
     }
     /*---Se muestra u oculta "fee de servicio mensual" en caso que se haya seleccionado o no alguno---*/
-    var totalServiceFee = 0;
-    if ((redesSociales.checked || seo.checked || conversionWeb.checked || wordpress.checked || ecommerceWeb.checked || landingPage.checked || logoMarca.checked) && !completeFormValidate.includes(false)) {
+    var onceServiceFee = 0;
+    var monthlyTotalServiceFee = 0;
+    if ((googleSearchAds.checked || googleDisplayAds.checked || facebookAds.checked || redesSociales.checked || seo.checked || conversionWeb.checked || wordpress.checked || ecommerceWeb.checked || landingPage.checked || logoMarca.checked) && !completeFormValidate.includes(false)) {
         serviceResultContainer.style.display = 'block';
         /*---Chequea que servicios estan tildados y los suma al total---*/
-        if (redesSociales.checked) { totalServiceFee += services.redesSociales.price; }
-        if (seo.checked) { totalServiceFee += services.seo.price; }
-        if (conversionWeb.checked) { totalServiceFee += services.conversionWeb.price; }
-        if (wordpress.checked) { totalServiceFee += services.wordpress.price; }
-        if (ecommerceWeb.checked) { totalServiceFee += services.ecommerceWeb.price; }
-        if (landingPage.checked) { totalServiceFee += services.landingPage.price; }
-        if (logoMarca.checked) { totalServiceFee += services.logoMarca.price; }
+        if (seo.checked) {
+            /*--Se ocultan los fees de unica vez, ya que este plan no tiene---*/
+            serviceOnceFeeContainer.style.display = "none";
+            services.seo.maintenanceHours.forEach((monthlyHours, i) => {
+                if(monthlyHours > 0) {
+                    console.log(`TOTAL MENSUAL: USD ${monthlyHours * services.seo.costPerHour[i]} de ${services.seo.skillsAcquired[i]} siendo ${monthlyHours}hs mensuales a USD ${services.seo.costPerHour[i]} la hora`)
+                    monthlyTotalServiceFee += monthlyHours * services.seo.costPerHour[i];
+                }
+            }) 
+        }
+        if (conversionWeb.checked) {
+            /*--Se ocultan los fees de unica vez, ya que este plan no tiene---*/
+            serviceOnceFeeContainer.style.display = "none";
+            services.conversionWeb.maintenanceHours.forEach((monthlyHours, i) => {
+                if(monthlyHours > 0) {
+                    console.log(`TOTAL MENSUAL: USD ${monthlyHours * services.conversionWeb.costPerHour[i]} de ${services.conversionWeb.skillsAcquired[i]} siendo ${monthlyHours}hs mensuales a USD ${services.conversionWeb.costPerHour[i]} la hora`)
+                    monthlyTotalServiceFee += monthlyHours * services.conversionWeb.costPerHour[i];
+                }
+            }) 
+        }
+        if (googleSearchAds.checked) {
+            monthlyTotalServiceFee += services.googleSearchAds.maintenanceHours * services.googleSearchAds.costPerHour;
+            serviceOnceFeeContainer.style.display = "block";
+            onceServiceFee += services.googleSearchAds.implementationHours * services.googleSearchAds.costPerHour;
+        }
+        if (googleDisplayAds.checked) {
+            monthlyTotalServiceFee += services.googleDisplayAds.maintenanceHours * services.googleDisplayAds.costPerHour;
+            serviceOnceFeeContainer.style.display = "block";
+            onceServiceFee += services.googleDisplayAds.implementationHours * services.googleDisplayAds.costPerHour;
+        }
+        if (facebookAds.checked) {
+            monthlyTotalServiceFee += services.facebookAds.maintenanceHours * services.facebookAds.costPerHour;
+            serviceOnceFeeContainer.style.display = "block";
+            onceServiceFee += services.facebookAds.implementationHours * services.facebookAds.costPerHour;
+        }
+        if (redesSociales.checked) {
+            serviceOnceFeeContainer.style.display = "block";
+            services.redesSociales.maintenanceHours.forEach((monthlyHours, i) => {
+                if(monthlyHours > 0) {
+                    console.log(`TOTAL MENSUAL: USD ${monthlyHours * services.redesSociales.costPerHour[i]} de ${services.redesSociales.skillsAcquired[i]} siendo ${monthlyHours}hs mensuales a USD ${services.redesSociales.costPerHour[i]} la hora`)
+                    monthlyTotalServiceFee += monthlyHours * services.redesSociales.costPerHour[i];
+                }
+                if (services.redesSociales.implementationHours[i] > 0) {
+                    onceServiceFee += services.redesSociales.implementationHours[i] * services.redesSociales.costPerHour[i];
+                }
+            })
+        }
+        
+        if (wordpress.checked) { console.log('Faltan datos del servicio "wordpress"')  }
+        if (ecommerceWeb.checked) { console.log('Faltan datos del servicio "ecommerce web"') }
+        if (landingPage.checked) { console.log('Faltan datos del servicio "landing page"') }
+        if (logoMarca.checked) { console.log('Faltan datos del servicio "logo marca"') }
 
-        resultServiceFee.innerHTML = `USD ${totalServiceFee}`;
-
+        resultServiceFee.innerHTML = `USD ${monthlyTotalServiceFee}`;
+        resultServiceOnceFee.innerHTML = `USD ${onceServiceFee}`;
     } else {
         serviceResultContainer.style.display = 'none';
     }
