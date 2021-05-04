@@ -790,13 +790,13 @@ function calculate() {
             errorMessages.innerHTML = 'Debes agregar mínimo un país a la lista';
             errorType = 5;
         } else if (completeFormValidate[5] == false && completeFormValidate[6] == false && completeFormValidate[7] == false) {
-            errorMessages.innerHTML = 'Debes introducir montos a invertir en Google Search Ads, Google Display Ads y Facebook Ads   ';
+            errorMessages.innerHTML = 'Debes introducir montos a invertir en Google Ads Search, Google Ads Display y Facebook Ads   ';
             errorType = 6;
         } else if (completeFormValidate[5] == false) {
-            errorMessages.innerHTML = 'Debes introducir el monto a invertir en Google Search Ads';
+            errorMessages.innerHTML = 'Debes introducir el monto a invertir en Google Ads Search';
             errorType = 6;
         } else if (completeFormValidate[6] == false) {
-            errorMessages.innerHTML = 'Debes introducir el monto a invertir en Google Display Ads';
+            errorMessages.innerHTML = 'Debes introducir el monto a invertir en Google Ads Display';
             errorType = 7;
         } else if (completeFormValidate[7] == false) {
             errorMessages.innerHTML = 'Debes introducir el monto a invertir en Facebook Ads';
@@ -916,17 +916,17 @@ function calculate() {
         }
         if (googleSearchAds.checked) {
             monthlyTotalServiceFee += services.googleSearchAds.maintenanceHours * services.googleSearchAds.costPerHour;
-            resultMonthlyTotalDetail.innerHTML += `<li style="margin-top: 10px"><strong>‣ Google Search Ads:</strong> USD ${services.googleSearchAds.maintenanceHours * services.googleSearchAds.costPerHour}. <small>(Siendo ${services.googleSearchAds.maintenanceHours}hs a un valor de USD ${services.googleSearchAds.costPerHour} por hora)</small></li>`;
+            resultMonthlyTotalDetail.innerHTML += `<li style="margin-top: 10px"><strong>‣ Google Ads Search:</strong> USD ${services.googleSearchAds.maintenanceHours * services.googleSearchAds.costPerHour}. <small>(Siendo ${services.googleSearchAds.maintenanceHours}hs a un valor de USD ${services.googleSearchAds.costPerHour} por hora)</small></li>`;
             serviceOnceFeeContainer.style.display = "block";
             onceServiceFee += services.googleSearchAds.implementationHours * services.googleSearchAds.costPerHour;
-            resultServiceOnceFeeDetail.innerHTML += `<li style="margin-top: 10px"><strong>‣ Google Search Ads:</strong> USD ${services.googleSearchAds.implementationHours * services.googleSearchAds.costPerHour}. <small>(Siendo ${services.googleSearchAds.implementationHours}hs a un valor de USD ${services.googleSearchAds.costPerHour} por hora)</small></li>`;
+            resultServiceOnceFeeDetail.innerHTML += `<li style="margin-top: 10px"><strong>‣ Google Ads Search:</strong> USD ${services.googleSearchAds.implementationHours * services.googleSearchAds.costPerHour}. <small>(Siendo ${services.googleSearchAds.implementationHours}hs a un valor de USD ${services.googleSearchAds.costPerHour} por hora)</small></li>`;
         }
         if (googleDisplayAds.checked) {
             monthlyTotalServiceFee += services.googleDisplayAds.maintenanceHours * services.googleDisplayAds.costPerHour;
-            resultMonthlyTotalDetail.innerHTML += `<li style="margin-top: 10px"><strong>‣ Google Display Ads:</strong> USD ${services.googleDisplayAds.maintenanceHours * services.googleDisplayAds.costPerHour}. <small>(Siendo ${services.googleDisplayAds.maintenanceHours}hs a un valor de USD ${services.googleDisplayAds.costPerHour} por hora)</small></li>`;
+            resultMonthlyTotalDetail.innerHTML += `<li style="margin-top: 10px"><strong>‣ Google Ads Display:</strong> USD ${services.googleDisplayAds.maintenanceHours * services.googleDisplayAds.costPerHour}. <small>(Siendo ${services.googleDisplayAds.maintenanceHours}hs a un valor de USD ${services.googleDisplayAds.costPerHour} por hora)</small></li>`;
             serviceOnceFeeContainer.style.display = "block";
             onceServiceFee += services.googleDisplayAds.implementationHours * services.googleDisplayAds.costPerHour;
-            resultServiceOnceFeeDetail.innerHTML += `<li style="margin-top: 10px"><strong>‣ Google Display Ads:</strong> USD ${services.googleDisplayAds.implementationHours * services.googleDisplayAds.costPerHour}. <small>(Siendo ${services.googleDisplayAds.implementationHours}hs a un valor de USD ${services.googleDisplayAds.costPerHour} por hora)</small></li>`;
+            resultServiceOnceFeeDetail.innerHTML += `<li style="margin-top: 10px"><strong>‣ Google Ads Display:</strong> USD ${services.googleDisplayAds.implementationHours * services.googleDisplayAds.costPerHour}. <small>(Siendo ${services.googleDisplayAds.implementationHours}hs a un valor de USD ${services.googleDisplayAds.costPerHour} por hora)</small></li>`;
         }
         if (facebookAds.checked) {
             monthlyTotalServiceFee += services.facebookAds.maintenanceHours * services.facebookAds.costPerHour;
