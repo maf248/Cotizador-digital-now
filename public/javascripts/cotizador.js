@@ -484,12 +484,18 @@ var resultGoogleFacebookAds = qs('#result-googleads-facebookads');
 var resultGoogleSearch = qs('#result-google-search');
 var resultGoogleDisplay = qs('#result-google-display');
 var resultFacebookAds = qs('#result-facebook-ads');
-
+/*--Se capturan los resultados numericos de cada servicio--*/
 var resultEmail = qs('#result-email');
 var resultServiceOnceFee = qs('#result-once-fee');
 var resultMonthlyTotal = qs('#monthly-total');
 var resultEstimatedEarning = qs('#estimated-earning');
 var resultAgencyOnceFee = qs('#agency-once-fee');
+/*--Se capturan los contenedores de detalles de resultados p/ c/ servicio--*/
+var resultEmailDetail = qs("#result-email-details");
+var resultServiceOnceFeeDetail = qs("#result-once-fee-details");
+var resultMonthlyTotalDetail = qs("#monthly-total-details");
+var resultEstimatedEarningDetail = qs("#estimated-earning-details");
+var resultAgencyOnceFeeDetail = qs("#agency-once-fee-details");
 
 /*--Contenedor para los mensajes de error y validación--*/
 var errorMessages = qs('#error-messages');
@@ -759,6 +765,11 @@ function calculate() {
     resultGoogleDisplay.innerHTML = '';
     resultFacebookAds.innerHTML = '';
 
+    resultServiceOnceFeeDetail.innerHTML = '';
+    resultMonthlyTotalDetail.innerHTML = '';
+    resultEstimatedEarningDetail.innerHTML = 'Proximamente...';
+    resultAgencyOnceFeeDetail.innerHTML = 'Proximamente...';
+
     /*---Se valida que esten todas las etapas seleccionadas, para mostrar los resultados u ocultarlos---*/
     if (completeFormValidate.includes(false)) {
 
@@ -822,7 +833,7 @@ function calculate() {
             
         } else {
             googleSearchAdsResultContainer.style.display = 'none';
-            resultGoogleDisplay
+
         }
         if (googleDisplayAds.checked) {
             googleDisplayAdsResultContainer.style.display = 'block';
@@ -848,7 +859,7 @@ function calculate() {
         }
         if (facebookAds.checked) {
             facebookAdsResultContainer.style.display = 'block';
-            resultFacebookAds.innerHTML += '<em style="color: red;">Not yet - Development in progress...</em>'
+            resultFacebookAds.innerHTML += 'Proximamente...'
 
         } else {
             facebookAdsResultContainer.style.display = 'none';
@@ -861,20 +872,7 @@ function calculate() {
     var onceServiceFee = 0;
     var monthlyTotalServiceFee = 0;
 
-    /*---Se muestran los resultados particulares de email marketing solamente si esta opcion fue seleccionada---*/
-    if (email.checked && !completeFormValidate.includes(false)) {
-        /*--Muestra el valor correspondiente a la cantidad de contactos seleccionados---*/
-        resultEmail.innerHTML = `Costo mensual de campaña para ${emailAmmount.options[emailAmmount.selectedIndex].text} contactos: USD ${emailAmmount.value}`;
-        emailResultContainer.style.display = 'block';
-        serviceOnceFeeContainer.style.display = "none";
-        monthlyTotalServiceFee += Number(emailAmmount.value);
-        
-    } else {
-        emailResultContainer.style.display = 'none';
-        
-    }
-    
-    if ((googleSearchAds.checked || googleDisplayAds.checked || facebookAds.checked || redesSociales.checked || seo.checked || conversionWeb.checked || wordpress.checked || ecommerceWeb.checked || landingPage.checked || logoMarca.checked) && !completeFormValidate.includes(false)) {
+    if ((googleSearchAds.checked || googleDisplayAds.checked || facebookAds.checked || redesSociales.checked || seo.checked || conversionWeb.checked || wordpress.checked || ecommerceWeb.checked || landingPage.checked || logoMarca.checked || email.checked) && !completeFormValidate.includes(false)) {
         
         /*---Chequea que servicios estan tildados y los suma al total---*/
         if (seo.checked) {
@@ -901,16 +899,19 @@ function calculate() {
             monthlyTotalServiceFee += services.googleSearchAds.maintenanceHours * services.googleSearchAds.costPerHour;
             serviceOnceFeeContainer.style.display = "block";
             onceServiceFee += services.googleSearchAds.implementationHours * services.googleSearchAds.costPerHour;
+            resultServiceOnceFeeDetail.innerHTML += `<li>‣ Google Search Ads: USD ${services.googleSearchAds.implementationHours * services.googleSearchAds.costPerHour}. <small>(Siendo ${services.googleSearchAds.implementationHours}hs a un valor de USD ${services.googleSearchAds.costPerHour} por hora)</small></li>`;
         }
         if (googleDisplayAds.checked) {
             monthlyTotalServiceFee += services.googleDisplayAds.maintenanceHours * services.googleDisplayAds.costPerHour;
             serviceOnceFeeContainer.style.display = "block";
             onceServiceFee += services.googleDisplayAds.implementationHours * services.googleDisplayAds.costPerHour;
+            resultServiceOnceFeeDetail.innerHTML += `<li>‣ Google Display Ads: USD ${services.googleDisplayAds.implementationHours * services.googleDisplayAds.costPerHour}. <small>(Siendo ${services.googleDisplayAds.implementationHours}hs a un valor de USD ${services.googleDisplayAds.costPerHour} por hora)</small></li>`;
         }
         if (facebookAds.checked) {
             monthlyTotalServiceFee += services.facebookAds.maintenanceHours * services.facebookAds.costPerHour;
             serviceOnceFeeContainer.style.display = "block";
             onceServiceFee += services.facebookAds.implementationHours * services.facebookAds.costPerHour;
+            resultServiceOnceFeeDetail.innerHTML += `<li>‣ Facebook Ads: USD ${services.facebookAds.implementationHours * services.facebookAds.costPerHour}. <small>(Siendo ${services.facebookAds.implementationHours}hs a un valor de USD ${services.facebookAds.costPerHour} por hora)</small></li>`;
         }
         if (redesSociales.checked) {
             serviceOnceFeeContainer.style.display = "block";
@@ -921,6 +922,7 @@ function calculate() {
                 }
                 if (services.redesSociales.implementationHours[i] > 0) {
                     onceServiceFee += services.redesSociales.implementationHours[i] * services.redesSociales.costPerHour[i];
+                    resultServiceOnceFeeDetail.innerHTML += `<li>‣ Gestión de redes sociales - ${services.redesSociales.skillsAcquired[i]}: USD ${services.redesSociales.implementationHours[i] * services.redesSociales.costPerHour[i]}. <small>(Siendo ${services.redesSociales.implementationHours[i]}hs a un valor de USD ${services.redesSociales.costPerHour[i]} por hora)</small></li>`;
                 }
             })
         }
@@ -929,6 +931,19 @@ function calculate() {
         if (ecommerceWeb.checked) { console.log('Faltan datos del servicio "ecommerce web"') }
         if (landingPage.checked) { console.log('Faltan datos del servicio "landing page"') }
         if (logoMarca.checked) { console.log('Faltan datos del servicio "logo marca"') }
+
+        /*---Se muestran los resultados particulares de email marketing solamente si esta opcion fue seleccionada---*/
+        if (email.checked) {
+            /*--Muestra el valor correspondiente a la cantidad de contactos seleccionados---*/
+            resultEmail.innerHTML = `USD ${emailAmmount.value}`;
+            resultEmailDetail.innerHTML = `Costo mensual de campaña para ${emailAmmount.options[emailAmmount.selectedIndex].text} contactos.`
+            emailResultContainer.style.display = 'block';
+            monthlyTotalServiceFee += Number(emailAmmount.value);
+            
+        } else {
+            emailResultContainer.style.display = 'none';
+            
+        }
 
         resultMonthlyTotal.innerHTML = `USD ${monthlyTotalServiceFee}`;
         resultServiceOnceFee.innerHTML = `USD ${onceServiceFee}`;

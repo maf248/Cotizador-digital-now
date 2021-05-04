@@ -284,74 +284,140 @@
         <h5 style="margin: 10px">Inversión en Medios Digitales mensual:</h5>
         
           <div id="result-google-search-ads-container" style="display: none">
-            <h6 class="text-decoration-underline">Google Search Ads:</h6>
-            <p id="result-google-search" style="margin: 10px"></p>
+            <div id="accordionGSAds">
+              <div class="card">
+                <div class="card-header" id="headingGSAds">
+                  <h6 class="mb-0">
+                    <button class="btn btn-link" data-toggle="collapse" data-target="#collapseGSAds" aria-expanded="false" aria-controls="collapseGSAds">
+                      <i class="fas fa-caret-square-down"></i>
+                    </button>
+                    <p class="text-decoration-underline">Google Search Ads:</p>
+                  </h6>
+                </div>
+            
+                <div id="collapseGSAds" class="collapse" aria-labelledby="headingGSAds" data-parent="#accordionGSAds">
+                  <div class="card-body">
+                    <p id="result-google-search" style="margin: 10px"></p>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
+
           <div id="result-google-display-ads-container" style="display: none">
-            <h6 class="text-decoration-underline">Google Display Ads:</h6>
-            <p id="result-google-display" style="margin: 10px"></p>
+            <div id="accordionGDAds">
+              <div class="card">
+                <div class="card-header" id="headingGDAds">
+                  <h6 class="mb-0">
+                    <button class="btn btn-link" data-toggle="collapse" data-target="#collapseGDAds" aria-expanded="false" aria-controls="collapseGDAds">
+                      <i class="fas fa-caret-square-down"></i>
+                    </button>
+                    <p class="text-decoration-underline">Google Display Ads:</p>
+                  </h6>
+                </div>
+            
+                <div id="collapseGDAds" class="collapse" aria-labelledby="headingGDAds" data-parent="#accordionGDAds">
+                  <div class="card-body">
+                    <p id="result-google-display" style="margin: 10px"></p>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
+
           <div id="result-facebook-ads-container" style="display: none">
-            <h6 class="text-decoration-underline">Facebook Ads:</h6>
-            <p id="result-facebook-ads" style="margin: 10px"></p>
+            <div id="accordionFbAds">
+              <div class="card">
+                <div class="card-header" id="headingFbAds">
+                  <h6 class="mb-0">
+                    <button class="btn btn-link" data-toggle="collapse" data-target="#collapseFbAds" aria-expanded="false" aria-controls="collapseFbAds">
+                      <i class="fas fa-caret-square-down"></i>
+                    </button>
+                    <p class="text-decoration-underline">Facebook Ads:</p>
+                  </h6>
+                </div>
+            
+                <div id="collapseFbAds" class="collapse" aria-labelledby="headingFbAds" data-parent="#accordionFbAds">
+                  <div class="card-body">
+                    <p id="result-facebook-ads" style="margin: 10px"></p>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
-        
+
       </div>
+
       <div id="result-email-container" style="display: none;">
-        <h6 class="text-decoration-underline">Email Marketing</h6>
-        <p id="result-email">-</p>
+        <div id="accordionZero">
+          <div class="card">
+            <div class="card-header" id="headingZero">
+              <h6 class="mb-0">
+                <button class="btn btn-link" data-toggle="collapse" data-target="#collapseZero" aria-expanded="false" aria-controls="collapseZero">
+                  <i class="fas fa-caret-square-down"></i>
+                </button>
+                <p class="text-decoration-underline">Email marketing:</p> <p id="result-email">-</p>
+              </h6>
+            </div>
+        
+            <div id="collapseZero" class="collapse" aria-labelledby="headingZero" data-parent="#accordionZero">
+              <div class="card-body" id="result-email-details">
+                Proximamente...
+              </div>
+            </div>
+          </div>
+        </div>
+        
       </div>
       
       <h5 style="margin: 10px">Detalles y montos estimados:</h5>
+
       <div id="result-once-fee-container">
-        <div id="accordion">
+        <div id="accordionOne">
           <div class="card">
             <div class="card-header" id="headingOne">
               <h6 class="mb-0">
                 <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
                   <i class="fas fa-caret-square-down"></i>
                 </button>
-                <p class="text-decoration-underline">Fee de servicios que se hacen 1 sola vez (Ej: Sitio web):</p> <p id="result-once-fee">-</p>
+                <p class="text-decoration-underline">Fee de servicios que se realizan 1 sola vez (Implementación):</p> <p id="result-once-fee">-</p>
               </h6>
             </div>
         
-            <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+            <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionOne">
               <div class="card-body">
-                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+              <ul id="result-once-fee-details" style="list-style-type: none"></ul>
               </div>
             </div>
           </div>
-
         </div>
         
       </div>
 
       <div id="result-total-month">
-        
-        <div id="accordion">
+        <div id="accordionTwo">
           <div class="card">
             <div class="card-header" id="headingTwo">
               <h6 class="mb-0">
                 <button class="btn btn-link" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
                   <i class="fas fa-caret-square-down"></i>
                 </button>
-                <p class="text-decoration-underline">Total mensual:</p> <p id="monthly-total">-</p>
+                <p class="text-decoration-underline">Total mensual (Mantenimiento):</p> <p id="monthly-total">-</p>
               </h6>
             </div>
         
-            <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
-              <div class="card-body">
-                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+            <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionTwo">
+              <div class="card-body" id="monthly-total-details">
+                Proximamente...
               </div>
             </div>
           </div>
-
         </div>
        
       </div>
 
       <div id="result-estimated">
-        <div id="accordion">
+        <div id="accordionThree">
           <div class="card">
             <div class="card-header" id="headingThree">
               <h6 class="mb-0">
@@ -362,18 +428,17 @@
               </h6>
             </div>
         
-            <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
-              <div class="card-body">
-                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+            <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionThree">
+              <div class="card-body" id="estimated-earning-details">
+                Proximamente...
               </div>
             </div>
           </div>
-
         </div>
         
       </div>
       <div id="result-agency-once-fee">
-        <div id="accordion">
+        <div id="accordionFour">
           <div class="card">
             <div class="card-header" id="headingFour">
               <h6 class="mb-0">
@@ -384,13 +449,12 @@
               </h6>
             </div>
         
-            <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordion">
-              <div class="card-body">
-                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+            <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionFour">
+              <div class="card-body" id="agency-once-fee-details">
+                Proximamente...
               </div>
             </div>
           </div>
-
         </div>
         
       </div>
