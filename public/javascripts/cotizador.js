@@ -940,6 +940,7 @@ function calculate() {
 
     
 };
+
 window.addEventListener('change', function () {
     console.log(completeFormValidate)
 })
