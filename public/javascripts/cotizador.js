@@ -494,6 +494,7 @@ var resultAgencyOnceFee = qs('#agency-once-fee');
 var googleSearchAdsConversions = qs('#google-search-ads-conversions');
 var googleDisplayAdsConversions = qs('#google-display-ads-conversions');
 var facebookAdsConversions = qs('#facebook-ads-conversions');
+var totalConversions = qs('#total-conversions');
 
 /*--Se capturan los contenedores de detalles de resultados p/ c/ servicio--*/
 var resultEmailDetail = qs("#result-email-details");
@@ -769,7 +770,7 @@ function calculate() {
     var googleAdsSearchConversionsValue = 0;
     var googleAdsDisplayConversionsValue = 0;
     var facebookAdsConversionsValue = 0;
-    var totalConversios = 0;
+    var totalConversionsValue = 0;
 
     /*--Se resetean los resultados necesarios al volver a calcular--*/
     resultGoogleSearch.innerHTML = '';
@@ -929,6 +930,9 @@ function calculate() {
     var onceServiceFee = 0;
     var monthlyTotalServiceFee = 0;
 
+    /*--Ya calculadas las conversiones particulares (google display, google search y facebook), se suman en conversion total--*/
+    totalConversionsValue = googleAdsSearchConversionsValue + googleAdsDisplayConversionsValue + facebookAdsConversionsValue;
+
     if ((googleSearchAds.checked || googleDisplayAds.checked || facebookAds.checked || redesSociales.checked || seo.checked || conversionWeb.checked || wordpress.checked || ecommerceWeb.checked || landingPage.checked || logoMarca.checked || email.checked) && !completeFormValidate.includes(false)) {
         
         /*---Chequea que servicios estan tildados y los suma al total---*/
@@ -977,7 +981,8 @@ function calculate() {
             serviceOnceFeeContainer.style.display = "block";
             onceServiceFee += services.googleSearchAds.implementationHours * services.googleSearchAds.costPerHour;
             resultServiceOnceFeeDetail.innerHTML += `<li style="margin-top: 10px"><strong>‣ Google Ads Search:</strong> USD ${services.googleSearchAds.implementationHours * services.googleSearchAds.costPerHour}. <small>(Siendo ${services.googleSearchAds.implementationHours}hs a un valor de USD ${services.googleSearchAds.costPerHour} por hora)</small></li>`;
-            googleSearchAdsConversions.innerHTML = `${googleAdsSearchConversionsValue.toFixed(3)} conversiones`
+            googleSearchAdsConversions.innerHTML = `${googleAdsSearchConversionsValue.toFixed(2).replace(".", ",")} conversiones`;
+            totalConversions.innerHTML = `${totalConversionsValue.toFixed(2).replace(".", ",")}`;
         }
         if (googleDisplayAds.checked) {
             monthlyTotalServiceFee += services.googleDisplayAds.maintenanceHours * services.googleDisplayAds.costPerHour;
@@ -985,7 +990,8 @@ function calculate() {
             serviceOnceFeeContainer.style.display = "block";
             onceServiceFee += services.googleDisplayAds.implementationHours * services.googleDisplayAds.costPerHour;
             resultServiceOnceFeeDetail.innerHTML += `<li style="margin-top: 10px"><strong>‣ Google Ads Display:</strong> USD ${services.googleDisplayAds.implementationHours * services.googleDisplayAds.costPerHour}. <small>(Siendo ${services.googleDisplayAds.implementationHours}hs a un valor de USD ${services.googleDisplayAds.costPerHour} por hora)</small></li>`;
-            googleDisplayAdsConversions.innerHTML = `${googleAdsDisplayConversionsValue.toFixed(3)} conversiones`
+            googleDisplayAdsConversions.innerHTML = `${googleAdsDisplayConversionsValue.toFixed(2).replace(".", ",")} conversiones`;
+            totalConversions.innerHTML = `${totalConversionsValue.toFixed(2).replace(".", ",")}`;
         }
         if (facebookAds.checked) {
             monthlyTotalServiceFee += services.facebookAds.maintenanceHours * services.facebookAds.costPerHour;
@@ -993,7 +999,8 @@ function calculate() {
             serviceOnceFeeContainer.style.display = "block";
             onceServiceFee += services.facebookAds.implementationHours * services.facebookAds.costPerHour;
             resultServiceOnceFeeDetail.innerHTML += `<li style="margin-top: 10px"><strong>‣ Facebook Ads:</strong> USD ${services.facebookAds.implementationHours * services.facebookAds.costPerHour}. <small>(Siendo ${services.facebookAds.implementationHours}hs a un valor de USD ${services.facebookAds.costPerHour} por hora)</small></li>`;
-            facebookAdsConversions.innerHTML = `${facebookAdsConversionsValue} conversiones`
+            facebookAdsConversions.innerHTML = `${facebookAdsConversionsValue} conversiones`;
+            totalConversions.innerHTML = `${totalConversionsValue.toFixed(2).replace(".", ",")}`;
         }
         
         if (wordpress.checked) { console.log('Faltan datos del servicio "wordpress"')  }
