@@ -69,3 +69,9 @@ p {
   margin-right: 45%;
   margin-left: 45%;
 }
+
+.industry-ads-selector-container, .investment-google-search-ads, .investment-google-display-ads, .investment-facebook-ads {
+  display: none;
+  justify-content: space-evenly;
+  padding: 10px
+}

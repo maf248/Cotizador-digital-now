@@ -538,11 +538,11 @@ checkboxesServices.forEach((checkboxService, i) => {
         }
         /*--Muestra u oculta la seleccion del tipo de industria en caso de seleccionarse google / facebook ads (las primeras 3 opciones)---*/
         if (checkboxesServicesValidate.slice(0, 3).includes(true)) {
-            industryAdsSelectorContainer.style.display = "block";
+            industryAdsSelectorContainer.style.display = "flex";
             countryAnnounceContainer.style.display = "block";
             /*--Muestra según el caso : Inversión en Google Ads Search, Inversión en Google Ads Display e Inversión en Facebook Ads--*/
             if (checkboxesServicesValidate[0]) {
-                investmentGoogleSearchAdsContainer.style.display = "block";
+                investmentGoogleSearchAdsContainer.style.display = "flex";
                 /*-Valida true / false el monto google search ads en caso de estar completado o no-*/
                 if (investmentGoogleSearchAdsAmmount.value == '') {
                     completeFormValidate[5] = false;
@@ -554,7 +554,7 @@ checkboxesServices.forEach((checkboxService, i) => {
                 completeFormValidate.splice(5, 6);
             }
             if (checkboxesServicesValidate[1]) {
-                investmentGoogleDisplayAdsContainer.style.display = "block";
+                investmentGoogleDisplayAdsContainer.style.display = "flex";
                 /*-Valida true / false el monto google display ads en caso de estar completado o no-*/
                 if (investmentGoogleDisplayAdsAmmount.value == '') {
                     completeFormValidate[6] = false;
@@ -566,7 +566,7 @@ checkboxesServices.forEach((checkboxService, i) => {
                 completeFormValidate.splice(6, 7);
             }
             if (checkboxesServicesValidate[2]) {
-                investmentFacebookAdsContainer.style.display = "block";
+                investmentFacebookAdsContainer.style.display = "flex";
                 /*-Valida true / false el monto facebook ads en caso de estar completado o no-*/
                 if (investmentFacebookAdsAmmount.value.length == '') {
                     completeFormValidate[7] = false;
@@ -818,16 +818,31 @@ function calculate() {
             
             if (selectedCountriesAnnounceOperate !== [] && industryAdsSelector.value !== '' && investmentGoogleSearchAdsAmmount.value > 0) {
                 selectedCountriesAnnounceOperate.forEach((selectedCountry, i) => {
-                    if (selectedCountry !== "eeuu") {
-                        resultGoogleSearch.innerHTML += `<strong>‣ ${selectedCountriesAnnounceDisplay[i]}</strong> en industria <strong>${industryAdsSelector.options[industryAdsSelector.selectedIndex].text}</strong> ➠ <strong>CPA:</strong> ${(absoluteStatsCountries.eeuu.googleSearchAds.cpa[industryAdsSelector.value] * relativeStatsCountries[selectedCountry].relativeRateToUSA).toFixed(3)} <strong>CPC:</strong> ${(absoluteStatsCountries.eeuu.googleSearchAds.cpc[industryAdsSelector.value] * relativeStatsCountries[selectedCountry].relativeRateToUSA).toFixed(3)}<br>`;
-                        resultGoogleSearch.innerHTML += `- Inversión elegida: USD ${(investmentGoogleSearchAdsAmmount.value / selectedCountriesAnnounceOperate.length)}<br>`
-                        resultGoogleSearch.innerHTML += `- Numero de conversiones (inversion / CPA):  ${((investmentGoogleSearchAdsAmmount.value / selectedCountriesAnnounceOperate.length) / (absoluteStatsCountries.eeuu.googleSearchAds.cpa[industryAdsSelector.value] * relativeStatsCountries[selectedCountry].relativeRateToUSA)).toFixed(3)}<br>`
-                       
-                    } else if (selectedCountry === "eeuu") {
-                        resultGoogleSearch.innerHTML += `<strong>‣ ${selectedCountriesAnnounceDisplay[i]}</strong> en industria <strong>${industryAdsSelector.options[industryAdsSelector.selectedIndex].text}</strong> ➠ <strong>CPA:</strong> ${(absoluteStatsCountries.eeuu.googleSearchAds.cpa[industryAdsSelector.value]).toFixed(3)} <strong>CPC:</strong> ${(absoluteStatsCountries.eeuu.googleSearchAds.cpc[industryAdsSelector.value]).toFixed(3)}<br>`;
-                        resultGoogleSearch.innerHTML += `- Inversión elegida: USD ${(investmentGoogleSearchAdsAmmount.value / selectedCountriesAnnounceOperate.length)}<br>`
-                        resultGoogleSearch.innerHTML += `- Numero de conversiones (inversion / CPA):  ${((investmentGoogleSearchAdsAmmount.value / selectedCountriesAnnounceOperate.length) / absoluteStatsCountries.eeuu.googleSearchAds.cpa[industryAdsSelector.value]).toFixed(3)}<br>`
+
+                    if (selectedCountriesAnnounceOperate.length == 1) {
+                        if (selectedCountry !== "eeuu") {
+                            resultGoogleSearch.innerHTML += `<strong>‣ ${selectedCountriesAnnounceDisplay[i]}</strong> en industria <strong>${industryAdsSelector.options[industryAdsSelector.selectedIndex].text}</strong> ➠ <strong>CPA:</strong> ${(absoluteStatsCountries.eeuu.googleSearchAds.cpa[industryAdsSelector.value] * relativeStatsCountries[selectedCountry].relativeRateToUSA).toFixed(3)} <strong>CPC:</strong> ${(absoluteStatsCountries.eeuu.googleSearchAds.cpc[industryAdsSelector.value] * relativeStatsCountries[selectedCountry].relativeRateToUSA).toFixed(3)}<br>`;
+                            resultGoogleSearch.innerHTML += `- Inversión elegida: USD ${(investmentGoogleSearchAdsAmmount.value / selectedCountriesAnnounceOperate.length)}<br>`
+                            resultGoogleSearch.innerHTML += `- Numero de conversiones (inversion / CPA):  ${((investmentGoogleSearchAdsAmmount.value / selectedCountriesAnnounceOperate.length) / (absoluteStatsCountries.eeuu.googleSearchAds.cpa[industryAdsSelector.value] * relativeStatsCountries[selectedCountry].relativeRateToUSA)).toFixed(3)}<br>`
+                           
+                        } else if (selectedCountry === "eeuu") {
+                            resultGoogleSearch.innerHTML += `<strong>‣ ${selectedCountriesAnnounceDisplay[i]}</strong> en industria <strong>${industryAdsSelector.options[industryAdsSelector.selectedIndex].text}</strong> ➠ <strong>CPA:</strong> ${(absoluteStatsCountries.eeuu.googleSearchAds.cpa[industryAdsSelector.value]).toFixed(3)} <strong>CPC:</strong> ${(absoluteStatsCountries.eeuu.googleSearchAds.cpc[industryAdsSelector.value]).toFixed(3)}<br>`;
+                            resultGoogleSearch.innerHTML += `- Inversión elegida: USD ${(investmentGoogleSearchAdsAmmount.value / selectedCountriesAnnounceOperate.length)}<br>`
+                            resultGoogleSearch.innerHTML += `- Numero de conversiones (inversion / CPA):  ${((investmentGoogleSearchAdsAmmount.value / selectedCountriesAnnounceOperate.length) / absoluteStatsCountries.eeuu.googleSearchAds.cpa[industryAdsSelector.value]).toFixed(3)}<br>`
+                        }
+                    } else {
+                        if (selectedCountry !== "eeuu") {
+                            resultGoogleSearch.innerHTML += `<strong>‣ ${selectedCountriesAnnounceDisplay[i]}</strong> en industria <strong>${industryAdsSelector.options[industryAdsSelector.selectedIndex].text}</strong> ➠ <strong>CPA:</strong> ${(absoluteStatsCountries.eeuu.googleSearchAds.cpa[industryAdsSelector.value] * relativeStatsCountries[selectedCountry].relativeRateToUSA).toFixed(3)} <strong>CPC:</strong> ${(absoluteStatsCountries.eeuu.googleSearchAds.cpc[industryAdsSelector.value] * relativeStatsCountries[selectedCountry].relativeRateToUSA).toFixed(3)}<br>`;
+                            resultGoogleSearch.innerHTML += `- Inversión proporcional: USD ${(investmentGoogleSearchAdsAmmount.value / selectedCountriesAnnounceOperate.length)}<br>`
+                            resultGoogleSearch.innerHTML += `- Numero de conversiones (inversion / CPA):  ${((investmentGoogleSearchAdsAmmount.value / selectedCountriesAnnounceOperate.length) / (absoluteStatsCountries.eeuu.googleSearchAds.cpa[industryAdsSelector.value] * relativeStatsCountries[selectedCountry].relativeRateToUSA)).toFixed(3)}<br>`
+                           
+                        } else if (selectedCountry === "eeuu") {
+                            resultGoogleSearch.innerHTML += `<strong>‣ ${selectedCountriesAnnounceDisplay[i]}</strong> en industria <strong>${industryAdsSelector.options[industryAdsSelector.selectedIndex].text}</strong> ➠ <strong>CPA:</strong> ${(absoluteStatsCountries.eeuu.googleSearchAds.cpa[industryAdsSelector.value]).toFixed(3)} <strong>CPC:</strong> ${(absoluteStatsCountries.eeuu.googleSearchAds.cpc[industryAdsSelector.value]).toFixed(3)}<br>`;
+                            resultGoogleSearch.innerHTML += `- Inversión proporcional: USD ${(investmentGoogleSearchAdsAmmount.value / selectedCountriesAnnounceOperate.length)}<br>`
+                            resultGoogleSearch.innerHTML += `- Numero de conversiones (inversion / CPA):  ${((investmentGoogleSearchAdsAmmount.value / selectedCountriesAnnounceOperate.length) / absoluteStatsCountries.eeuu.googleSearchAds.cpa[industryAdsSelector.value]).toFixed(3)}<br>`
+                        }
                     }
+                    
                 })
             }
             
@@ -840,17 +855,32 @@ function calculate() {
 
             if (selectedCountriesAnnounceOperate !== [] && industryAdsSelector.value !== '') {
                 selectedCountriesAnnounceOperate.forEach((selectedCountry, i) => {
-                    if (selectedCountry !== "eeuu") {
-                        resultGoogleDisplay.innerHTML += `<strong>‣ ${selectedCountriesAnnounceDisplay[i]}</strong> en industria <strong>${industryAdsSelector.options[industryAdsSelector.selectedIndex].text}</strong> ➠ <strong>CPA:</strong> ${(absoluteStatsCountries.eeuu.googleDisplayAds.cpa[industryAdsSelector.value] * relativeStatsCountries[selectedCountry].relativeRateToUSA).toFixed(3)} <strong>CPC:</strong> ${(absoluteStatsCountries.eeuu.googleDisplayAds.cpc[industryAdsSelector.value] * relativeStatsCountries[selectedCountry].relativeRateToUSA).toFixed(3) }<br>`;
-                        resultGoogleDisplay.innerHTML += `- Inversión elegida: USD ${investmentGoogleDisplayAdsAmmount.value / selectedCountriesAnnounceOperate.length}<br>`
-                        resultGoogleDisplay.innerHTML += `- Numero de conversiones (inversion / CPA):  ${((investmentGoogleDisplayAdsAmmount.value / selectedCountriesAnnounceOperate.length) / (absoluteStatsCountries.eeuu.googleDisplayAds.cpa[industryAdsSelector.value] * relativeStatsCountries[selectedCountry].relativeRateToUSA) ).toFixed(3)}<br>`
-                        
-                    } else if (selectedCountry === "eeuu") {
-                        resultGoogleDisplay.innerHTML += `<strong>‣ ${selectedCountriesAnnounceDisplay[i]}</strong> en industria <strong>${industryAdsSelector.options[industryAdsSelector.selectedIndex].text}</strong> ➠ <strong>CPA:</strong> ${(absoluteStatsCountries.eeuu.googleDisplayAds.cpa[industryAdsSelector.value]).toFixed(3)} <strong>CPC:</strong> ${(absoluteStatsCountries.eeuu.googleDisplayAds.cpc[industryAdsSelector.value]).toFixed(3)}<br>`;
-                        resultGoogleDisplay.innerHTML += `- Inversión elegida: USD ${investmentGoogleDisplayAdsAmmount.value / selectedCountriesAnnounceOperate.length}<br>`
-                        resultGoogleDisplay.innerHTML += `- Numero de conversiones (inversion / CPA):  ${((investmentGoogleDisplayAdsAmmount.value / selectedCountriesAnnounceOperate.length) / absoluteStatsCountries.eeuu.googleDisplayAds.cpa[industryAdsSelector.value]).toFixed(3)}<br>`
-                       
+                    if (selectedCountriesAnnounceOperate.length == 1) {
+                        if (selectedCountry !== "eeuu") {
+                            resultGoogleDisplay.innerHTML += `<strong>‣ ${selectedCountriesAnnounceDisplay[i]}</strong> en industria <strong>${industryAdsSelector.options[industryAdsSelector.selectedIndex].text}</strong> ➠ <strong>CPA:</strong> ${(absoluteStatsCountries.eeuu.googleDisplayAds.cpa[industryAdsSelector.value] * relativeStatsCountries[selectedCountry].relativeRateToUSA).toFixed(3)} <strong>CPC:</strong> ${(absoluteStatsCountries.eeuu.googleDisplayAds.cpc[industryAdsSelector.value] * relativeStatsCountries[selectedCountry].relativeRateToUSA).toFixed(3) }<br>`;
+                            resultGoogleDisplay.innerHTML += `- Inversión elegida: USD ${investmentGoogleDisplayAdsAmmount.value / selectedCountriesAnnounceOperate.length}<br>`
+                            resultGoogleDisplay.innerHTML += `- Numero de conversiones (inversion / CPA):  ${((investmentGoogleDisplayAdsAmmount.value / selectedCountriesAnnounceOperate.length) / (absoluteStatsCountries.eeuu.googleDisplayAds.cpa[industryAdsSelector.value] * relativeStatsCountries[selectedCountry].relativeRateToUSA) ).toFixed(3)}<br>`
+                            
+                        } else if (selectedCountry === "eeuu") {
+                            resultGoogleDisplay.innerHTML += `<strong>‣ ${selectedCountriesAnnounceDisplay[i]}</strong> en industria <strong>${industryAdsSelector.options[industryAdsSelector.selectedIndex].text}</strong> ➠ <strong>CPA:</strong> ${(absoluteStatsCountries.eeuu.googleDisplayAds.cpa[industryAdsSelector.value]).toFixed(3)} <strong>CPC:</strong> ${(absoluteStatsCountries.eeuu.googleDisplayAds.cpc[industryAdsSelector.value]).toFixed(3)}<br>`;
+                            resultGoogleDisplay.innerHTML += `- Inversión elegida: USD ${investmentGoogleDisplayAdsAmmount.value / selectedCountriesAnnounceOperate.length}<br>`
+                            resultGoogleDisplay.innerHTML += `- Numero de conversiones (inversion / CPA):  ${((investmentGoogleDisplayAdsAmmount.value / selectedCountriesAnnounceOperate.length) / absoluteStatsCountries.eeuu.googleDisplayAds.cpa[industryAdsSelector.value]).toFixed(3)}<br>`
+                           
+                        }
+                    } else {
+                        if (selectedCountry !== "eeuu") {
+                            resultGoogleDisplay.innerHTML += `<strong>‣ ${selectedCountriesAnnounceDisplay[i]}</strong> en industria <strong>${industryAdsSelector.options[industryAdsSelector.selectedIndex].text}</strong> ➠ <strong>CPA:</strong> ${(absoluteStatsCountries.eeuu.googleDisplayAds.cpa[industryAdsSelector.value] * relativeStatsCountries[selectedCountry].relativeRateToUSA).toFixed(3)} <strong>CPC:</strong> ${(absoluteStatsCountries.eeuu.googleDisplayAds.cpc[industryAdsSelector.value] * relativeStatsCountries[selectedCountry].relativeRateToUSA).toFixed(3) }<br>`;
+                            resultGoogleDisplay.innerHTML += `- Inversión proporcional: USD ${investmentGoogleDisplayAdsAmmount.value / selectedCountriesAnnounceOperate.length}<br>`
+                            resultGoogleDisplay.innerHTML += `- Numero de conversiones (inversion / CPA):  ${((investmentGoogleDisplayAdsAmmount.value / selectedCountriesAnnounceOperate.length) / (absoluteStatsCountries.eeuu.googleDisplayAds.cpa[industryAdsSelector.value] * relativeStatsCountries[selectedCountry].relativeRateToUSA) ).toFixed(3)}<br>`
+                            
+                        } else if (selectedCountry === "eeuu") {
+                            resultGoogleDisplay.innerHTML += `<strong>‣ ${selectedCountriesAnnounceDisplay[i]}</strong> en industria <strong>${industryAdsSelector.options[industryAdsSelector.selectedIndex].text}</strong> ➠ <strong>CPA:</strong> ${(absoluteStatsCountries.eeuu.googleDisplayAds.cpa[industryAdsSelector.value]).toFixed(3)} <strong>CPC:</strong> ${(absoluteStatsCountries.eeuu.googleDisplayAds.cpc[industryAdsSelector.value]).toFixed(3)}<br>`;
+                            resultGoogleDisplay.innerHTML += `- Inversión proporcional: USD ${investmentGoogleDisplayAdsAmmount.value / selectedCountriesAnnounceOperate.length}<br>`
+                            resultGoogleDisplay.innerHTML += `- Numero de conversiones (inversion / CPA):  ${((investmentGoogleDisplayAdsAmmount.value / selectedCountriesAnnounceOperate.length) / absoluteStatsCountries.eeuu.googleDisplayAds.cpa[industryAdsSelector.value]).toFixed(3)}<br>`
+                           
+                        }
                     }
+                    
                 })
             }
 
@@ -969,4 +999,3 @@ function calculate() {
 window.addEventListener('change', function () {
     console.log(completeFormValidate)
 })
-
