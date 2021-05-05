@@ -608,7 +608,7 @@ checkboxesServices.forEach((checkboxService, i) => {
 /*---Se piden cantidad de mails en caso de tildar "Email Marketing"---*/
 email.addEventListener('change', function() {
     if (this.checked) {
-        emailAmmountContainer.style.display = 'block';
+        emailAmmountContainer.style.display = 'flex';
         if (emailAmmount.value == '') {
             completeFormValidate[2] = false;
         } else {
