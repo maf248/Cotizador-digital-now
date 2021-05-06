@@ -488,7 +488,7 @@ var resultFacebookAds = qs('#result-facebook-ads');
 var resultEmail = qs('#result-email');
 var resultServiceOnceFee = qs('#result-once-fee');
 var resultMonthlyTotal = qs('#monthly-total');
-var resultEstimatedEarning = qs('#estimated-earning');
+var resultInvestmentsMonthly = qs('#investments-monthly');
 var resultAgencyOnceFee = qs('#agency-once-fee');
 /*--Se capturan los resultados numericos de las conversiones --*/
 var googleSearchAdsConversions = qs('#google-search-ads-conversions');
@@ -500,7 +500,7 @@ var totalConversions = qs('#total-conversions');
 var resultEmailDetail = qs("#result-email-details");
 var resultServiceOnceFeeDetail = qs("#result-once-fee-details");
 var resultMonthlyTotalDetail = qs("#monthly-total-details");
-var resultEstimatedEarningDetail = qs("#estimated-earning-details");
+var resultMonthlyInvestmentsDetail = qs("#investments-monthly-details");
 var resultAgencyOnceFeeDetail = qs("#agency-once-fee-details");
 
 /*--Contenedor para los mensajes de error y validación--*/
@@ -779,7 +779,7 @@ function calculate() {
 
     resultServiceOnceFeeDetail.innerHTML = '';
     resultMonthlyTotalDetail.innerHTML = '';
-    resultEstimatedEarningDetail.innerHTML = 'Proximamente...';
+    resultMonthlyInvestmentsDetail.innerHTML = 'Proximamente...';
     resultAgencyOnceFeeDetail.innerHTML = 'Proximamente...';
 
     /*---Se valida que esten todas las etapas seleccionadas, para mostrar los resultados u ocultarlos---*/
