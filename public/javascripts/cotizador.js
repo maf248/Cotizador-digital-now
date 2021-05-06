@@ -456,12 +456,11 @@ var googleSearchAdsResultContainer = qs('#result-google-search-ads-container');
 var googleDisplayAdsResultContainer = qs('#result-google-display-ads-container');
 var facebookAdsResultContainer = qs('#result-facebook-ads-container');
 
-var emailResultContainer = qs('#result-email-container');
-var serviceOnceFeeContainer = qs('#result-once-fee-container');
+var resultemailContainer = qs('#result-email-container');
+var resultOnceFeeContainer = qs('#result-once-fee-container');
 
-var resultTotalMonth = qs('#result-total-month');
-var resultEstimated = qs('#result-estimated');
-var resultAgencyOnceFee = qs('#result-agency-once-fee');
+var resultMonthlyFeeContainer = qs('#result-monthly-fee-container');
+var resultInvestmentsMonthlyContainer = qs('#result-investments-monthly-container');
 
 /*---Se captura el bloque CONTENEDOR que pide los PAISES donde se desea ANUNCIAR---*/
 var countryAnnounceContainer = qs('#country-announce-container');
@@ -487,9 +486,10 @@ var resultFacebookAds = qs('#result-facebook-ads');
 /*--Se capturan los resultados numericos de cada servicio--*/
 var resultEmail = qs('#result-email');
 var resultServiceOnceFee = qs('#result-once-fee');
-var resultMonthlyTotal = qs('#result-monthly-total');
+var resultMonthlyFee = qs('#result-monthly-fee');
 var resultInvestmentsMonthly = qs('#result-investments-monthly');
 var resultAgencyOnceFee = qs('#agency-once-fee');
+var resultMonthlyTotal = qs('#result-monthly-total');
 /*--Se capturan los resultados numericos de las conversiones --*/
 var googleSearchAdsConversions = qs('#google-search-ads-conversions');
 var googleDisplayAdsConversions = qs('#google-display-ads-conversions');
@@ -499,10 +499,9 @@ var totalConversions = qs('#total-conversions');
 /*--Se capturan los contenedores de detalles de resultados p/ c/ servicio--*/
 var resultEmailDetail = qs("#result-email-details");
 var resultServiceOnceFeeDetail = qs("#result-once-fee-details");
-var resultMonthlyTotalDetail = qs("#result-monthly-total-details");
+var resultMonthlyFeeDetail = qs("#result-monthly-fee-details");
 var resultMonthlyInvestmentsDetail = qs("#result-investments-monthly-details");
-var resultAgencyOnceFeeDetail = qs("#agency-once-fee-details");
-
+var resultMonthlyTotalDetail = qs('#result-monthly-total-detail');
 /*--Contenedor para los mensajes de error y validación--*/
 var errorMessages = qs('#error-messages');
 
@@ -778,9 +777,9 @@ function calculate() {
     resultFacebookAds.innerHTML = '';
 
     resultServiceOnceFeeDetail.innerHTML = '';
-    resultMonthlyTotalDetail.innerHTML = '';
+    resultMonthlyFeeDetail.innerHTML = '';
     resultMonthlyInvestmentsDetail.innerHTML = '';
-    resultAgencyOnceFeeDetail.innerHTML = 'Proximamente...';
+    resultMonthlyTotalDetail.innerHTML = 'Proximamente...';
 
     /*---Se valida que esten todas las etapas seleccionadas, para mostrar los resultados u ocultarlos---*/
     if (completeFormValidate.includes(false)) {
@@ -941,49 +940,49 @@ function calculate() {
         /*---Chequea que servicios estan tildados y los suma al total---*/
         if (seo.checked) {
             /*--Se ocultan los fees de unica vez, ya que este plan no tiene---*/
-            serviceOnceFeeContainer.style.display = "none";
-            resultMonthlyTotalDetail.innerHTML += '<li style="margin-top: 10px"><strong>‣ SEO:</strong><ul>';
+            resultOnceFeeContainer.style.display = "none";
+            resultMonthlyFeeDetail.innerHTML += '<li style="margin-top: 10px"><strong>‣ SEO:</strong><ul>';
             services.seo.maintenanceHours.forEach((monthlyHours, i) => {
                 if(monthlyHours > 0) {
                     monthlyTotalServiceFee += monthlyHours * services.seo.costPerHour[i];
-                    resultMonthlyTotalDetail.innerHTML += `<li style="list-style-type: none">- ${services.seo.skillsAcquired[i]} : USD ${monthlyHours * services.seo.costPerHour[i]} <small>(Siendo ${monthlyHours}hs mensuales a USD ${services.seo.costPerHour[i]} la hora)</small></li>`;
+                    resultMonthlyFeeDetail.innerHTML += `<li style="list-style-type: none">- ${services.seo.skillsAcquired[i]} : USD ${monthlyHours * services.seo.costPerHour[i]} <small>(Siendo ${monthlyHours}hs mensuales a USD ${services.seo.costPerHour[i]} la hora)</small></li>`;
                 }
             }) 
-            resultMonthlyTotalDetail.innerHTML += '</ul></li>';
+            resultMonthlyFeeDetail.innerHTML += '</ul></li>';
         }
         if (conversionWeb.checked) {
             /*--Se ocultan los fees de unica vez, ya que este plan no tiene---*/
-            serviceOnceFeeContainer.style.display = "none";
-            resultMonthlyTotalDetail.innerHTML += '<li style="margin-top: 10px"><strong>‣ Optimización de tasa de conversión web:</strong><ul>';
+            resultOnceFeeContainer.style.display = "none";
+            resultMonthlyFeeDetail.innerHTML += '<li style="margin-top: 10px"><strong>‣ Optimización de tasa de conversión web:</strong><ul>';
             services.conversionWeb.maintenanceHours.forEach((monthlyHours, i) => {
                 if(monthlyHours > 0) {
                     monthlyTotalServiceFee += monthlyHours * services.conversionWeb.costPerHour[i];
-                    resultMonthlyTotalDetail.innerHTML += `<li style="list-style-type: none">- ${services.conversionWeb.skillsAcquired[i]} : USD ${monthlyHours * services.conversionWeb.costPerHour[i]} <small>(Siendo ${monthlyHours}hs mensuales a USD ${services.conversionWeb.costPerHour[i]} la hora)</small></li>`;
+                    resultMonthlyFeeDetail.innerHTML += `<li style="list-style-type: none">- ${services.conversionWeb.skillsAcquired[i]} : USD ${monthlyHours * services.conversionWeb.costPerHour[i]} <small>(Siendo ${monthlyHours}hs mensuales a USD ${services.conversionWeb.costPerHour[i]} la hora)</small></li>`;
                 }
             })
-            resultMonthlyTotalDetail.innerHTML += '</ul></li>';
+            resultMonthlyFeeDetail.innerHTML += '</ul></li>';
         }
         if (redesSociales.checked) {
-            serviceOnceFeeContainer.style.display = "block";
-            resultMonthlyTotalDetail.innerHTML += '<li style="margin-top: 10px"><strong>‣ Gestión de redes sociales:</strong><ul>';
+            resultOnceFeeContainer.style.display = "block";
+            resultMonthlyFeeDetail.innerHTML += '<li style="margin-top: 10px"><strong>‣ Gestión de redes sociales:</strong><ul>';
             services.redesSociales.maintenanceHours.forEach((monthlyHours, i) => {
                 if(monthlyHours > 0) {
                     monthlyTotalServiceFee += monthlyHours * services.redesSociales.costPerHour[i];
-                    resultMonthlyTotalDetail.innerHTML += `<li style="list-style-type: none">- ${services.redesSociales.skillsAcquired[i]} : USD ${monthlyHours * services.redesSociales.costPerHour[i]} <small>(Siendo ${monthlyHours}hs mensuales a USD ${services.redesSociales.costPerHour[i]} la hora)</small></li>`;
+                    resultMonthlyFeeDetail.innerHTML += `<li style="list-style-type: none">- ${services.redesSociales.skillsAcquired[i]} : USD ${monthlyHours * services.redesSociales.costPerHour[i]} <small>(Siendo ${monthlyHours}hs mensuales a USD ${services.redesSociales.costPerHour[i]} la hora)</small></li>`;
                 }
                 if (services.redesSociales.implementationHours[i] > 0) {
                     onceServiceFee += services.redesSociales.implementationHours[i] * services.redesSociales.costPerHour[i];
                     resultServiceOnceFeeDetail.innerHTML += `<li style="margin-top: 10px"><strong>‣ Gestión de redes sociales:</strong><br> - ${services.redesSociales.skillsAcquired[i]}: USD ${services.redesSociales.implementationHours[i] * services.redesSociales.costPerHour[i]}. <small>(Siendo ${services.redesSociales.implementationHours[i]}hs a un valor de USD ${services.redesSociales.costPerHour[i]} por hora)</small></li>`;
                 }
             })
-            resultMonthlyTotalDetail.innerHTML += '</ul></li>';
+            resultMonthlyFeeDetail.innerHTML += '</ul></li>';
         }
         if (googleSearchAds.checked) {
             monthlyTotalServiceFee += services.googleSearchAds.maintenanceHours * services.googleSearchAds.costPerHour;
-            resultMonthlyTotalDetail.innerHTML += `<li style="margin-top: 10px"><strong>‣ Google Ads Search:</strong> USD ${services.googleSearchAds.maintenanceHours * services.googleSearchAds.costPerHour}. <small>(Siendo ${services.googleSearchAds.maintenanceHours}hs a un valor de USD ${services.googleSearchAds.costPerHour} por hora)</small></li>`;
-            serviceOnceFeeContainer.style.display = "block";
+            resultMonthlyFeeDetail.innerHTML += `<li style="margin-top: 10px"><strong>‣ Google Ads Search:</strong> USD ${services.googleSearchAds.maintenanceHours * services.googleSearchAds.costPerHour} <small>(Siendo ${services.googleSearchAds.maintenanceHours}hs a un valor de USD ${services.googleSearchAds.costPerHour} por hora)</small></li>`;
+            resultOnceFeeContainer.style.display = "block";
             onceServiceFee += services.googleSearchAds.implementationHours * services.googleSearchAds.costPerHour;
-            resultServiceOnceFeeDetail.innerHTML += `<li style="margin-top: 10px"><strong>‣ Google Ads Search:</strong> USD ${services.googleSearchAds.implementationHours * services.googleSearchAds.costPerHour}. <small>(Siendo ${services.googleSearchAds.implementationHours}hs a un valor de USD ${services.googleSearchAds.costPerHour} por hora)</small></li>`;
+            resultServiceOnceFeeDetail.innerHTML += `<li style="margin-top: 10px"><strong>‣ Google Ads Search:</strong> USD ${services.googleSearchAds.implementationHours * services.googleSearchAds.costPerHour} <small>(Siendo ${services.googleSearchAds.implementationHours}hs a un valor de USD ${services.googleSearchAds.costPerHour} por hora)</small></li>`;
             /*-Se completa la información de conversiones-*/
             totalConversions.innerHTML = `${totalConversionsValue.toFixed(2).replace(".", ",")}`;
             googleSearchAdsConversions.innerHTML = `${googleAdsSearchConversionsValue.toFixed(2).replace(".", ",")} conversiones`;
@@ -993,10 +992,10 @@ function calculate() {
         }
         if (googleDisplayAds.checked) {
             monthlyTotalServiceFee += services.googleDisplayAds.maintenanceHours * services.googleDisplayAds.costPerHour;
-            resultMonthlyTotalDetail.innerHTML += `<li style="margin-top: 10px"><strong>‣ Google Ads Display:</strong> USD ${services.googleDisplayAds.maintenanceHours * services.googleDisplayAds.costPerHour}. <small>(Siendo ${services.googleDisplayAds.maintenanceHours}hs a un valor de USD ${services.googleDisplayAds.costPerHour} por hora)</small></li>`;
-            serviceOnceFeeContainer.style.display = "block";
+            resultMonthlyFeeDetail.innerHTML += `<li style="margin-top: 10px"><strong>‣ Google Ads Display:</strong> USD ${services.googleDisplayAds.maintenanceHours * services.googleDisplayAds.costPerHour} <small>(Siendo ${services.googleDisplayAds.maintenanceHours}hs a un valor de USD ${services.googleDisplayAds.costPerHour} por hora)</small></li>`;
+            resultOnceFeeContainer.style.display = "block";
             onceServiceFee += services.googleDisplayAds.implementationHours * services.googleDisplayAds.costPerHour;
-            resultServiceOnceFeeDetail.innerHTML += `<li style="margin-top: 10px"><strong>‣ Google Ads Display:</strong> USD ${services.googleDisplayAds.implementationHours * services.googleDisplayAds.costPerHour}. <small>(Siendo ${services.googleDisplayAds.implementationHours}hs a un valor de USD ${services.googleDisplayAds.costPerHour} por hora)</small></li>`;
+            resultServiceOnceFeeDetail.innerHTML += `<li style="margin-top: 10px"><strong>‣ Google Ads Display:</strong> USD ${services.googleDisplayAds.implementationHours * services.googleDisplayAds.costPerHour} <small>(Siendo ${services.googleDisplayAds.implementationHours}hs a un valor de USD ${services.googleDisplayAds.costPerHour} por hora)</small></li>`;
             /*-Se completa la información de conversiones-*/
             totalConversions.innerHTML = `${totalConversionsValue.toFixed(2).replace(".", ",")}`;
             googleDisplayAdsConversions.innerHTML = `${googleAdsDisplayConversionsValue.toFixed(2).replace(".", ",")} conversiones`;
@@ -1006,10 +1005,10 @@ function calculate() {
         }
         if (facebookAds.checked) {
             monthlyTotalServiceFee += services.facebookAds.maintenanceHours * services.facebookAds.costPerHour;
-            resultMonthlyTotalDetail.innerHTML += `<li style="margin-top: 10px"><strong>‣ Facebook Ads:</strong> USD ${services.facebookAds.maintenanceHours * services.facebookAds.costPerHour}. <small>(Siendo ${services.facebookAds.maintenanceHours}hs a un valor de USD ${services.facebookAds.costPerHour} por hora)</small></li>`;
-            serviceOnceFeeContainer.style.display = "block";
+            resultMonthlyFeeDetail.innerHTML += `<li style="margin-top: 10px"><strong>‣ Facebook Ads:</strong> USD ${services.facebookAds.maintenanceHours * services.facebookAds.costPerHour} <small>(Siendo ${services.facebookAds.maintenanceHours}hs a un valor de USD ${services.facebookAds.costPerHour} por hora)</small></li>`;
+            resultOnceFeeContainer.style.display = "block";
             onceServiceFee += services.facebookAds.implementationHours * services.facebookAds.costPerHour;
-            resultServiceOnceFeeDetail.innerHTML += `<li style="margin-top: 10px"><strong>‣ Facebook Ads:</strong> USD ${services.facebookAds.implementationHours * services.facebookAds.costPerHour}. <small>(Siendo ${services.facebookAds.implementationHours}hs a un valor de USD ${services.facebookAds.costPerHour} por hora)</small></li>`;
+            resultServiceOnceFeeDetail.innerHTML += `<li style="margin-top: 10px"><strong>‣ Facebook Ads:</strong> USD ${services.facebookAds.implementationHours * services.facebookAds.costPerHour} <small>(Siendo ${services.facebookAds.implementationHours}hs a un valor de USD ${services.facebookAds.costPerHour} por hora)</small></li>`;
             /*-Se completa la información de conversiones-*/
             totalConversions.innerHTML = `${totalConversionsValue.toFixed(2).replace(".", ",")}`;
             facebookAdsConversions.innerHTML = `${facebookAdsConversionsValue} conversiones`;
@@ -1028,22 +1027,22 @@ function calculate() {
             /*--Muestra el valor correspondiente a la cantidad de contactos seleccionados---*/
             resultEmail.innerHTML = `USD ${emailAmmount.value}`;
             resultEmailDetail.innerHTML = `Costo mensual de campaña para ${emailAmmount.options[emailAmmount.selectedIndex].text} contactos.`
-            emailResultContainer.style.display = 'block';
+            resultemailContainer.style.display = 'block';
             monthlyTotalServiceFee += Number(emailAmmount.value);
-            resultMonthlyTotalDetail.innerHTML += `<li style="margin-top: 10px"><strong>‣ Email Marketing</strong> USD ${Number(emailAmmount.value)}. <small>(Para un total seleccionado de ${emailAmmount.options[emailAmmount.selectedIndex].text} contactos)</small></li>`;
+            resultMonthlyFeeDetail.innerHTML += `<li style="margin-top: 10px"><strong>‣ Email Marketing</strong> USD ${Number(emailAmmount.value)}. <small>(Para un total seleccionado de ${emailAmmount.options[emailAmmount.selectedIndex].text} contactos)</small></li>`;
             
         } else {
-            emailResultContainer.style.display = 'none';
+            resultemailContainer.style.display = 'none';
             
         }
 
-        resultMonthlyTotal.innerHTML = `USD ${monthlyTotalServiceFee}`;
+        resultMonthlyFee.innerHTML = `USD ${monthlyTotalServiceFee}`;
         resultServiceOnceFee.innerHTML = `USD ${onceServiceFee}`;
     } else {
         resultsContainer.style.display = 'none';
     }
 
-    // resultMonthlyTotal.innerHTML = "el total mensual sería -> fee de gestión + estimación de inversión mensual en facebook ads y google ads";
+    // resultMonthlyFee.innerHTML = "el total mensual sería -> fee de gestión + estimación de inversión mensual en facebook ads y google ads";
 
     
 };
