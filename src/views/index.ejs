@@ -281,70 +281,89 @@
       <h3 class="text-decoration-underline">Resultados:</h3>
 
       <div id="result-googleads-facebookads-container" style="display: none;">
-        <h5 style="margin: 10px">Resultados totales por mes: <strong id="total-conversions"></strong> conversiones totales</h5>
         
-          <div id="result-google-search-ads-container" style="display: none">
-            <div id="accordionGSAds">
-              <div class="card">
-                <div class="card-header" id="headingGSAds">
-                  <h6 class="mb-0">
-                    <button class="btn btn-link" data-toggle="collapse" data-target="#collapseGSAds" aria-expanded="false" aria-controls="collapseGSAds">
-                      <i class="fas fa-caret-square-down"></i>
-                    </button>
-                    <p class="text-decoration-underline">Google Ads Search:</p> <p id="google-search-ads-conversions"></p>
-                  </h6>
-                </div>
-            
-                <div id="collapseGSAds" class="collapse" aria-labelledby="headingGSAds" data-parent="#accordionGSAds">
-                  <div class="card-body">
-                    <p id="result-google-search" style="margin: 10px"></p>
+        <div id="accordionMonthlyTotals">
+          <div class="card">
+            <div class="card-header" id="headingMonthlyTotals">
+              <h5 class="mb-0">
+                <button class="btn btn-link" data-toggle="collapse" data-target="#collapseMonthlyTotals" aria-expanded="false" aria-controls="collapseMonthlyTotals">
+                  <i class="fas fa-caret-square-down"></i>
+                </button>
+                Resultados totales por mes: <strong id="total-conversions"></strong> conversiones totales
+              </h5>
+            </div>
+        
+            <div id="collapseMonthlyTotals" class="collapse" aria-labelledby="headingMonthlyTotals" data-parent="#accordionMonthlyTotals">
+              <div class="card-body">
+                
+                <div id="result-google-search-ads-container" style="display: none">
+                  <div id="accordionGSAds">
+                    <div class="card">
+                      <div class="card-header" id="headingGSAds">
+                        <h6 class="mb-0">
+                          <button class="btn btn-link" data-toggle="collapse" data-target="#collapseGSAds" aria-expanded="false" aria-controls="collapseGSAds">
+                            <i class="fas fa-caret-square-down"></i>
+                          </button>
+                          <p class="text-decoration-underline">Google Ads Search:</p> <p id="google-search-ads-conversions"></p>
+                        </h6>
+                      </div>
+                  
+                      <div id="collapseGSAds" class="collapse" aria-labelledby="headingGSAds" data-parent="#accordionGSAds">
+                        <div class="card-body">
+                          <p id="result-google-search" style="margin: 10px"></p>
+                        </div>
+                      </div>
+                    </div>
                   </div>
                 </div>
-              </div>
-            </div>
-          </div>
+      
+                <div id="result-google-display-ads-container" style="display: none">
+                  <div id="accordionGDAds">
+                    <div class="card">
+                      <div class="card-header" id="headingGDAds">
+                        <h6 class="mb-0">
+                          <button class="btn btn-link" data-toggle="collapse" data-target="#collapseGDAds" aria-expanded="false" aria-controls="collapseGDAds">
+                            <i class="fas fa-caret-square-down"></i>
+                          </button>
+                          <p class="text-decoration-underline">Google Ads Display:</p> <p id="google-display-ads-conversions"></p>
+                        </h6>
+                      </div>
+                  
+                      <div id="collapseGDAds" class="collapse" aria-labelledby="headingGDAds" data-parent="#accordionGDAds">
+                        <div class="card-body">
+                          <p id="result-google-display" style="margin: 10px"></p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+      
+                <div id="result-facebook-ads-container" style="display: none">
+                  <div id="accordionFbAds">
+                    <div class="card">
+                      <div class="card-header" id="headingFbAds">
+                        <h6 class="mb-0">
+                          <button class="btn btn-link" data-toggle="collapse" data-target="#collapseFbAds" aria-expanded="false" aria-controls="collapseFbAds">
+                            <i class="fas fa-caret-square-down"></i>
+                          </button>
+                          <p class="text-decoration-underline">Facebook Ads:</p> <p id="facebook-ads-conversions"></p>
+                        </h6>
+                      </div>
+                  
+                      <div id="collapseFbAds" class="collapse" aria-labelledby="headingFbAds" data-parent="#accordionFbAds">
+                        <div class="card-body">
+                          <p id="result-facebook-ads" style="margin: 10px"></p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+      
 
-          <div id="result-google-display-ads-container" style="display: none">
-            <div id="accordionGDAds">
-              <div class="card">
-                <div class="card-header" id="headingGDAds">
-                  <h6 class="mb-0">
-                    <button class="btn btn-link" data-toggle="collapse" data-target="#collapseGDAds" aria-expanded="false" aria-controls="collapseGDAds">
-                      <i class="fas fa-caret-square-down"></i>
-                    </button>
-                    <p class="text-decoration-underline">Google Ads Display:</p> <p id="google-display-ads-conversions"></p>
-                  </h6>
-                </div>
-            
-                <div id="collapseGDAds" class="collapse" aria-labelledby="headingGDAds" data-parent="#accordionGDAds">
-                  <div class="card-body">
-                    <p id="result-google-display" style="margin: 10px"></p>
-                  </div>
-                </div>
               </div>
             </div>
           </div>
-
-          <div id="result-facebook-ads-container" style="display: none">
-            <div id="accordionFbAds">
-              <div class="card">
-                <div class="card-header" id="headingFbAds">
-                  <h6 class="mb-0">
-                    <button class="btn btn-link" data-toggle="collapse" data-target="#collapseFbAds" aria-expanded="false" aria-controls="collapseFbAds">
-                      <i class="fas fa-caret-square-down"></i>
-                    </button>
-                    <p class="text-decoration-underline">Facebook Ads:</p> <p id="facebook-ads-conversions"></p>
-                  </h6>
-                </div>
-            
-                <div id="collapseFbAds" class="collapse" aria-labelledby="headingFbAds" data-parent="#accordionFbAds">
-                  <div class="card-body">
-                    <p id="result-facebook-ads" style="margin: 10px"></p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
+        </div>
 
       </div>
 
