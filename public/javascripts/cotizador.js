@@ -779,7 +779,7 @@ function calculate() {
 
     resultServiceOnceFeeDetail.innerHTML = '';
     resultMonthlyTotalDetail.innerHTML = '';
-    resultMonthlyInvestmentsDetail.innerHTML = 'Proximamente...';
+    resultMonthlyInvestmentsDetail.innerHTML = '';
     resultAgencyOnceFeeDetail.innerHTML = 'Proximamente...';
 
     /*---Se valida que esten todas las etapas seleccionadas, para mostrar los resultados u ocultarlos---*/
@@ -930,6 +930,9 @@ function calculate() {
     var onceServiceFee = 0;
     var monthlyTotalServiceFee = 0;
 
+    /*--Se inicializa la variable que calcula el monto de inversion en medios seleccionados (por mes)--*/
+    var totalInvestmentMonthly = Number(investmentGoogleSearchAdsAmmount.value) + Number(investmentGoogleDisplayAdsAmmount.value) + Number(investmentFacebookAdsAmmount.value);
+  
     /*--Ya calculadas las conversiones particulares (google display, google search y facebook), se suman en conversion total--*/
     totalConversionsValue = googleAdsSearchConversionsValue + googleAdsDisplayConversionsValue + facebookAdsConversionsValue;
 
@@ -981,8 +984,12 @@ function calculate() {
             serviceOnceFeeContainer.style.display = "block";
             onceServiceFee += services.googleSearchAds.implementationHours * services.googleSearchAds.costPerHour;
             resultServiceOnceFeeDetail.innerHTML += `<li style="margin-top: 10px"><strong>‣ Google Ads Search:</strong> USD ${services.googleSearchAds.implementationHours * services.googleSearchAds.costPerHour}. <small>(Siendo ${services.googleSearchAds.implementationHours}hs a un valor de USD ${services.googleSearchAds.costPerHour} por hora)</small></li>`;
-            googleSearchAdsConversions.innerHTML = `${googleAdsSearchConversionsValue.toFixed(2).replace(".", ",")} conversiones`;
+            /*-Se completa la información de conversiones-*/
             totalConversions.innerHTML = `${totalConversionsValue.toFixed(2).replace(".", ",")}`;
+            googleSearchAdsConversions.innerHTML = `${googleAdsSearchConversionsValue.toFixed(2).replace(".", ",")} conversiones`;
+            /*-Se completa el cajón "costo de inversion en medios mensual total"-*/
+            resultInvestmentsMonthly.innerHTML = ` USD ${totalInvestmentMonthly}`;
+            resultMonthlyInvestmentsDetail.innerHTML += `<li style="margin-top: 10px"><strong>‣ Google Ads Search:</strong> USD ${investmentGoogleSearchAdsAmmount.value} de inversión mensual</li>`;
         }
         if (googleDisplayAds.checked) {
             monthlyTotalServiceFee += services.googleDisplayAds.maintenanceHours * services.googleDisplayAds.costPerHour;
@@ -990,8 +997,12 @@ function calculate() {
             serviceOnceFeeContainer.style.display = "block";
             onceServiceFee += services.googleDisplayAds.implementationHours * services.googleDisplayAds.costPerHour;
             resultServiceOnceFeeDetail.innerHTML += `<li style="margin-top: 10px"><strong>‣ Google Ads Display:</strong> USD ${services.googleDisplayAds.implementationHours * services.googleDisplayAds.costPerHour}. <small>(Siendo ${services.googleDisplayAds.implementationHours}hs a un valor de USD ${services.googleDisplayAds.costPerHour} por hora)</small></li>`;
-            googleDisplayAdsConversions.innerHTML = `${googleAdsDisplayConversionsValue.toFixed(2).replace(".", ",")} conversiones`;
+            /*-Se completa la información de conversiones-*/
             totalConversions.innerHTML = `${totalConversionsValue.toFixed(2).replace(".", ",")}`;
+            googleDisplayAdsConversions.innerHTML = `${googleAdsDisplayConversionsValue.toFixed(2).replace(".", ",")} conversiones`;
+            /*-Se completa el cajón "costo de inversion en medios mensual total"-*/
+            resultInvestmentsMonthly.innerHTML = ` USD ${totalInvestmentMonthly}`;
+            resultMonthlyInvestmentsDetail.innerHTML += `<li style="margin-top: 10px"><strong>‣ Google Ads Display:</strong> USD ${investmentGoogleDisplayAdsAmmount.value} de inversión mensual</li>`;
         }
         if (facebookAds.checked) {
             monthlyTotalServiceFee += services.facebookAds.maintenanceHours * services.facebookAds.costPerHour;
@@ -999,8 +1010,12 @@ function calculate() {
             serviceOnceFeeContainer.style.display = "block";
             onceServiceFee += services.facebookAds.implementationHours * services.facebookAds.costPerHour;
             resultServiceOnceFeeDetail.innerHTML += `<li style="margin-top: 10px"><strong>‣ Facebook Ads:</strong> USD ${services.facebookAds.implementationHours * services.facebookAds.costPerHour}. <small>(Siendo ${services.facebookAds.implementationHours}hs a un valor de USD ${services.facebookAds.costPerHour} por hora)</small></li>`;
-            facebookAdsConversions.innerHTML = `${facebookAdsConversionsValue} conversiones`;
+            /*-Se completa la información de conversiones-*/
             totalConversions.innerHTML = `${totalConversionsValue.toFixed(2).replace(".", ",")}`;
+            facebookAdsConversions.innerHTML = `${facebookAdsConversionsValue} conversiones`;
+            /*-Se completa el cajón "costo de inversion en medios mensual total"-*/
+            resultInvestmentsMonthly.innerHTML = ` USD ${totalInvestmentMonthly}`;
+            resultMonthlyInvestmentsDetail.innerHTML += `<li style="margin-top: 10px"><strong>‣ Facebook Ads:</strong> USD ${investmentFacebookAdsAmmount.value} de inversión mensual</li>`;
         }
         
         if (wordpress.checked) { console.log('Faltan datos del servicio "wordpress"')  }
