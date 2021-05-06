@@ -487,8 +487,8 @@ var resultFacebookAds = qs('#result-facebook-ads');
 /*--Se capturan los resultados numericos de cada servicio--*/
 var resultEmail = qs('#result-email');
 var resultServiceOnceFee = qs('#result-once-fee');
-var resultMonthlyTotal = qs('#monthly-total');
-var resultInvestmentsMonthly = qs('#investments-monthly');
+var resultMonthlyTotal = qs('#result-monthly-total');
+var resultInvestmentsMonthly = qs('#result-investments-monthly');
 var resultAgencyOnceFee = qs('#agency-once-fee');
 /*--Se capturan los resultados numericos de las conversiones --*/
 var googleSearchAdsConversions = qs('#google-search-ads-conversions');
@@ -499,8 +499,8 @@ var totalConversions = qs('#total-conversions');
 /*--Se capturan los contenedores de detalles de resultados p/ c/ servicio--*/
 var resultEmailDetail = qs("#result-email-details");
 var resultServiceOnceFeeDetail = qs("#result-once-fee-details");
-var resultMonthlyTotalDetail = qs("#monthly-total-details");
-var resultMonthlyInvestmentsDetail = qs("#investments-monthly-details");
+var resultMonthlyTotalDetail = qs("#result-monthly-total-details");
+var resultMonthlyInvestmentsDetail = qs("#result-investments-monthly-details");
 var resultAgencyOnceFeeDetail = qs("#agency-once-fee-details");
 
 /*--Contenedor para los mensajes de error y validación--*/
@@ -766,7 +766,7 @@ var resultsContainer = qs('#results-container');
 
 /*--Evento general para validar si mostrar resultados o no, y actualizar los mismos en base a lo seleccionado---*/
 function calculate() {
-    /*--Se setean/resetean las variables de acumulación--*/
+    /*--Se setean/resetean las variables de acumulación de conversiones--*/
     var googleAdsSearchConversionsValue = 0;
     var googleAdsDisplayConversionsValue = 0;
     var facebookAdsConversionsValue = 0;
