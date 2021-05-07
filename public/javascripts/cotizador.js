@@ -946,15 +946,18 @@ function calculate() {
             var seoValueToPush = 0;
             /*--Se ocultan los fees de unica vez, ya que este plan no tiene---*/
             resultAgencyOnceFeeContainer.style.display = "none";
-            resultAgencyMonthlyFeeDetail.innerHTML += '<li style="margin-top: 10px"><strong>‣ SEO:</strong><ul>';
+            /*--Se guardan los detalles de skills que incluye este servicio---*/
+            let detailedSkillsList = '';
             services.seo.maintenanceHours.forEach((monthlyHours, i) => {
                 if(monthlyHours > 0) {
                     seoValueToPush += monthlyHours * services.seo.costPerHour[i];
                     agencyMonthlyFeeValue += monthlyHours * services.seo.costPerHour[i];
-                    resultAgencyMonthlyFeeDetail.innerHTML += `<li style="list-style-type: none">- ${services.seo.skillsAcquired[i]} : USD ${monthlyHours * services.seo.costPerHour[i]} <small>(Siendo ${monthlyHours}hs mensuales a USD ${services.seo.costPerHour[i]} la hora)</small></li>`;
+                    detailedSkillsList += `<li style="list-style-type: none">- ${services.seo.skillsAcquired[i]} : USD ${monthlyHours * services.seo.costPerHour[i]} <small>(Siendo ${monthlyHours}hs mensuales a USD ${services.seo.costPerHour[i]} la hora)</small></li>`;
                 }
-            }) 
-            resultAgencyMonthlyFeeDetail.innerHTML += '</ul></li>';
+            })
+
+            resultAgencyMonthlyFeeDetail.innerHTML += `<li style="margin-top: 10px"><strong>‣ SEO:</strong><ul>${detailedSkillsList}</ul></li>`;
+
             arrayAgencyMantainanceSelected.push({
                 name: "SEO",
                 value: seoValueToPush
@@ -964,15 +967,18 @@ function calculate() {
             var conversionWebValueToPush = 0;
             /*--Se ocultan los fees de unica vez, ya que este plan no tiene---*/
             resultAgencyOnceFeeContainer.style.display = "none";
-            resultAgencyMonthlyFeeDetail.innerHTML += '<li style="margin-top: 10px"><strong>‣ Optimización de tasa de conversión web:</strong><ul>';
+            /*--Se guardan los detalles de skills que incluye este servicio---*/
+            let detailedSkillsList = '';
             services.conversionWeb.maintenanceHours.forEach((monthlyHours, i) => {
                 if(monthlyHours > 0) {
                     conversionWebValueToPush += monthlyHours * services.conversionWeb.costPerHour[i];
                     agencyMonthlyFeeValue += monthlyHours * services.conversionWeb.costPerHour[i];
-                    resultAgencyMonthlyFeeDetail.innerHTML += `<li style="list-style-type: none">- ${services.conversionWeb.skillsAcquired[i]} : USD ${monthlyHours * services.conversionWeb.costPerHour[i]} <small>(Siendo ${monthlyHours}hs mensuales a USD ${services.conversionWeb.costPerHour[i]} la hora)</small></li>`;
+                    detailedSkillsList += `<li style="list-style-type: none">- ${services.conversionWeb.skillsAcquired[i]} : USD ${monthlyHours * services.conversionWeb.costPerHour[i]} <small>(Siendo ${monthlyHours}hs mensuales a USD ${services.conversionWeb.costPerHour[i]} la hora)</small></li>`;
                 }
             })
-            resultAgencyMonthlyFeeDetail.innerHTML += '</ul></li>';
+
+            resultAgencyMonthlyFeeDetail.innerHTML += `<li style="margin-top: 10px"><strong>‣ Optimización de tasa de conversión web:</strong><ul>${detailedSkillsList}</ul></li>`;
+            
             arrayAgencyMantainanceSelected.push({
                 name: "Optimización de tasa de conversión web",
                 value: conversionWebValueToPush
@@ -980,20 +986,25 @@ function calculate() {
         }
         if (redesSociales.checked) {
             var redesSocialesValueToPush = 0;
+            /*--Se ocultan los fees de unica vez, ya que este plan no tiene---*/
             resultAgencyOnceFeeContainer.style.display = "block";
-            resultAgencyMonthlyFeeDetail.innerHTML += '<li style="margin-top: 10px"><strong>‣ Gestión de redes sociales:</strong><ul>';
+            /*--Se guardan los detalles de skills que incluye este servicio---*/
+            let detailedSkillsList = '';
+            
             services.redesSociales.maintenanceHours.forEach((monthlyHours, i) => {
                 if(monthlyHours > 0) {
                     redesSocialesValueToPush += monthlyHours * services.redesSociales.costPerHour[i];
                     agencyMonthlyFeeValue += monthlyHours * services.redesSociales.costPerHour[i];
-                    resultAgencyMonthlyFeeDetail.innerHTML += `<li style="list-style-type: none">- ${services.redesSociales.skillsAcquired[i]} : USD ${monthlyHours * services.redesSociales.costPerHour[i]} <small>(Siendo ${monthlyHours}hs mensuales a USD ${services.redesSociales.costPerHour[i]} la hora)</small></li>`;
+                    detailedSkillsList += `<li style="list-style-type: none">- ${services.redesSociales.skillsAcquired[i]} : USD ${monthlyHours * services.redesSociales.costPerHour[i]} <small>(Siendo ${monthlyHours}hs mensuales a USD ${services.redesSociales.costPerHour[i]} la hora)</small></li>`;
                 }
                 if (services.redesSociales.implementationHours[i] > 0) {
                     agencyOnceFeeValue += services.redesSociales.implementationHours[i] * services.redesSociales.costPerHour[i];
-                    resultAgencyOnceFeeDetail.innerHTML += `<li style="margin-top: 10px"><strong>‣ Gestión de redes sociales:</strong><br> - ${services.redesSociales.skillsAcquired[i]}: USD ${services.redesSociales.implementationHours[i] * services.redesSociales.costPerHour[i]}. <small>(Siendo ${services.redesSociales.implementationHours[i]}hs a un valor de USD ${services.redesSociales.costPerHour[i]} por hora)</small></li>`;
+                    resultAgencyOnceFeeDetail.innerHTML += `<li style="margin-top: 10px"><strong>‣ Gestión de redes sociales:</strong><ul style="list-style-type: none"><li>- ${services.redesSociales.skillsAcquired[i]}: USD ${services.redesSociales.implementationHours[i] * services.redesSociales.costPerHour[i]}. <small>(Siendo ${services.redesSociales.implementationHours[i]}hs a un valor de USD ${services.redesSociales.costPerHour[i]} por hora)</small></ul></li></li>`;
                 }
             })
-            resultAgencyMonthlyFeeDetail.innerHTML += '</ul></li>';
+
+            resultAgencyMonthlyFeeDetail.innerHTML += `<li style="margin-top: 10px"><strong>‣ Gestión de redes sociales:</strong><ul>${detailedSkillsList}</ul></li>`;
+            
             arrayAgencyMantainanceSelected.push({
                 name: "Gestión de redes sociales",
                 value: redesSocialesValueToPush
@@ -1081,13 +1092,17 @@ function calculate() {
                 name: "Email Marketing",
                 value: emailAmmount.value
             });
-        } 
+        }
+        if (!email.checked && !googleSearchAds.checked && !googleDisplayAds.checked && !facebookAds.checked) {
+            resultInvestmentsMonthlyDetail.innerHTML = '<li>No has seleccionado ninguna inversión en medios digitales. <small>(Ej: Google Ads Search, Google Ads Display, Facebook Ads o Email Marketing)</small></li>'
+        }
 
         /*---Se setean los valores totales de los cajónes, es decir las sumas de valores de c/u---*/
         resultAgencyOnceFee.innerHTML = `USD ${agencyOnceFeeValue}`;
         resultAgencyMonthlyFee.innerHTML = `USD ${agencyMonthlyFeeValue}`;
         resultInvestmentsMonthly.innerHTML = ` USD ${totalInvestmentMonthly}`;
         resultMonthlyTotal.innerHTML = `USD ${totalInvestmentMonthly + agencyMonthlyFeeValue}`;
+
         /*--Se guardan los detalles de "costo total mensual de agencia (mantenimiento)" en el ultimo cajón "costo total mensual"--*/
         var agencyMantainanceDetails = '';
         arrayAgencyMantainanceSelected.forEach(singleService => { agencyMantainanceDetails += `<li style="list-style-type: none"> - ${singleService.name}: USD ${singleService.value}</li>`});
@@ -1103,7 +1118,6 @@ function calculate() {
     }
 
 
-
 };
 
 /*--Sistema para rotar los iconos de cajónes "collapse" al expandirlos o contraerlos--*/
@@ -1112,9 +1126,5 @@ var iconsToRotate = qsa('.iconsToRotate');
 buttonsForIcons.forEach((button, i) => {
     button.addEventListener('click', function () {
         iconsToRotate[i].classList.toggle('rotateIcons');
-    })
-})
-
-window.addEventListener('change', function () {
-    console.log(completeFormValidate)
-})
+    });
+});
