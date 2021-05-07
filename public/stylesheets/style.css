@@ -84,6 +84,9 @@ p {
   min-width: fit-content;
   height: fit-content;
 }
+.rotateIcons {
+	transform: rotate(-90deg);
+}
 
 @media (min-width: 999px) {
   .industry-ads-selector-container, .investment-google-search-ads, .investment-google-display-ads, .investment-facebook-ads, .email-ammount-container {
