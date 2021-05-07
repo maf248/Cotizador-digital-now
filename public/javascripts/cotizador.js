@@ -456,11 +456,10 @@ var googleSearchAdsResultContainer = qs('#result-google-search-ads-container');
 var googleDisplayAdsResultContainer = qs('#result-google-display-ads-container');
 var facebookAdsResultContainer = qs('#result-facebook-ads-container');
 
-var resultemailContainer = qs('#result-email-container');
 var resultOnceFeeContainer = qs('#result-once-fee-container');
-
 var resultMonthlyFeeContainer = qs('#result-monthly-fee-container');
 var resultInvestmentsMonthlyContainer = qs('#result-investments-monthly-container');
+var resultMonthlyTotalContainer = qs('#result-monthly-total-container');
 
 /*---Se captura el bloque CONTENEDOR que pide los PAISES donde se desea ANUNCIAR---*/
 var countryAnnounceContainer = qs('#country-announce-container');
@@ -469,6 +468,7 @@ var countryAnnounceContainer = qs('#country-announce-container');
 var investmentGoogleSearchAdsContainer = qs('#investment-google-search-ads');
 var investmentGoogleDisplayAdsContainer = qs('#investment-google-display-ads');
 var investmentFacebookAdsContainer = qs('#investment-facebook-ads');
+
 /*--Se capturan los MONTOS de inversion introducidos---*/
 var investmentGoogleSearchAdsAmmount = qs('#investment-google-search-ads input[type="number"]');
 var investmentGoogleDisplayAdsAmmount = qs('#investment-google-display-ads input[type="number"]');
@@ -483,13 +483,14 @@ var resultGoogleFacebookAds = qs('#result-googleads-facebookads');
 var resultGoogleSearch = qs('#result-google-search');
 var resultGoogleDisplay = qs('#result-google-display');
 var resultFacebookAds = qs('#result-facebook-ads');
+
 /*--Se capturan los resultados numericos de cada servicio--*/
-var resultEmail = qs('#result-email');
 var resultServiceOnceFee = qs('#result-once-fee');
 var resultMonthlyFee = qs('#result-monthly-fee');
 var resultInvestmentsMonthly = qs('#result-investments-monthly');
 var resultAgencyOnceFee = qs('#agency-once-fee');
 var resultMonthlyTotal = qs('#result-monthly-total');
+
 /*--Se capturan los resultados numericos de las conversiones --*/
 var googleSearchAdsConversions = qs('#google-search-ads-conversions');
 var googleDisplayAdsConversions = qs('#google-display-ads-conversions');
@@ -497,14 +498,13 @@ var facebookAdsConversions = qs('#facebook-ads-conversions');
 var totalConversions = qs('#total-conversions');
 
 /*--Se capturan los contenedores de detalles de resultados p/ c/ servicio--*/
-var resultEmailDetail = qs("#result-email-details");
 var resultServiceOnceFeeDetail = qs("#result-once-fee-details");
 var resultMonthlyFeeDetail = qs("#result-monthly-fee-details");
 var resultMonthlyInvestmentsDetail = qs("#result-investments-monthly-details");
 var resultMonthlyTotalDetail = qs('#result-monthly-total-detail');
+
 /*--Contenedor para los mensajes de error y validación--*/
 var errorMessages = qs('#error-messages');
-
 
 /*---Se captura el selector de país de los proveedores--*/
 var countrySupplier = qs('#country-supplier');
@@ -928,10 +928,9 @@ function calculate() {
     /*---Se inicializan variables para acumular valores totales de IMPLEMENTACION (onceServiceFee) y MENSUALES (monthlyTotalServiceFee)---*/
     var onceServiceFee = 0;
     var monthlyTotalServiceFee = 0;
+    /*--Variable que calcula el monto de inversion total en medios seleccionados--*/
+    var totalInvestmentMonthly = 0;
 
-    /*--Se inicializa la variable que calcula el monto de inversion en medios seleccionados (por mes)--*/
-    var totalInvestmentMonthly = Number(investmentGoogleSearchAdsAmmount.value) + Number(investmentGoogleDisplayAdsAmmount.value) + Number(investmentFacebookAdsAmmount.value);
-  
     /*--Ya calculadas las conversiones particulares (google display, google search y facebook), se suman en conversion total--*/
     totalConversionsValue = googleAdsSearchConversionsValue + googleAdsDisplayConversionsValue + facebookAdsConversionsValue;
 
@@ -987,8 +986,10 @@ function calculate() {
             totalConversions.innerHTML = `${totalConversionsValue.toFixed(2).replace(".", ",")}`;
             googleSearchAdsConversions.innerHTML = `${googleAdsSearchConversionsValue.toFixed(2).replace(".", ",")} conversiones`;
             /*-Se completa el cajón "costo de inversion en medios mensual total"-*/
+            totalInvestmentMonthly += Number(investmentGoogleSearchAdsAmmount.value);
             resultInvestmentsMonthly.innerHTML = ` USD ${totalInvestmentMonthly}`;
             resultMonthlyInvestmentsDetail.innerHTML += `<li style="margin-top: 10px"><strong>‣ Google Ads Search:</strong> USD ${investmentGoogleSearchAdsAmmount.value} de inversión mensual</li>`;
+            
         }
         if (googleDisplayAds.checked) {
             monthlyTotalServiceFee += services.googleDisplayAds.maintenanceHours * services.googleDisplayAds.costPerHour;
@@ -1000,8 +1001,10 @@ function calculate() {
             totalConversions.innerHTML = `${totalConversionsValue.toFixed(2).replace(".", ",")}`;
             googleDisplayAdsConversions.innerHTML = `${googleAdsDisplayConversionsValue.toFixed(2).replace(".", ",")} conversiones`;
             /*-Se completa el cajón "costo de inversion en medios mensual total"-*/
+            totalInvestmentMonthly += Number(investmentGoogleDisplayAdsAmmount.value);
             resultInvestmentsMonthly.innerHTML = ` USD ${totalInvestmentMonthly}`;
             resultMonthlyInvestmentsDetail.innerHTML += `<li style="margin-top: 10px"><strong>‣ Google Ads Display:</strong> USD ${investmentGoogleDisplayAdsAmmount.value} de inversión mensual</li>`;
+            
         }
         if (facebookAds.checked) {
             monthlyTotalServiceFee += services.facebookAds.maintenanceHours * services.facebookAds.costPerHour;
@@ -1013,8 +1016,10 @@ function calculate() {
             totalConversions.innerHTML = `${totalConversionsValue.toFixed(2).replace(".", ",")}`;
             facebookAdsConversions.innerHTML = `${facebookAdsConversionsValue} conversiones`;
             /*-Se completa el cajón "costo de inversion en medios mensual total"-*/
+            totalInvestmentMonthly += Number(investmentFacebookAdsAmmount.value);
             resultInvestmentsMonthly.innerHTML = ` USD ${totalInvestmentMonthly}`;
             resultMonthlyInvestmentsDetail.innerHTML += `<li style="margin-top: 10px"><strong>‣ Facebook Ads:</strong> USD ${investmentFacebookAdsAmmount.value} de inversión mensual</li>`;
+            
         }
         
         if (wordpress.checked) { console.log('Faltan datos del servicio "wordpress"')  }
@@ -1025,19 +1030,15 @@ function calculate() {
         /*---Se muestran los resultados particulares de email marketing solamente si esta opcion fue seleccionada---*/
         if (email.checked) {
             /*--Muestra el valor correspondiente a la cantidad de contactos seleccionados---*/
-            resultEmail.innerHTML = `USD ${emailAmmount.value}`;
-            resultEmailDetail.innerHTML = `Costo mensual de campaña para ${emailAmmount.options[emailAmmount.selectedIndex].text} contactos.`
-            resultemailContainer.style.display = 'block';
-            monthlyTotalServiceFee += Number(emailAmmount.value);
-            resultMonthlyFeeDetail.innerHTML += `<li style="margin-top: 10px"><strong>‣ Email Marketing</strong> USD ${Number(emailAmmount.value)}. <small>(Para un total seleccionado de ${emailAmmount.options[emailAmmount.selectedIndex].text} contactos)</small></li>`;
+            totalInvestmentMonthly += Number(emailAmmount.value);
+            resultInvestmentsMonthly.innerHTML = ` USD ${totalInvestmentMonthly}`;
+            resultMonthlyInvestmentsDetail.innerHTML += `<li style="margin-top: 10px"><strong>‣ Email Marketing</strong> USD ${emailAmmount.value} de inversión mensual <small>(Campaña para ${emailAmmount.options[emailAmmount.selectedIndex].text} contactos)</small></li>`;
             
-        } else {
-            resultemailContainer.style.display = 'none';
-            
-        }
+        } 
 
         resultMonthlyFee.innerHTML = `USD ${monthlyTotalServiceFee}`;
         resultServiceOnceFee.innerHTML = `USD ${onceServiceFee}`;
+
     } else {
         resultsContainer.style.display = 'none';
     }
