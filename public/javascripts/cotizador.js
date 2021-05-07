@@ -1041,10 +1041,18 @@ function calculate() {
         resultsContainer.style.display = 'none';
     }
 
-    // resultAgencyMonthlyFee.innerHTML = "el total mensual sería -> fee de gestión + estimación de inversión mensual en facebook ads y google ads";
 
-    
+
 };
+
+/*--Sistema para rotar los iconos de cajónes "collapse" al expandirlos o contraerlos--*/
+var buttonsForIcons = qsa('.btn-link');
+var iconsToRotate = qsa('.iconsToRotate');
+buttonsForIcons.forEach((button, i) => {
+    button.addEventListener('click', function () {
+        iconsToRotate[i].classList.toggle('rotateIcons');
+    })
+})
 
 window.addEventListener('change', function () {
     console.log(completeFormValidate)
