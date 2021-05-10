@@ -282,15 +282,15 @@
     </form>
 
     <section class="results-container" id="results-container">
-      <h3 class="text-decoration-underline">Resultados:</h3>
+      <h3 class="text-decoration-underline m-3">Resultados:</h3>
 
       <div id="result-googleads-facebookads-container" style="display: none;">
         
         <div id="accordionMonthlyTotals">
           <div class="card">
-            <div class="card-header" id="headingMonthlyTotals">
+            <div class="card-header" id="headingMonthlyTotals" data-toggle="collapse" data-target="#collapseMonthlyTotals" aria-expanded="false" aria-controls="collapseMonthlyTotals">
               <h6 class="mb-0">
-                <button class="btn btn-link" data-toggle="collapse" data-target="#collapseMonthlyTotals" aria-expanded="false" aria-controls="collapseMonthlyTotals">
+                <button class="btn btn-link">
                   <i class="iconsToRotate fas fa-angle-double-down"></i>
                 </button>
                 <p class="text-decoration-underline">Resultados totales por mes: </p> <p><strong id="total-conversions"></strong> conversiones totales</p>
@@ -303,9 +303,9 @@
                 <div id="result-google-search-ads-container" style="display: none">
                   <div id="accordionGSAds">
                     <div class="card">
-                      <div class="card-header" id="headingGSAds">
+                      <div class="card-header" id="headingGSAds" data-toggle="collapse" data-target="#collapseGSAds" aria-expanded="false" aria-controls="collapseGSAds">
                         <h6 class="mb-0">
-                          <button class="btn btn-link" data-toggle="collapse" data-target="#collapseGSAds" aria-expanded="false" aria-controls="collapseGSAds">
+                          <button class="btn btn-link">
                             <i class="iconsToRotate fas fa-angle-down"></i>
                           </button>
                           <p class="text-decoration-underline">Google Ads Search:</p> <p id="google-search-ads-conversions"></p>
@@ -324,9 +324,9 @@
                 <div id="result-google-display-ads-container" style="display: none">
                   <div id="accordionGDAds">
                     <div class="card">
-                      <div class="card-header" id="headingGDAds">
+                      <div class="card-header" id="headingGDAds" data-toggle="collapse" data-target="#collapseGDAds" aria-expanded="false" aria-controls="collapseGDAds">
                         <h6 class="mb-0">
-                          <button class="btn btn-link" data-toggle="collapse" data-target="#collapseGDAds" aria-expanded="false" aria-controls="collapseGDAds">
+                          <button class="btn btn-link" >
                             <i class="iconsToRotate fas fa-angle-down"></i>
                           </button>
                           <p class="text-decoration-underline">Google Ads Display:</p> <p id="google-display-ads-conversions"></p>
@@ -345,9 +345,9 @@
                 <div id="result-facebook-ads-container" style="display: none">
                   <div id="accordionFbAds">
                     <div class="card">
-                      <div class="card-header" id="headingFbAds">
+                      <div class="card-header" id="headingFbAds" data-toggle="collapse" data-target="#collapseFbAds" aria-expanded="false" aria-controls="collapseFbAds">
                         <h6 class="mb-0">
-                          <button class="btn btn-link" data-toggle="collapse" data-target="#collapseFbAds" aria-expanded="false" aria-controls="collapseFbAds">
+                          <button class="btn btn-link" >
                             <i class="iconsToRotate fas fa-angle-down"></i>
                           </button>
                           <p class="text-decoration-underline">Facebook Ads:</p> <p id="facebook-ads-conversions"></p>
@@ -373,9 +373,9 @@
       <div id="result-agency-once-fee-container">
         <div id="accordionOne">
           <div class="card">
-            <div class="card-header" id="headingOne">
+            <div class="card-header" id="headingOne" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
               <h6 class="mb-0">
-                <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                <button class="btn btn-link" >
                   <i class="iconsToRotate fas fa-angle-double-down"></i>
                 </button>
                 <p class="text-decoration-underline">Costo de Agencia de implementación (1 vez):</p> <p id="result-agency-once-fee">-</p>
@@ -394,9 +394,9 @@
       <div id="result-agency-monthly-fee-container">
         <div id="accordionTwo">
           <div class="card">
-            <div class="card-header" id="headingTwo">
+            <div class="card-header" id="headingTwo" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
               <h6 class="mb-0">
-                <button class="btn btn-link" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                <button class="btn btn-link" >
                   <i class="iconsToRotate fas fa-angle-double-down"></i>
                 </button>
                 <p class="text-decoration-underline">Costo mensual de Agencia de mantenimiento (1 vez):</p> <p id="result-agency-monthly-fee">-</p>
@@ -415,9 +415,9 @@
       <div id="result-investments-monthly-container">
         <div id="accordionThree">
           <div class="card">
-            <div class="card-header" id="headingThree">
+            <div class="card-header" id="headingThree" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
               <h6 class="mb-0">
-                <button class="btn btn-link" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                <button class="btn btn-link" >
                   <i class="iconsToRotate fas fa-angle-double-down"></i>
                 </button>
                 <p class="text-decoration-underline">Costo mensual de inversión en medios (total):</p> <p id="result-investments-monthly">-</p>
@@ -436,9 +436,9 @@
       <div id="result-monthly-total-container">
         <div id="accordionFour">
           <div class="card">
-            <div class="card-header" id="headingFour">
+            <div class="card-header" id="headingFour" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
               <h6 class="mb-0">
-                <button class="btn btn-link" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                <button class="btn btn-link" >
                   <i class="iconsToRotate fas fa-angle-double-down"></i>
                 </button>
                 <p class="text-decoration-underline">Costo total mensual (Fee de agencia + inversión en medios):</p> <p id="result-monthly-total">-</p>

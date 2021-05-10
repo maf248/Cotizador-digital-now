@@ -1150,10 +1150,10 @@ function calculate() {
 };
 
 /*--Sistema para rotar los iconos de cajónes "collapse" al expandirlos o contraerlos--*/
-var buttonsForIcons = qsa('.btn-link');
+var cardHeaders = qsa('.card-header');
 var iconsToRotate = qsa('.iconsToRotate');
-buttonsForIcons.forEach((button, i) => {
-    button.addEventListener('click', function () {
+cardHeaders.forEach((header, i) => {
+    header.addEventListener('click', function () {
         iconsToRotate[i].classList.toggle('rotateIcons');
     });
 });

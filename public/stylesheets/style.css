@@ -111,6 +111,9 @@ button:focus {
   -ms-transform:rotate(-90deg);
   -webkit-transform:rotate(-90deg);
 }
+.card-header {
+  cursor: pointer;
+}
 
 @media (min-width: 999px) {
   .industry-ads-selector-container, .investment-google-search-ads, .investment-google-display-ads, .investment-facebook-ads, .email-ammount-container {
