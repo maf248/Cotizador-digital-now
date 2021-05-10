@@ -16,7 +16,7 @@
   </head>
   <body>
     <h1 class="text-center"><%= title %></h1>
-    <form action="" id="form-calculate-container">
+    <form action="" class="form-calculate-container" id="form-calculate-container">
       <h4>¿De qué país es el proveedor de servicios que querés contratar?</h4>
       <div class="country-supplier-container">    
         <select name="country-supplier" id="country-supplier">
@@ -236,7 +236,6 @@
             <option value="Oman" data-value="oman">
             <option value="Pakistán" data-value="pakistan">
             <option value="Panamá" data-value="panama">
-            <option value="Paraguay" data-value="paraguay">
             <option value="Perú" data-value="peru">
             <option value="Polonia" data-value="polonia">
             <option value="Portugal" data-value="portugal">
@@ -275,10 +274,14 @@
         </div>
       </div>
       <p id="error-messages" class="error-messages"></p>
-        <button type="submit" class="btn calculate btn-primary" onClick="calculate(); return false;">¡Calcular!</button>
+      <div class="d-flex justify-content-center">
+        <button type="reset" class="btn calculateAgainButton btn-primary d-none" id="calculateAgainButton"><i class="fas fa-undo-alt"></i> Volver a calcular</button>
+        <button type="submit" class="btn calculateButton btn-primary" id="calculateButton"><i class="fas fa-calculator"></i> Calcular</button>
+      </div>        
+        
     </form>
 
-    <section class="results-container" id="results-container" style="display: none;">
+    <section class="results-container" id="results-container">
       <h3 class="text-decoration-underline">Resultados:</h3>
 
       <div id="result-googleads-facebookads-container" style="display: none;">

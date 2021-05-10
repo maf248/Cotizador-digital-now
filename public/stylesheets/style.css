@@ -64,11 +64,6 @@ p {
   margin-left: auto;
   margin-right: auto;
 }
-.calculate {
-  width: auto;
-  margin-right: 45%;
-  margin-left: 45%;
-}
 
 .industry-ads-selector-container, .investment-google-search-ads, .investment-google-display-ads, .investment-facebook-ads, .email-ammount-container {
   display: none;
@@ -84,6 +79,24 @@ p {
   min-width: fit-content;
   height: fit-content;
 }
+
+.form-calculate-container {
+  transition: opacity 1s ease-out;
+  opacity: 1;
+  height: auto;
+  overflow: hidden;
+}
+.results-container {
+  transition: opacity 1s ease-out;
+  opacity: 0;
+  height: 0;
+  overflow: hidden;
+}
+.calculateButton, .calculateAgainButton {
+  width: fit-content;
+  white-space: nowrap;
+}
+
 .rotateIcons {
 	transform: rotate(-90deg);
 }

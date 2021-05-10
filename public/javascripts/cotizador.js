@@ -760,9 +760,26 @@ buttonAddCountryAnnounce.addEventListener('click', function(event) {
 });
 
 /*---Se captura el bloque que muestra los resultados, y se muestra solamente al seleccionar todas las opciones requeridas---*/
+var formContainer = qs('#form-calculate-container');
 var resultsContainer = qs('#results-container');
 
 /*--Evento general para validar si mostrar resultados o no, y actualizar los mismos en base a lo seleccionado---*/
+var calculateButton = qs('#calculateButton');
+var calculateAgainButton = qs('#calculateAgainButton');
+
+calculateAgainButton.addEventListener('click', function() {
+        formContainer.style.height = 'auto';
+        formContainer.style.opacity = '1';
+        resultsContainer.style.height = '0';
+        resultsContainer.style.opacity = '0';
+        calculateAgainButton.classList.add("d-none");
+        calculateButton.style.display = 'block';
+})
+
+calculateButton.addEventListener('click', function () {
+    calculate();
+})
+
 function calculate() {
     /*--Se setean/resetean las variables de acumulación de conversiones--*/
     var googleAdsSearchConversionsValue = 0;
@@ -783,7 +800,9 @@ function calculate() {
     /*---Se valida que esten todas las etapas seleccionadas, para mostrar los resultados u ocultarlos---*/
     if (completeFormValidate.includes(false)) {
 
-        resultsContainer.style.display = 'none';
+        resultsContainer.style.height = '0';
+        resultsContainer.style.opacity = '0';
+
         if (completeFormValidate[1] == false) {
             errorMessages.innerHTML = 'Debes seleccionar mínimo un servicio';
             errorType = 1;
@@ -814,7 +833,12 @@ function calculate() {
         }
       
     } else {
-        resultsContainer.style.display = 'block';
+        formContainer.style.height = '0';
+        formContainer.style.opacity = '0';
+        resultsContainer.style.height = 'auto';
+        resultsContainer.style.opacity = '1';
+        calculateButton.style.display = 'none';
+        calculateAgainButton.classList.remove("d-none");
         errorMessages.innerHTML = '';
     }
 
@@ -1114,7 +1138,12 @@ function calculate() {
         
 
     } else {
-        resultsContainer.style.display = 'none';
+        formContainer.style.height = 'auto';
+        formContainer.style.opacity = '1';
+        resultsContainer.style.height = '0';
+        resultsContainer.style.opacity = '0';
+        calculateAgainButton.classList.add("d-none");
+        calculateButton.style.display = 'block';
     }
 
 
