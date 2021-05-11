@@ -3,6 +3,8 @@
   <head>
     <title><%= title %></title>
     <link rel="icon" href="favicon.ico">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Kodchasan&display=swap" rel="stylesheet">
     <link rel='stylesheet' href='/stylesheets/style.css' />
     <!---jQuery 3.6.0--->
     <script  src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
@@ -15,9 +17,20 @@
     <script src="/javascripts/cotizador.js" defer></script>
   </head>
   <body>
-    <h1 class="text-center"><%= title %></h1>
+    <div class="container">
+    <div class="row">
+      <div class="col-2">
+        <img src="//digitalnow.com.ar/wp-content/uploads/2020/05/Logo-Digital-now.png" alt="Digital Now | Agencia de Marketing Online en Argentina">
+      </div>
+      <div class="col-8"> 
+        <h1 class="text-center"><%= title %></h1>
+      </div>
+    <div class="col-2"></div>
+    </div>
+  </div>
+    
     <form action="" class="form-calculate-container" id="form-calculate-container">
-      <h4>¿De qué país es el proveedor de servicios que querés contratar?</h4>
+      <h4 style="margin-top: 20px;">¿De qué país es el proveedor de servicios que querés contratar?</h4>
       <div class="country-supplier-container">    
         <select name="country-supplier" id="country-supplier">
           <option value="argentina">Argentina</option>

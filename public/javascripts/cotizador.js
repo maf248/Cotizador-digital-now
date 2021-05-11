@@ -1129,11 +1129,11 @@ function calculate() {
 
         /*--Se guardan los detalles de "costo total mensual de agencia (mantenimiento)" en el ultimo cajón "costo total mensual"--*/
         var agencyMantainanceDetails = '';
-        arrayAgencyMantainanceSelected.forEach(singleService => { agencyMantainanceDetails += `<li style="list-style-type: none"> - ${singleService.name}: USD ${singleService.value}</li>`});
+        arrayAgencyMantainanceSelected.forEach(singleService => { agencyMantainanceDetails += `<li style="list-style-type: none"> - <u>${singleService.name}:</u> USD ${singleService.value}</li>`});
         resultMonthlyTotalDetail.innerHTML += `<li style="margin-top: 10px"><strong>‣ Costo total mensual de agencia (mantenimiento):</strong> USD ${agencyMonthlyFeeValue}<br><ul>${agencyMantainanceDetails}</ul></li>`;
         /*--Se guardan los detalles de "costo total mensual de inversion en medios" en el ultimo cajón "costo total mensual"--*/
         var investmentSelectedDetails = '';
-        arrayInvestmentSelected.forEach(singleService => { investmentSelectedDetails += `<li style="list-style-type: none"> - ${singleService.name}: USD ${singleService.value}</li>`});
+        arrayInvestmentSelected.forEach(singleService => { investmentSelectedDetails += `<li style="list-style-type: none"> - <u>${singleService.name}:</u> USD ${singleService.value}</li>`});
         resultMonthlyTotalDetail.innerHTML += `<li style="margin-top: 10px"><strong>‣ Costo total mensual de inversión en medios:</strong> USD ${totalInvestmentMonthly}<br><ul>${investmentSelectedDetails}</ul></li>`;
         
 
