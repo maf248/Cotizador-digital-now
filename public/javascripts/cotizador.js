@@ -741,9 +741,15 @@ buttonAddCountryAnnounce.addEventListener('click', function(event) {
             
         }
     } else {
-    
-        errorMessages.innerHTML = `El país <strong>${countryAnnounce.value}</strong> no es una opción, selecciona un país de la lista`;
-        setTimeout(function(){ errorMessages.innerHTML = ''; countryAnnounce.value = '';}, 3000);
+        if (countryAnnounce.value == '') {
+            errorMessages.innerHTML = 'Debes seleccionar un país de la lista desplegable y agregarlo con "+"';
+            setTimeout(function(){ errorMessages.innerHTML = '';}, 4000);
+        } else {
+            console.log(`El país &nbsp;<strong>${countryAnnounce.value}</strong>&nbsp; no es una opción, selecciona un país de la lista`)
+            errorMessages.innerHTML = `El país &nbsp;<strong>${countryAnnounce.value}</strong>&nbsp; no es una opción, selecciona un país de la lista`;
+            setTimeout(function(){ errorMessages.innerHTML = ''; countryAnnounce.value = '';}, 3500);
+        }
+        
     }
     
     /*--Valida si hay países o no seleccionados, luego de agregar uno--*/

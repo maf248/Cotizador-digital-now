@@ -63,7 +63,9 @@ p {
   flex-direction: column;
 }
 .error-messages {
-  display: block;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
   color: red;
   width: 100%;
   margin-left: auto;
@@ -72,15 +74,16 @@ p {
 
 .industry-ads-selector-container, .investment-google-search-ads, .investment-google-display-ads, .investment-facebook-ads, .email-ammount-container {
   display: none;
-  padding: 10px
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
 }
 .industry-ads-selector-container label, .investment-google-search-ads label, .investment-google-display-ads label, .investment-facebook-ads label, .email-ammount-container label{
-  margin-left: 10px;
-  min-width: 60%;
+  max-width: 70%;
 }
 .industry-ads-selector-container select, .investment-google-search-ads input, .investment-google-display-ads input, .investment-facebook-ads input, .email-ammount-container select {
-  margin-right: 5px;
-  margin-left: auto;
+  margin-left: 10px;
   min-width: fit-content;
   height: fit-content;
 }
@@ -125,16 +128,9 @@ button:focus {
     padding: 15px 30px !important;
   }
 }
-@media (min-width: 999px) {
-  .industry-ads-selector-container, .investment-google-search-ads, .investment-google-display-ads, .investment-facebook-ads, .email-ammount-container {
-    display: none;
-    padding: 10px
-  }
-  .industry-ads-selector-container label, .investment-google-search-ads label, .investment-google-display-ads label, .investment-facebook-ads label {
-    min-width: fit-content;
-  }
+@media (min-width: 1000px) {
   .industry-ads-selector-container select, .investment-google-search-ads input, .investment-google-display-ads input, .investment-facebook-ads input, .email-ammount-container select {
-    margin-right: 20%;
+    margin-right: 10%;
   }
-  
 }
+
