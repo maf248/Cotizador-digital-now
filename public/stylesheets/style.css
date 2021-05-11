@@ -7,7 +7,7 @@ body {
 }
 
 p {
-  max-width: fit-content;
+  min-width: fit-content;
   display: inline-block;
 }
 
@@ -25,10 +25,15 @@ p {
   min-width: fit-content;
   max-width: 100%;
   padding: 10px;
-  margin: 20px;
 }
 .services-container div {
   padding: 5px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.services-container input {
+  margin-right: 7px;
 }
 
 .country-announce-container {
@@ -115,6 +120,11 @@ button:focus {
   cursor: pointer;
 }
 
+@media (max-width: 500px) {
+  body {
+    padding: 15px 30px !important;
+  }
+}
 @media (min-width: 999px) {
   .industry-ads-selector-container, .investment-google-search-ads, .investment-google-display-ads, .investment-facebook-ads, .email-ammount-container {
     display: none;
