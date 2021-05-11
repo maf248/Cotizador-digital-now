@@ -118,7 +118,6 @@ button:focus {
 @media (min-width: 999px) {
   .industry-ads-selector-container, .investment-google-search-ads, .investment-google-display-ads, .investment-facebook-ads, .email-ammount-container {
     display: none;
-    justify-content: space-evenly;
     padding: 10px
   }
   .industry-ads-selector-container label, .investment-google-search-ads label, .investment-google-display-ads label, .investment-facebook-ads label {
