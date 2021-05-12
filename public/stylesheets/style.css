@@ -93,6 +93,11 @@ p {
   height: 0;
   overflow: hidden;
 }
+.titlesCollapse {
+  white-space: normal;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
 .calculateButton, .calculateAgainButton {
   width: fit-content;
   white-space: nowrap;
