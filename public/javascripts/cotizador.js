@@ -893,7 +893,7 @@ function calculate() {
 
                     if (selectedCountriesAnnounceOperate.length == 1) {
                         if (selectedCountry !== "eeuu") {
-                            resultGoogleSearch.innerHTML += `<p><strong>‣ ${selectedCountriesAnnounceDisplay[i]}</strong> en industria <strong>${industryAdsSelector.options[industryAdsSelector.selectedIndex].text}</strong> ➠ <strong>CPA:</strong> ${(absoluteStatsCountries.eeuu.googleSearchAds.cpa[industryAdsSelector.value] * relativeStatsCountries[selectedCountry].relativeRateToUSA).toFixed(2).replace(".", ",")}</strong></p>
+                            resultGoogleSearch.innerHTML += `<p><b>‣ ${selectedCountriesAnnounceDisplay[i]}</b> en industria <b>${industryAdsSelector.options[industryAdsSelector.selectedIndex].text}</b> ➠ <b>CPA:</b> ${(absoluteStatsCountries.eeuu.googleSearchAds.cpa[industryAdsSelector.value] * relativeStatsCountries[selectedCountry].relativeRateToUSA).toFixed(2).replace(".", ",")}</p>
                             <ul style="list-style-type: none;"><li>- Inversión elegida: USD ${(investmentGoogleSearchAdsAmmount.value / selectedCountriesAnnounceOperate.length)}</li>
                             <li>- Numero de conversiones (inversion / CPA):  <strong>${((investmentGoogleSearchAdsAmmount.value / selectedCountriesAnnounceOperate.length) / (absoluteStatsCountries.eeuu.googleSearchAds.cpa[industryAdsSelector.value] * relativeStatsCountries[selectedCountry].relativeRateToUSA)).toFixed(2).replace(".", ",")}</strong></li></ul>`;
 
@@ -901,7 +901,7 @@ function calculate() {
                             googleAdsSearchConversionsValue += thisConversion;
                             
                         } else if (selectedCountry === "eeuu") {
-                            resultGoogleSearch.innerHTML += `<p><strong>‣ ${selectedCountriesAnnounceDisplay[i]}</strong> en industria <strong>${industryAdsSelector.options[industryAdsSelector.selectedIndex].text}</strong> ➠ <strong>CPA:</strong> ${(absoluteStatsCountries.eeuu.googleSearchAds.cpa[industryAdsSelector.value]).toFixed(2).replace(".", ",")}</p>
+                            resultGoogleSearch.innerHTML += `<p><b>‣ ${selectedCountriesAnnounceDisplay[i]}</b> en industria <b>${industryAdsSelector.options[industryAdsSelector.selectedIndex].text}</b> ➠ <b>CPA:</b> ${(absoluteStatsCountries.eeuu.googleSearchAds.cpa[industryAdsSelector.value]).toFixed(2).replace(".", ",")}</p>
                             <ul style="list-style-type: none;"><li>- Inversión elegida: USD ${(investmentGoogleSearchAdsAmmount.value / selectedCountriesAnnounceOperate.length)}</li>
                             <li>- Numero de conversiones (inversion / CPA):  <strong>${((investmentGoogleSearchAdsAmmount.value / selectedCountriesAnnounceOperate.length) / absoluteStatsCountries.eeuu.googleSearchAds.cpa[industryAdsSelector.value]).toFixed(2).replace(".", ",")}</strong></li></ul>`;
 
@@ -910,7 +910,7 @@ function calculate() {
                         }
                     } else {
                         if (selectedCountry !== "eeuu") {
-                            resultGoogleSearch.innerHTML += `<p><strong>‣ ${selectedCountriesAnnounceDisplay[i]}</strong> en industria <strong>${industryAdsSelector.options[industryAdsSelector.selectedIndex].text}</strong> ➠ <strong>CPA:</strong> ${(absoluteStatsCountries.eeuu.googleSearchAds.cpa[industryAdsSelector.value] * relativeStatsCountries[selectedCountry].relativeRateToUSA).toFixed(2).replace(".", ",")}</p>
+                            resultGoogleSearch.innerHTML += `<p><b>‣ ${selectedCountriesAnnounceDisplay[i]}</b> en industria <b>${industryAdsSelector.options[industryAdsSelector.selectedIndex].text}</b> ➠ <b>CPA:</b> ${(absoluteStatsCountries.eeuu.googleSearchAds.cpa[industryAdsSelector.value] * relativeStatsCountries[selectedCountry].relativeRateToUSA).toFixed(2).replace(".", ",")}</p>
                             <ul style="list-style-type: none;"><li>- Inversión proporcional: USD ${(investmentGoogleSearchAdsAmmount.value / selectedCountriesAnnounceOperate.length)}</li>
                             <li>- Numero de conversiones (inversion / CPA):  <strong>${((investmentGoogleSearchAdsAmmount.value / selectedCountriesAnnounceOperate.length) / (absoluteStatsCountries.eeuu.googleSearchAds.cpa[industryAdsSelector.value] * relativeStatsCountries[selectedCountry].relativeRateToUSA)).toFixed(2).replace(".", ",")}</strong></li></ul>`;
 
@@ -918,7 +918,7 @@ function calculate() {
                             googleAdsSearchConversionsValue += thisConversion;
 
                         } else if (selectedCountry === "eeuu") {
-                            resultGoogleSearch.innerHTML += `<p><strong>‣ ${selectedCountriesAnnounceDisplay[i]}</strong> en industria <strong>${industryAdsSelector.options[industryAdsSelector.selectedIndex].text}</strong> ➠ <strong>CPA:</strong> ${(absoluteStatsCountries.eeuu.googleSearchAds.cpa[industryAdsSelector.value]).toFixed(2).replace(".", ",")}</p>
+                            resultGoogleSearch.innerHTML += `<p><b>‣ ${selectedCountriesAnnounceDisplay[i]}</b> en industria <b>${industryAdsSelector.options[industryAdsSelector.selectedIndex].text}</b> ➠ <b>CPA:</b> ${(absoluteStatsCountries.eeuu.googleSearchAds.cpa[industryAdsSelector.value]).toFixed(2).replace(".", ",")}</p>
                             <ul style="list-style-type: none;"><li>- Inversión proporcional: USD ${(investmentGoogleSearchAdsAmmount.value / selectedCountriesAnnounceOperate.length)}</li>
                             <li>- Numero de conversiones (inversion / CPA):  <strong>${((investmentGoogleSearchAdsAmmount.value / selectedCountriesAnnounceOperate.length) / absoluteStatsCountries.eeuu.googleSearchAds.cpa[industryAdsSelector.value]).toFixed(2).replace(".", ",")}</strong></li></ul>`;
                             
@@ -941,7 +941,7 @@ function calculate() {
                 selectedCountriesAnnounceOperate.forEach((selectedCountry, i) => {
                     if (selectedCountriesAnnounceOperate.length == 1) {
                         if (selectedCountry !== "eeuu") {
-                            resultGoogleDisplay.innerHTML += `<p><strong>‣ ${selectedCountriesAnnounceDisplay[i]}</strong> en industria <strong>${industryAdsSelector.options[industryAdsSelector.selectedIndex].text}</strong> ➠ <strong>CPA:</strong> ${(absoluteStatsCountries.eeuu.googleDisplayAds.cpa[industryAdsSelector.value] * relativeStatsCountries[selectedCountry].relativeRateToUSA).toFixed(2).replace(".", ",")}</p>
+                            resultGoogleDisplay.innerHTML += `<p><b>‣ ${selectedCountriesAnnounceDisplay[i]}</b> en industria <b>${industryAdsSelector.options[industryAdsSelector.selectedIndex].text}</b> ➠ <b>CPA:</b> ${(absoluteStatsCountries.eeuu.googleDisplayAds.cpa[industryAdsSelector.value] * relativeStatsCountries[selectedCountry].relativeRateToUSA).toFixed(2).replace(".", ",")}</p>
                             <ul style="list-style-type: none;"><li>- Inversión elegida: USD ${investmentGoogleDisplayAdsAmmount.value / selectedCountriesAnnounceOperate.length}</li>
                             <li>- Numero de conversiones (inversion / CPA):  <strong>${((investmentGoogleDisplayAdsAmmount.value / selectedCountriesAnnounceOperate.length) / (absoluteStatsCountries.eeuu.googleDisplayAds.cpa[industryAdsSelector.value] * relativeStatsCountries[selectedCountry].relativeRateToUSA) ).toFixed(2).replace(".", ",")}</strong></li></ul>`;
 
@@ -949,7 +949,7 @@ function calculate() {
                             googleAdsDisplayConversionsValue += thisConversion;
 
                         } else if (selectedCountry === "eeuu") {
-                            resultGoogleDisplay.innerHTML += `<p><strong>‣ ${selectedCountriesAnnounceDisplay[i]}</strong> en industria <strong>${industryAdsSelector.options[industryAdsSelector.selectedIndex].text}</strong> ➠ <strong>CPA:</strong> ${(absoluteStatsCountries.eeuu.googleDisplayAds.cpa[industryAdsSelector.value]).toFixed(2).replace(".", ",")}</p>
+                            resultGoogleDisplay.innerHTML += `<p><b>‣ ${selectedCountriesAnnounceDisplay[i]}</b> en industria <b>${industryAdsSelector.options[industryAdsSelector.selectedIndex].text}</b> ➠ <b>CPA:</b> ${(absoluteStatsCountries.eeuu.googleDisplayAds.cpa[industryAdsSelector.value]).toFixed(2).replace(".", ",")}</p>
                             <ul style="list-style-type: none;"><li>- Inversión elegida: USD ${investmentGoogleDisplayAdsAmmount.value / selectedCountriesAnnounceOperate.length}</li>
                             <li>- Numero de conversiones (inversion / CPA):  <strong>${((investmentGoogleDisplayAdsAmmount.value / selectedCountriesAnnounceOperate.length) / absoluteStatsCountries.eeuu.googleDisplayAds.cpa[industryAdsSelector.value]).toFixed(2).replace(".", ",")}</strong></li></ul>`;
 
@@ -959,7 +959,7 @@ function calculate() {
                         }
                     } else {
                         if (selectedCountry !== "eeuu") {
-                            resultGoogleDisplay.innerHTML += `<p><strong>‣ ${selectedCountriesAnnounceDisplay[i]}</strong> en industria <strong>${industryAdsSelector.options[industryAdsSelector.selectedIndex].text}</strong> ➠ <strong>CPA:</strong> ${(absoluteStatsCountries.eeuu.googleDisplayAds.cpa[industryAdsSelector.value] * relativeStatsCountries[selectedCountry].relativeRateToUSA).toFixed(2).replace(".", ",")}</p>
+                            resultGoogleDisplay.innerHTML += `<p><b>‣ ${selectedCountriesAnnounceDisplay[i]}</b> en industria <b>${industryAdsSelector.options[industryAdsSelector.selectedIndex].text}</b> ➠ <b>CPA:</b> ${(absoluteStatsCountries.eeuu.googleDisplayAds.cpa[industryAdsSelector.value] * relativeStatsCountries[selectedCountry].relativeRateToUSA).toFixed(2).replace(".", ",")}</p>
                             <ul style="list-style-type: none;"><li>- Inversión proporcional: USD ${investmentGoogleDisplayAdsAmmount.value / selectedCountriesAnnounceOperate.length}</li>
                             <li>- Numero de conversiones (inversion / CPA):  <strong>${((investmentGoogleDisplayAdsAmmount.value / selectedCountriesAnnounceOperate.length) / (absoluteStatsCountries.eeuu.googleDisplayAds.cpa[industryAdsSelector.value] * relativeStatsCountries[selectedCountry].relativeRateToUSA) ).toFixed(2).replace(".", ",")}</strong></li></ul>`;
 
@@ -967,7 +967,7 @@ function calculate() {
                             googleAdsDisplayConversionsValue += thisConversion;
 
                         } else if (selectedCountry === "eeuu") {
-                            resultGoogleDisplay.innerHTML += `<p><strong>‣ ${selectedCountriesAnnounceDisplay[i]}</strong> en industria <strong>${industryAdsSelector.options[industryAdsSelector.selectedIndex].text}</strong> ➠ <strong>CPA:</strong> ${(absoluteStatsCountries.eeuu.googleDisplayAds.cpa[industryAdsSelector.value]).toFixed(2).replace(".", ",")}</p>
+                            resultGoogleDisplay.innerHTML += `<p><b>‣ ${selectedCountriesAnnounceDisplay[i]}</b> en industria <b>${industryAdsSelector.options[industryAdsSelector.selectedIndex].text}</b> ➠ <b>CPA:</b> ${(absoluteStatsCountries.eeuu.googleDisplayAds.cpa[industryAdsSelector.value]).toFixed(2).replace(".", ",")}</p>
                             <ul style="list-style-type: none;"><li>- Inversión proporcional: USD ${investmentGoogleDisplayAdsAmmount.value / selectedCountriesAnnounceOperate.length}</li>
                             <li>- Numero de conversiones (inversion / CPA):  <strong>${((investmentGoogleDisplayAdsAmmount.value / selectedCountriesAnnounceOperate.length) / absoluteStatsCountries.eeuu.googleDisplayAds.cpa[industryAdsSelector.value]).toFixed(2).replace(".", ",")}</strong></li></ul>`;
 
@@ -993,7 +993,7 @@ function calculate() {
                 selectedCountriesAnnounceOperate.forEach((selectedCountry, i) => {
                     if (selectedCountriesAnnounceOperate.length == 1) {
                         if (selectedCountry !== "eeuu") {
-                            resultFacebookAds.innerHTML += `<p><strong>‣ ${selectedCountriesAnnounceDisplay[i]}</strong> en industria <strong>${industryAdsSelector.options[industryAdsSelector.selectedIndex].text}</strong> ➠ <strong>CPA:</strong> ${(absoluteStatsCountries.eeuu.facebookAds.cpa[industryAdsSelector.value] * relativeStatsCountries[selectedCountry].relativeRateToUSA).toFixed(2).replace(".", ",")}</p>
+                            resultFacebookAds.innerHTML += `<p><b>‣ ${selectedCountriesAnnounceDisplay[i]}</b> en industria <b>${industryAdsSelector.options[industryAdsSelector.selectedIndex].text}</b> ➠ <b>CPA:</b> ${(absoluteStatsCountries.eeuu.facebookAds.cpa[industryAdsSelector.value] * relativeStatsCountries[selectedCountry].relativeRateToUSA).toFixed(2).replace(".", ",")}</p>
                             <ul style="list-style-type: none;"><li>- Inversión elegida: USD ${investmentFacebookAdsAmmount.value / selectedCountriesAnnounceOperate.length}</li>
                             <li>- Numero de conversiones (inversion / CPA):  <strong>${((investmentFacebookAdsAmmount.value / selectedCountriesAnnounceOperate.length) / (absoluteStatsCountries.eeuu.facebookAds.cpa[industryAdsSelector.value] * relativeStatsCountries[selectedCountry].relativeRateToUSA) ).toFixed(2).replace(".", ",")}</strong></li></ul>`;
 
@@ -1001,7 +1001,7 @@ function calculate() {
                             facebookAdsConversionsValue += thisConversion;
 
                         } else if (selectedCountry === "eeuu") {
-                            resultFacebookAds.innerHTML += `<p><strong>‣ ${selectedCountriesAnnounceDisplay[i]}</strong> en industria <strong>${industryAdsSelector.options[industryAdsSelector.selectedIndex].text}</strong> ➠ <strong>CPA:</strong> ${(absoluteStatsCountries.eeuu.facebookAds.cpa[industryAdsSelector.value]).toFixed(2).replace(".", ",")}</p>
+                            resultFacebookAds.innerHTML += `<p><b>‣ ${selectedCountriesAnnounceDisplay[i]}</b> en industria <b>${industryAdsSelector.options[industryAdsSelector.selectedIndex].text}</b> ➠ <b>CPA:</b> ${(absoluteStatsCountries.eeuu.facebookAds.cpa[industryAdsSelector.value]).toFixed(2).replace(".", ",")}</p>
                             <ul style="list-style-type: none;"><li>- Inversión elegida: USD ${investmentFacebookAdsAmmount.value / selectedCountriesAnnounceOperate.length}</li>
                             <li>- Numero de conversiones (inversion / CPA):  <strong>${((investmentFacebookAdsAmmount.value / selectedCountriesAnnounceOperate.length) / absoluteStatsCountries.eeuu.facebookAds.cpa[industryAdsSelector.value]).toFixed(2).replace(".", ",")}</strong></li></ul>`;
 
@@ -1011,7 +1011,7 @@ function calculate() {
                         }
                     } else {
                         if (selectedCountry !== "eeuu") {
-                            resultFacebookAds.innerHTML += `<p><strong>‣ ${selectedCountriesAnnounceDisplay[i]}</strong> en industria <strong>${industryAdsSelector.options[industryAdsSelector.selectedIndex].text}</strong> ➠ <strong>CPA:</strong> ${(absoluteStatsCountries.eeuu.facebookAds.cpa[industryAdsSelector.value] * relativeStatsCountries[selectedCountry].relativeRateToUSA).toFixed(2).replace(".", ",")}</p>
+                            resultFacebookAds.innerHTML += `<p><b>‣ ${selectedCountriesAnnounceDisplay[i]}</b> en industria <b>${industryAdsSelector.options[industryAdsSelector.selectedIndex].text}</b> ➠ <b>CPA:</b> ${(absoluteStatsCountries.eeuu.facebookAds.cpa[industryAdsSelector.value] * relativeStatsCountries[selectedCountry].relativeRateToUSA).toFixed(2).replace(".", ",")}</p>
                             <ul style="list-style-type: none;"><li>- Inversión proporcional: USD ${investmentFacebookAdsAmmount.value / selectedCountriesAnnounceOperate.length}</li>
                             <li>- Numero de conversiones (inversion / CPA):  <strong>${((investmentFacebookAdsAmmount.value / selectedCountriesAnnounceOperate.length) / (absoluteStatsCountries.eeuu.facebookAds.cpa[industryAdsSelector.value] * relativeStatsCountries[selectedCountry].relativeRateToUSA) ).toFixed(2).replace(".", ",")}</strong></li></ul>`;
 
@@ -1019,7 +1019,7 @@ function calculate() {
                             facebookAdsConversionsValue += thisConversion;
 
                         } else if (selectedCountry === "eeuu") {
-                            resultFacebookAds.innerHTML += `<p><strong>‣ ${selectedCountriesAnnounceDisplay[i]}</strong> en industria <strong>${industryAdsSelector.options[industryAdsSelector.selectedIndex].text}</strong> ➠ <strong>CPA:</strong> ${(absoluteStatsCountries.eeuu.facebookAds.cpa[industryAdsSelector.value]).toFixed(2).replace(".", ",")}</p>
+                            resultFacebookAds.innerHTML += `<p><b>‣ ${selectedCountriesAnnounceDisplay[i]}</b> en industria <b>${industryAdsSelector.options[industryAdsSelector.selectedIndex].text}</b> ➠ <b>CPA:</b> ${(absoluteStatsCountries.eeuu.facebookAds.cpa[industryAdsSelector.value]).toFixed(2).replace(".", ",")}</p>
                             <ul style="list-style-type: none;"><li>- Inversión proporcional: USD ${investmentFacebookAdsAmmount.value / selectedCountriesAnnounceOperate.length}</li>
                             <li>- Numero de conversiones (inversion / CPA):  <strong>${((investmentFacebookAdsAmmount.value / selectedCountriesAnnounceOperate.length) / absoluteStatsCountries.eeuu.facebookAds.cpa[industryAdsSelector.value]).toFixed(2).replace(".", ",")}</strong></li></ul>`;
 
