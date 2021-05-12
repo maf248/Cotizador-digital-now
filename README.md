@@ -3,7 +3,7 @@
 
 ## Descripción técnica
 
-Base realizada en Node.js con Express. Utilizando herramientas front-end para adaptarlo más facilmente en producción. Entre las mismas se encuentran: JavaScript front, jQuery, Bootstrap, FontAwesome.
+Base realizada en Node.js con Express. Utilizando herramientas front-end para adaptarlo más facilmente en producción. Entre las mismas se encuentran: JavaScript front, CSS, HTML, jQuery, Bootstrap, FontAwesome.
 
 ## Funcionalidades:
 
