@@ -120,13 +120,15 @@ button:focus {
 
 @media (max-width: 500px) {
   body {
-    padding: 30px 15px;
+    padding: 20px 10px;
   }
-  
+  .industry-ads-selector-container, .investment-google-search-ads, .investment-google-display-ads, .investment-facebook-ads, .email-ammount-container {
+    flex-direction: column;
+  }
 }
 @media (min-width: 500px) {
   body {
-    padding: 25px 50px;
+    padding: 35px 25px;
   }
 }
 @media (min-width: 1000px) {

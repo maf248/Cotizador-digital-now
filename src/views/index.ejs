@@ -6,6 +6,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Kodchasan&display=swap" rel="stylesheet">
     <link rel='stylesheet' href='/stylesheets/style.css' />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <!---jQuery 3.6.0--->
     <script  src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
     <!---Bootstrap 5.0.0--->
@@ -17,7 +18,7 @@
     <script src="/javascripts/cotizador.js" defer></script>
   </head>
   <body>
-    <div class="container">
+  <div class="container-fluid">
     <div class="row">
       <div class="col-3 col-md-2 col-lg-1">
         <a href="https://digitalnow.com.ar/">
@@ -27,8 +28,7 @@
       <div class="col-9 col-md-10 col-lg-11"> 
         <h1 class="text-center"><%= title %></h1>
       </div>
-    
-  </div>
+    </div>
     
     <form action="" class="form-calculate-container" id="form-calculate-container">
       <h4 style="margin-top: 20px;">¿De qué país es el proveedor de servicios que querés contratar?</h4>
@@ -324,7 +324,7 @@
                   
                       <div id="collapseGSAds" class="collapse" aria-labelledby="headingGSAds" data-parent="#accordionGSAds">
                         <div class="card-body">
-                          <p id="result-google-search" style="margin: 10px"></p>
+                          <div id="result-google-search" style="margin: 10px"></div>
                         </div>
                       </div>
                     </div>
@@ -343,7 +343,7 @@
                   
                       <div id="collapseGDAds" class="collapse" aria-labelledby="headingGDAds" data-parent="#accordionGDAds">
                         <div class="card-body">
-                          <p id="result-google-display" style="margin: 10px"></p>
+                          <div id="result-google-display" style="margin: 10px"></div>
                         </div>
                       </div>
                     </div>
@@ -362,7 +362,7 @@
                   
                       <div id="collapseFbAds" class="collapse" aria-labelledby="headingFbAds" data-parent="#accordionFbAds">
                         <div class="card-body">
-                          <p id="result-facebook-ads" style="margin: 10px"></p>
+                          <div id="result-facebook-ads" style="margin: 10px"></div>
                         </div>
                       </div>
                     </div>
@@ -453,5 +453,6 @@
       </div>
       
     </section>
+  </div>
   </body>
 </html>
