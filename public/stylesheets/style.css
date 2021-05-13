@@ -101,9 +101,9 @@ p {
 .titlesCollapse p {
   flex-wrap: wrap;
   overflow-wrap: normal;
-  line-height: 2em;
-  margin-top: 0;
+  line-height: 1.6em;
   margin-bottom: 0;
+  padding: 2px;
 }
 .calculateButton, .calculateAgainButton {
   width: fit-content;
