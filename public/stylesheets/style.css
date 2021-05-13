@@ -96,11 +96,12 @@ p {
 .titlesCollapse {
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
   align-items: center;
 }
 .titlesCollapse p {
-  margin-left: 0.4em;
+  flex-wrap: wrap;
+  overflow-wrap: normal;
+  line-height: 2em;
   margin-top: 0;
   margin-bottom: 0;
 }
@@ -132,6 +133,15 @@ button:focus {
 @media (max-width: 500px) {
   body {
     padding: 20px 10px;
+  }
+  p, ul {
+    font-size: 0.8rem;
+  }
+  .card-header {
+    padding: .5rem .5rem;
+  }
+  .iconsToRotate {
+    margin-left: 0px;
   }
   .industry-ads-selector-container, .investment-google-search-ads, .investment-google-display-ads, .investment-facebook-ads, .email-ammount-container {
     flex-direction: column;
