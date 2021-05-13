@@ -417,46 +417,208 @@ const services = {
         implementationHours: 8,
         maintenanceHours: 4,
         costPerHour: 26,
+        implementation: {
+            basic: {
+                hours: 3
+            },
+            intermediate: {
+                hours: 6
+            },
+            advanced: {
+                hours: 12
+            }
+        },
+        maintenance: {
+            basic: {
+                hours: 2
+            },
+            intermediate: {
+                hours: 4
+            },
+            advanced: {
+                hours: 8
+            }
+        }
     },
     googleDisplayAds: {
         implementationHours: 2,
         maintenanceHours: 2,
         costPerHour: 26,
+        implementation: {
+            basic: {
+                hours: 3
+            },
+            intermediate: {
+                hours: 6
+            },
+            advanced: {
+                hours: 12
+            }
+        },
+        maintenance: {
+            basic: {
+                hours: 2
+            },
+            intermediate: {
+                hours: 4
+            },
+            advanced: {
+                hours: 8
+            }
+        }
     },
     facebookAds: {
         implementationHours: 8,
         maintenanceHours: 4,
         costPerHour: 26,
+        implementation: {
+            basic: {
+                hours: 4
+            },
+            intermediate: {
+                hours: 10
+            },
+            advanced: {
+                hours: 14
+            }
+        },
+        maintenance: {
+            basic: {
+                hours: 2
+            },
+            intermediate: {
+                hours: 4
+            },
+            advanced: {
+                hours: 8
+            }
+        }
     },
     redesSociales: {
         skillsAcquired: ["Community Management", "Redacciones", "Creación de piezas gráficas (3 Carrousels y 8 gráficas individuales)", "Creación de 1 video (Menos de 30 seg)"],
         implementationHours: [8, 0, 0, 0],
         maintenanceHours: [8, 4, 24, 4],
         costPerHour: [13, 19, 30, 30],
+        implementation: {
+            basic: {
+                hours: 2
+            },
+            intermediate: {
+                hours: 4
+            },
+            advanced: {
+                hours: 6
+            }
+        },
+        maintenance: {
+            basic: {
+                hours: 8
+            },
+            intermediate: {
+                hours: 20
+            },
+            advanced: {
+                hours: 40
+            }
+        }
     },
     seo: {
         skillsAcquired: ["SEO", "Redacciones", "Creación de piezas graficas (8 piezas gráficas)"],
         implementationHours: [0, 0, 0],
         maintenanceHours: [4, 16, 8],
         costPerHour: [31, 19, 30],
+        implementation: {
+            basic: {
+                hours: 4
+            },
+            intermediate: {
+                hours: 8
+            },
+            advanced: {
+                hours: 16
+            }
+        },
+        maintenance: {
+            basic: {
+                hours: 8
+            },
+            intermediate: {
+                hours: 16
+            },
+            advanced: {
+                hours: 38
+            }
+        }
     },
     conversionWeb: {
         skillsAcquired: ["Google Ads / Facebook Ads", "Diseño Web UX / UI"],
         implementationHours: [0, 0],
         maintenanceHours: [4, 8],
         costPerHour: [26, 35],
+        implementation: {
+            basic: {
+                hours: 4
+            },
+            advanced: {
+                hours: 16
+            }
+        },
+        maintenance: {
+            basic: {
+                hours: 4
+            },
+            intermediate: {
+                hours: 8
+            },
+            advanced: {
+                hours: 12
+            }
+        }
     },
-    wordpress: {
-        price: 2000
+    disenoWeb: {
+        implementation: {
+            basic: {
+                hours: 10,
+                name: "Landing Page"
+            },
+            intermediate: {
+                hours: 25,
+                name: "Sitio web en base a plantilla prediseñada de 5 secciones"
+            },
+            advanced: {
+                hours: 50,
+                name: "Sitio web con diseño personalizado"
+            },
+            ecommerce: {
+                hours: 50,
+                name: "Sitio web de Ecommerce en CMS como WooCommerce o Shopify"
+            },
+            logoYMarca: {
+                hours: 10,
+                name: "Diseño de logo e identidad de marca"
+            }
+        },
+        maintenance: {
+            basic: {
+                hours: 2
+            }
+        }
     },
-    ecommerceWeb: {
-        price: 2500
-    },
-    landingPage: {
-        price: 3000
-    },
-    logoMarca: {
-        price: 3500
+    emailMarketing: {
+        maintenance: {
+            basic: {
+                hours: 2,
+                perMonth: 1
+            },
+            intermediate: {
+                hours: 4,
+                perMonth: 2
+            },
+            advanced: {
+                hours: 8,
+                perMonth: 4
+            }
+        }
     }
 }
 
