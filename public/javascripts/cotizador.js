@@ -637,11 +637,10 @@ var facebookAds = qs('#facebook-ads');
 var redesSociales = qs('#redesSociales');
 var seo = qs('#seo');
 var conversionWeb = qs('#conversionWeb');
-var wordpress = qs('#wordpress');
-var ecommerceWeb = qs('#ecommerceWeb');
-var landingPage = qs('#landingPage');
-var logoMarca = qs('#logoMarca');
+var disenoWeb = qs('#disenoWeb')
 var email = qs('#email');
+/*--Contenedor de servicios disenoWeb--*/
+var disenoWebServicesContainer = qs('#disenoWebServicesContainer');
 
 /*---Se capturan los CONTENEDORES de los distintos resultados---*/
 var googleFacebookAdsResultContainer = qs('#result-googleads-facebookads-container');
@@ -976,6 +975,14 @@ calculateAgainButton.addEventListener('click', function() {
         calculateButton.style.display = 'block';
 })
 
+disenoWeb.addEventListener('change', function() {
+    if (this.checked) {
+        disenoWebServicesContainer.style.display = 'flex';
+    } else {
+        disenoWebServicesContainer.style.display = 'none';
+    }
+  });
+
 calculateButton.addEventListener('click', function () {
     calculate();
 })
@@ -1216,7 +1223,7 @@ function calculate() {
     /*--Ya calculadas las conversiones particulares (google display, google search y facebook), se suman en conversion total--*/
     totalConversionsValue = googleAdsSearchConversionsValue + googleAdsDisplayConversionsValue + facebookAdsConversionsValue;
 
-    if ((googleSearchAds.checked || googleDisplayAds.checked || facebookAds.checked || redesSociales.checked || seo.checked || conversionWeb.checked || wordpress.checked || ecommerceWeb.checked || landingPage.checked || logoMarca.checked || email.checked) && !completeFormValidate.includes(false)) {
+    if ((googleSearchAds.checked || googleDisplayAds.checked || facebookAds.checked || redesSociales.checked || seo.checked || conversionWeb.checked || disenoWeb.checked || email.checked) && !completeFormValidate.includes(false)) {
         
         /*---Chequea que servicios estan tildados y los suma al total---*/
         if (seo.checked) {
@@ -1354,10 +1361,8 @@ function calculate() {
             });
         }
         
-        if (wordpress.checked) { console.log('Faltan datos del servicio "wordpress"')  }
-        if (ecommerceWeb.checked) { console.log('Faltan datos del servicio "ecommerce web"') }
-        if (landingPage.checked) { console.log('Faltan datos del servicio "landing page"') }
-        if (logoMarca.checked) { console.log('Faltan datos del servicio "logo marca"') }
+        if (disenoWeb.checked) { console.log('Desarrollo en progreso de diseño web con sub-servicios....')  }
+        
 
         /*---Se muestran los resultados particulares de email marketing solamente si esta opcion fue seleccionada---*/
         if (email.checked) {
