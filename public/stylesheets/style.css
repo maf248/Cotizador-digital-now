@@ -94,9 +94,15 @@ p {
   overflow: hidden;
 }
 .titlesCollapse {
-  white-space: normal;
-  margin-top: 10px;
-  margin-bottom: 10px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.titlesCollapse p {
+  margin-left: 0.4em;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 .calculateButton, .calculateAgainButton {
   width: fit-content;
