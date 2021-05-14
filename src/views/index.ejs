@@ -72,8 +72,8 @@
         </div>
 
         <div>
-          <input type="checkbox" name="redes-sociales" id="redesSociales" class="services-check">
-          <label for="redes-sociales">Manejo de Redes Sociales</label>
+          <input type="checkbox" name="community-management" id="communityManagement" class="services-check">
+          <label for="community-management">Community Management</label>
         </div>
 
         <div>
@@ -127,14 +127,15 @@
           <h6 class="text-center mt-2"><u>Google Ads Search:</u></h6>
           <div class="google-search-plan-container">
             <label for="google-search-plan">Selecciona el plan:</label>
-            <select name="google-search-plan" id="google-search-plan">
-              <option value="basic">Básico (3hs)</option>
-              <option value="intermediate">Intermedio (6hs)</option>
-              <option value="advanced">Avanzado (12hs)</option>
+            <select name="google-search-plan" id="google-search-ads-plan">
+              <option value="basic">Básico</option>
+              <option value="intermediate">Intermedio</option>
+              <option value="advanced">Avanzado</option>
             </select>
+            <ul id="google-search-plan-details" style="list-style-type: circle;"><u>Incluye:</u> <li>3hs de implementación (por única vez)</li> <li>2hs de mantenimiento mensual</li></ul>
           </div>
           <div id="investment-google-search-ads" class="investment-google-search-ads">
-            <label for="investment-google-search-ads-value">Introduce el monto en USD de inversión deseada en Google Ads Search:</label>
+            <label for="investment-google-search-ads-value">Introduce el monto en USD de inversión:</label>
             <input type="number" placeholder="Ej: USD $ 30" name="investment-google-search-ads-value">
           </div>
         </div>
@@ -143,14 +144,15 @@
           <h6 class="text-center mt-2"><u>Google Ads Display:</u></h6>
           <div class="google-display-plan-container">
             <label for="google-display-plan">Selecciona el plan:</label>
-            <select name="google-display-plan" id="google-display-plan">
-              <option value="basic">Básico (3hs)</option>
-              <option value="intermediate">Intermedio (6hs)</option>
-              <option value="advanced">Avanzado (12hs)</option>
+            <select name="google-display-plan" id="google-display-ads-plan">
+              <option value="basic">Básico</option>
+              <option value="intermediate">Intermedio</option>
+              <option value="advanced">Avanzado</option>
             </select>
+            <ul id="google-display-plan-details" style="list-style-type: circle;"><u>Incluye:</u> <li>3hs de implementación (por única vez)</li> <li>2hs de mantenimiento mensual</li></ul>
           </div>
           <div id="investment-google-display-ads" class="investment-google-display-ads">
-            <label for="investment-google-display-ads-value">Introduce el monto en USD de inversión deseada en Google Ads Display:</label>
+            <label for="investment-google-display-ads-value">Introduce el monto en USD de inversión:</label>
             <input type="number" placeholder="Ej: USD $ 30" name="investment-google-display-ads-value">
           </div>
         </div>
@@ -158,15 +160,16 @@
         <div id="facebook-ads-extra-container" class="facebook-ads-extra-container">
           <h6 class="text-center mt-2"><u>Facebook Ads:</u></h6>
           <div class="facebook-plan-container">
-            <label for="facebook-plan">Selecciona el plan:</label>
-            <select name="facebook-plan" id="facebook-plan">
-              <option value="basic">Básico (3hs)</option>
-              <option value="intermediate">Intermedio (6hs)</option>
-              <option value="advanced">Avanzado (12hs)</option>
+            <label for="facebook-ads-plan">Selecciona el plan:</label>
+            <select name="facebook-ads-plan" id="facebook-ads-plan">
+              <option value="basic">Básico</option>
+              <option value="intermediate">Intermedio</option>
+              <option value="advanced">Avanzado</option>
             </select>
+            <ul id="facebook-ads-plan-details" style="list-style-type: circle;"><u>Incluye:</u> <li>4hs de implementación (por única vez)</li> <li>2hs de mantenimiento mensual</li></ul>
           </div>
           <div id="investment-facebook-ads" class="investment-facebook-ads">
-            <label for="investment-facebook-ads-value">Introduce el monto en USD de inversión deseada en Facebook Ads:</label>
+            <label for="investment-facebook-ads-value">Introduce el monto en USD de inversión:</label>
             <input type="number" placeholder="Ej: USD $ 30" name="investment-facebook-ads-value">
           </div>
         </div>
@@ -314,10 +317,11 @@
           <div class="community-management-plan-container">
             <label for="community-management-plan">Selecciona el plan:</label>
             <select name="community-management-plan" id="community-management-plan">
-              <option value="basic">Básico (2hs)</option>
-              <option value="intermediate">Intermedio (4hs)</option>
-              <option value="advanced">Avanzado (8hs)</option>
+              <option value="basic">Básico</option>
+              <option value="intermediate">Intermedio</option>
+              <option value="advanced">Avanzado</option>
             </select>
+            <ul id="community-management-plan-details" style="list-style-type: circle;"><u>Incluye:</u> <li>2hs de implementación (por única vez)</li> <li>8hs de mantenimiento mensual</li></ul>
           </div>
         </div>
 
@@ -326,34 +330,37 @@
           <div class="seo-plan-container">
             <label for="seo-plan">Selecciona el plan:</label>
             <select name="seo-plan" id="seo-plan">
-              <option value="basic">Básico (2hs)</option>
-              <option value="intermediate">Intermedio (4hs)</option>
-              <option value="advanced">Avanzado (8hs)</option>
+              <option value="basic">Básico</option>
+              <option value="intermediate">Intermedio</option>
+              <option value="advanced">Avanzado</option>
             </select>
+            <ul id="seo-plan-details" style="list-style-type: circle;"><u>Incluye:</u> <li>4hs de implementación (por única vez)</li> <li>8hs de mantenimiento mensual</li></ul>
           </div>
         </div>
 
         <div class="conversion-web-extra-container" id="conversion-web-extra-container">
-          <h6 class="text-center mt-2"><u>Community Management:</u></h6>
+          <h6 class="text-center mt-2"><u>Optimización de tasa de conversion web:</u></h6>
           <div class="conversion-web-plan-container">
             <label for="conversion-web-plan">Selecciona el plan:</label>
             <select name="conversion-web-plan" id="conversion-web-plan">
-              <option value="basic">Básico (2hs)</option>
-              <option value="intermediate">Intermedio (4hs)</option>
-              <option value="advanced">Avanzado (8hs)</option>
+              <option value="basic">Básico</option>
+              <option value="intermediate">Intermedio</option>
+              <option value="advanced">Avanzado</option>
             </select>
+            <ul id="conversion-web-plan-details" style="list-style-type: circle;"><u>Incluye:</u> <li>4hs de implementación (por única vez)</li> <li>4hs de mantenimiento mensual</li></ul>
           </div>
         </div>
 
         <div class="email-marketing-extra-container" id="email-marketing-extra-container">
           <h6 class="text-center mt-2"><u>Email Marketing:</u></h6>
           <div class="email-plan-container">
-            <label for="email-plan">Selecciona el plan de mantenimiento mensual:</label>
-            <select name="email-plan" id="email-plan">
-              <option value="basic">Básico (2hs)</option>
-              <option value="intermediate">Intermedio (4hs)</option>
-              <option value="advanced">Avanzado (8hs)</option>
+            <label for="email-marketing-plan">Selecciona el plan:</label>
+            <select name="email-marketing-plan" id="email-marketing-plan">
+              <option value="basic">Básico</option>
+              <option value="intermediate">Intermedio</option>
+              <option value="advanced">Avanzado</option>
             </select>
+            <ul id="email-marketing-plan-details" style="list-style-type: circle;"><u>Incluye:</u> <li>1 Envio mensual (2hs de mantenimiento)</li></ul>
           </div>
           <div class="email-ammount-container">
             <label for="email-ammount">Introduce el número de contactos deseado en tus campañas, para estimar el costo mensual de la plataforma de envíos:</label>

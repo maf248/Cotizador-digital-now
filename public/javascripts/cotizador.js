@@ -494,7 +494,7 @@ const services = {
             }
         }
     },
-    redesSociales: {
+    communityManagement: {
         skillsAcquired: ["Community Management", "Redacciones", "Creación de piezas gráficas (3 Carrousels y 8 gráficas individuales)", "Creación de 1 video (Menos de 30 seg)"],
         implementationHours: [8, 0, 0, 0],
         maintenanceHours: [8, 4, 24, 4],
@@ -634,7 +634,7 @@ var errorType = 0;
 var googleSearchAds = qs('#google-search-ads');
 var googleDisplayAds = qs('#google-display-ads');
 var facebookAds = qs('#facebook-ads');
-var redesSociales = qs('#redesSociales');
+var communityManagement = qs('#communityManagement');
 var seo = qs('#seo');
 var conversionWeb = qs('#conversionWeb');
 var disenoWeb = qs('#disenoWeb')
@@ -674,6 +674,26 @@ var investmentFacebookAdsAmmount = qs('#investment-facebook-ads input[type="numb
 var emailMarketingContainer = qs('#email-marketing-extra-container');
 var emailAmmount = qs('#email-ammount');
 
+/*---Se capturan los selectores de planes para cada servicio---*/
+var googleSearchAdsPlan = qs('#google-search-ads-plan');
+var googleDisplayAdsPlan = qs('#google-display-ads-plan');
+var facebookAdsPlan = qs('#facebook-ads-plan');
+var communityManagementPlan = qs('#community-management-plan');
+var seoPlan = qs('#seo-plan');
+var conversionWebPlan = qs('#conversion-web-plan');
+var emailMarketingPlan = qs('#email-marketing-plan');
+
+/*---Se capturan los detalles de cada plan para mostrar dinamicamente---*/
+var googleSearchAdsPlanDetails = qs('#google-search-plan-details');
+var googleDisplayAdsPlanDetails = qs('#google-display-plan-details');
+var facebookAdsPlanDetails = qs('#facebook-ads-plan-details');
+var communityManagementPlanDetails = qs('#community-management-plan-details');
+var seoPlanDetails = qs('#seo-plan-details');
+var conversionWebPlanDetails = qs('#conversion-web-plan-details');
+var emailMarketingPlanDetails = qs('#email-marketing-plan-details');
+
+
+/*---------------------RESULTADOS---------------------*/
 /*---Se capturan los bloques que muestran los RESULTADOS, para inyectar los valores luego de calcular---*/
 var resultGoogleFacebookAds = qs('#result-googleads-facebookads');
 var resultGoogleSearch = qs('#result-google-search');
@@ -743,6 +763,9 @@ checkboxesServices.forEach((checkboxService, i) => {
             /*--Muestra según el caso : Inversión en Google Ads Search, Inversión en Google Ads Display e Inversión en Facebook Ads--*/
             if (checkboxesServicesValidate[0]) {
                 googleSearchAdsExtraContainer.style.display = "flex";
+                googleSearchAdsPlan.addEventListener('change', function () {
+                    googleSearchAdsPlanDetails.innerHTML = `<u>Incluye:</u> <li>${services.googleSearchAds.implementation[googleSearchAdsPlan.value].hours}hs de implementación (por única vez)</li> <li>${services.googleSearchAds.maintenance[googleSearchAdsPlan.value].hours}hs de mantenimiento mensual</li>`;
+                });
                 /*-Valida true / false el monto google search ads en caso de estar completado o no-*/
                 if (investmentGoogleSearchAdsAmmount.value == '') {
                     completeFormValidate[5] = false;
@@ -755,6 +778,9 @@ checkboxesServices.forEach((checkboxService, i) => {
             }
             if (checkboxesServicesValidate[1]) {
                 googleDisplayAdsExtraContainer.style.display = "flex";
+                googleDisplayAdsPlan.addEventListener('change', function () {
+                    googleDisplayAdsPlanDetails.innerHTML = `<u>Incluye:</u> <li>${services.googleDisplayAds.implementation[googleDisplayAdsPlan.value].hours}hs de implementación (por única vez)</li> <li>${services.googleDisplayAds.maintenance[googleDisplayAdsPlan.value].hours}hs de mantenimiento mensual</li>`;
+                });
                 /*-Valida true / false el monto google display ads en caso de estar completado o no-*/
                 if (investmentGoogleDisplayAdsAmmount.value == '') {
                     completeFormValidate[6] = false;
@@ -767,6 +793,9 @@ checkboxesServices.forEach((checkboxService, i) => {
             }
             if (checkboxesServicesValidate[2]) {
                 facebookAdsExtraContainer.style.display = "flex";
+                facebookAdsPlan.addEventListener('change', function () {
+                    facebookAdsPlanDetails.innerHTML = `<u>Incluye:</u> <li>${services.facebookAds.implementation[facebookAdsPlan.value].hours}hs de implementación (por única vez)</li> <li>${services.facebookAds.maintenance[facebookAdsPlan.value].hours}hs de mantenimiento mensual</li>`;
+                });
                 /*-Valida true / false el monto facebook ads en caso de estar completado o no-*/
                 if (investmentFacebookAdsAmmount.value.length == '') {
                     completeFormValidate[7] = false;
@@ -804,21 +833,35 @@ checkboxesServices.forEach((checkboxService, i) => {
         }
         /*--Muestra la selección de plan de Community Management--*/
         if (checkboxesServicesValidate[3]) {
-            communityManagementExtraContainer.style.display = "block"
+            communityManagementExtraContainer.style.display = "block";
+            communityManagementPlan.addEventListener('change', function () {
+                communityManagementPlanDetails.innerHTML = `<u>Incluye:</u> <li>${services.communityManagement.implementation[communityManagementPlan.value].hours}hs de implementación (por única vez)</li> <li>${services.communityManagement.maintenance[communityManagementPlan.value].hours}hs de mantenimiento mensual</li>`;
+            });
         } else {
             communityManagementExtraContainer.style.display = "none"
         }
         /*--Muestra la selección de plan de SEO--*/
         if (checkboxesServicesValidate[4]) {
-            seoExtraContainer.style.display = "block"
+            seoExtraContainer.style.display = "block";
+            seoPlan.addEventListener('change', function () {
+                seoPlanDetails.innerHTML = `<u>Incluye:</u> <li>${services.seo.implementation[seoPlan.value].hours}hs de implementación (por única vez)</li> <li>${services.seo.maintenance[seoPlan.value].hours}hs de mantenimiento mensual</li>`;
+            });
         } else {
-            seoExtraContainer.style.display = "none"
+            seoExtraContainer.style.display = "none";
         }
         /*--Muestra la selección de plan de Optimización de conversion web--*/
         if (checkboxesServicesValidate[5]) {
-            conversionWebExtraContainer.style.display = "block"
+            conversionWebExtraContainer.style.display = "block";
+            conversionWebPlan.addEventListener('change', function () {
+                if (conversionWebPlan.value == "basic" || conversionWebPlan.value == "advanced") {
+                    conversionWebPlanDetails.innerHTML = `<u>Incluye:</u> <li>${services.conversionWeb.implementation[conversionWebPlan.value].hours}hs de implementación (por única vez)</li> <li>${services.conversionWeb.maintenance[conversionWebPlan.value].hours}hs de mantenimiento mensual</li>`;
+                } else {
+                    conversionWebPlanDetails.innerHTML = `<u>Incluye:</u> <li>${services.conversionWeb.maintenance[conversionWebPlan.value].hours}hs de mantenimiento mensual</li>`;
+                }
+                
+            });
         } else {
-            conversionWebExtraContainer.style.display = "none"
+            conversionWebExtraContainer.style.display = "none";
         }
     });
 });
@@ -827,6 +870,13 @@ checkboxesServices.forEach((checkboxService, i) => {
 email.addEventListener('change', function() {
     if (this.checked) {
         emailMarketingContainer.style.display = 'flex';
+        emailMarketingPlan.addEventListener('change', function () {
+            if (emailMarketingPlan.value == 'basic') {
+                emailMarketingPlanDetails.innerHTML = `<u>Incluye:</u> <li>${services.emailMarketing.maintenance[emailMarketingPlan.value].perMonth} Envio mensual (${services.emailMarketing.maintenance[emailMarketingPlan.value].hours}hs de mantenimiento)</li>`; 
+            } else {
+                emailMarketingPlanDetails.innerHTML = `<u>Incluye:</u> <li>${services.emailMarketing.maintenance[emailMarketingPlan.value].perMonth} Envios mensuales (${services.emailMarketing.maintenance[emailMarketingPlan.value].hours}hs de mantenimiento)</li>`;
+            }
+        });
         if (emailAmmount.value == '') {
             completeFormValidate[2] = false;
         } else {
@@ -1244,7 +1294,7 @@ function calculate() {
     /*--Ya calculadas las conversiones particulares (google display, google search y facebook), se suman en conversion total--*/
     totalConversionsValue = googleAdsSearchConversionsValue + googleAdsDisplayConversionsValue + facebookAdsConversionsValue;
 
-    if ((googleSearchAds.checked || googleDisplayAds.checked || facebookAds.checked || redesSociales.checked || seo.checked || conversionWeb.checked || disenoWeb.checked || email.checked) && !completeFormValidate.includes(false)) {
+    if ((googleSearchAds.checked || googleDisplayAds.checked || facebookAds.checked || communityManagement.checked || seo.checked || conversionWeb.checked || disenoWeb.checked || email.checked) && !completeFormValidate.includes(false)) {
         
         /*---Chequea que servicios estan tildados y los suma al total---*/
         if (seo.checked) {
@@ -1289,22 +1339,22 @@ function calculate() {
                 value: conversionWebValueToPush
             });
         }
-        if (redesSociales.checked) {
+        if (communityManagement.checked) {
             var redesSocialesValueToPush = 0;
             /*--Se ocultan los fees de unica vez, ya que este plan no tiene---*/
             resultAgencyOnceFeeContainer.style.display = "block";
             /*--Se guardan los detalles de skills que incluye este servicio---*/
             let detailedSkillsList = '';
             
-            services.redesSociales.maintenanceHours.forEach((monthlyHours, i) => {
+            services.communityManagement.maintenanceHours.forEach((monthlyHours, i) => {
                 if(monthlyHours > 0) {
-                    redesSocialesValueToPush += monthlyHours * services.redesSociales.costPerHour[i];
-                    agencyMonthlyFeeValue += monthlyHours * services.redesSociales.costPerHour[i];
-                    detailedSkillsList += `<li style="list-style-type: none">- ${services.redesSociales.skillsAcquired[i]} : USD ${monthlyHours * services.redesSociales.costPerHour[i]} <small>(Siendo ${monthlyHours}hs mensuales a USD ${services.redesSociales.costPerHour[i]} la hora)</small></li>`;
+                    redesSocialesValueToPush += monthlyHours * services.communityManagement.costPerHour[i];
+                    agencyMonthlyFeeValue += monthlyHours * services.communityManagement.costPerHour[i];
+                    detailedSkillsList += `<li style="list-style-type: none">- ${services.communityManagement.skillsAcquired[i]} : USD ${monthlyHours * services.communityManagement.costPerHour[i]} <small>(Siendo ${monthlyHours}hs mensuales a USD ${services.communityManagement.costPerHour[i]} la hora)</small></li>`;
                 }
-                if (services.redesSociales.implementationHours[i] > 0) {
-                    agencyOnceFeeValue += services.redesSociales.implementationHours[i] * services.redesSociales.costPerHour[i];
-                    resultAgencyOnceFeeDetail.innerHTML += `<li style="margin-top: 10px"><strong>‣ Gestión de redes sociales:</strong><ul style="list-style-type: none"><li>- ${services.redesSociales.skillsAcquired[i]}: USD ${services.redesSociales.implementationHours[i] * services.redesSociales.costPerHour[i]}. <small>(Siendo ${services.redesSociales.implementationHours[i]}hs a un valor de USD ${services.redesSociales.costPerHour[i]} por hora)</small></ul></li></li>`;
+                if (services.communityManagement.implementationHours[i] > 0) {
+                    agencyOnceFeeValue += services.communityManagement.implementationHours[i] * services.communityManagement.costPerHour[i];
+                    resultAgencyOnceFeeDetail.innerHTML += `<li style="margin-top: 10px"><strong>‣ Gestión de redes sociales:</strong><ul style="list-style-type: none"><li>- ${services.communityManagement.skillsAcquired[i]}: USD ${services.communityManagement.implementationHours[i] * services.communityManagement.costPerHour[i]}. <small>(Siendo ${services.communityManagement.implementationHours[i]}hs a un valor de USD ${services.communityManagement.costPerHour[i]} por hora)</small></ul></li></li>`;
                 }
             })
 
