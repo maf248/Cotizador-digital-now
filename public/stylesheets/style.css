@@ -36,6 +36,9 @@ p {
   flex-direction: column;
   padding: 10px;
 }
+.services-extra-container {
+  margin-top: 1rem; 
+}
 
 .country-announce-container {
   display: none;
@@ -69,9 +72,13 @@ p {
   margin-left: auto;
   margin-right: auto;
 }
-
-.industry-ads-selector-container, .investment-google-search-ads, .investment-google-display-ads, .investment-facebook-ads, .email-ammount-container {
+.google-search-ads-extra-container, .google-display-ads-extra-container, .facebook-ads-extra-container, .industry-and-country-selectors-container, .community-management-extra-container, .seo-extra-container, .conversion-web-extra-container, .email-marketing-extra-container {
   display: none;
+  flex-direction: column;
+}
+
+.industry-ads-selector-container, .google-search-plan-container, .investment-google-search-ads, .google-display-plan-container, .investment-google-display-ads, .facebook-plan-container, .investment-facebook-ads, .community-management-plan-container, .seo-plan-container, .conversion-web-plan-container, .email-ammount-container, .email-plan-container {
+  display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;

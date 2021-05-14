@@ -658,9 +658,12 @@ var resultMonthlyTotalContainer = qs('#result-monthly-total-container');
 var countryAnnounceContainer = qs('#country-announce-container');
 
 /*---Se capturan los bloques CONTENEDORES que piden inversion en google ads / facebook ads---*/
-var investmentGoogleSearchAdsContainer = qs('#investment-google-search-ads');
-var investmentGoogleDisplayAdsContainer = qs('#investment-google-display-ads');
-var investmentFacebookAdsContainer = qs('#investment-facebook-ads');
+var googleSearchAdsExtraContainer = qs('#google-search-ads-extra-container');
+var googleDisplayAdsExtraContainer = qs('#google-display-ads-extra-container');
+var facebookAdsExtraContainer = qs('#facebook-ads-extra-container');
+var communityManagementExtraContainer = qs('#community-management-extra-container');
+var conversionWebExtraContainer = qs('#conversion-web-extra-container');
+var seoExtraContainer = qs('#seo-extra-container');
 
 /*--Se capturan los MONTOS de inversion introducidos---*/
 var investmentGoogleSearchAdsAmmount = qs('#investment-google-search-ads input[type="number"]');
@@ -668,7 +671,7 @@ var investmentGoogleDisplayAdsAmmount = qs('#investment-google-display-ads input
 var investmentFacebookAdsAmmount = qs('#investment-facebook-ads input[type="number"]');
 
 /*---Se captura el bloque que pide cantidad de contactos EMAIL y el menu desplegable con valores---*/
-var emailAmmountContainer = qs('#email-ammount-container');
+var emailMarketingContainer = qs('#email-marketing-extra-container');
 var emailAmmount = qs('#email-ammount');
 
 /*---Se capturan los bloques que muestran los RESULTADOS, para inyectar los valores luego de calcular---*/
@@ -735,11 +738,11 @@ checkboxesServices.forEach((checkboxService, i) => {
         }
         /*--Muestra u oculta la seleccion del tipo de industria en caso de seleccionarse google / facebook ads (las primeras 3 opciones)---*/
         if (checkboxesServicesValidate.slice(0, 3).includes(true)) {
-            industryAdsSelectorContainer.style.display = "flex";
+            industryAdsAndCountrySelectorContainer.style.display = "flex";
             countryAnnounceContainer.style.display = "block";
             /*--Muestra según el caso : Inversión en Google Ads Search, Inversión en Google Ads Display e Inversión en Facebook Ads--*/
             if (checkboxesServicesValidate[0]) {
-                investmentGoogleSearchAdsContainer.style.display = "flex";
+                googleSearchAdsExtraContainer.style.display = "flex";
                 /*-Valida true / false el monto google search ads en caso de estar completado o no-*/
                 if (investmentGoogleSearchAdsAmmount.value == '') {
                     completeFormValidate[5] = false;
@@ -747,11 +750,11 @@ checkboxesServices.forEach((checkboxService, i) => {
                     completeFormValidate[5] = true;
                 }
             } else {
-                investmentGoogleSearchAdsContainer.style.display = "none";
+                googleSearchAdsExtraContainer.style.display = "none";
                 completeFormValidate.splice(5, 6);
             }
             if (checkboxesServicesValidate[1]) {
-                investmentGoogleDisplayAdsContainer.style.display = "flex";
+                googleDisplayAdsExtraContainer.style.display = "flex";
                 /*-Valida true / false el monto google display ads en caso de estar completado o no-*/
                 if (investmentGoogleDisplayAdsAmmount.value == '') {
                     completeFormValidate[6] = false;
@@ -759,11 +762,11 @@ checkboxesServices.forEach((checkboxService, i) => {
                     completeFormValidate[6] = true;
                 }
             } else {
-                investmentGoogleDisplayAdsContainer.style.display = "none";
+                googleDisplayAdsExtraContainer.style.display = "none";
                 completeFormValidate.splice(6, 7);
             }
             if (checkboxesServicesValidate[2]) {
-                investmentFacebookAdsContainer.style.display = "flex";
+                facebookAdsExtraContainer.style.display = "flex";
                 /*-Valida true / false el monto facebook ads en caso de estar completado o no-*/
                 if (investmentFacebookAdsAmmount.value.length == '') {
                     completeFormValidate[7] = false;
@@ -771,7 +774,7 @@ checkboxesServices.forEach((checkboxService, i) => {
                     completeFormValidate[7] = true;
                 }
             } else {
-                investmentFacebookAdsContainer.style.display = "none";
+                facebookAdsExtraContainer.style.display = "none";
                 completeFormValidate.splice(7, 8);
             }
             /*-Valida true / false el tipo de industria en caso de estar seleccionado o no-*/
@@ -789,15 +792,33 @@ checkboxesServices.forEach((checkboxService, i) => {
             
             
         } else {
-            industryAdsSelectorContainer.style.display = "none";
+            industryAdsAndCountrySelectorContainer.style.display = "none";
             countryAnnounceContainer.style.display = "none";
             /*-Elimina las posiciones 3 y 4 del array de validacion, correspondiente a la seleccion de paises donde anunciar e industria en caso que no se elijan anuncios-*/
             completeFormValidate.splice(3, 5)
 
-            investmentGoogleSearchAdsContainer.style.display = "none";
-            investmentGoogleDisplayAdsContainer.style.display = "none";
-            investmentFacebookAdsContainer.style.display = "none";
+            googleSearchAdsExtraContainer.style.display = "none";
+            googleDisplayAdsExtraContainer.style.display = "none";
+            facebookAdsExtraContainer.style.display = "none";
             
+        }
+        /*--Muestra la selección de plan de Community Management--*/
+        if (checkboxesServicesValidate[3]) {
+            communityManagementExtraContainer.style.display = "block"
+        } else {
+            communityManagementExtraContainer.style.display = "none"
+        }
+        /*--Muestra la selección de plan de SEO--*/
+        if (checkboxesServicesValidate[4]) {
+            seoExtraContainer.style.display = "block"
+        } else {
+            seoExtraContainer.style.display = "none"
+        }
+        /*--Muestra la selección de plan de Optimización de conversion web--*/
+        if (checkboxesServicesValidate[5]) {
+            conversionWebExtraContainer.style.display = "block"
+        } else {
+            conversionWebExtraContainer.style.display = "none"
         }
     });
 });
@@ -805,14 +826,14 @@ checkboxesServices.forEach((checkboxService, i) => {
 /*---Se piden cantidad de mails en caso de tildar "Email Marketing"---*/
 email.addEventListener('change', function() {
     if (this.checked) {
-        emailAmmountContainer.style.display = 'flex';
+        emailMarketingContainer.style.display = 'flex';
         if (emailAmmount.value == '') {
             completeFormValidate[2] = false;
         } else {
             completeFormValidate[2] = true;
         }
     } else {
-        emailAmmountContainer.style.display = 'none';
+        emailMarketingContainer.style.display = 'none';
         /*-Elimina la posicion 2 del array de validacion, correspondiente a la seleccion de cantidad de mails marketing-*/
         completeFormValidate.splice(2, 3)
     }
@@ -831,7 +852,7 @@ emailAmmount.addEventListener('change', function() {
 });
 
 /*---Se captura la industria seleccionada para calcular google/facebook ads---*/
-var industryAdsSelectorContainer = qs('#industry-ads-selector-container');
+var industryAdsAndCountrySelectorContainer = qs('#industry-and-country-selectors-container');
 var industryAdsSelector = qs('#industry-ads-selector');
 
 industryAdsSelector.addEventListener('change', function() {
