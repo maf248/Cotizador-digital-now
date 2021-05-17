@@ -6,7 +6,10 @@ p {
   min-width: fit-content;
   display: inline-block;
 }
-
+.digitalNowLogo:hover {
+  transform: scale(1.2);
+  transition: transform .5s ease-out;
+}
 .flex-row {
   display: flex;
   flex-direction: row;

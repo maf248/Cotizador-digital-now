@@ -419,24 +419,36 @@ const services = {
         costPerHour: 26,
         implementation: {
             basic: {
-                hours: 3
+                hours: [3],
+                skillsAcquired: ["Analista de Marketing Digital"],
+                content: ["<ul><li>Creación de cuenta de Google Ads.</li><li>Selección de las palabras clave que tengan volumen de búsqueda y sean relevantes para usar en la campaña. Call con el cliente, para determinar inversión mensual y qué búsquedas son relevantes.</li><li>Creación de una campaña con 1 solo anuncio genérico para todas las búsquedas (<a href='https://drive.google.com/file/d/1EvPmLzeFRtriTdwfgtxOTTquk9lGSKIb/view?usp=sharing'>Ver ejemplo</a>)</li><li>Creación de extensiones para las campañas (Link con la dirección de tu negocio y link para que te llamen por celular).</li></ul>"]
             },
             intermediate: {
-                hours: 6
+                hours: [6],
+                skillsAcquired: ["Analista de Marketing Digital"],
+                content: ["<ul><li>Creación de cuenta de Google Ads.</li><li>Selección de las palabras clave que tengan volumen de búsqueda y sean relevantes para usar en la campaña. Call con el cliente, para determinar inversión mensual y qué búsquedas son relevantes.</li><li>Creación de extensiones para las campañas (Link con la dirección de tu negocio y link para que te llamen por celular).</li><li>Medición de acciones relevantes para tu negocio en tu sitio web (Conversiones). Por ejemplo, cuando arrancan el carrito, hacen una compra, completan un formulario o te contactan por el chat de la web.</li><li>Creación de diferentes campañas (Hasta 5) según tipos de búsquedas o ubicación geográfica, para concentrar la inversión en las campañas que más conversiones generen y a un costo más bajo.</li><li>Creación de dashboard de Google Data Studio (<a href='https://datastudio.google.com/u/0/reporting/0B_U5RNpwhcE6ckdmZEJ0ZDJXUnM/page/VgD/preview'>Ver ejemplo</a>)</li><li>Creación de estructura de campaña que permita organizar las búsquedas en grupos, y poder hacer hasta 10 anuncios específicos para cada grupo de búsquedas. Se buscará que el texto de los anuncios sea lo más relevante posible a las búsquedas, para generar más clicks a tu sitio web. (<a href='https://drive.google.com/file/d/1GXvFiktXQRjPjhB0rgpT0QZcOud83kDu/view?usp=sharing'>Ver ejemplo</a>)</li></ul>"]
             },
             advanced: {
-                hours: 12
+                hours: [12],
+                skillsAcquired: ["Analista de Marketing Digital"],
+                content: ["<ul><li>Creación de cuenta de Google Ads.</li><li>Selección de las palabras clave que tengan volumen de búsqueda y sean relevantes para usar en la campaña. Call con el cliente, para determinar inversión mensual y qué búsquedas son relevantes.</li><li>Creación de extensiones para las campañas (Link con la dirección de tu negocio y link para que te llamen por celular).</li><li>Medición de acciones relevantes para tu negocio en tu sitio web (Conversiones). Por ejemplo, cuando arrancan el carrito, hacen una compra, completan un formulario o te contactan por el chat de la web.</li><li>Creación de dashboard de Google Data Studio (<a href='https://datastudio.google.com/u/0/reporting/0B_U5RNpwhcE6ckdmZEJ0ZDJXUnM/page/VgD/preview'>Ver ejemplo</a>)</li><li>Creación de diferentes campañas (Hasta 10) según tipos de búsquedas, para concentrar la inversión en las campañas que más conversiones generen y a un costo más bajo.</li><li>Creación de estructura de campaña que permita organizar las búsquedas en grupos, y poder hacer hasta 20 anuncios específicos para cada grupo de búsquedas (<a href='https://drive.google.com/file/d/1anPLmkM4xNm2XXzLLY_owOWoVBaQ8cJI/view?usp=sharing'>Ver ejemplo</a>)</li></ul>"]
             }
         },
         maintenance: {
             basic: {
-                hours: 2
+                hours: [2],
+                skillsAcquired: ["Analista de Marketing Digital"],
+                content: ["<ul><li>Cambios solicitados por el cliente (Sin que supere el tiempo contratado)</li><li>1 cambio por mes para intentar mejorar la performance como modificar el presupuesto, url finales, texto de anuncios, palabras clave (Búsquedas en las que aparecés), ubicación geográfica y concordancias (qué tan amplio es el abanico de búsquedas similares a tus palabras clave en el cual aparecés, podés ver más sobre las concordancias en el siguiente <a href='https://digitalnow.com.ar/google-ads-como-funciona-y-para-que-sirve/'>link</a>). A fin de mes el cliente puede ver un análisis sobre cómo impactó ese cambio.</li></ul>"]
             },
             intermediate: {
-                hours: 4
+                hours: [4],
+                skillsAcquired: ["Analista de Marketing Digital"],
+                content: ["<ul><li>Cambios solicitados por el cliente (Sin que supere el tiempo contratado)</li><li>Incluye 2 cambios por mes para intentar mejorar la performance como modificaciones en el presupuesto, url finales, texto de anuncios, palabras clave (Búsquedas en las que aparecés), ubicación geográfica y concordancias (qué tan amplio es el abanico de búsquedas similares a tus palabras clave en el cual aparecés, podés ver más sobre las concordancias en el siguiente <a href='https://digitalnow.com.ar/google-ads-como-funciona-y-para-que-sirve/'>link</a>). Cada 15 días el cliente puede ver un análisis sobre cómo impactaron los cambios.</li></ul>"]
             },
             advanced: {
-                hours: 8
+                hours: [8],
+                skillsAcquired: ["Analista de Marketing Digital"],
+                content: ["<ul><li>Cambios solicitados por el cliente (Sin que supere el tiempo contratado)</li><li>Incluye 4 cambios por mes para intentar mejorar la performance como modificaciones en el presupuesto, url finales, texto de anuncios, palabras clave (Búsquedas en las que aparecés), ubicación geográfica y concordancias (qué tan amplio es el abanico de búsquedas similares a tus palabras clave en el cual aparecés, podés ver más sobre las concordancias en el siguiente <a href='https://digitalnow.com.ar/google-ads-como-funciona-y-para-que-sirve/'>link</a>). Semanalmente el cliente puede ver un análisis sobre cómo impactaron los cambios.</li></ul>"]
             }
         }
     },
@@ -446,24 +458,36 @@ const services = {
         costPerHour: 26,
         implementation: {
             basic: {
-                hours: 3
+                hours: [1, 2],
+                skillsAcquired: ["Analista de Marketing Digital", "Diseñador Gráfico"],
+                content: ["<ul><li>Creación de cuenta de Google Ads.</li><li>Creación de 1 campaña de remarketing (Mostrarle anuncios en sitios web a usuarios que ya entraron a tu sitio web en los últimos 30 días). (<a href='https://drive.google.com/file/d/1zvy-_UYBC1VWbIqEszWUhvuzPcU3FNXl/view?usp=sharing'>Ver ejemplo</a>)</li></ul>", "<ul><li>Creación de 1 pieza gráfica en formato cuadrado y horizontal para anuncios responsivos (mezcla de imagen y texto).</li><li><a href='https://drive.google.com/drive/folders/15wF9BY4RxRrQ-vEchJDP4V17rw6hp503?usp=sharing'>Ver suma de piezas creativas</a></li></ul>"]
             },
             intermediate: {
-                hours: 6
+                hours: [2, 2, 2],
+                skillsAcquired: ["Analista de Marketing Digital", "Diseñador Gráfico", "Editor de video"],
+                content: ["<ul><li>Creación de cuenta de Google Ads.</li><li>Creación de 1 campaña de remarketing (Mostrarle anuncios en sitios web a usuarios que ya entraron a tu sitio web en los últimos 30 días). (<a href='https://drive.google.com/file/d/1zvy-_UYBC1VWbIqEszWUhvuzPcU3FNXl/view?usp=sharing'>Ver ejemplo</a>)</li><li>Medición de acciones relevantes para tu negocio en tu sitio web (Conversiones). Por ejemplo, cuando arrancan el carrito, hacen una compra, completan un formulario o te contactan por el chat de la web.</li><li>Creación de dashboard de Google Data Studio (<a href='https://datastudio.google.com/u/0/reporting/f6da5210-ceff-411f-a088-28943fb6b9d6/page/s16BB/preview'>Ver ejemplo</a>)</li><li>Creación de hasta 5 campañas segmentadas por intereses de los usuarios y temas de sitios web, para distribuir el presupuesto según la que genere más conversiones.</li></ul>", "<ul><li>Creación de 1 pieza gráfica en formato cuadrado y horizontal para anuncios responsivos (mezcla de imagen y texto).</li></ul>", "<ul><li>Creación de video de 30 segundos en formato apaisado que se muestra en sitios web como anuncio (<a href='https://drive.google.com/file/d/1il1GW3U0HTOIy76mtOSmEEwNYXda6_CL/view?usp=sharing'>Ver ejemplo</a>)</li><li><a href='https://drive.google.com/drive/folders/131EO5sr8BXx1si4fRHetLhPWHeNHaZI4?usp=sharing'>Ver ejemplo de piezas creativas que se entregan</a></li></ul>"]
             },
             advanced: {
-                hours: 12
+                hours: [2, 6, 4],
+                skillsAcquired: ["Analista de Marketing Digital", "Diseñador Gráfico", "Editor de video"],
+                content: ["<ul><li>Creación de cuenta de Google Ads.</li><li>Creación de 1 campaña de remarketing (Mostrarle anuncios en sitios web a usuarios que ya entraron a tu sitio web en los últimos 30 días). (<a href='https://drive.google.com/file/d/1zvy-_UYBC1VWbIqEszWUhvuzPcU3FNXl/view?usp=sharing'>Ver ejemplo</a>)</li><li>Medición de acciones relevantes para tu negocio en tu sitio web (Conversiones). Por ejemplo, cuando arrancan el carrito, hacen una compra, completan un formulario o te contactan por el chat de la web.</li><li>Creación de dashboard de Google Data Studio (<a href='https://datastudio.google.com/u/0/reporting/f6da5210-ceff-411f-a088-28943fb6b9d6/page/s16BB/preview'>Ver ejemplo</a>)</li><li>Creación de hasta 5 campañas segmentadas por intereses de los usuarios y temas de sitios web, para distribuir el presupuesto según la que genere más conversiones.</li></ul>", "<ul><li>Creación de 3 piezas gráficas en formatos cuadrado y horizontal (6 en total) para anuncios responsivos (mezcla de imagen y texto).</li></ul>", "<ul><li>Creación de 2 videos de 30 segundos en formato apaisado y 1 video en formato vertical (Readaptación) que se muestra en sitios web como anuncio (<a href='https://drive.google.com/file/d/1il1GW3U0HTOIy76mtOSmEEwNYXda6_CL/view?usp=sharing'>Ver ejemplo</a>)</li></ul>"]
             }
         },
         maintenance: {
             basic: {
-                hours: 2
+                hours: [2],
+                skillsAcquired: ["Analista de Marketing Digital"],
+                content: ["<ul><li>Cambios solicitados por el cliente (Sin que supere el tiempo contratado)</li><li>Incluye 1 cambio por mes para intentar mejorar la performance como modificar el presupuesto, url finales, texto de anuncios, audiencia, ubicación geográfica y piezas creativas. A fin de mes el cliente recibe un análisis sobre cómo impactó ese cambio.</li></ul>"]
             },
             intermediate: {
-                hours: 4
+                hours: [4],
+                skillsAcquired: ["Analista de Marketing Digital", "Diseñador Gráfico"],
+                content: ["<ul><li>Cambios solicitados por el cliente (Sin que supere el tiempo contratado)</li><li>Incluye 1 cambio por mes para intentar mejorar la performance como modificaciones en el presupuesto, url finales, texto de anuncios, audiencia, ubicación geográfica y piezas creativas. A fin de mes el cliente recibe un análisis sobre cómo impactó ese cambio.</li></ul>", "<ul><li>Creación de 1 pieza gráfica en formatos cuadrado y horizontal.</li></ul>"]
             },
             advanced: {
-                hours: 8
+                hours: [8],
+                skillsAcquired: ["Analista de Marketing Digital", "Diseñador Gráfico", "Editor de video"],
+                content: ["<ul><li>Cambios solicitados por el cliente (Sin que supere el tiempo contratado)</li><li>Incluye 2 cambios por mes (Uno cada 15 días) para intentar mejorar la performance como modificaciones en el presupuesto, url finales, texto de anuncios, audiencia, ubicación geográfica y piezas creativas. Después de 15 días el cliente recibe un análisis sobre cómo impactó ese cambio.</li></ul>", "<ul><li>Creación de 1 pieza gráfica en formatos cuadrado y horizontal.</li></ul>", "<ul><li>Creación de 1 video en formato apaisado.</li></ul>"]
             }
         }
     },
@@ -473,24 +497,36 @@ const services = {
         costPerHour: 26,
         implementation: {
             basic: {
-                hours: 4
+                hours: [2, 2],
+                skillsAcquired: ["Analista de Marketing Digital", "Diseñador Gráfico"],
+                content: ["<ul><li>Creación de cuenta de Facebook Ads.</li><li>Implementación de pixel de facebook para usar públicos como usuarios que ya entraron a tu sitio web o usuarios similares a los ya entraron a tu sitio web.</li><li>Creación de estructura de campaña para invertir un 70% en usuarios nuevos (No entraron a tu sitio ni a tus redes sociales) y un 30% en usuarios que ya entraron a tu sitio web o ya interactuaron con tus redes sociales.</li></ul>", "<ul><li>Creación de 1 pieza gráfica en formatos cuadrado (Para feed) y vertical (Para stories) y de un anuncio de texto.</li><li><a href='https://drive.google.com/drive/folders/1zgJiT2dnypW3kAKUDmWyuyEN7zp8KZ47?usp=sharing'>Ver ejemplo de entregables</a></li></ul>"]
             },
             intermediate: {
-                hours: 10
+                hours: [6, 4],
+                skillsAcquired: ["Analista de Marketing Digital", "Diseñador Gráfico"],
+                content: ["<ul><li>Creación de cuenta de Facebook Ads.</li><li>Implementación de pixel de facebook para usar públicos como usuarios que ya entraron a tu sitio web o usuarios similares a los ya entraron a tu sitio web.</li><li>Creación de estructura de campaña para invertir un 70% en usuarios nuevos (No entraron a tu sitio ni a tus redes sociales) y un 30% en usuarios que ya entraron a tu sitio web o ya interactuaron con tus redes sociales.</li><li>Creación de dashboard de Google Data Studio (<a href='https://datastudio.google.com/u/0/reporting/0BzjchXrR5ZQca013LXdWZzQ4cEU/page/UwsTB/preview'>Ver ejemplo</a>)</li><li>Medición de conversiones (Acciones que querés que el usuario haga en tu sitio web, como una compra online o completar un formulario).</li><li>Redacción de textos diferentes de manera estratégica (10 textos en total) teniendo en cuenta si los usuarios ya entraron a la web o no.</li></ul>", "<ul><li>Se harán piezas creativas diferentes (2 sets de piezas gráficas en formatos cuadrado y vertical, 4 en total), teniendo en cuenta si los usuarios ya entraron a la web o no.</li><li><a href='https://drive.google.com/drive/folders/14atx8oJwDeypPzA49ISyET6KsONJZfPk?usp=sharing'>Ver ejemplos de entregables</a></li></ul>"]
             },
             advanced: {
-                hours: 14
+                hours: [6, 6, 2],
+                skillsAcquired: ["Analista de Marketing Digital", "Diseñador Gráfico", "Editor de video"],
+                content: ["<ul><li>Creación de cuenta de Facebook Ads.</li><li>Implementación de pixel de facebook para usar públicos como usuarios que ya entraron a tu sitio web o usuarios similares a los ya entraron a tu sitio web.</li><li>Creación de estructura de campaña para invertir un 70% en usuarios nuevos (No entraron a tu sitio ni a tus redes sociales) y un 30% en usuarios que ya entraron a tu sitio web o ya interactuaron con tus redes sociales.</li><li>Creación de dashboard de Google Data Studio (<a href='https://datastudio.google.com/u/0/reporting/0BzjchXrR5ZQca013LXdWZzQ4cEU/page/UwsTB/preview'>Ver ejemplo</a>)</li><li>Medición de conversiones (Acciones que querés que el usuario haga en tu sitio web, como una compra online o completar un formulario).</li><li>Redacción de textos diferentes de manera estratégica (10 textos en total) teniendo en cuenta si los usuarios ya entraron a la web o no.</li></ul>", "<ul><li>Se harán piezas creativas diferentes (2 sets de piezas gráficas en formatos cuadrado, vertical y horizontal, 6 en total), teniendo en cuenta si los usuarios ya entraron a la web o no.</li><li><a href='https://drive.google.com/drive/folders/14atx8oJwDeypPzA49ISyET6KsONJZfPk?usp=sharing'>Ver ejemplos de entregables</a></li></ul>", "<ul><li>Se harán piezas creativas diferentes (2 sets de piezas gráficas en formatos cuadrado, vertical y horizontal, 6 en total), teniendo en cuenta si los usuarios ya entraron a la web o no.</li><li><a href='https://drive.google.com/drive/folders/14atx8oJwDeypPzA49ISyET6KsONJZfPk?usp=sharing'>Ver ejemplos de entregables</a></li></ul>"]
             }
         },
         maintenance: {
             basic: {
-                hours: 2
+                hours: [2],
+                skillsAcquired: ["Analista de Marketing Digital"],
+                content: ["<ul><li>Cambios solicitados por el cliente (Sin que supere el tiempo contratado)</li><li>Incluye 1 cambio por mes para intentar mejorar la performance como modificar el presupuesto, url finales, texto de anuncios, audiencia, ubicación geográfica, estrategia de puja y piezas creativas. A fin de mes el cliente recibe un análisis sobre cómo impactó ese cambio.</li></ul>"]
             },
             intermediate: {
-                hours: 4
+                hours: [2, 2],
+                skillsAcquired: ["Analista de Marketing Digital", "Diseñador Gráfico"],
+                content: ["<ul><li>Cambios solicitados por el cliente (Sin que supere el tiempo contratado)</li><li>Incluye 1 cambio por mes para intentar mejorar la performance como modificar el presupuesto, url finales, texto de anuncios, audiencia, ubicación geográfica, estrategia de puja y piezas creativas. A fin de mes el cliente recibe un análisis sobre cómo impactó ese cambio.</li></ul>", "<ul><li>Creación de pieza gráfica en formato cuadrado y vertical.</li></ul>"]
             },
             advanced: {
-                hours: 8
+                hours: [4, 3, 1],
+                skillsAcquired: ["Analista de Marketing Digital", "Diseñador Gráfico", "Editor de video"],
+                content: ["<ul><li>Cambios solicitados por el cliente (Sin que supere el tiempo contratado)</li><li>Incluye 2 cambios por mes para intentar mejorar la performance como modificaciones en el presupuesto, url finales, texto de anuncios, audiencia, ubicación geográfica, estrategia de puja y piezas creativas. Cada 15 días el cliente recibe un análisis sobre cómo impactó ese cambio.</li></ul>", "<ul><li>Creación de pieza gráfica en formato cuadrado, vertical y horizontal. </li></ul>", "<ul><li></li>Creación de video de menos de 15 seg  en formato vertical (Adaptable a 4:5)</ul>"]
             }
         }
     },
@@ -501,24 +537,36 @@ const services = {
         costPerHour: [13, 19, 30, 30],
         implementation: {
             basic: {
-                hours: 2
+                hours: [2],
+                skillsAcquired: ["Community Manager"],
+                content: ["<ul><li>Análisis de competidores y sugerencia de ideas. Se entrega un Google Doc con capturas de imagen de 400 palabras</li><li>1 Call con el cliente de intercambio de opiniones.</li></ul>"]
             },
             intermediate: {
-                hours: 4
+                hours: [4],
+                skillsAcquired: ["Community Manager"],
+                content: ["<ul><li>Análisis de competidores y sugerencia de ideas. Se entregan 2 Google Doc con capturas de imagen de 400 palabras y se hacen 2 calls de revisión.</li></ul>"]
             },
             advanced: {
-                hours: 6
+                hours: [8],
+                skillsAcquired: ["Community Manager"],
+                content: ["<ul><li>Análisis de competidores y sugerencia de ideas. Se entregan 3 Google Doc con capturas de imagen de 400 palabras y se hacen 3 calls de revisión.</li></ul>"]
             }
         },
         maintenance: {
             basic: {
-                hours: 8
+                hours: [7, 1],
+                skillsAcquired: ["Community Manager", "Diseñador Gráfico"],
+                content: ["<ul><li>Creación de calendario de 12 publicaciones (<a href='https://docs.google.com/spreadsheets/d/1aXf8BCOerxx0kOKmgUscE4ryAEqYGoaKi2tY-j-nfkU/edit?usp=sharing'>Ver ejemplo</a>), 12 redacciones para feed y publicación de contenido en 1 red social (Si es Instagram, se puede publicar en Instagram y Facebook). Se publicará contenido provisto por el cliente (Fotos, videos), o contenido de Internet con pequeños retoques. Todo el contenido del feed (12 publicaciones) se republicará también en stories con un link que redirecciona al feed. Incluye gestión de la cuenta (Responder comentarios en publicaciones e interactuar con perfiles que interactúan con publicaciones de la competencia).</li></ul>", "<ul><li>Retoques a contenido provisto por el cliente o sacado de internet.</li></ul>"]
             },
             intermediate: {
-                hours: 20
+                hours: [8, 10, 2],
+                skillsAcquired: ["Community Manager", "Diseñador Gráfico", "Editor de video"],
+                content: ["<ul><li>Creación de calendario de 12 publicaciones (<a href='https://docs.google.com/spreadsheets/d/1aXf8BCOerxx0kOKmgUscE4ryAEqYGoaKi2tY-j-nfkU/edit?usp=sharing'>Ver ejemplo</a>), 12 redacciones para feed y publicación de contenido en 1 red social (Si es Instagram, se puede publicar en Instagram y Facebook). Todo el contenido del feed (12 publicaciones) se republicará también en stories con un link que redirecciona al feed. Incluye gestión de la cuenta (Responder comentarios en publicaciones e interactuar con perfiles que interactúan con publicaciones de la competencia).</li></ul>", "<ul><li>Creación de 10 piezas gráficas individuales</li></ul>", "<ul><li>Dos videos en formato vertical para reels (Menos de 30 segundos)</li></ul>"]
             },
             advanced: {
-                hours: 40
+                hours: [10, 27, 3],
+                skillsAcquired: ["Community Manager", "Diseñador Gráfico", "Editor de video"],
+                content: ["<ul><li>Creación de calendario de 12 publicaciones (<a href='https://docs.google.com/spreadsheets/d/1aXf8BCOerxx0kOKmgUscE4ryAEqYGoaKi2tY-j-nfkU/edit?usp=sharing'>Ver ejemplo</a>), 12 redacciones para feed y publicación de contenido en 1 red social (Si es Instagram, se puede publicar en Instagram y Facebook). Todo el contenido del feed (12 publicaciones) se republicará también en stories con un link que redirecciona al feed y también se publicarán 8 historias adicionales (Encuestas, cuestionarios y piezas gráficas simples). Incluye gestión de la cuenta (Responder comentarios en publicaciones e interactuar con perfiles que interactúan con publicaciones de la competencia).</li></ul>", "<ul><li>Creación de 10 piezas gráficas individuales para feed y 4 piezas gráficas simples para stories.</li><li>Creación de 4 carrousels (Entre 5 y 10 piezas gráficas cada uno)</li></ul>", "<ul><li>Dos videos en formato vertical para reels (Menos de 30 segundos)</li><li>1 video de plantilla para encuestas y cuestionarios en stories</li></ul>"]
             }
         }
     },
@@ -529,24 +577,36 @@ const services = {
         costPerHour: [31, 19, 30],
         implementation: {
             basic: {
-                hours: 4
+                hours: [4],
+                skillsAcquired: ["Analista SEO"],
+                content: ["<ul><li>Análisis de búsquedas en las cuales te interesa posicionarte teniendo en cuenta volumen, dificultad de posicionarse, relevancia y costo por clic estimado. Se buscarán palabras clave relevantes, de alto volumen, baja dificultad de posicionarse y costo por clic alto.</li><li>Auditoría técnica general de sitio web usando <a href='https://neilpatel.com/ubersuggest/'>Ubersuggest</a>, que es una herramienta de Neil Patel que analiza hasta 132 aspectos técnicos de tu sitio web como por ejemplo, la velocidad de carga, cantidad de palabras de páginas y cantidad de palabras dentro de etiquetas title. <a href='https://drive.google.com/file/d/1Xi63s89YuZv7v2s-Xc-1H2laM5H0x56-/view?usp=sharing'>Ver ejemplo de auditoría</a></li><li>Implementación de cambios para mejorar la performance según la auditoría técnica.</li><li>Cambio de contenido en etiquetas <code><title></code>, <code><h1></code> y texto de tu homepage para posicionarte en búsquedas de google de manera estratégica en base al análisis de palabras clave.</li></ul>"]
             },
             intermediate: {
-                hours: 8
+                hours: [8],
+                skillsAcquired: ["Analista SEO"],
+                content: ["<ul><li>Análisis de búsquedas en las cuales te interesa posicionarte teniendo en cuenta volumen, dificultad de posicionarse, relevancia y costo por clic estimado. Se buscarán palabras clave relevantes, de alto volumen, baja dificultad de posicionarse y costo por clic alto.</li><li>Auditoría técnica general de sitio web usando <a href='https://neilpatel.com/ubersuggest/'>Ubersuggest</a>, que es una herramienta de Neil Patel que analiza hasta 132 aspectos técnicos de tu sitio web como por ejemplo, la velocidad de carga, cantidad de palabras de páginas y cantidad de palabras dentro de etiquetas title. <a href='https://drive.google.com/file/d/1Xi63s89YuZv7v2s-Xc-1H2laM5H0x56-/view?usp=sharing'>Ver ejemplo de auditoría</a></li><li>Cambio de contenido en etiquetas <code><title></code>, <code><h1></code> y texto de tu homepage en hasta 10 páginas de tu sitio web.</li><li>Optimización de alt de imágenes.</li><li>Análisis de palabras clave y secciones web de la competencia que más tráfico generen para copiar lo que funciona (3 competidores)</li><li>Solución de problemas detectados en la auditoría de Ubersuggest de hasta 5 páginas de tu sitio web.</li><ul>"]
             },
             advanced: {
-                hours: 16
+                hours: [16],
+                skillsAcquired: ["Analista SEO"],
+                content: ["<ul><li>Análisis de búsquedas en las cuales te interesa posicionarte teniendo en cuenta volumen, dificultad de posicionarse, relevancia y costo por clic estimado. Se buscarán palabras clave relevantes, de alto volumen, baja dificultad de posicionarse y costo por clic alto.</li><li>Auditoría técnica general de sitio web usando <a href='https://neilpatel.com/ubersuggest/'>Ubersuggest</a>, que es una herramienta de Neil Patel que analiza hasta 132 aspectos técnicos de tu sitio web como por ejemplo, la velocidad de carga, cantidad de palabras de páginas y cantidad de palabras dentro de etiquetas title. <a href='https://drive.google.com/file/d/1Xi63s89YuZv7v2s-Xc-1H2laM5H0x56-/view?usp=sharing'>Ver ejemplo de auditoría</a></li><li>Cambio de contenido en etiquetas <code><title></code>, <code><h1></code> y texto de tu homepage en hasta 10 páginas de tu sitio web.</li><li>Optimización de alt de imágenes.</li><li>Análisis de palabras clave y secciones web de la competencia que más tráfico generen para copiar lo que funciona (6 competidores)</li><li>Solución de problemas detectados en la auditoría de Ubersuggest de hasta 10 páginas de tu sitio web.</li><ul>"]
             }
         },
         maintenance: {
             basic: {
-                hours: 8
+                hours: [2, 4, 2],
+                skillsAcquired: ["Analista SEO", "Redactor", "Diseñador Gráfico"],
+                content: ["<ul><li>Análisis de búsquedas en las cuales te interesa posicionarte teniendo en cuenta volumen, dificultad de posicionarse, relevancia y costo por clic estimado. Se buscarán palabras clave relevantes, de alto volumen, baja dificultad de posicionarse y costo por clic alto.</li><li>Análisis de palabras clave y contenidos web de la competencia que más tráfico generen para copiar lo que funciona (3 competidores).</li><li>Contacto con blogs de rubros afines buscando hacer colaboraciones usando ONE 2 Lead (Automation tool de linkedin, U$ 15 por mes) para conseguir links a tu sitio web (Link-building)</li></ul>", "<ul><li>Redacción de 1 publicación para blog de 1000 palabras. <a href='https://digitalnow.com.ar/posicionamiento-web-en-google-seo/'>Ver ejemplo</a></li></ul>", "<ul><li>Creación de dos piezas gráficas (1 infografía y portada)</li><li><a href='https://drive.google.com/drive/folders/1rQn2MLzdCdeKNcGda5qajIX1jVZHFtpl?usp=sharing'>Ver ejemplo de infografías</a> ,  <a href='https://drive.google.com/drive/folders/1q0vPeT2uTMWIB1qcGgBh8x7hB7dZkGfr?usp=sharing'>Ver ejemplo de portadas</a></li></ul>"]
             },
             intermediate: {
-                hours: 16
+                hours: [4, 8, 4],
+                skillsAcquired: ["Analista SEO", "Redactor", "Diseñador Gráfico"],
+                content: ["<ul><li>Análisis de búsquedas en las cuales te interesa posicionarte teniendo en cuenta volumen, dificultad de posicionarse, relevancia y costo por clic estimado. Se buscarán palabras clave relevantes, de alto volumen, baja dificultad de posicionarse y costo por clic alto.</li><li>Análisis de palabras clave y contenidos web de la competencia que más tráfico generen para copiar lo que funciona (6 competidores).</li><li>Contacto con blogs de rubros afines buscando hacer colaboraciones usando ONE 2 Lead (Automation tool de linkedin, U$ 15 por mes) para conseguir links a tu sitio web (Link-building)</li></ul>", "<ul><li>Redacción de 2 publicaciones para blog de 1000 palabras.</li></ul>", "<ul><li>Creación de 4 piezas gráficas (2 infografías y 2 portadas)</li><li>Creación de 2 infografías para que otros blogs de rubros afines puedan incluirla con un link a tu sitio web.</li><li><a href='https://drive.google.com/drive/folders/1rQn2MLzdCdeKNcGda5qajIX1jVZHFtpl?usp=sharing'>Ver ejemplo de infografías</a> ,  <a href='https://drive.google.com/drive/folders/1q0vPeT2uTMWIB1qcGgBh8x7hB7dZkGfr?usp=sharing'>Ver ejemplo de portadas</a></li></ul>"]
             },
             advanced: {
-                hours: 38
+                hours: [8, 16, 12],
+                skillsAcquired: ["Analista SEO", "Redactor", "Diseñador Gráfico"],
+                content: ["<ul><li>Análisis de búsquedas en las cuales te interesa posicionarte teniendo en cuenta volumen, dificultad de posicionarse, relevancia y costo por clic estimado. Se buscarán palabras clave relevantes, de alto volumen, baja dificultad de posicionarse y costo por clic alto.</li><li>Análisis de palabras clave y contenidos web de la competencia que más tráfico generen para copiar lo que funciona (12 competidores).</li><li>Contacto con blogs de rubros afines buscando hacer colaboraciones usando ONE 2 Lead (Automation tool de linkedin, U$ 15 por mes) para conseguir links a tu sitio web (Link-building)</li></ul>", "<ul><li>Redacción de 4 publicaciones para blog de 1000 palabras.</li></ul>", "<ul><li>Creación de 8 piezas gráficas (4 infografías y 4 portadas)</li><li><a href='https://drive.google.com/drive/folders/1rQn2MLzdCdeKNcGda5qajIX1jVZHFtpl?usp=sharing'>Ver ejemplo de infografías</a> , <a href='https://drive.google.com/drive/folders/1q0vPeT2uTMWIB1qcGgBh8x7hB7dZkGfr?usp=sharing'>Ver ejemplo de portadas</a></li><li>Creación de 2 infografías para que otros blogs de rubros afines puedan incluirla con un link a tu sitio web.</li><li>Creación de 2 gifs para cada publicación para hacer la lectura más amable: <a href='https://digitalnow.com.ar/como-hacer-una-campana-en-google-ads/'>Ver ejemplo</a></li></ul>"]
             }
         }
     },
@@ -557,66 +617,94 @@ const services = {
         costPerHour: [26, 35],
         implementation: {
             basic: {
-                hours: 4
+                hours: [4],
+                skillsAcquired: ["Diseñador Web UX / UI"],
+                content: ["<ul><li>Diagnóstico de buenas prácticas de usabilidad y accesibilidad haciendo análisis de contenido, análisis de diseño visual, análisis de interacción y análisis de temas técnicos. <a href='https://docs.google.com/spreadsheets/d/1ZlBsT4XKX11L22I8ojC06DcgsJOeAYjOkUmVmv5mcck/edit?usp=sharing'>Ver Plantilla de Diagnóstico</a></li></ul>"]
             },
             advanced: {
-                hours: 16
+                hours: [16],
+                skillsAcquired: ["Diseñador Web UX / UI"],
+                content: ["<ul><li>Diagnóstico de buenas prácticas de usabilidad y accesibilidad haciendo análisis de contenido, análisis de diseño visual, análisis de interacción y análisis de temas técnicos. <a href='https://docs.google.com/spreadsheets/d/1ZlBsT4XKX11L22I8ojC06DcgsJOeAYjOkUmVmv5mcck/edit?usp=sharing'>Ver Plantilla de Diagnóstico</a><br>Implementación de mejoras en tu sitio web en base al diagnóstico.</li></ul>"]
             }
         },
         maintenance: {
             basic: {
-                hours: 4
+                hours: [4],
+                skillsAcquired: ["Diseñador Web UX / UI"],
+                content: ["<ul><li>Implementación de 1 experimento con dos versiones (Una con un cambio que apunta a mejorar la performance y otra sin) de tu sitio web al mismo tiempo usando Google optimize y Google Analytics.</li></ul>"]
             },
             intermediate: {
-                hours: 8
+                hours: [8],
+                skillsAcquired: ["Diseñador Web UX / UI"],
+                content: ["<ul><li>Implementación de 2 experimentos con dos versiones (Una con un cambio que apunta a mejorar la performance y otra sin) de tu sitio web al mismo tiempo usando Google optimize y Google Analytics.</li></ul>"]
             },
             advanced: {
-                hours: 12
+                hours: [12],
+                skillsAcquired: ["Diseñador Web UX / UI"],
+                content: ["<ul><li>Implementación de 3 experimentos con dos versiones (Una con un cambio que apunta a mejorar la performance y otra sin) de tu sitio web al mismo tiempo usando Google optimize y Google Analytics.</li></ul>"]
             }
         }
     },
     disenoWeb: {
         implementation: {
             basic: {
-                hours: 10,
-                name: "Landing Page"
+                hours: [10],
+                skillsAcquired: ["Diseñador Web UX / UI"],
+                name: "Landing Page",
+                content: ["<ul><li>Implementación de plantilla prediseñada de 1 sola página usando algún CMS (Content Management System) como Wordpress o Wix, de arrastrar y soltar.</li></ul>"]
             },
             intermediate: {
-                hours: 25,
-                name: "Sitio web en base a plantilla prediseñada de 5 secciones"
+                hours: [25],
+                skillsAcquired: ["Diseñador Web UX / UI"],
+                name: " Sitio web de 5 secciones en base a plantilla prediseñada",
+                content: ["<ul><li>Implementación de sitio web de 5 secciones usando alguna plantilla prediseñada de Wordpress. Incluye diseño de piezas gráficas que sean necesarias. <a href='https://gaudirjohnson.com.ar/'>Ver ejemplo</a></li></ul>"]
             },
             advanced: {
-                hours: 50,
-                name: "Sitio web con diseño personalizado"
+                hours: [50],
+                skillsAcquired: ["Diseñador Web UX / UI"],
+                name: "Sitio web con diseño personalizado",
+                content: ["<ul><li>Diseño de varias versiones de prototipo en Figma <a href='https://www.figma.com/file/UXhBSaXoO8LeMYrQgFYO9F/Burplaza?node-id=0%3A1'>(Ver ejemplo)</a> call con el cliente de revisión e implementación de sitio web en Wordpress con hasta 3 revisiones por parte del cliente.</li></ul>"]
             },
             ecommerce: {
-                hours: 50,
-                name: "Sitio web de Ecommerce en CMS como WooCommerce o Shopify"
+                hours: [50],
+                skillsAcquired: ["Diseñador Web UX / UI"],
+                name: "Sitio web de Ecommerce en CMS como WooCommerce o Shopify",
+                content: ["<ul><li>Incluye carga de hasta 50 productos en el sitio web.</li></ul>"]
             },
             logoYMarca: {
-                hours: 10,
-                name: "Diseño de logo e identidad de marca"
+                hours: [10],
+                skillsAcquired: ["Diseñador gráfico"],
+                name: "Diseño de logo e identidad de marca",
+                content: ["<ul><li>Tipografía, logo en diferentes formatos, paleta de colores y concepto. Hasta 3 revisiones. <a href='https://drive.google.com/file/d/1gyONia_qKjM6mqoJHe_AnGRGMPbicQnv/view?usp=sharing'>Ver ejemplo</a></li></ul>"]
             }
         },
         maintenance: {
             basic: {
-                hours: 2
+                hours: [2],
+                skillsAcquired: ["Diseñador Web UX / UI"],
+                content: ["<ul><li>Actualización de plugins, actualización de contenido en imagen y texto, y arreglo de errores.</li></ul>"]
             }
         }
     },
     emailMarketing: {
         maintenance: {
             basic: {
-                hours: 2,
-                perMonth: 1
+                hours: [1, 0.5, 0.5],
+                deliversPerMonth: 1,
+                skillsAcquired: ["Diseñador Gráfico", "Redactor", "Diseñador Web UX / UI"],
+                content: ["<ul><li>1 pieza gráfica en formato estático (JPG) o dinámico (GIF)</li>", "<li>Redacción de textos para envío de email.</li>", "<li>Implementación de imágenes y textos en plantilla prediseñada.</li></ul>"]
             },
             intermediate: {
-                hours: 4,
-                perMonth: 2
+                hours: [2, 1, 1],
+                deliversPerMonth: 2,
+                skillsAcquired: ["Diseñador Gráfico", "Redactor", "Diseñador Web UX / UI"],
+                content: ["<ul><li>2 pieza gráfica en formato estático (JPG) o dinámico (GIF)</li>", "<li>Redacción de textos para envío de email.</li>", "Implementación de imágenes y textos en plantilla prediseñada.</li></ul>"]
             },
             advanced: {
-                hours: 8,
-                perMonth: 4
+                hours: [4, 2, 2],
+                deliversPerMonth: 4,
+                skillsAcquired: ["Diseñador Gráfico", "Redactor", "Diseñador Web UX / UI"],
+                content: ["<ul><li>2 pieza gráfica en formato estático (JPG) o dinámico (GIF)</li>", "<li>Redacción de textos para envío de email.</li>", "<li>Implementación de imágenes y textos en plantilla prediseñada.</li></ul>"]
             }
         }
     }
@@ -872,9 +960,9 @@ email.addEventListener('change', function() {
         emailMarketingContainer.style.display = 'flex';
         emailMarketingPlan.addEventListener('change', function () {
             if (emailMarketingPlan.value == 'basic') {
-                emailMarketingPlanDetails.innerHTML = `<u>Incluye:</u> <li>${services.emailMarketing.maintenance[emailMarketingPlan.value].perMonth} Envio mensual (${services.emailMarketing.maintenance[emailMarketingPlan.value].hours}hs de mantenimiento)</li>`; 
+                emailMarketingPlanDetails.innerHTML = `<u>Incluye:</u> <li>${services.emailMarketing.maintenance[emailMarketingPlan.value].deliversPerMonth} Envio mensual (${services.emailMarketing.maintenance[emailMarketingPlan.value].hours.reduce((a, b) => a + b, 0)}hs de mantenimiento)</li>`; 
             } else {
-                emailMarketingPlanDetails.innerHTML = `<u>Incluye:</u> <li>${services.emailMarketing.maintenance[emailMarketingPlan.value].perMonth} Envios mensuales (${services.emailMarketing.maintenance[emailMarketingPlan.value].hours}hs de mantenimiento)</li>`;
+                emailMarketingPlanDetails.innerHTML = `<u>Incluye:</u> <li>${services.emailMarketing.maintenance[emailMarketingPlan.value].deliversPerMonth} Envios mensuales (${services.emailMarketing.maintenance[emailMarketingPlan.value].hours.reduce((a, b) => a + b, 0)}hs de mantenimiento)</li>`;
             }
         });
         if (emailAmmount.value == '') {
