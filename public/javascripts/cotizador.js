@@ -410,7 +410,11 @@ const relativeStatsCountries = {
 /*--Así se accedería a cada valor de dicho objeto---*/
 // console.log("Prueba - valor EEUU en USD google search ads CPA autos: " + absoluteStatsCountries.eeuu.googleSearchAds.cpa.autos);
 // console.log("Prueba - valor Moldova en USD google search ads CPA autos: " + absoluteStatsCountries.eeuu.googleSearchAds.cpa.autos * relativeStatsCountries.moldova.relativeRateToUSA);
-
+/*---Datos de los skills con precios por hora---*/
+const skills = {
+    names: ["Analista de Marketing Digital", "Analista SEO", "Community Manager", "Redactor", "Diseñador Web UX / UI", "Diseñador Gráfico", "Programador", "Editor de video"],
+    prices: [26, 31, 13, 19, 35, 30, 00, 30]
+}
 /*---Datos de los servicios brindados, organizado para programación orientada a objetos---*/
 const services = {
     googleSearchAds: {
@@ -426,7 +430,7 @@ const services = {
             intermediate: {
                 hours: [6],
                 skillsAcquired: ["Analista de Marketing Digital"],
-                content: ["<ul><li>Creación de cuenta de Google Ads.</li><li>Selección de las palabras clave que tengan volumen de búsqueda y sean relevantes para usar en la campaña. Call con el cliente, para determinar inversión mensual y qué búsquedas son relevantes.</li><li>Creación de extensiones para las campañas (Link con la dirección de tu negocio y link para que te llamen por celular).</li><li>Medición de acciones relevantes para tu negocio en tu sitio web (Conversiones). Por ejemplo, cuando arrancan el carrito, hacen una compra, completan un formulario o te contactan por el chat de la web.</li><li>Creación de diferentes campañas (Hasta 5) según tipos de búsquedas o ubicación geográfica, para concentrar la inversión en las campañas que más conversiones generen y a un costo más bajo.</li><li>Creación de dashboard de Google Data Studio (<a href='https://datastudio.google.com/u/0/reporting/0B_U5RNpwhcE6ckdmZEJ0ZDJXUnM/page/VgD/preview'>Ver ejemplo</a>)</li><li>Creación de estructura de campaña que permita organizar las búsquedas en grupos, y poder hacer hasta 10 anuncios específicos para cada grupo de búsquedas. Se buscará que el texto de los anuncios sea lo más relevante posible a las búsquedas, para generar más clicks a tu sitio web. (<a href='https://drive.google.com/file/d/1GXvFiktXQRjPjhB0rgpT0QZcOud83kDu/view?usp=sharing'>Ver ejemplo</a>)</li></ul>"]
+                content: ["<ul><li>Creación de cuenta de Google Ads.</li><li>Selección de las palabras clave que tengan volumen de búsqueda y sean relevantes para usar en la campaña. Call con el cliente, para determinar inversión mensual y qué búsquedas son relevantes.</li><li>Creación de extensiones para las campañas (Link con la dirección de tu negocio y link para que te llamen por celular).</li><li>Medición de acciones relevantes para tu negocio en tu sitio web (Conversiones). Por ejemplo, cuando arrancan el carrito, hacen una compra, completan un formulario o te contactan por el chat de la web.</li><li>Creación de diferentes campañas (Hasta 5) según tipos de búsquedas o ubicación geográfica, para concentrar la inversión en las campañas que más conversiones generen y a un costo más bajo.</li><li>Creación de dashboard de Google Data Studio (<a href='https://datastudio.google.com/u/0/reporting/0B_U5RNpwhcE6ckdmZEJ0ZDJXUnM/page/VgD/preview'>Ver ejemplo</a>)</li><li>Creación de estructura de campaña que permita organizar las búsquedas en grupos, y poder hacer hasta 10 anuncios específicos para cada grupo de búsquedas. Se buscará que el texto de los anuncios sea lo más relevante posible a las búsquedas, para generar más clics a tu sitio web. (<a href='https://drive.google.com/file/d/1GXvFiktXQRjPjhB0rgpT0QZcOud83kDu/view?usp=sharing'>Ver ejemplo</a>)</li></ul>"]
             },
             advanced: {
                 hours: [12],
