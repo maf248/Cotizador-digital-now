@@ -856,7 +856,7 @@ checkboxesServices.forEach((checkboxService, i) => {
             if (checkboxesServicesValidate[0]) {
                 googleSearchAdsExtraContainer.style.display = "flex";
                 googleSearchAdsPlan.addEventListener('change', function () {
-                    googleSearchAdsPlanDetails.innerHTML = `<u>Incluye:</u> <li>${services.googleSearchAds.implementation[googleSearchAdsPlan.value].hours}hs de implementación (por única vez)</li> <li>${services.googleSearchAds.maintenance[googleSearchAdsPlan.value].hours}hs de mantenimiento mensual</li>`;
+                    googleSearchAdsPlanDetails.innerHTML = `<u>Incluye:</u> <li>${services.googleSearchAds.implementation[googleSearchAdsPlan.value].hours.reduce((a, b) => a + b, 0)}hs de implementación (por única vez)</li> <li>${services.googleSearchAds.maintenance[googleSearchAdsPlan.value].hours.reduce((a, b) => a + b, 0)}hs de mantenimiento mensual</li>`;
                 });
                 /*-Valida true / false el monto google search ads en caso de estar completado o no-*/
                 if (investmentGoogleSearchAdsAmmount.value == '') {
@@ -871,7 +871,7 @@ checkboxesServices.forEach((checkboxService, i) => {
             if (checkboxesServicesValidate[1]) {
                 googleDisplayAdsExtraContainer.style.display = "flex";
                 googleDisplayAdsPlan.addEventListener('change', function () {
-                    googleDisplayAdsPlanDetails.innerHTML = `<u>Incluye:</u> <li>${services.googleDisplayAds.implementation[googleDisplayAdsPlan.value].hours}hs de implementación (por única vez)</li> <li>${services.googleDisplayAds.maintenance[googleDisplayAdsPlan.value].hours}hs de mantenimiento mensual</li>`;
+                    googleDisplayAdsPlanDetails.innerHTML = `<u>Incluye:</u> <li>${services.googleDisplayAds.implementation[googleDisplayAdsPlan.value].hours.reduce((a, b) => a + b, 0)}hs de implementación (por única vez)</li> <li>${services.googleDisplayAds.maintenance[googleDisplayAdsPlan.value].hours.reduce((a, b) => a + b, 0)}hs de mantenimiento mensual</li>`;
                 });
                 /*-Valida true / false el monto google display ads en caso de estar completado o no-*/
                 if (investmentGoogleDisplayAdsAmmount.value == '') {
@@ -886,7 +886,7 @@ checkboxesServices.forEach((checkboxService, i) => {
             if (checkboxesServicesValidate[2]) {
                 facebookAdsExtraContainer.style.display = "flex";
                 facebookAdsPlan.addEventListener('change', function () {
-                    facebookAdsPlanDetails.innerHTML = `<u>Incluye:</u> <li>${services.facebookAds.implementation[facebookAdsPlan.value].hours}hs de implementación (por única vez)</li> <li>${services.facebookAds.maintenance[facebookAdsPlan.value].hours}hs de mantenimiento mensual</li>`;
+                    facebookAdsPlanDetails.innerHTML = `<u>Incluye:</u> <li>${services.facebookAds.implementation[facebookAdsPlan.value].hours.reduce((a, b) => a + b, 0)}hs de implementación (por única vez)</li> <li>${services.facebookAds.maintenance[facebookAdsPlan.value].hours.reduce((a, b) => a + b, 0)}hs de mantenimiento mensual</li>`;
                 });
                 /*-Valida true / false el monto facebook ads en caso de estar completado o no-*/
                 if (investmentFacebookAdsAmmount.value.length == '') {
@@ -927,7 +927,7 @@ checkboxesServices.forEach((checkboxService, i) => {
         if (checkboxesServicesValidate[3]) {
             communityManagementExtraContainer.style.display = "block";
             communityManagementPlan.addEventListener('change', function () {
-                communityManagementPlanDetails.innerHTML = `<u>Incluye:</u> <li>${services.communityManagement.implementation[communityManagementPlan.value].hours}hs de implementación (por única vez)</li> <li>${services.communityManagement.maintenance[communityManagementPlan.value].hours}hs de mantenimiento mensual</li>`;
+                communityManagementPlanDetails.innerHTML = `<u>Incluye:</u> <li>${services.communityManagement.implementation[communityManagementPlan.value].hours.reduce((a, b) => a + b, 0)}hs de implementación (por única vez)</li> <li>${services.communityManagement.maintenance[communityManagementPlan.value].hours.reduce((a, b) => a + b, 0)}hs de mantenimiento mensual</li>`;
             });
         } else {
             communityManagementExtraContainer.style.display = "none"
@@ -936,7 +936,7 @@ checkboxesServices.forEach((checkboxService, i) => {
         if (checkboxesServicesValidate[4]) {
             seoExtraContainer.style.display = "block";
             seoPlan.addEventListener('change', function () {
-                seoPlanDetails.innerHTML = `<u>Incluye:</u> <li>${services.seo.implementation[seoPlan.value].hours}hs de implementación (por única vez)</li> <li>${services.seo.maintenance[seoPlan.value].hours}hs de mantenimiento mensual</li>`;
+                seoPlanDetails.innerHTML = `<u>Incluye:</u> <li>${services.seo.implementation[seoPlan.value].hours.reduce((a, b) => a + b, 0)}hs de implementación (por única vez)</li> <li>${services.seo.maintenance[seoPlan.value].hours.reduce((a, b) => a + b, 0)}hs de mantenimiento mensual</li>`;
             });
         } else {
             seoExtraContainer.style.display = "none";
@@ -946,9 +946,9 @@ checkboxesServices.forEach((checkboxService, i) => {
             conversionWebExtraContainer.style.display = "block";
             conversionWebPlan.addEventListener('change', function () {
                 if (conversionWebPlan.value == "basic" || conversionWebPlan.value == "advanced") {
-                    conversionWebPlanDetails.innerHTML = `<u>Incluye:</u> <li>${services.conversionWeb.implementation[conversionWebPlan.value].hours}hs de implementación (por única vez)</li> <li>${services.conversionWeb.maintenance[conversionWebPlan.value].hours}hs de mantenimiento mensual</li>`;
+                    conversionWebPlanDetails.innerHTML = `<u>Incluye:</u> <li>${services.conversionWeb.implementation[conversionWebPlan.value].hours.reduce((a, b) => a + b, 0)}hs de implementación (por única vez)</li> <li>${services.conversionWeb.maintenance[conversionWebPlan.value].hours.reduce((a, b) => a + b, 0)}hs de mantenimiento mensual</li>`;
                 } else {
-                    conversionWebPlanDetails.innerHTML = `<u>Incluye:</u> <li>${services.conversionWeb.maintenance[conversionWebPlan.value].hours}hs de mantenimiento mensual</li>`;
+                    conversionWebPlanDetails.innerHTML = `<u>Incluye:</u> <li>${services.conversionWeb.maintenance[conversionWebPlan.value].hours.reduce((a, b) => a + b, 0)}hs de mantenimiento mensual</li>`;
                 }
                 
             });
