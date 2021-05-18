@@ -734,21 +734,21 @@ const services = {
                 deliversPerMonth: 1,
                 skillsAcquired: ["Diseñador Gráfico", "Redactor", "Diseñador Web UX / UI"],
                 skillsPrices: [skills.prices[5], skills.prices[3], skills.prices[4]],
-                content: ["<ul><li>1 pieza gráfica en formato estático (JPG) o dinámico (GIF)</li>", "<li>Redacción de textos para envío de email.</li>", "<li>Implementación de imágenes y textos en plantilla prediseñada.</li></ul>"]
+                content: ["<ul><li>1 pieza gráfica en formato estático (JPG) o dinámico (GIF)</li></ul>", "<ul><li>Redacción de textos para envío de email.</li></ul>", "<ul><li>Implementación de imágenes y textos en plantilla prediseñada.</li></ul>"]
             },
             intermediate: {
                 hours: [2, 1, 1],
                 deliversPerMonth: 2,
                 skillsAcquired: ["Diseñador Gráfico", "Redactor", "Diseñador Web UX / UI"],
                 skillsPrices: [skills.prices[5], skills.prices[3], skills.prices[4]],
-                content: ["<ul><li>2 pieza gráfica en formato estático (JPG) o dinámico (GIF)</li>", "<li>Redacción de textos para envío de email.</li>", "Implementación de imágenes y textos en plantilla prediseñada.</li></ul>"]
+                content: ["<ul><li>2 pieza gráfica en formato estático (JPG) o dinámico (GIF)</li></ul>", "<ul><li>Redacción de textos para envío de email.</li></ul>", "<ul><li>Implementación de imágenes y textos en plantilla prediseñada.</li></ul>"]
             },
             advanced: {
                 hours: [4, 2, 2],
                 deliversPerMonth: 4,
                 skillsAcquired: ["Diseñador Gráfico", "Redactor", "Diseñador Web UX / UI"],
                 skillsPrices: [skills.prices[5], skills.prices[3], skills.prices[4]],
-                content: ["<ul><li>2 pieza gráfica en formato estático (JPG) o dinámico (GIF)</li>", "<li>Redacción de textos para envío de email.</li>", "<li>Implementación de imágenes y textos en plantilla prediseñada.</li></ul>"]
+                content: ["<ul><li>2 pieza gráfica en formato estático (JPG) o dinámico (GIF)</li></ul>", "<ul><li>Redacción de textos para envío de email.</li></ul>", "<ul><li>Implementación de imágenes y textos en plantilla prediseñada.</li></ul>"]
             }
         }
     }
@@ -1422,12 +1422,42 @@ function calculate() {
     /*--Array que colecciona las inversiones MENSUALES seleccionadas--*/
     var arrayInvestmentSelected = [];
 
-
     /*--Ya calculadas las conversiones particulares (google display, google search y facebook), se suman en conversion total--*/
     totalConversionsValue = googleAdsSearchConversionsValue + googleAdsDisplayConversionsValue + facebookAdsConversionsValue;
 
     if ((googleSearchAds.checked || googleDisplayAds.checked || facebookAds.checked || communityManagement.checked || seo.checked || conversionWeb.checked || disenoWeb.checked || email.checked) && !completeFormValidate.includes(false)) {
-        
+
+        /*---Se muestran los resultados particulares de email marketing solamente si esta opcion fue seleccionada---*/
+        if (email.checked) {
+            /*--Se ocultan los fees de unica vez, ya que este plan no tiene---*/
+            resultAgencyOnceFeeContainer.style.display = "none";
+            /*--Muestra el valor correspondiente a la cantidad de contactos seleccionados---*/
+            totalInvestmentMonthly += Number(emailAmmount.value);
+            resultInvestmentsMonthlyDetail.innerHTML += `<li style="margin-top: 10px"><strong>‣ Email Marketing</strong> USD ${emailAmmount.value} de inversión mensual <small>(Campaña para ${emailAmmount.options[emailAmmount.selectedIndex].text} contactos)</small></li>`;
+
+            maintenanceContent = '';
+            emailMarketingValueToPush = 0;
+            services.emailMarketing.maintenance[emailMarketingPlan.value].skillsAcquired.forEach((skill, i) => {
+                skills.names.forEach((name, j) => {
+                    if (skill == name) {
+                        emailMarketingValueToPush += services.emailMarketing.maintenance[emailMarketingPlan.value].hours[i] * skills.prices[j];
+                    }
+                })
+                   
+                maintenanceContent += `<ul><li>${services.emailMarketing.maintenance[emailMarketingPlan.value].hours[i]} horas de ${services.emailMarketing.maintenance[emailMarketingPlan.value].skillsAcquired[i]} a ${services.emailMarketing.maintenance[emailMarketingPlan.value].skillsPrices[i]} USD la hora, que hace lo siguiente:</li> ${services.emailMarketing.maintenance[emailMarketingPlan.value].content[i]}</ul>`;
+            })
+            resultAgencyMonthlyFeeDetail.innerHTML += `<li style="margin-top: 10px"><u><strong>‣ Email Marketing </strong> (Plan ${emailMarketingPlan.options[emailMarketingPlan.selectedIndex].text}):</u> ${maintenanceContent}</li>`;
+            /*--Se guardan los nombres y valores de inversion y fees mensuales--*/
+            arrayInvestmentSelected.push({
+                name: "Email Marketing",
+                value: emailAmmount.value
+            });
+            agencyMonthlyFeeValue += emailMarketingValueToPush;
+            arrayAgencyMantainanceSelected.push({
+                name: "Email Marketing",
+                value: emailMarketingValueToPush
+            });
+        }
         /*---Chequea que servicios estan tildados y los suma al total---*/
         if (seo.checked) {
             var seoValueToPush = 0;
@@ -1570,18 +1600,6 @@ function calculate() {
         
         if (disenoWeb.checked) { console.log('Desarrollo en progreso de diseño web con sub-servicios....')  }
         
-
-        /*---Se muestran los resultados particulares de email marketing solamente si esta opcion fue seleccionada---*/
-        if (email.checked) {
-            /*--Muestra el valor correspondiente a la cantidad de contactos seleccionados---*/
-            totalInvestmentMonthly += Number(emailAmmount.value);
-            resultInvestmentsMonthlyDetail.innerHTML += `<li style="margin-top: 10px"><strong>‣ Email Marketing</strong> USD ${emailAmmount.value} de inversión mensual <small>(Campaña para ${emailAmmount.options[emailAmmount.selectedIndex].text} contactos)</small></li>`;
-            /*--Se guardan los nombres y valores de inversion y fees mensuales--*/
-            arrayInvestmentSelected.push({
-                name: "Email Marketing",
-                value: emailAmmount.value
-            });
-        }
         if (!email.checked && !googleSearchAds.checked && !googleDisplayAds.checked && !facebookAds.checked) {
             resultInvestmentsMonthlyDetail.innerHTML = '<li>No has seleccionado ninguna inversión en medios digitales. <small>(Ej: Google Ads Search, Google Ads Display, Facebook Ads o Email Marketing)</small></li>'
         }
