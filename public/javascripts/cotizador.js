@@ -494,13 +494,13 @@ const services = {
                 content: ["<ul><li>Cambios solicitados por el cliente (Sin que supere el tiempo contratado)</li><li>Incluye 1 cambio por mes para intentar mejorar la performance como modificar el presupuesto, url finales, texto de anuncios, audiencia, ubicación geográfica y piezas creativas. A fin de mes el cliente recibe un análisis sobre cómo impactó ese cambio.</li></ul>"]
             },
             intermediate: {
-                hours: [4],
+                hours: [2, 2],
                 skillsAcquired: ["Analista de Marketing Digital", "Diseñador Gráfico"],
                 skillsPrices: [skills.prices[0], skills.prices[5]],
                 content: ["<ul><li>Cambios solicitados por el cliente (Sin que supere el tiempo contratado)</li><li>Incluye 1 cambio por mes para intentar mejorar la performance como modificaciones en el presupuesto, url finales, texto de anuncios, audiencia, ubicación geográfica y piezas creativas. A fin de mes el cliente recibe un análisis sobre cómo impactó ese cambio.</li></ul>", "<ul><li>Creación de 1 pieza gráfica en formatos cuadrado y horizontal.</li></ul>"]
             },
             advanced: {
-                hours: [8],
+                hours: [4, 2, 2],
                 skillsAcquired: ["Analista de Marketing Digital", "Diseñador Gráfico", "Editor de video"],
                 skillsPrices: [skills.prices[0], skills.prices[5], skills.prices[7]],
                 content: ["<ul><li>Cambios solicitados por el cliente (Sin que supere el tiempo contratado)</li><li>Incluye 2 cambios por mes (Uno cada 15 días) para intentar mejorar la performance como modificaciones en el presupuesto, url finales, texto de anuncios, audiencia, ubicación geográfica y piezas creativas. Después de 15 días el cliente recibe un análisis sobre cómo impactó ese cambio.</li></ul>", "<ul><li>Creación de 1 pieza gráfica en formatos cuadrado y horizontal.</li></ul>", "<ul><li>Creación de 1 video en formato apaisado.</li></ul>"]
@@ -1596,13 +1596,42 @@ function calculate() {
         }
         /*---Se muestran los resultados particulares de Google Search Ads solamente si esta opcion fue seleccionada---*/
         if (googleSearchAds.checked) {
-            agencyMonthlyFeeValue += services.googleSearchAds.maintenanceHours * services.googleSearchAds.costPerHour;
-            resultAgencyMonthlyFeeDetail.innerHTML += `<li style="margin-top: 10px"><strong>‣ Google Ads Search:</strong> USD ${services.googleSearchAds.maintenanceHours * services.googleSearchAds.costPerHour} <small>(Siendo ${services.googleSearchAds.maintenanceHours}hs a un valor de USD ${services.googleSearchAds.costPerHour} por hora)</small></li>`;
+            /*--Se muestran los fees de implementacion (por unica vez)---*/
             resultAgencyOnceFeeContainer.style.display = "block";
-            agencyOnceFeeValue += services.googleSearchAds.implementationHours * services.googleSearchAds.costPerHour;
-            resultAgencyOnceFeeDetail.innerHTML += `<li style="margin-top: 10px"><strong>‣ Google Ads Search:</strong> USD ${services.googleSearchAds.implementationHours * services.googleSearchAds.costPerHour} <small>(Siendo ${services.googleSearchAds.implementationHours}hs a un valor de USD ${services.googleSearchAds.costPerHour} por hora)</small></li>`;
-            
-            /*-Se completa la información de conversiones-*/
+             /*--Se guardan los detalles de skills que incluye este servicio---*/
+            /*-para MANTENIMIENTO-*/
+            let maintenanceContent = '';
+            var googleSearchAdsManteinanceValue = 0;
+            services.googleSearchAds.maintenance[googleSearchAdsPlan.value].skillsAcquired.forEach((skill, i) => {
+                skills.names.forEach((name, j) => {
+                    if (skill == name) {
+                        googleSearchAdsManteinanceValue += services.googleSearchAds.maintenance[googleSearchAdsPlan.value].hours[i] * skills.prices[j];
+                    }
+                })
+                /*--Se genera la descripcion de mantenimiento mensual para este servicio en el plan seleccionado---*/ 
+                maintenanceContent += `<ul><li>${services.googleSearchAds.maintenance[googleSearchAdsPlan.value].hours[i]} horas de ${services.googleSearchAds.maintenance[googleSearchAdsPlan.value].skillsAcquired[i]} a ${services.googleSearchAds.maintenance[googleSearchAdsPlan.value].skillsPrices[i]} USD la hora, que hace lo siguiente:</li> ${services.googleSearchAds.maintenance[googleSearchAdsPlan.value].content[i]}</ul>`;
+            })
+            /*-Se cargan los resultados de mantenimiento para este servicio con el plan seleccionado-*/
+            resultAgencyMonthlyFeeDetail.innerHTML += `<li style="margin-top: 10px"><u><strong>‣ Google Ads Red de Busquedas </strong> (Plan ${googleSearchAdsPlan.options[googleSearchAdsPlan.selectedIndex].text}):</u> ${maintenanceContent}</li>`;
+            agencyMonthlyFeeValue += googleSearchAdsManteinanceValue;
+
+            /*-para IMPLEMENTACIÓN-*/
+            let implementationContent = '';
+            var googleSearchAdsImplementationValue = 0;
+            services.googleSearchAds.implementation[googleSearchAdsPlan.value].skillsAcquired.forEach((skill, i) => {
+                skills.names.forEach((name, j) => {
+                    if (skill == name) {
+                        googleSearchAdsImplementationValue += services.googleSearchAds.implementation[googleSearchAdsPlan.value].hours[i] * skills.prices[j];
+                    }
+                })
+                /*--Se genera la descripcion de implementación para este servicio en el plan seleccionado---*/ 
+                implementationContent += `<ul><li>${services.googleSearchAds.implementation[googleSearchAdsPlan.value].hours[i]} horas de ${services.googleSearchAds.implementation[googleSearchAdsPlan.value].skillsAcquired[i]} a ${services.googleSearchAds.implementation[googleSearchAdsPlan.value].skillsPrices[i]} USD la hora, que hace lo siguiente:</li> ${services.googleSearchAds.implementation[googleSearchAdsPlan.value].content[i]}</ul>`;
+            })
+             /*-Se cargan los resultados de implementacion para este servicio con el plan seleccionado-*/
+             resultAgencyOnceFeeDetail.innerHTML += `<li style="margin-top: 10px"><u><strong>‣ Google Ads Red de Busquedas </strong> (Plan ${googleSearchAdsPlan.options[googleSearchAdsPlan.selectedIndex].text}):</u> ${implementationContent}</li>`;
+             agencyOnceFeeValue += googleSearchAdsImplementationValue;
+
+            /*----Se completa la información de conversiones----*/
             totalConversions.innerHTML = `${totalConversionsValue.toFixed(2).replace(".", ",")}`;
             googleSearchAdsConversions.innerHTML = `${googleAdsSearchConversionsValue.toFixed(2).replace(".", ",")} conversiones`;
             /*-Se completa el cajón "costo de inversion en medios mensual total"-*/
@@ -1611,7 +1640,7 @@ function calculate() {
             /*--Se guardan los nombres y valores de inversion y fees mensuales--*/
             arrayAgencyMantainanceSelected.push({
                 name: "Google Ads Search",
-                value: (services.googleSearchAds.maintenanceHours * services.googleSearchAds.costPerHour)
+                value: googleSearchAdsManteinanceValue
             });
             arrayInvestmentSelected.push({
                 name: "Google Ads Search",
@@ -1620,12 +1649,43 @@ function calculate() {
         }
         /*---Se muestran los resultados particulares de Google Display Ads solamente si esta opcion fue seleccionada---*/
         if (googleDisplayAds.checked) {
-            agencyMonthlyFeeValue += services.googleDisplayAds.maintenanceHours * services.googleDisplayAds.costPerHour;
-            resultAgencyMonthlyFeeDetail.innerHTML += `<li style="margin-top: 10px"><strong>‣ Google Ads Display:</strong> USD ${services.googleDisplayAds.maintenanceHours * services.googleDisplayAds.costPerHour} <small>(Siendo ${services.googleDisplayAds.maintenanceHours}hs a un valor de USD ${services.googleDisplayAds.costPerHour} por hora)</small></li>`;
+            /*--Se muestran los fees de implementacion (por unica vez)---*/
             resultAgencyOnceFeeContainer.style.display = "block";
-            agencyOnceFeeValue += services.googleDisplayAds.implementationHours * services.googleDisplayAds.costPerHour;
-            resultAgencyOnceFeeDetail.innerHTML += `<li style="margin-top: 10px"><strong>‣ Google Ads Display:</strong> USD ${services.googleDisplayAds.implementationHours * services.googleDisplayAds.costPerHour} <small>(Siendo ${services.googleDisplayAds.implementationHours}hs a un valor de USD ${services.googleDisplayAds.costPerHour} por hora)</small></li>`;
-            /*-Se completa la información de conversiones-*/
+             /*--Se guardan los detalles de skills que incluye este servicio---*/
+            /*-para MANTENIMIENTO-*/
+            let maintenanceContent = '';
+            var googleDisplayAdsManteinanceValue = 0;
+            services.googleDisplayAds.maintenance[googleDisplayAdsPlan.value].skillsAcquired.forEach((skill, i) => {
+                skills.names.forEach((name, j) => {
+                    if (skill == name) {
+                        googleDisplayAdsManteinanceValue += services.googleDisplayAds.maintenance[googleDisplayAdsPlan.value].hours[i] * skills.prices[j];
+                    }
+                })
+                /*--Se genera la descripcion de mantenimiento mensual para este servicio en el plan seleccionado---*/ 
+                maintenanceContent += `<ul><li>${services.googleDisplayAds.maintenance[googleDisplayAdsPlan.value].hours[i]} horas de ${services.googleDisplayAds.maintenance[googleDisplayAdsPlan.value].skillsAcquired[i]} a ${services.googleDisplayAds.maintenance[googleDisplayAdsPlan.value].skillsPrices[i]} USD la hora, que hace lo siguiente:</li> ${services.googleDisplayAds.maintenance[googleDisplayAdsPlan.value].content[i]}</ul>`;
+            })
+            /*-Se cargan los resultados de mantenimiento para este servicio con el plan seleccionado-*/
+            resultAgencyMonthlyFeeDetail.innerHTML += `<li style="margin-top: 10px"><u><strong>‣ Google Ads Red de Display </strong> (Plan ${googleDisplayAdsPlan.options[googleDisplayAdsPlan.selectedIndex].text}):</u> ${maintenanceContent}</li>`;
+            agencyMonthlyFeeValue += googleDisplayAdsManteinanceValue;
+
+            /*-para IMPLEMENTACIÓN-*/
+            let implementationContent = '';
+            var googleDisplayAdsImplementationValue = 0;
+            services.googleDisplayAds.implementation[googleDisplayAdsPlan.value].skillsAcquired.forEach((skill, i) => {
+                skills.names.forEach((name, j) => {
+                    if (skill == name) {
+                        googleDisplayAdsImplementationValue += services.googleDisplayAds.implementation[googleDisplayAdsPlan.value].hours[i] * skills.prices[j];
+                    }
+                })
+                /*--Se genera la descripcion de implementación para este servicio en el plan seleccionado---*/ 
+                implementationContent += `<ul><li>${services.googleDisplayAds.implementation[googleDisplayAdsPlan.value].hours[i]} horas de ${services.googleDisplayAds.implementation[googleDisplayAdsPlan.value].skillsAcquired[i]} a ${services.googleDisplayAds.implementation[googleDisplayAdsPlan.value].skillsPrices[i]} USD la hora, que hace lo siguiente:</li> ${services.googleDisplayAds.implementation[googleDisplayAdsPlan.value].content[i]}</ul>`;
+            })
+             /*-Se cargan los resultados de implementacion para este servicio con el plan seleccionado-*/
+             resultAgencyOnceFeeDetail.innerHTML += `<li style="margin-top: 10px"><u><strong>‣ Google Ads Red de Display </strong> (Plan ${googleDisplayAdsPlan.options[googleDisplayAdsPlan.selectedIndex].text}):</u> ${implementationContent}</li>`;
+             agencyOnceFeeValue += googleDisplayAdsImplementationValue;
+
+
+            /*----Se completa la información de conversiones----*/
             totalConversions.innerHTML = `${totalConversionsValue.toFixed(2).replace(".", ",")}`;
             googleDisplayAdsConversions.innerHTML = `${googleAdsDisplayConversionsValue.toFixed(2).replace(".", ",")} conversiones`;
             /*-Se completa el cajón "costo de inversion en medios mensual total"-*/
@@ -1634,7 +1694,7 @@ function calculate() {
             /*--Se guardan los nombres y valores de inversion y fees mensuales--*/
             arrayAgencyMantainanceSelected.push({
                 name: "Google Ads Display",
-                value: (services.googleDisplayAds.maintenanceHours * services.googleDisplayAds.costPerHour)
+                value: googleDisplayAdsManteinanceValue
             });
             arrayInvestmentSelected.push({
                 name: "Google Ads Display",
