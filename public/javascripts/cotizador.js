@@ -548,7 +548,7 @@ const services = {
                 hours: [4, 3, 1],
                 skillsAcquired: ["Analista de Marketing Digital", "Diseñador Gráfico", "Editor de video"],
                 skillsPrices: [skills.prices[0], skills.prices[5], skills.prices[7]],
-                content: ["<ul><li>Cambios solicitados por el cliente (Sin que supere el tiempo contratado)</li><li>Incluye 2 cambios por mes para intentar mejorar la performance como modificaciones en el presupuesto, url finales, texto de anuncios, audiencia, ubicación geográfica, estrategia de puja y piezas creativas. Cada 15 días el cliente recibe un análisis sobre cómo impactó ese cambio.</li></ul>", "<ul><li>Creación de pieza gráfica en formato cuadrado, vertical y horizontal. </li></ul>", "<ul><li></li>Creación de video de menos de 15 seg  en formato vertical (Adaptable a 4:5)</ul>"]
+                content: ["<ul><li>Cambios solicitados por el cliente (Sin que supere el tiempo contratado)</li><li>Incluye 2 cambios por mes para intentar mejorar la performance como modificaciones en el presupuesto, url finales, texto de anuncios, audiencia, ubicación geográfica, estrategia de puja y piezas creativas. Cada 15 días el cliente recibe un análisis sobre cómo impactó ese cambio.</li></ul>", "<ul><li>Creación de pieza gráfica en formato cuadrado, vertical y horizontal.</li></ul>", "<ul><li>Creación de video de menos de 15 seg  en formato vertical (Adaptable a 4:5)</li></ul>"]
             }
         }
     },
@@ -1684,7 +1684,6 @@ function calculate() {
              resultAgencyOnceFeeDetail.innerHTML += `<li style="margin-top: 10px"><u><strong>‣ Google Ads Red de Display </strong> (Plan ${googleDisplayAdsPlan.options[googleDisplayAdsPlan.selectedIndex].text}):</u> ${implementationContent}</li>`;
              agencyOnceFeeValue += googleDisplayAdsImplementationValue;
 
-
             /*----Se completa la información de conversiones----*/
             totalConversions.innerHTML = `${totalConversionsValue.toFixed(2).replace(".", ",")}`;
             googleDisplayAdsConversions.innerHTML = `${googleAdsDisplayConversionsValue.toFixed(2).replace(".", ",")} conversiones`;
@@ -1703,11 +1702,41 @@ function calculate() {
         }
         /*---Se muestran los resultados particulares de Facebook Ads solamente si esta opcion fue seleccionada---*/
         if (facebookAds.checked) {
-            agencyMonthlyFeeValue += services.facebookAds.maintenanceHours * services.facebookAds.costPerHour;
-            resultAgencyMonthlyFeeDetail.innerHTML += `<li style="margin-top: 10px"><strong>‣ Facebook Ads:</strong> USD ${services.facebookAds.maintenanceHours * services.facebookAds.costPerHour} <small>(Siendo ${services.facebookAds.maintenanceHours}hs a un valor de USD ${services.facebookAds.costPerHour} por hora)</small></li>`;
+            /*--Se muestran los fees de implementacion (por unica vez)---*/
             resultAgencyOnceFeeContainer.style.display = "block";
-            agencyOnceFeeValue += services.facebookAds.implementationHours * services.facebookAds.costPerHour;
-            resultAgencyOnceFeeDetail.innerHTML += `<li style="margin-top: 10px"><strong>‣ Facebook Ads:</strong> USD ${services.facebookAds.implementationHours * services.facebookAds.costPerHour} <small>(Siendo ${services.facebookAds.implementationHours}hs a un valor de USD ${services.facebookAds.costPerHour} por hora)</small></li>`;
+             /*--Se guardan los detalles de skills que incluye este servicio---*/
+            /*-para MANTENIMIENTO-*/
+            let maintenanceContent = '';
+            var facebookAdsManteinanceValue = 0;
+            services.facebookAds.maintenance[facebookAdsPlan.value].skillsAcquired.forEach((skill, i) => {
+                skills.names.forEach((name, j) => {
+                    if (skill == name) {
+                        facebookAdsManteinanceValue += services.facebookAds.maintenance[facebookAdsPlan.value].hours[i] * skills.prices[j];
+                    }
+                })
+                /*--Se genera la descripcion de mantenimiento mensual para este servicio en el plan seleccionado---*/ 
+                maintenanceContent += `<ul><li>${services.facebookAds.maintenance[facebookAdsPlan.value].hours[i]} horas de ${services.facebookAds.maintenance[facebookAdsPlan.value].skillsAcquired[i]} a ${services.facebookAds.maintenance[facebookAdsPlan.value].skillsPrices[i]} USD la hora, que hace lo siguiente:</li> ${services.facebookAds.maintenance[facebookAdsPlan.value].content[i]}</ul>`;
+            })
+            /*-Se cargan los resultados de mantenimiento para este servicio con el plan seleccionado-*/
+            resultAgencyMonthlyFeeDetail.innerHTML += `<li style="margin-top: 10px"><u><strong>‣ Facebook Ads </strong> (Plan ${facebookAdsPlan.options[facebookAdsPlan.selectedIndex].text}):</u> ${maintenanceContent}</li>`;
+            agencyMonthlyFeeValue += facebookAdsManteinanceValue;
+
+            /*-para IMPLEMENTACIÓN-*/
+            let implementationContent = '';
+            var facebookAdsImplementationValue = 0;
+            services.facebookAds.implementation[facebookAdsPlan.value].skillsAcquired.forEach((skill, i) => {
+                skills.names.forEach((name, j) => {
+                    if (skill == name) {
+                        facebookAdsImplementationValue += services.facebookAds.implementation[facebookAdsPlan.value].hours[i] * skills.prices[j];
+                    }
+                })
+                /*--Se genera la descripcion de implementación para este servicio en el plan seleccionado---*/ 
+                implementationContent += `<ul><li>${services.facebookAds.implementation[facebookAdsPlan.value].hours[i]} horas de ${services.facebookAds.implementation[facebookAdsPlan.value].skillsAcquired[i]} a ${services.facebookAds.implementation[facebookAdsPlan.value].skillsPrices[i]} USD la hora, que hace lo siguiente:</li> ${services.facebookAds.implementation[facebookAdsPlan.value].content[i]}</ul>`;
+            })
+             /*-Se cargan los resultados de implementacion para este servicio con el plan seleccionado-*/
+             resultAgencyOnceFeeDetail.innerHTML += `<li style="margin-top: 10px"><u><strong>‣ Facebook Ads </strong> (Plan ${facebookAdsPlan.options[facebookAdsPlan.selectedIndex].text}):</u> ${implementationContent}</li>`;
+             agencyOnceFeeValue += facebookAdsImplementationValue;
+
             /*-Se completa la información de conversiones-*/
             totalConversions.innerHTML = `${totalConversionsValue.toFixed(2).replace(".", ",")}`;
             facebookAdsConversions.innerHTML = `${facebookAdsConversionsValue.toFixed(2).replace(".", ",")} conversiones`;
@@ -1717,7 +1746,7 @@ function calculate() {
             /*--Se guardan los nombres y valores de inversion y fees mensuales--*/
             arrayAgencyMantainanceSelected.push({
                 name: "Facebook Ads",
-                value: (services.facebookAds.maintenanceHours * services.facebookAds.costPerHour)
+                value: facebookAdsManteinanceValue
             });
             arrayInvestmentSelected.push({
                 name: "Facebook Ads",
