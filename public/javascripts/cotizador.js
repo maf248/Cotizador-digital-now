@@ -604,19 +604,19 @@ const services = {
                 hours: [4],
                 skillsAcquired: ["Analista SEO"],
                 skillsPrices: [skills.prices[1]],
-                content: ["<ul><li>Análisis de búsquedas en las cuales te interesa posicionarte teniendo en cuenta volumen, dificultad de posicionarse, relevancia y costo por clic estimado. Se buscarán palabras clave relevantes, de alto volumen, baja dificultad de posicionarse y costo por clic alto.</li><li>Auditoría técnica general de sitio web usando <a href='https://neilpatel.com/ubersuggest/' target='_blank'>Ubersuggest</a>, que es una herramienta de Neil Patel que analiza hasta 132 aspectos técnicos de tu sitio web como por ejemplo, la velocidad de carga, cantidad de palabras de páginas y cantidad de palabras dentro de etiquetas title. <a href='https://drive.google.com/file/d/1Xi63s89YuZv7v2s-Xc-1H2laM5H0x56-/view?usp=sharing' target='_blank'>Ver ejemplo de auditoría</a></li><li>Implementación de cambios para mejorar la performance según la auditoría técnica.</li><li>Cambio de contenido en etiquetas <code><title></code>, <code><h1></code> y texto de tu homepage para posicionarte en búsquedas de google de manera estratégica en base al análisis de palabras clave.</li></ul>"]
+                content: ["<ul><li>Análisis de búsquedas en las cuales te interesa posicionarte teniendo en cuenta volumen, dificultad de posicionarse, relevancia y costo por clic estimado. Se buscarán palabras clave relevantes, de alto volumen, baja dificultad de posicionarse y costo por clic alto.</li><li>Auditoría técnica general de sitio web usando <a href='https://neilpatel.com/ubersuggest/' target='_blank'>Ubersuggest</a>, que es una herramienta de Neil Patel que analiza hasta 132 aspectos técnicos de tu sitio web como por ejemplo, la velocidad de carga, cantidad de palabras de páginas y cantidad de palabras dentro de etiquetas title. <a href='https://drive.google.com/file/d/1Xi63s89YuZv7v2s-Xc-1H2laM5H0x56-/view?usp=sharing' target='_blank'>Ver ejemplo de auditoría</a></li><li>Implementación de cambios para mejorar la performance según la auditoría técnica.</li><li>Cambio de contenido en etiquetas &lt;title&gt;, &lt;h1&gt; y texto de tu homepage para posicionarte en búsquedas de google de manera estratégica en base al análisis de palabras clave.</li></ul>"]
             },
             intermediate: {
                 hours: [8],
                 skillsAcquired: ["Analista SEO"],
                 skillsPrices: [skills.prices[1]],
-                content: ["<ul><li>Análisis de búsquedas en las cuales te interesa posicionarte teniendo en cuenta volumen, dificultad de posicionarse, relevancia y costo por clic estimado. Se buscarán palabras clave relevantes, de alto volumen, baja dificultad de posicionarse y costo por clic alto.</li><li>Auditoría técnica general de sitio web usando <a href='https://neilpatel.com/ubersuggest/' target='_blank'>Ubersuggest</a>, que es una herramienta de Neil Patel que analiza hasta 132 aspectos técnicos de tu sitio web como por ejemplo, la velocidad de carga, cantidad de palabras de páginas y cantidad de palabras dentro de etiquetas title. <a href='https://drive.google.com/file/d/1Xi63s89YuZv7v2s-Xc-1H2laM5H0x56-/view?usp=sharing' target='_blank'>Ver ejemplo de auditoría</a></li><li>Cambio de contenido en etiquetas <code><title></code>, <code><h1></code> y texto de tu homepage en hasta 10 páginas de tu sitio web.</li><li>Optimización de alt de imágenes.</li><li>Análisis de palabras clave y secciones web de la competencia que más tráfico generen para copiar lo que funciona (3 competidores)</li><li>Solución de problemas detectados en la auditoría de Ubersuggest de hasta 5 páginas de tu sitio web.</li><ul>"]
+                content: ["<ul><li>Análisis de búsquedas en las cuales te interesa posicionarte teniendo en cuenta volumen, dificultad de posicionarse, relevancia y costo por clic estimado. Se buscarán palabras clave relevantes, de alto volumen, baja dificultad de posicionarse y costo por clic alto.</li><li>Auditoría técnica general de sitio web usando <a href='https://neilpatel.com/ubersuggest/' target='_blank'>Ubersuggest</a>, que es una herramienta de Neil Patel que analiza hasta 132 aspectos técnicos de tu sitio web como por ejemplo, la velocidad de carga, cantidad de palabras de páginas y cantidad de palabras dentro de etiquetas title. <a href='https://drive.google.com/file/d/1Xi63s89YuZv7v2s-Xc-1H2laM5H0x56-/view?usp=sharing' target='_blank'>Ver ejemplo de auditoría</a></li><li>Cambio de contenido en etiquetas &lt;title&gt;, &lt;h1&gt; y texto de tu homepage en hasta 10 páginas de tu sitio web.</li><li>Optimización de alt de imágenes.</li><li>Análisis de palabras clave y secciones web de la competencia que más tráfico generen para copiar lo que funciona (3 competidores)</li><li>Solución de problemas detectados en la auditoría de Ubersuggest de hasta 5 páginas de tu sitio web.</li><ul>"]
             },
             advanced: {
                 hours: [16],
                 skillsAcquired: ["Analista SEO"],
                 skillsPrices: [skills.prices[1]],
-                content: ["<ul><li>Análisis de búsquedas en las cuales te interesa posicionarte teniendo en cuenta volumen, dificultad de posicionarse, relevancia y costo por clic estimado. Se buscarán palabras clave relevantes, de alto volumen, baja dificultad de posicionarse y costo por clic alto.</li><li>Auditoría técnica general de sitio web usando <a href='https://neilpatel.com/ubersuggest/' target='_blank'>Ubersuggest</a>, que es una herramienta de Neil Patel que analiza hasta 132 aspectos técnicos de tu sitio web como por ejemplo, la velocidad de carga, cantidad de palabras de páginas y cantidad de palabras dentro de etiquetas title. <a href='https://drive.google.com/file/d/1Xi63s89YuZv7v2s-Xc-1H2laM5H0x56-/view?usp=sharing' target='_blank'>Ver ejemplo de auditoría</a></li><li>Cambio de contenido en etiquetas <code><title></code>, <code><h1></code> y texto de tu homepage en hasta 10 páginas de tu sitio web.</li><li>Optimización de alt de imágenes.</li><li>Análisis de palabras clave y secciones web de la competencia que más tráfico generen para copiar lo que funciona (6 competidores)</li><li>Solución de problemas detectados en la auditoría de Ubersuggest de hasta 10 páginas de tu sitio web.</li><ul>"]
+                content: ["<ul><li>Análisis de búsquedas en las cuales te interesa posicionarte teniendo en cuenta volumen, dificultad de posicionarse, relevancia y costo por clic estimado. Se buscarán palabras clave relevantes, de alto volumen, baja dificultad de posicionarse y costo por clic alto.</li><li>Auditoría técnica general de sitio web usando <a href='https://neilpatel.com/ubersuggest/' target='_blank'>Ubersuggest</a>, que es una herramienta de Neil Patel que analiza hasta 132 aspectos técnicos de tu sitio web como por ejemplo, la velocidad de carga, cantidad de palabras de páginas y cantidad de palabras dentro de etiquetas title. <a href='https://drive.google.com/file/d/1Xi63s89YuZv7v2s-Xc-1H2laM5H0x56-/view?usp=sharing' target='_blank'>Ver ejemplo de auditoría</a></li><li>Cambio de contenido en etiquetas &lt;title&gt;, &lt;h1&gt; y texto de tu homepage en hasta 10 páginas de tu sitio web.</li><li>Optimización de alt de imágenes.</li><li>Análisis de palabras clave y secciones web de la competencia que más tráfico generen para copiar lo que funciona (6 competidores)</li><li>Solución de problemas detectados en la auditoría de Ubersuggest de hasta 10 páginas de tu sitio web.</li><ul>"]
             }
         },
         maintenance: {
@@ -1443,10 +1443,11 @@ function calculate() {
                         emailMarketingValueToPush += services.emailMarketing.maintenance[emailMarketingPlan.value].hours[i] * skills.prices[j];
                     }
                 })
-                   
+                /*--Se genera la descripcion de mantenimiento mensual para este servicio en el plan seleccionado---*/
                 maintenanceContent += `<ul><li>${services.emailMarketing.maintenance[emailMarketingPlan.value].hours[i]} horas de ${services.emailMarketing.maintenance[emailMarketingPlan.value].skillsAcquired[i]} a ${services.emailMarketing.maintenance[emailMarketingPlan.value].skillsPrices[i]} USD la hora, que hace lo siguiente:</li> ${services.emailMarketing.maintenance[emailMarketingPlan.value].content[i]}</ul>`;
             })
-            resultAgencyMonthlyFeeDetail.innerHTML += `<li style="margin-top: 10px"><u><strong>‣ Email Marketing </strong> (Plan ${emailMarketingPlan.options[emailMarketingPlan.selectedIndex].text}):</u> ${maintenanceContent}</li>`;
+            resultAgencyMonthlyFeeDetail.innerHTML += `<li style="margin-top: 10px"><u><strong>‣ Email Marketing </strong> (Plan ${emailMarketingPlan.options[emailMarketingPlan.selectedIndex].text} - ${services.emailMarketing.maintenance[emailMarketingPlan.value].deliversPerMonth} ${services.emailMarketing.maintenance[emailMarketingPlan.value].deliversPerMonth <= 1 ? 'envío mensual' : 'envíos mensuales'}):</u> ${maintenanceContent}</li>`;
+
             /*--Se guardan los nombres y valores de inversion y fees mensuales--*/
             arrayInvestmentSelected.push({
                 name: "Email Marketing",
@@ -1458,32 +1459,7 @@ function calculate() {
                 value: emailMarketingValueToPush
             });
         }
-        /*---Chequea que servicios estan tildados y los suma al total---*/
-        if (seo.checked) {
-            var seoValueToPush = 0;
-            /*--Se ocultan los fees de unica vez, ya que este plan no tiene---*/
-            resultAgencyOnceFeeContainer.style.display = "none";
-            /*--Se guardan los detalles de skills que incluye este servicio---*/
-            let maintenanceContent = '';
-
-            services.seo.maintenance[seoPlan.value].skillsAcquired.forEach((skill, i) => {
-                skills.names.forEach((name, j) => {
-                    if (skill == name) {
-                        seoValueToPush += services.seo.maintenance[seoPlan.value].hours[i] * skills.prices[j];
-                    }
-                })
-                   
-                maintenanceContent += `<ul><li>${services.seo.maintenance[seoPlan.value].hours[i]} horas de ${services.seo.maintenance[seoPlan.value].skillsAcquired[i]} a ${services.seo.maintenance[seoPlan.value].skillsPrices[i]} USD la hora, que hace lo siguiente:</li> ${services.seo.maintenance[seoPlan.value].content[i]}</ul>`;
-            })
-
-            resultAgencyMonthlyFeeDetail.innerHTML += `<li style="margin-top: 10px"><u><strong>‣ SEO </strong> (Plan ${seoPlan.options[seoPlan.selectedIndex].text}):</u> ${maintenanceContent}</li>`;
-            
-            agencyMonthlyFeeValue += seoValueToPush;
-            arrayAgencyMantainanceSelected.push({
-                name: "SEO",
-                value: seoValueToPush
-            });
-        }
+        /*---Se muestran los resultados particulares de conversion web solamente si esta opcion fue seleccionada---*/
         if (conversionWeb.checked) {
             var conversionWebValueToPush = 0;
             /*--Se ocultan los fees de unica vez, ya que este plan no tiene---*/
@@ -1505,6 +1481,46 @@ function calculate() {
                 value: conversionWebValueToPush
             });
         }
+        /*---Se muestran los resultados particulares de SEO solamente si esta opcion fue seleccionada---*/
+        if (seo.checked) {
+            var seoValueToPush = 0;
+            /*--Se ocultan los fees de unica vez, ya que este plan no tiene---*/
+            resultAgencyOnceFeeContainer.style.display = "block";
+            /*--Se guardan los detalles de skills que incluye este servicio---*/
+            let maintenanceContent = '';
+            services.seo.maintenance[seoPlan.value].skillsAcquired.forEach((skill, i) => {
+                skills.names.forEach((name, j) => {
+                    if (skill == name) {
+                        seoValueToPush += services.seo.maintenance[seoPlan.value].hours[i] * skills.prices[j];
+                    }
+                })
+                /*--Se genera la descripcion de mantenimiento mensual para este servicio en el plan seleccionado---*/ 
+                maintenanceContent += `<ul><li>${services.seo.maintenance[seoPlan.value].hours[i]} horas de ${services.seo.maintenance[seoPlan.value].skillsAcquired[i]} a ${services.seo.maintenance[seoPlan.value].skillsPrices[i]} USD la hora, que hace lo siguiente:</li> ${services.seo.maintenance[seoPlan.value].content[i]}</ul>`;
+            })
+            let implementationContent = '';
+            services.seo.implementation[seoPlan.value].skillsAcquired.forEach((skill, i) => {
+                skills.names.forEach((name, j) => {
+                    if (skill == name) {
+                        seoValueToPush += services.seo.implementation[seoPlan.value].hours[i] * skills.prices[j];
+                    }
+                })
+                /*--Se genera la descripcion de implementación para este servicio en el plan seleccionado---*/ 
+                implementationContent += `<ul><li>${services.seo.implementation[seoPlan.value].hours[i]} horas de ${services.seo.implementation[seoPlan.value].skillsAcquired[i]} a ${services.seo.implementation[seoPlan.value].skillsPrices[i]} USD la hora, que hace lo siguiente:</li> ${services.seo.implementation[seoPlan.value].content[i]}</ul>`;
+            })
+          
+            /*-Se cargan los resultados de mantenimiento para este servicio con el plan seleccionado-*/
+            resultAgencyMonthlyFeeDetail.innerHTML += `<li style="margin-top: 10px"><u><strong>‣ SEO </strong> (Plan ${seoPlan.options[seoPlan.selectedIndex].text}):</u> ${maintenanceContent}</li>`;
+
+            /*-Se cargan los resultados de implementacion para este servicio con el plan seleccionado-*/
+            resultAgencyOnceFeeDetail.innerHTML += `<li style="margin-top: 10px"><u><strong>‣ SEO </strong> (Plan ${seoPlan.options[seoPlan.selectedIndex].text}):</u> ${implementationContent}</li>`;
+            
+            agencyMonthlyFeeValue += seoValueToPush;
+            arrayAgencyMantainanceSelected.push({
+                name: "SEO",
+                value: seoValueToPush
+            });
+        }
+        
         if (communityManagement.checked) {
             var redesSocialesValueToPush = 0;
             /*--Se ocultan los fees de unica vez, ya que este plan no tiene---*/
