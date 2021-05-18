@@ -1552,30 +1552,46 @@ function calculate() {
         }
         
         if (communityManagement.checked) {
-            var redesSocialesValueToPush = 0;
-            /*--Se ocultan los fees de unica vez, ya que este plan no tiene---*/
+            var communityManagementManteinanceValue = 0;
+            var communityManagementImplementationValue = 0;
+            /*--Se muestran los fees de implementacion (por unica vez)---*/
             resultAgencyOnceFeeContainer.style.display = "block";
-            /*--Se guardan los detalles de skills que incluye este servicio---*/
-            let detailedSkillsList = '';
+             /*--Se guardan los detalles de skills que incluye este servicio---*/
+            /*-para MANTENIMIENTO-*/
+            let maintenanceContent = '';
             
-            services.communityManagement.maintenanceHours.forEach((monthlyHours, i) => {
-                if(monthlyHours > 0) {
-                    redesSocialesValueToPush += monthlyHours * services.communityManagement.costPerHour[i];
-                    agencyMonthlyFeeValue += monthlyHours * services.communityManagement.costPerHour[i];
-                    detailedSkillsList += `<li style="list-style-type: none">- ${services.communityManagement.skillsAcquired[i]} : USD ${monthlyHours * services.communityManagement.costPerHour[i]} <small>(Siendo ${monthlyHours}hs mensuales a USD ${services.communityManagement.costPerHour[i]} la hora)</small></li>`;
-                }
-                if (services.communityManagement.implementationHours[i] > 0) {
-                    agencyOnceFeeValue += services.communityManagement.implementationHours[i] * services.communityManagement.costPerHour[i];
-                    resultAgencyOnceFeeDetail.innerHTML += `<li style="margin-top: 10px"><strong>‣ Gestión de redes sociales:</strong><ul style="list-style-type: none"><li>- ${services.communityManagement.skillsAcquired[i]}: USD ${services.communityManagement.implementationHours[i] * services.communityManagement.costPerHour[i]}. <small>(Siendo ${services.communityManagement.implementationHours[i]}hs a un valor de USD ${services.communityManagement.costPerHour[i]} por hora)</small></ul></li></li>`;
-                }
+            services.communityManagement.maintenance[communityManagementPlan.value].skillsAcquired.forEach((skill, i) => {
+                skills.names.forEach((name, j) => {
+                    if (skill == name) {
+                        communityManagementManteinanceValue += services.communityManagement.maintenance[communityManagementPlan.value].hours[i] * skills.prices[j];
+                    }
+                })
+                /*--Se genera la descripcion de mantenimiento mensual para este servicio en el plan seleccionado---*/ 
+                maintenanceContent += `<ul><li>${services.communityManagement.maintenance[communityManagementPlan.value].hours[i]} horas de ${services.communityManagement.maintenance[communityManagementPlan.value].skillsAcquired[i]} a ${services.communityManagement.maintenance[communityManagementPlan.value].skillsPrices[i]} USD la hora, que hace lo siguiente:</li> ${services.communityManagement.maintenance[communityManagementPlan.value].content[i]}</ul>`;
+            })
+            /*-para IMPLEMENTACIÓN-*/
+            let implementationContent = '';
+            services.communityManagement.implementation[communityManagementPlan.value].skillsAcquired.forEach((skill, i) => {
+                skills.names.forEach((name, j) => {
+                    if (skill == name) {
+                        communityManagementImplementationValue += services.communityManagement.implementation[communityManagementPlan.value].hours[i] * skills.prices[j];
+                    }
+                })
+                /*--Se genera la descripcion de implementación para este servicio en el plan seleccionado---*/ 
+                implementationContent += `<ul><li>${services.communityManagement.implementation[communityManagementPlan.value].hours[i]} horas de ${services.communityManagement.implementation[communityManagementPlan.value].skillsAcquired[i]} a ${services.communityManagement.implementation[communityManagementPlan.value].skillsPrices[i]} USD la hora, que hace lo siguiente:</li> ${services.communityManagement.implementation[communityManagementPlan.value].content[i]}</ul>`;
             })
 
-            resultAgencyMonthlyFeeDetail.innerHTML += `<li style="margin-top: 10px"><strong>‣ Gestión de redes sociales:</strong><ul>${detailedSkillsList}</ul></li>`;
-            
-            arrayAgencyMantainanceSelected.push({
-                name: "Gestión de redes sociales",
-                value: redesSocialesValueToPush
-            });
+             /*-Se cargan los resultados de mantenimiento para este servicio con el plan seleccionado-*/
+             resultAgencyMonthlyFeeDetail.innerHTML += `<li style="margin-top: 10px"><u><strong>‣ Community Management </strong> (Plan ${communityManagementPlan.options[communityManagementPlan.selectedIndex].text}):</u> ${maintenanceContent}</li>`;
+             agencyMonthlyFeeValue += communityManagementManteinanceValue;
+             /*-Se cargan los resultados de implementacion para este servicio con el plan seleccionado-*/
+             resultAgencyOnceFeeDetail.innerHTML += `<li style="margin-top: 10px"><u><strong>‣ Community Management </strong> (Plan ${communityManagementPlan.options[communityManagementPlan.selectedIndex].text}):</u> ${implementationContent}</li>`;
+             agencyOnceFeeValue += communityManagementImplementationValue;
+             /*--Se guardan los valores de mantenimiento para mostrar en el contenedor "costo total mensual"--*/
+             arrayAgencyMantainanceSelected.push({
+                 name: "Community Management",
+                 value: communityManagementManteinanceValue
+             });
         }
         if (googleSearchAds.checked) {
             agencyMonthlyFeeValue += services.googleSearchAds.maintenanceHours * services.googleSearchAds.costPerHour;
