@@ -1429,7 +1429,7 @@ function calculate() {
 
         /*---Se muestran los resultados particulares de email marketing solamente si esta opcion fue seleccionada---*/
         if (email.checked) {
-            /*--Se ocultan los fees de unica vez, ya que este plan no tiene---*/
+            /*--Se ocultan los fees de implementacion (por unica vez), ya que este plan no tiene---*/
             resultAgencyOnceFeeContainer.style.display = "none";
             /*--Muestra el valor correspondiente a la cantidad de contactos seleccionados---*/
             totalInvestmentMonthly += Number(emailAmmount.value);
@@ -1454,6 +1454,7 @@ function calculate() {
                 value: emailAmmount.value
             });
             agencyMonthlyFeeValue += emailMarketingValueToPush;
+            /*--Se guardan los valores de mantenimiento para mostrar en el contenedor "costo total mensual"--*/
             arrayAgencyMantainanceSelected.push({
                 name: "Email Marketing",
                 value: emailMarketingValueToPush
@@ -1461,47 +1462,76 @@ function calculate() {
         }
         /*---Se muestran los resultados particulares de conversion web solamente si esta opcion fue seleccionada---*/
         if (conversionWeb.checked) {
-            var conversionWebValueToPush = 0;
-            /*--Se ocultan los fees de unica vez, ya que este plan no tiene---*/
-            resultAgencyOnceFeeContainer.style.display = "none";
+            var conversionWebManteinanceValue = 0;
+            var conversionWebImplementationValue = 0;
             /*--Se guardan los detalles de skills que incluye este servicio---*/
-            let detailedSkillsList = '';
-            services.conversionWeb.maintenanceHours.forEach((monthlyHours, i) => {
-                if(monthlyHours > 0) {
-                    conversionWebValueToPush += monthlyHours * services.conversionWeb.costPerHour[i];
-                    agencyMonthlyFeeValue += monthlyHours * services.conversionWeb.costPerHour[i];
-                    detailedSkillsList += `<li style="list-style-type: none">- ${services.conversionWeb.skillsAcquired[i]} : USD ${monthlyHours * services.conversionWeb.costPerHour[i]} <small>(Siendo ${monthlyHours}hs mensuales a USD ${services.conversionWeb.costPerHour[i]} la hora)</small></li>`;
-                }
+            let maintenanceContent = '';
+            services.conversionWeb.maintenance[conversionWebPlan.value].skillsAcquired.forEach((skill, i) => {
+                skills.names.forEach((name, j) => {
+                    if (skill == name) {
+                        conversionWebManteinanceValue += services.conversionWeb.maintenance[conversionWebPlan.value].hours[i] * skills.prices[j];
+                    }
+                })
+                /*--Se genera la descripcion de mantenimiento mensual para este servicio en el plan seleccionado---*/ 
+                maintenanceContent += `<ul><li>${services.conversionWeb.maintenance[conversionWebPlan.value].hours[i]} horas de ${services.conversionWeb.maintenance[conversionWebPlan.value].skillsAcquired[i]} a ${services.conversionWeb.maintenance[conversionWebPlan.value].skillsPrices[i]} USD la hora, que hace lo siguiente:</li> ${services.conversionWeb.maintenance[conversionWebPlan.value].content[i]}</ul>`;
             })
+            /*-para IMPLEMENTACIÓN-*/
+            let implementationContent = '';
+            if (conversionWebPlan.value == 'basic' || conversionWebPlan.value == 'advanced') {
+                resultAgencyOnceFeeContainer.style.display = "block";
 
-            resultAgencyMonthlyFeeDetail.innerHTML += `<li style="margin-top: 10px"><strong>‣ Optimización de tasa de conversión web:</strong><ul>${detailedSkillsList}</ul></li>`;
+                services.conversionWeb.implementation[conversionWebPlan.value].skillsAcquired.forEach((skill, i) => {
+                    skills.names.forEach((name, j) => {
+                        if (skill == name) {
+                            conversionWebImplementationValue += services.conversionWeb.implementation[conversionWebPlan.value].hours[i] * skills.prices[j];
+                        }
+                    })
+                    /*--Se genera la descripcion de implementación para este servicio en el plan seleccionado---*/ 
+                    implementationContent += `<ul><li>${services.conversionWeb.implementation[conversionWebPlan.value].hours[i]} horas de ${services.conversionWeb.implementation[conversionWebPlan.value].skillsAcquired[i]} a ${services.conversionWeb.implementation[conversionWebPlan.value].skillsPrices[i]} USD la hora, que hace lo siguiente:</li> ${services.conversionWeb.implementation[conversionWebPlan.value].content[i]}</ul>`;
+                })
+                /*-Se cargan los resultados de implementacion para este servicio con el plan seleccionado-*/
+                resultAgencyOnceFeeDetail.innerHTML += `<li style="margin-top: 10px"><u><strong>‣ Optimización de tasa de conversión web </strong> (Plan ${conversionWebPlan.options[conversionWebPlan.selectedIndex].text}):</u> ${implementationContent}</li>`;
+                agencyOnceFeeValue += conversionWebImplementationValue;
+                
+            } else {
+                resultAgencyOnceFeeContainer.style.display = "none";
+            }
             
+          
+            /*-Se cargan los resultados de mantenimiento para este servicio con el plan seleccionado-*/
+            resultAgencyMonthlyFeeDetail.innerHTML += `<li style="margin-top: 10px"><u><strong>‣ Optimización de tasa de conversión web </strong> (Plan ${conversionWebPlan.options[conversionWebPlan.selectedIndex].text}):</u> ${maintenanceContent}</li>`;
+            agencyMonthlyFeeValue += conversionWebManteinanceValue;
+            
+            /*--Se guardan los valores de mantenimiento para mostrar en el contenedor "costo total mensual"--*/
             arrayAgencyMantainanceSelected.push({
                 name: "Optimización de tasa de conversión web",
-                value: conversionWebValueToPush
+                value: conversionWebManteinanceValue
             });
         }
         /*---Se muestran los resultados particulares de SEO solamente si esta opcion fue seleccionada---*/
         if (seo.checked) {
-            var seoValueToPush = 0;
-            /*--Se ocultan los fees de unica vez, ya que este plan no tiene---*/
+            var seoManteinanceValue = 0;
+            var seoImplementationValue = 0;
+            /*--Se muestran los fees de implementacion (por unica vez)---*/
             resultAgencyOnceFeeContainer.style.display = "block";
             /*--Se guardan los detalles de skills que incluye este servicio---*/
+            /*-para MANTENIMIENTO-*/
             let maintenanceContent = '';
             services.seo.maintenance[seoPlan.value].skillsAcquired.forEach((skill, i) => {
                 skills.names.forEach((name, j) => {
                     if (skill == name) {
-                        seoValueToPush += services.seo.maintenance[seoPlan.value].hours[i] * skills.prices[j];
+                        seoManteinanceValue += services.seo.maintenance[seoPlan.value].hours[i] * skills.prices[j];
                     }
                 })
                 /*--Se genera la descripcion de mantenimiento mensual para este servicio en el plan seleccionado---*/ 
                 maintenanceContent += `<ul><li>${services.seo.maintenance[seoPlan.value].hours[i]} horas de ${services.seo.maintenance[seoPlan.value].skillsAcquired[i]} a ${services.seo.maintenance[seoPlan.value].skillsPrices[i]} USD la hora, que hace lo siguiente:</li> ${services.seo.maintenance[seoPlan.value].content[i]}</ul>`;
             })
+            /*-para IMPLEMENTACIÓN-*/
             let implementationContent = '';
             services.seo.implementation[seoPlan.value].skillsAcquired.forEach((skill, i) => {
                 skills.names.forEach((name, j) => {
                     if (skill == name) {
-                        seoValueToPush += services.seo.implementation[seoPlan.value].hours[i] * skills.prices[j];
+                        seoImplementationValue += services.seo.implementation[seoPlan.value].hours[i] * skills.prices[j];
                     }
                 })
                 /*--Se genera la descripcion de implementación para este servicio en el plan seleccionado---*/ 
@@ -1510,14 +1540,14 @@ function calculate() {
           
             /*-Se cargan los resultados de mantenimiento para este servicio con el plan seleccionado-*/
             resultAgencyMonthlyFeeDetail.innerHTML += `<li style="margin-top: 10px"><u><strong>‣ SEO </strong> (Plan ${seoPlan.options[seoPlan.selectedIndex].text}):</u> ${maintenanceContent}</li>`;
-
+            agencyMonthlyFeeValue += seoManteinanceValue;
             /*-Se cargan los resultados de implementacion para este servicio con el plan seleccionado-*/
             resultAgencyOnceFeeDetail.innerHTML += `<li style="margin-top: 10px"><u><strong>‣ SEO </strong> (Plan ${seoPlan.options[seoPlan.selectedIndex].text}):</u> ${implementationContent}</li>`;
-            
-            agencyMonthlyFeeValue += seoValueToPush;
+            agencyOnceFeeValue += seoImplementationValue;
+            /*--Se guardan los valores de mantenimiento para mostrar en el contenedor "costo total mensual"--*/
             arrayAgencyMantainanceSelected.push({
                 name: "SEO",
-                value: seoValueToPush
+                value: seoManteinanceValue
             });
         }
         
