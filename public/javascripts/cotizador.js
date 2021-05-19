@@ -1763,7 +1763,7 @@ function calculate() {
                     maintenanceContent += `<ul><li>${services.disenoWeb.maintenance.basic.hours[i]} horas de ${services.disenoWeb.maintenance.basic.skillsAcquired[i]} a ${services.disenoWeb.maintenance.basic.skillsPrices[i]} USD la hora, que hace lo siguiente:</li> ${services.disenoWeb.maintenance.basic.content[i]}</ul>`;
                 })
                 /*-Se cargan los resultados de mantenimiento para este servicio con el plan seleccionado-*/
-                resultAgencyMonthlyFeeDetail.innerHTML += `<li style="margin-top: 10px"><u><strong>‣ Landing Page </strong> (Plan de mantenimiento Básico):</u> ${maintenanceContent}</li>`;
+                resultAgencyMonthlyFeeDetail.innerHTML += `<li style="margin-top: 10px"><u><strong>‣ ${services.disenoWeb.implementation.basic.name}</strong> (Plan de mantenimiento Básico):</u> ${maintenanceContent}</li>`;
                 agencyMonthlyFeeValue += landingPageManteinanceValue;
 
                 /*-para IMPLEMENTACIÓN-*/
@@ -1779,7 +1779,7 @@ function calculate() {
                     implementationContent += `<ul><li>${services.disenoWeb.implementation.basic.hours[i]} horas de ${services.disenoWeb.implementation.basic.skillsAcquired[i]} a ${services.disenoWeb.implementation.basic.skillsPrices[i]} USD la hora, que hace lo siguiente:</li> ${services.disenoWeb.implementation.basic.content[i]}</ul>`;
                 })
                     /*-Se cargan los resultados de implementacion para este servicio con el plan seleccionado-*/
-                    resultAgencyOnceFeeDetail.innerHTML += `<li style="margin-top: 10px"><u><strong>‣ Landing Page </strong> (Plan Básico):</u> ${implementationContent}</li>`;
+                    resultAgencyOnceFeeDetail.innerHTML += `<li style="margin-top: 10px"><u><strong>‣ ${services.disenoWeb.implementation.basic.name}</strong> (Plan Básico):</u> ${implementationContent}</li>`;
                     agencyOnceFeeValue += landingPageImplementationValue;
 
                 /*--Se guardan los nombres y valores de inversion y fees mensuales--*/
@@ -1805,7 +1805,7 @@ function calculate() {
                     maintenanceContent += `<ul><li>${services.disenoWeb.maintenance.basic.hours[i]} horas de ${services.disenoWeb.maintenance.basic.skillsAcquired[i]} a ${services.disenoWeb.maintenance.basic.skillsPrices[i]} USD la hora, que hace lo siguiente:</li> ${services.disenoWeb.maintenance.basic.content[i]}</ul>`;
                 })
                 /*-Se cargan los resultados de mantenimiento para este servicio con el plan seleccionado-*/
-                resultAgencyMonthlyFeeDetail.innerHTML += `<li style="margin-top: 10px"><u><strong>‣ Sitio web en base a plantilla prediseñada de 5 secciones </strong> (Plan de mantenimiento Básico):</u> ${maintenanceContent}</li>`;
+                resultAgencyMonthlyFeeDetail.innerHTML += `<li style="margin-top: 10px"><u><strong>‣ ${services.disenoWeb.implementation.intermediate.name}</strong> (Plan de mantenimiento Básico):</u> ${maintenanceContent}</li>`;
                 agencyMonthlyFeeValue += wordpressManteinanceValue;
 
                 /*-para IMPLEMENTACIÓN-*/
@@ -1821,7 +1821,7 @@ function calculate() {
                     implementationContent += `<ul><li>${services.disenoWeb.implementation.intermediate.hours[i]} horas de ${services.disenoWeb.implementation.intermediate.skillsAcquired[i]} a ${services.disenoWeb.implementation.intermediate.skillsPrices[i]} USD la hora, que hace lo siguiente:</li> ${services.disenoWeb.implementation.intermediate.content[i]}</ul>`;
                 })
                     /*-Se cargan los resultados de implementacion para este servicio con el plan seleccionado-*/
-                    resultAgencyOnceFeeDetail.innerHTML += `<li style="margin-top: 10px"><u><strong>‣ Sitio web en base a plantilla prediseñada de 5 secciones </strong> (Plan Intermedio):</u> ${implementationContent}</li>`;
+                    resultAgencyOnceFeeDetail.innerHTML += `<li style="margin-top: 10px"><u><strong>‣ ${services.disenoWeb.implementation.intermediate.name}</strong> (Plan Intermedio):</u> ${implementationContent}</li>`;
                     agencyOnceFeeValue += wordpressImplementationValue;
 
                 /*--Se guardan los nombres y valores de inversion y fees mensuales--*/
@@ -1847,7 +1847,7 @@ function calculate() {
                     maintenanceContent += `<ul><li>${services.disenoWeb.maintenance.basic.hours[i]} horas de ${services.disenoWeb.maintenance.basic.skillsAcquired[i]} a ${services.disenoWeb.maintenance.basic.skillsPrices[i]} USD la hora, que hace lo siguiente:</li> ${services.disenoWeb.maintenance.basic.content[i]}</ul>`;
                 })
                 /*-Se cargan los resultados de mantenimiento para este servicio con el plan seleccionado-*/
-                resultAgencyMonthlyFeeDetail.innerHTML += `<li style="margin-top: 10px"><u><strong>‣ Sitio web con diseño personalizado </strong> (Plan de mantenimiento Básico):</u> ${maintenanceContent}</li>`;
+                resultAgencyMonthlyFeeDetail.innerHTML += `<li style="margin-top: 10px"><u><strong>‣ ${services.disenoWeb.implementation.advanced.name}</strong> (Plan de mantenimiento Básico):</u> ${maintenanceContent}</li>`;
                 agencyMonthlyFeeValue += customWebsiteManteinanceValue;
 
                 /*-para IMPLEMENTACIÓN-*/
@@ -1863,7 +1863,7 @@ function calculate() {
                     implementationContent += `<ul><li>${services.disenoWeb.implementation.advanced.hours[i]} horas de ${services.disenoWeb.implementation.advanced.skillsAcquired[i]} a ${services.disenoWeb.implementation.advanced.skillsPrices[i]} USD la hora, que hace lo siguiente:</li> ${services.disenoWeb.implementation.advanced.content[i]}</ul>`;
                 })
                     /*-Se cargan los resultados de implementacion para este servicio con el plan seleccionado-*/
-                    resultAgencyOnceFeeDetail.innerHTML += `<li style="margin-top: 10px"><u><strong>‣ Sitio web con diseño personalizado </strong> (Plan Avanzado):</u> ${implementationContent}</li>`;
+                    resultAgencyOnceFeeDetail.innerHTML += `<li style="margin-top: 10px"><u><strong>‣ ${services.disenoWeb.implementation.advanced.name}</strong> (Plan Avanzado):</u> ${implementationContent}</li>`;
                     agencyOnceFeeValue += customWebsiteImplementationValue;
 
                 /*--Se guardan los nombres y valores de inversion y fees mensuales--*/
@@ -1889,7 +1889,7 @@ function calculate() {
                     maintenanceContent += `<ul><li>${services.disenoWeb.maintenance.basic.hours[i]} horas de ${services.disenoWeb.maintenance.basic.skillsAcquired[i]} a ${services.disenoWeb.maintenance.basic.skillsPrices[i]} USD la hora, que hace lo siguiente:</li> ${services.disenoWeb.maintenance.basic.content[i]}</ul>`;
                 })
                 /*-Se cargan los resultados de mantenimiento para este servicio con el plan seleccionado-*/
-                resultAgencyMonthlyFeeDetail.innerHTML += `<li style="margin-top: 10px"><u><strong>‣ Sitio web de Ecommerce en CMS como WooCommerce o Shopify </strong> (Plan de mantenimiento Básico):</u> ${maintenanceContent}</li>`;
+                resultAgencyMonthlyFeeDetail.innerHTML += `<li style="margin-top: 10px"><u><strong>‣ ${services.disenoWeb.implementation.ecommerce.name}</strong> (Plan de mantenimiento Básico):</u> ${maintenanceContent}</li>`;
                 agencyMonthlyFeeValue += ecommerceWebManteinanceValue;
 
                 /*-para IMPLEMENTACIÓN-*/
@@ -1905,7 +1905,7 @@ function calculate() {
                     implementationContent += `<ul><li>${services.disenoWeb.implementation.ecommerce.hours[i]} horas de ${services.disenoWeb.implementation.ecommerce.skillsAcquired[i]} a ${services.disenoWeb.implementation.ecommerce.skillsPrices[i]} USD la hora, que hace lo siguiente:</li> ${services.disenoWeb.implementation.ecommerce.content[i]}</ul>`;
                 })
                     /*-Se cargan los resultados de implementacion para este servicio con el plan seleccionado-*/
-                    resultAgencyOnceFeeDetail.innerHTML += `<li style="margin-top: 10px"><u><strong>‣ Sitio web de Ecommerce en CMS como WooCommerce o Shopify </strong>:</u> ${implementationContent}</li>`;
+                    resultAgencyOnceFeeDetail.innerHTML += `<li style="margin-top: 10px"><u><strong>‣ ${services.disenoWeb.implementation.ecommerce.name}</strong>:</u> ${implementationContent}</li>`;
                     agencyOnceFeeValue += ecommerceWebImplementationValue;
 
                 /*--Se guardan los nombres y valores de inversion y fees mensuales--*/
@@ -1931,7 +1931,7 @@ function calculate() {
                     maintenanceContent += `<ul><li>${services.disenoWeb.maintenance.basic.hours[i]} horas de ${services.disenoWeb.maintenance.basic.skillsAcquired[i]} a ${services.disenoWeb.maintenance.basic.skillsPrices[i]} USD la hora, que hace lo siguiente:</li> ${services.disenoWeb.maintenance.basic.content[i]}</ul>`;
                 })
                 /*-Se cargan los resultados de mantenimiento para este servicio con el plan seleccionado-*/
-                resultAgencyMonthlyFeeDetail.innerHTML += `<li style="margin-top: 10px"><u><strong>‣ Diseño de logo e identidad de marca </strong> (Plan de mantenimiento Básico):</u> ${maintenanceContent}</li>`;
+                resultAgencyMonthlyFeeDetail.innerHTML += `<li style="margin-top: 10px"><u><strong>‣ ${services.disenoWeb.implementation.logoYMarca.name}</strong> (Plan de mantenimiento Básico):</u> ${maintenanceContent}</li>`;
                 agencyMonthlyFeeValue += logoMarcaManteinanceValue;
 
                 /*-para IMPLEMENTACIÓN-*/
@@ -1947,7 +1947,7 @@ function calculate() {
                     implementationContent += `<ul><li>${services.disenoWeb.implementation.logoYMarca.hours[i]} horas de ${services.disenoWeb.implementation.logoYMarca.skillsAcquired[i]} a ${services.disenoWeb.implementation.logoYMarca.skillsPrices[i]} USD la hora, que hace lo siguiente:</li> ${services.disenoWeb.implementation.logoYMarca.content[i]}</ul>`;
                 })
                     /*-Se cargan los resultados de implementacion para este servicio con el plan seleccionado-*/
-                    resultAgencyOnceFeeDetail.innerHTML += `<li style="margin-top: 10px"><u><strong>‣ Diseño de logo e identidad de marca </strong>:</u> ${implementationContent}</li>`;
+                    resultAgencyOnceFeeDetail.innerHTML += `<li style="margin-top: 10px"><u><strong>‣ ${services.disenoWeb.implementation.logoYMarca.name}</strong>:</u> ${implementationContent}</li>`;
                     agencyOnceFeeValue += logoMarcaImplementationValue;
 
                 /*--Se guardan los nombres y valores de inversion y fees mensuales--*/
