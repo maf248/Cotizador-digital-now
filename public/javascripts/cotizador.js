@@ -1,9 +1,9 @@
 /*---Datos estadisticos de paises organizado para programación orientada a objetos---*/
 /* DATOS ABSOLUTOS DE ESTADOS UNIDOS COMO REFERENCIA */
-const absoluteStatsCountries = {
-    eeuu: {
-        googleSearchAds: {
-            cpa: {
+const absoluteStatsCountries = Object.freeze({
+    eeuu: Object.freeze({
+        googleSearchAds: Object.freeze({
+            cpa: Object.freeze({
                 autos: 33.52, 
                 negocioANegocio: 116.13,
                 serviciosAlConsumidor: 90.70,
@@ -19,8 +19,8 @@ const absoluteStatsCountries = {
                 realEstate: 116.61,
                 tecnologia: 133.52,
                 viajes: 44.73
-            },
-            cpc: {
+            }),
+            cpc: Object.freeze({
                 autos: 2.46,
                 negocioANegocio: 3.33,
                 serviciosAlConsumidor: 6.40,
@@ -36,10 +36,10 @@ const absoluteStatsCountries = {
                 realEstate: 2.37,
                 tecnologia: 3.80,
                 viajes: 1.53
-            }
-        },
-        googleDisplayAds: {
-            cpa: {
+            })
+        }),
+        googleDisplayAds: Object.freeze({
+            cpa: Object.freeze({
                 autos: 23.68,
                 negocioANegocio: 130.30,
                 serviciosAlConsumidor: 60.48,
@@ -55,8 +55,8 @@ const absoluteStatsCountries = {
                 realEstate: 74.79,
                 tecnologia: 103.60,
                 viajes: 99.00
-            },
-            cpc: {
+            }),
+            cpc: Object.freeze({
                 autos: 0.58,
                 negocioANegocio: 0.79,
                 serviciosAlConsumidor: 0.81,
@@ -72,10 +72,10 @@ const absoluteStatsCountries = {
                 realEstate: 0.75,
                 tecnologia: 0.51,
                 viajes: 0.44
-            }
-        },
-        facebookAds: {
-            cpa: {
+            })
+        }),
+        facebookAds: Object.freeze({
+            cpa: Object.freeze({
                 autos: 43.84, 
                 negocioANegocio: 23.77,
                 serviciosAlConsumidor: 31.11,
@@ -91,8 +91,8 @@ const absoluteStatsCountries = {
                 realEstate: 16.92,
                 tecnologia: 55.21,
                 viajes: 22.50
-            },
-            cpc: {
+            }),
+            cpc: Object.freeze({
                 autos: 2.24,
                 negocioANegocio: 2.52,
                 serviciosAlConsumidor: 3.08,
@@ -108,305 +108,304 @@ const absoluteStatsCountries = {
                 realEstate: 1.81,
                 tecnologia: 1.27,
                 viajes: 0.63
-            }
-        }
-    }
-}
+            })
+        })
+    })
+})
 /* DATOS RELATIVOS DE VARIOS PAISES PARA REALIZAR LOS CALCULOS */
-const relativeStatsCountries = {
-        argentina: {
+const relativeStatsCountries = Object.freeze({
+        argentina: Object.freeze({
             relativeRateToUSA: 0.1298304000596659
-        },
-        emiratosArabes: {
+        }),
+        emiratosArabes: Object.freeze({
             relativeRateToUSA: 1.08
-        },
-        austria: {
+        }),
+        austria: Object.freeze({
             relativeRateToUSA: 0.98
-        },
-        australia: {
+        }),
+        australia: Object.freeze({
             relativeRateToUSA: 0.95
-        },
-        brasil: {
+        }),
+        brasil: Object.freeze({
             relativeRateToUSA: 0.89
-        },
-        inglaterra: {
+        }),
+        inglaterra: Object.freeze({
             relativeRateToUSA: 0.87
-        },
-        nuevaZelanda: {
+        }),
+        nuevaZelanda: Object.freeze({
             relativeRateToUSA: 0.86
-        },
-        chile: {
+        }),
+        chile: Object.freeze({
             relativeRateToUSA: 0.84
-        },
-        suiza: {
+        }),
+        suiza: Object.freeze({
             relativeRateToUSA: 0.79
-        },
-        italia: {
+        }),
+        italia: Object.freeze({
             relativeRateToUSA: 0.75
-        },
-        canada: {
+        }),
+        canada: Object.freeze({
             relativeRateToUSA: 0.71
-        },
-        alemania: {
+        }),
+        alemania: Object.freeze({
             relativeRateToUSA: 0.69
-        },
-        turquia: {
+        }),
+        turquia: Object.freeze({
             relativeRateToUSA: 0.68
-        },
-        finlandia: {
+        }),
+        finlandia: Object.freeze({
             relativeRateToUSA: 0.67
-        },
-        jamaica: {
+        }),
+        jamaica: Object.freeze({
             relativeRateToUSA: 0.67
-        },
-        noruega: {
+        }),
+        noruega: Object.freeze({
             relativeRateToUSA: 0.66
-        },
-        republicaDominicana: {
+        }),
+        republicaDominicana: Object.freeze({
             relativeRateToUSA: 0.6
-        },
-        irlanda: {
+        }),
+        irlanda: Object.freeze({
             relativeRateToUSA: 0.6
-        },
-        islandia: {
+        }),
+        islandia: Object.freeze({
             relativeRateToUSA: 0.56
-        },
-        portugal: {
+        }),
+        portugal: Object.freeze({
             relativeRateToUSA: 0.56
-        },
-        grecia: {
+        }),
+        grecia: Object.freeze({
             relativeRateToUSA: 0.54
-        },
-        libano: {
+        }),
+        libano: Object.freeze({
             relativeRateToUSA: 0.53
-        },
-        japon: {
+        }),
+        japon: Object.freeze({
             relativeRateToUSA: 0.53
-        },
-        suecia: {
+        }),
+        suecia: Object.freeze({
             relativeRateToUSA: 0.51
-        },
-        espana: {
+        }),
+        espana: Object.freeze({
             relativeRateToUSA: 0.5
-        },
-        mexico: {
+        }),
+        mexico: Object.freeze({
             relativeRateToUSA: 0.5
-        },
-        camboya: {
+        }),
+        camboya: Object.freeze({
             relativeRateToUSA: 0.49
-        },
-        armenia: {
+        }),
+        armenia: Object.freeze({
             relativeRateToUSA: 0.48
-        },
-        sudafrica: {
+        }),
+        sudafrica: Object.freeze({
             relativeRateToUSA: 0.45
-        },
-        israel: {
+        }),
+        israel: Object.freeze({
             relativeRateToUSA: 0.45
-        },
-        holanda: {
+        }),
+        holanda: Object.freeze({
             relativeRateToUSA: 0.44
-        },
-        argelia: {
+        }),
+        argelia: Object.freeze({
             relativeRateToUSA: 0.44
-        },
-        nepal: {
+        }),
+        nepal: Object.freeze({
             relativeRateToUSA: 0.43
-        },
-        dinamarca: {
+        }),
+        dinamarca: Object.freeze({
             relativeRateToUSA: 0.43
-        },
-        belice: {
+        }),
+        belice: Object.freeze({
             relativeRateToUSA: 0.43
-        },
-        singapur: {
+        }),
+        singapur: Object.freeze({
             relativeRateToUSA: 0.42
-        },
-        tailandia: {
+        }),
+        tailandia: Object.freeze({
             relativeRateToUSA: 0.42
-        },
-        arabiaSaudita: {
+        }),
+        arabiaSaudita: Object.freeze({
             relativeRateToUSA: 0.4
-        },
-        macedonia: {
+        }),
+        macedonia: Object.freeze({
             relativeRateToUSA: 0.39
-        },
-        trinidadYTobago: {
+        }),
+        trinidadYTobago: Object.freeze({
             relativeRateToUSA: 0.39
-        },
-        nicaragua: {
+        }),
+        nicaragua: Object.freeze({
             relativeRateToUSA: 0.39
-        },
-        oman: {
+        }),
+        oman: Object.freeze({
             relativeRateToUSA: 0.39
-        },
-        indonesia: {
+        }),
+        indonesia: Object.freeze({
             relativeRateToUSA: 0.38
-        },
-        ruanda: {
+        }),
+        ruanda: Object.freeze({
             relativeRateToUSA: 0.38
-        },
-        croacia: {
+        }),
+        croacia: Object.freeze({
             relativeRateToUSA: 0.37
-        },
-        francia: {
+        }),
+        francia: Object.freeze({
             relativeRateToUSA: 0.36
-        },
-        libia: {
+        }),
+        libia: Object.freeze({
             relativeRateToUSA: 0.36
-        },
-        kuwait: {
+        }),
+        kuwait: Object.freeze({
             relativeRateToUSA: 0.36
-        },
-        egipto: {
+        }),
+        egipto: Object.freeze({
             relativeRateToUSA: 0.35
-        },
-        belgica: {
+        }),
+        belgica: Object.freeze({
             relativeRateToUSA: 0.31
-        },
-        rumania: {
+        }),
+        rumania: Object.freeze({
             relativeRateToUSA: 0.31
-        },
-        panama: {
+        }),
+        panama: Object.freeze({
             relativeRateToUSA: 0.31
-        },
-        uganda: {
+        }),
+        uganda: Object.freeze({
             relativeRateToUSA: 0.31
-        },
-        bulgaria: {
+        }),
+        bulgaria: Object.freeze({
             relativeRateToUSA: 0.29
-        },
-        peru: {
+        }),
+        peru: Object.freeze({
             relativeRateToUSA: 0.29
-        },
-        albania: {
+        }),
+        albania: Object.freeze({
             relativeRateToUSA: 0.28
-        },
-        coreaDelSur: {
+        }),
+        coreaDelSur: Object.freeze({
             relativeRateToUSA: 0.28
-        },
-        elSalvador: {
+        }),
+        elSalvador: Object.freeze({
             relativeRateToUSA: 0.27
-        },
-        zimbabue: {
+        }),
+        zimbabue: Object.freeze({
             relativeRateToUSA: 0.27
-        },
-        jordania: {
+        }),
+        jordania: Object.freeze({
             relativeRateToUSA: 0.27
-        },
-        costaRica: {
+        }),
+        costaRica: Object.freeze({
             relativeRateToUSA: 0.27
-        },
-        uruguay: {
+        }),
+        uruguay: Object.freeze({
             relativeRateToUSA: 0.26
-        },
-        tunez: {
+        }),
+        tunez: Object.freeze({
             relativeRateToUSA: 0.26
-        },
-        kenia: {
+        }),
+        kenia: Object.freeze({
             relativeRateToUSA: 0.26
-        },
-        malasia: {
+        }),
+        malasia: Object.freeze({
             relativeRateToUSA: 0.25
-        },
-        filipinas: {
+        }),
+        filipinas: Object.freeze({
             relativeRateToUSA: 0.25
-        },
-        vietnam: {
+        }),
+        vietnam: Object.freeze({
             relativeRateToUSA: 0.24
-        },
-        sriLanka: {
+        }),
+        sriLanka: Object.freeze({
             relativeRateToUSA: 0.23
-        },
-        bahamas: {
+        }),
+        bahamas: Object.freeze({
             relativeRateToUSA: 0.23
-        },
-        india: {
+        }),
+        india: Object.freeze({
             relativeRateToUSA: 0.23
-        },
-        hungria: {
+        }),
+        hungria: Object.freeze({
             relativeRateToUSA: 0.22
-        },
-        marruecos: {
+        }),
+        marruecos: Object.freeze({
             relativeRateToUSA: 0.22
-        },
-        bangladesh: {
+        }),
+        bangladesh: Object.freeze({
             relativeRateToUSA: 0.21
-        },
-        eslovaquia: {
+        }),
+        eslovaquia: Object.freeze({
             relativeRateToUSA: 0.2
-        },
-        islaMauricio: {
+        }),
+        islaMauricio: Object.freeze({
             relativeRateToUSA: 0.19
-        },
-        qatar: {
+        }),
+        qatar: Object.freeze({
             relativeRateToUSA: 0.19
-        },
-        bolivia: {
+        }),
+        bolivia: Object.freeze({
             relativeRateToUSA: 0.19
-        },
-        polonia: {
+        }),
+        polonia: Object.freeze({
             relativeRateToUSA: 0.19
-        },
-        luxemburgo: {
+        }),
+        luxemburgo: Object.freeze({
             relativeRateToUSA: 0.18
-        },
-        ecuador: {
+        }),
+        ecuador: Object.freeze({
             relativeRateToUSA: 0.18
-        },
-        colombia: {
+        }),
+        colombia: Object.freeze({
             relativeRateToUSA: 0.17
-        },
-        rusia: {
+        }),
+        rusia: Object.freeze({
             relativeRateToUSA: 0.16
-        },
-        namibia: {
+        }),
+        namibia: Object.freeze({
             relativeRateToUSA: 0.16
-        },
-        pakistan: {
+        }),
+        pakistan: Object.freeze({
             relativeRateToUSA: 0.16
-        },
-        guyana: {
+        }),
+        guyana: Object.freeze({
             relativeRateToUSA: 0.15
-        },
-        monteNegro: {
+        }),
+        monteNegro: Object.freeze({
             relativeRateToUSA: 0.14
-        },
-        lituania: {
+        }),
+        lituania: Object.freeze({
             relativeRateToUSA: 0.14
-        },
-        tanzania: {
+        }),
+        tanzania: Object.freeze({
             relativeRateToUSA: 0.12
-        },
-        venezuela: {
+        }),
+        venezuela: Object.freeze({
             relativeRateToUSA: 0.12
-        },
-        barein: {
+        }),
+        barein: Object.freeze({
             relativeRateToUSA: 0.1
-        },
-        letonia: {
+        }),
+        letonia: Object.freeze({
             relativeRateToUSA: 0.1
-        },
-        eslovenia: {
+        }),
+        eslovenia: Object.freeze({
             relativeRateToUSA: 0.08
-        },
-        somalia: {
+        }),
+        somalia: Object.freeze({
             relativeRateToUSA: 0.08
-        },
-        ucrania: {
+        }),
+        ucrania: Object.freeze({
             relativeRateToUSA: 0.08
-        },
-        liberia: {
+        }),
+        liberia: Object.freeze({
             relativeRateToUSA: 0.08
-        },
-        moldova: {
+        }),
+        moldova: Object.freeze({
             relativeRateToUSA: 0.08
-        },
-        servia: {
+        }),
+        servia: Object.freeze({
             relativeRateToUSA: 0.05
-        }
-
-}
+        })
+})
 /*--Así se accedería a cada valor de dicho objeto---*/
 // console.log("Prueba - valor EEUU en USD google search ads CPA autos: " + absoluteStatsCountries.eeuu.googleSearchAds.cpa.autos);
 // console.log("Prueba - valor Moldova en USD google search ads CPA autos: " + absoluteStatsCountries.eeuu.googleSearchAds.cpa.autos * relativeStatsCountries.moldova.relativeRateToUSA);
@@ -416,11 +415,8 @@ const skills = {
     prices: [26, 31, 13, 19, 35, 30, 00, 30]
 }
 /*---Datos de los servicios brindados, organizado para programación orientada a objetos---*/
-const services = {
+const services = Object.freeze({
     googleSearchAds: {
-        implementationHours: 8,
-        maintenanceHours: 4,
-        costPerHour: 26,
         implementation: {
             basic: {
                 hours: [3],
@@ -463,9 +459,6 @@ const services = {
         }
     },
     googleDisplayAds: {
-        implementationHours: 2,
-        maintenanceHours: 2,
-        costPerHour: 26,
         implementation: {
             basic: {
                 hours: [1, 2],
@@ -508,9 +501,6 @@ const services = {
         }
     },
     facebookAds: {
-        implementationHours: 8,
-        maintenanceHours: 4,
-        costPerHour: 26,
         implementation: {
             basic: {
                 hours: [2, 2],
@@ -553,10 +543,6 @@ const services = {
         }
     },
     communityManagement: {
-        skillsAcquired: ["Community Management", "Redacciones", "Creación de piezas gráficas (3 Carrousels y 8 gráficas individuales)", "Creación de 1 video (Menos de 30 seg)"],
-        implementationHours: [8, 0, 0, 0],
-        maintenanceHours: [8, 4, 24, 4],
-        costPerHour: [13, 19, 30, 30],
         implementation: {
             basic: {
                 hours: [2],
@@ -641,10 +627,6 @@ const services = {
         }
     },
     conversionWeb: {
-        skillsAcquired: ["Google Ads / Facebook Ads", "Diseño Web UX / UI"],
-        implementationHours: [0, 0],
-        maintenanceHours: [4, 8],
-        costPerHour: [26, 35],
         implementation: {
             basic: {
                 hours: [4],
@@ -712,7 +694,7 @@ const services = {
             },
             logoYMarca: {
                 hours: [10],
-                skillsAcquired: ["Diseñador gráfico"],
+                skillsAcquired: ["Diseñador Gráfico"],
                 skillsPrices: [skills.prices[5]],
                 name: "Diseño de logo e identidad de marca",
                 content: ["<ul><li>Tipografía, logo en diferentes formatos, paleta de colores y concepto. Hasta 3 revisiones. <a href='https://drive.google.com/file/d/1gyONia_qKjM6mqoJHe_AnGRGMPbicQnv/view?usp=sharing' target='_blank'>Ver ejemplo</a></li></ul>"]
@@ -752,8 +734,7 @@ const services = {
             }
         }
     }
-}
-
+})
 
 const qs = (text) => document.querySelector(text);
 const qsa = (text) => document.querySelectorAll(text);
@@ -773,6 +754,11 @@ var disenoWeb = qs('#disenoWeb')
 var email = qs('#email');
 /*--Contenedor de servicios disenoWeb--*/
 var disenoWebServicesContainer = qs('#disenoWebServicesContainer');
+var landingPage = qs('#landingPage');
+var wordpress = qs('#wordpress');
+var customWebsite = qs('#customWebsite');
+var ecommerceWeb = qs('#ecommerceWeb');
+var logoMarca = qs('#logoMarca');	
 
 /*---Se capturan los CONTENEDORES de los distintos resultados---*/
 var googleFacebookAdsResultContainer = qs('#result-googleads-facebookads-container');
@@ -1242,7 +1228,12 @@ function calculate() {
             errorType = 8;
         }
       
-    } else {
+    } else if (disenoWeb.checked && (!landingPage.checked && !wordpress.checked && !customWebsite.checked && !ecommerceWeb.checked && !logoMarca.checked)) {
+        errorMessages.innerHTML = 'Debes seleccionar un sub-servicio de Diseño Web';
+        setTimeout(function(){ errorMessages.innerHTML = '';}, 4000);
+    }
+    else {
+        
         formContainer.style.height = '0';
         formContainer.style.opacity = '0';
         resultsContainer.style.height = 'auto';
@@ -1425,7 +1416,7 @@ function calculate() {
     /*--Ya calculadas las conversiones particulares (google display, google search y facebook), se suman en conversion total--*/
     totalConversionsValue = googleAdsSearchConversionsValue + googleAdsDisplayConversionsValue + facebookAdsConversionsValue;
 
-    if ((googleSearchAds.checked || googleDisplayAds.checked || facebookAds.checked || communityManagement.checked || seo.checked || conversionWeb.checked || disenoWeb.checked || email.checked) && !completeFormValidate.includes(false)) {
+    if ((googleSearchAds.checked || googleDisplayAds.checked || facebookAds.checked || communityManagement.checked || seo.checked || conversionWeb.checked || email.checked || (disenoWeb.checked && (landingPage.checked || wordpress.checked || customWebsite.checked || ecommerceWeb.checked || logoMarca.checked))) && !completeFormValidate.includes(false)) {
 
         /*---Se muestran los resultados particulares de email marketing solamente si esta opcion fue seleccionada---*/
         if (email.checked) {
@@ -1754,7 +1745,218 @@ function calculate() {
             });
         }
         /*---Se muestran los resultados particulares de Diseño Web solamente si esta opcion con alguna sub-opción fueron seleccionadas---*/
-        if (disenoWeb.checked) { console.log('Desarrollo en progreso de diseño web con sub-servicios....')  }
+        if (disenoWeb.checked) {
+            if (landingPage.checked) {
+                /*--Se muestran los fees de implementacion (por unica vez)---*/
+                resultAgencyOnceFeeContainer.style.display = "block";
+                /*--Se guardan los detalles de skills que incluye este servicio---*/
+                /*-para MANTENIMIENTO-*/
+                let maintenanceContent = '';
+                var landingPageManteinanceValue = 0;
+                services.disenoWeb.maintenance.basic.skillsAcquired.forEach((skill, i) => {
+                    skills.names.forEach((name, j) => {
+                        if (skill == name) {
+                            landingPageManteinanceValue += services.disenoWeb.maintenance.basic.hours[i] * skills.prices[j];
+                        }
+                    })
+                    /*--Se genera la descripcion de mantenimiento mensual para este servicio en el plan seleccionado---*/ 
+                    maintenanceContent += `<ul><li>${services.disenoWeb.maintenance.basic.hours[i]} horas de ${services.disenoWeb.maintenance.basic.skillsAcquired[i]} a ${services.disenoWeb.maintenance.basic.skillsPrices[i]} USD la hora, que hace lo siguiente:</li> ${services.disenoWeb.maintenance.basic.content[i]}</ul>`;
+                })
+                /*-Se cargan los resultados de mantenimiento para este servicio con el plan seleccionado-*/
+                resultAgencyMonthlyFeeDetail.innerHTML += `<li style="margin-top: 10px"><u><strong>‣ Landing Page </strong> (Plan de mantenimiento Básico):</u> ${maintenanceContent}</li>`;
+                agencyMonthlyFeeValue += landingPageManteinanceValue;
+
+                /*-para IMPLEMENTACIÓN-*/
+                let implementationContent = '';
+                var landingPageImplementationValue = 0;
+                services.disenoWeb.implementation.basic.skillsAcquired.forEach((skill, i) => {
+                    skills.names.forEach((name, j) => {
+                        if (skill == name) {
+                            landingPageImplementationValue += services.disenoWeb.implementation.basic.hours[i] * skills.prices[j];
+                        }
+                    })
+                    /*--Se genera la descripcion de implementación para este servicio en el plan seleccionado---*/ 
+                    implementationContent += `<ul><li>${services.disenoWeb.implementation.basic.hours[i]} horas de ${services.disenoWeb.implementation.basic.skillsAcquired[i]} a ${services.disenoWeb.implementation.basic.skillsPrices[i]} USD la hora, que hace lo siguiente:</li> ${services.disenoWeb.implementation.basic.content[i]}</ul>`;
+                })
+                    /*-Se cargan los resultados de implementacion para este servicio con el plan seleccionado-*/
+                    resultAgencyOnceFeeDetail.innerHTML += `<li style="margin-top: 10px"><u><strong>‣ Landing Page </strong> (Plan Básico):</u> ${implementationContent}</li>`;
+                    agencyOnceFeeValue += landingPageImplementationValue;
+
+                /*--Se guardan los nombres y valores de inversion y fees mensuales--*/
+                arrayAgencyMantainanceSelected.push({
+                    name: "Landing Page",
+                    value: landingPageManteinanceValue
+                });
+            }
+            if (wordpress.checked) {
+                /*--Se muestran los fees de implementacion (por unica vez)---*/
+                resultAgencyOnceFeeContainer.style.display = "block";
+                /*--Se guardan los detalles de skills que incluye este servicio---*/
+                /*-para MANTENIMIENTO-*/
+                let maintenanceContent = '';
+                var wordpressManteinanceValue = 0;
+                services.disenoWeb.maintenance.basic.skillsAcquired.forEach((skill, i) => {
+                    skills.names.forEach((name, j) => {
+                        if (skill == name) {
+                            wordpressManteinanceValue += services.disenoWeb.maintenance.basic.hours[i] * skills.prices[j];
+                        }
+                    })
+                    /*--Se genera la descripcion de mantenimiento mensual para este servicio en el plan seleccionado---*/ 
+                    maintenanceContent += `<ul><li>${services.disenoWeb.maintenance.basic.hours[i]} horas de ${services.disenoWeb.maintenance.basic.skillsAcquired[i]} a ${services.disenoWeb.maintenance.basic.skillsPrices[i]} USD la hora, que hace lo siguiente:</li> ${services.disenoWeb.maintenance.basic.content[i]}</ul>`;
+                })
+                /*-Se cargan los resultados de mantenimiento para este servicio con el plan seleccionado-*/
+                resultAgencyMonthlyFeeDetail.innerHTML += `<li style="margin-top: 10px"><u><strong>‣ Sitio web en base a plantilla prediseñada de 5 secciones </strong> (Plan de mantenimiento Básico):</u> ${maintenanceContent}</li>`;
+                agencyMonthlyFeeValue += wordpressManteinanceValue;
+
+                /*-para IMPLEMENTACIÓN-*/
+                let implementationContent = '';
+                var wordpressImplementationValue = 0;
+                services.disenoWeb.implementation.intermediate.skillsAcquired.forEach((skill, i) => {
+                    skills.names.forEach((name, j) => {
+                        if (skill == name) {
+                            wordpressImplementationValue += services.disenoWeb.implementation.intermediate.hours[i] * skills.prices[j];
+                        }
+                    })
+                    /*--Se genera la descripcion de implementación para este servicio en el plan seleccionado---*/ 
+                    implementationContent += `<ul><li>${services.disenoWeb.implementation.intermediate.hours[i]} horas de ${services.disenoWeb.implementation.intermediate.skillsAcquired[i]} a ${services.disenoWeb.implementation.intermediate.skillsPrices[i]} USD la hora, que hace lo siguiente:</li> ${services.disenoWeb.implementation.intermediate.content[i]}</ul>`;
+                })
+                    /*-Se cargan los resultados de implementacion para este servicio con el plan seleccionado-*/
+                    resultAgencyOnceFeeDetail.innerHTML += `<li style="margin-top: 10px"><u><strong>‣ Sitio web en base a plantilla prediseñada de 5 secciones </strong> (Plan Intermedio):</u> ${implementationContent}</li>`;
+                    agencyOnceFeeValue += wordpressImplementationValue;
+
+                /*--Se guardan los nombres y valores de inversion y fees mensuales--*/
+                arrayAgencyMantainanceSelected.push({
+                    name: "Sitio web en base a plantilla prediseñada de 5 secciones",
+                    value: wordpressManteinanceValue
+                });
+            }
+            if (customWebsite.checked) {
+                /*--Se muestran los fees de implementacion (por unica vez)---*/
+                resultAgencyOnceFeeContainer.style.display = "block";
+                /*--Se guardan los detalles de skills que incluye este servicio---*/
+                /*-para MANTENIMIENTO-*/
+                let maintenanceContent = '';
+                var customWebsiteManteinanceValue = 0;
+                services.disenoWeb.maintenance.basic.skillsAcquired.forEach((skill, i) => {
+                    skills.names.forEach((name, j) => {
+                        if (skill == name) {
+                            customWebsiteManteinanceValue += services.disenoWeb.maintenance.basic.hours[i] * skills.prices[j];
+                        }
+                    })
+                    /*--Se genera la descripcion de mantenimiento mensual para este servicio en el plan seleccionado---*/ 
+                    maintenanceContent += `<ul><li>${services.disenoWeb.maintenance.basic.hours[i]} horas de ${services.disenoWeb.maintenance.basic.skillsAcquired[i]} a ${services.disenoWeb.maintenance.basic.skillsPrices[i]} USD la hora, que hace lo siguiente:</li> ${services.disenoWeb.maintenance.basic.content[i]}</ul>`;
+                })
+                /*-Se cargan los resultados de mantenimiento para este servicio con el plan seleccionado-*/
+                resultAgencyMonthlyFeeDetail.innerHTML += `<li style="margin-top: 10px"><u><strong>‣ Sitio web con diseño personalizado </strong> (Plan de mantenimiento Básico):</u> ${maintenanceContent}</li>`;
+                agencyMonthlyFeeValue += customWebsiteManteinanceValue;
+
+                /*-para IMPLEMENTACIÓN-*/
+                let implementationContent = '';
+                var customWebsiteImplementationValue = 0;
+                services.disenoWeb.implementation.advanced.skillsAcquired.forEach((skill, i) => {
+                    skills.names.forEach((name, j) => {
+                        if (skill == name) {
+                            customWebsiteImplementationValue += services.disenoWeb.implementation.advanced.hours[i] * skills.prices[j];
+                        }
+                    })
+                    /*--Se genera la descripcion de implementación para este servicio en el plan seleccionado---*/ 
+                    implementationContent += `<ul><li>${services.disenoWeb.implementation.advanced.hours[i]} horas de ${services.disenoWeb.implementation.advanced.skillsAcquired[i]} a ${services.disenoWeb.implementation.advanced.skillsPrices[i]} USD la hora, que hace lo siguiente:</li> ${services.disenoWeb.implementation.advanced.content[i]}</ul>`;
+                })
+                    /*-Se cargan los resultados de implementacion para este servicio con el plan seleccionado-*/
+                    resultAgencyOnceFeeDetail.innerHTML += `<li style="margin-top: 10px"><u><strong>‣ Sitio web con diseño personalizado </strong> (Plan Avanzado):</u> ${implementationContent}</li>`;
+                    agencyOnceFeeValue += customWebsiteImplementationValue;
+
+                /*--Se guardan los nombres y valores de inversion y fees mensuales--*/
+                arrayAgencyMantainanceSelected.push({
+                    name: "Sitio web con diseño personalizado",
+                    value: customWebsiteManteinanceValue
+                });
+            }
+            if (ecommerceWeb.checked) {
+                /*--Se muestran los fees de implementacion (por unica vez)---*/
+                resultAgencyOnceFeeContainer.style.display = "block";
+                /*--Se guardan los detalles de skills que incluye este servicio---*/
+                /*-para MANTENIMIENTO-*/
+                let maintenanceContent = '';
+                var ecommerceWebManteinanceValue = 0;
+                services.disenoWeb.maintenance.basic.skillsAcquired.forEach((skill, i) => {
+                    skills.names.forEach((name, j) => {
+                        if (skill == name) {
+                            ecommerceWebManteinanceValue += services.disenoWeb.maintenance.basic.hours[i] * skills.prices[j];
+                        }
+                    })
+                    /*--Se genera la descripcion de mantenimiento mensual para este servicio en el plan seleccionado---*/ 
+                    maintenanceContent += `<ul><li>${services.disenoWeb.maintenance.basic.hours[i]} horas de ${services.disenoWeb.maintenance.basic.skillsAcquired[i]} a ${services.disenoWeb.maintenance.basic.skillsPrices[i]} USD la hora, que hace lo siguiente:</li> ${services.disenoWeb.maintenance.basic.content[i]}</ul>`;
+                })
+                /*-Se cargan los resultados de mantenimiento para este servicio con el plan seleccionado-*/
+                resultAgencyMonthlyFeeDetail.innerHTML += `<li style="margin-top: 10px"><u><strong>‣ Sitio web de Ecommerce en CMS como WooCommerce o Shopify </strong> (Plan de mantenimiento Básico):</u> ${maintenanceContent}</li>`;
+                agencyMonthlyFeeValue += ecommerceWebManteinanceValue;
+
+                /*-para IMPLEMENTACIÓN-*/
+                let implementationContent = '';
+                var ecommerceWebImplementationValue = 0;
+                services.disenoWeb.implementation.ecommerce.skillsAcquired.forEach((skill, i) => {
+                    skills.names.forEach((name, j) => {
+                        if (skill == name) {
+                            ecommerceWebImplementationValue += services.disenoWeb.implementation.ecommerce.hours[i] * skills.prices[j];
+                        }
+                    })
+                    /*--Se genera la descripcion de implementación para este servicio en el plan seleccionado---*/ 
+                    implementationContent += `<ul><li>${services.disenoWeb.implementation.ecommerce.hours[i]} horas de ${services.disenoWeb.implementation.ecommerce.skillsAcquired[i]} a ${services.disenoWeb.implementation.ecommerce.skillsPrices[i]} USD la hora, que hace lo siguiente:</li> ${services.disenoWeb.implementation.ecommerce.content[i]}</ul>`;
+                })
+                    /*-Se cargan los resultados de implementacion para este servicio con el plan seleccionado-*/
+                    resultAgencyOnceFeeDetail.innerHTML += `<li style="margin-top: 10px"><u><strong>‣ Sitio web de Ecommerce en CMS como WooCommerce o Shopify </strong>:</u> ${implementationContent}</li>`;
+                    agencyOnceFeeValue += ecommerceWebImplementationValue;
+
+                /*--Se guardan los nombres y valores de inversion y fees mensuales--*/
+                arrayAgencyMantainanceSelected.push({
+                    name: "Sitio web de Ecommerce en CMS como WooCommerce o Shopify",
+                    value: ecommerceWebManteinanceValue
+                });
+            }
+            if (logoMarca.checked) {
+                /*--Se muestran los fees de implementacion (por unica vez)---*/
+                resultAgencyOnceFeeContainer.style.display = "block";
+                /*--Se guardan los detalles de skills que incluye este servicio---*/
+                /*-para MANTENIMIENTO-*/
+                let maintenanceContent = '';
+                var logoMarcaManteinanceValue = 0;
+                services.disenoWeb.maintenance.basic.skillsAcquired.forEach((skill, i) => {
+                    skills.names.forEach((name, j) => {
+                        if (skill == name) {
+                            logoMarcaManteinanceValue += services.disenoWeb.maintenance.basic.hours[i] * skills.prices[j];
+                        }
+                    })
+                    /*--Se genera la descripcion de mantenimiento mensual para este servicio en el plan seleccionado---*/ 
+                    maintenanceContent += `<ul><li>${services.disenoWeb.maintenance.basic.hours[i]} horas de ${services.disenoWeb.maintenance.basic.skillsAcquired[i]} a ${services.disenoWeb.maintenance.basic.skillsPrices[i]} USD la hora, que hace lo siguiente:</li> ${services.disenoWeb.maintenance.basic.content[i]}</ul>`;
+                })
+                /*-Se cargan los resultados de mantenimiento para este servicio con el plan seleccionado-*/
+                resultAgencyMonthlyFeeDetail.innerHTML += `<li style="margin-top: 10px"><u><strong>‣ Diseño de logo e identidad de marca </strong> (Plan de mantenimiento Básico):</u> ${maintenanceContent}</li>`;
+                agencyMonthlyFeeValue += logoMarcaManteinanceValue;
+
+                /*-para IMPLEMENTACIÓN-*/
+                let implementationContent = '';
+                var logoMarcaImplementationValue = 0;
+                services.disenoWeb.implementation.logoYMarca.skillsAcquired.forEach((skill, i) => {
+                    skills.names.forEach((name, j) => {
+                        if (skill == name) {
+                            logoMarcaImplementationValue += services.disenoWeb.implementation.logoYMarca.hours[i] * skills.prices[j];
+                        }
+                    })
+                    /*--Se genera la descripcion de implementación para este servicio en el plan seleccionado---*/ 
+                    implementationContent += `<ul><li>${services.disenoWeb.implementation.logoYMarca.hours[i]} horas de ${services.disenoWeb.implementation.logoYMarca.skillsAcquired[i]} a ${services.disenoWeb.implementation.logoYMarca.skillsPrices[i]} USD la hora, que hace lo siguiente:</li> ${services.disenoWeb.implementation.logoYMarca.content[i]}</ul>`;
+                })
+                    /*-Se cargan los resultados de implementacion para este servicio con el plan seleccionado-*/
+                    resultAgencyOnceFeeDetail.innerHTML += `<li style="margin-top: 10px"><u><strong>‣ Diseño de logo e identidad de marca </strong>:</u> ${implementationContent}</li>`;
+                    agencyOnceFeeValue += logoMarcaImplementationValue;
+
+                /*--Se guardan los nombres y valores de inversion y fees mensuales--*/
+                arrayAgencyMantainanceSelected.push({
+                    name: "Diseño de logo e identidad de marca",
+                    value: logoMarcaManteinanceValue
+                });
+            }
+        }
         
         if (!email.checked && !googleSearchAds.checked && !googleDisplayAds.checked && !facebookAds.checked) {
             resultInvestmentsMonthlyDetail.innerHTML = '<li>No has seleccionado ninguna inversión en medios digitales. <small>(Ej: Google Ads Search, Google Ads Display, Facebook Ads o Email Marketing)</small></li>'
