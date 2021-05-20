@@ -6,10 +6,12 @@ p {
   min-width: fit-content;
   display: inline-block;
 }
+
 .digitalNowLogo:hover {
   transform: scale(1.2);
   transition: transform .5s ease-out;
 }
+
 .flex-row {
   display: flex;
   flex-direction: row;
@@ -18,6 +20,7 @@ p {
 .country-supplier-container {
   margin: 20px;
 }
+
 .services-container {
   display: flex;
   flex-direction: column;
@@ -25,22 +28,26 @@ p {
   max-width: 100%;
   padding: 10px;
 }
+
 .services-container div {
   padding: 5px;
   display: flex;
   flex-direction: row;
   align-items: center;
 }
+
 .services-container input {
   margin-right: 7px;
 }
+
 .disenoWebServicesContainer {
   display: none;
   flex-direction: column;
   padding: 10px;
 }
+
 .services-extra-container {
-  margin-top: 1rem; 
+  margin-top: 1rem;
 }
 
 .country-announce-container {
@@ -53,9 +60,11 @@ p {
   margin-right: auto;
   margin-left: auto;
 }
+
 .country-announce-selector {
   text-align: center;
 }
+
 .selected-country-announce {
   text-align: center;
   margin-top: 10px;
@@ -66,6 +75,7 @@ p {
   flex-direction: column;
   width: 100%;
 }
+
 .error-messages {
   display: flex;
   flex-direction: row;
@@ -75,22 +85,51 @@ p {
   margin-left: auto;
   margin-right: auto;
 }
-.google-search-ads-extra-container, .google-display-ads-extra-container, .facebook-ads-extra-container, .industry-and-country-selectors-container, .community-management-extra-container, .seo-extra-container, .conversion-web-extra-container, .email-marketing-extra-container {
+
+.google-search-ads-extra-container,
+.google-display-ads-extra-container,
+.facebook-ads-extra-container,
+.industry-and-country-selectors-container,
+.community-management-extra-container,
+.seo-extra-container,
+.conversion-web-extra-container,
+.email-marketing-extra-container {
   display: none;
   flex-direction: column;
 }
 
-.industry-ads-selector-container, .google-search-plan-container, .investment-google-search-ads, .google-display-plan-container, .investment-google-display-ads, .facebook-plan-container, .investment-facebook-ads, .community-management-plan-container, .seo-plan-container, .conversion-web-plan-container, .email-ammount-container, .email-plan-container {
+.industry-ads-selector-container,
+.google-search-plan-container,
+.investment-google-search-ads,
+.google-display-plan-container,
+.investment-google-display-ads,
+.facebook-plan-container,
+.investment-facebook-ads,
+.community-management-plan-container,
+.seo-plan-container,
+.conversion-web-plan-container,
+.email-ammount-container,
+.email-plan-container {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-around;
   padding: 10px;
 }
-.industry-ads-selector-container label, .investment-google-search-ads label, .investment-google-display-ads label, .investment-facebook-ads label, .email-ammount-container label{
+
+.industry-ads-selector-container label,
+.investment-google-search-ads label,
+.investment-google-display-ads label,
+.investment-facebook-ads label,
+.email-ammount-container label {
   max-width: 70%;
 }
-.industry-ads-selector-container select, .investment-google-search-ads input, .investment-google-display-ads input, .investment-facebook-ads input, .email-ammount-container select {
+
+.industry-ads-selector-container select,
+.investment-google-search-ads input,
+.investment-google-display-ads input,
+.investment-facebook-ads input,
+.email-ammount-container select {
   min-width: fit-content;
   height: fit-content;
 }
@@ -101,17 +140,20 @@ p {
   height: auto;
   overflow: hidden;
 }
+
 .results-container {
   transition: opacity 1s ease-out;
   opacity: 0;
   height: 0;
   overflow: hidden;
 }
+
 .titlesCollapse {
   display: flex;
   flex-direction: row;
   align-items: center;
 }
+
 .titlesCollapse p {
   flex-wrap: wrap;
   overflow-wrap: normal;
@@ -119,27 +161,32 @@ p {
   margin-bottom: 0;
   padding: 2px;
 }
-.calculateButton, .calculateAgainButton {
+
+.calculateButton,
+.calculateAgainButton {
   width: fit-content;
   white-space: nowrap;
 }
 
 button:focus {
-  outline:none !important;
+  outline: none !important;
   box-shadow: none !important;
 }
+
 .iconsToRotate {
   margin: 10px;
   color: #0d6efd;
   -webkit-transition: -webkit-transform .2s ease-in-out;
   -ms-transition: -ms-transform .2s ease-in-out;
-  transition: transform .2s ease-in-out; 
+  transition: transform .2s ease-in-out;
 }
+
 .rotateIcons {
-	transform:rotate(-90deg);
-  -ms-transform:rotate(-90deg);
-  -webkit-transform:rotate(-90deg);
+  transform: rotate(-90deg);
+  -ms-transform: rotate(-90deg);
+  -webkit-transform: rotate(-90deg);
 }
+
 .card-header {
   cursor: pointer;
 }
@@ -148,31 +195,41 @@ button:focus {
   body {
     padding: 20px 10px;
   }
-  p, ul {
+
+  p,
+  ul {
     font-size: 0.8rem;
   }
+
   .card-header {
     padding: .5rem .5rem;
   }
+
   .iconsToRotate {
     margin-left: 0px;
   }
-  .industry-ads-selector-container, .investment-google-search-ads, .investment-google-display-ads, .investment-facebook-ads, .email-ammount-container {
+
+  .industry-ads-selector-container,
+  .investment-google-search-ads,
+  .investment-google-display-ads,
+  .investment-facebook-ads,
+  .email-ammount-container {
     flex-direction: column;
   }
 }
+
 @media (min-width: 500px) {
   body {
     padding: 35px 25px;
   }
 }
+
 @media (min-width: 1000px) {
   body {
     padding: 35px 70px;
   }
-  
+
   .country-announce-container {
     width: 60% !important;
   }
 }
-
