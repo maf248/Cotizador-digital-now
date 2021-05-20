@@ -1286,13 +1286,13 @@ function calculate() {
             errorMessages.innerHTML = 'Debes agregar mínimo un país a la lista';
             errorType = 5;
         } else if (completeFormValidate[5] == false && completeFormValidate[6] == false && completeFormValidate[7] == false) {
-            errorMessages.innerHTML = 'Debes introducir montos a invertir en Google Ads Search, Google Ads Display y Facebook Ads   ';
+            errorMessages.innerHTML = 'Debes introducir montos a invertir en Google Ads Red de Busquedas, Google Ads Red de Display y Facebook Ads   ';
             errorType = 6;
         } else if (completeFormValidate[5] == false) {
-            errorMessages.innerHTML = 'Debes introducir el monto a invertir en Google Ads Search';
+            errorMessages.innerHTML = 'Debes introducir el monto a invertir en Google Ads Red de Busquedas';
             errorType = 6;
         } else if (completeFormValidate[6] == false) {
-            errorMessages.innerHTML = 'Debes introducir el monto a invertir en Google Ads Display';
+            errorMessages.innerHTML = 'Debes introducir el monto a invertir en Google Ads Red de Display';
             errorType = 7;
         } else if (completeFormValidate[7] == false) {
             errorMessages.innerHTML = 'Debes introducir el monto a invertir en Facebook Ads';
@@ -1737,14 +1737,14 @@ function calculate() {
             googleSearchAdsConversions.innerHTML = `${googleAdsSearchConversionsValue.toFixed(2).replace(".", ",")} conversiones`;
             /*-Se completa el cajón "costo de inversion en medios mensual total"-*/
             totalInvestmentMonthly += Number(investmentGoogleSearchAdsAmmount.value);
-            resultInvestmentsMonthlyDetail.innerHTML += `<li style="margin-top: 10px"><strong>‣ Google Ads Search:</strong> USD ${investmentGoogleSearchAdsAmmount.value} de inversión mensual</li>`;
+            resultInvestmentsMonthlyDetail.innerHTML += `<li style="margin-top: 10px"><strong>‣ Google Ads Red de Busquedas:</strong> USD ${investmentGoogleSearchAdsAmmount.value} de inversión mensual</li>`;
             /*--Se guardan los nombres y valores de inversion y fees mensuales--*/
             arrayAgencyMantainanceSelected.push({
-                name: "Google Ads Search",
+                name: "Google Ads Red de Busquedas",
                 value: googleSearchAdsManteinanceValue
             });
             arrayInvestmentSelected.push({
-                name: "Google Ads Search",
+                name: "Google Ads Red de Busquedas",
                 value: investmentGoogleSearchAdsAmmount.value
             })
         } else {
@@ -1799,14 +1799,14 @@ function calculate() {
             googleDisplayAdsConversions.innerHTML = `${googleAdsDisplayConversionsValue.toFixed(2).replace(".", ",")} conversiones`;
             /*-Se completa el cajón "costo de inversion en medios mensual total"-*/
             totalInvestmentMonthly += Number(investmentGoogleDisplayAdsAmmount.value);
-            resultInvestmentsMonthlyDetail.innerHTML += `<li style="margin-top: 10px"><strong>‣ Google Ads Display:</strong> USD ${investmentGoogleDisplayAdsAmmount.value} de inversión mensual</li>`;
+            resultInvestmentsMonthlyDetail.innerHTML += `<li style="margin-top: 10px"><strong>‣ Google Ads Red de Display:</strong> USD ${investmentGoogleDisplayAdsAmmount.value} de inversión mensual</li>`;
             /*--Se guardan los nombres y valores de inversion y fees mensuales--*/
             arrayAgencyMantainanceSelected.push({
-                name: "Google Ads Display",
+                name: "Google Ads Red de Display",
                 value: googleDisplayAdsManteinanceValue
             });
             arrayInvestmentSelected.push({
-                name: "Google Ads Display",
+                name: "Google Ads Red de Display",
                 value: investmentGoogleDisplayAdsAmmount.value
             });
         } else {
@@ -2135,7 +2135,7 @@ function calculate() {
         }
         
         if (!email.checked && !googleSearchAds.checked && !googleDisplayAds.checked && !facebookAds.checked) {
-            resultInvestmentsMonthlyDetail.innerHTML = '<li>No has seleccionado ninguna inversión en medios digitales. <small>(Ej: Google Ads Search, Google Ads Display, Facebook Ads o Email Marketing)</small></li>'
+            resultInvestmentsMonthlyDetail.innerHTML = '<li>No has seleccionado ninguna inversión en medios digitales. <small>(Ej: Google Ads Red de Busquedas, Google Ads Red de Display, Facebook Ads o Email Marketing)</small></li>'
         }
 
         /*---Se setean los valores totales de los cajónes, es decir las sumas de valores de c/u---*/
