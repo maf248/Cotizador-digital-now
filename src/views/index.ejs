@@ -1,38 +1,46 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title><%= title %></title>
-    <link rel="icon" href="favicon.ico">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Kodchasan&display=swap" rel="stylesheet">
-    <link rel='stylesheet' href='/stylesheets/style.css' />
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!---jQuery 3.6.0--->
-    <script  src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
-    <!---Bootstrap 5.0.0--->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous"></script>
-    <!---Font Awesome--->
-    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
-    <!---Script Principal--->
-    <script src="/javascripts/cotizador.js" defer></script>
-  </head>
-  <body>
+
+<head>
+  <title><%= title %></title>
+  <link rel="icon" href="favicon.ico">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Kodchasan&display=swap" rel="stylesheet">
+  <link rel='stylesheet' href='/stylesheets/style.css' />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!---jQuery 3.6.0--->
+  <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+    crossorigin="anonymous"></script>
+  <!---Bootstrap 5.0.0--->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css"
+    integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js"
+    integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous">
+  </script>
+  <!---Font Awesome--->
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+    integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+  <!---Script Principal--->
+  <script src="/javascripts/cotizador.js" defer></script>
+</head>
+
+<body>
   <div class="container-fluid">
     <div class="row">
       <div class="col-3 col-md-2 col-lg-1">
         <a href="https://digitalnow.com.ar/">
-          <img src="//digitalnow.com.ar/wp-content/uploads/2020/05/Logo-Digital-now.png" alt="Digital Now | Agencia de Marketing Online en Argentina" class="digitalNowLogo">
+          <img src="//digitalnow.com.ar/wp-content/uploads/2020/05/Logo-Digital-now.png"
+            alt="Digital Now | Agencia de Marketing Online en Argentina" class="digitalNowLogo">
         </a>
       </div>
-      <div class="col-9 col-md-10 col-lg-11"> 
+      <div class="col-9 col-md-10 col-lg-11">
         <h1 class="text-center"><%= title %></h1>
       </div>
     </div>
-    
+
     <form action="" class="form-calculate-container" id="form-calculate-container">
       <h4 style="margin-top: 20px;">¿De qué país es el proveedor de servicios que querés contratar?</h4>
-      <div class="country-supplier-container">    
+      <div class="country-supplier-container">
         <select name="country-supplier" id="country-supplier">
           <option value="argentina">Argentina</option>
           <option value="australia">Australia</option>
@@ -52,7 +60,7 @@
           <option value="republicaCheca">República Checa</option>
           <option value="republicaDominicana">República Dominicana</option>
           <option value="sudafrica">Sudafrica</option>
-          <option value="ucrania">Ucrania</option>                
+          <option value="ucrania">Ucrania</option>
           <option value="venezuela">Venezuela</option>
         </select>
       </div>
@@ -60,7 +68,8 @@
       <div class="services-container card">
         <div>
           <input type="checkbox" name="google-search-ads" id="google-search-ads" class="services-check">
-          <label for="google-facebook-ads">Google Ads Red de Busquedas <small>(Anuncios en búsquedas de Google)</small></label>
+          <label for="google-facebook-ads">Google Ads Red de Busquedas <small>(Anuncios en búsquedas de
+              Google)</small></label>
         </div>
         <div>
           <input type="checkbox" name="google-display-ads" id="google-display-ads" class="services-check">
@@ -84,46 +93,49 @@
           <input type="checkbox" name="conversionWeb" id="conversionWeb" class="services-check">
           <label for="conversionWeb">Optimización de tasa de conversión web</label>
         </div>
-        
-        
-          <div>
-            <input type="checkbox" name="disenoWeb" id="disenoWeb" class="services-check">
-            <label for="disenoWeb">Diseño Web</label>
-          </div>
-        
-          <fieldset id="disenoWebServicesContainer" class="disenoWebServicesContainer">
-            <div class="card" style="flex-direction: column; align-items: flex-start;">
-              <div>
-                <input type="checkbox" name="landing-page" id="landingPage" class="services-check">
-                <label for="landing-page">Plan Básico: "Landing Page" <small>(10 horas)</small></label>
-              </div>
-              <div>
-                <input type="checkbox" name="wordpress" id="wordpress" class="services-check">
-                <label for="wordpress">Plan Intermedio: "Sitio web en base a plantilla prediseñada de 5 secciones" <small>(25 horas)</small></label>
-              </div>
-              <div>
-                <input type="checkbox" name="custom-website" id="customWebsite" class="services-check">
-                <label for="custom-website">Plan Avanzado: "Sitio web con diseño personalizado" <small>(50 horas)</small></label>
-              </div> 
-              <div>
-                <input type="checkbox" name="ecommerce-web" id="ecommerceWeb" class="services-check">
-                <label for="ecommerce-web">Sitio web de Ecommerce en CMS como WooCommerce o Shopify <small>(Carga de 50 productos)</small></label>
-              </div>     
-              <div>
-                <input type="checkbox" name="logo-marca" id="logoMarca" class="services-check">
-                <label for="logo-marca">Diseño de logo e identidad de marca <small>(10 horas)</small></label>
-              </div>
+
+
+        <div>
+          <input type="checkbox" name="disenoWeb" id="disenoWeb" class="services-check">
+          <label for="disenoWeb">Diseño Web</label>
+        </div>
+
+        <fieldset id="disenoWebServicesContainer" class="disenoWebServicesContainer">
+          <div class="card" style="flex-direction: column; align-items: flex-start;">
+            <div>
+              <input type="checkbox" name="landing-page" id="landingPage" class="services-check">
+              <label for="landing-page">Plan Básico: "Landing Page" <small>(10 horas)</small></label>
             </div>
-          </fieldset>
-        
-        
+            <div>
+              <input type="checkbox" name="wordpress" id="wordpress" class="services-check">
+              <label for="wordpress">Plan Intermedio: "Sitio web en base a plantilla prediseñada de 5 secciones"
+                <small>(25 horas)</small></label>
+            </div>
+            <div>
+              <input type="checkbox" name="custom-website" id="customWebsite" class="services-check">
+              <label for="custom-website">Plan Avanzado: "Sitio web con diseño personalizado" <small>(50
+                  horas)</small></label>
+            </div>
+            <div>
+              <input type="checkbox" name="ecommerce-web" id="ecommerceWeb" class="services-check">
+              <label for="ecommerce-web">Sitio web de Ecommerce en CMS como WooCommerce o Shopify <small>(Carga de 50
+                  productos)</small></label>
+            </div>
+            <div>
+              <input type="checkbox" name="logo-marca" id="logoMarca" class="services-check">
+              <label for="logo-marca">Diseño de logo e identidad de marca <small>(10 horas)</small></label>
+            </div>
+          </div>
+        </fieldset>
+
+
         <div>
           <input type="checkbox" name="email" id="email" class="services-check">
           <label for="email">Email Marketing</label>
         </div>
-        
+
       </div>
-      
+
       <div class="services-extra-container card">
 
         <div id="google-search-ads-extra-container" class="google-search-ads-extra-container">
@@ -135,14 +147,17 @@
               <option value="intermediate">Intermedio</option>
               <option value="advanced">Avanzado</option>
             </select>
-            <ul id="google-search-plan-details" style="list-style-type: circle;"><u>Incluye:</u> <li>3hs de implementación (por única vez)</li> <li>2hs de mantenimiento mensual</li></ul>
+            <ul id="google-search-plan-details" style="list-style-type: circle;"><u>Incluye:</u>
+              <li>3hs de implementación (por única vez)</li>
+              <li>2hs de mantenimiento mensual</li>
+            </ul>
           </div>
           <div id="investment-google-search-ads" class="investment-google-search-ads">
             <label for="investment-google-search-ads-value">Introduce el monto en USD de inversión:</label>
             <input type="number" placeholder="Ej: USD $ 30" name="investment-google-search-ads-value">
           </div>
         </div>
-        
+
         <div id="google-display-ads-extra-container" class="google-display-ads-extra-container">
           <h6 class="text-center mt-2"><u>Google Ads Display:</u></h6>
           <div class="google-display-plan-container">
@@ -152,7 +167,10 @@
               <option value="intermediate">Intermedio</option>
               <option value="advanced">Avanzado</option>
             </select>
-            <ul id="google-display-plan-details" style="list-style-type: circle;"><u>Incluye:</u> <li>3hs de implementación (por única vez)</li> <li>2hs de mantenimiento mensual</li></ul>
+            <ul id="google-display-plan-details" style="list-style-type: circle;"><u>Incluye:</u>
+              <li>3hs de implementación (por única vez)</li>
+              <li>2hs de mantenimiento mensual</li>
+            </ul>
           </div>
           <div id="investment-google-display-ads" class="investment-google-display-ads">
             <label for="investment-google-display-ads-value">Introduce el monto en USD de inversión:</label>
@@ -169,7 +187,10 @@
               <option value="intermediate">Intermedio</option>
               <option value="advanced">Avanzado</option>
             </select>
-            <ul id="facebook-ads-plan-details" style="list-style-type: circle;"><u>Incluye:</u> <li>4hs de implementación (por única vez)</li> <li>2hs de mantenimiento mensual</li></ul>
+            <ul id="facebook-ads-plan-details" style="list-style-type: circle;"><u>Incluye:</u>
+              <li>4hs de implementación (por única vez)</li>
+              <li>2hs de mantenimiento mensual</li>
+            </ul>
           </div>
           <div id="investment-facebook-ads" class="investment-facebook-ads">
             <label for="investment-facebook-ads-value">Introduce el monto en USD de inversión:</label>
@@ -200,11 +221,11 @@
               <option value="viajes">Viajes</option>
             </select>
           </div>
-        
+
           <div class="country-announce-container" id="country-announce-container">
             <h5 style="text-align: center;">¿En qué país querés que aparezcan tus anuncios?</h5>
             <div class="country-announce-selector">
-              <input list="country-announce-list" id="country-announce"/>
+              <input list="country-announce-list" id="country-announce" />
               <datalist name="country-announce-list" id="country-announce-list">
                 <option value="Albania" data-value="albania">
                 <option value="Alemania" data-value="alemania">
@@ -301,20 +322,21 @@
                 <option value="Turquía" data-value="turquia">
                 <option value="Ucrania" data-value="ucrania">
                 <option value="Uganda" data-value="uganda">
-                <option value="Uruguay" data-value="uruguay">                
+                <option value="Uruguay" data-value="uruguay">
                 <option value="Venezuela" data-value="venezuela">
                 <option value="Vietnam" data-value="vietnam">
                 <option value="Zimbabue" data-value="zimbabue">
               </datalist>
               <form>
-                <button type="button" class=" btn-primary" id="add-country-announce"><i class="fas fa-plus"></i></button>
+                <button type="button" class=" btn-primary" id="add-country-announce"><i
+                    class="fas fa-plus"></i></button>
               </form>
             </div>
             <div class="selected-country-announce" id="selected-country-announce">
             </div>
           </div>
         </div>
-        
+
         <div class="community-management-extra-container" id="community-management-extra-container">
           <h6 class="text-center mt-2"><u>Community Management:</u></h6>
           <div class="community-management-plan-container">
@@ -324,7 +346,10 @@
               <option value="intermediate">Intermedio</option>
               <option value="advanced">Avanzado</option>
             </select>
-            <ul id="community-management-plan-details" style="list-style-type: circle;"><u>Incluye:</u> <li>2hs de implementación (por única vez)</li> <li>8hs de mantenimiento mensual</li></ul>
+            <ul id="community-management-plan-details" style="list-style-type: circle;"><u>Incluye:</u>
+              <li>2hs de implementación (por única vez)</li>
+              <li>8hs de mantenimiento mensual</li>
+            </ul>
           </div>
         </div>
 
@@ -337,7 +362,10 @@
               <option value="intermediate">Intermedio</option>
               <option value="advanced">Avanzado</option>
             </select>
-            <ul id="seo-plan-details" style="list-style-type: circle;"><u>Incluye:</u> <li>4hs de implementación (por única vez)</li> <li>8hs de mantenimiento mensual</li></ul>
+            <ul id="seo-plan-details" style="list-style-type: circle;"><u>Incluye:</u>
+              <li>4hs de implementación (por única vez)</li>
+              <li>8hs de mantenimiento mensual</li>
+            </ul>
           </div>
         </div>
 
@@ -350,7 +378,10 @@
               <option value="intermediate">Intermedio</option>
               <option value="advanced">Avanzado</option>
             </select>
-            <ul id="conversion-web-plan-details" style="list-style-type: circle;"><u>Incluye:</u> <li>4hs de implementación (por única vez)</li> <li>4hs de mantenimiento mensual</li></ul>
+            <ul id="conversion-web-plan-details" style="list-style-type: circle;"><u>Incluye:</u>
+              <li>4hs de implementación (por única vez)</li>
+              <li>4hs de mantenimiento mensual</li>
+            </ul>
           </div>
         </div>
 
@@ -363,10 +394,13 @@
               <option value="intermediate">Intermedio</option>
               <option value="advanced">Avanzado</option>
             </select>
-            <ul id="email-marketing-plan-details" style="list-style-type: circle;"><u>Incluye:</u> <li>1 Envio mensual (2hs de mantenimiento)</li></ul>
+            <ul id="email-marketing-plan-details" style="list-style-type: circle;"><u>Incluye:</u>
+              <li>1 Envio mensual (2hs de mantenimiento)</li>
+            </ul>
           </div>
           <div class="email-ammount-container">
-            <label for="email-ammount">Introduce el número de contactos deseado en tus campañas, para estimar el costo mensual de la plataforma de envíos:</label>
+            <label for="email-ammount">Introduce el número de contactos deseado en tus campañas, para estimar el costo
+              mensual de la plataforma de envíos:</label>
             <select name="email-ammount" id="email-ammount">
               <option value="">-</option>
               <option value="12">1.000</option>
@@ -400,40 +434,46 @@
       </div>
       <p id="error-messages" class="error-messages"></p>
       <div class="d-flex justify-content-center">
-        <button type="reset" class="btn calculateAgainButton btn-primary d-none" id="calculateAgainButton"><i class="fas fa-undo-alt"></i> Volver a calcular</button>
-        <button type="submit" class="btn calculateButton btn-primary" id="calculateButton"><i class="fas fa-calculator"></i> Calcular</button>
-      </div>        
-        
+        <button type="reset" class="btn calculateAgainButton btn-primary d-none" id="calculateAgainButton"><i
+            class="fas fa-undo-alt"></i> Volver a calcular</button>
+        <button type="submit" class="btn calculateButton btn-primary" id="calculateButton"><i
+            class="fas fa-calculator"></i> Calcular</button>
+      </div>
+
     </form>
 
     <section class="results-container" id="results-container">
       <h3 class="text-decoration-underline m-3">Resultados:</h3>
 
       <div id="result-googleads-facebookads-container" style="display: none;">
-        
+
         <div id="accordionMonthlyTotals">
           <div class="card">
-            <div class="card-header" id="headingMonthlyTotals" data-toggle="collapse" data-target="#collapseMonthlyTotals" aria-expanded="false" aria-controls="collapseMonthlyTotals">
+            <div class="card-header" id="headingMonthlyTotals" data-toggle="collapse"
+              data-target="#collapseMonthlyTotals" aria-expanded="false" aria-controls="collapseMonthlyTotals">
               <h6 class="mb-0 titlesCollapse">
                 <i class="iconsToRotate fas fa-angle-double-down"></i>
-                <p><u>Resultados totales por mes:</u>  <strong id="total-conversions"></strong> conversiones totales</p>
+                <p><u>Resultados totales por mes:</u> <strong id="total-conversions"></strong> conversiones totales</p>
               </h6>
             </div>
-        
-            <div id="collapseMonthlyTotals" class="collapse" aria-labelledby="headingMonthlyTotals" data-parent="#accordionMonthlyTotals">
+
+            <div id="collapseMonthlyTotals" class="collapse" aria-labelledby="headingMonthlyTotals"
+              data-parent="#accordionMonthlyTotals">
               <div class="card-body">
-                
+
                 <div id="result-google-search-ads-container" style="display: none">
                   <div id="accordionGSAds">
                     <div class="card">
-                      <div class="card-header" id="headingGSAds" data-toggle="collapse" data-target="#collapseGSAds" aria-expanded="false" aria-controls="collapseGSAds">
+                      <div class="card-header" id="headingGSAds" data-toggle="collapse" data-target="#collapseGSAds"
+                        aria-expanded="false" aria-controls="collapseGSAds">
                         <h6 class="mb-0 titlesCollapse">
                           <i class="iconsToRotate fas fa-angle-down"></i>
-                          <p><u>Google Ads Search:</u>  <span id="google-search-ads-conversions"></span></p>
+                          <p><u>Google Ads Search:</u> <span id="google-search-ads-conversions"></span></p>
                         </h6>
                       </div>
-                  
-                      <div id="collapseGSAds" class="collapse" aria-labelledby="headingGSAds" data-parent="#accordionGSAds">
+
+                      <div id="collapseGSAds" class="collapse" aria-labelledby="headingGSAds"
+                        data-parent="#accordionGSAds">
                         <div class="card-body">
                           <div id="result-google-search" style="margin: 10px"></div>
                         </div>
@@ -441,18 +481,20 @@
                     </div>
                   </div>
                 </div>
-      
+
                 <div id="result-google-display-ads-container" style="display: none">
                   <div id="accordionGDAds">
                     <div class="card">
-                      <div class="card-header" id="headingGDAds" data-toggle="collapse" data-target="#collapseGDAds" aria-expanded="false" aria-controls="collapseGDAds">
+                      <div class="card-header" id="headingGDAds" data-toggle="collapse" data-target="#collapseGDAds"
+                        aria-expanded="false" aria-controls="collapseGDAds">
                         <h6 class="mb-0 titlesCollapse">
                           <i class="iconsToRotate fas fa-angle-down"></i>
-                          <p><u>Google Ads Display:</u>  <span id="google-display-ads-conversions"></span></p>
+                          <p><u>Google Ads Display:</u> <span id="google-display-ads-conversions"></span></p>
                         </h6>
                       </div>
-                  
-                      <div id="collapseGDAds" class="collapse" aria-labelledby="headingGDAds" data-parent="#accordionGDAds">
+
+                      <div id="collapseGDAds" class="collapse" aria-labelledby="headingGDAds"
+                        data-parent="#accordionGDAds">
                         <div class="card-body">
                           <div id="result-google-display" style="margin: 10px"></div>
                         </div>
@@ -460,18 +502,20 @@
                     </div>
                   </div>
                 </div>
-      
+
                 <div id="result-facebook-ads-container" style="display: none">
                   <div id="accordionFbAds">
                     <div class="card">
-                      <div class="card-header" id="headingFbAds" data-toggle="collapse" data-target="#collapseFbAds" aria-expanded="false" aria-controls="collapseFbAds">
+                      <div class="card-header" id="headingFbAds" data-toggle="collapse" data-target="#collapseFbAds"
+                        aria-expanded="false" aria-controls="collapseFbAds">
                         <h6 class="mb-0 titlesCollapse">
                           <i class="iconsToRotate fas fa-angle-down"></i>
-                          <p><u>Facebook Ads:</u>  <span id="facebook-ads-conversions"></span></p>
+                          <p><u>Facebook Ads:</u> <span id="facebook-ads-conversions"></span></p>
                         </h6>
                       </div>
-                  
-                      <div id="collapseFbAds" class="collapse" aria-labelledby="headingFbAds" data-parent="#accordionFbAds">
+
+                      <div id="collapseFbAds" class="collapse" aria-labelledby="headingFbAds"
+                        data-parent="#accordionFbAds">
                         <div class="card-body">
                           <div id="result-facebook-ads" style="margin: 10px"></div>
                         </div>
@@ -479,7 +523,7 @@
                     </div>
                   </div>
                 </div>
-      
+
 
               </div>
             </div>
@@ -487,38 +531,540 @@
         </div>
       </div>
 
-      <div id="result-agency-once-fee-container">
+      <div id="result-implementation-container">
         <div id="accordionOne">
           <div class="card">
-            <div class="card-header" id="headingOne" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+            <div class="card-header" id="headingOne" data-toggle="collapse" data-target="#collapseOne"
+              aria-expanded="false" aria-controls="collapseOne">
               <h6 class="mb-0 titlesCollapse">
                 <i class="iconsToRotate fas fa-angle-double-down"></i>
-                <p><u>Costo de servicios de implementación (1 vez):</u>  <span id="result-agency-once-fee"></span></p>
+                <p><u>Costo de servicios de implementación (1 vez):</u> <span id="result-implementation-fee"></span></p>
               </h6>
             </div>
-        
+
             <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionOne">
               <div class="card-body">
-              <ul id="result-agency-once-fee-details" style="list-style-type: none"></ul>
+
+
+                <div id="result-implementation-conversionWeb-container" style="display: none">
+                  <div id="accordion-conversionWeb">
+                    <div class="card">
+                      <div class="card-header" id="heading-conversionWeb" data-toggle="collapse"
+                        data-target="#collapse-conversionWeb" aria-expanded="false"
+                        aria-controls="collapse-conversionWeb">
+                        <h6 class="mb-0 titlesCollapse">
+                          <i class="iconsToRotate fas fa-angle-down"></i>
+                          <p id="title-implementation-conversionWeb"></p>
+                        </h6>
+                      </div>
+
+                      <div id="collapse-conversionWeb" class="collapse" aria-labelledby="heading-conversionWeb"
+                        data-parent="#accordion-conversionWeb">
+                        <div class="card-body">
+                          <div id="result-implementation-conversionWeb"></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div id="result-implementation-seo-container" style="display: none">
+                  <div id="accordion-seo">
+                    <div class="card">
+                      <div class="card-header" id="heading-seo" data-toggle="collapse" data-target="#collapse-seo"
+                        aria-expanded="false" aria-controls="collapse-seo">
+                        <h6 class="mb-0 titlesCollapse">
+                          <i class="iconsToRotate fas fa-angle-down"></i>
+                          <p id="title-implementation-seo"></p>
+                        </h6>
+                      </div>
+
+                      <div id="collapse-seo" class="collapse" aria-labelledby="heading-seo"
+                        data-parent="#accordion-seo">
+                        <div class="card-body">
+                          <div id="result-implementation-seo"></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div id="result-implementation-communityManagement-container" style="display: none">
+                  <div id="accordion-communityManagement">
+                    <div class="card">
+                      <div class="card-header" id="heading-communityManagement" data-toggle="collapse"
+                        data-target="#collapse-communityManagement" aria-expanded="false"
+                        aria-controls="collapse-communityManagement">
+                        <h6 class="mb-0 titlesCollapse">
+                          <i class="iconsToRotate fas fa-angle-down"></i>
+                          <p id="title-implementation-communityManagement"></p>
+                        </h6>
+                      </div>
+
+                      <div id="collapse-communityManagement" class="collapse"
+                        aria-labelledby="heading-communityManagement" data-parent="#accordion-communityManagement">
+                        <div class="card-body">
+                          <div id="result-implementation-communityManagement"></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div id="result-implementation-googleSearchAds-container" style="display: none">
+                  <div id="accordion-googleSearchAds">
+                    <div class="card">
+                      <div class="card-header" id="heading-googleSearchAds" data-toggle="collapse"
+                        data-target="#collapse-googleSearchAds" aria-expanded="false"
+                        aria-controls="collapse-googleSearchAds">
+                        <h6 class="mb-0 titlesCollapse">
+                          <i class="iconsToRotate fas fa-angle-down"></i>
+                          <p id="title-implementation-googleSearchAds"></p>
+                        </h6>
+                      </div>
+
+                      <div id="collapse-googleSearchAds" class="collapse" aria-labelledby="heading-googleSearchAds"
+                        data-parent="#accordion-googleSearchAds">
+                        <div class="card-body">
+                          <div id="result-implementation-googleSearchAds"></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div id="result-implementation-googleDisplayAds-container" style="display: none">
+                  <div id="accordion-googleDisplayAds">
+                    <div class="card">
+                      <div class="card-header" id="heading-googleDisplayAds" data-toggle="collapse"
+                        data-target="#collapse-googleDisplayAds" aria-expanded="false"
+                        aria-controls="collapse-googleDisplayAds">
+                        <h6 class="mb-0 titlesCollapse">
+                          <i class="iconsToRotate fas fa-angle-down"></i>
+                          <p id="title-implementation-googleDisplayAds"></p>
+                        </h6>
+                      </div>
+
+                      <div id="collapse-googleDisplayAds" class="collapse" aria-labelledby="heading-googleDisplayAds"
+                        data-parent="#accordion-googleDisplayAds">
+                        <div class="card-body">
+                          <div id="result-implementation-googleDisplayAds"></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div id="result-implementation-facebookAds-container" style="display: none">
+                  <div id="accordion-facebookAds">
+                    <div class="card">
+                      <div class="card-header" id="heading-facebookAds" data-toggle="collapse"
+                        data-target="#collapse-facebookAds" aria-expanded="false" aria-controls="collapse-facebookAds">
+                        <h6 class="mb-0 titlesCollapse">
+                          <i class="iconsToRotate fas fa-angle-down"></i>
+                          <p id="title-implementation-facebookAds"></p>
+                        </h6>
+                      </div>
+
+                      <div id="collapse-facebookAds" class="collapse" aria-labelledby="heading-facebookAds"
+                        data-parent="#accordion-facebookAds">
+                        <div class="card-body">
+                          <div id="result-implementation-facebookAds"></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div id="result-implementation-landingPage-container" style="display: none">
+                  <div id="accordion-landingPage">
+                    <div class="card">
+                      <div class="card-header" id="heading-landingPage" data-toggle="collapse"
+                        data-target="#collapse-landingPage" aria-expanded="false" aria-controls="collapse-landingPage">
+                        <h6 class="mb-0 titlesCollapse">
+                          <i class="iconsToRotate fas fa-angle-down"></i>
+                          <p id="title-implementation-landingPage"></p>
+                        </h6>
+                      </div>
+
+                      <div id="collapse-landingPage" class="collapse" aria-labelledby="heading-landingPage"
+                        data-parent="#accordion-landingPage">
+                        <div class="card-body">
+                          <div id="result-implementation-landingPage"></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div id="result-implementation-wordpress-container" style="display: none">
+                  <div id="accordion-wordpress">
+                    <div class="card">
+                      <div class="card-header" id="heading-wordpress" data-toggle="collapse"
+                        data-target="#collapse-wordpress" aria-expanded="false" aria-controls="collapse-wordpress">
+                        <h6 class="mb-0 titlesCollapse">
+                          <i class="iconsToRotate fas fa-angle-down"></i>
+                          <p id="title-implementation-wordpress"></p>
+                        </h6>
+                      </div>
+
+                      <div id="collapse-wordpress" class="collapse" aria-labelledby="heading-wordpress"
+                        data-parent="#accordion-wordpress">
+                        <div class="card-body">
+                          <div id="result-implementation-wordpress"></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div id="result-implementation-customWebsite-container" style="display: none">
+                  <div id="accordion-customWebsite">
+                    <div class="card">
+                      <div class="card-header" id="heading-customWebsite" data-toggle="collapse"
+                        data-target="#collapse-customWebsite" aria-expanded="false"
+                        aria-controls="collapse-customWebsite">
+                        <h6 class="mb-0 titlesCollapse">
+                          <i class="iconsToRotate fas fa-angle-down"></i>
+                          <p id="title-implementation-customWebsite"></p>
+                        </h6>
+                      </div>
+
+                      <div id="collapse-customWebsite" class="collapse" aria-labelledby="heading-customWebsite"
+                        data-parent="#accordion-customWebsite">
+                        <div class="card-body">
+                          <div id="result-implementation-customWebsite"></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div id="result-implementation-ecommerceWeb-container" style="display: none">
+                  <div id="accordion-ecommerceWeb">
+                    <div class="card">
+                      <div class="card-header" id="heading-ecommerceWeb" data-toggle="collapse"
+                        data-target="#collapse-ecommerceWeb" aria-expanded="false"
+                        aria-controls="collapse-ecommerceWeb">
+                        <h6 class="mb-0 titlesCollapse">
+                          <i class="iconsToRotate fas fa-angle-down"></i>
+                          <p id="title-implementation-ecommerceWeb"></p>
+                        </h6>
+                      </div>
+
+                      <div id="collapse-ecommerceWeb" class="collapse" aria-labelledby="heading-ecommerceWeb"
+                        data-parent="#accordion-ecommerceWeb">
+                        <div class="card-body">
+                          <div id="result-implementation-ecommerceWeb"></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div id="result-implementation-logoYMarca-container" style="display: none">
+                  <div id="accordion-logoYMarca">
+                    <div class="card">
+                      <div class="card-header" id="heading-logoYMarca" data-toggle="collapse"
+                        data-target="#collapse-logoYmarca" aria-expanded="false" aria-controls="collapse-logoYmarca">
+                        <h6 class="mb-0 titlesCollapse">
+                          <i class="iconsToRotate fas fa-angle-down"></i>
+                          <p id="title-implementation-logoYMarca"></p>
+                        </h6>
+                      </div>
+
+                      <div id="collapse-logoYmarca" class="collapse" aria-labelledby="heading-logoYMarca"
+                        data-parent="#accordion-logoYMarca">
+                        <div class="card-body">
+                          <div id="result-implementation-logoYMarca"></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+
               </div>
             </div>
           </div>
         </div>
       </div>
 
-      <div id="result-agency-monthly-fee-container">
+      <div id="result-maintenance-container">
         <div id="accordionTwo">
           <div class="card">
-            <div class="card-header" id="headingTwo" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+            <div class="card-header" id="headingTwo" data-toggle="collapse" data-target="#collapseTwo"
+              aria-expanded="false" aria-controls="collapseTwo">
               <h6 class="mb-0 titlesCollapse">
                 <i class="iconsToRotate fas fa-angle-double-down"></i>
-                <p><u>Costo mensual de servicios de mantenimiento (1 vez):</u>  <span id="result-agency-monthly-fee"></span></p>
+                <p><u>Costo mensual de servicios de mantenimiento (1 vez):</u> <span id="result-maintenance-fee"></span>
+                </p>
               </h6>
             </div>
-        
+
             <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionTwo">
               <div class="card-body">
-                <ul id="result-agency-monthly-fee-details" style="list-style-type: none"></ul>
+
+
+                <div id="result-maintenance-email-container" style="display: none">
+                  <div id="accordion-email">
+                    <div class="card">
+                      <div class="card-header" id="heading-email" data-toggle="collapse" data-target="#collapse-email"
+                        aria-expanded="false" aria-controls="collapse-email">
+                        <h6 class="mb-0 titlesCollapse">
+                          <i class="iconsToRotate fas fa-angle-down"></i>
+                          <p id="title-maintenance-email"></p>
+                        </h6>
+                      </div>
+
+                      <div id="collapse-email" class="collapse" aria-labelledby="heading-email"
+                        data-parent="#accordion-email">
+                        <div class="card-body">
+                          <div id="result-maintenance-email"></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div id="result-maintenance-conversionWeb-container" style="display: none">
+                  <div id="accordion-conversionWeb">
+                    <div class="card">
+                      <div class="card-header" id="heading-conversionWeb" data-toggle="collapse"
+                        data-target="#collapse-conversionWeb" aria-expanded="false"
+                        aria-controls="collapse-conversionWeb">
+                        <h6 class="mb-0 titlesCollapse">
+                          <i class="iconsToRotate fas fa-angle-down"></i>
+                          <p id="title-maintenance-conversionWeb"></p>
+                        </h6>
+                      </div>
+
+                      <div id="collapse-conversionWeb" class="collapse" aria-labelledby="heading-conversionWeb"
+                        data-parent="#accordion-conversionWeb">
+                        <div class="card-body">
+                          <div id="result-maintenance-conversionWeb"></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div id="result-maintenance-seo-container" style="display: none">
+                  <div id="accordion-seo">
+                    <div class="card">
+                      <div class="card-header" id="heading-seo" data-toggle="collapse" data-target="#collapse-seo"
+                        aria-expanded="false" aria-controls="collapse-seo">
+                        <h6 class="mb-0 titlesCollapse">
+                          <i class="iconsToRotate fas fa-angle-down"></i>
+                          <p id="title-maintenance-seo"></p>
+                        </h6>
+                      </div>
+
+                      <div id="collapse-seo" class="collapse" aria-labelledby="heading-seo"
+                        data-parent="#accordion-seo">
+                        <div class="card-body">
+                          <div id="result-maintenance-seo"></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div id="result-maintenance-communityManagement-container" style="display: none">
+                  <div id="accordion-communityManagement">
+                    <div class="card">
+                      <div class="card-header" id="heading-communityManagement" data-toggle="collapse"
+                        data-target="#collapse-communityManagement" aria-expanded="false"
+                        aria-controls="collapse-communityManagement">
+                        <h6 class="mb-0 titlesCollapse">
+                          <i class="iconsToRotate fas fa-angle-down"></i>
+                          <p id="title-maintenance-communityManagement"></p>
+                        </h6>
+                      </div>
+
+                      <div id="collapse-communityManagement" class="collapse"
+                        aria-labelledby="heading-communityManagement" data-parent="#accordion-communityManagement">
+                        <div class="card-body">
+                          <div id="result-maintenance-communityManagement"></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div id="result-maintenance-googleSearchAds-container" style="display: none">
+                  <div id="accordion-googleSearchAds">
+                    <div class="card">
+                      <div class="card-header" id="heading-googleSearchAds" data-toggle="collapse"
+                        data-target="#collapse-googleSearchAds" aria-expanded="false"
+                        aria-controls="collapse-googleSearchAds">
+                        <h6 class="mb-0 titlesCollapse">
+                          <i class="iconsToRotate fas fa-angle-down"></i>
+                          <p id="title-maintenance-googleSearchAds"></p>
+                        </h6>
+                      </div>
+
+                      <div id="collapse-googleSearchAds" class="collapse" aria-labelledby="heading-googleSearchAds"
+                        data-parent="#accordion-googleSearchAds">
+                        <div class="card-body">
+                          <div id="result-maintenance-googleSearchAds"></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div id="result-maintenance-googleDisplayAds-container" style="display: none">
+                  <div id="accordion-googleDisplayAds">
+                    <div class="card">
+                      <div class="card-header" id="heading-googleDisplayAds" data-toggle="collapse"
+                        data-target="#collapse-googleDisplayAds" aria-expanded="false"
+                        aria-controls="collapse-googleDisplayAds">
+                        <h6 class="mb-0 titlesCollapse">
+                          <i class="iconsToRotate fas fa-angle-down"></i>
+                          <p id="title-maintenance-googleDisplayAds"></p>
+                        </h6>
+                      </div>
+
+                      <div id="collapse-googleDisplayAds" class="collapse" aria-labelledby="heading-googleDisplayAds"
+                        data-parent="#accordion-googleDisplayAds">
+                        <div class="card-body">
+                          <div id="result-maintenance-googleDisplayAds"></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div id="result-maintenance-facebookAds-container" style="display: none">
+                  <div id="accordion-facebookAds">
+                    <div class="card">
+                      <div class="card-header" id="heading-facebookAds" data-toggle="collapse"
+                        data-target="#collapse-facebookAds" aria-expanded="false" aria-controls="collapse-facebookAds">
+                        <h6 class="mb-0 titlesCollapse">
+                          <i class="iconsToRotate fas fa-angle-down"></i>
+                          <p id="title-maintenance-facebookAds"></p>
+                        </h6>
+                      </div>
+
+                      <div id="collapse-facebookAds" class="collapse" aria-labelledby="heading-facebookAds"
+                        data-parent="#accordion-facebookAds">
+                        <div class="card-body">
+                          <div id="result-maintenance-facebookAds"></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div id="result-maintenance-landingPage-container" style="display: none">
+                  <div id="accordion-landingPage">
+                    <div class="card">
+                      <div class="card-header" id="heading-landingPage" data-toggle="collapse"
+                        data-target="#collapse-landingPage" aria-expanded="false" aria-controls="collapse-landingPage">
+                        <h6 class="mb-0 titlesCollapse">
+                          <i class="iconsToRotate fas fa-angle-down"></i>
+                          <p id="title-maintenance-landingPage"></p>
+                        </h6>
+                      </div>
+
+                      <div id="collapse-landingPage" class="collapse" aria-labelledby="heading-landingPage"
+                        data-parent="#accordion-landingPage">
+                        <div class="card-body">
+                          <div id="result-maintenance-landingPage"></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div id="result-maintenance-wordpress-container" style="display: none">
+                  <div id="accordion-wordpress">
+                    <div class="card">
+                      <div class="card-header" id="heading-wordpress" data-toggle="collapse"
+                        data-target="#collapse-wordpress" aria-expanded="false" aria-controls="collapse-wordpress">
+                        <h6 class="mb-0 titlesCollapse">
+                          <i class="iconsToRotate fas fa-angle-down"></i>
+                          <p id="title-maintenance-wordpress"></p>
+                        </h6>
+                      </div>
+
+                      <div id="collapse-wordpress" class="collapse" aria-labelledby="heading-wordpress"
+                        data-parent="#accordion-wordpress">
+                        <div class="card-body">
+                          <div id="result-maintenance-wordpress"></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div id="result-maintenance-customWebsite-container" style="display: none">
+                  <div id="accordion-customWebsite">
+                    <div class="card">
+                      <div class="card-header" id="heading-customWebsite" data-toggle="collapse"
+                        data-target="#collapse-customWebsite" aria-expanded="false"
+                        aria-controls="collapse-customWebsite">
+                        <h6 class="mb-0 titlesCollapse">
+                          <i class="iconsToRotate fas fa-angle-down"></i>
+                          <p id="title-maintenance-customWebsite"></p>
+                        </h6>
+                      </div>
+
+                      <div id="collapse-customWebsite" class="collapse" aria-labelledby="heading-customWebsite"
+                        data-parent="#accordion-customWebsite">
+                        <div class="card-body">
+                          <div id="result-maintenance-customWebsite"></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div id="result-maintenance-ecommerceWeb-container" style="display: none">
+                  <div id="accordion-ecommerceWeb">
+                    <div class="card">
+                      <div class="card-header" id="heading-ecommerceWeb" data-toggle="collapse"
+                        data-target="#collapse-ecommerceWeb" aria-expanded="false"
+                        aria-controls="collapse-ecommerceWeb">
+                        <h6 class="mb-0 titlesCollapse">
+                          <i class="iconsToRotate fas fa-angle-down"></i>
+                          <p id="title-maintenance-ecommerceWeb"></p>
+                        </h6>
+                      </div>
+
+                      <div id="collapse-ecommerceWeb" class="collapse" aria-labelledby="heading-ecommerceWeb"
+                        data-parent="#accordion-ecommerceWeb">
+                        <div class="card-body">
+                          <div id="result-maintenance-ecommerceWeb"></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div id="result-maintenance-logoYMarca-container" style="display: none">
+                  <div id="accordion-logoYMarca">
+                    <div class="card">
+                      <div class="card-header" id="heading-logoYMarca" data-toggle="collapse"
+                        data-target="#collapse-logoYmarca" aria-expanded="false" aria-controls="collapse-logoYmarca">
+                        <h6 class="mb-0 titlesCollapse">
+                          <i class="iconsToRotate fas fa-angle-down"></i>
+                          <p id="title-maintenance-logoYMarca"></p>
+                        </h6>
+                      </div>
+
+                      <div id="collapse-logoYmarca" class="collapse" aria-labelledby="heading-logoYMarca"
+                        data-parent="#accordion-logoYMarca">
+                        <div class="card-body">
+                          <div id="result-maintenance-logoYMarca"></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                
               </div>
             </div>
           </div>
@@ -528,13 +1074,15 @@
       <div id="result-investments-monthly-container">
         <div id="accordionThree">
           <div class="card">
-            <div class="card-header" id="headingThree" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+            <div class="card-header" id="headingThree" data-toggle="collapse" data-target="#collapseThree"
+              aria-expanded="false" aria-controls="collapseThree">
               <h6 class="mb-0 titlesCollapse">
                 <i class="iconsToRotate fas fa-angle-double-down"></i>
-                <p><u>Costo mensual de inversión en medios (total):</u>  <span id="result-investments-monthly"></span></p>
+                <p><u>Costo mensual de inversión en medios (total):</u> <span id="result-investments-monthly"></span>
+                </p>
               </h6>
             </div>
-        
+
             <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionThree">
               <div class="card-body">
                 <ul id="result-investments-monthly-details" style="list-style-type: none"></ul>
@@ -547,23 +1095,26 @@
       <div id="result-monthly-total-container">
         <div id="accordionFour">
           <div class="card">
-            <div class="card-header" id="headingFour" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+            <div class="card-header" id="headingFour" data-toggle="collapse" data-target="#collapseFour"
+              aria-expanded="false" aria-controls="collapseFour">
               <h6 class="mb-0 titlesCollapse">
                 <i class="iconsToRotate fas fa-angle-double-down"></i>
-                <p><u>Costo total mensual (Fee de servicio + inversión en medios):</u>  <span id="result-monthly-total"></span></p>
+                <p><u>Costo total mensual (Fee de servicio + inversión en medios):</u> <span
+                    id="result-monthly-total"></span></p>
               </h6>
             </div>
-        
+
             <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionFour">
-              <div class="card-body" >
+              <div class="card-body">
                 <ul id="result-monthly-total-detail" style="list-style-type: none"></ul>
               </div>
             </div>
           </div>
         </div>
       </div>
-      
+
     </section>
   </div>
-  </body>
+</body>
+
 </html>

@@ -767,8 +767,8 @@ var googleSearchAdsResultContainer = qs('#result-google-search-ads-container');
 var googleDisplayAdsResultContainer = qs('#result-google-display-ads-container');
 var facebookAdsResultContainer = qs('#result-facebook-ads-container');
 
-var resultAgencyOnceFeeContainer = qs('#result-agency-once-fee-container');
-var resultAgencyMonthlyFeeContainer = qs('#result-agency-monthly-fee-container');
+var resultImplementationContainer = qs('#result-implementation-container');
+var resultMaintenanceContainer = qs('#result-maintenance-container');
 var resultInvestmentsMonthlyContainer = qs('#result-investments-monthly-container');
 var resultMonthlyTotalContainer = qs('#result-monthly-total-container');
 
@@ -817,10 +817,85 @@ var resultGoogleFacebookAds = qs('#result-googleads-facebookads');
 var resultGoogleSearch = qs('#result-google-search');
 var resultGoogleDisplay = qs('#result-google-display');
 var resultFacebookAds = qs('#result-facebook-ads');
+/*--Se capturan los bloques que muestran RESULTADOS, los sub-cajones de implementación--*/
+var resultImplementationConversionWebContainer = qs('#result-implementation-conversionWeb-container');
+var resultImplementationSeoContainer = qs('#result-implementation-seo-container');
+var resultImplementationCommunityManagementContainer = qs('#result-implementation-communityManagement-container');
+var resultImplementationGoogleSearchAdsContainer = qs('#result-implementation-googleSearchAds-container');
+var resultImplementationGoogleDisplayAdsContainer = qs('#result-implementation-googleDisplayAds-container');
+var resultImplementationFacebookAdsContainer = qs('#result-implementation-facebookAds-container');
+var resultImplementationLandingPageContainer = qs('#result-implementation-landingPage-container');
+var resultImplementationWordpressContainer = qs('#result-implementation-wordpress-container');
+var resultImplementationCustomWebsiteContainer = qs('#result-implementation-customWebsite-container');
+var resultImplementationEcommerceWebContainer = qs('#result-implementation-ecommerceWeb-container');
+var resultImplementationLogoYMarcaContainer = qs('#result-implementation-logoYMarca-container');
+/*--Se capturan los bloques que muestran RESULTADOS, los sub-cajones de implementación--*/
+var resultMaintenanceEmailContainer = qs('#result-maintenance-email-container');
+var resultMaintenanceConversionWebContainer = qs('#result-maintenance-conversionWeb-container');
+var resultMaintenanceSeoContainer = qs('#result-maintenance-seo-container');
+var resultMaintenanceCommunityManagementContainer = qs('#result-maintenance-communityManagement-container');
+var resultMaintenanceGoogleSearchAdsContainer = qs('#result-maintenance-googleSearchAds-container');
+var resultMaintenanceGoogleDisplayAdsContainer = qs('#result-maintenance-googleDisplayAds-container');
+var resultMaintenanceFacebookAdsContainer = qs('#result-maintenance-facebookAds-container');
+var resultMaintenanceLandingPageContainer = qs('#result-maintenance-landingPage-container');
+var resultMaintenanceWordpressContainer = qs('#result-maintenance-wordpress-container');
+var resultMaintenanceCustomWebsiteContainer = qs('#result-maintenance-customWebsite-container');
+var resultMaintenanceEcommerceWebContainer = qs('#result-maintenance-ecommerceWeb-container');
+var resultMaintenanceLogoYMarcaContainer = qs('#result-maintenance-logoYMarca-container');
+/*--Se capturan los TITULOS de los Sub-cajones de implementación--*/
+var titleImplementationConversionWeb = qs('#title-implementation-conversionWeb');
+var titleImplementationSeo = qs('#title-implementation-seo');
+var titleImplementationCommunityManagement = qs('#title-implementation-communityManagement');
+var titleImplementationGoogleSearchAds = qs('#title-implementation-googleSearchAds');
+var titleImplementationGoogleDisplayAds = qs('#title-implementation-googleDisplayAds');
+var titleImplementationFacebookAds = qs('#title-implementation-facebookAds');
+var titleImplementationLandingPage = qs('#title-implementation-landingPage');
+var titleImplementationWordpress = qs('#title-implementation-wordpress');
+var titleImplementationCustomWebsite = qs('#title-implementation-customWebsite');
+var titleImplementationEcommerceWeb = qs('#title-implementation-ecommerceWeb');
+var titleImplementationLogoYMarca = qs('#title-implementation-logoYMarca');
+/*--Se capturan los TITULOS de los Sub-cajones de mantenimiento--*/
+var titleMaintenanceEmail = qs('#title-maintenance-email');
+var titleMaintenanceConversionWeb = qs('#title-maintenance-conversionWeb');
+var titleMaintenanceSeo = qs('#title-maintenance-seo');
+var titleMaintenanceCommunityManagement = qs('#title-maintenance-communityManagement');
+var titleMaintenanceGoogleSearchAds = qs('#title-maintenance-googleSearchAds');
+var titleMaintenanceGoogleDisplayAds = qs('#title-maintenance-googleDisplayAds');
+var titleMaintenanceFacebookAds = qs('#title-maintenance-facebookAds');
+var titleMaintenanceLandingPage = qs('#title-maintenance-landingPage');
+var titleMaintenanceWordpress = qs('#title-maintenance-wordpress');
+var titleMaintenanceCustomWebsite = qs('#title-maintenance-customWebsite');
+var titleMaintenanceEcommerceWeb = qs('#title-maintenance-ecommerceWeb');
+var titleMaintenanceLogoYMarca = qs('#title-maintenance-logoYMarca');
+/*--Se capturan los CONTENIDOS de los Sub-cajones de implementación--*/
+var resultImplementationConversionWeb = qs('#result-implementation-conversionWeb');
+var resultImplementationSeo = qs('#result-implementation-seo');
+var resultImplementationCommunityManagement = qs('#result-implementation-communityManagement');
+var resultImplementationGoogleSearchAds = qs('#result-implementation-googleSearchAds');
+var resultImplementationGoogleDisplayAds = qs('#result-implementation-googleDisplayAds');
+var resultImplementationFacebookAds = qs('#result-implementation-facebookAds');
+var resultImplementationLandingPage = qs('#result-implementation-landingPage');
+var resultImplementationWordpress = qs('#result-implementation-wordpress');
+var resultImplementationCustomWebsite = qs('#result-implementation-customWebsite');
+var resultImplementationEcommerceWeb = qs('#result-implementation-ecommerceWeb');
+var resultImplementationLogoYMarca = qs('#result-implementation-logoYMarca');
+/*--Se capturan los CONTENIDOS de los Sub-cajones de mantenimiento--*/
+var resultMaintenanceEmail = qs('#result-maintenance-email');
+var resultMaintenanceConversionWeb = qs('#result-maintenance-conversionWeb');
+var resultMaintenanceSeo = qs('#result-maintenance-seo');
+var resultMaintenanceCommunityManagement = qs('#result-maintenance-communityManagement');
+var resultMaintenanceGoogleSearchAds = qs('#result-maintenance-googleSearchAds');
+var resultMaintenanceGoogleDisplayAds = qs('#result-maintenance-googleDisplayAds');
+var resultMaintenanceFacebookAds = qs('#result-maintenance-facebookAds');
+var resultMaintenanceLandingPage = qs('#result-maintenance-landingPage');
+var resultMaintenanceWordpress = qs('#result-maintenance-wordpress');
+var resultMaintenanceCustomWebsite = qs('#result-maintenance-customWebsite');
+var resultMaintenanceEcommerceWeb = qs('#result-maintenance-ecommerceWeb');
+var resultMaintenanceLogoYMarca = qs('#result-maintenance-logoYMarca');
 
 /*--Se capturan los resultados numericos de cada servicio--*/
-var resultAgencyOnceFee = qs('#result-agency-once-fee');
-var resultAgencyMonthlyFee = qs('#result-agency-monthly-fee');
+var resultImplementationFee = qs('#result-implementation-fee');
+var resultMaintenanceFee = qs('#result-maintenance-fee');
 var resultInvestmentsMonthly = qs('#result-investments-monthly');
 var resultMonthlyTotal = qs('#result-monthly-total');
 
@@ -830,9 +905,7 @@ var googleDisplayAdsConversions = qs('#google-display-ads-conversions');
 var facebookAdsConversions = qs('#facebook-ads-conversions');
 var totalConversions = qs('#total-conversions');
 
-/*--Se capturan los contenedores de detalles de resultados p/ c/ servicio--*/
-var resultAgencyOnceFeeDetail = qs("#result-agency-once-fee-details");
-var resultAgencyMonthlyFeeDetail = qs("#result-agency-monthly-fee-details");
+/*--Se capturan los contenedores de detalles de resultados de inversiones y totales mensuales--*/
 var resultInvestmentsMonthlyDetail = qs("#result-investments-monthly-details");
 var resultMonthlyTotalDetail = qs('#result-monthly-total-detail');
 
@@ -1188,8 +1261,6 @@ function calculate() {
     resultGoogleDisplay.innerHTML = '';
     resultFacebookAds.innerHTML = '';
 
-    resultAgencyOnceFeeDetail.innerHTML = '';
-    resultAgencyMonthlyFeeDetail.innerHTML = '';
     resultInvestmentsMonthlyDetail.innerHTML = '';
     resultMonthlyTotalDetail.innerHTML = '';
 
@@ -1421,7 +1492,7 @@ function calculate() {
         /*---Se muestran los resultados particulares de email marketing solamente si esta opcion fue seleccionada---*/
         if (email.checked) {
             /*--Se ocultan los fees de implementacion (por unica vez), ya que este plan no tiene---*/
-            resultAgencyOnceFeeContainer.style.display = "none";
+            resultImplementationContainer.style.display = "none";
             /*--Muestra el valor correspondiente a la cantidad de contactos seleccionados---*/
             totalInvestmentMonthly += Number(emailAmmount.value);
             resultInvestmentsMonthlyDetail.innerHTML += `<li style="margin-top: 10px"><strong>‣ Email Marketing</strong> USD ${emailAmmount.value} de inversión mensual <small>(Campaña para ${emailAmmount.options[emailAmmount.selectedIndex].text} contactos)</small></li>`;
@@ -1437,7 +1508,10 @@ function calculate() {
                 /*--Se genera la descripcion de mantenimiento mensual para este servicio en el plan seleccionado---*/
                 maintenanceContent += `<ul><li>${services.emailMarketing.maintenance[emailMarketingPlan.value].hours[i]} horas de ${services.emailMarketing.maintenance[emailMarketingPlan.value].skillsAcquired[i]} a ${services.emailMarketing.maintenance[emailMarketingPlan.value].skillsPrices[i]} USD la hora, que hace lo siguiente:</li> ${services.emailMarketing.maintenance[emailMarketingPlan.value].content[i]}</ul>`;
             })
-            resultAgencyMonthlyFeeDetail.innerHTML += `<li style="margin-top: 10px"><u><strong>‣ Email Marketing </strong> (Plan ${emailMarketingPlan.options[emailMarketingPlan.selectedIndex].text} - ${services.emailMarketing.maintenance[emailMarketingPlan.value].deliversPerMonth} ${services.emailMarketing.maintenance[emailMarketingPlan.value].deliversPerMonth <= 1 ? 'envío mensual' : 'envíos mensuales'}):</u> ${maintenanceContent}</li>`;
+            /*--Se activa el cajon de mantenimiento con el sub-cajon de email marketing, inyectando titulo y contenido--*/
+            resultMaintenanceEmailContainer.style.display = "block";
+            titleMaintenanceEmail.innerHTML = `<u><strong>Email Marketing </strong> (Plan ${emailMarketingPlan.options[emailMarketingPlan.selectedIndex].text} - ${services.emailMarketing.maintenance[emailMarketingPlan.value].deliversPerMonth} ${services.emailMarketing.maintenance[emailMarketingPlan.value].deliversPerMonth <= 1 ? 'envío mensual' : 'envíos mensuales'}) :</u>`;
+            resultMaintenanceEmail.innerHTML += `${maintenanceContent}`;
 
             /*--Se guardan los nombres y valores de inversion y fees mensuales--*/
             arrayInvestmentSelected.push({
@@ -1450,6 +1524,8 @@ function calculate() {
                 name: "Email Marketing",
                 value: emailMarketingValueToPush
             });
+        } else {
+            resultMaintenanceEmailContainer.style.display = "none";
         }
         /*---Se muestran los resultados particulares de conversion web solamente si esta opcion fue seleccionada---*/
         if (conversionWeb.checked) {
@@ -1466,15 +1542,18 @@ function calculate() {
                 /*--Se genera la descripcion de mantenimiento mensual para este servicio en el plan seleccionado---*/ 
                 maintenanceContent += `<ul><li>${services.conversionWeb.maintenance[conversionWebPlan.value].hours[i]} horas de ${services.conversionWeb.maintenance[conversionWebPlan.value].skillsAcquired[i]} a ${services.conversionWeb.maintenance[conversionWebPlan.value].skillsPrices[i]} USD la hora, que hace lo siguiente:</li> ${services.conversionWeb.maintenance[conversionWebPlan.value].content[i]}</ul>`;
             })
-            /*-Se cargan los resultados de mantenimiento para este servicio con el plan seleccionado-*/
-            resultAgencyMonthlyFeeDetail.innerHTML += `<li style="margin-top: 10px"><u><strong>‣ Optimización de tasa de conversión web </strong> (Plan ${conversionWebPlan.options[conversionWebPlan.selectedIndex].text}):</u> ${maintenanceContent}</li>`;
+            /*--Se activa el cajon de mantenimiento con el sub-cajon de conversion web, inyectando titulo y contenido para el plan seleccionado--*/
+            resultMaintenanceConversionWebContainer.style.display = "block";
+            titleMaintenanceConversionWeb.innerHTML = `<u><strong>Optimización de tasa de conversión web </strong> (Plan ${conversionWebPlan.options[conversionWebPlan.selectedIndex].text}) :</u>`;
+            resultMaintenanceConversionWeb.innerHTML = `${maintenanceContent}`;
+
             agencyMonthlyFeeValue += conversionWebManteinanceValue;
 
             /*-para IMPLEMENTACIÓN-*/
             let implementationContent = '';
             var conversionWebImplementationValue = 0;
             if (conversionWebPlan.value == 'basic' || conversionWebPlan.value == 'advanced') {
-                resultAgencyOnceFeeContainer.style.display = "block";
+                resultImplementationContainer.style.display = "block";
 
                 services.conversionWeb.implementation[conversionWebPlan.value].skillsAcquired.forEach((skill, i) => {
                     skills.names.forEach((name, j) => {
@@ -1485,12 +1564,15 @@ function calculate() {
                     /*--Se genera la descripcion de implementación para este servicio en el plan seleccionado---*/ 
                     implementationContent += `<ul><li>${services.conversionWeb.implementation[conversionWebPlan.value].hours[i]} horas de ${services.conversionWeb.implementation[conversionWebPlan.value].skillsAcquired[i]} a ${services.conversionWeb.implementation[conversionWebPlan.value].skillsPrices[i]} USD la hora, que hace lo siguiente:</li> ${services.conversionWeb.implementation[conversionWebPlan.value].content[i]}</ul>`;
                 })
-                /*-Se cargan los resultados de implementacion para este servicio con el plan seleccionado-*/
-                resultAgencyOnceFeeDetail.innerHTML += `<li style="margin-top: 10px"><u><strong>‣ Optimización de tasa de conversión web </strong> (Plan ${conversionWebPlan.options[conversionWebPlan.selectedIndex].text}):</u> ${implementationContent}</li>`;
+                /*--Se activa el cajon de implementación con el sub-cajon de conversion web, inyectando titulo y contenido para el plan seleccionado--*/
+                resultImplementationConversionWebContainer.style.display = "block";
+                titleImplementationConversionWeb.innerHTML = `<u><strong>Optimización de tasa de conversión web </strong> (Plan ${conversionWebPlan.options[conversionWebPlan.selectedIndex].text}) :</u>`;
+                resultImplementationConversionWeb.innerHTML = `${implementationContent}`;
                 agencyOnceFeeValue += conversionWebImplementationValue;
                 
             } else {
-                resultAgencyOnceFeeContainer.style.display = "none";
+                resultImplementationContainer.style.display = "none";
+                resultImplementationConversionWebContainer.style.display = "none";
             }
             
             /*--Se guardan los valores de mantenimiento para mostrar en el contenedor "costo total mensual"--*/
@@ -1498,11 +1580,14 @@ function calculate() {
                 name: "Optimización de tasa de conversión web",
                 value: conversionWebManteinanceValue
             });
+        } else {
+            resultMaintenanceConversionWebContainer.style.display = "none";
+            resultImplementationConversionWebContainer.style.display = "none";
         }
         /*---Se muestran los resultados particulares de SEO solamente si esta opcion fue seleccionada---*/
         if (seo.checked) {
             /*--Se muestran los fees de implementacion (por unica vez)---*/
-            resultAgencyOnceFeeContainer.style.display = "block";
+            resultImplementationContainer.style.display = "block";
             /*--Se guardan los detalles de skills que incluye este servicio---*/
             /*-para MANTENIMIENTO-*/
             let maintenanceContent = '';
@@ -1516,8 +1601,10 @@ function calculate() {
                 /*--Se genera la descripcion de mantenimiento mensual para este servicio en el plan seleccionado---*/ 
                 maintenanceContent += `<ul><li>${services.seo.maintenance[seoPlan.value].hours[i]} horas de ${services.seo.maintenance[seoPlan.value].skillsAcquired[i]} a ${services.seo.maintenance[seoPlan.value].skillsPrices[i]} USD la hora, que hace lo siguiente:</li> ${services.seo.maintenance[seoPlan.value].content[i]}</ul>`;
             })
-            /*-Se cargan los resultados de mantenimiento para este servicio con el plan seleccionado-*/
-            resultAgencyMonthlyFeeDetail.innerHTML += `<li style="margin-top: 10px"><u><strong>‣ SEO </strong> (Plan ${seoPlan.options[seoPlan.selectedIndex].text}):</u> ${maintenanceContent}</li>`;
+            /*--Se activa el cajon de mantenimiento con el sub-cajon de SEO, inyectando titulo y contenido para el plan seleccionado--*/
+            resultMaintenanceSeoContainer.style.display = "block";
+            titleMaintenanceSeo.innerHTML = `<u><strong>SEO </strong> (Plan ${seoPlan.options[seoPlan.selectedIndex].text}) :</u> `;
+            resultMaintenanceSeo.innerHTML = `${maintenanceContent}`;
             agencyMonthlyFeeValue += seoManteinanceValue;
 
             /*-para IMPLEMENTACIÓN-*/
@@ -1532,8 +1619,11 @@ function calculate() {
                 /*--Se genera la descripcion de implementación para este servicio en el plan seleccionado---*/ 
                 implementationContent += `<ul><li>${services.seo.implementation[seoPlan.value].hours[i]} horas de ${services.seo.implementation[seoPlan.value].skillsAcquired[i]} a ${services.seo.implementation[seoPlan.value].skillsPrices[i]} USD la hora, que hace lo siguiente:</li> ${services.seo.implementation[seoPlan.value].content[i]}</ul>`;
             })
-            /*-Se cargan los resultados de implementacion para este servicio con el plan seleccionado-*/
-            resultAgencyOnceFeeDetail.innerHTML += `<li style="margin-top: 10px"><u><strong>‣ SEO </strong> (Plan ${seoPlan.options[seoPlan.selectedIndex].text}):</u> ${implementationContent}</li>`;
+            /*--Se activa el cajon de implementación con el sub-cajon de SEO, inyectando titulo y contenido para el plan seleccionado--*/
+            resultImplementationSeoContainer.style.display = "block";
+            titleImplementationSeo.innerHTML = `<u><strong>SEO </strong> (Plan ${seoPlan.options[seoPlan.selectedIndex].text}) :</u>`;
+            resultImplementationSeo.innerHTML = `${implementationContent}`;
+
             agencyOnceFeeValue += seoImplementationValue;
 
             /*--Se guardan los valores de mantenimiento para mostrar en el contenedor "costo total mensual"--*/
@@ -1541,11 +1631,14 @@ function calculate() {
                 name: "SEO",
                 value: seoManteinanceValue
             });
+        } else {
+            resultMaintenanceSeoContainer.style.display = "none";
+            resultImplementationSeoContainer.style.display = "none";
         }
         /*---Se muestran los resultados particulares de Community Management solamente si esta opcion fue seleccionada---*/
         if (communityManagement.checked) {
             /*--Se muestran los fees de implementacion (por unica vez)---*/
-            resultAgencyOnceFeeContainer.style.display = "block";
+            resultImplementationContainer.style.display = "block";
              /*--Se guardan los detalles de skills que incluye este servicio---*/
             /*-para MANTENIMIENTO-*/
             let maintenanceContent = '';
@@ -1559,8 +1652,11 @@ function calculate() {
                 /*--Se genera la descripcion de mantenimiento mensual para este servicio en el plan seleccionado---*/ 
                 maintenanceContent += `<ul><li>${services.communityManagement.maintenance[communityManagementPlan.value].hours[i]} horas de ${services.communityManagement.maintenance[communityManagementPlan.value].skillsAcquired[i]} a ${services.communityManagement.maintenance[communityManagementPlan.value].skillsPrices[i]} USD la hora, que hace lo siguiente:</li> ${services.communityManagement.maintenance[communityManagementPlan.value].content[i]}</ul>`;
             })
-            /*-Se cargan los resultados de mantenimiento para este servicio con el plan seleccionado-*/
-            resultAgencyMonthlyFeeDetail.innerHTML += `<li style="margin-top: 10px"><u><strong>‣ Community Management </strong> (Plan ${communityManagementPlan.options[communityManagementPlan.selectedIndex].text}):</u> ${maintenanceContent}</li>`;
+            /*--Se activa el cajon de mantenimiento con el sub-cajon de Community Management, inyectando titulo y contenido para el plan seleccionado--*/
+            resultMaintenanceCommunityManagementContainer.style.display = "block";
+            titleMaintenanceCommunityManagement.innerHTML = `<u><strong>Community Management </strong> (Plan ${communityManagementPlan.options[communityManagementPlan.selectedIndex].text}) :</u>`;
+            resultMaintenanceCommunityManagement.innerHTML = ` ${maintenanceContent}`;
+            
             agencyMonthlyFeeValue += communityManagementManteinanceValue;
 
             /*-para IMPLEMENTACIÓN-*/
@@ -1575,20 +1671,25 @@ function calculate() {
                 /*--Se genera la descripcion de implementación para este servicio en el plan seleccionado---*/ 
                 implementationContent += `<ul><li>${services.communityManagement.implementation[communityManagementPlan.value].hours[i]} horas de ${services.communityManagement.implementation[communityManagementPlan.value].skillsAcquired[i]} a ${services.communityManagement.implementation[communityManagementPlan.value].skillsPrices[i]} USD la hora, que hace lo siguiente:</li> ${services.communityManagement.implementation[communityManagementPlan.value].content[i]}</ul>`;
             })
-             /*-Se cargan los resultados de implementacion para este servicio con el plan seleccionado-*/
-             resultAgencyOnceFeeDetail.innerHTML += `<li style="margin-top: 10px"><u><strong>‣ Community Management </strong> (Plan ${communityManagementPlan.options[communityManagementPlan.selectedIndex].text}):</u> ${implementationContent}</li>`;
-             agencyOnceFeeValue += communityManagementImplementationValue;
+            /*--Se activa el cajon de implementación con el sub-cajon de Community Management, inyectando titulo y contenido para el plan seleccionado--*/
+            resultImplementationCommunityManagementContainer.style.display = "block";
+            titleImplementationCommunityManagement.innerHTML = `<u><strong>Community Management </strong> (Plan ${communityManagementPlan.options[communityManagementPlan.selectedIndex].text}) :</u>`;
+            resultImplementationCommunityManagement.innerHTML = `${implementationContent}`;
+            agencyOnceFeeValue += communityManagementImplementationValue;
 
              /*--Se guardan los valores de mantenimiento para mostrar en el contenedor "costo total mensual"--*/
              arrayAgencyMantainanceSelected.push({
                  name: "Community Management",
                  value: communityManagementManteinanceValue
              });
+        } else {
+            resultMaintenanceCommunityManagementContainer.style.display = "none";
+            resultImplementationCommunityManagementContainer.style.display = "none";
         }
         /*---Se muestran los resultados particulares de Google Search Ads solamente si esta opcion fue seleccionada---*/
         if (googleSearchAds.checked) {
             /*--Se muestran los fees de implementacion (por unica vez)---*/
-            resultAgencyOnceFeeContainer.style.display = "block";
+            resultImplementationContainer.style.display = "block";
              /*--Se guardan los detalles de skills que incluye este servicio---*/
             /*-para MANTENIMIENTO-*/
             let maintenanceContent = '';
@@ -1602,8 +1703,11 @@ function calculate() {
                 /*--Se genera la descripcion de mantenimiento mensual para este servicio en el plan seleccionado---*/ 
                 maintenanceContent += `<ul><li>${services.googleSearchAds.maintenance[googleSearchAdsPlan.value].hours[i]} horas de ${services.googleSearchAds.maintenance[googleSearchAdsPlan.value].skillsAcquired[i]} a ${services.googleSearchAds.maintenance[googleSearchAdsPlan.value].skillsPrices[i]} USD la hora, que hace lo siguiente:</li> ${services.googleSearchAds.maintenance[googleSearchAdsPlan.value].content[i]}</ul>`;
             })
-            /*-Se cargan los resultados de mantenimiento para este servicio con el plan seleccionado-*/
-            resultAgencyMonthlyFeeDetail.innerHTML += `<li style="margin-top: 10px"><u><strong>‣ Google Ads Red de Busquedas </strong> (Plan ${googleSearchAdsPlan.options[googleSearchAdsPlan.selectedIndex].text}):</u> ${maintenanceContent}</li>`;
+            /*--Se activa el cajon de mantenimiento con el sub-cajon de Google Search Ads, inyectando titulo y contenido para el plan seleccionado--*/
+            resultMaintenanceGoogleSearchAdsContainer.style.display = "block";
+            titleMaintenanceGoogleSearchAds.innerHTML = `<u><strong>Google Ads Red de Busquedas </strong> (Plan ${googleSearchAdsPlan.options[googleSearchAdsPlan.selectedIndex].text}) :</u>`;
+            resultMaintenanceGoogleSearchAds.innerHTML = `${maintenanceContent}`;
+
             agencyMonthlyFeeValue += googleSearchAdsManteinanceValue;
 
             /*-para IMPLEMENTACIÓN-*/
@@ -1618,9 +1722,12 @@ function calculate() {
                 /*--Se genera la descripcion de implementación para este servicio en el plan seleccionado---*/ 
                 implementationContent += `<ul><li>${services.googleSearchAds.implementation[googleSearchAdsPlan.value].hours[i]} horas de ${services.googleSearchAds.implementation[googleSearchAdsPlan.value].skillsAcquired[i]} a ${services.googleSearchAds.implementation[googleSearchAdsPlan.value].skillsPrices[i]} USD la hora, que hace lo siguiente:</li> ${services.googleSearchAds.implementation[googleSearchAdsPlan.value].content[i]}</ul>`;
             })
-             /*-Se cargan los resultados de implementacion para este servicio con el plan seleccionado-*/
-             resultAgencyOnceFeeDetail.innerHTML += `<li style="margin-top: 10px"><u><strong>‣ Google Ads Red de Busquedas </strong> (Plan ${googleSearchAdsPlan.options[googleSearchAdsPlan.selectedIndex].text}):</u> ${implementationContent}</li>`;
-             agencyOnceFeeValue += googleSearchAdsImplementationValue;
+            /*--Se activa el cajon de implementación con el sub-cajon de Google Search Ads, inyectando titulo y contenido para el plan seleccionado--*/
+            resultImplementationGoogleSearchAdsContainer.style.display = "block";
+            titleImplementationGoogleSearchAds.innerHTML = `<u><strong>Google Ads Red de Busquedas </strong> (Plan ${googleSearchAdsPlan.options[googleSearchAdsPlan.selectedIndex].text}) :</u>`;
+            resultImplementationGoogleSearchAds.innerHTML = `${implementationContent}`;
+
+            agencyOnceFeeValue += googleSearchAdsImplementationValue;
 
             /*----Se completa la información de conversiones----*/
             totalConversions.innerHTML = `${totalConversionsValue.toFixed(2).replace(".", ",")}`;
@@ -1637,11 +1744,14 @@ function calculate() {
                 name: "Google Ads Search",
                 value: investmentGoogleSearchAdsAmmount.value
             })
+        } else {
+            resultMaintenanceGoogleSearchAdsContainer.style.display = "none";
+            resultImplementationGoogleSearchAdsContainer.style.display = "none";
         }
         /*---Se muestran los resultados particulares de Google Display Ads solamente si esta opcion fue seleccionada---*/
         if (googleDisplayAds.checked) {
             /*--Se muestran los fees de implementacion (por unica vez)---*/
-            resultAgencyOnceFeeContainer.style.display = "block";
+            resultImplementationContainer.style.display = "block";
              /*--Se guardan los detalles de skills que incluye este servicio---*/
             /*-para MANTENIMIENTO-*/
             let maintenanceContent = '';
@@ -1655,8 +1765,11 @@ function calculate() {
                 /*--Se genera la descripcion de mantenimiento mensual para este servicio en el plan seleccionado---*/ 
                 maintenanceContent += `<ul><li>${services.googleDisplayAds.maintenance[googleDisplayAdsPlan.value].hours[i]} horas de ${services.googleDisplayAds.maintenance[googleDisplayAdsPlan.value].skillsAcquired[i]} a ${services.googleDisplayAds.maintenance[googleDisplayAdsPlan.value].skillsPrices[i]} USD la hora, que hace lo siguiente:</li> ${services.googleDisplayAds.maintenance[googleDisplayAdsPlan.value].content[i]}</ul>`;
             })
-            /*-Se cargan los resultados de mantenimiento para este servicio con el plan seleccionado-*/
-            resultAgencyMonthlyFeeDetail.innerHTML += `<li style="margin-top: 10px"><u><strong>‣ Google Ads Red de Display </strong> (Plan ${googleDisplayAdsPlan.options[googleDisplayAdsPlan.selectedIndex].text}):</u> ${maintenanceContent}</li>`;
+            /*--Se activa el cajon de mantenimiento con el sub-cajon de Google Display Ads, inyectando titulo y contenido para el plan seleccionado--*/
+            resultMaintenanceGoogleDisplayAdsContainer.style.display = "block";
+            titleMaintenanceGoogleDisplayAds.innerHTML = `<u><strong>Google Ads Red de Display </strong> (Plan ${googleDisplayAdsPlan.options[googleDisplayAdsPlan.selectedIndex].text}) :</u>`;
+            resultMaintenanceGoogleDisplayAds.innerHTML = `${maintenanceContent}`;
+
             agencyMonthlyFeeValue += googleDisplayAdsManteinanceValue;
 
             /*-para IMPLEMENTACIÓN-*/
@@ -1671,9 +1784,12 @@ function calculate() {
                 /*--Se genera la descripcion de implementación para este servicio en el plan seleccionado---*/ 
                 implementationContent += `<ul><li>${services.googleDisplayAds.implementation[googleDisplayAdsPlan.value].hours[i]} horas de ${services.googleDisplayAds.implementation[googleDisplayAdsPlan.value].skillsAcquired[i]} a ${services.googleDisplayAds.implementation[googleDisplayAdsPlan.value].skillsPrices[i]} USD la hora, que hace lo siguiente:</li> ${services.googleDisplayAds.implementation[googleDisplayAdsPlan.value].content[i]}</ul>`;
             })
-             /*-Se cargan los resultados de implementacion para este servicio con el plan seleccionado-*/
-             resultAgencyOnceFeeDetail.innerHTML += `<li style="margin-top: 10px"><u><strong>‣ Google Ads Red de Display </strong> (Plan ${googleDisplayAdsPlan.options[googleDisplayAdsPlan.selectedIndex].text}):</u> ${implementationContent}</li>`;
-             agencyOnceFeeValue += googleDisplayAdsImplementationValue;
+            /*--Se activa el cajon de implementación con el sub-cajon de Google Display Ads, inyectando titulo y contenido para el plan seleccionado--*/
+            resultImplementationGoogleDisplayAdsContainer.style.display = "block";
+            titleImplementationGoogleDisplayAds.innerHTML = `<u><strong>Google Ads Red de Display </strong> (Plan ${googleDisplayAdsPlan.options[googleDisplayAdsPlan.selectedIndex].text}) :</u>`;
+            resultImplementationGoogleDisplayAds.innerHTML = `${implementationContent}`;
+            
+            agencyOnceFeeValue += googleDisplayAdsImplementationValue;
 
             /*----Se completa la información de conversiones----*/
             totalConversions.innerHTML = `${totalConversionsValue.toFixed(2).replace(".", ",")}`;
@@ -1690,11 +1806,14 @@ function calculate() {
                 name: "Google Ads Display",
                 value: investmentGoogleDisplayAdsAmmount.value
             });
+        } else {
+            resultMaintenanceGoogleDisplayAdsContainer.style.display = "none";
+            resultImplementationGoogleDisplayAdsContainer.style.display = "none";
         }
         /*---Se muestran los resultados particulares de Facebook Ads solamente si esta opcion fue seleccionada---*/
         if (facebookAds.checked) {
             /*--Se muestran los fees de implementacion (por unica vez)---*/
-            resultAgencyOnceFeeContainer.style.display = "block";
+            resultImplementationContainer.style.display = "block";
              /*--Se guardan los detalles de skills que incluye este servicio---*/
             /*-para MANTENIMIENTO-*/
             let maintenanceContent = '';
@@ -1708,8 +1827,11 @@ function calculate() {
                 /*--Se genera la descripcion de mantenimiento mensual para este servicio en el plan seleccionado---*/ 
                 maintenanceContent += `<ul><li>${services.facebookAds.maintenance[facebookAdsPlan.value].hours[i]} horas de ${services.facebookAds.maintenance[facebookAdsPlan.value].skillsAcquired[i]} a ${services.facebookAds.maintenance[facebookAdsPlan.value].skillsPrices[i]} USD la hora, que hace lo siguiente:</li> ${services.facebookAds.maintenance[facebookAdsPlan.value].content[i]}</ul>`;
             })
-            /*-Se cargan los resultados de mantenimiento para este servicio con el plan seleccionado-*/
-            resultAgencyMonthlyFeeDetail.innerHTML += `<li style="margin-top: 10px"><u><strong>‣ Facebook Ads </strong> (Plan ${facebookAdsPlan.options[facebookAdsPlan.selectedIndex].text}):</u> ${maintenanceContent}</li>`;
+            /*--Se activa el cajon de mantenimiento con el sub-cajon de Facebook Ads, inyectando titulo y contenido para el plan seleccionado--*/
+            resultMaintenanceFacebookAdsContainer.style.display = "block";
+            titleMaintenanceFacebookAds.innerHTML = `<u><strong>Facebook Ads </strong> (Plan ${facebookAdsPlan.options[facebookAdsPlan.selectedIndex].text}) :</u>`;
+            resultMaintenanceFacebookAds.innerHTML = `${maintenanceContent}`;
+            
             agencyMonthlyFeeValue += facebookAdsManteinanceValue;
 
             /*-para IMPLEMENTACIÓN-*/
@@ -1724,9 +1846,12 @@ function calculate() {
                 /*--Se genera la descripcion de implementación para este servicio en el plan seleccionado---*/ 
                 implementationContent += `<ul><li>${services.facebookAds.implementation[facebookAdsPlan.value].hours[i]} horas de ${services.facebookAds.implementation[facebookAdsPlan.value].skillsAcquired[i]} a ${services.facebookAds.implementation[facebookAdsPlan.value].skillsPrices[i]} USD la hora, que hace lo siguiente:</li> ${services.facebookAds.implementation[facebookAdsPlan.value].content[i]}</ul>`;
             })
-             /*-Se cargan los resultados de implementacion para este servicio con el plan seleccionado-*/
-             resultAgencyOnceFeeDetail.innerHTML += `<li style="margin-top: 10px"><u><strong>‣ Facebook Ads </strong> (Plan ${facebookAdsPlan.options[facebookAdsPlan.selectedIndex].text}):</u> ${implementationContent}</li>`;
-             agencyOnceFeeValue += facebookAdsImplementationValue;
+            /*--Se activa el cajon de implementación con el sub-cajon de Facebook Ads, inyectando titulo y contenido para el plan seleccionado--*/
+            resultImplementationFacebookAdsContainer.style.display = "block";
+            titleImplementationFacebookAds.innerHTML = `<u><strong>Facebook Ads </strong> (Plan ${facebookAdsPlan.options[facebookAdsPlan.selectedIndex].text}) :</u>`;
+            resultImplementationFacebookAds.innerHTML = `${implementationContent}`;
+            
+            agencyOnceFeeValue += facebookAdsImplementationValue;
 
             /*-Se completa la información de conversiones-*/
             totalConversions.innerHTML = `${totalConversionsValue.toFixed(2).replace(".", ",")}`;
@@ -1743,12 +1868,15 @@ function calculate() {
                 name: "Facebook Ads",
                 value: investmentFacebookAdsAmmount.value
             });
+        } else {
+            resultMaintenanceFacebookAdsContainer.style.display = "none";
+            resultImplementationFacebookAdsContainer.style.display = "none";
         }
         /*---Se muestran los resultados particulares de Diseño Web solamente si esta opcion con alguna sub-opción fueron seleccionadas---*/
         if (disenoWeb.checked) {
             if (landingPage.checked) {
                 /*--Se muestran los fees de implementacion (por unica vez)---*/
-                resultAgencyOnceFeeContainer.style.display = "block";
+                resultImplementationContainer.style.display = "block";
                 /*--Se guardan los detalles de skills que incluye este servicio---*/
                 /*-para MANTENIMIENTO-*/
                 let maintenanceContent = '';
@@ -1762,8 +1890,11 @@ function calculate() {
                     /*--Se genera la descripcion de mantenimiento mensual para este servicio en el plan seleccionado---*/ 
                     maintenanceContent += `<ul><li>${services.disenoWeb.maintenance.basic.hours[i]} horas de ${services.disenoWeb.maintenance.basic.skillsAcquired[i]} a ${services.disenoWeb.maintenance.basic.skillsPrices[i]} USD la hora, que hace lo siguiente:</li> ${services.disenoWeb.maintenance.basic.content[i]}</ul>`;
                 })
-                /*-Se cargan los resultados de mantenimiento para este servicio con el plan seleccionado-*/
-                resultAgencyMonthlyFeeDetail.innerHTML += `<li style="margin-top: 10px"><u><strong>‣ ${services.disenoWeb.implementation.basic.name}</strong> (Plan de mantenimiento Básico):</u> ${maintenanceContent}</li>`;
+                /*--Se activa el cajon de mantenimiento con el sub-cajon de Landing Page, inyectando titulo y contenido para el plan seleccionado--*/
+                resultMaintenanceLandingPageContainer.style.display = "block";
+                titleMaintenanceLandingPage.innerHTML = `<u><strong>${services.disenoWeb.implementation.basic.name}</strong> (Plan de mantenimiento Básico) :</u>`;
+                resultMaintenanceLandingPage.innerHTML = `${maintenanceContent}`;
+                
                 agencyMonthlyFeeValue += landingPageManteinanceValue;
 
                 /*-para IMPLEMENTACIÓN-*/
@@ -1778,19 +1909,25 @@ function calculate() {
                     /*--Se genera la descripcion de implementación para este servicio en el plan seleccionado---*/ 
                     implementationContent += `<ul><li>${services.disenoWeb.implementation.basic.hours[i]} horas de ${services.disenoWeb.implementation.basic.skillsAcquired[i]} a ${services.disenoWeb.implementation.basic.skillsPrices[i]} USD la hora, que hace lo siguiente:</li> ${services.disenoWeb.implementation.basic.content[i]}</ul>`;
                 })
-                    /*-Se cargan los resultados de implementacion para este servicio con el plan seleccionado-*/
-                    resultAgencyOnceFeeDetail.innerHTML += `<li style="margin-top: 10px"><u><strong>‣ ${services.disenoWeb.implementation.basic.name}</strong> (Plan Básico):</u> ${implementationContent}</li>`;
-                    agencyOnceFeeValue += landingPageImplementationValue;
+                /*--Se activa el cajon de implementación con el sub-cajon de Landing Page, inyectando titulo y contenido para el plan seleccionado--*/
+                resultImplementationLandingPageContainer.style.display = "block";
+                titleImplementationLandingPage.innerHTML = `<u><strong>${services.disenoWeb.implementation.basic.name}</strong> (Plan Básico) :</u>`;
+                resultImplementationLandingPage.innerHTML = `${implementationContent}`;
+                
+                agencyOnceFeeValue += landingPageImplementationValue;
 
                 /*--Se guardan los nombres y valores de inversion y fees mensuales--*/
                 arrayAgencyMantainanceSelected.push({
                     name: "Landing Page",
                     value: landingPageManteinanceValue
                 });
+            } else {
+                resultMaintenanceLandingPageContainer.style.display = "none";
+                resultImplementationLandingPageContainer.style.display = "none";
             }
             if (wordpress.checked) {
                 /*--Se muestran los fees de implementacion (por unica vez)---*/
-                resultAgencyOnceFeeContainer.style.display = "block";
+                resultImplementationContainer.style.display = "block";
                 /*--Se guardan los detalles de skills que incluye este servicio---*/
                 /*-para MANTENIMIENTO-*/
                 let maintenanceContent = '';
@@ -1804,8 +1941,11 @@ function calculate() {
                     /*--Se genera la descripcion de mantenimiento mensual para este servicio en el plan seleccionado---*/ 
                     maintenanceContent += `<ul><li>${services.disenoWeb.maintenance.basic.hours[i]} horas de ${services.disenoWeb.maintenance.basic.skillsAcquired[i]} a ${services.disenoWeb.maintenance.basic.skillsPrices[i]} USD la hora, que hace lo siguiente:</li> ${services.disenoWeb.maintenance.basic.content[i]}</ul>`;
                 })
-                /*-Se cargan los resultados de mantenimiento para este servicio con el plan seleccionado-*/
-                resultAgencyMonthlyFeeDetail.innerHTML += `<li style="margin-top: 10px"><u><strong>‣ ${services.disenoWeb.implementation.intermediate.name}</strong> (Plan de mantenimiento Básico):</u> ${maintenanceContent}</li>`;
+                /*--Se activa el cajon de mantenimiento con el sub-cajon de Wordpress, inyectando titulo y contenido para el plan seleccionado--*/
+                resultMaintenanceWordpressContainer.style.display = "block";
+                titleMaintenanceWordpress.innerHTML = `<u><strong>${services.disenoWeb.implementation.intermediate.name}</strong> (Plan de mantenimiento Básico) :</u>`;
+                resultMaintenanceWordpress.innerHTML = `${maintenanceContent}`;
+                
                 agencyMonthlyFeeValue += wordpressManteinanceValue;
 
                 /*-para IMPLEMENTACIÓN-*/
@@ -1820,19 +1960,25 @@ function calculate() {
                     /*--Se genera la descripcion de implementación para este servicio en el plan seleccionado---*/ 
                     implementationContent += `<ul><li>${services.disenoWeb.implementation.intermediate.hours[i]} horas de ${services.disenoWeb.implementation.intermediate.skillsAcquired[i]} a ${services.disenoWeb.implementation.intermediate.skillsPrices[i]} USD la hora, que hace lo siguiente:</li> ${services.disenoWeb.implementation.intermediate.content[i]}</ul>`;
                 })
-                    /*-Se cargan los resultados de implementacion para este servicio con el plan seleccionado-*/
-                    resultAgencyOnceFeeDetail.innerHTML += `<li style="margin-top: 10px"><u><strong>‣ ${services.disenoWeb.implementation.intermediate.name}</strong> (Plan Intermedio):</u> ${implementationContent}</li>`;
-                    agencyOnceFeeValue += wordpressImplementationValue;
+                /*--Se activa el cajon de implementación con el sub-cajon de Wordpress, inyectando titulo y contenido para el plan seleccionado--*/
+                resultImplementationWordpressContainer.style.display = "block";
+                titleImplementationWordpress.innerHTML = `<u><strong>${services.disenoWeb.implementation.intermediate.name}</strong> (Plan Intermedio) :</u>`;
+                resultImplementationWordpress.innerHTML = `${implementationContent}`;
+                
+                agencyOnceFeeValue += wordpressImplementationValue;
 
                 /*--Se guardan los nombres y valores de inversion y fees mensuales--*/
                 arrayAgencyMantainanceSelected.push({
                     name: "Sitio web en base a plantilla prediseñada de 5 secciones",
                     value: wordpressManteinanceValue
                 });
+            } else {
+                resultMaintenanceWordpressContainer.style.display = "none";
+                resultImplementationWordpressContainer.style.display = "none";
             }
             if (customWebsite.checked) {
                 /*--Se muestran los fees de implementacion (por unica vez)---*/
-                resultAgencyOnceFeeContainer.style.display = "block";
+                resultImplementationContainer.style.display = "block";
                 /*--Se guardan los detalles de skills que incluye este servicio---*/
                 /*-para MANTENIMIENTO-*/
                 let maintenanceContent = '';
@@ -1846,8 +1992,11 @@ function calculate() {
                     /*--Se genera la descripcion de mantenimiento mensual para este servicio en el plan seleccionado---*/ 
                     maintenanceContent += `<ul><li>${services.disenoWeb.maintenance.basic.hours[i]} horas de ${services.disenoWeb.maintenance.basic.skillsAcquired[i]} a ${services.disenoWeb.maintenance.basic.skillsPrices[i]} USD la hora, que hace lo siguiente:</li> ${services.disenoWeb.maintenance.basic.content[i]}</ul>`;
                 })
-                /*-Se cargan los resultados de mantenimiento para este servicio con el plan seleccionado-*/
-                resultAgencyMonthlyFeeDetail.innerHTML += `<li style="margin-top: 10px"><u><strong>‣ ${services.disenoWeb.implementation.advanced.name}</strong> (Plan de mantenimiento Básico):</u> ${maintenanceContent}</li>`;
+                /*--Se activa el cajon de mantenimiento con el sub-cajon de Custom Website, inyectando titulo y contenido para el plan seleccionado--*/
+                resultMaintenanceCustomWebsiteContainer.style.display = "block";
+                titleMaintenanceCustomWebsite.innerHTML = `<u><strong>${services.disenoWeb.implementation.advanced.name}</strong> (Plan de mantenimiento Básico) :</u>`;
+                resultMaintenanceCustomWebsite.innerHTML = `${maintenanceContent}`;
+                
                 agencyMonthlyFeeValue += customWebsiteManteinanceValue;
 
                 /*-para IMPLEMENTACIÓN-*/
@@ -1862,19 +2011,25 @@ function calculate() {
                     /*--Se genera la descripcion de implementación para este servicio en el plan seleccionado---*/ 
                     implementationContent += `<ul><li>${services.disenoWeb.implementation.advanced.hours[i]} horas de ${services.disenoWeb.implementation.advanced.skillsAcquired[i]} a ${services.disenoWeb.implementation.advanced.skillsPrices[i]} USD la hora, que hace lo siguiente:</li> ${services.disenoWeb.implementation.advanced.content[i]}</ul>`;
                 })
-                    /*-Se cargan los resultados de implementacion para este servicio con el plan seleccionado-*/
-                    resultAgencyOnceFeeDetail.innerHTML += `<li style="margin-top: 10px"><u><strong>‣ ${services.disenoWeb.implementation.advanced.name}</strong> (Plan Avanzado):</u> ${implementationContent}</li>`;
-                    agencyOnceFeeValue += customWebsiteImplementationValue;
+                /*--Se activa el cajon de implementación con el sub-cajon de Custom Website, inyectando titulo y contenido para el plan seleccionado--*/
+                resultImplementationCustomWebsiteContainer.style.display = "block";
+                titleImplementationCustomWebsite.innerHTML = `<u><strong>${services.disenoWeb.implementation.advanced.name}</strong> (Plan Avanzado) :</u>`;
+                resultImplementationCustomWebsite.innerHTML = `${implementationContent}`;
+                
+                agencyOnceFeeValue += customWebsiteImplementationValue;
 
                 /*--Se guardan los nombres y valores de inversion y fees mensuales--*/
                 arrayAgencyMantainanceSelected.push({
                     name: "Sitio web con diseño personalizado",
                     value: customWebsiteManteinanceValue
                 });
+            } else {
+                resultMaintenanceCustomWebsiteContainer.style.display = "none";
+                resultImplementationCustomWebsiteContainer.style.display = "none";
             }
             if (ecommerceWeb.checked) {
                 /*--Se muestran los fees de implementacion (por unica vez)---*/
-                resultAgencyOnceFeeContainer.style.display = "block";
+                resultImplementationContainer.style.display = "block";
                 /*--Se guardan los detalles de skills que incluye este servicio---*/
                 /*-para MANTENIMIENTO-*/
                 let maintenanceContent = '';
@@ -1888,8 +2043,11 @@ function calculate() {
                     /*--Se genera la descripcion de mantenimiento mensual para este servicio en el plan seleccionado---*/ 
                     maintenanceContent += `<ul><li>${services.disenoWeb.maintenance.basic.hours[i]} horas de ${services.disenoWeb.maintenance.basic.skillsAcquired[i]} a ${services.disenoWeb.maintenance.basic.skillsPrices[i]} USD la hora, que hace lo siguiente:</li> ${services.disenoWeb.maintenance.basic.content[i]}</ul>`;
                 })
-                /*-Se cargan los resultados de mantenimiento para este servicio con el plan seleccionado-*/
-                resultAgencyMonthlyFeeDetail.innerHTML += `<li style="margin-top: 10px"><u><strong>‣ ${services.disenoWeb.implementation.ecommerce.name}</strong> (Plan de mantenimiento Básico):</u> ${maintenanceContent}</li>`;
+                /*--Se activa el cajon de mantenimiento con el sub-cajon de Ecommerce, inyectando titulo y contenido para el plan seleccionado--*/
+                resultMaintenanceEcommerceWebContainer.style.display = "block";
+                titleMaintenanceEcommerceWeb.innerHTML = `<u><strong>${services.disenoWeb.implementation.ecommerce.name}</strong> (Plan de mantenimiento Básico) :</u>`;
+                resultMaintenanceEcommerceWeb.innerHTML = `${maintenanceContent}`;
+                
                 agencyMonthlyFeeValue += ecommerceWebManteinanceValue;
 
                 /*-para IMPLEMENTACIÓN-*/
@@ -1904,19 +2062,25 @@ function calculate() {
                     /*--Se genera la descripcion de implementación para este servicio en el plan seleccionado---*/ 
                     implementationContent += `<ul><li>${services.disenoWeb.implementation.ecommerce.hours[i]} horas de ${services.disenoWeb.implementation.ecommerce.skillsAcquired[i]} a ${services.disenoWeb.implementation.ecommerce.skillsPrices[i]} USD la hora, que hace lo siguiente:</li> ${services.disenoWeb.implementation.ecommerce.content[i]}</ul>`;
                 })
-                    /*-Se cargan los resultados de implementacion para este servicio con el plan seleccionado-*/
-                    resultAgencyOnceFeeDetail.innerHTML += `<li style="margin-top: 10px"><u><strong>‣ ${services.disenoWeb.implementation.ecommerce.name}</strong>:</u> ${implementationContent}</li>`;
-                    agencyOnceFeeValue += ecommerceWebImplementationValue;
+                /*--Se activa el cajon de implementación con el sub-cajon de Ecommerce, inyectando titulo y contenido para el plan seleccionado--*/
+                resultImplementationEcommerceWebContainer.style.display = "block";
+                titleImplementationEcommerceWeb.innerHTML = `<u><strong>${services.disenoWeb.implementation.ecommerce.name}</strong> :</u>`;
+                resultImplementationEcommerceWeb.innerHTML = `${implementationContent}`;
+                
+                agencyOnceFeeValue += ecommerceWebImplementationValue;
 
                 /*--Se guardan los nombres y valores de inversion y fees mensuales--*/
                 arrayAgencyMantainanceSelected.push({
                     name: "Sitio web de Ecommerce en CMS como WooCommerce o Shopify",
                     value: ecommerceWebManteinanceValue
                 });
+            } else {
+                resultMaintenanceEcommerceWebContainer.style.display = "none";
+                resultImplementationEcommerceWebContainer.style.display = "none";
             }
             if (logoMarca.checked) {
                 /*--Se muestran los fees de implementacion (por unica vez)---*/
-                resultAgencyOnceFeeContainer.style.display = "block";
+                resultImplementationContainer.style.display = "block";
                 /*--Se guardan los detalles de skills que incluye este servicio---*/
                 /*-para MANTENIMIENTO-*/
                 let maintenanceContent = '';
@@ -1930,8 +2094,11 @@ function calculate() {
                     /*--Se genera la descripcion de mantenimiento mensual para este servicio en el plan seleccionado---*/ 
                     maintenanceContent += `<ul><li>${services.disenoWeb.maintenance.basic.hours[i]} horas de ${services.disenoWeb.maintenance.basic.skillsAcquired[i]} a ${services.disenoWeb.maintenance.basic.skillsPrices[i]} USD la hora, que hace lo siguiente:</li> ${services.disenoWeb.maintenance.basic.content[i]}</ul>`;
                 })
-                /*-Se cargan los resultados de mantenimiento para este servicio con el plan seleccionado-*/
-                resultAgencyMonthlyFeeDetail.innerHTML += `<li style="margin-top: 10px"><u><strong>‣ ${services.disenoWeb.implementation.logoYMarca.name}</strong> (Plan de mantenimiento Básico):</u> ${maintenanceContent}</li>`;
+                /*--Se activa el cajon de mantenimiento con el sub-cajon de Logo y Marca, inyectando titulo y contenido para el plan seleccionado--*/
+                resultMaintenanceLogoYMarcaContainer.style.display = "block";
+                titleMaintenanceLogoYMarca.innerHTML = `<u><strong>${services.disenoWeb.implementation.logoYMarca.name}</strong> (Plan de mantenimiento Básico) :</u>`;
+                resultMaintenanceLogoYMarca.innerHTML = `${maintenanceContent}`;
+                
                 agencyMonthlyFeeValue += logoMarcaManteinanceValue;
 
                 /*-para IMPLEMENTACIÓN-*/
@@ -1946,15 +2113,21 @@ function calculate() {
                     /*--Se genera la descripcion de implementación para este servicio en el plan seleccionado---*/ 
                     implementationContent += `<ul><li>${services.disenoWeb.implementation.logoYMarca.hours[i]} horas de ${services.disenoWeb.implementation.logoYMarca.skillsAcquired[i]} a ${services.disenoWeb.implementation.logoYMarca.skillsPrices[i]} USD la hora, que hace lo siguiente:</li> ${services.disenoWeb.implementation.logoYMarca.content[i]}</ul>`;
                 })
-                    /*-Se cargan los resultados de implementacion para este servicio con el plan seleccionado-*/
-                    resultAgencyOnceFeeDetail.innerHTML += `<li style="margin-top: 10px"><u><strong>‣ ${services.disenoWeb.implementation.logoYMarca.name}</strong>:</u> ${implementationContent}</li>`;
-                    agencyOnceFeeValue += logoMarcaImplementationValue;
+                /*--Se activa el cajon de implementación con el sub-cajon de Logo y Marca, inyectando titulo y contenido para el plan seleccionado--*/
+                resultImplementationLogoYMarcaContainer.style.display = "block";
+                titleImplementationLogoYMarca.innerHTML = `<u><strong>${services.disenoWeb.implementation.logoYMarca.name}</strong> :</u>`;
+                resultImplementationLogoYMarca.innerHTML = `${implementationContent}`;
+                
+                agencyOnceFeeValue += logoMarcaImplementationValue;
 
                 /*--Se guardan los nombres y valores de inversion y fees mensuales--*/
                 arrayAgencyMantainanceSelected.push({
                     name: "Diseño de logo e identidad de marca",
                     value: logoMarcaManteinanceValue
                 });
+            } else {
+                resultMaintenanceLogoYMarcaContainer.style.display = "none";
+                resultImplementationLogoYMarcaContainer.style.display = "none";
             }
         }
         
@@ -1963,8 +2136,8 @@ function calculate() {
         }
 
         /*---Se setean los valores totales de los cajónes, es decir las sumas de valores de c/u---*/
-        resultAgencyOnceFee.innerHTML = `USD ${agencyOnceFeeValue}`;
-        resultAgencyMonthlyFee.innerHTML = `USD ${agencyMonthlyFeeValue}`;
+        resultImplementationFee.innerHTML = `USD ${agencyOnceFeeValue}`;
+        resultMaintenanceFee.innerHTML = `USD ${agencyMonthlyFeeValue}`;
         resultInvestmentsMonthly.innerHTML = ` USD ${totalInvestmentMonthly}`;
         resultMonthlyTotal.innerHTML = `USD ${totalInvestmentMonthly + agencyMonthlyFeeValue}`;
 
