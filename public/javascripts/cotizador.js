@@ -4,7 +4,7 @@ const absoluteStatsCountries = Object.freeze({
     eeuu: Object.freeze({
         googleSearchAds: Object.freeze({
             cpa: Object.freeze({
-                autos: 33.52, 
+                autos: 33.52,
                 negocioANegocio: 116.13,
                 serviciosAlConsumidor: 90.70,
                 citas: 76.76,
@@ -76,7 +76,7 @@ const absoluteStatsCountries = Object.freeze({
         }),
         facebookAds: Object.freeze({
             cpa: Object.freeze({
-                autos: 43.84, 
+                autos: 43.84,
                 negocioANegocio: 23.77,
                 serviciosAlConsumidor: 31.11,
                 citas: null,
@@ -114,307 +114,305 @@ const absoluteStatsCountries = Object.freeze({
 })
 /* DATOS RELATIVOS DE VARIOS PAISES PARA REALIZAR LOS CALCULOS */
 const relativeStatsCountries = Object.freeze({
-        argentina: Object.freeze({
-            relativeRateToUSA: 0.1298304000596659
-        }),
-        emiratosArabes: Object.freeze({
-            relativeRateToUSA: 1.08
-        }),
-        austria: Object.freeze({
-            relativeRateToUSA: 0.98
-        }),
-        australia: Object.freeze({
-            relativeRateToUSA: 0.95
-        }),
-        brasil: Object.freeze({
-            relativeRateToUSA: 0.89
-        }),
-        inglaterra: Object.freeze({
-            relativeRateToUSA: 0.87
-        }),
-        nuevaZelanda: Object.freeze({
-            relativeRateToUSA: 0.86
-        }),
-        chile: Object.freeze({
-            relativeRateToUSA: 0.84
-        }),
-        suiza: Object.freeze({
-            relativeRateToUSA: 0.79
-        }),
-        italia: Object.freeze({
-            relativeRateToUSA: 0.75
-        }),
-        canada: Object.freeze({
-            relativeRateToUSA: 0.71
-        }),
-        alemania: Object.freeze({
-            relativeRateToUSA: 0.69
-        }),
-        turquia: Object.freeze({
-            relativeRateToUSA: 0.68
-        }),
-        finlandia: Object.freeze({
-            relativeRateToUSA: 0.67
-        }),
-        jamaica: Object.freeze({
-            relativeRateToUSA: 0.67
-        }),
-        noruega: Object.freeze({
-            relativeRateToUSA: 0.66
-        }),
-        republicaDominicana: Object.freeze({
-            relativeRateToUSA: 0.6
-        }),
-        irlanda: Object.freeze({
-            relativeRateToUSA: 0.6
-        }),
-        islandia: Object.freeze({
-            relativeRateToUSA: 0.56
-        }),
-        portugal: Object.freeze({
-            relativeRateToUSA: 0.56
-        }),
-        grecia: Object.freeze({
-            relativeRateToUSA: 0.54
-        }),
-        libano: Object.freeze({
-            relativeRateToUSA: 0.53
-        }),
-        japon: Object.freeze({
-            relativeRateToUSA: 0.53
-        }),
-        suecia: Object.freeze({
-            relativeRateToUSA: 0.51
-        }),
-        espana: Object.freeze({
-            relativeRateToUSA: 0.5
-        }),
-        mexico: Object.freeze({
-            relativeRateToUSA: 0.5
-        }),
-        camboya: Object.freeze({
-            relativeRateToUSA: 0.49
-        }),
-        armenia: Object.freeze({
-            relativeRateToUSA: 0.48
-        }),
-        sudafrica: Object.freeze({
-            relativeRateToUSA: 0.45
-        }),
-        israel: Object.freeze({
-            relativeRateToUSA: 0.45
-        }),
-        holanda: Object.freeze({
-            relativeRateToUSA: 0.44
-        }),
-        argelia: Object.freeze({
-            relativeRateToUSA: 0.44
-        }),
-        nepal: Object.freeze({
-            relativeRateToUSA: 0.43
-        }),
-        dinamarca: Object.freeze({
-            relativeRateToUSA: 0.43
-        }),
-        belice: Object.freeze({
-            relativeRateToUSA: 0.43
-        }),
-        singapur: Object.freeze({
-            relativeRateToUSA: 0.42
-        }),
-        tailandia: Object.freeze({
-            relativeRateToUSA: 0.42
-        }),
-        arabiaSaudita: Object.freeze({
-            relativeRateToUSA: 0.4
-        }),
-        macedonia: Object.freeze({
-            relativeRateToUSA: 0.39
-        }),
-        trinidadYTobago: Object.freeze({
-            relativeRateToUSA: 0.39
-        }),
-        nicaragua: Object.freeze({
-            relativeRateToUSA: 0.39
-        }),
-        oman: Object.freeze({
-            relativeRateToUSA: 0.39
-        }),
-        indonesia: Object.freeze({
-            relativeRateToUSA: 0.38
-        }),
-        ruanda: Object.freeze({
-            relativeRateToUSA: 0.38
-        }),
-        croacia: Object.freeze({
-            relativeRateToUSA: 0.37
-        }),
-        francia: Object.freeze({
-            relativeRateToUSA: 0.36
-        }),
-        libia: Object.freeze({
-            relativeRateToUSA: 0.36
-        }),
-        kuwait: Object.freeze({
-            relativeRateToUSA: 0.36
-        }),
-        egipto: Object.freeze({
-            relativeRateToUSA: 0.35
-        }),
-        belgica: Object.freeze({
-            relativeRateToUSA: 0.31
-        }),
-        rumania: Object.freeze({
-            relativeRateToUSA: 0.31
-        }),
-        panama: Object.freeze({
-            relativeRateToUSA: 0.31
-        }),
-        uganda: Object.freeze({
-            relativeRateToUSA: 0.31
-        }),
-        bulgaria: Object.freeze({
-            relativeRateToUSA: 0.29
-        }),
-        peru: Object.freeze({
-            relativeRateToUSA: 0.29
-        }),
-        albania: Object.freeze({
-            relativeRateToUSA: 0.28
-        }),
-        coreaDelSur: Object.freeze({
-            relativeRateToUSA: 0.28
-        }),
-        elSalvador: Object.freeze({
-            relativeRateToUSA: 0.27
-        }),
-        zimbabue: Object.freeze({
-            relativeRateToUSA: 0.27
-        }),
-        jordania: Object.freeze({
-            relativeRateToUSA: 0.27
-        }),
-        costaRica: Object.freeze({
-            relativeRateToUSA: 0.27
-        }),
-        uruguay: Object.freeze({
-            relativeRateToUSA: 0.26
-        }),
-        tunez: Object.freeze({
-            relativeRateToUSA: 0.26
-        }),
-        kenia: Object.freeze({
-            relativeRateToUSA: 0.26
-        }),
-        malasia: Object.freeze({
-            relativeRateToUSA: 0.25
-        }),
-        filipinas: Object.freeze({
-            relativeRateToUSA: 0.25
-        }),
-        vietnam: Object.freeze({
-            relativeRateToUSA: 0.24
-        }),
-        sriLanka: Object.freeze({
-            relativeRateToUSA: 0.23
-        }),
-        bahamas: Object.freeze({
-            relativeRateToUSA: 0.23
-        }),
-        india: Object.freeze({
-            relativeRateToUSA: 0.23
-        }),
-        hungria: Object.freeze({
-            relativeRateToUSA: 0.22
-        }),
-        marruecos: Object.freeze({
-            relativeRateToUSA: 0.22
-        }),
-        bangladesh: Object.freeze({
-            relativeRateToUSA: 0.21
-        }),
-        eslovaquia: Object.freeze({
-            relativeRateToUSA: 0.2
-        }),
-        islaMauricio: Object.freeze({
-            relativeRateToUSA: 0.19
-        }),
-        qatar: Object.freeze({
-            relativeRateToUSA: 0.19
-        }),
-        bolivia: Object.freeze({
-            relativeRateToUSA: 0.19
-        }),
-        polonia: Object.freeze({
-            relativeRateToUSA: 0.19
-        }),
-        luxemburgo: Object.freeze({
-            relativeRateToUSA: 0.18
-        }),
-        ecuador: Object.freeze({
-            relativeRateToUSA: 0.18
-        }),
-        colombia: Object.freeze({
-            relativeRateToUSA: 0.17
-        }),
-        rusia: Object.freeze({
-            relativeRateToUSA: 0.16
-        }),
-        namibia: Object.freeze({
-            relativeRateToUSA: 0.16
-        }),
-        pakistan: Object.freeze({
-            relativeRateToUSA: 0.16
-        }),
-        guyana: Object.freeze({
-            relativeRateToUSA: 0.15
-        }),
-        monteNegro: Object.freeze({
-            relativeRateToUSA: 0.14
-        }),
-        lituania: Object.freeze({
-            relativeRateToUSA: 0.14
-        }),
-        tanzania: Object.freeze({
-            relativeRateToUSA: 0.12
-        }),
-        venezuela: Object.freeze({
-            relativeRateToUSA: 0.12
-        }),
-        barein: Object.freeze({
-            relativeRateToUSA: 0.1
-        }),
-        letonia: Object.freeze({
-            relativeRateToUSA: 0.1
-        }),
-        eslovenia: Object.freeze({
-            relativeRateToUSA: 0.08
-        }),
-        somalia: Object.freeze({
-            relativeRateToUSA: 0.08
-        }),
-        ucrania: Object.freeze({
-            relativeRateToUSA: 0.08
-        }),
-        liberia: Object.freeze({
-            relativeRateToUSA: 0.08
-        }),
-        moldova: Object.freeze({
-            relativeRateToUSA: 0.08
-        }),
-        servia: Object.freeze({
-            relativeRateToUSA: 0.05
-        })
+    argentina: Object.freeze({
+        relativeRateToUSA: 0.1298304000596659
+    }),
+    emiratosArabes: Object.freeze({
+        relativeRateToUSA: 1.08
+    }),
+    austria: Object.freeze({
+        relativeRateToUSA: 0.98
+    }),
+    australia: Object.freeze({
+        relativeRateToUSA: 0.95
+    }),
+    brasil: Object.freeze({
+        relativeRateToUSA: 0.89
+    }),
+    inglaterra: Object.freeze({
+        relativeRateToUSA: 0.87
+    }),
+    nuevaZelanda: Object.freeze({
+        relativeRateToUSA: 0.86
+    }),
+    chile: Object.freeze({
+        relativeRateToUSA: 0.84
+    }),
+    suiza: Object.freeze({
+        relativeRateToUSA: 0.79
+    }),
+    italia: Object.freeze({
+        relativeRateToUSA: 0.75
+    }),
+    canada: Object.freeze({
+        relativeRateToUSA: 0.71
+    }),
+    alemania: Object.freeze({
+        relativeRateToUSA: 0.69
+    }),
+    turquia: Object.freeze({
+        relativeRateToUSA: 0.68
+    }),
+    finlandia: Object.freeze({
+        relativeRateToUSA: 0.67
+    }),
+    jamaica: Object.freeze({
+        relativeRateToUSA: 0.67
+    }),
+    noruega: Object.freeze({
+        relativeRateToUSA: 0.66
+    }),
+    republicaDominicana: Object.freeze({
+        relativeRateToUSA: 0.6
+    }),
+    irlanda: Object.freeze({
+        relativeRateToUSA: 0.6
+    }),
+    islandia: Object.freeze({
+        relativeRateToUSA: 0.56
+    }),
+    portugal: Object.freeze({
+        relativeRateToUSA: 0.56
+    }),
+    grecia: Object.freeze({
+        relativeRateToUSA: 0.54
+    }),
+    libano: Object.freeze({
+        relativeRateToUSA: 0.53
+    }),
+    japon: Object.freeze({
+        relativeRateToUSA: 0.53
+    }),
+    suecia: Object.freeze({
+        relativeRateToUSA: 0.51
+    }),
+    espana: Object.freeze({
+        relativeRateToUSA: 0.5
+    }),
+    mexico: Object.freeze({
+        relativeRateToUSA: 0.5
+    }),
+    camboya: Object.freeze({
+        relativeRateToUSA: 0.49
+    }),
+    armenia: Object.freeze({
+        relativeRateToUSA: 0.48
+    }),
+    sudafrica: Object.freeze({
+        relativeRateToUSA: 0.45
+    }),
+    israel: Object.freeze({
+        relativeRateToUSA: 0.45
+    }),
+    holanda: Object.freeze({
+        relativeRateToUSA: 0.44
+    }),
+    argelia: Object.freeze({
+        relativeRateToUSA: 0.44
+    }),
+    nepal: Object.freeze({
+        relativeRateToUSA: 0.43
+    }),
+    dinamarca: Object.freeze({
+        relativeRateToUSA: 0.43
+    }),
+    belice: Object.freeze({
+        relativeRateToUSA: 0.43
+    }),
+    singapur: Object.freeze({
+        relativeRateToUSA: 0.42
+    }),
+    tailandia: Object.freeze({
+        relativeRateToUSA: 0.42
+    }),
+    arabiaSaudita: Object.freeze({
+        relativeRateToUSA: 0.4
+    }),
+    macedonia: Object.freeze({
+        relativeRateToUSA: 0.39
+    }),
+    trinidadYTobago: Object.freeze({
+        relativeRateToUSA: 0.39
+    }),
+    nicaragua: Object.freeze({
+        relativeRateToUSA: 0.39
+    }),
+    oman: Object.freeze({
+        relativeRateToUSA: 0.39
+    }),
+    indonesia: Object.freeze({
+        relativeRateToUSA: 0.38
+    }),
+    ruanda: Object.freeze({
+        relativeRateToUSA: 0.38
+    }),
+    croacia: Object.freeze({
+        relativeRateToUSA: 0.37
+    }),
+    francia: Object.freeze({
+        relativeRateToUSA: 0.36
+    }),
+    libia: Object.freeze({
+        relativeRateToUSA: 0.36
+    }),
+    kuwait: Object.freeze({
+        relativeRateToUSA: 0.36
+    }),
+    egipto: Object.freeze({
+        relativeRateToUSA: 0.35
+    }),
+    belgica: Object.freeze({
+        relativeRateToUSA: 0.31
+    }),
+    rumania: Object.freeze({
+        relativeRateToUSA: 0.31
+    }),
+    panama: Object.freeze({
+        relativeRateToUSA: 0.31
+    }),
+    uganda: Object.freeze({
+        relativeRateToUSA: 0.31
+    }),
+    bulgaria: Object.freeze({
+        relativeRateToUSA: 0.29
+    }),
+    peru: Object.freeze({
+        relativeRateToUSA: 0.29
+    }),
+    albania: Object.freeze({
+        relativeRateToUSA: 0.28
+    }),
+    coreaDelSur: Object.freeze({
+        relativeRateToUSA: 0.28
+    }),
+    elSalvador: Object.freeze({
+        relativeRateToUSA: 0.27
+    }),
+    zimbabue: Object.freeze({
+        relativeRateToUSA: 0.27
+    }),
+    jordania: Object.freeze({
+        relativeRateToUSA: 0.27
+    }),
+    costaRica: Object.freeze({
+        relativeRateToUSA: 0.27
+    }),
+    uruguay: Object.freeze({
+        relativeRateToUSA: 0.26
+    }),
+    tunez: Object.freeze({
+        relativeRateToUSA: 0.26
+    }),
+    kenia: Object.freeze({
+        relativeRateToUSA: 0.26
+    }),
+    malasia: Object.freeze({
+        relativeRateToUSA: 0.25
+    }),
+    filipinas: Object.freeze({
+        relativeRateToUSA: 0.25
+    }),
+    vietnam: Object.freeze({
+        relativeRateToUSA: 0.24
+    }),
+    sriLanka: Object.freeze({
+        relativeRateToUSA: 0.23
+    }),
+    bahamas: Object.freeze({
+        relativeRateToUSA: 0.23
+    }),
+    india: Object.freeze({
+        relativeRateToUSA: 0.23
+    }),
+    hungria: Object.freeze({
+        relativeRateToUSA: 0.22
+    }),
+    marruecos: Object.freeze({
+        relativeRateToUSA: 0.22
+    }),
+    bangladesh: Object.freeze({
+        relativeRateToUSA: 0.21
+    }),
+    eslovaquia: Object.freeze({
+        relativeRateToUSA: 0.2
+    }),
+    islaMauricio: Object.freeze({
+        relativeRateToUSA: 0.19
+    }),
+    qatar: Object.freeze({
+        relativeRateToUSA: 0.19
+    }),
+    bolivia: Object.freeze({
+        relativeRateToUSA: 0.19
+    }),
+    polonia: Object.freeze({
+        relativeRateToUSA: 0.19
+    }),
+    luxemburgo: Object.freeze({
+        relativeRateToUSA: 0.18
+    }),
+    ecuador: Object.freeze({
+        relativeRateToUSA: 0.18
+    }),
+    colombia: Object.freeze({
+        relativeRateToUSA: 0.17
+    }),
+    rusia: Object.freeze({
+        relativeRateToUSA: 0.16
+    }),
+    namibia: Object.freeze({
+        relativeRateToUSA: 0.16
+    }),
+    pakistan: Object.freeze({
+        relativeRateToUSA: 0.16
+    }),
+    guyana: Object.freeze({
+        relativeRateToUSA: 0.15
+    }),
+    monteNegro: Object.freeze({
+        relativeRateToUSA: 0.14
+    }),
+    lituania: Object.freeze({
+        relativeRateToUSA: 0.14
+    }),
+    tanzania: Object.freeze({
+        relativeRateToUSA: 0.12
+    }),
+    venezuela: Object.freeze({
+        relativeRateToUSA: 0.12
+    }),
+    barein: Object.freeze({
+        relativeRateToUSA: 0.1
+    }),
+    letonia: Object.freeze({
+        relativeRateToUSA: 0.1
+    }),
+    eslovenia: Object.freeze({
+        relativeRateToUSA: 0.08
+    }),
+    somalia: Object.freeze({
+        relativeRateToUSA: 0.08
+    }),
+    ucrania: Object.freeze({
+        relativeRateToUSA: 0.08
+    }),
+    liberia: Object.freeze({
+        relativeRateToUSA: 0.08
+    }),
+    moldova: Object.freeze({
+        relativeRateToUSA: 0.08
+    }),
+    servia: Object.freeze({
+        relativeRateToUSA: 0.05
+    })
 })
-/*--Así se accedería a cada valor de dicho objeto---*/
-// console.log("Prueba - valor EEUU en USD google search ads CPA autos: " + absoluteStatsCountries.eeuu.googleSearchAds.cpa.autos);
-// console.log("Prueba - valor Moldova en USD google search ads CPA autos: " + absoluteStatsCountries.eeuu.googleSearchAds.cpa.autos * relativeStatsCountries.moldova.relativeRateToUSA);
-/*---Datos de los skills con precios por hora---*/
+
+/*---Datos de los SKILLS con precios por hora---*/
 const skills = Object.freeze({
     names: Object.freeze(["Analista de Marketing Digital", "Analista SEO", "Community Manager", "Redactor", "Diseñador Web UX / UI", "Diseñador Gráfico", "Programador", "Editor de video"]),
     prices: [26, 31, 13, 19, 35, 30, 00, 30]
 })
-/*---Datos de los servicios brindados, organizado para programación orientada a objetos---*/
+/*---Datos de los SERVICIOS brindados, organizado para programación orientada a objetos---*/
 const services = Object.freeze({
     googleSearchAds: Object.freeze({
         implementation: Object.freeze({
@@ -758,7 +756,7 @@ var landingPage = qs('#landingPage');
 var wordpress = qs('#wordpress');
 var customWebsite = qs('#customWebsite');
 var ecommerceWeb = qs('#ecommerceWeb');
-var logoMarca = qs('#logoMarca');	
+var logoMarca = qs('#logoMarca');
 
 /*---Se capturan los CONTENEDORES de los distintos resultados---*/
 var googleFacebookAdsResultContainer = qs('#result-googleads-facebookads-container');
@@ -914,12 +912,12 @@ var errorMessages = qs('#error-messages');
 
 /*---Se captura el selector de país de los proveedores--*/
 var countrySupplier = qs('#country-supplier');
-    if (countrySupplier.value != '') {
-        completeFormValidate[0] = true;
-    }
+if (countrySupplier.value != '') {
+    completeFormValidate[0] = true;
+}
 
-countrySupplier.addEventListener('change', function() {
-    
+countrySupplier.addEventListener('change', function () {
+
     if (countrySupplier.value != '') {
         completeFormValidate[0] = true;
     } else {
@@ -932,7 +930,7 @@ var checkboxesServices = qsa('input[class=services-check]');
 var checkboxesServicesValidate = [false, false, false, false, false, false, false, false, false, false, false];
 
 checkboxesServices.forEach((checkboxService, i) => {
-    checkboxService.addEventListener('change', function() {
+    checkboxService.addEventListener('change', function () {
         if (this.checked) {
             checkboxesServicesValidate[i] = true;
             /*-Desctiva el mensaje de error tipo 1 al tildar un servicio-*/
@@ -1009,8 +1007,8 @@ checkboxesServices.forEach((checkboxService, i) => {
             } else {
                 completeFormValidate[4] = true;
             }
-            
-            
+
+
         } else {
             industryAdsAndCountrySelectorContainer.style.display = "none";
             countryAnnounceContainer.style.display = "none";
@@ -1020,7 +1018,7 @@ checkboxesServices.forEach((checkboxService, i) => {
             googleSearchAdsExtraContainer.style.display = "none";
             googleDisplayAdsExtraContainer.style.display = "none";
             facebookAdsExtraContainer.style.display = "none";
-            
+
         }
         /*--Muestra la selección de plan de Community Management--*/
         if (checkboxesServicesValidate[3]) {
@@ -1049,7 +1047,7 @@ checkboxesServices.forEach((checkboxService, i) => {
                 } else {
                     conversionWebPlanDetails.innerHTML = `<u>Incluye:</u> <li>${services.conversionWeb.maintenance[conversionWebPlan.value].hours.reduce((a, b) => a + b, 0)}hs de mantenimiento mensual</li>`;
                 }
-                
+
             });
         } else {
             conversionWebExtraContainer.style.display = "none";
@@ -1058,12 +1056,12 @@ checkboxesServices.forEach((checkboxService, i) => {
 });
 
 /*---Se piden cantidad de mails en caso de tildar "Email Marketing"---*/
-email.addEventListener('change', function() {
+email.addEventListener('change', function () {
     if (this.checked) {
         emailMarketingContainer.style.display = 'flex';
         emailMarketingPlan.addEventListener('change', function () {
             if (emailMarketingPlan.value == 'basic') {
-                emailMarketingPlanDetails.innerHTML = `<u>Incluye:</u> <li>${services.emailMarketing.maintenance[emailMarketingPlan.value].deliversPerMonth} Envio mensual (${services.emailMarketing.maintenance[emailMarketingPlan.value].hours.reduce((a, b) => a + b, 0)}hs de mantenimiento)</li>`; 
+                emailMarketingPlanDetails.innerHTML = `<u>Incluye:</u> <li>${services.emailMarketing.maintenance[emailMarketingPlan.value].deliversPerMonth} Envio mensual (${services.emailMarketing.maintenance[emailMarketingPlan.value].hours.reduce((a, b) => a + b, 0)}hs de mantenimiento)</li>`;
             } else {
                 emailMarketingPlanDetails.innerHTML = `<u>Incluye:</u> <li>${services.emailMarketing.maintenance[emailMarketingPlan.value].deliversPerMonth} Envios mensuales (${services.emailMarketing.maintenance[emailMarketingPlan.value].hours.reduce((a, b) => a + b, 0)}hs de mantenimiento)</li>`;
             }
@@ -1079,7 +1077,7 @@ email.addEventListener('change', function() {
         completeFormValidate.splice(2, 3)
     }
 });
-emailAmmount.addEventListener('change', function() {
+emailAmmount.addEventListener('change', function () {
     /*-Valida true / false la cantidad de mails en caso de estar seleccionados o no-*/
     if (this.value == '') {
         completeFormValidate[2] = false;
@@ -1088,7 +1086,7 @@ emailAmmount.addEventListener('change', function() {
         /*-Desctiva el mensaje de error tipo 5 seleccionar cantidad de contactos email marketing-*/
         if (errorType == 3) {
             errorMessages.innerHTML = '';
-        } 
+        }
     }
 });
 
@@ -1096,7 +1094,7 @@ emailAmmount.addEventListener('change', function() {
 var industryAdsAndCountrySelectorContainer = qs('#industry-and-country-selectors-container');
 var industryAdsSelector = qs('#industry-ads-selector');
 
-industryAdsSelector.addEventListener('change', function() {
+industryAdsSelector.addEventListener('change', function () {
 
     console.log(`Industria elegida: ${industryAdsSelector.options[industryAdsSelector.selectedIndex].text} codigo: ${industryAdsSelector.value}`)
 
@@ -1105,42 +1103,42 @@ industryAdsSelector.addEventListener('change', function() {
         /*-Desctiva el mensaje de error tipo 4 seleccionar una industria-*/
         if (errorType == 4) {
             errorMessages.innerHTML = '';
-        } 
+        }
     } else {
         completeFormValidate[3] = false;
     }
 });
 
 /*--Eventos sobre los inputs de monto a invertir (google /facebook ads)--*/
-investmentGoogleSearchAdsAmmount.addEventListener('change', function() {
+investmentGoogleSearchAdsAmmount.addEventListener('change', function () {
     if (this.value > 0) {
         completeFormValidate[5] = true;
         /*-Desctiva el mensaje de error tipo 6-*/
         if (errorType == 6) {
             errorMessages.innerHTML = '';
-        } 
+        }
     } else {
         completeFormValidate[5] = false;
     }
 });
-investmentGoogleDisplayAdsAmmount.addEventListener('change', function() {
+investmentGoogleDisplayAdsAmmount.addEventListener('change', function () {
     if (this.value > 0) {
         completeFormValidate[6] = true;
         /*-Desctiva el mensaje de error tipo 7-*/
         if (errorType == 7) {
             errorMessages.innerHTML = '';
-        } 
+        }
     } else {
         completeFormValidate[6] = false;
     }
 });
-investmentFacebookAdsAmmount.addEventListener('change', function() {
+investmentFacebookAdsAmmount.addEventListener('change', function () {
     if (this.value > 0) {
         completeFormValidate[7] = true;
         /*-Desctiva el mensaje de error tipo 8-*/
         if (errorType == 8) {
             errorMessages.innerHTML = '';
-        } 
+        }
     } else {
         completeFormValidate[7] = false;
     }
@@ -1158,7 +1156,7 @@ var selectedCountriesAnnounceDisplay = [];
 var selectedCountriesAnnounceOperate = [];
 
 /*---Funcion encargada de eliminar paises de la lista paises para anunciar, luego actualiza la lista---*/
-function deleteCountry (countryPosition) {
+function deleteCountry(countryPosition) {
     selectedCountriesAnnounceDisplay.splice(countryPosition, 1);
     selectedCountriesAnnounceOperate.splice(countryPosition, 1);
     /*--Valida si hay países o no seleccionados, luego de eliminar uno--*/
@@ -1168,19 +1166,19 @@ function deleteCountry (countryPosition) {
         completeFormValidate[4] = true;
     }
     listSelectedCountriesAnnounce.innerHTML = '';
-        for (let i=0; i < selectedCountriesAnnounceDisplay.length; i++) {
-            listSelectedCountriesAnnounce.innerHTML += `<li>${selectedCountriesAnnounceDisplay[i]}  <i class="fas fa-trash-alt" onClick="deleteCountry(${i}); return false;"></i></li>`;
-        }
+    for (let i = 0; i < selectedCountriesAnnounceDisplay.length; i++) {
+        listSelectedCountriesAnnounce.innerHTML += `<li>${selectedCountriesAnnounceDisplay[i]}  <i class="fas fa-trash-alt" onClick="deleteCountry(${i}); return false;"></i></li>`;
+    }
     console.log(selectedCountriesAnnounceDisplay)
     console.log(selectedCountriesAnnounceOperate)
 }
 
 /*---Evento del botón para agregar paises donde se quiere anunciar---*/
-buttonAddCountryAnnounce.addEventListener('click', function(event) {
+buttonAddCountryAnnounce.addEventListener('click', function (event) {
     event.preventDefault();
     /*--Se captura la opcion del país elegido, en caso de elegir se agrega, caso contrario alerta--*/
     var countryNameOperate = qs(`#country-announce-list option[value="${countryAnnounce.value}"]`);
-    
+
     if (countryNameOperate !== null) {
         /*--Si el país no fue previamente seleccionado lo agrega--*/
         if (!selectedCountriesAnnounceDisplay.includes(countryAnnounce.value)) {
@@ -1188,25 +1186,30 @@ buttonAddCountryAnnounce.addEventListener('click', function(event) {
             selectedCountriesAnnounceOperate.push(countryNameOperate.dataset.value);
 
             countryAnnounce.value = '';
-    
+
             listSelectedCountriesAnnounce.innerHTML = '';
-            for (let i=0; i < selectedCountriesAnnounceDisplay.length; i++) {
+            for (let i = 0; i < selectedCountriesAnnounceDisplay.length; i++) {
                 listSelectedCountriesAnnounce.innerHTML += `<li>${selectedCountriesAnnounceDisplay[i]}      <i class="fas fa-trash-alt" onClick="deleteCountry(${i}); return false;"></i></li>`;
             }
-            
+
         }
     } else {
         if (countryAnnounce.value == '') {
             errorMessages.innerHTML = 'Debes seleccionar un país de la lista desplegable y agregarlo con "+"';
-            setTimeout(function(){ errorMessages.innerHTML = '';}, 4000);
+            setTimeout(function () {
+                errorMessages.innerHTML = '';
+            }, 4000);
         } else {
             console.log(`El país &nbsp;<strong>${countryAnnounce.value}</strong>&nbsp; no es una opción, selecciona un país de la lista`)
             errorMessages.innerHTML = `El país &nbsp;<strong>${countryAnnounce.value}</strong>&nbsp; no es una opción, selecciona un país de la lista`;
-            setTimeout(function(){ errorMessages.innerHTML = ''; countryAnnounce.value = '';}, 3500);
+            setTimeout(function () {
+                errorMessages.innerHTML = '';
+                countryAnnounce.value = '';
+            }, 3500);
         }
-        
+
     }
-    
+
     /*--Valida si hay países o no seleccionados, luego de agregar uno--*/
     if (selectedCountriesAnnounceOperate.length < 1) {
         completeFormValidate[4] = false;
@@ -1215,7 +1218,7 @@ buttonAddCountryAnnounce.addEventListener('click', function(event) {
         /*-Desctiva el mensaje de error tipo 3 al agregar un país a la lista-*/
         if (errorType == 5) {
             errorMessages.innerHTML = '';
-        } 
+        }
     }
     console.log(selectedCountriesAnnounceOperate)
 });
@@ -1228,22 +1231,22 @@ var resultsContainer = qs('#results-container');
 var calculateButton = qs('#calculateButton');
 var calculateAgainButton = qs('#calculateAgainButton');
 
-calculateAgainButton.addEventListener('click', function() {
-        formContainer.style.height = 'auto';
-        formContainer.style.opacity = '1';
-        resultsContainer.style.height = '0';
-        resultsContainer.style.opacity = '0';
-        calculateAgainButton.classList.add("d-none");
-        calculateButton.style.display = 'block';
+calculateAgainButton.addEventListener('click', function () {
+    formContainer.style.height = 'auto';
+    formContainer.style.opacity = '1';
+    resultsContainer.style.height = '0';
+    resultsContainer.style.opacity = '0';
+    calculateAgainButton.classList.add("d-none");
+    calculateButton.style.display = 'block';
 })
 
-disenoWeb.addEventListener('change', function() {
+disenoWeb.addEventListener('change', function () {
     if (this.checked) {
         disenoWebServicesContainer.style.display = 'flex';
     } else {
         disenoWebServicesContainer.style.display = 'none';
     }
-  });
+});
 
 calculateButton.addEventListener('click', function () {
     calculate();
@@ -1298,13 +1301,14 @@ function calculate() {
             errorMessages.innerHTML = 'Debes introducir el monto a invertir en Facebook Ads';
             errorType = 8;
         }
-      
+
     } else if (disenoWeb.checked && (!landingPage.checked && !wordpress.checked && !customWebsite.checked && !ecommerceWeb.checked && !logoMarca.checked)) {
         errorMessages.innerHTML = 'Debes seleccionar un sub-servicio de Diseño Web';
-        setTimeout(function(){ errorMessages.innerHTML = '';}, 4000);
-    }
-    else {
-        
+        setTimeout(function () {
+            errorMessages.innerHTML = '';
+        }, 4000);
+    } else {
+
         formContainer.style.height = '0';
         formContainer.style.opacity = '0';
         resultsContainer.style.height = 'auto';
@@ -1321,7 +1325,7 @@ function calculate() {
 
         if (googleSearchAds.checked) {
             googleSearchAdsResultContainer.style.display = 'block';
-            
+
             if (selectedCountriesAnnounceOperate !== [] && industryAdsSelector.value !== '' && investmentGoogleSearchAdsAmmount.value > 0) {
                 selectedCountriesAnnounceOperate.forEach((selectedCountry, i) => {
 
@@ -1333,7 +1337,7 @@ function calculate() {
 
                             let thisConversion = Number((investmentGoogleSearchAdsAmmount.value / selectedCountriesAnnounceOperate.length) / (absoluteStatsCountries.eeuu.googleSearchAds.cpa[industryAdsSelector.value] * relativeStatsCountries[selectedCountry].relativeRateToUSA));
                             googleAdsSearchConversionsValue += thisConversion;
-                            
+
                         } else if (selectedCountry === "eeuu") {
                             resultGoogleSearch.innerHTML += `<p><b>‣ ${selectedCountriesAnnounceDisplay[i]}</b> en industria <b>${industryAdsSelector.options[industryAdsSelector.selectedIndex].text}</b> ➠ <b>CPA:</b> ${(absoluteStatsCountries.eeuu.googleSearchAds.cpa[industryAdsSelector.value]).toFixed(2).replace(".", ",")}</p>
                             <ul style="list-style-type: none;"><li>- Inversión elegida: USD ${(investmentGoogleSearchAdsAmmount.value / selectedCountriesAnnounceOperate.length)}</li>
@@ -1355,7 +1359,7 @@ function calculate() {
                             resultGoogleSearch.innerHTML += `<p><b>‣ ${selectedCountriesAnnounceDisplay[i]}</b> en industria <b>${industryAdsSelector.options[industryAdsSelector.selectedIndex].text}</b> ➠ <b>CPA:</b> ${(absoluteStatsCountries.eeuu.googleSearchAds.cpa[industryAdsSelector.value]).toFixed(2).replace(".", ",")}</p>
                             <ul style="list-style-type: none;"><li>- Inversión proporcional: USD ${(investmentGoogleSearchAdsAmmount.value / selectedCountriesAnnounceOperate.length)}</li>
                             <li>- Numero de conversiones (inversion / CPA):  <strong>${((investmentGoogleSearchAdsAmmount.value / selectedCountriesAnnounceOperate.length) / absoluteStatsCountries.eeuu.googleSearchAds.cpa[industryAdsSelector.value]).toFixed(2).replace(".", ",")}</strong></li></ul>`;
-                            
+
                             let thisConversion = Number((investmentGoogleSearchAdsAmmount.value / selectedCountriesAnnounceOperate.length) / absoluteStatsCountries.eeuu.googleSearchAds.cpa[industryAdsSelector.value]);
                             googleAdsSearchConversionsValue += thisConversion;
                         }
@@ -1363,7 +1367,7 @@ function calculate() {
 
                 })
             }
-            
+
         } else {
             googleSearchAdsResultContainer.style.display = 'none';
 
@@ -1410,7 +1414,7 @@ function calculate() {
 
                         }
                     }
-                    
+
                 })
             }
 
@@ -1462,7 +1466,7 @@ function calculate() {
 
                         }
                     }
-                    
+
                 })
             }
 
@@ -1539,7 +1543,7 @@ function calculate() {
                         conversionWebManteinanceValue += services.conversionWeb.maintenance[conversionWebPlan.value].hours[i] * skills.prices[j];
                     }
                 })
-                /*--Se genera la descripcion de mantenimiento mensual para este servicio en el plan seleccionado---*/ 
+                /*--Se genera la descripcion de mantenimiento mensual para este servicio en el plan seleccionado---*/
                 maintenanceContent += `<ul><li>${services.conversionWeb.maintenance[conversionWebPlan.value].hours[i]} horas de ${services.conversionWeb.maintenance[conversionWebPlan.value].skillsAcquired[i]} a ${services.conversionWeb.maintenance[conversionWebPlan.value].skillsPrices[i]} USD la hora, que hace lo siguiente:</li> ${services.conversionWeb.maintenance[conversionWebPlan.value].content[i]}</ul>`;
             })
             /*--Se activa el cajon de mantenimiento con el sub-cajon de conversion web, inyectando titulo y contenido para el plan seleccionado--*/
@@ -1561,7 +1565,7 @@ function calculate() {
                             conversionWebImplementationValue += services.conversionWeb.implementation[conversionWebPlan.value].hours[i] * skills.prices[j];
                         }
                     })
-                    /*--Se genera la descripcion de implementación para este servicio en el plan seleccionado---*/ 
+                    /*--Se genera la descripcion de implementación para este servicio en el plan seleccionado---*/
                     implementationContent += `<ul><li>${services.conversionWeb.implementation[conversionWebPlan.value].hours[i]} horas de ${services.conversionWeb.implementation[conversionWebPlan.value].skillsAcquired[i]} a ${services.conversionWeb.implementation[conversionWebPlan.value].skillsPrices[i]} USD la hora, que hace lo siguiente:</li> ${services.conversionWeb.implementation[conversionWebPlan.value].content[i]}</ul>`;
                 })
                 /*--Se activa el cajon de implementación con el sub-cajon de conversion web, inyectando titulo y contenido para el plan seleccionado--*/
@@ -1570,12 +1574,12 @@ function calculate() {
                 resultImplementationConversionWeb.innerHTML = `${implementationContent}`;
 
                 agencyOnceFeeValue += conversionWebImplementationValue;
-                
+
             } else {
                 resultImplementationContainer.style.display = "none";
                 resultImplementationConversionWebContainer.style.display = "none";
             }
-            
+
             /*--Se guardan los valores de mantenimiento para mostrar en el contenedor "costo total mensual"--*/
             arrayAgencyMantainanceSelected.push({
                 name: "Optimización de tasa de conversión web",
@@ -1599,7 +1603,7 @@ function calculate() {
                         seoManteinanceValue += services.seo.maintenance[seoPlan.value].hours[i] * skills.prices[j];
                     }
                 })
-                /*--Se genera la descripcion de mantenimiento mensual para este servicio en el plan seleccionado---*/ 
+                /*--Se genera la descripcion de mantenimiento mensual para este servicio en el plan seleccionado---*/
                 maintenanceContent += `<ul><li>${services.seo.maintenance[seoPlan.value].hours[i]} horas de ${services.seo.maintenance[seoPlan.value].skillsAcquired[i]} a ${services.seo.maintenance[seoPlan.value].skillsPrices[i]} USD la hora, que hace lo siguiente:</li> ${services.seo.maintenance[seoPlan.value].content[i]}</ul>`;
             })
             /*--Se activa el cajon de mantenimiento con el sub-cajon de SEO, inyectando titulo y contenido para el plan seleccionado--*/
@@ -1618,7 +1622,7 @@ function calculate() {
                         seoImplementationValue += services.seo.implementation[seoPlan.value].hours[i] * skills.prices[j];
                     }
                 })
-                /*--Se genera la descripcion de implementación para este servicio en el plan seleccionado---*/ 
+                /*--Se genera la descripcion de implementación para este servicio en el plan seleccionado---*/
                 implementationContent += `<ul><li>${services.seo.implementation[seoPlan.value].hours[i]} horas de ${services.seo.implementation[seoPlan.value].skillsAcquired[i]} a ${services.seo.implementation[seoPlan.value].skillsPrices[i]} USD la hora, que hace lo siguiente:</li> ${services.seo.implementation[seoPlan.value].content[i]}</ul>`;
             })
             /*--Se activa el cajon de implementación con el sub-cajon de SEO, inyectando titulo y contenido para el plan seleccionado--*/
@@ -1641,7 +1645,7 @@ function calculate() {
         if (communityManagement.checked) {
             /*--Se muestran los fees de implementacion (por unica vez)---*/
             resultImplementationContainer.style.display = "block";
-             /*--Se guardan los detalles de skills que incluye este servicio---*/
+            /*--Se guardan los detalles de skills que incluye este servicio---*/
             /*-para MANTENIMIENTO-*/
             let maintenanceContent = '';
             var communityManagementManteinanceValue = 0;
@@ -1651,14 +1655,14 @@ function calculate() {
                         communityManagementManteinanceValue += services.communityManagement.maintenance[communityManagementPlan.value].hours[i] * skills.prices[j];
                     }
                 })
-                /*--Se genera la descripcion de mantenimiento mensual para este servicio en el plan seleccionado---*/ 
+                /*--Se genera la descripcion de mantenimiento mensual para este servicio en el plan seleccionado---*/
                 maintenanceContent += `<ul><li>${services.communityManagement.maintenance[communityManagementPlan.value].hours[i]} horas de ${services.communityManagement.maintenance[communityManagementPlan.value].skillsAcquired[i]} a ${services.communityManagement.maintenance[communityManagementPlan.value].skillsPrices[i]} USD la hora, que hace lo siguiente:</li> ${services.communityManagement.maintenance[communityManagementPlan.value].content[i]}</ul>`;
             })
             /*--Se activa el cajon de mantenimiento con el sub-cajon de Community Management, inyectando titulo y contenido para el plan seleccionado--*/
             resultMaintenanceCommunityManagementContainer.style.display = "block";
             titleMaintenanceCommunityManagement.innerHTML = `<u><strong>Community Management </strong> (Plan ${communityManagementPlan.options[communityManagementPlan.selectedIndex].text}) :</u> USD ${communityManagementManteinanceValue}`;
             resultMaintenanceCommunityManagement.innerHTML = ` ${maintenanceContent}`;
-            
+
             agencyMonthlyFeeValue += communityManagementManteinanceValue;
 
             /*-para IMPLEMENTACIÓN-*/
@@ -1670,7 +1674,7 @@ function calculate() {
                         communityManagementImplementationValue += services.communityManagement.implementation[communityManagementPlan.value].hours[i] * skills.prices[j];
                     }
                 })
-                /*--Se genera la descripcion de implementación para este servicio en el plan seleccionado---*/ 
+                /*--Se genera la descripcion de implementación para este servicio en el plan seleccionado---*/
                 implementationContent += `<ul><li>${services.communityManagement.implementation[communityManagementPlan.value].hours[i]} horas de ${services.communityManagement.implementation[communityManagementPlan.value].skillsAcquired[i]} a ${services.communityManagement.implementation[communityManagementPlan.value].skillsPrices[i]} USD la hora, que hace lo siguiente:</li> ${services.communityManagement.implementation[communityManagementPlan.value].content[i]}</ul>`;
             })
             /*--Se activa el cajon de implementación con el sub-cajon de Community Management, inyectando titulo y contenido para el plan seleccionado--*/
@@ -1680,11 +1684,11 @@ function calculate() {
 
             agencyOnceFeeValue += communityManagementImplementationValue;
 
-             /*--Se guardan los valores de mantenimiento para mostrar en el contenedor "costo total mensual"--*/
-             arrayAgencyMantainanceSelected.push({
-                 name: "Community Management",
-                 value: communityManagementManteinanceValue
-             });
+            /*--Se guardan los valores de mantenimiento para mostrar en el contenedor "costo total mensual"--*/
+            arrayAgencyMantainanceSelected.push({
+                name: "Community Management",
+                value: communityManagementManteinanceValue
+            });
         } else {
             resultMaintenanceCommunityManagementContainer.style.display = "none";
             resultImplementationCommunityManagementContainer.style.display = "none";
@@ -1693,7 +1697,7 @@ function calculate() {
         if (googleSearchAds.checked) {
             /*--Se muestran los fees de implementacion (por unica vez)---*/
             resultImplementationContainer.style.display = "block";
-             /*--Se guardan los detalles de skills que incluye este servicio---*/
+            /*--Se guardan los detalles de skills que incluye este servicio---*/
             /*-para MANTENIMIENTO-*/
             let maintenanceContent = '';
             var googleSearchAdsManteinanceValue = 0;
@@ -1703,7 +1707,7 @@ function calculate() {
                         googleSearchAdsManteinanceValue += services.googleSearchAds.maintenance[googleSearchAdsPlan.value].hours[i] * skills.prices[j];
                     }
                 })
-                /*--Se genera la descripcion de mantenimiento mensual para este servicio en el plan seleccionado---*/ 
+                /*--Se genera la descripcion de mantenimiento mensual para este servicio en el plan seleccionado---*/
                 maintenanceContent += `<ul><li>${services.googleSearchAds.maintenance[googleSearchAdsPlan.value].hours[i]} horas de ${services.googleSearchAds.maintenance[googleSearchAdsPlan.value].skillsAcquired[i]} a ${services.googleSearchAds.maintenance[googleSearchAdsPlan.value].skillsPrices[i]} USD la hora, que hace lo siguiente:</li> ${services.googleSearchAds.maintenance[googleSearchAdsPlan.value].content[i]}</ul>`;
             })
             /*--Se activa el cajon de mantenimiento con el sub-cajon de Google Search Ads, inyectando titulo y contenido para el plan seleccionado--*/
@@ -1722,7 +1726,7 @@ function calculate() {
                         googleSearchAdsImplementationValue += services.googleSearchAds.implementation[googleSearchAdsPlan.value].hours[i] * skills.prices[j];
                     }
                 })
-                /*--Se genera la descripcion de implementación para este servicio en el plan seleccionado---*/ 
+                /*--Se genera la descripcion de implementación para este servicio en el plan seleccionado---*/
                 implementationContent += `<ul><li>${services.googleSearchAds.implementation[googleSearchAdsPlan.value].hours[i]} horas de ${services.googleSearchAds.implementation[googleSearchAdsPlan.value].skillsAcquired[i]} a ${services.googleSearchAds.implementation[googleSearchAdsPlan.value].skillsPrices[i]} USD la hora, que hace lo siguiente:</li> ${services.googleSearchAds.implementation[googleSearchAdsPlan.value].content[i]}</ul>`;
             })
             /*--Se activa el cajon de implementación con el sub-cajon de Google Search Ads, inyectando titulo y contenido para el plan seleccionado--*/
@@ -1755,7 +1759,7 @@ function calculate() {
         if (googleDisplayAds.checked) {
             /*--Se muestran los fees de implementacion (por unica vez)---*/
             resultImplementationContainer.style.display = "block";
-             /*--Se guardan los detalles de skills que incluye este servicio---*/
+            /*--Se guardan los detalles de skills que incluye este servicio---*/
             /*-para MANTENIMIENTO-*/
             let maintenanceContent = '';
             var googleDisplayAdsManteinanceValue = 0;
@@ -1765,7 +1769,7 @@ function calculate() {
                         googleDisplayAdsManteinanceValue += services.googleDisplayAds.maintenance[googleDisplayAdsPlan.value].hours[i] * skills.prices[j];
                     }
                 })
-                /*--Se genera la descripcion de mantenimiento mensual para este servicio en el plan seleccionado---*/ 
+                /*--Se genera la descripcion de mantenimiento mensual para este servicio en el plan seleccionado---*/
                 maintenanceContent += `<ul><li>${services.googleDisplayAds.maintenance[googleDisplayAdsPlan.value].hours[i]} horas de ${services.googleDisplayAds.maintenance[googleDisplayAdsPlan.value].skillsAcquired[i]} a ${services.googleDisplayAds.maintenance[googleDisplayAdsPlan.value].skillsPrices[i]} USD la hora, que hace lo siguiente:</li> ${services.googleDisplayAds.maintenance[googleDisplayAdsPlan.value].content[i]}</ul>`;
             })
             /*--Se activa el cajon de mantenimiento con el sub-cajon de Google Display Ads, inyectando titulo y contenido para el plan seleccionado--*/
@@ -1784,14 +1788,14 @@ function calculate() {
                         googleDisplayAdsImplementationValue += services.googleDisplayAds.implementation[googleDisplayAdsPlan.value].hours[i] * skills.prices[j];
                     }
                 })
-                /*--Se genera la descripcion de implementación para este servicio en el plan seleccionado---*/ 
+                /*--Se genera la descripcion de implementación para este servicio en el plan seleccionado---*/
                 implementationContent += `<ul><li>${services.googleDisplayAds.implementation[googleDisplayAdsPlan.value].hours[i]} horas de ${services.googleDisplayAds.implementation[googleDisplayAdsPlan.value].skillsAcquired[i]} a ${services.googleDisplayAds.implementation[googleDisplayAdsPlan.value].skillsPrices[i]} USD la hora, que hace lo siguiente:</li> ${services.googleDisplayAds.implementation[googleDisplayAdsPlan.value].content[i]}</ul>`;
             })
             /*--Se activa el cajon de implementación con el sub-cajon de Google Display Ads, inyectando titulo y contenido para el plan seleccionado--*/
             resultImplementationGoogleDisplayAdsContainer.style.display = "block";
             titleImplementationGoogleDisplayAds.innerHTML = `<u><strong>Google Ads Red de Display </strong> (Plan ${googleDisplayAdsPlan.options[googleDisplayAdsPlan.selectedIndex].text}) :</u> USD ${googleDisplayAdsImplementationValue}`;
             resultImplementationGoogleDisplayAds.innerHTML = `${implementationContent}`;
-            
+
             agencyOnceFeeValue += googleDisplayAdsImplementationValue;
 
             /*----Se completa la información de conversiones----*/
@@ -1817,7 +1821,7 @@ function calculate() {
         if (facebookAds.checked) {
             /*--Se muestran los fees de implementacion (por unica vez)---*/
             resultImplementationContainer.style.display = "block";
-             /*--Se guardan los detalles de skills que incluye este servicio---*/
+            /*--Se guardan los detalles de skills que incluye este servicio---*/
             /*-para MANTENIMIENTO-*/
             let maintenanceContent = '';
             var facebookAdsManteinanceValue = 0;
@@ -1827,14 +1831,14 @@ function calculate() {
                         facebookAdsManteinanceValue += services.facebookAds.maintenance[facebookAdsPlan.value].hours[i] * skills.prices[j];
                     }
                 })
-                /*--Se genera la descripcion de mantenimiento mensual para este servicio en el plan seleccionado---*/ 
+                /*--Se genera la descripcion de mantenimiento mensual para este servicio en el plan seleccionado---*/
                 maintenanceContent += `<ul><li>${services.facebookAds.maintenance[facebookAdsPlan.value].hours[i]} horas de ${services.facebookAds.maintenance[facebookAdsPlan.value].skillsAcquired[i]} a ${services.facebookAds.maintenance[facebookAdsPlan.value].skillsPrices[i]} USD la hora, que hace lo siguiente:</li> ${services.facebookAds.maintenance[facebookAdsPlan.value].content[i]}</ul>`;
             })
             /*--Se activa el cajon de mantenimiento con el sub-cajon de Facebook Ads, inyectando titulo y contenido para el plan seleccionado--*/
             resultMaintenanceFacebookAdsContainer.style.display = "block";
             titleMaintenanceFacebookAds.innerHTML = `<u><strong>Facebook Ads </strong> (Plan ${facebookAdsPlan.options[facebookAdsPlan.selectedIndex].text}) :</u> USD ${facebookAdsManteinanceValue}`;
             resultMaintenanceFacebookAds.innerHTML = `${maintenanceContent}`;
-            
+
             agencyMonthlyFeeValue += facebookAdsManteinanceValue;
 
             /*-para IMPLEMENTACIÓN-*/
@@ -1846,14 +1850,14 @@ function calculate() {
                         facebookAdsImplementationValue += services.facebookAds.implementation[facebookAdsPlan.value].hours[i] * skills.prices[j];
                     }
                 })
-                /*--Se genera la descripcion de implementación para este servicio en el plan seleccionado---*/ 
+                /*--Se genera la descripcion de implementación para este servicio en el plan seleccionado---*/
                 implementationContent += `<ul><li>${services.facebookAds.implementation[facebookAdsPlan.value].hours[i]} horas de ${services.facebookAds.implementation[facebookAdsPlan.value].skillsAcquired[i]} a ${services.facebookAds.implementation[facebookAdsPlan.value].skillsPrices[i]} USD la hora, que hace lo siguiente:</li> ${services.facebookAds.implementation[facebookAdsPlan.value].content[i]}</ul>`;
             })
             /*--Se activa el cajon de implementación con el sub-cajon de Facebook Ads, inyectando titulo y contenido para el plan seleccionado--*/
             resultImplementationFacebookAdsContainer.style.display = "block";
             titleImplementationFacebookAds.innerHTML = `<u><strong>Facebook Ads </strong> (Plan ${facebookAdsPlan.options[facebookAdsPlan.selectedIndex].text}) :</u> USD ${facebookAdsImplementationValue}`;
             resultImplementationFacebookAds.innerHTML = `${implementationContent}`;
-            
+
             agencyOnceFeeValue += facebookAdsImplementationValue;
 
             /*-Se completa la información de conversiones-*/
@@ -1890,14 +1894,14 @@ function calculate() {
                             landingPageManteinanceValue += services.disenoWeb.maintenance.basic.hours[i] * skills.prices[j];
                         }
                     })
-                    /*--Se genera la descripcion de mantenimiento mensual para este servicio en el plan seleccionado---*/ 
+                    /*--Se genera la descripcion de mantenimiento mensual para este servicio en el plan seleccionado---*/
                     maintenanceContent += `<ul><li>${services.disenoWeb.maintenance.basic.hours[i]} horas de ${services.disenoWeb.maintenance.basic.skillsAcquired[i]} a ${services.disenoWeb.maintenance.basic.skillsPrices[i]} USD la hora, que hace lo siguiente:</li> ${services.disenoWeb.maintenance.basic.content[i]}</ul>`;
                 })
                 /*--Se activa el cajon de mantenimiento con el sub-cajon de Landing Page, inyectando titulo y contenido para el plan seleccionado--*/
                 resultMaintenanceLandingPageContainer.style.display = "block";
                 titleMaintenanceLandingPage.innerHTML = `<u><strong>${services.disenoWeb.implementation.basic.name}</strong> (Plan de mantenimiento Básico) :</u> USD ${landingPageManteinanceValue}`;
                 resultMaintenanceLandingPage.innerHTML = `${maintenanceContent}`;
-                
+
                 agencyMonthlyFeeValue += landingPageManteinanceValue;
 
                 /*-para IMPLEMENTACIÓN-*/
@@ -1909,14 +1913,14 @@ function calculate() {
                             landingPageImplementationValue += services.disenoWeb.implementation.basic.hours[i] * skills.prices[j];
                         }
                     })
-                    /*--Se genera la descripcion de implementación para este servicio en el plan seleccionado---*/ 
+                    /*--Se genera la descripcion de implementación para este servicio en el plan seleccionado---*/
                     implementationContent += `<ul><li>${services.disenoWeb.implementation.basic.hours[i]} horas de ${services.disenoWeb.implementation.basic.skillsAcquired[i]} a ${services.disenoWeb.implementation.basic.skillsPrices[i]} USD la hora, que hace lo siguiente:</li> ${services.disenoWeb.implementation.basic.content[i]}</ul>`;
                 })
                 /*--Se activa el cajon de implementación con el sub-cajon de Landing Page, inyectando titulo y contenido para el plan seleccionado--*/
                 resultImplementationLandingPageContainer.style.display = "block";
                 titleImplementationLandingPage.innerHTML = `<u><strong>${services.disenoWeb.implementation.basic.name}</strong> (Plan Básico) :</u> USD ${landingPageImplementationValue}`;
                 resultImplementationLandingPage.innerHTML = `${implementationContent}`;
-                
+
                 agencyOnceFeeValue += landingPageImplementationValue;
 
                 /*--Se guardan los nombres y valores de inversion y fees mensuales--*/
@@ -1941,14 +1945,14 @@ function calculate() {
                             wordpressManteinanceValue += services.disenoWeb.maintenance.basic.hours[i] * skills.prices[j];
                         }
                     })
-                    /*--Se genera la descripcion de mantenimiento mensual para este servicio en el plan seleccionado---*/ 
+                    /*--Se genera la descripcion de mantenimiento mensual para este servicio en el plan seleccionado---*/
                     maintenanceContent += `<ul><li>${services.disenoWeb.maintenance.basic.hours[i]} horas de ${services.disenoWeb.maintenance.basic.skillsAcquired[i]} a ${services.disenoWeb.maintenance.basic.skillsPrices[i]} USD la hora, que hace lo siguiente:</li> ${services.disenoWeb.maintenance.basic.content[i]}</ul>`;
                 })
                 /*--Se activa el cajon de mantenimiento con el sub-cajon de Wordpress, inyectando titulo y contenido para el plan seleccionado--*/
                 resultMaintenanceWordpressContainer.style.display = "block";
                 titleMaintenanceWordpress.innerHTML = `<u><strong>${services.disenoWeb.implementation.intermediate.name}</strong> (Plan de mantenimiento Básico) :</u> USD ${wordpressManteinanceValue}`;
                 resultMaintenanceWordpress.innerHTML = `${maintenanceContent}`;
-                
+
                 agencyMonthlyFeeValue += wordpressManteinanceValue;
 
                 /*-para IMPLEMENTACIÓN-*/
@@ -1960,14 +1964,14 @@ function calculate() {
                             wordpressImplementationValue += services.disenoWeb.implementation.intermediate.hours[i] * skills.prices[j];
                         }
                     })
-                    /*--Se genera la descripcion de implementación para este servicio en el plan seleccionado---*/ 
+                    /*--Se genera la descripcion de implementación para este servicio en el plan seleccionado---*/
                     implementationContent += `<ul><li>${services.disenoWeb.implementation.intermediate.hours[i]} horas de ${services.disenoWeb.implementation.intermediate.skillsAcquired[i]} a ${services.disenoWeb.implementation.intermediate.skillsPrices[i]} USD la hora, que hace lo siguiente:</li> ${services.disenoWeb.implementation.intermediate.content[i]}</ul>`;
                 })
                 /*--Se activa el cajon de implementación con el sub-cajon de Wordpress, inyectando titulo y contenido para el plan seleccionado--*/
                 resultImplementationWordpressContainer.style.display = "block";
                 titleImplementationWordpress.innerHTML = `<u><strong>${services.disenoWeb.implementation.intermediate.name}</strong> (Plan Intermedio) :</u> USD ${wordpressImplementationValue}`;
                 resultImplementationWordpress.innerHTML = `${implementationContent}`;
-                
+
                 agencyOnceFeeValue += wordpressImplementationValue;
 
                 /*--Se guardan los nombres y valores de inversion y fees mensuales--*/
@@ -1992,14 +1996,14 @@ function calculate() {
                             customWebsiteManteinanceValue += services.disenoWeb.maintenance.basic.hours[i] * skills.prices[j];
                         }
                     })
-                    /*--Se genera la descripcion de mantenimiento mensual para este servicio en el plan seleccionado---*/ 
+                    /*--Se genera la descripcion de mantenimiento mensual para este servicio en el plan seleccionado---*/
                     maintenanceContent += `<ul><li>${services.disenoWeb.maintenance.basic.hours[i]} horas de ${services.disenoWeb.maintenance.basic.skillsAcquired[i]} a ${services.disenoWeb.maintenance.basic.skillsPrices[i]} USD la hora, que hace lo siguiente:</li> ${services.disenoWeb.maintenance.basic.content[i]}</ul>`;
                 })
                 /*--Se activa el cajon de mantenimiento con el sub-cajon de Custom Website, inyectando titulo y contenido para el plan seleccionado--*/
                 resultMaintenanceCustomWebsiteContainer.style.display = "block";
                 titleMaintenanceCustomWebsite.innerHTML = `<u><strong>${services.disenoWeb.implementation.advanced.name}</strong> (Plan de mantenimiento Básico) :</u> USD ${customWebsiteManteinanceValue}`;
                 resultMaintenanceCustomWebsite.innerHTML = `${maintenanceContent}`;
-                
+
                 agencyMonthlyFeeValue += customWebsiteManteinanceValue;
 
                 /*-para IMPLEMENTACIÓN-*/
@@ -2011,14 +2015,14 @@ function calculate() {
                             customWebsiteImplementationValue += services.disenoWeb.implementation.advanced.hours[i] * skills.prices[j];
                         }
                     })
-                    /*--Se genera la descripcion de implementación para este servicio en el plan seleccionado---*/ 
+                    /*--Se genera la descripcion de implementación para este servicio en el plan seleccionado---*/
                     implementationContent += `<ul><li>${services.disenoWeb.implementation.advanced.hours[i]} horas de ${services.disenoWeb.implementation.advanced.skillsAcquired[i]} a ${services.disenoWeb.implementation.advanced.skillsPrices[i]} USD la hora, que hace lo siguiente:</li> ${services.disenoWeb.implementation.advanced.content[i]}</ul>`;
                 })
                 /*--Se activa el cajon de implementación con el sub-cajon de Custom Website, inyectando titulo y contenido para el plan seleccionado--*/
                 resultImplementationCustomWebsiteContainer.style.display = "block";
                 titleImplementationCustomWebsite.innerHTML = `<u><strong>${services.disenoWeb.implementation.advanced.name}</strong> (Plan Avanzado) :</u> USD ${customWebsiteImplementationValue}`;
                 resultImplementationCustomWebsite.innerHTML = `${implementationContent}`;
-                
+
                 agencyOnceFeeValue += customWebsiteImplementationValue;
 
                 /*--Se guardan los nombres y valores de inversion y fees mensuales--*/
@@ -2043,14 +2047,14 @@ function calculate() {
                             ecommerceWebManteinanceValue += services.disenoWeb.maintenance.basic.hours[i] * skills.prices[j];
                         }
                     })
-                    /*--Se genera la descripcion de mantenimiento mensual para este servicio en el plan seleccionado---*/ 
+                    /*--Se genera la descripcion de mantenimiento mensual para este servicio en el plan seleccionado---*/
                     maintenanceContent += `<ul><li>${services.disenoWeb.maintenance.basic.hours[i]} horas de ${services.disenoWeb.maintenance.basic.skillsAcquired[i]} a ${services.disenoWeb.maintenance.basic.skillsPrices[i]} USD la hora, que hace lo siguiente:</li> ${services.disenoWeb.maintenance.basic.content[i]}</ul>`;
                 })
                 /*--Se activa el cajon de mantenimiento con el sub-cajon de Ecommerce, inyectando titulo y contenido para el plan seleccionado--*/
                 resultMaintenanceEcommerceWebContainer.style.display = "block";
                 titleMaintenanceEcommerceWeb.innerHTML = `<u><strong>${services.disenoWeb.implementation.ecommerce.name}</strong> (Plan de mantenimiento Básico) :</u> USD ${ecommerceWebManteinanceValue}`;
                 resultMaintenanceEcommerceWeb.innerHTML = `${maintenanceContent}`;
-                
+
                 agencyMonthlyFeeValue += ecommerceWebManteinanceValue;
 
                 /*-para IMPLEMENTACIÓN-*/
@@ -2062,14 +2066,14 @@ function calculate() {
                             ecommerceWebImplementationValue += services.disenoWeb.implementation.ecommerce.hours[i] * skills.prices[j];
                         }
                     })
-                    /*--Se genera la descripcion de implementación para este servicio en el plan seleccionado---*/ 
+                    /*--Se genera la descripcion de implementación para este servicio en el plan seleccionado---*/
                     implementationContent += `<ul><li>${services.disenoWeb.implementation.ecommerce.hours[i]} horas de ${services.disenoWeb.implementation.ecommerce.skillsAcquired[i]} a ${services.disenoWeb.implementation.ecommerce.skillsPrices[i]} USD la hora, que hace lo siguiente:</li> ${services.disenoWeb.implementation.ecommerce.content[i]}</ul>`;
                 })
                 /*--Se activa el cajon de implementación con el sub-cajon de Ecommerce, inyectando titulo y contenido para el plan seleccionado--*/
                 resultImplementationEcommerceWebContainer.style.display = "block";
                 titleImplementationEcommerceWeb.innerHTML = `<u><strong>${services.disenoWeb.implementation.ecommerce.name}</strong> :</u> USD ${ecommerceWebImplementationValue}`;
                 resultImplementationEcommerceWeb.innerHTML = `${implementationContent}`;
-                
+
                 agencyOnceFeeValue += ecommerceWebImplementationValue;
 
                 /*--Se guardan los nombres y valores de inversion y fees mensuales--*/
@@ -2094,14 +2098,14 @@ function calculate() {
                             logoMarcaManteinanceValue += services.disenoWeb.maintenance.basic.hours[i] * skills.prices[j];
                         }
                     })
-                    /*--Se genera la descripcion de mantenimiento mensual para este servicio en el plan seleccionado---*/ 
+                    /*--Se genera la descripcion de mantenimiento mensual para este servicio en el plan seleccionado---*/
                     maintenanceContent += `<ul><li>${services.disenoWeb.maintenance.basic.hours[i]} horas de ${services.disenoWeb.maintenance.basic.skillsAcquired[i]} a ${services.disenoWeb.maintenance.basic.skillsPrices[i]} USD la hora, que hace lo siguiente:</li> ${services.disenoWeb.maintenance.basic.content[i]}</ul>`;
                 })
                 /*--Se activa el cajon de mantenimiento con el sub-cajon de Logo y Marca, inyectando titulo y contenido para el plan seleccionado--*/
                 resultMaintenanceLogoYMarcaContainer.style.display = "block";
                 titleMaintenanceLogoYMarca.innerHTML = `<u><strong>${services.disenoWeb.implementation.logoYMarca.name}</strong> (Plan de mantenimiento Básico) :</u> USD ${logoMarcaManteinanceValue}`;
                 resultMaintenanceLogoYMarca.innerHTML = `${maintenanceContent}`;
-                
+
                 agencyMonthlyFeeValue += logoMarcaManteinanceValue;
 
                 /*-para IMPLEMENTACIÓN-*/
@@ -2113,14 +2117,14 @@ function calculate() {
                             logoMarcaImplementationValue += services.disenoWeb.implementation.logoYMarca.hours[i] * skills.prices[j];
                         }
                     })
-                    /*--Se genera la descripcion de implementación para este servicio en el plan seleccionado---*/ 
+                    /*--Se genera la descripcion de implementación para este servicio en el plan seleccionado---*/
                     implementationContent += `<ul><li>${services.disenoWeb.implementation.logoYMarca.hours[i]} horas de ${services.disenoWeb.implementation.logoYMarca.skillsAcquired[i]} a ${services.disenoWeb.implementation.logoYMarca.skillsPrices[i]} USD la hora, que hace lo siguiente:</li> ${services.disenoWeb.implementation.logoYMarca.content[i]}</ul>`;
                 })
                 /*--Se activa el cajon de implementación con el sub-cajon de Logo y Marca, inyectando titulo y contenido para el plan seleccionado--*/
                 resultImplementationLogoYMarcaContainer.style.display = "block";
                 titleImplementationLogoYMarca.innerHTML = `<u><strong>${services.disenoWeb.implementation.logoYMarca.name}</strong> :</u> USD ${logoMarcaImplementationValue}`;
                 resultImplementationLogoYMarca.innerHTML = `${implementationContent}`;
-                
+
                 agencyOnceFeeValue += logoMarcaImplementationValue;
 
                 /*--Se guardan los nombres y valores de inversion y fees mensuales--*/
@@ -2133,7 +2137,7 @@ function calculate() {
                 resultImplementationLogoYMarcaContainer.style.display = "none";
             }
         }
-        
+
         if (!email.checked && !googleSearchAds.checked && !googleDisplayAds.checked && !facebookAds.checked) {
             resultInvestmentsMonthlyDetail.innerHTML = '<li>No has seleccionado ninguna inversión en medios digitales. <small>(Ej: Google Ads Red de Busquedas, Google Ads Red de Display, Facebook Ads o Email Marketing)</small></li>'
         }
@@ -2146,13 +2150,17 @@ function calculate() {
 
         /*--Se guardan los detalles de "costo total mensual de agencia (mantenimiento)" en el ultimo cajón "costo total mensual"--*/
         var agencyMantainanceDetails = '';
-        arrayAgencyMantainanceSelected.forEach(singleService => { agencyMantainanceDetails += `<li style="list-style-type: none"> - <u>${singleService.name}:</u> USD ${singleService.value}</li>`});
+        arrayAgencyMantainanceSelected.forEach(singleService => {
+            agencyMantainanceDetails += `<li style="list-style-type: none"> - <u>${singleService.name}:</u> USD ${singleService.value}</li>`
+        });
         resultMonthlyTotalDetail.innerHTML += `<li style="margin-top: 10px"><strong>‣ Costo total mensual de agencia (mantenimiento):</strong> USD ${agencyMonthlyFeeValue}<br><ul>${agencyMantainanceDetails}</ul></li>`;
         /*--Se guardan los detalles de "costo total mensual de inversion en medios" en el ultimo cajón "costo total mensual"--*/
         var investmentSelectedDetails = '';
-        arrayInvestmentSelected.forEach(singleService => { investmentSelectedDetails += `<li style="list-style-type: none"> - <u>${singleService.name}:</u> USD ${singleService.value}</li>`});
+        arrayInvestmentSelected.forEach(singleService => {
+            investmentSelectedDetails += `<li style="list-style-type: none"> - <u>${singleService.name}:</u> USD ${singleService.value}</li>`
+        });
         resultMonthlyTotalDetail.innerHTML += `<li style="margin-top: 10px"><strong>‣ Costo total mensual de inversión en medios:</strong> USD ${totalInvestmentMonthly}<br><ul>${investmentSelectedDetails}</ul></li>`;
-        
+
 
     } else {
         formContainer.style.height = 'auto';
