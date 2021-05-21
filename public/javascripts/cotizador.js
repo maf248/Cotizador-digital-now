@@ -516,7 +516,7 @@ const services = Object.freeze({
                 hours: Object.freeze([6, 6, 2]),
                 skillsAcquired: Object.freeze(["Analista de Marketing Digital", "Diseñador Gráfico", "Editor de video"]),
                 skillsPrices: Object.freeze([skills.prices[0], skills.prices[5], skills.prices[7]]),
-                content: Object.freeze(["<ul><li>Creación de cuenta de Facebook Ads.</li><li>Implementación de pixel de facebook para usar públicos como usuarios que ya entraron a tu sitio web o usuarios similares a los ya entraron a tu sitio web.</li><li>Creación de estructura de campaña para invertir un 70% en usuarios nuevos (No entraron a tu sitio ni a tus redes sociales) y un 30% en usuarios que ya entraron a tu sitio web o ya interactuaron con tus redes sociales.</li><li>Creación de dashboard de Google Data Studio (<a href='https://datastudio.google.com/u/0/reporting/0BzjchXrR5ZQca013LXdWZzQ4cEU/page/UwsTB/preview' target='_blank'>Ver ejemplo</a>)</li><li>Medición de conversiones (Acciones que querés que el usuario haga en tu sitio web, como una compra online o completar un formulario).</li><li>Redacción de textos diferentes de manera estratégica (10 textos en total) teniendo en cuenta si los usuarios ya entraron a la web o no.</li></ul>", "<ul><li>Se harán piezas creativas diferentes (2 sets de piezas gráficas en formatos cuadrado, vertical y horizontal, 6 en total), teniendo en cuenta si los usuarios ya entraron a la web o no.</li><li><a href='https://drive.google.com/drive/folders/14atx8oJwDeypPzA49ISyET6KsONJZfPk?usp=sharing' target='_blank'>Ver ejemplos de entregables</a></li></ul>", "<ul><li>Se harán piezas creativas diferentes (2 sets de piezas gráficas en formatos cuadrado, vertical y horizontal, 6 en total), teniendo en cuenta si los usuarios ya entraron a la web o no.</li><li><a href='https://drive.google.com/drive/folders/14atx8oJwDeypPzA49ISyET6KsONJZfPk?usp=sharing' target='_blank'>Ver ejemplos de entregables</a></li></ul>"])
+                content: Object.freeze(["<ul><li>Creación de cuenta de Facebook Ads.</li><li>Implementación de pixel de facebook para usar públicos como usuarios que ya entraron a tu sitio web o usuarios similares a los ya entraron a tu sitio web.</li><li>Creación de estructura de campaña para invertir un 70% en usuarios nuevos (No entraron a tu sitio ni a tus redes sociales) y un 30% en usuarios que ya entraron a tu sitio web o ya interactuaron con tus redes sociales.</li><li>Creación de dashboard de Google Data Studio (<a href='https://datastudio.google.com/u/0/reporting/0BzjchXrR5ZQca013LXdWZzQ4cEU/page/UwsTB/preview' target='_blank'>Ver ejemplo</a>)</li><li>Medición de conversiones (Acciones que querés que el usuario haga en tu sitio web, como una compra online o completar un formulario).</li><li>Redacción de textos diferentes de manera estratégica (10 textos en total) teniendo en cuenta si los usuarios ya entraron a la web o no.</li></ul>", "<ul><li>Se harán piezas creativas diferentes (3 sets de piezas gráficas en formatos cuadrado y vertical, 6 en total), teniendo en cuenta si los usuarios ya entraron a la web o no, y cuánto avanzaron en el embudo de conversión.</li><li><a href='https://drive.google.com/drive/folders/1faD8HMt_eaqTpa-KhQu0SDiTDnU9b9Ui?usp=sharing' target='_blank'>Ver ejemplos de entregables</a></li></ul>", "<ul><li>Creación de 2 videos de 15 segundos en formatos vertical (Stories) que se adapten al formato de 4:5  (feed) para usuarios nuevos y usuarios que ya entraron al sitio web (2 videos en total).</li><li><a href='https://drive.google.com/drive/folders/1faD8HMt_eaqTpa-KhQu0SDiTDnU9b9Ui?usp=sharing'>Ver ejemplos de entregables</a></li></ul>"])
             })
         }),
         maintenance: Object.freeze({
@@ -536,7 +536,7 @@ const services = Object.freeze({
                 hours: Object.freeze([4, 3, 1]),
                 skillsAcquired: Object.freeze(["Analista de Marketing Digital", "Diseñador Gráfico", "Editor de video"]),
                 skillsPrices: Object.freeze([skills.prices[0], skills.prices[5], skills.prices[7]]),
-                content: Object.freeze(["<ul><li>Cambios solicitados por el cliente (Sin que supere el tiempo contratado)</li><li>Incluye 2 cambios por mes para intentar mejorar la performance como modificaciones en el presupuesto, url finales, texto de anuncios, audiencia, ubicación geográfica, estrategia de puja y piezas creativas. Cada 15 días el cliente recibe un análisis sobre cómo impactó ese cambio.</li></ul>", "<ul><li>Creación de pieza gráfica en formato cuadrado, vertical y horizontal.</li></ul>", "<ul><li>Creación de video de menos de 15 seg  en formato vertical (Adaptable a 4:5)</li></ul>"])
+                content: Object.freeze(["<ul><li>Cambios solicitados por el cliente (Sin que supere el tiempo contratado)</li><li>Incluye 2 cambios por mes para intentar mejorar la performance como modificaciones en el presupuesto, url finales, texto de anuncios, audiencia, ubicación geográfica, estrategia de puja y piezas creativas. Cada 15 días el cliente recibe un análisis sobre cómo impactó ese cambio.</li></ul>", "<ul><li>Creación de 3 piezas gráficas en formatos cuadrado y vertical.</li></ul>", "<ul><li>Creación de video de menos de 15 seg  en formato vertical (Adaptable a 4:5)</li></ul>"])
             })
         })
     }),
@@ -633,7 +633,7 @@ const services = Object.freeze({
                 content: Object.freeze(["<ul><li>Diagnóstico de buenas prácticas de usabilidad y accesibilidad haciendo análisis de contenido, análisis de diseño visual, análisis de interacción y análisis de temas técnicos. <a href='https://docs.google.com/spreadsheets/d/1ZlBsT4XKX11L22I8ojC06DcgsJOeAYjOkUmVmv5mcck/edit?usp=sharing' target='_blank'>Ver Plantilla de Diagnóstico</a></li></ul>"])
             }),
             advanced: Object.freeze({
-                hours: Object.freeze([16]),
+                hours: Object.freeze([12]),
                 skillsAcquired: Object.freeze(["Diseñador Web UX / UI"]),
                 skillsPrices: Object.freeze([skills.prices[4]]),
                 content: Object.freeze(["<ul><li>Diagnóstico de buenas prácticas de usabilidad y accesibilidad haciendo análisis de contenido, análisis de diseño visual, análisis de interacción y análisis de temas técnicos. <a href='https://docs.google.com/spreadsheets/d/1ZlBsT4XKX11L22I8ojC06DcgsJOeAYjOkUmVmv5mcck/edit?usp=sharing' target='_blank'>Ver Plantilla de Diagnóstico</a><br>Implementación de mejoras en tu sitio web en base al diagnóstico.</li></ul>"])
@@ -641,19 +641,19 @@ const services = Object.freeze({
         }),
         maintenance: Object.freeze({
             basic: Object.freeze({
-                hours: Object.freeze([4]),
+                hours: Object.freeze([2]),
                 skillsAcquired: Object.freeze(["Diseñador Web UX / UI"]),
                 skillsPrices: Object.freeze([skills.prices[4]]),
                 content: Object.freeze(["<ul><li>Implementación de 1 experimento con dos versiones (Una con un cambio que apunta a mejorar la performance y otra sin) de tu sitio web al mismo tiempo usando Google optimize y Google Analytics.</li></ul>"])
             }),
             intermediate: Object.freeze({
-                hours: Object.freeze([8]),
+                hours: Object.freeze([4]),
                 skillsAcquired: Object.freeze(["Diseñador Web UX / UI"]),
                 skillsPrices: Object.freeze([skills.prices[4]]),
                 content: Object.freeze(["<ul><li>Implementación de 2 experimentos con dos versiones (Una con un cambio que apunta a mejorar la performance y otra sin) de tu sitio web al mismo tiempo usando Google optimize y Google Analytics.</li></ul>"])
             }),
             advanced: Object.freeze({
-                hours: Object.freeze([12]),
+                hours: Object.freeze([6]),
                 skillsAcquired: Object.freeze(["Diseñador Web UX / UI"]),
                 skillsPrices: Object.freeze([skills.prices[4]]),
                 content: Object.freeze(["<ul><li>Implementación de 3 experimentos con dos versiones (Una con un cambio que apunta a mejorar la performance y otra sin) de tu sitio web al mismo tiempo usando Google optimize y Google Analytics.</li></ul>"])
@@ -670,7 +670,7 @@ const services = Object.freeze({
                 content: Object.freeze(["<ul><li>Implementación de plantilla prediseñada de 1 sola página usando algún CMS (Content Management System) como Wordpress o Wix, de arrastrar y soltar.</li></ul>"])
             }),
             intermediate: Object.freeze({
-                hours: Object.freeze([25]),
+                hours: Object.freeze([20]),
                 skillsAcquired: Object.freeze(["Diseñador Web UX / UI"]),
                 skillsPrices: Object.freeze([skills.prices[4]]),
                 name: Object.freeze("Sitio web de 5 secciones en base a plantilla prediseñada"),
@@ -684,11 +684,11 @@ const services = Object.freeze({
                 content: Object.freeze(["<ul><li>Diseño de varias versiones de prototipo en Figma <a href='https://www.figma.com/file/UXhBSaXoO8LeMYrQgFYO9F/Burplaza?node-id=0%3A1' target='_blank'>(Ver ejemplo)</a> call con el cliente de revisión e implementación de sitio web en Wordpress con hasta 3 revisiones por parte del cliente.</li></ul>"])
             }),
             ecommerce: Object.freeze({
-                hours: Object.freeze([50]),
+                hours: Object.freeze([20]),
                 skillsAcquired: Object.freeze(["Diseñador Web UX / UI"]),
                 skillsPrices: Object.freeze([skills.prices[4]]),
-                name: Object.freeze("Sitio web de Ecommerce en CMS como WooCommerce o Shopify"),
-                content: Object.freeze(["<ul><li>Incluye carga de hasta 50 productos en el sitio web.</li></ul>"])
+                name: Object.freeze("Sitio web de Ecommerce simple en CMS como WooCommerce, Tienda Nube o Shopify"),
+                content: Object.freeze(["<ul><li>Carga de hasta 15 productos en el sitio web,</li></ul>"])
             }),
             logoYMarca: Object.freeze({
                 hours: Object.freeze([10]),
