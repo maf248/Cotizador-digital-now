@@ -782,9 +782,9 @@ var conversionWebExtraContainer = qs('#conversion-web-extra-container');
 var seoExtraContainer = qs('#seo-extra-container');
 
 /*--Se capturan los MONTOS de inversion introducidos---*/
-var investmentGoogleSearchAdsAmmount = qs('#investment-google-search-ads input[type="number"]');
-var investmentGoogleDisplayAdsAmmount = qs('#investment-google-display-ads input[type="number"]');
-var investmentFacebookAdsAmmount = qs('#investment-facebook-ads input[type="number"]');
+var investmentGoogleSearchAdsAmmount = qs('#investment-google-search-ads-value');
+var investmentGoogleDisplayAdsAmmount = qs('#investment-google-display-ads-value');
+var investmentFacebookAdsAmmount = qs('#investment-facebook-ads-value');
 
 /*---Se captura el bloque que pide cantidad de contactos EMAIL y el menu desplegable con valores---*/
 var emailMarketingContainer = qs('#email-marketing-extra-container');
@@ -2182,3 +2182,12 @@ cardHeaders.forEach((header, i) => {
         iconsToRotate[i].classList.toggle('rotateIcons');
     });
 });
+
+
+
+
+// $.getJSON('http://www.whateverorigin.org/get?url=' + encodeURIComponent('http://www.google.com') + '&callback=?', function(data){
+// 	console.log(data.contents);
+// });
+// /*---Upwork Access-Control-Allow-Origin header blocking---*/
+// var urlNotWorking = "https://www.upwork.com/ab/profiles/search/?loc=argentina&q=web%20designer";
