@@ -92,6 +92,9 @@ p {
   margin-right: auto;
   font-style: italic;
 }
+.error-border {
+  border: 1px solid red;
+}
 
 .google-search-ads-extra-container,
 .google-display-ads-extra-container,

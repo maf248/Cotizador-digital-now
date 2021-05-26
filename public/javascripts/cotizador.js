@@ -1100,12 +1100,16 @@ industryAdsSelector.addEventListener('change', function () {
 
     if (this.value != '') {
         completeFormValidate[3] = true;
+        this.classList.remove('error-border');
+        console.log("el value es correcto")
         /*-Desctiva el mensaje de error tipo 4 seleccionar una industria-*/
         if (errorType == 4) {
             errorMessages.innerHTML = '';
         }
     } else {
         completeFormValidate[3] = false;
+        this.classList.add('error-border');
+        console.log("el value es INcorrecto")
     }
 });
 
@@ -1113,34 +1117,40 @@ industryAdsSelector.addEventListener('change', function () {
 investmentGoogleSearchAdsAmmount.addEventListener('change', function () {
     if (this.value > 0) {
         completeFormValidate[5] = true;
+        this.classList.remove('error-border');
         /*-Desctiva el mensaje de error tipo 6-*/
         if (errorType == 6) {
             errorMessages.innerHTML = '';
         }
     } else {
         completeFormValidate[5] = false;
+        this.classList.add('error-border');
     }
 });
 investmentGoogleDisplayAdsAmmount.addEventListener('change', function () {
     if (this.value > 0) {
         completeFormValidate[6] = true;
+        this.classList.remove('error-border');
         /*-Desctiva el mensaje de error tipo 7-*/
         if (errorType == 7) {
             errorMessages.innerHTML = '';
         }
     } else {
         completeFormValidate[6] = false;
+        this.classList.add('error-border');
     }
 });
 investmentFacebookAdsAmmount.addEventListener('change', function () {
     if (this.value > 0) {
         completeFormValidate[7] = true;
+        this.classList.remove('error-border');
         /*-Desctiva el mensaje de error tipo 8-*/
         if (errorType == 8) {
             errorMessages.innerHTML = '';
         }
     } else {
         completeFormValidate[7] = false;
+        this.classList.add('error-border');
     }
 });
 
@@ -1163,10 +1173,12 @@ function deleteCountry(countryPosition) {
     if (selectedCountriesAnnounceOperate.length < 1) {
         completeFormValidate[4] = false;
         listSelectedCountriesAnnounce.innerHTML = '<p class="error-messages"><em>Agrega uno o más países a la lista</em></p>';
+        countryAnnounce.classList.add('error-border');
 
     } else {
         completeFormValidate[4] = true;
         listSelectedCountriesAnnounce.innerHTML = '';
+        countryAnnounce.classList.remove('error-border');
     }
     
     for (let i = 0; i < selectedCountriesAnnounceDisplay.length; i++) {
@@ -1196,6 +1208,7 @@ buttonAddCountryAnnounce.addEventListener('click', function (event) {
             }
 
         }
+        countryAnnounce.classList.add('error-border');
     } else {
         if (countryAnnounce.value == '') {
             errorMessages.innerHTML = 'Debes seleccionar un país de la lista desplegable y agregarlo con el botón "Agregar país"';
@@ -1203,21 +1216,20 @@ buttonAddCountryAnnounce.addEventListener('click', function (event) {
                 errorMessages.innerHTML = '';
             }, 4000);
         } else {
-            console.log(`El país &nbsp;<strong>${countryAnnounce.value}</strong>&nbsp; no es una opción, selecciona un país de la lista`)
             errorMessages.innerHTML = `El país &nbsp;<strong>${countryAnnounce.value}</strong>&nbsp; no es una opción, selecciona un país de la lista`;
             setTimeout(function () {
                 errorMessages.innerHTML = '';
                 countryAnnounce.value = '';
             }, 3500);
         }
-
     }
-
     /*--Valida si hay países o no seleccionados, luego de agregar uno--*/
     if (selectedCountriesAnnounceOperate.length < 1) {
         completeFormValidate[4] = false;
+        countryAnnounce.classList.add('error-border');
     } else {
         completeFormValidate[4] = true;
+        countryAnnounce.classList.remove('error-border');
         /*-Desctiva el mensaje de error tipo 3 al agregar un país a la lista-*/
         if (errorType == 5) {
             errorMessages.innerHTML = '';
