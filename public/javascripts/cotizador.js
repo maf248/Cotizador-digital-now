@@ -1198,13 +1198,13 @@ buttonAddCountryAnnounce.addEventListener('click', function (event) {
         }
     } else {
         if (countryAnnounce.value == '') {
-            errorMessages.innerHTML = '<em>Debes seleccionar un país de la lista desplegable y agregarlo con el botón "Agregar país"</em>';
+            errorMessages.innerHTML = 'Debes seleccionar un país de la lista desplegable y agregarlo con el botón "Agregar país"';
             setTimeout(function () {
                 errorMessages.innerHTML = '';
             }, 4000);
         } else {
             console.log(`El país &nbsp;<strong>${countryAnnounce.value}</strong>&nbsp; no es una opción, selecciona un país de la lista`)
-            errorMessages.innerHTML = `<em>El país &nbsp;<strong>${countryAnnounce.value}</strong>&nbsp; no es una opción, selecciona un país de la lista</em>`;
+            errorMessages.innerHTML = `El país &nbsp;<strong>${countryAnnounce.value}</strong>&nbsp; no es una opción, selecciona un país de la lista`;
             setTimeout(function () {
                 errorMessages.innerHTML = '';
                 countryAnnounce.value = '';
@@ -1277,36 +1277,36 @@ function calculate() {
         resultsContainer.style.opacity = '0';
 
         if (completeFormValidate[1] == false) {
-            errorMessages.innerHTML = '<em>Debes seleccionar mínimo un servicio</em>';
+            errorMessages.innerHTML = 'Debes seleccionar mínimo un servicio';
             errorType = 1;
         } else if (completeFormValidate[2] == false) {
-            errorMessages.innerHTML = '<em>Debes seleccionar la cantidad de contactos para Email Marketing</em>';
+            errorMessages.innerHTML = 'Debes seleccionar la cantidad de contactos para Email Marketing';
             errorType = 3;
         } else if (completeFormValidate[3] == false && completeFormValidate[4] == false) {
-            errorMessages.innerHTML = '<em>Debes agregar mínimo un país a la lista y seleccionar una categoría corresponde tu industria</em>';
+            errorMessages.innerHTML = 'Debes agregar mínimo un país a la lista y seleccionar una categoría corresponde tu industria';
             errorType = 2;
         } else if (completeFormValidate[3] == false) {
-            errorMessages.innerHTML = '<em>Debes seleccionar a que categoría corresponde tu industria, para poder calcular los anuncios</em>';
+            errorMessages.innerHTML = 'Debes seleccionar a que categoría corresponde tu industria, para poder calcular los anuncios';
             errorType = 4;
         } else if (completeFormValidate[4] == false) {
-            errorMessages.innerHTML = '<em>Debes agregar mínimo un país a la lista</em>';
+            errorMessages.innerHTML = 'Debes agregar mínimo un país a la lista';
             errorType = 5;
         } else if (completeFormValidate[5] == false && completeFormValidate[6] == false && completeFormValidate[7] == false) {
-            errorMessages.innerHTML = '<em>Debes introducir montos a invertir en Google Ads Red de Busquedas, Google Ads Red de Display y Facebook Ads   </em>';
+            errorMessages.innerHTML = 'Debes introducir montos a invertir en Google Ads Red de Busquedas, Google Ads Red de Display y Facebook Ads   ';
             errorType = 6;
         } else if (completeFormValidate[5] == false) {
-            errorMessages.innerHTML = '<em>Debes introducir el monto a invertir en Google Ads Red de Busquedas</em>';
+            errorMessages.innerHTML = 'Debes introducir el monto a invertir en Google Ads Red de Busquedas';
             errorType = 6;
         } else if (completeFormValidate[6] == false) {
-            errorMessages.innerHTML = '<em>Debes introducir el monto a invertir en Google Ads Red de Display</em>';
+            errorMessages.innerHTML = 'Debes introducir el monto a invertir en Google Ads Red de Display';
             errorType = 7;
         } else if (completeFormValidate[7] == false) {
-            errorMessages.innerHTML = '<em>Debes introducir el monto a invertir en Facebook Ads</em>';
+            errorMessages.innerHTML = 'Debes introducir el monto a invertir en Facebook Ads';
             errorType = 8;
         }
 
     } else if (disenoWeb.checked && (!landingPage.checked && !wordpress.checked && !customWebsite.checked && !ecommerceWeb.checked && !logoMarca.checked)) {
-        errorMessages.innerHTML = '<em>Debes seleccionar un sub-servicio de Diseño Web</em>';
+        errorMessages.innerHTML = 'Debes seleccionar un sub-servicio de Diseño Web';
         setTimeout(function () {
             errorMessages.innerHTML = '';
         }, 4000);

@@ -60,6 +60,12 @@ p {
   margin-right: auto;
   margin-left: auto;
 }
+.country-announce-container i {
+  cursor: pointer;
+}
+.country-announce-container i:hover {
+  color: red;
+}
 
 .country-announce-selector {
   text-align: center;
@@ -84,6 +90,7 @@ p {
   width: 100%;
   margin-left: auto;
   margin-right: auto;
+  font-style: italic;
 }
 
 .google-search-ads-extra-container,
