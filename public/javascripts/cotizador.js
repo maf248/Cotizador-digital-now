@@ -1162,10 +1162,13 @@ function deleteCountry(countryPosition) {
     /*--Valida si hay países o no seleccionados, luego de eliminar uno--*/
     if (selectedCountriesAnnounceOperate.length < 1) {
         completeFormValidate[4] = false;
+        listSelectedCountriesAnnounce.innerHTML = '<p class="error-messages"><em>Agrega uno o más países a la lista</em></p>';
+
     } else {
         completeFormValidate[4] = true;
+        listSelectedCountriesAnnounce.innerHTML = '';
     }
-    listSelectedCountriesAnnounce.innerHTML = '';
+    
     for (let i = 0; i < selectedCountriesAnnounceDisplay.length; i++) {
         listSelectedCountriesAnnounce.innerHTML += `<li>${selectedCountriesAnnounceDisplay[i]}  <i class="fas fa-trash-alt" onClick="deleteCountry(${i}); return false;"></i></li>`;
     }
@@ -1195,13 +1198,13 @@ buttonAddCountryAnnounce.addEventListener('click', function (event) {
         }
     } else {
         if (countryAnnounce.value == '') {
-            errorMessages.innerHTML = 'Debes seleccionar un país de la lista desplegable y agregarlo con "+"';
+            errorMessages.innerHTML = '<em>Debes seleccionar un país de la lista desplegable y agregarlo con el botón "Agregar país"</em>';
             setTimeout(function () {
                 errorMessages.innerHTML = '';
             }, 4000);
         } else {
             console.log(`El país &nbsp;<strong>${countryAnnounce.value}</strong>&nbsp; no es una opción, selecciona un país de la lista`)
-            errorMessages.innerHTML = `El país &nbsp;<strong>${countryAnnounce.value}</strong>&nbsp; no es una opción, selecciona un país de la lista`;
+            errorMessages.innerHTML = `<em>El país &nbsp;<strong>${countryAnnounce.value}</strong>&nbsp; no es una opción, selecciona un país de la lista</em>`;
             setTimeout(function () {
                 errorMessages.innerHTML = '';
                 countryAnnounce.value = '';
@@ -1274,36 +1277,36 @@ function calculate() {
         resultsContainer.style.opacity = '0';
 
         if (completeFormValidate[1] == false) {
-            errorMessages.innerHTML = 'Debes seleccionar mínimo un servicio';
+            errorMessages.innerHTML = '<em>Debes seleccionar mínimo un servicio</em>';
             errorType = 1;
         } else if (completeFormValidate[2] == false) {
-            errorMessages.innerHTML = 'Debes seleccionar la cantidad de contactos para Email Marketing';
+            errorMessages.innerHTML = '<em>Debes seleccionar la cantidad de contactos para Email Marketing</em>';
             errorType = 3;
         } else if (completeFormValidate[3] == false && completeFormValidate[4] == false) {
-            errorMessages.innerHTML = 'Debes agregar mínimo un país a la lista y seleccionar una categoría corresponde tu industria';
+            errorMessages.innerHTML = '<em>Debes agregar mínimo un país a la lista y seleccionar una categoría corresponde tu industria</em>';
             errorType = 2;
         } else if (completeFormValidate[3] == false) {
-            errorMessages.innerHTML = 'Debes seleccionar a que categoría corresponde tu industria, para poder calcular los anuncios';
+            errorMessages.innerHTML = '<em>Debes seleccionar a que categoría corresponde tu industria, para poder calcular los anuncios</em>';
             errorType = 4;
         } else if (completeFormValidate[4] == false) {
-            errorMessages.innerHTML = 'Debes agregar mínimo un país a la lista';
+            errorMessages.innerHTML = '<em>Debes agregar mínimo un país a la lista</em>';
             errorType = 5;
         } else if (completeFormValidate[5] == false && completeFormValidate[6] == false && completeFormValidate[7] == false) {
-            errorMessages.innerHTML = 'Debes introducir montos a invertir en Google Ads Red de Busquedas, Google Ads Red de Display y Facebook Ads   ';
+            errorMessages.innerHTML = '<em>Debes introducir montos a invertir en Google Ads Red de Busquedas, Google Ads Red de Display y Facebook Ads   </em>';
             errorType = 6;
         } else if (completeFormValidate[5] == false) {
-            errorMessages.innerHTML = 'Debes introducir el monto a invertir en Google Ads Red de Busquedas';
+            errorMessages.innerHTML = '<em>Debes introducir el monto a invertir en Google Ads Red de Busquedas</em>';
             errorType = 6;
         } else if (completeFormValidate[6] == false) {
-            errorMessages.innerHTML = 'Debes introducir el monto a invertir en Google Ads Red de Display';
+            errorMessages.innerHTML = '<em>Debes introducir el monto a invertir en Google Ads Red de Display</em>';
             errorType = 7;
         } else if (completeFormValidate[7] == false) {
-            errorMessages.innerHTML = 'Debes introducir el monto a invertir en Facebook Ads';
+            errorMessages.innerHTML = '<em>Debes introducir el monto a invertir en Facebook Ads</em>';
             errorType = 8;
         }
 
     } else if (disenoWeb.checked && (!landingPage.checked && !wordpress.checked && !customWebsite.checked && !ecommerceWeb.checked && !logoMarca.checked)) {
-        errorMessages.innerHTML = 'Debes seleccionar un sub-servicio de Diseño Web';
+        errorMessages.innerHTML = '<em>Debes seleccionar un sub-servicio de Diseño Web</em>';
         setTimeout(function () {
             errorMessages.innerHTML = '';
         }, 4000);
