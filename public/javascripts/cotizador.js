@@ -1188,9 +1188,7 @@ function deleteCountry(countryPosition) {
     console.log(selectedCountriesAnnounceOperate)
 }
 
-/*---Evento del botón para agregar paises donde se quiere anunciar---*/
-buttonAddCountryAnnounce.addEventListener('click', function (event) {
-    event.preventDefault();
+function addCountry() {
     /*--Se captura la opcion del país elegido, en caso de elegir se agrega, caso contrario alerta--*/
     var countryNameOperate = qs(`#country-announce-list option[value="${countryAnnounce.value}"]`);
 
@@ -1236,7 +1234,20 @@ buttonAddCountryAnnounce.addEventListener('click', function (event) {
         }
     }
     console.log(selectedCountriesAnnounceOperate)
+}
+
+/*---Evento del botón para agregar paises donde se quiere anunciar---*/
+buttonAddCountryAnnounce.addEventListener('click', function (event) {
+    event.preventDefault();
+    addCountry();
 });
+
+countryAnnounce.addEventListener("keyup", function (event) {
+    if (event.keyCode == 13) {
+        event.preventDefault();
+        addCountry();
+    }
+}, false);
 
 /*---Se captura el bloque que muestra los resultados, y se muestra solamente al seleccionar todas las opciones requeridas---*/
 var formContainer = qs('#form-calculate-container');
