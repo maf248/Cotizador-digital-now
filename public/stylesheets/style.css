@@ -41,7 +41,7 @@ p {
 }
 
 .disenoWebServicesContainer {
-  display: none;
+  display: flex;
   flex-direction: column;
   padding: 10px;
 }
@@ -147,14 +147,14 @@ p {
   height: fit-content;
 }
 
-.form-calculate-container {
+.animated-toggle-base {
   transition: opacity 1s ease-out;
   opacity: 1;
   height: auto;
   overflow: hidden;
 }
 
-.results-container {
+.animated-toggle-hide {
   transition: opacity 1s ease-out;
   opacity: 0;
   height: 0;
@@ -221,6 +221,7 @@ button:focus {
   border: 1px solid #0d6efd !important;
   background-color: #eee !important;
   padding: .5rem 1rem;
+
 }
 
 .checkContainer:hover {

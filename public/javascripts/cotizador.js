@@ -758,6 +758,9 @@ var customWebsite = qs('#customWebsite');
 var ecommerceWeb = qs('#ecommerceWeb');
 var logoMarca = qs('#logoMarca');
 
+/*---Se captura el contenedor de datos extra para suavizar la animación de aparicion/desaparicion---*/
+var servicesExtraContainer = qs('#services-extra-container');
+
 /*---Se capturan los CONTENEDORES de los distintos resultados---*/
 var googleFacebookAdsResultContainer = qs('#result-googleads-facebookads-container');
 
@@ -940,10 +943,23 @@ checkboxesServices.forEach((checkboxService, i) => {
         } else {
             checkboxesServicesValidate[i] = false;
         }
+        /*--Chequea si algun servicio fue seleccionado, y muestra u oculta el contenedor correspondiente--*/
         if (checkboxesServicesValidate.includes(true)) {
+
             completeFormValidate[1] = true;
+
+            servicesExtraContainer.style.display = "flex";
+            setTimeout(function () {
+                servicesExtraContainer.classList.remove('animated-toggle-hide');
+            }, 10);
+            
         } else {
             completeFormValidate[1] = false;
+
+            servicesExtraContainer.style.display = "none";
+            setTimeout(function () {
+                servicesExtraContainer.classList.add('animated-toggle-hide');
+            }, 10);
         }
         /*--Muestra u oculta la seleccion del tipo de industria en caso de seleccionarse google / facebook ads (las primeras 3 opciones)---*/
         if (checkboxesServicesValidate.slice(0, 3).includes(true)) {
@@ -1269,10 +1285,14 @@ calculateAgainButton.addEventListener('click', function () {
 
 disenoWeb.addEventListener('change', function () {
     if (this.checked) {
-        disenoWebServicesContainer.style.display = 'flex';
+        disenoWebServicesContainer.style.display = "flex";
     } else {
-        disenoWebServicesContainer.style.display = 'none';
+        disenoWebServicesContainer.style.display = "none";
     }
+    setTimeout(function () {
+        disenoWebServicesContainer.classList.toggle('animated-toggle-hide');
+    }, 10);
+    
 });
 
 calculateButton.addEventListener('click', function () {
