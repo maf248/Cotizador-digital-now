@@ -145,6 +145,7 @@ p {
 .email-ammount-container select {
   min-width: fit-content;
   height: fit-content;
+  text-align: center;
 }
 
 .animated-toggle-base {
