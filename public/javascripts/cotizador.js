@@ -952,7 +952,7 @@ checkboxesServices.forEach((checkboxService, i) => {
             setTimeout(function () {
                 servicesExtraContainer.classList.remove('animated-toggle-hide');
             }, 10);
-            
+
         } else {
             completeFormValidate[1] = false;
 
@@ -1097,8 +1097,10 @@ emailAmmount.addEventListener('change', function () {
     /*-Valida true / false la cantidad de mails en caso de estar seleccionados o no-*/
     if (this.value == '') {
         completeFormValidate[2] = false;
+        this.classList.add('error-border');
     } else {
         completeFormValidate[2] = true;
+        this.classList.remove('error-border');
         /*-Desctiva el mensaje de error tipo 5 seleccionar cantidad de contactos email marketing-*/
         if (errorType == 3) {
             errorMessages.innerHTML = '';
@@ -1117,7 +1119,7 @@ industryAdsSelector.addEventListener('change', function () {
     if (this.value != '') {
         completeFormValidate[3] = true;
         this.classList.remove('error-border');
-        console.log("el value es correcto")
+
         /*-Desctiva el mensaje de error tipo 4 seleccionar una industria-*/
         if (errorType == 4) {
             errorMessages.innerHTML = '';
@@ -1125,7 +1127,7 @@ industryAdsSelector.addEventListener('change', function () {
     } else {
         completeFormValidate[3] = false;
         this.classList.add('error-border');
-        console.log("el value es INcorrecto")
+
     }
 });
 
@@ -1196,7 +1198,7 @@ function deleteCountry(countryPosition) {
         listSelectedCountriesAnnounce.innerHTML = '';
         countryAnnounce.classList.remove('error-border');
     }
-    
+
     for (let i = 0; i < selectedCountriesAnnounceDisplay.length; i++) {
         listSelectedCountriesAnnounce.innerHTML += `<li>${selectedCountriesAnnounceDisplay[i]}  <i class="fas fa-trash-alt" onClick="deleteCountry(${i}); return false;"></i></li>`;
     }
@@ -1259,7 +1261,7 @@ buttonAddCountryAnnounce.addEventListener('click', function (event) {
     addCountry();
 });
 /*---Evento del input datalist para agregar pais al hacer enter---*/
-countryAnnounce.addEventListener("keyup", function (event) {
+countryAnnounce.addEventListener('keyup', function (event) {
     if (event.keyCode == 13) {
         event.preventDefault();
         addCountry();
@@ -1281,8 +1283,9 @@ calculateAgainButton.addEventListener('click', function () {
     resultsContainer.style.opacity = '0';
     calculateAgainButton.classList.add("d-none");
     calculateButton.style.display = 'block';
-})
+});
 
+/*--Evento sobre checkbox de categoria servicios DISEÑO WEB---*/
 disenoWeb.addEventListener('change', function () {
     if (this.checked) {
         disenoWebServicesContainer.style.display = "flex";
@@ -1292,7 +1295,32 @@ disenoWeb.addEventListener('change', function () {
     setTimeout(function () {
         disenoWebServicesContainer.classList.toggle('animated-toggle-hide');
     }, 10);
-    
+});
+/*--Eventos sobre checkboxes de sub-servicios de DISEÑO WEB---*/
+landingPage.addEventListener('change', function () {
+    if (this.checked) {
+        disenoWebServicesContainer.childNodes[1].classList.remove('error-border');
+    }
+});
+wordpress.addEventListener('change', function () {
+    if (this.checked) {
+        disenoWebServicesContainer.childNodes[1].classList.remove('error-border');
+    }
+});
+customWebsite.addEventListener('change', function () {
+    if (this.checked) {
+        disenoWebServicesContainer.childNodes[1].classList.remove('error-border');
+    }
+});
+ecommerceWeb.addEventListener('change', function () {
+    if (this.checked) {
+        disenoWebServicesContainer.childNodes[1].classList.remove('error-border');
+    }
+});
+logoMarca.addEventListener('change', function () {
+    if (this.checked) {
+        disenoWebServicesContainer.childNodes[1].classList.remove('error-border');
+    }
 });
 
 calculateButton.addEventListener('click', function () {
@@ -1324,35 +1352,73 @@ function calculate() {
             errorType = 1;
         } else if (completeFormValidate[2] == false) {
             errorMessages.innerHTML = 'Debes seleccionar la cantidad de contactos para Email Marketing';
+            emailAmmount.classList.add('error-border');
             errorType = 3;
         } else if (completeFormValidate[3] == false && completeFormValidate[4] == false) {
             errorMessages.innerHTML = 'Debes agregar mínimo un país a la lista y seleccionar una categoría corresponde tu industria';
+            countryAnnounce.classList.add('error-border');
+            industryAdsSelector.classList.add('error-border');
             errorType = 2;
+            if(completeFormValidate[5] == false) {
+                investmentGoogleSearchAdsAmmount.classList.add('error-border');
+            }
+            if(completeFormValidate[6] == false) {
+                investmentGoogleDisplayAdsAmmount.classList.add('error-border');
+            }
+            if(completeFormValidate[7] == false) {
+                investmentFacebookAdsAmmount.classList.add('error-border');
+            }
         } else if (completeFormValidate[3] == false) {
             errorMessages.innerHTML = 'Debes seleccionar a que categoría corresponde tu industria, para poder calcular los anuncios';
+            industryAdsSelector.classList.add('error-border');
             errorType = 4;
         } else if (completeFormValidate[4] == false) {
             errorMessages.innerHTML = 'Debes agregar mínimo un país a la lista';
+            countryAnnounce.classList.add('error-border');
             errorType = 5;
         } else if (completeFormValidate[5] == false && completeFormValidate[6] == false && completeFormValidate[7] == false) {
-            errorMessages.innerHTML = 'Debes introducir montos a invertir en Google Ads Red de Busquedas, Google Ads Red de Display y Facebook Ads   ';
+            errorMessages.innerHTML = 'Debes introducir montos a invertir en Google Ads Red de Busquedas, Google Ads Red de Display y Facebook Ads';
+            investmentGoogleSearchAdsAmmount.classList.add('error-border');
+            investmentGoogleDisplayAdsAmmount.classList.add('error-border');
+            investmentFacebookAdsAmmount.classList.add('error-border');
             errorType = 6;
         } else if (completeFormValidate[5] == false) {
             errorMessages.innerHTML = 'Debes introducir el monto a invertir en Google Ads Red de Busquedas';
+            investmentGoogleSearchAdsAmmount.classList.add('error-border');
             errorType = 6;
+            if(completeFormValidate[6] == false) {
+                investmentGoogleDisplayAdsAmmount.classList.add('error-border');
+            }
+            if(completeFormValidate[7] == false) {
+                investmentFacebookAdsAmmount.classList.add('error-border');
+            }
         } else if (completeFormValidate[6] == false) {
             errorMessages.innerHTML = 'Debes introducir el monto a invertir en Google Ads Red de Display';
+            investmentGoogleDisplayAdsAmmount.classList.add('error-border');
             errorType = 7;
+            if(completeFormValidate[5] == false) {
+                investmentGoogleSearchAdsAmmount.classList.add('error-border');
+            }
+            if(completeFormValidate[7] == false) {
+                investmentFacebookAdsAmmount.classList.add('error-border');
+            }
         } else if (completeFormValidate[7] == false) {
             errorMessages.innerHTML = 'Debes introducir el monto a invertir en Facebook Ads';
+            investmentFacebookAdsAmmount.classList.add('error-border');
             errorType = 8;
+            if(completeFormValidate[5] == false) {
+                investmentGoogleSearchAdsAmmount.classList.add('error-border');
+            }
+            if(completeFormValidate[6] == false) {
+                investmentGoogleDisplayAdsAmmount.classList.add('error-border');
+            }
+            
         }
 
     } else if (disenoWeb.checked && (!landingPage.checked && !wordpress.checked && !customWebsite.checked && !ecommerceWeb.checked && !logoMarca.checked)) {
         errorMessages.innerHTML = 'Debes seleccionar un sub-servicio de Diseño Web';
-        setTimeout(function () {
-            errorMessages.innerHTML = '';
-        }, 4000);
+        disenoWebServicesContainer.childNodes[1].classList.add('error-border');
+
     } else {
 
         formContainer.style.height = '0';
@@ -1559,7 +1625,7 @@ function calculate() {
             resultMaintenanceEmail.innerHTML += `${maintenanceContent}`;
 
             agencyMonthlyFeeValue += emailMarketingValueToPush;
-            
+
         } else {
             resultMaintenanceEmailContainer.style.display = "none";
         }
@@ -1759,7 +1825,7 @@ function calculate() {
             /*-Se completa el cajón "costo de inversion en medios mensual total"-*/
             totalInvestmentMonthly += Number(investmentGoogleSearchAdsAmmount.value);
             resultInvestmentsMonthlyDetail.innerHTML += `<li style="margin-top: 10px"><strong>‣ Google Ads Red de Busquedas:</strong> USD ${investmentGoogleSearchAdsAmmount.value} de inversión mensual</li>`;
-            
+
         } else {
             resultMaintenanceGoogleSearchAdsContainer.style.display = "none";
             resultImplementationGoogleSearchAdsContainer.style.display = "none";
@@ -1813,7 +1879,7 @@ function calculate() {
             /*-Se completa el cajón "costo de inversion en medios mensual total"-*/
             totalInvestmentMonthly += Number(investmentGoogleDisplayAdsAmmount.value);
             resultInvestmentsMonthlyDetail.innerHTML += `<li style="margin-top: 10px"><strong>‣ Google Ads Red de Display:</strong> USD ${investmentGoogleDisplayAdsAmmount.value} de inversión mensual</li>`;
-            
+
         } else {
             resultMaintenanceGoogleDisplayAdsContainer.style.display = "none";
             resultImplementationGoogleDisplayAdsContainer.style.display = "none";
@@ -1867,7 +1933,7 @@ function calculate() {
             /*-Se completa el cajón "costo de inversion en medios mensual total"-*/
             totalInvestmentMonthly += Number(investmentFacebookAdsAmmount.value);
             resultInvestmentsMonthlyDetail.innerHTML += `<li style="margin-top: 10px"><strong>‣ Facebook Ads:</strong> USD ${investmentFacebookAdsAmmount.value} de inversión mensual</li>`;
-           
+
         } else {
             resultMaintenanceFacebookAdsContainer.style.display = "none";
             resultImplementationFacebookAdsContainer.style.display = "none";

@@ -96,7 +96,7 @@ p {
 }
 
 .error-border {
-  border: 1px solid red;
+  border: 1px solid red !important;
 }
 
 .google-search-ads-extra-container,
