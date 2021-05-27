@@ -60,9 +60,11 @@ p {
   margin-right: auto;
   margin-left: auto;
 }
+
 .country-announce-container i {
   cursor: pointer;
 }
+
 .country-announce-container i:hover {
   color: red;
 }
@@ -92,6 +94,7 @@ p {
   margin-right: auto;
   font-style: italic;
 }
+
 .error-border {
   border: 1px solid red;
 }
@@ -191,6 +194,14 @@ button:focus {
   transition: transform .2s ease-in-out;
 }
 
+.iconCheck {
+  margin: 10px 10px 10px 0px;
+  color: #0d6efd;
+  -webkit-transition: -webkit-transform .2s ease-in-out;
+  -ms-transition: -ms-transform .2s ease-in-out;
+  transition: transform .2s ease-in-out;
+}
+
 .rotateIcons {
   transform: rotate(-90deg);
   -ms-transform: rotate(-90deg);
@@ -204,6 +215,18 @@ button:focus {
 .card-header:hover {
   background-color: #eee;
 }
+
+.checkContainer {
+  border-radius: 5px;
+  border: 1px solid #0d6efd !important;
+  background-color: #eee !important;
+  padding: .5rem 1rem;
+}
+
+.checkContainer:hover {
+  background-color: #ddd !important;
+}
+
 
 @media (max-width: 500px) {
   body {
