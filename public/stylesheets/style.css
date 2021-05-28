@@ -130,6 +130,19 @@ p {
   padding: 10px;
 }
 
+.google-search-plan-container select,
+.investment-google-search-ads select,
+.google-display-plan-container select,
+.investment-google-display-ads select,
+.facebook-plan-container select,
+.investment-facebook-ads select,
+.community-management-plan-container select,
+.seo-plan-container select,
+.conversion-web-plan-container select,
+.email-plan-container select {
+  margin-left: 10px;
+}
+
 .industry-ads-selector-container label,
 .investment-google-search-ads label,
 .investment-google-display-ads label,
