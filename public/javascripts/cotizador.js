@@ -1209,12 +1209,19 @@ function deleteCountry(countryPosition) {
 /*--Funcion que agrega paises a la lista al ser ejecutada (por boton "agregar pais" o al presionar enter)--*/
 function addCountry() {
     /*--Se captura la opcion del país elegido, en caso de elegir se agrega, caso contrario alerta--*/
-    var countryNameOperate = qs(`#country-announce-list option[value="${countryAnnounce.value}"]`);
+    let inputText = countryAnnounce.value;
+    var countryNameOperate = qs(`#country-announce-list option[value="${inputText}"]`);
+    
+    /*--Se corrigen variaciones para que encuentre paises a pesar de las mayusculas/minusculas y tildes--*/
+    if (countryNameOperate == null) {
+        let inputMayus = inputText.charAt(0).toUpperCase() + inputText.slice(1).toLowerCase();
+        var countryNameOperate = qs(`#country-announce-list option[value="${inputMayus}"]`);
+    }
 
     if (countryNameOperate !== null) {
         /*--Si el país no fue previamente seleccionado lo agrega--*/
-        if (!selectedCountriesAnnounceDisplay.includes(countryAnnounce.value)) {
-            selectedCountriesAnnounceDisplay.push(countryAnnounce.value);
+        if (!selectedCountriesAnnounceDisplay.includes(countryNameOperate.value)) {
+            selectedCountriesAnnounceDisplay.push(countryNameOperate.value);
             selectedCountriesAnnounceOperate.push(countryNameOperate.dataset.value);
 
             countryAnnounce.value = '';
