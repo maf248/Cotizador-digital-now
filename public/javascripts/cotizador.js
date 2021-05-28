@@ -1211,29 +1211,29 @@ function addCountry() {
     /*--Se captura la opcion del país elegido, en caso de elegir se agrega, caso contrario alerta--*/
     var inputText = countryAnnounce.value;
     var countryNameOperate = qs(`#country-announce-list option[value="${inputText}"]`);
-    
+
     /*--Si es nulo, se corrigen variaciones para que encuentre paises a pesar de las MAYUSCULAS/MINUSCULAS-*/
     if (countryNameOperate === null) {
         var wordsInput = inputText.split(' ');
         for (var i = 0; i < wordsInput.length; i++) {
             wordsInput[i] = wordsInput[i].charAt(0).toUpperCase() + wordsInput[i].substring(1).toLowerCase();
-         }
+        }
         var inputMayus = wordsInput.join(' ');
         var countryNameOperate = qs(`#country-announce-list option[value="${inputMayus}"]`);
-        
+
     }
     /*--Si sigue siendo nulo, luego de haberse corregido mayusculas/minusculas, se corrigen tambien TILDES--*/
     if (countryNameOperate === null) {
         /*--Se captura la lista de paises--*/
         var countriesList = qs('#country-announce-list');
         /*--Se buscan los valores para comparar, una vez normalizado el input texto de país. En caso que el pais tenga tilde, ya con las mayusculas corregidas--*/
-        for (let i = 0; i < countriesList.options.length; i++){
-            if(countriesList.options[i].value.normalize("NFD").replace(/[\u0300-\u036f]/g, "") == inputMayus) {
+        for (let i = 0; i < countriesList.options.length; i++) {
+            if (countriesList.options[i].value.normalize("NFD").replace(/[\u0300-\u036f]/g, "") == inputMayus) {
                 countryNameOperate = qs(`#country-announce-list option[value="${countriesList.options[i].value}"]`);
             }
         }
     }
-        
+
     if (countryNameOperate !== null) {
         /*--Si el país no fue previamente seleccionado lo agrega--*/
         if (!selectedCountriesAnnounceDisplay.includes(countryNameOperate.value)) {
@@ -1382,13 +1382,13 @@ function calculate() {
             countryAnnounce.classList.add('error-border');
             industryAdsSelector.classList.add('error-border');
             errorType = 2;
-            if(completeFormValidate[5] == false) {
+            if (completeFormValidate[5] == false) {
                 investmentGoogleSearchAdsAmmount.classList.add('error-border');
             }
-            if(completeFormValidate[6] == false) {
+            if (completeFormValidate[6] == false) {
                 investmentGoogleDisplayAdsAmmount.classList.add('error-border');
             }
-            if(completeFormValidate[7] == false) {
+            if (completeFormValidate[7] == false) {
                 investmentFacebookAdsAmmount.classList.add('error-border');
             }
         } else if (completeFormValidate[3] == false) {
@@ -1409,33 +1409,33 @@ function calculate() {
             errorMessages.innerHTML = 'Debes introducir el monto a invertir en Google Ads Red de Busquedas';
             investmentGoogleSearchAdsAmmount.classList.add('error-border');
             errorType = 6;
-            if(completeFormValidate[6] == false) {
+            if (completeFormValidate[6] == false) {
                 investmentGoogleDisplayAdsAmmount.classList.add('error-border');
             }
-            if(completeFormValidate[7] == false) {
+            if (completeFormValidate[7] == false) {
                 investmentFacebookAdsAmmount.classList.add('error-border');
             }
         } else if (completeFormValidate[6] == false) {
             errorMessages.innerHTML = 'Debes introducir el monto a invertir en Google Ads Red de Display';
             investmentGoogleDisplayAdsAmmount.classList.add('error-border');
             errorType = 7;
-            if(completeFormValidate[5] == false) {
+            if (completeFormValidate[5] == false) {
                 investmentGoogleSearchAdsAmmount.classList.add('error-border');
             }
-            if(completeFormValidate[7] == false) {
+            if (completeFormValidate[7] == false) {
                 investmentFacebookAdsAmmount.classList.add('error-border');
             }
         } else if (completeFormValidate[7] == false) {
             errorMessages.innerHTML = 'Debes introducir el monto a invertir en Facebook Ads';
             investmentFacebookAdsAmmount.classList.add('error-border');
             errorType = 8;
-            if(completeFormValidate[5] == false) {
+            if (completeFormValidate[5] == false) {
                 investmentGoogleSearchAdsAmmount.classList.add('error-border');
             }
-            if(completeFormValidate[6] == false) {
+            if (completeFormValidate[6] == false) {
                 investmentGoogleDisplayAdsAmmount.classList.add('error-border');
             }
-            
+
         }
 
     } else if (disenoWeb.checked && (!landingPage.checked && !wordpress.checked && !customWebsite.checked && !ecommerceWeb.checked && !logoMarca.checked)) {

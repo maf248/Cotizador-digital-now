@@ -110,6 +110,7 @@ p {
   display: none;
   flex-direction: column;
 }
+
 .industry-ads-selector-container {
   display: flex;
   flex-direction: row;
@@ -117,6 +118,7 @@ p {
   justify-content: center;
   padding: 10px;
 }
+
 .industry-ads-selector-container select {
   min-width: fit-content;
   height: fit-content;
@@ -191,6 +193,7 @@ p {
   display: flex;
   flex-direction: row;
   align-items: center;
+  max-width: 95%;
 }
 
 .titlesCollapse p {
@@ -265,6 +268,10 @@ button:focus {
     font-size: 0.8rem;
   }
 
+  .checkContainer p {
+    font-size: 1rem;
+  }
+
   .card-header {
     padding: .5rem .5rem;
   }
@@ -280,34 +287,58 @@ button:focus {
   .email-ammount-container {
     flex-direction: column;
   }
+
+  .industry-ads-selector-container input,
+  .investment-google-search-ads input,
+  .investment-google-display-ads input,
+  .investment-facebook-ads input,
+  .email-ammount-container input {
+    margin-top: 10px;
+  }
+
+  #add-country-announce {
+    margin-top: 10px;
+  }
+
+  .industry-ads-selector-container select {
+    margin-left: 0px;
+    margin-top: 15px;
+  }
+  .email-ammount-container select {
+    margin-top: 15px;
+  }
 }
+
 @media (max-width: 720px) {
-    .google-search-plan-container label,
-    .investment-google-search-ads label,
-    .google-display-plan-container label,
-    .investment-google-display-ads label,
-    .facebook-plan-container label,
-    .investment-facebook-ads label,
-    .community-management-plan-container label,
-    .seo-plan-container label,
-    .conversion-web-plan-container label,
-    .email-plan-container label {
+
+  .google-search-plan-container label,
+  .investment-google-search-ads label,
+  .google-display-plan-container label,
+  .investment-google-display-ads label,
+  .facebook-plan-container label,
+  .investment-facebook-ads label,
+  .community-management-plan-container label,
+  .seo-plan-container label,
+  .conversion-web-plan-container label,
+  .email-plan-container label {
     text-align: center;
   }
-    .google-search-plan-container select,
-    .investment-google-search-ads select,
-    .google-display-plan-container select,
-    .investment-google-display-ads select,
-    .facebook-plan-container select,
-    .investment-facebook-ads select,
-    .community-management-plan-container select,
-    .seo-plan-container select,
-    .conversion-web-plan-container select,
-    .email-plan-container select {
+
+  .google-search-plan-container select,
+  .investment-google-search-ads select,
+  .google-display-plan-container select,
+  .investment-google-display-ads select,
+  .facebook-plan-container select,
+  .investment-facebook-ads select,
+  .community-management-plan-container select,
+  .seo-plan-container select,
+  .conversion-web-plan-container select,
+  .email-plan-container select {
     margin-left: 0px;
     margin-top: 10px;
   }
 }
+
 @media (min-width: 500px) {
   body {
     padding: 35px 25px;
