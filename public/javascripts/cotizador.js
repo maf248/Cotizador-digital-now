@@ -1209,15 +1209,31 @@ function deleteCountry(countryPosition) {
 /*--Funcion que agrega paises a la lista al ser ejecutada (por boton "agregar pais" o al presionar enter)--*/
 function addCountry() {
     /*--Se captura la opcion del país elegido, en caso de elegir se agrega, caso contrario alerta--*/
-    let inputText = countryAnnounce.value;
+    var inputText = countryAnnounce.value;
     var countryNameOperate = qs(`#country-announce-list option[value="${inputText}"]`);
     
-    /*--Se corrigen variaciones para que encuentre paises a pesar de las mayusculas/minusculas y tildes--*/
-    if (countryNameOperate == null) {
-        let inputMayus = inputText.charAt(0).toUpperCase() + inputText.slice(1).toLowerCase();
+    /*--Si es nulo, se corrigen variaciones para que encuentre paises a pesar de las MAYUSCULAS/MINUSCULAS-*/
+    if (countryNameOperate === null) {
+        var wordsInput = inputText.split(' ');
+        for (var i = 0; i < wordsInput.length; i++) {
+            wordsInput[i] = wordsInput[i].charAt(0).toUpperCase() + wordsInput[i].substring(1).toLowerCase();
+         }
+        var inputMayus = wordsInput.join(' ');
         var countryNameOperate = qs(`#country-announce-list option[value="${inputMayus}"]`);
+        
     }
-
+    /*--Si sigue siendo nulo, luego de haberse corregido mayusculas/minusculas, se corrigen tambien TILDES--*/
+    if (countryNameOperate === null) {
+        /*--Se captura la lista de paises--*/
+        var countriesList = qs('#country-announce-list');
+        /*--Se buscan los valores para comparar, una vez normalizado el input texto de país. En caso que el pais tenga tilde, ya con las mayusculas corregidas--*/
+        for (let i = 0; i < countriesList.options.length; i++){
+            if(countriesList.options[i].value.normalize("NFD").replace(/[\u0300-\u036f]/g, "") == inputMayus) {
+                countryNameOperate = qs(`#country-announce-list option[value="${countriesList.options[i].value}"]`);
+            }
+        }
+    }
+        
     if (countryNameOperate !== null) {
         /*--Si el país no fue previamente seleccionado lo agrega--*/
         if (!selectedCountriesAnnounceDisplay.includes(countryNameOperate.value)) {
