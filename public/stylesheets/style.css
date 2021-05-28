@@ -160,9 +160,12 @@ p {
 .industry-ads-selector-container label,
 .investment-google-search-ads label,
 .investment-google-display-ads label,
-.investment-facebook-ads label,
-.email-ammount-container label {
+.investment-facebook-ads label {
   max-width: 70%;
+}
+
+.email-ammount-container label {
+  max-width: 65%;
 }
 
 
@@ -304,8 +307,12 @@ button:focus {
     margin-left: 0px;
     margin-top: 15px;
   }
+
   .email-ammount-container select {
     margin-top: 15px;
+  }
+  .email-ammount-container label {
+    max-width: 90%;
   }
 }
 
@@ -352,5 +359,8 @@ button:focus {
 
   .country-announce-container {
     width: 60% !important;
+  }
+  .email-ammount-container label {
+    max-width: 40%;
   }
 }
