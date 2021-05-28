@@ -110,8 +110,20 @@ p {
   display: none;
   flex-direction: column;
 }
+.industry-ads-selector-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+}
+.industry-ads-selector-container select {
+  min-width: fit-content;
+  height: fit-content;
+  text-align: center;
+  margin-left: 15px;
+}
 
-.industry-ads-selector-container,
 .google-search-plan-container,
 .investment-google-search-ads,
 .google-display-plan-container,
@@ -151,7 +163,7 @@ p {
   max-width: 70%;
 }
 
-.industry-ads-selector-container select,
+
 .investment-google-search-ads input,
 .investment-google-display-ads input,
 .investment-facebook-ads input,
@@ -269,7 +281,33 @@ button:focus {
     flex-direction: column;
   }
 }
-
+@media (max-width: 720px) {
+    .google-search-plan-container label,
+    .investment-google-search-ads label,
+    .google-display-plan-container label,
+    .investment-google-display-ads label,
+    .facebook-plan-container label,
+    .investment-facebook-ads label,
+    .community-management-plan-container label,
+    .seo-plan-container label,
+    .conversion-web-plan-container label,
+    .email-plan-container label {
+    text-align: center;
+  }
+    .google-search-plan-container select,
+    .investment-google-search-ads select,
+    .google-display-plan-container select,
+    .investment-google-display-ads select,
+    .facebook-plan-container select,
+    .investment-facebook-ads select,
+    .community-management-plan-container select,
+    .seo-plan-container select,
+    .conversion-web-plan-container select,
+    .email-plan-container select {
+    margin-left: 0px;
+    margin-top: 10px;
+  }
+}
 @media (min-width: 500px) {
   body {
     padding: 35px 25px;
