@@ -259,7 +259,7 @@ button:focus {
   border: 1px dotted #0d6efd !important;
 }
 .seeDetailsMsg {
-  margin-right: 0px;
+  margin-right: 15px;
   margin-left: auto;
   font-size: 0.9rem;
   font-style: italic;
@@ -348,7 +348,7 @@ button:focus {
   .email-ammount-container label {
     margin-right: 25px;
   }
-  
+
   .card-header:hover .seeDetailsMsg {
     opacity: 0.85;
   }
