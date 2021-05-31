@@ -35,6 +35,9 @@ p {
   flex-direction: row;
   align-items: center;
 }
+.services-container input, .services-container label {
+  cursor: pointer;
+}
 
 .services-container input {
   margin-right: 7px;
@@ -125,6 +128,7 @@ p {
   height: fit-content;
   text-align: center;
   margin-left: 15px;
+  cursor: pointer;
 }
 
 .google-search-plan-container,
@@ -156,6 +160,7 @@ p {
 .conversion-web-plan-container select,
 .email-plan-container select {
   margin-left: 10px;
+  cursor: pointer;
 }
 
 .industry-ads-selector-container label,
@@ -167,6 +172,9 @@ p {
 
 .email-ammount-container label {
   max-width: 65%;
+}
+.email-ammount-container select {
+  cursor: pointer;
 }
 
 .investment-google-search-ads input,
@@ -245,12 +253,14 @@ button:focus {
 }
 
 .card-header:hover {
+  box-sizing: border-box;
   background-color: #eee;
+  border: 1px dotted #0d6efd !important;
 }
 
 .checkContainer {
   border-radius: 5px;
-  border: 1px solid #0d6efd !important;
+  border: 3px solid #0d6efd !important;
   background-color: #eee !important;
   padding: .5rem 1rem;
 
@@ -317,9 +327,23 @@ button:focus {
   }
 }
 
-@media (max-width: 720px) {
+@media (min-width: 720px) {
   body {
     padding: 35px 25px;
+  }
+
+  .industry-ads-selector-container label,
+  .investment-google-search-ads label,
+  .investment-google-display-ads label,
+  .investment-facebook-ads label,
+  .email-ammount-container label {
+    margin-right: 25px;
+  }
+}
+
+@media (max-width: 720px) {
+  body {
+    padding: 25px 10px;
   }
 
   .google-search-plan-container label,
@@ -350,22 +374,9 @@ button:focus {
   }
 }
 
-@media (min-width: 720px) {
-  body {
-    padding: 35px 25px;
-  }
-  .industry-ads-selector-container label,
-  .investment-google-search-ads label,
-  .investment-google-display-ads label,
-  .investment-facebook-ads label,
-  .email-ammount-container label {
-    margin-right: 25px;
-  }
-}
-
 @media (min-width: 1000px) {
   body {
-    padding: 35px 70px;
+    padding: 3% 5%;
   }
 
   .country-announce-container {
