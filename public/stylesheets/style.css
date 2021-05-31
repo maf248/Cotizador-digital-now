@@ -312,12 +312,16 @@ button:focus {
   .email-ammount-container select {
     margin-top: 15px;
   }
+
   .email-ammount-container label {
     max-width: 90%;
   }
 }
 
 @media (max-width: 720px) {
+  body {
+    padding: 35px 25px;
+  }
 
   .google-search-plan-container label,
   .investment-google-search-ads label,
@@ -347,7 +351,7 @@ button:focus {
   }
 }
 
-@media (min-width: 500px) {
+@media (min-width: 720px) {
   body {
     padding: 35px 25px;
   }
@@ -361,6 +365,7 @@ button:focus {
   .country-announce-container {
     width: 60% !important;
   }
+
   .email-ammount-container label {
     max-width: 40%;
   }

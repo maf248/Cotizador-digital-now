@@ -1265,7 +1265,7 @@ function addCountry() {
                     countryAnnounce.value = '';
                 }, 4500);
             }
-            
+
         } else {
             if (selectedCountriesAnnounceOperate.length >= 1) {
                 countrySelectionErrors.innerHTML = `<p class="error-messages"><em>El país\u00A0<strong>${countryAnnounce.value}</strong>\u00A0no es una opción, selecciona un país de la lista</em></p>`;
@@ -1416,6 +1416,9 @@ function calculate() {
             errorType = 4;
         } else if (completeFormValidate[4] == false) {
             errorMessages.innerHTML = 'Debes agregar mínimo un país a la lista';
+            setTimeout(() => {
+                errorMessages.innerHTML = '';
+            }, 4000)
             countryAnnounce.classList.add('error-border');
             errorType = 5;
         } else if (completeFormValidate[5] == false && completeFormValidate[6] == false && completeFormValidate[7] == false) {
