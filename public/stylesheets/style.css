@@ -169,7 +169,6 @@ p {
   max-width: 65%;
 }
 
-
 .investment-google-search-ads input,
 .investment-google-display-ads input,
 .investment-facebook-ads input,
@@ -354,6 +353,13 @@ button:focus {
 @media (min-width: 720px) {
   body {
     padding: 35px 25px;
+  }
+  .industry-ads-selector-container label,
+  .investment-google-search-ads label,
+  .investment-google-display-ads label,
+  .investment-facebook-ads label,
+  .email-ammount-container label {
+    margin-right: 25px;
   }
 }
 

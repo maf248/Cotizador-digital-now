@@ -1342,26 +1342,31 @@ disenoWeb.addEventListener('change', function () {
 landingPage.addEventListener('change', function () {
     if (this.checked) {
         disenoWebServicesContainer.childNodes[1].classList.remove('error-border');
+        errorMessages.innerHTML = '';
     }
 });
 wordpress.addEventListener('change', function () {
     if (this.checked) {
         disenoWebServicesContainer.childNodes[1].classList.remove('error-border');
+        errorMessages.innerHTML = '';
     }
 });
 customWebsite.addEventListener('change', function () {
     if (this.checked) {
         disenoWebServicesContainer.childNodes[1].classList.remove('error-border');
+        errorMessages.innerHTML = '';
     }
 });
 ecommerceWeb.addEventListener('change', function () {
     if (this.checked) {
         disenoWebServicesContainer.childNodes[1].classList.remove('error-border');
+        errorMessages.innerHTML = '';
     }
 });
 logoMarca.addEventListener('change', function () {
     if (this.checked) {
         disenoWebServicesContainer.childNodes[1].classList.remove('error-border');
+        errorMessages.innerHTML = '';
     }
 });
 
