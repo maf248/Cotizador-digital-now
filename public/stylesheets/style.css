@@ -204,7 +204,8 @@ p {
   display: flex;
   flex-direction: row;
   align-items: center;
-  max-width: 95%;
+  min-width: fit-content;
+  max-width: 100%;
 }
 
 .titlesCollapse p {
@@ -253,9 +254,17 @@ button:focus {
 }
 
 .card-header:hover {
-  box-sizing: border-box;
+  box-sizing: content-box !important;
   background-color: #eee;
   border: 1px dotted #0d6efd !important;
+}
+.seeDetailsMsg {
+  margin-right: 0px;
+  margin-left: auto;
+  font-size: 0.9rem;
+  font-style: italic;
+  transition: opacity 1.5s ease-out;
+  opacity: 0;
 }
 
 .checkContainer {
@@ -338,6 +347,10 @@ button:focus {
   .investment-facebook-ads label,
   .email-ammount-container label {
     margin-right: 25px;
+  }
+  
+  .card-header:hover .seeDetailsMsg {
+    opacity: 0.85;
   }
 }
 
