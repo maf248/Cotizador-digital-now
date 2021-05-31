@@ -1178,6 +1178,7 @@ var countryAnnounce = qs('#country-announce');
 /*---Se capturan los botones y lista para agregar países de anuncios dinamicamente---*/
 var buttonAddCountryAnnounce = qs('#add-country-announce');
 var listSelectedCountriesAnnounce = qs('#selected-country-announce');
+var countrySelectionErrors = qs('#country-selection-errors');
 /*--Array con nombre de paises formateados para mostrar en la lista---*/
 var selectedCountriesAnnounceDisplay = [];
 /*--Array con nombre de paises camelCase para luego operar durante los calculos---*/
@@ -1190,15 +1191,15 @@ function deleteCountry(countryPosition) {
     /*--Valida si hay países o no seleccionados, luego de eliminar uno--*/
     if (selectedCountriesAnnounceOperate.length < 1) {
         completeFormValidate[4] = false;
-        listSelectedCountriesAnnounce.innerHTML = '<p class="error-messages"><em>Agrega uno o más países a la lista</em></p>';
+        countrySelectionErrors.innerHTML = '<p class="error-messages"><em>Agrega uno o más países a la lista</em></p>';
         countryAnnounce.classList.add('error-border');
 
     } else {
         completeFormValidate[4] = true;
-        listSelectedCountriesAnnounce.innerHTML = '';
+        countrySelectionErrors.innerHTML = '';
         countryAnnounce.classList.remove('error-border');
     }
-
+    listSelectedCountriesAnnounce.innerHTML = '';
     for (let i = 0; i < selectedCountriesAnnounceDisplay.length; i++) {
         listSelectedCountriesAnnounce.innerHTML += `<li>${selectedCountriesAnnounceDisplay[i]}  <i class="fas fa-trash-alt" onClick="deleteCountry(${i}); return false;"></i></li>`;
     }
@@ -1241,8 +1242,8 @@ function addCountry() {
             selectedCountriesAnnounceOperate.push(countryNameOperate.dataset.value);
 
             countryAnnounce.value = '';
-
             listSelectedCountriesAnnounce.innerHTML = '';
+            countrySelectionErrors.innerHTML = '';
             for (let i = 0; i < selectedCountriesAnnounceDisplay.length; i++) {
                 listSelectedCountriesAnnounce.innerHTML += `<li>${selectedCountriesAnnounceDisplay[i]}      <i class="fas fa-trash-alt" onClick="deleteCountry(${i}); return false;"></i></li>`;
             }
@@ -1251,16 +1252,34 @@ function addCountry() {
         countryAnnounce.classList.add('error-border');
     } else {
         if (countryAnnounce.value == '') {
-            errorMessages.innerHTML = 'Debes seleccionar un país de la lista desplegable y agregarlo con el botón "Agregar país"';
-            setTimeout(function () {
-                errorMessages.innerHTML = '';
-            }, 4000);
+            if (selectedCountriesAnnounceOperate.length >= 1) {
+                countrySelectionErrors.innerHTML = '<p class="error-messages"><em>Debes seleccionar un país de la lista desplegable y agregarlo con el botón "Agregar país"</em></p>';
+                setTimeout(function () {
+                    countrySelectionErrors.innerHTML = '';
+                    countryAnnounce.value = '';
+                }, 4500);
+            } else {
+                countrySelectionErrors.innerHTML = '<p class="error-messages"><em>Debes seleccionar un país de la lista desplegable y agregarlo con el botón "Agregar país"</em></p>';
+                setTimeout(function () {
+                    countrySelectionErrors.innerHTML = '<p class="error-messages"><em>Agrega uno o más países a la lista</em></p>';
+                    countryAnnounce.value = '';
+                }, 4500);
+            }
+            
         } else {
-            errorMessages.innerHTML = `El país &nbsp;<strong>${countryAnnounce.value}</strong>&nbsp; no es una opción, selecciona un país de la lista`;
-            setTimeout(function () {
-                errorMessages.innerHTML = '';
-                countryAnnounce.value = '';
-            }, 3500);
+            if (selectedCountriesAnnounceOperate.length >= 1) {
+                countrySelectionErrors.innerHTML = `<p class="error-messages"><em>El país\u00A0<strong>${countryAnnounce.value}</strong>\u00A0no es una opción, selecciona un país de la lista</em></p>`;
+                setTimeout(function () {
+                    countrySelectionErrors.innerHTML = '';
+                    countryAnnounce.value = '';
+                }, 3500);
+            } else {
+                countrySelectionErrors.innerHTML = `<p class="error-messages"><em>El país\u00A0<strong>${countryAnnounce.value}</strong>\u00A0no es una opción, selecciona un país de la lista</em></p>`;
+                setTimeout(function () {
+                    countrySelectionErrors.innerHTML = '<p class="error-messages"><em>Agrega uno o más países a la lista</em></p>';
+                    countryAnnounce.value = '';
+                }, 3500);
+            }
         }
     }
     /*--Valida si hay países o no seleccionados, luego de agregar uno--*/
