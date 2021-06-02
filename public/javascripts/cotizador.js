@@ -721,14 +721,14 @@ const services = Object.freeze({
                 deliversPerMonth: Object.freeze(2),
                 skillsAcquired: Object.freeze(["Diseñador Gráfico", "Redactor", "Diseñador Web UX / UI"]),
                 skillsPrices: Object.freeze([skills.prices[5], skills.prices[3], skills.prices[4]]),
-                content: Object.freeze(["<ul><li>2 pieza gráfica en formato estático (JPG) o dinámico (GIF)</li></ul>", "<ul><li>Redacción de textos para envío de email.</li></ul>", "<ul><li>Implementación de imágenes y textos en plantilla prediseñada.</li></ul>"])
+                content: Object.freeze(["<ul><li>2 piezas gráfica en formato estático (JPG) o dinámico (GIF)</li></ul>", "<ul><li>Redacción de textos para envío de email.</li></ul>", "<ul><li>Implementación de imágenes y textos en plantilla prediseñada.</li></ul>"])
             }),
             advanced: Object.freeze({
                 hours: Object.freeze([4, 2, 2]),
                 deliversPerMonth: Object.freeze(4),
                 skillsAcquired: Object.freeze(["Diseñador Gráfico", "Redactor", "Diseñador Web UX / UI"]),
                 skillsPrices: Object.freeze([skills.prices[5], skills.prices[3], skills.prices[4]]),
-                content: Object.freeze(["<ul><li>2 pieza gráfica en formato estático (JPG) o dinámico (GIF)</li></ul>", "<ul><li>Redacción de textos para envío de email.</li></ul>", "<ul><li>Implementación de imágenes y textos en plantilla prediseñada.</li></ul>"])
+                content: Object.freeze(["<ul><li>2 piezas gráfica en formato estático (JPG) o dinámico (GIF)</li></ul>", "<ul><li>Redacción de textos para envío de email.</li></ul>", "<ul><li>Implementación de imágenes y textos en plantilla prediseñada.</li></ul>"])
             })
         })
     })
