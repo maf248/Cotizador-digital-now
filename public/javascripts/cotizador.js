@@ -2099,12 +2099,13 @@ function calculate() {
             resultMaintenanceFacebookAdsContainer.style.display = "none";
             resultImplementationFacebookAdsContainer.style.display = "none";
         }
+        /*---Se capturan los mensajes del contenedor destacado del final, para cambiar el contenido acorde a seleccionar 1 o más servicios---*/
+        var monthlyTotalCostMessage = qs('#monthly-total-cost-message');
+        var implementationCostMessage = qs('#implementation-cost-message');
+        var implementationCostTotal = qs('#implementation-cost-total');
+
         /*---Se muestran los resultados particulares de Diseño Web solamente si esta opcion con alguna sub-opción fueron seleccionadas---*/
         if (disenoWeb.checked) {
-            /*---Se capturan los mensajes del contenedor destacado del final, para cambiar el contenido acorde a seleccionar 1 o más servicios---*/
-            var monthlyTotalCostMessage = qs('#monthly-total-cost-message');
-            var implementationCostMessage = qs('#implementation-cost-message');
-            var implementationCostTotal = qs('#implementation-cost-total');
 
             if (landingPage.checked) {
                 /*--Se muestran los fees de implementacion (por unica vez)---*/
@@ -2385,7 +2386,17 @@ function calculate() {
         calculateButton.style.display = 'block';
     }
 
+    /*--Sistema que genera el horario real en el mensaje de "click para ver más"--*/
+    function prettyDate2() {
+        var date = new Date();
+        var localeSpecificTime = date.toLocaleTimeString();
+        return localeSpecificTime.replace(/:\d+ /, ' ');
+    }
+    qs('#timestamp').innerHTML = prettyDate2();
+    qs('#bubble-click-container').classList.remove('animated-toggle-hide');
+
 };
+
 
 /*--Sistema para rotar los iconos de cajónes "collapse" al expandirlos o contraerlos--*/
 var cardHeaders = qsa('.card-header');
@@ -2393,6 +2404,9 @@ var iconsToRotate = qsa('.iconsToRotate');
 cardHeaders.forEach((header, i) => {
     header.addEventListener('click', function () {
         iconsToRotate[i].classList.toggle('rotateIcons');
+
+        qs('#bubble-click-container').classList.add('animated-toggle-hide');
+
     });
 });
 
