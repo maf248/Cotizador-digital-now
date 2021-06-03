@@ -923,7 +923,6 @@ var seoPlanDetails = qs('#seo-plan-details');
 var conversionWebPlanDetails = qs('#conversion-web-plan-details');
 var emailMarketingPlanDetails = qs('#email-marketing-plan-details');
 
-
 /*---------------------RESULTADOS---------------------*/
 /*---Se capturan los bloques que muestran los RESULTADOS, para inyectar los valores luego de calcular---*/
 var resultGoogleFacebookAds = qs('#result-googleads-facebookads');
@@ -2102,6 +2101,11 @@ function calculate() {
         }
         /*---Se muestran los resultados particulares de Diseño Web solamente si esta opcion con alguna sub-opción fueron seleccionadas---*/
         if (disenoWeb.checked) {
+            /*---Se capturan los mensajes del contenedor destacado del final, para cambiar el contenido acorde a seleccionar 1 o más servicios---*/
+            var monthlyTotalCostMessage = qs('#monthly-total-cost-message');
+            var implementationCostMessage = qs('#implementation-cost-message');
+            var implementationCostTotal = qs('#implementation-cost-total');
+
             if (landingPage.checked) {
                 /*--Se muestran los fees de implementacion (por unica vez)---*/
                 resultImplementationContainer.style.display = "block";
@@ -2332,6 +2336,7 @@ function calculate() {
                 resultMaintenanceLogoYMarcaContainer.style.display = "none";
                 resultImplementationLogoYMarcaContainer.style.display = "none";
             }
+
         } else {
             resultMaintenanceLandingPageContainer.style.display = "none";
             resultImplementationLandingPageContainer.style.display = "none";
@@ -2345,10 +2350,26 @@ function calculate() {
             resultImplementationLogoYMarcaContainer.style.display = "none";
         }
 
+        /*---Carca el mensaje de NO se seleccionaron inversiones si se da el caso---*/
         if (!email.checked && !googleSearchAds.checked && !googleDisplayAds.checked && !facebookAds.checked) {
             resultInvestmentsMonthlyDetail.innerHTML = '<li>No has seleccionado ninguna inversión en medios digitales. <small>(Ej: Google Ads Red de Busquedas, Google Ads Red de Display, Facebook Ads o Email Marketing)</small></li>'
         }
+        /*---Se destaca la implementación en el cajon final, si SOLO se seleccionaron servicios "Diseño Web"---*/
+        if (disenoWeb.checked && (!googleSearchAds.checked && !googleDisplayAds.checked && !facebookAds.checked && !communityManagement.checked && !seo.checked && !conversionWeb.checked && !email.checked)) {
+            monthlyTotalCostMessage.style.display = 'none';
+            resultMonthlyTotal.style.display = 'none';
 
+            implementationCostMessage.style.display = 'inline-block';
+            implementationCostTotal.innerHTML = `USD ${agencyOnceFeeValue}`;
+            implementationCostTotal.style.display = 'inline-block';
+        } else {
+            implementationCostMessage.style.display = 'none';
+            implementationCostTotal.style.display = 'none';
+
+            monthlyTotalCostMessage.style.display = 'inline-block';
+            resultMonthlyTotal.style.display = 'inline-block';
+
+        }
         /*---Se setean los valores totales de los cajónes, es decir las sumas de valores de c/u---*/
         resultImplementationFee.innerHTML = `USD ${agencyOnceFeeValue}`;
         resultMaintenanceFee.innerHTML = `USD ${agencyMonthlyFeeValue}`;
