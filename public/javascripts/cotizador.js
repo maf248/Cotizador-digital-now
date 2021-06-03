@@ -2332,6 +2332,17 @@ function calculate() {
                 resultMaintenanceLogoYMarcaContainer.style.display = "none";
                 resultImplementationLogoYMarcaContainer.style.display = "none";
             }
+        } else {
+            resultMaintenanceLandingPageContainer.style.display = "none";
+            resultImplementationLandingPageContainer.style.display = "none";
+            resultMaintenanceWordpressContainer.style.display = "none";
+            resultImplementationWordpressContainer.style.display = "none";
+            resultMaintenanceCustomWebsiteContainer.style.display = "none";
+            resultImplementationCustomWebsiteContainer.style.display = "none";
+            resultMaintenanceEcommerceWebContainer.style.display = "none";
+            resultImplementationEcommerceWebContainer.style.display = "none";
+            resultMaintenanceLogoYMarcaContainer.style.display = "none";
+            resultImplementationLogoYMarcaContainer.style.display = "none";
         }
 
         if (!email.checked && !googleSearchAds.checked && !googleDisplayAds.checked && !facebookAds.checked) {
