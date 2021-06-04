@@ -2417,10 +2417,10 @@ categoryTitles.forEach((category, i) => {
             service.addEventListener('click', function () {
                 qs('#bubble-click-container').style.transform = 'scale(0)';
                 qs('#bubble-click-container').style.transition = 'transform 0.2s ease-in';
-                setTimeout(()=> {
-                    qs('#bubble-click-container').classList.add('animated-toggle-hide');
-                }, 190)
-                
+                setTimeout(() => {
+                    qs('#bubble-click-container').style.display = 'none';
+                }, 200)
+
             });
         });
     });
