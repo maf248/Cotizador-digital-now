@@ -2387,12 +2387,12 @@ function calculate() {
     }
 
     /*--Sistema que genera el horario real en el mensaje de "click para ver más"--*/
-    function prettyDate2() {
+    function parseDate() {
         var date = new Date();
         var localeSpecificTime = date.toLocaleTimeString();
-        return localeSpecificTime.replace(/:\d+ /, ' ');
+        return localeSpecificTime.replace(/:\d+ /, ' ').slice(0,5);
     }
-    qs('#timestamp').innerHTML = prettyDate2();
+    qs('#timestamp').innerHTML = parseDate();
     qs('#bubble-click-container').classList.remove('animated-toggle-hide');
 
 };
