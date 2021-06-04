@@ -901,6 +901,10 @@ var investmentGoogleSearchAdsAmmount = qs('#investment-google-search-ads-value')
 var investmentGoogleDisplayAdsAmmount = qs('#investment-google-display-ads-value');
 var investmentFacebookAdsAmmount = qs('#investment-facebook-ads-value');
 
+/*--Se captura el input de email del usuario para validarlo con el siguiente Regex--*/
+var emailCustomerInput = qs('#email-customer');
+var mailFormat = /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/g;
+
 /*---Se captura el bloque que pide cantidad de contactos EMAIL y el menu desplegable con valores---*/
 var emailMarketingContainer = qs('#email-marketing-extra-container');
 var emailAmmount = qs('#email-ammount');
@@ -1039,6 +1043,7 @@ countrySupplier.addEventListener('change', function () {
 });
 /*--Se da estilo a los resultados totales mensuales---*/
 resultMonthlyTotalContainer.style.marginTop = "40px";
+
 /*---Se capturan los checkboxes en conjunto, de los servicios requeridos---*/
 var checkboxesServices = qsa('input[class=services-check]');
 var checkboxesServicesValidate = [false, false, false, false, false, false, false, false, false, false, false];
@@ -1282,6 +1287,22 @@ investmentFacebookAdsAmmount.addEventListener('change', function () {
         this.classList.add('error-border');
     }
 });
+/*--Se valida el email cada vez que es cambiado--*/
+let emailCustomerCheck = false;
+emailCustomerInput.addEventListener('change', function () {
+    
+    if (emailCustomerInput.value.match(mailFormat)) {
+        emailCustomerCheck = true;
+        this.classList.remove('error-border');
+        /*-Desctiva el mensaje de error tipo 8-*/
+        if (errorType == 9) {
+            errorMessages.innerHTML = '';
+        }
+    } else {
+        emailCustomerCheck = false;
+        this.classList.add('error-border');
+    }
+});
 
 /*---Se captura el menu desplegable de los paises para anunciarse---*/
 var countryAnnounce = qs('#country-announce');
@@ -1500,7 +1521,7 @@ function calculate() {
     resultInvestmentsMonthlyDetail.innerHTML = '';
 
     /*---Se valida que esten todas las etapas seleccionadas, para mostrar los resultados u ocultarlos---*/
-    if (completeFormValidate.includes(false)) {
+    if (completeFormValidate.includes(false) || !emailCustomerCheck) {
 
         resultsContainer.style.height = '0';
         resultsContainer.style.opacity = '0';
@@ -1574,6 +1595,10 @@ function calculate() {
                 investmentGoogleDisplayAdsAmmount.classList.add('error-border');
             }
 
+        } else if (emailCustomerCheck == false) {
+            errorMessages.innerHTML = 'Debes introducir un formato de email valido';
+            emailCustomerInput.classList.add('error-border');
+            errorType = 9;
         }
 
     } else if (disenoWeb.checked && (!landingPage.checked && !wordpress.checked && !customWebsite.checked && !ecommerceWeb.checked && !logoMarca.checked)) {
@@ -2425,7 +2450,6 @@ categoryTitles.forEach((category, i) => {
         });
     });
 });
-
 
 
 // $.getJSON('http://www.whateverorigin.org/get?url=' + encodeURIComponent('http://www.google.com') + '&callback=?', function(data){

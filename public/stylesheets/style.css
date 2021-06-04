@@ -180,6 +180,18 @@ p {
   cursor: pointer;
 }
 
+.email-customer-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  padding: 10px;
+}
+
+.email-customer-container input {
+  text-align: center;
+}
+
 .investment-google-search-ads input,
 .investment-google-display-ads input,
 .investment-facebook-ads input,
@@ -466,7 +478,12 @@ button:focus {
     margin-left: 0px;
     margin-top: 10px;
   }
-
+  .email-customer-container {
+    flex-direction: column;
+  }
+  .email-customer-container input {
+    margin-top: 10px;
+  }
   .checkContainer {
     padding-right: 1.5rem;
   }

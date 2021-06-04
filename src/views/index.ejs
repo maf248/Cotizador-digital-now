@@ -22,9 +22,10 @@
     integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
   <!---Script Principal--->
   <script src="/javascripts/cotizador.js" defer></script>
+
 </head>
 
-<body>
+<body id="body-print">
   <div class="container-fluid">
     <div class="row">
       <div class="col-3 col-md-2 col-lg-1">
@@ -445,6 +446,12 @@
               <option value="400">100.000</option>
             </select>
           </div>
+        </div>
+
+        <hr>
+        <div class="email-customer-container">
+          <label for="email-customer">Ingresá tu email para ver los resultados:</label>
+          <input type="email" name="email-customer" id="email-customer" placeholder="ejemplo@digitalnow.com">
         </div>
 
       </div>
