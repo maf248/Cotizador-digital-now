@@ -2390,11 +2390,10 @@ function calculate() {
     function parseDate() {
         var date = new Date();
         var localeSpecificTime = date.toLocaleTimeString();
-        return localeSpecificTime.replace(/:\d+ /, ' ').slice(0,5);
+        return localeSpecificTime.replace(/:\d+ /, ' ').slice(0, 5);
     }
     qs('#timestamp').innerHTML = parseDate();
     qs('#bubble-click-container').classList.remove('animated-toggle-hide');
-
 };
 
 
@@ -2404,12 +2403,28 @@ var iconsToRotate = qsa('.iconsToRotate');
 cardHeaders.forEach((header, i) => {
     header.addEventListener('click', function () {
         iconsToRotate[i].classList.toggle('rotateIcons');
-
-        qs('#bubble-click-container').classList.add('animated-toggle-hide');
-
     });
 });
+/*---Sistema de mensajes "speech bubble" para que se entienda en mobile que los cajones de resultados se expanden---*/
+var categoryTitles = qsa('.result-category-titles');
+var serviceTitles = qsa('.result-service-titles');
 
+categoryTitles.forEach((category, i) => {
+    category.addEventListener('click', function () {
+        qs('#bubble-message').innerHTML = 'Hace click en un sub-cajón de servicio para ver más...';
+
+        serviceTitles.forEach((service, i) => {
+            service.addEventListener('click', function () {
+                qs('#bubble-click-container').style.transform = 'scale(0)';
+                qs('#bubble-click-container').style.transition = 'transform 0.2s ease-in';
+                setTimeout(()=> {
+                    qs('#bubble-click-container').classList.add('animated-toggle-hide');
+                }, 190)
+                
+            });
+        });
+    });
+});
 
 
 
