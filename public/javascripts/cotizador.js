@@ -1303,6 +1303,12 @@ emailCustomerInput.addEventListener('change', function () {
         this.classList.add('error-border');
     }
 });
+emailCustomerInput.addEventListener('keyup', function (event) {
+    if (event.keyCode == 13) {
+        event.preventDefault();
+        calculate();
+    }
+}, false);
 
 /*---Se captura el menu desplegable de los paises para anunciarse---*/
 var countryAnnounce = qs('#country-announce');
@@ -1533,8 +1539,11 @@ function calculate() {
             errorMessages.innerHTML = 'Debes seleccionar la cantidad de contactos para Email Marketing';
             emailAmmount.classList.add('error-border');
             errorType = 3;
+            if (emailCustomerCheck == false) {
+                emailCustomerInput.classList.add('error-border');
+            }
         } else if (completeFormValidate[3] == false && completeFormValidate[4] == false) {
-            errorMessages.innerHTML = 'Debes agregar mínimo un país a la lista y seleccionar una categoría corresponde tu industria';
+            errorMessages.innerHTML = 'Debes agregar mínimo un país a la lista y seleccionar a que categoría corresponde tu industria';
             countryAnnounce.classList.add('error-border');
             industryAdsSelector.classList.add('error-border');
             errorType = 2;
@@ -1546,6 +1555,9 @@ function calculate() {
             }
             if (completeFormValidate[7] == false) {
                 investmentFacebookAdsAmmount.classList.add('error-border');
+            }
+            if (emailCustomerCheck == false) {
+                emailCustomerInput.classList.add('error-border');
             }
         } else if (completeFormValidate[3] == false) {
             errorMessages.innerHTML = 'Debes seleccionar a que categoría corresponde tu industria, para poder calcular los anuncios';
@@ -1574,6 +1586,9 @@ function calculate() {
             if (completeFormValidate[7] == false) {
                 investmentFacebookAdsAmmount.classList.add('error-border');
             }
+            if (emailCustomerCheck == false) {
+                emailCustomerInput.classList.add('error-border');
+            }
         } else if (completeFormValidate[6] == false) {
             errorMessages.innerHTML = 'Debes introducir el monto a invertir en Google Ads Red de Display';
             investmentGoogleDisplayAdsAmmount.classList.add('error-border');
@@ -1583,6 +1598,9 @@ function calculate() {
             }
             if (completeFormValidate[7] == false) {
                 investmentFacebookAdsAmmount.classList.add('error-border');
+            }
+            if (emailCustomerCheck == false) {
+                emailCustomerInput.classList.add('error-border');
             }
         } else if (completeFormValidate[7] == false) {
             errorMessages.innerHTML = 'Debes introducir el monto a invertir en Facebook Ads';
@@ -1594,6 +1612,9 @@ function calculate() {
             if (completeFormValidate[6] == false) {
                 investmentGoogleDisplayAdsAmmount.classList.add('error-border');
             }
+            if (emailCustomerCheck == false) {
+                emailCustomerInput.classList.add('error-border');
+            }
 
         } else if (emailCustomerCheck == false) {
             errorMessages.innerHTML = 'Debes introducir un formato de email valido';
@@ -1604,6 +1625,9 @@ function calculate() {
     } else if (disenoWeb.checked && (!landingPage.checked && !wordpress.checked && !customWebsite.checked && !ecommerceWeb.checked && !logoMarca.checked)) {
         errorMessages.innerHTML = 'Debes seleccionar un sub-servicio de Diseño Web';
         disenoWebServicesContainer.childNodes[1].classList.add('error-border');
+        if (emailCustomerCheck == false) {
+            emailCustomerInput.classList.add('error-border');
+        }
 
     } else {
 
