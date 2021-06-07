@@ -186,6 +186,8 @@ p {
 
 .email-customer-container input {
   text-align: center;
+  min-width: 230px;
+  max-width: fit-content;
 }
 
 .investment-google-search-ads input,
@@ -210,10 +212,6 @@ p {
   opacity: 0;
   height: 0;
   overflow: hidden;
-}
-
-.results-title {
-  max-width: fit-content !important;
 }
 
 .titlesCollapse {
@@ -367,7 +365,7 @@ button:focus {
 /*---MEDIA QUERIES---*/
 @media (max-width: 500px) {
   body {
-    padding: 20px 10px;
+    padding: 20px 10px !important;
   }
 
   p,
@@ -419,9 +417,10 @@ button:focus {
   .email-ammount-container label {
     max-width: 90%;
   }
+
 }
 
-@media (min-width: 720px) {
+@media (min-width: 770px) {
   body {
     padding: 35px 25px;
   }
@@ -447,9 +446,9 @@ button:focus {
   }
 }
 
-@media (max-width: 720px) {
+@media (max-width: 770px) {
   body {
-    padding: 25px 10px;
+    padding: 30px 15px;
   }
 
   .google-search-plan-container label,

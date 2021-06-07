@@ -2442,7 +2442,7 @@ function calculate() {
         return localeSpecificTime.replace(/:\d+ /, ' ').slice(0, 5);
     }
     qs('#timestamp').innerHTML = parseDate();
-    qs('#bubble-click-container').classList.remove('animated-toggle-hide');
+
 };
 
 
