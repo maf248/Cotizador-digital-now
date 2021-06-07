@@ -12,11 +12,6 @@ p {
   transition: transform .5s ease-out;
 }
 
-.flex-row {
-  display: flex;
-  flex-direction: row;
-}
-
 .country-supplier-container {
   margin: 20px;
 }
@@ -438,6 +433,10 @@ button:focus {
     margin-right: 25px;
   }
 
+  .seeDetailsMsg {
+    display: block;
+  }
+
   .card-header:hover .seeDetailsMsg {
     opacity: 0.85;
   }
@@ -478,14 +477,21 @@ button:focus {
     margin-left: 0px;
     margin-top: 10px;
   }
+
   .email-customer-container {
     flex-direction: column;
   }
+
   .email-customer-container input {
     margin-top: 10px;
   }
+
   .checkContainer {
     padding-right: 1.5rem;
+  }
+
+  .seeDetailsMsg {
+    display: none;
   }
 
 }

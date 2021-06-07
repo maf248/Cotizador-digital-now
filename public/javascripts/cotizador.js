@@ -1290,7 +1290,7 @@ investmentFacebookAdsAmmount.addEventListener('change', function () {
 /*--Se valida el email cada vez que es cambiado--*/
 let emailCustomerCheck = false;
 emailCustomerInput.addEventListener('change', function () {
-    
+
     if (emailCustomerInput.value.match(mailFormat)) {
         emailCustomerCheck = true;
         this.classList.remove('error-border');
