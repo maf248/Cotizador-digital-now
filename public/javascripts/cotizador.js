@@ -1060,7 +1060,7 @@ checkboxesServices.forEach((checkboxService, i) => {
             checkboxesServicesValidate[i] = false;
         }
         /*--Chequea si algun servicio fue seleccionado, y muestra u oculta el contenedor correspondiente--*/
-        if (checkboxesServicesValidate.includes(true)) {
+        if (checkboxesServicesValidate.slice(0, 7).includes(true) || checkboxesServicesValidate[12] === true) {
 
             completeFormValidate[1] = true;
 
