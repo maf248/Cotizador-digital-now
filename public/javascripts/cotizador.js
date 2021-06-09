@@ -1337,7 +1337,7 @@ function deleteCountry(countryPosition) {
     }
     listSelectedCountriesAnnounce.innerHTML = '';
     for (let i = 0; i < selectedCountriesAnnounceDisplay.length; i++) {
-        listSelectedCountriesAnnounce.innerHTML += `<li>${selectedCountriesAnnounceDisplay[i]}  <i class="fas fa-trash-alt" onClick="deleteCountry(${i}); return false;"></i></li>`;
+        listSelectedCountriesAnnounce.innerHTML += `<li>${selectedCountriesAnnounceDisplay[i]}  <i class="fas fa-trash-alt" aria-label="Eliminar país de la lista de selección" onClick="deleteCountry(${i}); return false;"></i></li>`;
     }
 
 }
