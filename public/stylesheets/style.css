@@ -208,6 +208,7 @@ p {
 .investment-google-display-ads input,
 .investment-facebook-ads input,
 .email-ammount-container select {
+  max-width: 230px;
   min-width: fit-content;
   height: fit-content;
   text-align: center;
@@ -234,6 +235,7 @@ p {
   align-items: center;
   min-width: fit-content;
   max-width: 100%;
+  margin: 0px;
 }
 
 .titlesCollapse p {
