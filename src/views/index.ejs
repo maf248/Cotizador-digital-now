@@ -28,7 +28,7 @@
 
 </head>
 
-<body id="body-print">
+<body>
   <div class="container-fluid">
     <div class="row">
       <div class="col-3 col-md-2 col-lg-1">
@@ -91,7 +91,6 @@
           <label for="conversionWeb">Optimización de tasa de conversión web</label>
         </div>
 
-
         <div>
           <input type="checkbox" name="disenoWeb" id="disenoWeb" class="services-check">
           <label for="disenoWeb">Diseño Web</label>
@@ -126,14 +125,13 @@
           </div>
         </fieldset>
 
-
         <div>
           <input type="checkbox" name="email" id="email" class="services-check">
           <label for="email">Email Marketing</label>
         </div>
 
       </div>
-      
+
       <div class="services-extra-container card animated-toggle-base animated-toggle-hide"
         id="services-extra-container">
 
@@ -246,7 +244,8 @@
                 <option value="Zimbabue" data-value="zimbabue">
               </datalist>
               <form>
-                <button type="button" class=" btn-primary" id="add-country-announce" aria-label="Agregar país a la lista">Agregar país</button>
+                <button type="button" class=" btn-primary" id="add-country-announce"
+                  aria-label="Agregar país a la lista">Agregar país</button>
               </form>
             </div>
             <div class="selected-country-announce" id="selected-country-announce">
@@ -344,7 +343,6 @@
               id="investment-facebook-ads-value">
           </div>
         </div>
-
 
         <div class="community-management-extra-container" id="community-management-extra-container">
           <h6 class="text-center mt-2"><u><strong>Community Management:</strong></u></h6>
@@ -452,10 +450,10 @@
       </div>
       <p id="error-messages" class="error-messages"></p>
       <div class="d-flex justify-content-center">
-        <button type="reset" class="btn calculateAgainButton btn-primary d-none" id="calculateAgainButton" aria-label="Volver a calcular nuevamente"><i
-            class="fas fa-undo-alt"></i> Volver a calcular</button>
-        <button type="submit" class="btn calculateButton btn-primary" id="calculateButton" aria-label="Calcular resultados"><i
-            class="fas fa-calculator"></i> Calcular</button>
+        <button type="reset" class="btn calculateAgainButton btn-primary d-none" id="calculateAgainButton"
+          aria-label="Volver a calcular nuevamente"><i class="fas fa-undo-alt"></i> Volver a calcular</button>
+        <button type="submit" class="btn calculateButton btn-primary" id="calculateButton"
+          aria-label="Calcular resultados"><i class="fas fa-calculator"></i> Calcular</button>
       </div>
 
     </form>
@@ -469,7 +467,8 @@
           <div class="txt">
             <p class="name">Digital Now<span> ~ Ayuda</span></p>
             <p class="message" id="bubble-message">¡Hacé click en los cajones para ver más detalles!</p>
-            <button id="close-bubble" class="closeBubble" aria-label="Cerrar burbuja de texto de ayuda"><i class="far fa-times-circle"></i></button>
+            <button id="close-bubble" class="closeBubble" aria-label="Cerrar burbuja de texto de ayuda"><i
+                class="far fa-times-circle"></i></button>
             <span class="timestamp" id="timestamp"></span>
           </div>
           <div class="bubble-arrow"></div>
@@ -482,7 +481,7 @@
           <div class="card">
             <div class="card-header result-category-titles" id="headingMonthlyTotals" data-toggle="collapse"
               data-target="#collapseMonthlyTotals" aria-expanded="false" aria-controls="collapseMonthlyTotals">
-              <h6 class="mb-0 titlesCollapse">
+              <h6 class="titlesCollapse">
                 <i class="iconsToRotate fas fa-angle-double-down"></i>
                 <p><u>Resultados Google Ads + Facebook Ads por mes:</u> <strong id="total-conversions"></strong>
                   conversiones totales</p>
@@ -500,7 +499,7 @@
                     <div class="card">
                       <div class="card-header result-service-titles" id="headingGSAds" data-toggle="collapse"
                         data-target="#collapseGSAds" aria-expanded="false" aria-controls="collapseGSAds">
-                        <h6 class="mb-0 titlesCollapse">
+                        <h6 class="titlesCollapse">
                           <i class="iconsToRotate fas fa-angle-down rotateIcons"></i>
                           <p><u><strong>Google Ads Red de Busquedas:</strong></u>
                             <nobr>
@@ -526,7 +525,7 @@
                     <div class="card">
                       <div class="card-header result-service-titles" id="headingGDAds" data-toggle="collapse"
                         data-target="#collapseGDAds" aria-expanded="false" aria-controls="collapseGDAds">
-                        <h6 class="mb-0 titlesCollapse">
+                        <h6 class="titlesCollapse">
                           <i class="iconsToRotate fas fa-angle-down rotateIcons"></i>
                           <p><u><strong>Google Ads Red de Display:</strong></u>
                             <nobr>
@@ -552,7 +551,7 @@
                     <div class="card">
                       <div class="card-header result-service-titles" id="headingFbAds" data-toggle="collapse"
                         data-target="#collapseFbAds" aria-expanded="false" aria-controls="collapseFbAds">
-                        <h6 class="mb-0 titlesCollapse">
+                        <h6 class="titlesCollapse">
                           <i class="iconsToRotate fas fa-angle-down rotateIcons"></i>
                           <p><u><strong>Facebook Ads:</strong></u>
                             <nobr>
@@ -588,7 +587,7 @@
           <div class="card">
             <div class="card-header result-category-titles" id="headingOne" data-toggle="collapse"
               data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
-              <h6 class="mb-0 titlesCollapse">
+              <h6 class="titlesCollapse">
                 <i class="iconsToRotate fas fa-angle-double-down"></i>
                 <p><u>Costo de servicios de implementación (1 vez):</u>
                   <nobr>
@@ -609,7 +608,7 @@
                       <div class="card-header result-service-titles" id="heading-implementation-conversionWeb"
                         data-toggle="collapse" data-target="#collapse-implementation-conversionWeb"
                         aria-expanded="false" aria-controls="collapse-implementation-conversionWeb">
-                        <h6 class="mb-0 titlesCollapse">
+                        <h6 class="titlesCollapse">
                           <i class="iconsToRotate fas fa-angle-down rotateIcons"></i>
                           <p id="title-implementation-conversionWeb"></p>
                           <p class="seeDetailsMsg"><i class="far fa-hand-pointer"></i> Click para ver más...</p>
@@ -633,7 +632,7 @@
                       <div class="card-header result-service-titles" id="heading-implementation-seo"
                         data-toggle="collapse" data-target="#collapse-implementation-seo" aria-expanded="false"
                         aria-controls="collapse-implementation-seo">
-                        <h6 class="mb-0 titlesCollapse">
+                        <h6 class="titlesCollapse">
                           <i class="iconsToRotate fas fa-angle-down rotateIcons"></i>
                           <p id="title-implementation-seo"></p>
                           <p class="seeDetailsMsg"><i class="far fa-hand-pointer"></i> Click para ver más...</p>
@@ -656,7 +655,7 @@
                       <div class="card-header result-service-titles" id="heading-implementation-communityManagement"
                         data-toggle="collapse" data-target="#collapse-implementation-communityManagement"
                         aria-expanded="false" aria-controls="collapse-implementation-communityManagement">
-                        <h6 class="mb-0 titlesCollapse">
+                        <h6 class="titlesCollapse">
                           <i class="iconsToRotate fas fa-angle-down rotateIcons"></i>
                           <p id="title-implementation-communityManagement"></p>
                           <p class="seeDetailsMsg"><i class="far fa-hand-pointer"></i> Click para ver más...</p>
@@ -680,7 +679,7 @@
                       <div class="card-header result-service-titles" id="heading-implementation-googleSearchAds"
                         data-toggle="collapse" data-target="#collapse-implementation-googleSearchAds"
                         aria-expanded="false" aria-controls="collapse-implementation-googleSearchAds">
-                        <h6 class="mb-0 titlesCollapse">
+                        <h6 class="titlesCollapse">
                           <i class="iconsToRotate fas fa-angle-down rotateIcons"></i>
                           <p id="title-implementation-googleSearchAds"></p>
                           <p class="seeDetailsMsg"><i class="far fa-hand-pointer"></i> Click para ver más...</p>
@@ -704,7 +703,7 @@
                       <div class="card-header result-service-titles" id="heading-implementation-googleDisplayAds"
                         data-toggle="collapse" data-target="#collapse-implementation-googleDisplayAds"
                         aria-expanded="false" aria-controls="collapse-implementation-googleDisplayAds">
-                        <h6 class="mb-0 titlesCollapse">
+                        <h6 class="titlesCollapse">
                           <i class="iconsToRotate fas fa-angle-down rotateIcons"></i>
                           <p id="title-implementation-googleDisplayAds"></p>
                           <p class="seeDetailsMsg"><i class="far fa-hand-pointer"></i> Click para ver más...</p>
@@ -728,7 +727,7 @@
                       <div class="card-header result-service-titles" id="heading-implementation-facebookAds"
                         data-toggle="collapse" data-target="#collapse-implementation-facebookAds" aria-expanded="false"
                         aria-controls="collapse-implementation-facebookAds">
-                        <h6 class="mb-0 titlesCollapse">
+                        <h6 class="titlesCollapse">
                           <i class="iconsToRotate fas fa-angle-down rotateIcons"></i>
                           <p id="title-implementation-facebookAds"></p>
                           <p class="seeDetailsMsg"><i class="far fa-hand-pointer"></i> Click para ver más...</p>
@@ -752,7 +751,7 @@
                       <div class="card-header result-service-titles" id="heading-implementation-landingPage"
                         data-toggle="collapse" data-target="#collapse-implementation-landingPage" aria-expanded="false"
                         aria-controls="collapse-implementation-landingPage">
-                        <h6 class="mb-0 titlesCollapse">
+                        <h6 class="titlesCollapse">
                           <i class="iconsToRotate fas fa-angle-down rotateIcons"></i>
                           <p id="title-implementation-landingPage"></p>
                           <p class="seeDetailsMsg"><i class="far fa-hand-pointer"></i> Click para ver más...</p>
@@ -776,7 +775,7 @@
                       <div class="card-header result-service-titles" id="heading-implementation-wordpress"
                         data-toggle="collapse" data-target="#collapse-implementation-wordpress" aria-expanded="false"
                         aria-controls="collapse-implementation-wordpress">
-                        <h6 class="mb-0 titlesCollapse">
+                        <h6 class="titlesCollapse">
                           <i class="iconsToRotate fas fa-angle-down rotateIcons"></i>
                           <p id="title-implementation-wordpress"></p>
                           <p class="seeDetailsMsg"><i class="far fa-hand-pointer"></i> Click para ver más...</p>
@@ -800,7 +799,7 @@
                       <div class="card-header result-service-titles" id="heading-implementation-customWebsite"
                         data-toggle="collapse" data-target="#collapse-implementation-customWebsite"
                         aria-expanded="false" aria-controls="collapse-implementation-customWebsite">
-                        <h6 class="mb-0 titlesCollapse">
+                        <h6 class="titlesCollapse">
                           <i class="iconsToRotate fas fa-angle-down rotateIcons"></i>
                           <p id="title-implementation-customWebsite"></p>
                           <p class="seeDetailsMsg"><i class="far fa-hand-pointer"></i> Click para ver más...</p>
@@ -824,7 +823,7 @@
                       <div class="card-header result-service-titles" id="heading-implementation-ecommerceWeb"
                         data-toggle="collapse" data-target="#collapse-implementation-ecommerceWeb" aria-expanded="false"
                         aria-controls="collapse-implementation-ecommerceWeb">
-                        <h6 class="mb-0 titlesCollapse">
+                        <h6 class="titlesCollapse">
                           <i class="iconsToRotate fas fa-angle-down rotateIcons"></i>
                           <p id="title-implementation-ecommerceWeb"></p>
                           <p class="seeDetailsMsg"><i class="far fa-hand-pointer"></i> Click para ver más...</p>
@@ -848,7 +847,7 @@
                       <div class="card-header result-service-titles" id="heading-implementation-logoYMarca"
                         data-toggle="collapse" data-target="#collapse-implementation-logoYmarca" aria-expanded="false"
                         aria-controls="collapse-implementation-logoYmarca">
-                        <h6 class="mb-0 titlesCollapse">
+                        <h6 class="titlesCollapse">
                           <i class="iconsToRotate fas fa-angle-down rotateIcons"></i>
                           <p id="title-implementation-logoYMarca"></p>
                           <p class="seeDetailsMsg"><i class="far fa-hand-pointer"></i> Click para ver más...</p>
@@ -878,7 +877,7 @@
           <div class="card">
             <div class="card-header result-category-titles" id="headingTwo" data-toggle="collapse"
               data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-              <h6 class="mb-0 titlesCollapse">
+              <h6 class="titlesCollapse">
                 <i class="iconsToRotate fas fa-angle-double-down"></i>
                 <p><u>Costo mensual de servicios de mantenimiento:</u>
                   <nobr>
@@ -899,7 +898,7 @@
                       <div class="card-header result-service-titles" id="heading-maintenance-email"
                         data-toggle="collapse" data-target="#collapse-maintenance-email" aria-expanded="false"
                         aria-controls="collapse-maintenance-email">
-                        <h6 class="mb-0 titlesCollapse">
+                        <h6 class="titlesCollapse">
                           <i class="iconsToRotate fas fa-angle-down rotateIcons"></i>
                           <p id="title-maintenance-email"></p>
                           <p class="seeDetailsMsg"><i class="far fa-hand-pointer"></i> Click para ver más...</p>
@@ -922,7 +921,7 @@
                       <div class="card-header result-service-titles" id="heading-maintenance-conversionWeb"
                         data-toggle="collapse" data-target="#collapse-maintenance-conversionWeb" aria-expanded="false"
                         aria-controls="collapse-maintenance-conversionWeb">
-                        <h6 class="mb-0 titlesCollapse">
+                        <h6 class="titlesCollapse">
                           <i class="iconsToRotate fas fa-angle-down rotateIcons"></i>
                           <p id="title-maintenance-conversionWeb"></p>
                           <p class="seeDetailsMsg"><i class="far fa-hand-pointer"></i> Click para ver más...</p>
@@ -946,7 +945,7 @@
                       <div class="card-header result-service-titles" id="heading-maintenance-seo" data-toggle="collapse"
                         data-target="#collapse-maintenance-seo" aria-expanded="false"
                         aria-controls="collapse-maintenance-seo">
-                        <h6 class="mb-0 titlesCollapse">
+                        <h6 class="titlesCollapse">
                           <i class="iconsToRotate fas fa-angle-down rotateIcons"></i>
                           <p id="title-maintenance-seo"></p>
                           <p class="seeDetailsMsg"><i class="far fa-hand-pointer"></i> Click para ver más...</p>
@@ -969,7 +968,7 @@
                       <div class="card-header result-service-titles" id="heading-maintenance-communityManagement"
                         data-toggle="collapse" data-target="#collapse-maintenance-communityManagement"
                         aria-expanded="false" aria-controls="collapse-maintenance-communityManagement">
-                        <h6 class="mb-0 titlesCollapse">
+                        <h6 class="titlesCollapse">
                           <i class="iconsToRotate fas fa-angle-down rotateIcons"></i>
                           <p id="title-maintenance-communityManagement"></p>
                           <p class="seeDetailsMsg"><i class="far fa-hand-pointer"></i> Click para ver más...</p>
@@ -993,7 +992,7 @@
                       <div class="card-header result-service-titles" id="heading-maintenance-googleSearchAds"
                         data-toggle="collapse" data-target="#collapse-maintenance-googleSearchAds" aria-expanded="false"
                         aria-controls="collapse-maintenance-googleSearchAds">
-                        <h6 class="mb-0 titlesCollapse">
+                        <h6 class="titlesCollapse">
                           <i class="iconsToRotate fas fa-angle-down rotateIcons"></i>
                           <p id="title-maintenance-googleSearchAds"></p>
                           <p class="seeDetailsMsg"><i class="far fa-hand-pointer"></i> Click para ver más...</p>
@@ -1017,7 +1016,7 @@
                       <div class="card-header result-service-titles" id="heading-maintenance-googleDisplayAds"
                         data-toggle="collapse" data-target="#collapse-maintenance-googleDisplayAds"
                         aria-expanded="false" aria-controls="collapse-maintenance-googleDisplayAds">
-                        <h6 class="mb-0 titlesCollapse">
+                        <h6 class="titlesCollapse">
                           <i class="iconsToRotate fas fa-angle-down rotateIcons"></i>
                           <p id="title-maintenance-googleDisplayAds"></p>
                           <p class="seeDetailsMsg"><i class="far fa-hand-pointer"></i> Click para ver más...</p>
@@ -1041,7 +1040,7 @@
                       <div class="card-header result-service-titles" id="heading-maintenance-facebookAds"
                         data-toggle="collapse" data-target="#collapse-maintenance-facebookAds" aria-expanded="false"
                         aria-controls="collapse-maintenance-facebookAds">
-                        <h6 class="mb-0 titlesCollapse">
+                        <h6 class="titlesCollapse">
                           <i class="iconsToRotate fas fa-angle-down rotateIcons"></i>
                           <p id="title-maintenance-facebookAds"></p>
                           <p class="seeDetailsMsg"><i class="far fa-hand-pointer"></i> Click para ver más...</p>
@@ -1065,7 +1064,7 @@
                       <div class="card-header result-service-titles" id="heading-maintenance-landingPage"
                         data-toggle="collapse" data-target="#collapse-maintenance-landingPage" aria-expanded="false"
                         aria-controls="collapse-maintenance-landingPage">
-                        <h6 class="mb-0 titlesCollapse">
+                        <h6 class="titlesCollapse">
                           <i class="iconsToRotate fas fa-angle-down rotateIcons"></i>
                           <p id="title-maintenance-landingPage"></p>
                           <p class="seeDetailsMsg"><i class="far fa-hand-pointer"></i> Click para ver más...</p>
@@ -1089,7 +1088,7 @@
                       <div class="card-header result-service-titles" id="heading-maintenance-wordpress"
                         data-toggle="collapse" data-target="#collapse-maintenance-wordpress" aria-expanded="false"
                         aria-controls="collapse-maintenance-wordpress">
-                        <h6 class="mb-0 titlesCollapse">
+                        <h6 class="titlesCollapse">
                           <i class="iconsToRotate fas fa-angle-down rotateIcons"></i>
                           <p id="title-maintenance-wordpress"></p>
                           <p class="seeDetailsMsg"><i class="far fa-hand-pointer"></i> Click para ver más...</p>
@@ -1112,7 +1111,7 @@
                       <div class="card-header result-service-titles" id="heading-maintenance-customWebsite"
                         data-toggle="collapse" data-target="#collapse-maintenance-customWebsite" aria-expanded="false"
                         aria-controls="collapse-maintenance-customWebsite">
-                        <h6 class="mb-0 titlesCollapse">
+                        <h6 class="titlesCollapse">
                           <i class="iconsToRotate fas fa-angle-down rotateIcons"></i>
                           <p id="title-maintenance-customWebsite"></p>
                           <p class="seeDetailsMsg"><i class="far fa-hand-pointer"></i> Click para ver más...</p>
@@ -1136,7 +1135,7 @@
                       <div class="card-header result-service-titles" id="heading-maintenance-ecommerceWeb"
                         data-toggle="collapse" data-target="#collapse-maintenance-ecommerceWeb" aria-expanded="false"
                         aria-controls="collapse-maintenance-ecommerceWeb">
-                        <h6 class="mb-0 titlesCollapse">
+                        <h6 class="titlesCollapse">
                           <i class="iconsToRotate fas fa-angle-down rotateIcons"></i>
                           <p id="title-maintenance-ecommerceWeb"></p>
                           <p class="seeDetailsMsg"><i class="far fa-hand-pointer"></i> Click para ver más...</p>
@@ -1160,7 +1159,7 @@
                       <div class="card-header result-service-titles" id="heading-maintenance-logoYMarca"
                         data-toggle="collapse" data-target="#collapse-maintenance-logoYmarca" aria-expanded="false"
                         aria-controls="collapse-maintenance-logoYmarca">
-                        <h6 class="mb-0 titlesCollapse">
+                        <h6 class="titlesCollapse">
                           <i class="iconsToRotate fas fa-angle-down rotateIcons"></i>
                           <p id="title-maintenance-logoYMarca"></p>
                           <p class="seeDetailsMsg"><i class="far fa-hand-pointer"></i> Click para ver más...</p>
@@ -1190,7 +1189,7 @@
           <div class="card">
             <div class="card-header result-category-titles" id="headingThree" data-toggle="collapse"
               data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-              <h6 class="mb-0 titlesCollapse">
+              <h6 class="titlesCollapse">
                 <i class="iconsToRotate fas fa-angle-double-down"></i>
                 <p><u>Costo mensual de inversión Google Ads + Facebook Ads:</u>
                   <nobr>
@@ -1213,7 +1212,7 @@
       <div id="result-monthly-total-container">
 
         <div class="checkContainer" id="headingFour">
-          <h5 class="mb-0 titlesCollapse">
+          <h5 class="titlesCollapse">
             <i class="iconCheck fas fa-check"></i>
             <p id="implementation-cost-message" style="display: none;"><u>Costo total de servicios de implementación (1
                 vez):</u>

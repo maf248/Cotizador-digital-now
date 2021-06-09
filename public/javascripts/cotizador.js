@@ -1732,7 +1732,6 @@ function calculate() {
 
                         }
                     }
-
                 })
             }
 
@@ -1784,7 +1783,6 @@ function calculate() {
 
                         }
                     }
-
                 })
             }
 

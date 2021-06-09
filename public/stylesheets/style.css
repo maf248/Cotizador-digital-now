@@ -236,6 +236,7 @@ p {
   min-width: fit-content;
   max-width: 100%;
   margin: 0px !important;
+  padding-right: 2px;
 }
 
 .titlesCollapse p {
@@ -303,6 +304,9 @@ button:focus {
   border: 3px solid #0d6efd !important;
   background-color: #eee !important;
   padding: .5rem 1rem;
+}
+.checkContainer p {
+  padding: 5px;
 }
 
 .checkContainer:hover {
