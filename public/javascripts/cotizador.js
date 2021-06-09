@@ -2457,24 +2457,29 @@ cardHeaders.forEach((header, i) => {
 /*---Sistema de mensajes "speech bubble" para que se entienda en mobile que los cajones de resultados se expanden---*/
 var categoryTitles = qsa('.result-category-titles');
 var serviceTitles = qsa('.result-service-titles');
-
+function closeBubbleSpeech () {
+    qs('#bubble-click-container').style.transform = 'scale(0)';
+    qs('#bubble-click-container').style.transition = 'transform 0.2s ease-in';
+    setTimeout(() => {
+        qs('#bubble-click-container').style.display = 'none';
+    }, 200)
+    qs('#close-bubble').removeEventListener('click', closeBubbleSpeech);
+};
+/*--Detecta click en cajon de categoria y cambia el mensaje del bubble, luego detecta click en sub-cajon de servicio y desaparece--*/
 categoryTitles.forEach((category, i) => {
     category.addEventListener('click', function () {
         qs('#bubble-message').innerHTML = 'Hace click en un sub-cajón de servicio para ver más...';
 
         serviceTitles.forEach((service, i) => {
             service.addEventListener('click', function () {
-                qs('#bubble-click-container').style.transform = 'scale(0)';
-                qs('#bubble-click-container').style.transition = 'transform 0.2s ease-in';
-                setTimeout(() => {
-                    qs('#bubble-click-container').style.display = 'none';
-                }, 200)
-
+                closeBubbleSpeech ();
             });
         });
     });
 });
+/*---Cruz del bubble speech para cerrarlo---*/
 
+qs('#close-bubble').addEventListener('click', closeBubbleSpeech);
 
 // $.getJSON('http://www.whateverorigin.org/get?url=' + encodeURIComponent('http://www.google.com') + '&callback=?', function(data){
 // 	console.log(data.contents);
