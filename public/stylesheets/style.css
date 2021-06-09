@@ -111,6 +111,20 @@ p {
   display: none;
   flex-direction: column;
 }
+.industry-and-country-selectors-container {
+  padding: 10px 0px;
+}
+.google-search-ads-extra-container,
+.google-display-ads-extra-container,
+.facebook-ads-extra-container,
+.community-management-extra-container,
+.seo-extra-container,
+.conversion-web-extra-container,
+.email-marketing-extra-container,
+.email-customer-container {
+  border-top: 1px solid rgba(0,0,0,.125);
+  padding: 10px 0;
+}
 
 .industry-ads-selector-container {
   display: flex;
@@ -180,8 +194,6 @@ p {
   flex-direction: row;
   align-items: center;
   justify-content: space-around;
-  padding: 10px;
-  margin-bottom: 15px;
 }
 
 .email-customer-container input {
