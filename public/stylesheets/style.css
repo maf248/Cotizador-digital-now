@@ -111,9 +111,11 @@ p {
   display: none;
   flex-direction: column;
 }
+
 .industry-and-country-selectors-container {
   padding: 10px 0px;
 }
+
 .google-search-ads-extra-container,
 .google-display-ads-extra-container,
 .facebook-ads-extra-container,
@@ -122,7 +124,7 @@ p {
 .conversion-web-extra-container,
 .email-marketing-extra-container,
 .email-customer-container {
-  border-top: 1px solid rgba(0,0,0,.125);
+  border-top: 1px solid rgba(0, 0, 0, .125);
   padding: 10px 0;
 }
 
@@ -352,6 +354,7 @@ button:focus {
   text-transform: uppercase;
   color: #777;
 }
+
 .bubble-click-container .bubble .txt .closeBubble {
   font-size: 14px;
   border: none;

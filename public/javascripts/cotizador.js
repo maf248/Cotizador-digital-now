@@ -1230,8 +1230,6 @@ var industryAdsSelector = qs('#industry-ads-selector');
 
 industryAdsSelector.addEventListener('change', function () {
 
-    console.log(`Industria elegida: ${industryAdsSelector.options[industryAdsSelector.selectedIndex].text} codigo: ${industryAdsSelector.value}`)
-
     if (this.value != '') {
         completeFormValidate[3] = true;
         this.classList.remove('error-border');
@@ -1341,8 +1339,7 @@ function deleteCountry(countryPosition) {
     for (let i = 0; i < selectedCountriesAnnounceDisplay.length; i++) {
         listSelectedCountriesAnnounce.innerHTML += `<li>${selectedCountriesAnnounceDisplay[i]}  <i class="fas fa-trash-alt" onClick="deleteCountry(${i}); return false;"></i></li>`;
     }
-    console.log(selectedCountriesAnnounceDisplay)
-    console.log(selectedCountriesAnnounceOperate)
+
 }
 
 /*--Funcion que agrega paises a la lista al ser ejecutada (por boton "agregar pais" o al presionar enter)--*/
@@ -1432,7 +1429,6 @@ function addCountry() {
             errorMessages.innerHTML = '';
         }
     }
-    console.log(selectedCountriesAnnounceOperate)
 }
 
 /*---Evento del botón para agregar paises donde se quiere anunciar---*/
@@ -2457,7 +2453,8 @@ cardHeaders.forEach((header, i) => {
 /*---Sistema de mensajes "speech bubble" para que se entienda en mobile que los cajones de resultados se expanden---*/
 var categoryTitles = qsa('.result-category-titles');
 var serviceTitles = qsa('.result-service-titles');
-function closeBubbleSpeech () {
+
+function closeBubbleSpeech() {
     qs('#bubble-click-container').style.transform = 'scale(0)';
     qs('#bubble-click-container').style.transition = 'transform 0.2s ease-in';
     setTimeout(() => {
@@ -2472,7 +2469,7 @@ categoryTitles.forEach((category, i) => {
 
         serviceTitles.forEach((service, i) => {
             service.addEventListener('click', function () {
-                closeBubbleSpeech ();
+                closeBubbleSpeech();
             });
         });
     });
