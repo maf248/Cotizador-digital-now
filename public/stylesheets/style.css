@@ -7,6 +7,14 @@ p {
   display: inline-block;
 }
 
+h3 {
+  font-size: calc(1.1rem + .6vw) !important;
+}
+
+h4 {
+  font-size: 1rem !important;
+}
+
 .digitalNowLogo:hover {
   transform: scale(1.2);
   transition: transform .5s ease-out;
@@ -230,6 +238,7 @@ p {
 }
 
 .titlesCollapse {
+  font-size: 1rem !important;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -305,8 +314,10 @@ button:focus {
   background-color: #eee !important;
   padding: .5rem 1rem;
 }
+
 .checkContainer p {
   padding: 5px;
+  font-size: 1.3rem;
 }
 
 .checkContainer:hover {
@@ -359,16 +370,6 @@ button:focus {
   right: 10px;
   text-transform: uppercase;
   color: #777;
-}
-
-.bubble-click-container .bubble .txt .closeBubble {
-  font-size: 14px;
-  border: none;
-  position: absolute;
-  color: #d00;
-  background-color: #f5f5f5;
-  bottom: 55px;
-  right: 5px;
 }
 
 .bubble-click-container .bubble .bubble-arrow {

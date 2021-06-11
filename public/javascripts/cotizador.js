@@ -2458,7 +2458,6 @@ function closeBubbleSpeech() {
     setTimeout(() => {
         qs('#bubble-click-container').style.display = 'none';
     }, 200)
-    qs('#close-bubble').removeEventListener('click', closeBubbleSpeech);
 };
 /*--Detecta click en cajon de categoria y cambia el mensaje del bubble, luego detecta click en sub-cajon de servicio y desaparece--*/
 categoryTitles.forEach((category, i) => {
@@ -2472,9 +2471,7 @@ categoryTitles.forEach((category, i) => {
         });
     });
 });
-/*---Cruz del bubble speech para cerrarlo---*/
 
-qs('#close-bubble').addEventListener('click', closeBubbleSpeech);
 
 // $.getJSON('http://www.whateverorigin.org/get?url=' + encodeURIComponent('http://www.google.com') + '&callback=?', function(data){
 // 	console.log(data.contents);
