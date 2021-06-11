@@ -222,6 +222,10 @@ h4 {
   text-align: center;
 }
 
+.blog-info {
+  margin-top: 25px;
+}
+
 .animated-toggle-base {
   transition: opacity 1s ease-out;
   opacity: 1;
@@ -289,11 +293,11 @@ button:focus {
   -webkit-transform: rotate(-90deg);
 }
 
-.card-header {
+.result-category-titles, .result-service-titles {
   cursor: pointer;
 }
 
-.card-header:hover {
+.result-category-titles:hover, .result-service-titles:hover {
   box-sizing: content-box !important;
   background-color: #eee;
   border: 1px dotted #0d6efd !important;
