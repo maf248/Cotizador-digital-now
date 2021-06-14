@@ -2401,7 +2401,9 @@ function calculate() {
 
         /*---Carca el mensaje de NO se seleccionaron inversiones si se da el caso---*/
         if (!email.checked && !googleSearchAds.checked && !googleDisplayAds.checked && !facebookAds.checked) {
-            resultInvestmentsMonthlyDetail.innerHTML = '<li>No has seleccionado ninguna inversión en medios digitales. <small>(Ej: Google Ads Red de Busquedas, Google Ads Red de Display, Facebook Ads o Email Marketing)</small></li>'
+            resultInvestmentsMonthlyContainer.classList.add('d-none');
+        } else {
+            resultInvestmentsMonthlyContainer.classList.remove('d-none');
         }
         /*---Se destaca la implementación en el cajon final, si SOLO se seleccionaron servicios "Diseño Web"---*/
         if (disenoWeb.checked && (!googleSearchAds.checked && !googleDisplayAds.checked && !facebookAds.checked && !communityManagement.checked && !seo.checked && !conversionWeb.checked && !email.checked)) {
