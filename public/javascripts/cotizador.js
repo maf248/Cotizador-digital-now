@@ -2478,10 +2478,3 @@ categoryTitles.forEach((category, i) => {
         });
     });
 });
-
-
-// $.getJSON('http://www.whateverorigin.org/get?url=' + encodeURIComponent('http://www.google.com') + '&callback=?', function(data){
-// 	console.log(data.contents);
-// });
-// /*---Upwork Access-Control-Allow-Origin header blocking---*/
-// var urlNotWorking = "https://www.upwork.com/ab/profiles/search/?loc=argentina&q=web%20designer";
