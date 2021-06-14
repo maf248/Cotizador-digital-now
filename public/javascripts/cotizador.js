@@ -1458,8 +1458,7 @@ calculateAgainButton.addEventListener('click', function () {
     formContainer.style.opacity = '1';
     resultsContainer.style.height = '0';
     resultsContainer.style.opacity = '0';
-    blogInfo.style.height = 'auto';
-    blogInfo.style.opacity = '1';
+    blogInfo.style.display = 'block';
     calculateAgainButton.classList.add("d-none");
     calculateButton.style.display = 'block';
 });
@@ -1632,8 +1631,7 @@ function calculate() {
 
         formContainer.style.height = '0';
         formContainer.style.opacity = '0';
-        blogInfo.style.height = '0';
-        blogInfo.style.opacity = '0';
+        blogInfo.style.display = 'none';
         resultsContainer.style.height = 'auto';
         resultsContainer.style.opacity = '1';
         calculateButton.style.display = 'none';
