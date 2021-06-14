@@ -1645,6 +1645,9 @@ function calculate() {
     if ((googleSearchAds.checked || googleDisplayAds.checked || facebookAds.checked) && !completeFormValidate.includes(false)) {
 
         googleFacebookAdsResultContainer.style.display = 'block';
+        qs('.results-title').innerHTML = 'Resultados:';
+        qs('.results-title').style.display = 'block';
+        qs('.results-second-title').style.display = 'block';
 
         if (googleSearchAds.checked) {
             googleSearchAdsResultContainer.style.display = 'block';
@@ -1796,6 +1799,9 @@ function calculate() {
         }
     } else {
         googleFacebookAdsResultContainer.style.display = 'none';
+        qs('.results-title').innerHTML = 'Costos:';
+        qs('.results-title').style.display = 'block';
+        qs('.results-second-title').style.display = 'none';
     }
 
     /*---Se inicializan variables para acumular valores totales de IMPLEMENTACION (agencyOnceFeeValue) y MENSUALES (agencyMonthlyFeeValue)---*/
@@ -2401,9 +2407,7 @@ function calculate() {
 
         /*---Carca el mensaje de NO se seleccionaron inversiones si se da el caso---*/
         if (!email.checked && !googleSearchAds.checked && !googleDisplayAds.checked && !facebookAds.checked) {
-            resultInvestmentsMonthlyContainer.classList.add('d-none');
-        } else {
-            resultInvestmentsMonthlyContainer.classList.remove('d-none');
+            resultInvestmentsMonthlyDetail.innerHTML = '<li>No has seleccionado ninguna inversión en medios digitales. <small>(Ej: Google Ads Red de Busquedas, Google Ads Red de Display, Facebook Ads o Email Marketing)</small></li>'
         }
         /*---Se destaca la implementación en el cajon final, si SOLO se seleccionaron servicios "Diseño Web"---*/
         if (disenoWeb.checked && (!googleSearchAds.checked && !googleDisplayAds.checked && !facebookAds.checked && !communityManagement.checked && !seo.checked && !conversionWeb.checked && !email.checked)) {
@@ -2450,9 +2454,9 @@ function calculate() {
 
 
 /*--Sistema para rotar los iconos de cajónes "collapse" al expandirlos o contraerlos--*/
-var cardHeaders = qsa('.card-header');
+var resultsCollapsible = qsa('.results-collapsible');
 var iconsToRotate = qsa('.iconsToRotate');
-cardHeaders.forEach((header, i) => {
+resultsCollapsible.forEach((header, i) => {
     header.addEventListener('click', function () {
         iconsToRotate[i].classList.toggle('rotateIcons');
     });
