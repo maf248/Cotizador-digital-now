@@ -227,6 +227,23 @@ h4 {
   text-align: center;
 }
 
+.services-check[type="checkbox"]+label::after {
+  content: "\2713";
+  color: white;
+  font-size: 1.25rem;
+  position: absolute;
+  top: 0px;
+  left: 4px;
+  transform: scale(0);
+  transition: all 300ms ease-in-out;
+}
+.services-check[type="checkbox"]+label::before {
+  background-color: var(--clr-accent);
+}
+.services-check[type="checkbox"]:checked + label::after {
+  transform: scale(1);
+}
+
 .blog-info {
   margin-top: 25px;
 }
