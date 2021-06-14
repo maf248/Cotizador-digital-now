@@ -5,6 +5,11 @@
 p {
   min-width: fit-content;
   display: inline-block;
+  font-size: 1rem;
+}
+
+li {
+  font-size: 1rem;
 }
 
 h3 {
@@ -293,11 +298,13 @@ button:focus {
   -webkit-transform: rotate(-90deg);
 }
 
-.result-category-titles, .result-service-titles {
+.result-category-titles,
+.result-service-titles {
   cursor: pointer;
 }
 
-.result-category-titles:hover, .result-service-titles:hover {
+.result-category-titles:hover,
+.result-service-titles:hover {
   box-sizing: content-box !important;
   background-color: #eee;
   border: 1px dotted #0d6efd !important;
@@ -319,7 +326,7 @@ button:focus {
   padding: .5rem 1rem;
 }
 
-.checkContainer p {
+.checkContainer span {
   padding: 5px;
   font-size: 1.3rem;
 }
