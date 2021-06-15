@@ -1,7 +1,7 @@
 const indexController = {
   home: function (req, res, next) {
     res.render('index', {
-      title: "Cotizador Marketing Digital"
+      title: "Precios de Marketing Digital"
     })
 
   }
