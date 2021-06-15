@@ -227,11 +227,28 @@ h4 {
   text-align: center;
 }
 
-.blog-info {
+.info-extra-top {
+  max-width: 75%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.close-info-extra-top {
+  position: absolute;
+  right: 5px;
+  border: none;
+  background-color: rgba(0,0,0,.03);
+}
+
+.info-extra-bottom-card-titles {
+  font-size: calc(1.1rem + .9vw) !important;
+}
+
+.info-extra-bottom {
   margin-top: 25px;
 }
 
-.blog-info a {
+.info-extra-bottom a {
   color: #212529;
 }
 
@@ -423,6 +440,18 @@ button:focus {
     font-size: 0.9rem;
   }
 
+  .info-extra-top {
+    max-width: 95% !important;
+  }
+
+  .info-extra-tab a {
+    font-size: 0.75rem !important;
+  }
+
+  .short-title-mobile {
+    display: none;
+  }
+
   .checkContainer p {
     font-size: 1rem;
   }
@@ -530,6 +559,14 @@ button:focus {
 
   .email-customer-container {
     flex-direction: column;
+  }
+
+  .info-extra-top {
+    max-width: 80%;
+  }
+
+  .info-extra-tab {
+    font-size: 0.9em;
   }
 
   .email-customer-container input {

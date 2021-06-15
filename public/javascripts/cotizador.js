@@ -1447,7 +1447,8 @@ countryAnnounce.addEventListener('keyup', function (event) {
 /*---Se captura el bloque que muestra los resultados, y se muestra solamente al seleccionar todas las opciones requeridas---*/
 var formContainer = qs('#form-calculate-container');
 var resultsContainer = qs('#results-container');
-var blogInfo = qs('#blog-info')
+var infoExtraBottom = qs('#info-extra-bottom');
+var infoExtraTop = qs('#info-extra-top');
 
 /*--Evento general para validar si mostrar resultados o no, y actualizar los mismos en base a lo seleccionado---*/
 var calculateButton = qs('#calculateButton');
@@ -1458,7 +1459,8 @@ calculateAgainButton.addEventListener('click', function () {
     formContainer.style.opacity = '1';
     resultsContainer.style.height = '0';
     resultsContainer.style.opacity = '0';
-    blogInfo.style.display = 'block';
+    infoExtraBottom.style.display = 'block';
+    infoExtraTop.style.display = 'block';
     calculateAgainButton.classList.add("d-none");
     calculateButton.style.display = 'block';
 });
@@ -1631,7 +1633,8 @@ function calculate() {
 
         formContainer.style.height = '0';
         formContainer.style.opacity = '0';
-        blogInfo.style.display = 'none';
+        infoExtraBottom.style.display = 'none';
+        infoExtraTop.style.display = 'none';
         resultsContainer.style.height = 'auto';
         resultsContainer.style.opacity = '1';
         calculateButton.style.display = 'none';
@@ -2432,8 +2435,10 @@ function calculate() {
     } else {
         formContainer.style.height = 'auto';
         formContainer.style.opacity = '1';
-        blogInfo.style.height = 'auto';
-        blogInfo.style.opacity = '1';
+        infoExtraBottom.style.height = 'auto';
+        infoExtraBottom.style.opacity = '1';
+        infoExtraTop.style.height = 'auto';
+        infoExtraTop.style.opacity = '1';
         resultsContainer.style.height = '0';
         resultsContainer.style.opacity = '0';
         calculateAgainButton.classList.add("d-none");
@@ -2481,4 +2486,12 @@ categoryTitles.forEach((category, i) => {
             });
         });
     });
+});
+/*--Detecta click para cerrar el cajon superior de información extra--*/
+qs('#close-info-extra-top').addEventListener('click', () => {
+    qs('#info-extra-top').style.transform = 'scale(0)';
+    qs('#info-extra-top').style.transition = 'transform 0.2s ease-in';
+    setTimeout(() => {
+        qs('#info-extra-top').classList.add('d-none');
+    }, 200)
 });

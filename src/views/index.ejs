@@ -42,14 +42,13 @@
       </div>
     </div>
 
-    <div class="card mt-3" style="max-width: 75%; margin-left: auto; margin-right: auto;">
-      <div class="card-header">
-        <button type="button" class="close" style="float: right; border: none;" aria-label="Close">
+    <div class="card mt-3 info-extra-top" id="info-extra-top">
+      <div class="card-header" style="display: flex; justify-content: space-between; ">
+        <p style="margin: 0px 10px 0px 0px; flex-wrap: wrap;">Usando este cotizador online vas a
+          poder estimar lo siguiente:</p>
+        <button type="button" id="close-info-extra-top" class="close-info-extra-top" aria-label="Close">
           <span aria-hidden="true"><i class="fas fa-times"></i></span>
         </button>
-        
-        <p style="margin: 0px;">Usando este cotizador online vas a
-          poder estimar lo siguiente:</p>
       </div>
       <div class="card-body">
         <ul style="list-style-type: circle; margin-bottom: 0px;">
@@ -509,17 +508,19 @@
     </form>
 
 
-    <div class="card text-center blog-info" id="blog-info">
+    <div class="card text-center info-extra-bottom" id="info-extra-bottom">
       <div class="card-header">
         <h3>¿Como funciona?</h3>
         <ul class="nav nav-tabs card-header-tabs" id="myTab" role="tablist">
-          <li class="nav-item">
+          <li class="nav-item info-extra-tab">
             <a class="nav-link active" id="info-tab" data-toggle="tab" href="#info" role="tab" aria-controls="info"
-              aria-selected="true"><i class="fas fa-search-dollar"></i> Precios de servicios de Marketing Digital</a>
+              aria-selected="true"><i class="fas fa-search-dollar"></i> Precios de servicios <span
+                class="short-title-mobile">de Marketing Digital</span></a>
           </li>
-          <li class="nav-item">
+          <li class="nav-item info-extra-tab">
             <a class="nav-link" id="statistics-tab" data-toggle="tab" href="#statistics" role="tab"
-              aria-controls="statistics" aria-selected="false"><i class="fas fa-ad"></i> Precio de Google Ads y
+              aria-controls="statistics" aria-selected="false"><i class="fas fa-ad"></i> <span
+                class="short-title-mobile">Precio de</span> Google <span class="short-title-mobile">Ads </span>y
               Facebook Ads</a>
           </li>
         </ul>
@@ -527,7 +528,7 @@
       <div class="card-body">
         <div class="tab-content" id="myTabContent">
           <div class="tab-pane fade show active" id="info" role="tabpanel" aria-labelledby="info-tab">
-            <h2 class="card-title">Precios de servicios de Marketing Digital:</h2>
+            <h2 class="info-extra-bottom-card-titles">Precios de servicios de Marketing Digital:</h2>
             <p class="card-text" style="text-align: start;">El cotizador usa el precio por hora promedio de todos los
               freelancers disponibles en la plataforma <a href="https://www.upwork.com/" target="_blank">Upwork</a> para
               cada país (13 países) para los siguientes skills:</p>
@@ -544,23 +545,25 @@
             <p class="card-text" style="text-align: start;">Teniendo en cuenta estos precios por hora, el cotizador
               calcula el precio de tu plan, teniendo en cuenta
               cuántas horas hacen falta de cada skill para ejecutar el plan. La cantidad de horas de cada skill es lo
-              que consideramos en Digital Now que hace falta.<br>
+              que consideramos en Digital Now que hace falta.<br><br>
               Por ejemplo, para un plan de Community Management intermedio consideramos que hacen falta los siguientes
               skills que le dediquen esta cantidad de tiempo por mes:<br><br>
 
-              <i>8 horas de Community Manager a 16 USD la hora (Precio promedio de freelancers que dan el servicio de
-                Community Management de Argentina)<br><br>
-                10 horas de Diseñador Gráfico a 27 USD la hora (Precio promedio de freelancers que dan el servicio de
-                Diseño Gráfico de Argentina)<br><br>
-                2 horas de Editor de video a 20 USD la hora (Precio promedio de freelancers que dan el servicio de
-                Edición
-                de video de Argentina)<br><br>
+              <i>- 8 horas de Community Manager a 16 USD la hora <small>(Precio promedio de freelancers que dan el
+                  servicio de
+                  Community Management de Argentina)</small><br><br>
+                - 10 horas de Diseñador Gráfico a 27 USD la hora <small>(Precio promedio de freelancers que dan el
+                  servicio de
+                  Diseño Gráfico de Argentina)</small><br><br>
+                - 2 horas de Editor de video a 20 USD la hora <small>(Precio promedio de freelancers que dan el servicio
+                  de
+                  Edición de video de Argentina)</small><br><br>
                 Precio mensual del plan = 8 * 16 + 10 * 27 + 2 * 20 = US $ 438</i>
             </p>
             <a href="#cotizador" class="btn btn-primary">¡Quiero probarlo!</a>
           </div>
           <div class="tab-pane fade" id="statistics" role="tabpanel" aria-labelledby="statistics-tab">
-            <h2>Precio de Google Ads y Facebook Ads</h2>
+            <h2 class="info-extra-bottom-card-titles">Precio de Google Ads y Facebook Ads:</h2>
             <p class="card-text" style="text-align: start;">Usamos datos de <a href="https://www.wordstream.com"
                 target="_blank">Wordstream</a>, para tener costos por conversión
               por industria (Autos, Servicio al consumidor, B2B, Citas, etc.), por red (Google Ads Search, Google Ads
@@ -572,21 +575,21 @@
               Para calcular estos precios y resultados estimados, el cotizador tiene en cuenta los siguientes datos de
               <a href="https://www.wordstream.com" target="_blank">Wordstream</a>:
             </p>
-            <ul style="text-align: start; list-style-type: none;">
-              <li>
+            <ul style="text-align: start; list-style-type: circle;">
+              <li style="margin-bottom: 0.8rem;">
                 <a href="https://www.wordstream.com/blog/ws/2015/07/06/average-cost-per-click" target="_blank">Costo por
                   clic por País:</a> De esta publicación usamos cuánto es el costo por clic para cada país,
                 comparado
                 con el de Estados Unidos. Por ejemplo, el costo por clic de Colombia, es un 83% menor al de Estados
                 Unidos.
               </li>
-              <li>
+              <li style="margin-bottom: 0.8rem;">
                 <a href="https://www.wordstream.com/blog/ws/2016/02/29/google-adwords-industry-benchmarks"
                   target="_blank">Benchmarks de Google Ads por industria en EEUU:</a> De esta publicación usamos el CPA
                 (Costo por conversión)
                 de Google Ads en EEUU para diferentes industrias.
               </li>
-              <li>
+              <li style="margin-bottom: 0.8rem;">
                 <a href="https://www.wordstream.com/blog/ws/2017/02/28/facebook-advertising-benchmarks"
                   target="_blank">Benchmarks de Facebook Ads por industria en EEUU:</a> De esta publicación usamos el
                 CPA (Costo por
