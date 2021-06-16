@@ -1051,6 +1051,7 @@ var checkboxesServicesValidate = [false, false, false, false, false, false, fals
 checkboxesServices.forEach((checkboxService, i) => {
     checkboxService.addEventListener('change', function () {
         if (this.checked) {
+            closeBubbleSpeechHelp();
             checkboxesServicesValidate[i] = true;
             /*-Desctiva el mensaje de error tipo 1 al tildar un servicio-*/
             if (errorType == 1) {
@@ -2482,6 +2483,13 @@ function closeBubbleSpeechResults() {
         qs('#bubble-click-results-container').style.display = 'none';
     }, 200)
 };
+function closeBubbleSpeechHelp() {
+    qs('#bubble-click-help-container').style.transform = 'scale(0)';
+    qs('#bubble-click-help-container').style.transition = 'transform 0.2s ease-in';
+    setTimeout(() => {
+        qs('#bubble-click-help-container').style.display = 'none';
+    }, 200)
+};
 /*--Detecta click en cajon de categoria y cambia el mensaje del bubble, luego detecta click en sub-cajon de servicio y desaparece--*/
 categoryTitles.forEach((category, i) => {
     category.addEventListener('click', function () {
@@ -2504,9 +2512,5 @@ qs('#close-info-extra-top').addEventListener('click', () => {
 });
 /*--Detecta click para cerrar el bubble speech de información extra--*/
 qs('#close-info-extra-help').addEventListener('click', () => {
-    qs('#bubble-click-help-container').style.transform = 'scale(0)';
-    qs('#bubble-click-help-container').style.transition = 'transform 0.2s ease-in';
-    setTimeout(() => {
-        qs('#bubble-click-help-container').style.display = 'none';
-    }, 200)
+    closeBubbleSpeechHelp();
 });
