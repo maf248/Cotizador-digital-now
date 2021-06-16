@@ -2458,7 +2458,7 @@ function calculate() {
 
     /*--Se inyecta horario real en bubble speech de resultados--*/
     qs('#bubble-results-timestamp').innerHTML = parseDate();
-    
+
 
 };
 /*--Se inyecta horario real en bubble speech de inicio--*/
@@ -2483,6 +2483,7 @@ function closeBubbleSpeechResults() {
         qs('#bubble-click-results-container').style.display = 'none';
     }, 200)
 };
+
 function closeBubbleSpeechHelp() {
     qs('#bubble-click-help-container').style.transform = 'scale(0)';
     qs('#bubble-click-help-container').style.transition = 'transform 0.2s ease-in';
