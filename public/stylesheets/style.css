@@ -228,7 +228,7 @@ h4 {
 }
 
 .info-extra-top {
-  max-width: 75%;
+  max-width: fit-content;
   margin-left: auto;
   margin-right: auto;
 }
@@ -506,11 +506,11 @@ button:focus {
   }
 
   .bubble-click-help-container .bubble-help .bubble-arrow:after {
-    top: 12px;
+    top: 12 px;
   }
 
   .info-extra-top {
-    max-width: 95% !important;
+    max-width: 100% !important;
   }
 
   .info-extra-tab a {
@@ -628,10 +628,6 @@ button:focus {
 
   .short-title-mobile {
     display: none;
-  }
-
-  .info-extra-top {
-    max-width: 80%;
   }
 
   .info-extra-tab {
