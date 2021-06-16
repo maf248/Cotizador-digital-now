@@ -41,6 +41,21 @@
         <h1 class="text-center"><%= title %></h1>
       </div>
     </div>
+    
+    <div class="bubble-click-help-container" id="bubble-click-help-container">
+      <div class="bubble-help">
+        <button type="button" id="close-info-extra-help" class="close-info-extra-help" aria-label="Close">
+          <span aria-hidden="true"><i class="fas fa-times"></i></span>
+        </button>
+        <div class="txt">
+          <p class="name">Digital Now<span> ~ Ayuda</span></p>
+          <p class="message" id="bubble-help-message">Completá los campos para cotizar tu campaña de marketing digital...</p>
+          <span class="timestamp" id="bubble-help-timestamp"></span>
+        </div>
+        
+        <div class="bubble-arrow"></div>
+      </div>
+    </div>
 
     <div class="card mt-3 info-extra-top" id="info-extra-top">
       <div class="card-header" style="display: flex; justify-content: space-between; ">
@@ -627,12 +642,12 @@
 
       <h2 class="results-title text-decoration-underline m-3" style="display: none;">Resultados:</h2>
 
-      <div class="bubble-click-container" id="bubble-click-container">
-        <div class="bubble">
+      <div class="bubble-click-results-container" id="bubble-click-results-container">
+        <div class="bubble-results">
           <div class="txt">
             <p class="name">Digital Now<span> ~ Ayuda</span></p>
-            <p class="message" id="bubble-message">¡Hacé click en los cajones para ver más detalles!</p>
-            <span class="timestamp" id="timestamp"></span>
+            <p class="message" id="bubble-results-message">¡Hacé click en los cajones para ver más detalles!</p>
+            <span class="timestamp" id="bubble-results-timestamp"></span>
           </div>
           <div class="bubble-arrow"></div>
         </div>

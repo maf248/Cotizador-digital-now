@@ -1461,6 +1461,7 @@ calculateAgainButton.addEventListener('click', function () {
     resultsContainer.style.opacity = '0';
     infoExtraBottom.style.display = 'block';
     infoExtraTop.style.display = 'block';
+    qs('#bubble-click-help-container').classList.remove('d-none');
     calculateAgainButton.classList.add("d-none");
     calculateButton.style.display = 'block';
 });
@@ -1510,7 +1511,14 @@ logoMarca.addEventListener('change', function () {
 
 calculateButton.addEventListener('click', function () {
     calculate();
-})
+});
+
+/*--Sistema que genera el horario real en el mensaje de "click para ver más"--*/
+function parseDate() {
+    var date = new Date();
+    var localeSpecificTime = date.toLocaleTimeString();
+    return localeSpecificTime.replace(/:\d+ /, ' ').slice(0, 5);
+}
 
 function calculate() {
     /*--Se setean/resetean las variables de acumulación de conversiones--*/
@@ -1638,6 +1646,7 @@ function calculate() {
         resultsContainer.style.height = 'auto';
         resultsContainer.style.opacity = '1';
         calculateButton.style.display = 'none';
+        qs('#bubble-click-help-container').classList.add('d-none');
         calculateAgainButton.classList.remove("d-none");
         errorMessages.innerHTML = '';
     }
@@ -2441,20 +2450,18 @@ function calculate() {
         infoExtraTop.style.opacity = '1';
         resultsContainer.style.height = '0';
         resultsContainer.style.opacity = '0';
+        qs('#bubble-click-help-container').classList.add('d-none');
         calculateAgainButton.classList.add("d-none");
         calculateButton.style.display = 'block';
     }
 
-    /*--Sistema que genera el horario real en el mensaje de "click para ver más"--*/
-    function parseDate() {
-        var date = new Date();
-        var localeSpecificTime = date.toLocaleTimeString();
-        return localeSpecificTime.replace(/:\d+ /, ' ').slice(0, 5);
-    }
-    qs('#timestamp').innerHTML = parseDate();
+    /*--Se inyecta horario real en bubble speech de resultados--*/
+    qs('#bubble-results-timestamp').innerHTML = parseDate();
+    
 
 };
-
+/*--Se inyecta horario real en bubble speech de inicio--*/
+qs('#bubble-help-timestamp').innerHTML = parseDate();
 
 /*--Sistema para rotar los iconos de cajónes "collapse" al expandirlos o contraerlos--*/
 var resultsCollapsible = qsa('.results-collapsible');
@@ -2468,21 +2475,21 @@ resultsCollapsible.forEach((header, i) => {
 var categoryTitles = qsa('.result-category-titles');
 var serviceTitles = qsa('.result-service-titles');
 
-function closeBubbleSpeech() {
-    qs('#bubble-click-container').style.transform = 'scale(0)';
-    qs('#bubble-click-container').style.transition = 'transform 0.2s ease-in';
+function closeBubbleSpeechResults() {
+    qs('#bubble-click-results-container').style.transform = 'scale(0)';
+    qs('#bubble-click-results-container').style.transition = 'transform 0.2s ease-in';
     setTimeout(() => {
-        qs('#bubble-click-container').style.display = 'none';
+        qs('#bubble-click-results-container').style.display = 'none';
     }, 200)
 };
 /*--Detecta click en cajon de categoria y cambia el mensaje del bubble, luego detecta click en sub-cajon de servicio y desaparece--*/
 categoryTitles.forEach((category, i) => {
     category.addEventListener('click', function () {
-        qs('#bubble-message').innerHTML = 'Hace click en un sub-cajón de servicio para ver más...';
+        qs('#bubble-results-message').innerHTML = 'Hace click en un sub-cajón de servicio para ver más...';
 
         serviceTitles.forEach((service, i) => {
             service.addEventListener('click', function () {
-                closeBubbleSpeech();
+                closeBubbleSpeechResults();
             });
         });
     });
@@ -2493,5 +2500,13 @@ qs('#close-info-extra-top').addEventListener('click', () => {
     qs('#info-extra-top').style.transition = 'transform 0.2s ease-in';
     setTimeout(() => {
         qs('#info-extra-top').classList.add('d-none');
+    }, 200)
+});
+/*--Detecta click para cerrar el bubble speech de información extra--*/
+qs('#close-info-extra-help').addEventListener('click', () => {
+    qs('#bubble-click-help-container').style.transform = 'scale(0)';
+    qs('#bubble-click-help-container').style.transition = 'transform 0.2s ease-in';
+    setTimeout(() => {
+        qs('#bubble-click-help-container').style.display = 'none';
     }, 200)
 });

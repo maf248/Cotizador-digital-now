@@ -243,6 +243,7 @@ h4 {
 .info-extra-title {
   background-color: rgba(0, 0, 0, .03);
   margin: 0px;
+  font-size: calc(1.1rem + .9vw) !important;
 }
 
 .info-extra-bottom-card-titles {
@@ -366,11 +367,11 @@ button:focus {
 }
 
 /*--Burbuja para incitar a hacer click en los cajones de resultados, en mobile---*/
-.bubble-click-container {
+.bubble-click-results-container {
   padding: 0 0 20px 0;
 }
 
-.bubble-click-container .bubble {
+.bubble-click-results-container .bubble-results {
   width: 240px;
   height: auto;
   display: block;
@@ -382,29 +383,29 @@ button:focus {
   margin-right: auto;
 }
 
-.bubble-click-container .bubble .txt {
+.bubble-click-results-container .bubble-results .txt {
   padding: 8px 50px 8px 14px;
 }
 
-.bubble-click-container .bubble .txt .name {
+.bubble-click-results-container .bubble-results .txt .name {
   font-weight: 600;
   font-size: 12px;
   margin: 0 0 4px;
   color: #0d6efd;
 }
 
-.bubble-click-container .bubble .txt .name span {
+.bubble-click-results-container .bubble-results .txt .name span {
   font-weight: normal;
   color: #b3b3b3;
 }
 
-.bubble-click-container .bubble .txt .message {
+.bubble-click-results-container .bubble-results .txt .message {
   font-size: 13px;
   margin: 0;
   color: #2b2b2b;
 }
 
-.bubble-click-container .bubble .txt .timestamp {
+.bubble-click-results-container .bubble-results .txt .timestamp {
   font-size: 11px;
   position: absolute;
   bottom: 8px;
@@ -413,7 +414,7 @@ button:focus {
   color: #777;
 }
 
-.bubble-click-container .bubble .bubble-arrow {
+.bubble-click-results-container .bubble-results .bubble-arrow {
   position: absolute;
   width: 0;
   bottom: 42px;
@@ -421,7 +422,7 @@ button:focus {
   height: 0;
 }
 
-.bubble-click-container .bubble .bubble-arrow:after {
+.bubble-click-results-container .bubble-results .bubble-arrow:after {
   content: "";
   position: absolute;
   border: 0 solid transparent;
@@ -433,6 +434,86 @@ button:focus {
   top: 30px;
   left: 30px;
 }
+
+/*---bubble help main---*/
+.close-info-extra-help {
+  float: right;
+  position: absolute;
+  right: 3px;
+  top: 3px;
+  border: none;
+  background-color: #f5f5f5;
+}
+
+.bubble-click-help-container {
+  padding: 0 0 20px 0;
+}
+
+.bubble-click-help-container .bubble-help {
+  max-width: 500px;
+  height: auto;
+  display: block;
+  background: #f5f5f5;
+  border-radius: 4px;
+  box-shadow: -10px 10px 15px #555;
+  position: relative;
+  margin-top: 15px;
+  margin-left: 50px;
+  margin-right: auto;
+}
+
+.bubble-click-help-container .bubble-help .txt {
+  padding: 8px 50px 8px 14px;
+}
+
+.bubble-click-help-container .bubble-help .txt .name {
+  font-weight: 600;
+  font-size: 12px;
+  margin: 0 0 4px;
+  color: #0d6efd;
+}
+
+.bubble-click-help-container .bubble-help .txt .name span {
+  font-weight: normal;
+  color: #b3b3b3;
+}
+
+.bubble-click-help-container .bubble-help .txt .message {
+  font-size: 13px;
+  margin: 0;
+  color: #2b2b2b;
+}
+
+.bubble-click-help-container .bubble-help .txt .timestamp {
+  font-size: 11px;
+  position: absolute;
+  bottom: 8px;
+  right: 10px;
+  text-transform: uppercase;
+  color: #777;
+}
+
+.bubble-click-help-container .bubble-help .bubble-arrow {
+  position: absolute;
+  width: 0;
+  bottom: 100px;
+  left: -45px;
+  height: 0;
+}
+
+.bubble-click-help-container .bubble-help .bubble-arrow:after {
+  content: "";
+  position: absolute;
+  border: 0 solid transparent;
+  border-top: 9px solid #f5f5f5;
+  border-radius: 0 20px 0;
+  width: 15px;
+  height: 30px;
+  transform: rotate(175deg);
+  top: 30px;
+  left: 30px;
+}
+
 
 /*---MEDIA QUERIES---*/
 @media (max-width: 500px) {
@@ -521,7 +602,7 @@ button:focus {
     opacity: 0.85;
   }
 
-  .bubble-click-container {
+  .bubble-click-results-container {
     display: none;
   }
 }
