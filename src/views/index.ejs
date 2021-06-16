@@ -44,24 +44,13 @@
 
     <div class="card mt-3 info-extra-top" id="info-extra-top">
       <div class="card-header" style="display: flex; justify-content: space-between; ">
-        <p style="margin: 0px 10px 0px 0px; flex-wrap: wrap;">Usando este cotizador online vas a
-          poder estimar lo siguiente:</p>
+        <p style="font-weight: bold; margin: 0px;">Digital Now <span style="font-weight: 100;">~ Ayuda</span></p>
         <button type="button" id="close-info-extra-top" class="close-info-extra-top" aria-label="Close">
           <span aria-hidden="true"><i class="fas fa-times"></i></span>
         </button>
       </div>
       <div class="card-body">
-        <ul style="list-style-type: circle; margin-bottom: 0px;">
-          <li>
-            Precio de tus proveedores de servicios de marketing digital según el país, según el tipo de servicio
-            (Gestión de Google Ads, SEO, Community Management, etc.) y según el tipo de plan (Básico, Intermedio,
-            Avanzado).
-          </li>
-          <li>
-            Precio de Google Ads y Facebook Ads: Cuánto cuesta y qué resultados podés obtener en términos de ventas,
-            consultas, u alguna otra acción en tu web (Conversiones).
-          </li>
-        </ul>
+        <p style="margin: 0px;">Completá los campos para cotizar tu campaña de marketing digital...</p>
       </div>
     </div>
 
@@ -507,14 +496,17 @@
 
     </form>
 
-
     <div class="card text-center info-extra-bottom" id="info-extra-bottom">
+      <h2 class="info-extra-title text-decoration-underline p-2">¿Como funciona?</h2>
       <div class="card-header">
-        <h3>¿Como funciona?</h3>
         <ul class="nav nav-tabs card-header-tabs" id="myTab" role="tablist">
           <li class="nav-item info-extra-tab">
-            <a class="nav-link active" id="info-tab" data-toggle="tab" href="#info" role="tab" aria-controls="info"
-              aria-selected="true"><i class="fas fa-search-dollar"></i> Precios de servicios <span
+            <a class="nav-link" id="what-does-tab" data-toggle="tab" href="#what-does" role="tab"
+              aria-controls="what-does" aria-selected="false"><i class="fas fa-info-circle"></i> ¿Qué hace?</a>
+          </li>
+          <li class="nav-item info-extra-tab">
+            <a class="nav-link" id="info-tab" data-toggle="tab" href="#info" role="tab" aria-controls="info"
+              aria-selected="false"><i class="fas fa-search-dollar"></i> Precios de servicios <span
                 class="short-title-mobile">de Marketing Digital</span></a>
           </li>
           <li class="nav-item info-extra-tab">
@@ -527,7 +519,21 @@
       </div>
       <div class="card-body">
         <div class="tab-content" id="myTabContent">
-          <div class="tab-pane fade show active" id="info" role="tabpanel" aria-labelledby="info-tab">
+          <div class="tab-pane fade" id="what-does" role="tabpanel" aria-labelledby="what-does-tab">
+            <h2 class="what-does-extra-bottom-card-titles">¿Qué hace?</h2>
+            <p class="card-text" style="text-align: start;">Usando este cotizador online vas a poder estimar lo
+              siguiente:</p>
+            <ul style="list-style-type: circle; text-align: start;">
+              <li>Precio de tus proveedores de servicios de marketing digital según el país, según el tipo de servicio
+                (Gestión de Google Ads, SEO, Community Management, etc.) y según el tipo de plan (Básico, Intermedio,
+                Avanzado).</li>
+              <li>Precio de Google Ads y Facebook Ads: Cuánto cuesta y qué resultados podés obtener en términos de
+                ventas,
+                consultas, u alguna otra acción en tu web (Conversiones).</li>
+            </ul>
+          </div>
+
+          <div class="tab-pane fade" id="info" role="tabpanel" aria-labelledby="info-tab">
             <h2 class="info-extra-bottom-card-titles">Precios de servicios de Marketing Digital:</h2>
             <p class="card-text" style="text-align: start;">El cotizador usa el precio por hora promedio de todos los
               freelancers disponibles en la plataforma <a href="https://www.upwork.com/" target="_blank">Upwork</a> para
@@ -598,10 +604,10 @@
               </li>
             </ul>
             <p class="card-text" style="text-align: start;">Lo que hacemos para calcular el costo de conversión por
-              industria para cada país, es usar los datos de
-              cómo varían los costos por clic entre EEUU y otros países. Por ejemplo, si el costo por clic de Colombia
-              es un 83% menor al de Estados Unidos, estamos asumiendo que el costo por conversión de Colombia también va
-              a ser un 83% menor al de Estados Unidos. Entonces, si sabemos por ejemplo que el costo de conversión de
+              industria para cada país, es usar los datos de cómo varían los costos por clic entre EEUU y otros países.
+              Por ejemplo, si el costo por clic de Colombia es un 83% menor al de Estados Unidos, estamos asumiendo que
+              el costo por conversión de Colombia también va a ser un 83% menor al de Estados Unidos. Entonces, si
+              sabemos por ejemplo que el costo de conversión de
               Google Ads Red de Búsqueda para E-Commerce en Estados Unidos es de US $ 45,27 (Data de Wordstream),
               podemos multiplicar este valor por (1 - 0,83), y estimar el costo por conversión de E-Commerce para
               Colombia (US $ 7.70). Una vez que sabemos esto, podemos estimar qué cantidad de conversiones podríamos

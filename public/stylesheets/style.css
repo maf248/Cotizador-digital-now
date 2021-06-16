@@ -237,7 +237,12 @@ h4 {
   position: absolute;
   right: 5px;
   border: none;
-  background-color: rgba(0,0,0,.03);
+  background-color: rgba(0, 0, 0, .03);
+}
+
+.info-extra-title {
+  background-color: rgba(0, 0, 0, .03);
+  margin: 0px;
 }
 
 .info-extra-bottom-card-titles {
@@ -448,10 +453,6 @@ button:focus {
     font-size: 0.75rem !important;
   }
 
-  .short-title-mobile {
-    display: none;
-  }
-
   .checkContainer p {
     font-size: 1rem;
   }
@@ -559,6 +560,10 @@ button:focus {
 
   .email-customer-container {
     flex-direction: column;
+  }
+
+  .short-title-mobile {
+    display: none;
   }
 
   .info-extra-top {
