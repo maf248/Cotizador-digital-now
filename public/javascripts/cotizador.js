@@ -1051,7 +1051,6 @@ var checkboxesServicesValidate = [false, false, false, false, false, false, fals
 checkboxesServices.forEach((checkboxService, i) => {
     checkboxService.addEventListener('change', function () {
         if (this.checked) {
-            closeBubbleSpeechHelp();
             checkboxesServicesValidate[i] = true;
             /*-Desctiva el mensaje de error tipo 1 al tildar un servicio-*/
             if (errorType == 1) {
@@ -1449,7 +1448,6 @@ countryAnnounce.addEventListener('keyup', function (event) {
 var formContainer = qs('#form-calculate-container');
 var resultsContainer = qs('#results-container');
 var infoExtraBottom = qs('#info-extra-bottom');
-var infoExtraTop = qs('#info-extra-top');
 var infoExtraTopMessage = qs('#info-extra-top-message');
 
 /*--Evento general para validar si mostrar resultados o no, y actualizar los mismos en base a lo seleccionado---*/
@@ -1462,9 +1460,7 @@ calculateAgainButton.addEventListener('click', function () {
     resultsContainer.style.height = '0';
     resultsContainer.style.opacity = '0';
     infoExtraBottom.style.display = 'none';
-    infoExtraTop.style.display = 'block';
     infoExtraTopMessage.style.display = 'block';
-    qs('#bubble-click-help-container').classList.remove('d-none');
     calculateAgainButton.classList.add("d-none");
     calculateButton.style.display = 'block';
 });
@@ -1645,12 +1641,10 @@ function calculate() {
         formContainer.style.height = '0';
         formContainer.style.opacity = '0';
         infoExtraBottom.style.display = 'block';
-        infoExtraTop.style.display = 'none';
         infoExtraTopMessage.style.display = 'none';
         resultsContainer.style.height = 'auto';
         resultsContainer.style.opacity = '1';
         calculateButton.style.display = 'none';
-        qs('#bubble-click-help-container').classList.add('d-none');
         calculateAgainButton.classList.remove("d-none");
         errorMessages.innerHTML = '';
     }
@@ -2493,11 +2487,8 @@ function calculate() {
     } else {
         formContainer.style.height = 'auto';
         formContainer.style.opacity = '1';
-        infoExtraTop.style.height = 'auto';
-        infoExtraTop.style.opacity = '1';
         resultsContainer.style.height = '0';
         resultsContainer.style.opacity = '0';
-        qs('#bubble-click-help-container').classList.add('d-none');
         calculateAgainButton.classList.add("d-none");
         calculateButton.style.display = 'block';
     }
@@ -2507,8 +2498,6 @@ function calculate() {
 
 
 };
-/*--Se inyecta horario real en bubble speech de inicio--*/
-qs('#bubble-help-timestamp').innerHTML = parseDate();
 
 /*--Sistema para rotar los iconos de cajónes "collapse" al expandirlos o contraerlos--*/
 var resultsCollapsible = qsa('.results-collapsible');
@@ -2530,13 +2519,6 @@ function closeBubbleSpeechResults() {
     }, 200)
 };
 
-function closeBubbleSpeechHelp() {
-    qs('#bubble-click-help-container').style.transform = 'scale(0)';
-    qs('#bubble-click-help-container').style.transition = 'transform 0.2s ease-in';
-    setTimeout(() => {
-        qs('#bubble-click-help-container').style.display = 'none';
-    }, 200)
-};
 /*--Detecta click en cajon de categoria y cambia el mensaje del bubble, luego detecta click en sub-cajon de servicio y desaparece--*/
 categoryTitles.forEach((category, i) => {
     category.addEventListener('click', function () {
@@ -2548,16 +2530,4 @@ categoryTitles.forEach((category, i) => {
             });
         });
     });
-});
-/*--Detecta click para cerrar el cajon superior de información extra--*/
-qs('#close-info-extra-top').addEventListener('click', () => {
-    qs('#info-extra-top').style.transform = 'scale(0)';
-    qs('#info-extra-top').style.transition = 'transform 0.2s ease-in';
-    setTimeout(() => {
-        qs('#info-extra-top').classList.add('d-none');
-    }, 200)
-});
-/*--Detecta click para cerrar el bubble speech de información extra--*/
-qs('#close-info-extra-help').addEventListener('click', () => {
-    closeBubbleSpeechHelp();
 });

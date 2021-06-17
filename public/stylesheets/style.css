@@ -227,19 +227,6 @@ h4 {
   text-align: center;
 }
 
-.info-extra-top {
-  max-width: fit-content;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.close-info-extra-top {
-  position: absolute;
-  right: 5px;
-  border: none;
-  background-color: rgba(0, 0, 0, .03);
-}
-
 .info-extra-bottom-card-titles {
   font-size: calc(1.1rem + .9vw) !important;
 }
@@ -361,8 +348,7 @@ button:focus {
 }
 
 /*--Burbuja para incitar a hacer click en los cajones de resultados, en mobile---*/
-.bubble-click-results-container,
-.bubble-click-help-container {
+.bubble-click-results-container {
   padding: 0 0 20px 0;
 }
 
@@ -378,21 +364,18 @@ button:focus {
   margin-right: auto;
 }
 
-.bubble-click-results-container .bubble-results .txt,
-.bubble-click-help-container .bubble-help .txt {
+.bubble-click-results-container .bubble-results .txt {
   padding: 8px 50px 8px 14px;
 }
 
-.bubble-click-results-container .bubble-results .txt .name,
-.bubble-click-help-container .bubble-help .txt .name {
+.bubble-click-results-container .bubble-results .txt .name {
   font-weight: 600;
   font-size: 12px;
   margin: 0 0 4px;
   color: #0d6efd;
 }
 
-.bubble-click-results-container .bubble-results .txt .name span,
-.bubble-click-help-container .bubble-help .txt .name span {
+.bubble-click-results-container .bubble-results .txt .name span {
   font-weight: normal;
   color: #b3b3b3;
 }
@@ -403,8 +386,7 @@ button:focus {
   color: #2b2b2b;
 }
 
-.bubble-click-results-container .bubble-results .txt .timestamp,
-.bubble-click-help-container .bubble-help .txt .timestamp {
+.bubble-click-results-container .bubble-results .txt .timestamp {
   font-size: 11px;
   position: absolute;
   bottom: 8px;
@@ -434,56 +416,6 @@ button:focus {
   left: 30px;
 }
 
-/*---Bubble speech help en inicio---*/
-.close-info-extra-help {
-  float: right;
-  position: absolute;
-  right: 3px;
-  top: 3px;
-  border: none;
-  background-color: #f5f5f5;
-}
-
-.bubble-click-help-container .bubble-help {
-  max-width: 540px;
-  height: auto;
-  display: block;
-  background: #f5f5f5;
-  border-radius: 4px;
-  box-shadow: -10px 10px 15px #555;
-  position: relative;
-  margin-top: 15px;
-  margin-left: 50px;
-  margin-right: auto;
-}
-
-.bubble-click-help-container .bubble-help .txt .message {
-  font-size: 14px;
-  margin: 0;
-  color: #2b2b2b;
-}
-
-.bubble-click-help-container .bubble-help .bubble-arrow {
-  position: absolute;
-  width: 0;
-  bottom: 100px;
-  left: -45px;
-  height: 0;
-}
-
-.bubble-click-help-container .bubble-help .bubble-arrow:after {
-  content: "";
-  position: absolute;
-  border: 0 solid transparent;
-  border-top: 9px solid #f5f5f5;
-  border-radius: 0 20px 0;
-  width: 15px;
-  height: 30px;
-  transform: rotate(175deg);
-  top: 27px;
-  left: 30px;
-}
-
 /*---MEDIA QUERIES---*/
 @media (max-width: 500px) {
   body {
@@ -493,18 +425,6 @@ button:focus {
   p,
   li {
     font-size: 0.9rem;
-  }
-
-  .bubble-click-help-container .bubble-help .txt .message {
-    font-size: 13px;
-  }
-
-  .bubble-click-help-container .bubble-help .bubble-arrow:after {
-    top: 12 px;
-  }
-
-  .info-extra-top {
-    max-width: 100% !important;
   }
 
   .info-extra-tab a {
