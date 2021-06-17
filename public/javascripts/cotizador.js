@@ -1656,6 +1656,9 @@ function calculate() {
     resultsConversionsSelectedInTitle = qs('#results-conversions-selected');
     resultsInvestmentsSelectedInTitle = qs('#results-investments-selected');
     resultsTotalSelectedInTitle = qs('#results-monthly-total-selected');
+    /*---Se resetea el titulo de "costo total mensual"---*/
+    resultsInvestmentsSelectedInTitle.innerHTML = '';
+    resultsTotalSelectedInTitle.innerHTML = '(Fee servicios mantenimiento)';
 
     /*---Se muestran los resultados particulares de google/facebook ads solamente si esta opcion fue seleccionada---*/
     if ((googleSearchAds.checked || googleDisplayAds.checked || facebookAds.checked) && !completeFormValidate.includes(false)) {
@@ -1670,32 +1673,31 @@ function calculate() {
             resultsConversionsSelectedInTitle.innerHTML = 'Google Ads';
             if (!email.checked) {
                 resultsInvestmentsSelectedInTitle.innerHTML = 'Google Ads';
-                resultsTotalSelectedInTitle.innerHTML = '(Inversión Google Ads)';
+                resultsTotalSelectedInTitle.innerHTML = '(Fee servicios mantenimiento + Inversión Google Ads)';
             } else {
                 resultsInvestmentsSelectedInTitle.innerHTML = 'Google Ads + Email Marketing';
-                resultsTotalSelectedInTitle.innerHTML = '(Inversión Google Ads + inversión Email Marketing)';
+                resultsTotalSelectedInTitle.innerHTML = '(Fee servicios mantenimiento + inversión Google Ads + inversión Email Marketing)';
             }
 
         } else if (!googleSearchAds.checked && !googleDisplayAds.checked && facebookAds.checked) {
             resultsConversionsSelectedInTitle.innerHTML = 'Facebook Ads';
             if (!email.checked) {
                 resultsInvestmentsSelectedInTitle.innerHTML = 'Facebook Ads';
-                resultsTotalSelectedInTitle.innerHTML = '(Inversión Facebook Ads)';
+                resultsTotalSelectedInTitle.innerHTML = '(Fee servicios mantenimiento + inversión Facebook Ads)';
             } else {
                 resultsInvestmentsSelectedInTitle.innerHTML = 'Facebook Ads + Email Marketing';
-                resultsTotalSelectedInTitle.innerHTML = '(Inversión Facebook Ads + inversión Email Marketing)';
+                resultsTotalSelectedInTitle.innerHTML = '(Fee servicios mantenimiento + inversión Facebook Ads + inversión Email Marketing)';
             }
 
         } else if ((googleSearchAds.checked || googleDisplayAds.checked) && facebookAds.checked) {
             resultsConversionsSelectedInTitle.innerHTML = 'Google Ads + Facebook Ads';
             if (!email.checked) {
                 resultsInvestmentsSelectedInTitle.innerHTML = 'Google Ads + Facebook Ads';
-                resultsTotalSelectedInTitle.innerHTML = '(Inversión Google Ads + inversión Facebook Ads)';
+                resultsTotalSelectedInTitle.innerHTML = '(Fee servicios mantenimiento + inversión Google Ads + inversión Facebook Ads)';
             } else {
                 resultsInvestmentsSelectedInTitle.innerHTML = 'Google Ads + Facebook Ads + Email Marketing';
-                resultsTotalSelectedInTitle.innerHTML = '(Inversión Google Ads + inversión Facebook Ads + inversión Email Marketing)';
+                resultsTotalSelectedInTitle.innerHTML = '(Fee servicios mantenimiento + inversión Google Ads + inversión Facebook Ads + inversión Email Marketing)';
             }
-
         }
 
         if (googleSearchAds.checked) {
@@ -1871,6 +1873,7 @@ function calculate() {
             /*--Se establece el titulo "costo total de inversion" con Email Marketing en caso que no se hayan seleccionado otras inversiones-*/
             if (!googleSearchAds.checked && !googleDisplayAds.checked && !facebookAds.checked) {
                 resultsInvestmentsSelectedInTitle.innerHTML = 'Email Marketing';
+                resultsTotalSelectedInTitle.innerHTML = '(Fee servicios mantenimiento + inversión Email Marketing)';
             }
             /*--Muestra el valor correspondiente a la cantidad de contactos seleccionados---*/
             totalInvestmentMonthly += Number(emailAmmount.value);
