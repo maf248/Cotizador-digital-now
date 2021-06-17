@@ -1450,6 +1450,7 @@ var formContainer = qs('#form-calculate-container');
 var resultsContainer = qs('#results-container');
 var infoExtraBottom = qs('#info-extra-bottom');
 var infoExtraTop = qs('#info-extra-top');
+var infoExtraTopMessage = qs('#info-extra-top-message');
 
 /*--Evento general para validar si mostrar resultados o no, y actualizar los mismos en base a lo seleccionado---*/
 var calculateButton = qs('#calculateButton');
@@ -1462,6 +1463,7 @@ calculateAgainButton.addEventListener('click', function () {
     resultsContainer.style.opacity = '0';
     infoExtraBottom.style.display = 'none';
     infoExtraTop.style.display = 'block';
+    infoExtraTopMessage.style.display = 'block';
     qs('#bubble-click-help-container').classList.remove('d-none');
     calculateAgainButton.classList.add("d-none");
     calculateButton.style.display = 'block';
@@ -1644,6 +1646,7 @@ function calculate() {
         formContainer.style.opacity = '0';
         infoExtraBottom.style.display = 'block';
         infoExtraTop.style.display = 'none';
+        infoExtraTopMessage.style.display = 'none';
         resultsContainer.style.height = 'auto';
         resultsContainer.style.opacity = '1';
         calculateButton.style.display = 'none';
