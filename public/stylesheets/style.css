@@ -240,12 +240,6 @@ h4 {
   background-color: rgba(0, 0, 0, .03);
 }
 
-.info-extra-title {
-  background-color: rgba(0, 0, 0, .03);
-  margin: 0px;
-  font-size: calc(1.1rem + .9vw) !important;
-}
-
 .info-extra-bottom-card-titles {
   font-size: calc(1.1rem + .9vw) !important;
 }

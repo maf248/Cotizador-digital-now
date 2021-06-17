@@ -1460,7 +1460,7 @@ calculateAgainButton.addEventListener('click', function () {
     formContainer.style.opacity = '1';
     resultsContainer.style.height = '0';
     resultsContainer.style.opacity = '0';
-    infoExtraBottom.style.display = 'block';
+    infoExtraBottom.style.display = 'none';
     infoExtraTop.style.display = 'block';
     qs('#bubble-click-help-container').classList.remove('d-none');
     calculateAgainButton.classList.add("d-none");
@@ -1642,7 +1642,7 @@ function calculate() {
 
         formContainer.style.height = '0';
         formContainer.style.opacity = '0';
-        infoExtraBottom.style.display = 'none';
+        infoExtraBottom.style.display = 'block';
         infoExtraTop.style.display = 'none';
         resultsContainer.style.height = 'auto';
         resultsContainer.style.opacity = '1';
@@ -1652,6 +1652,11 @@ function calculate() {
         errorMessages.innerHTML = '';
     }
 
+    /*---Se capturan los titulos de resultados para inyectar el contenido acorde a lo que se haya seleccionado---*/
+    resultsConversionsSelectedInTitle = qs('#results-conversions-selected');
+    resultsInvestmentsSelectedInTitle = qs('#results-investments-selected');
+    resultsTotalSelectedInTitle = qs('#results-monthly-total-selected');
+
     /*---Se muestran los resultados particulares de google/facebook ads solamente si esta opcion fue seleccionada---*/
     if ((googleSearchAds.checked || googleDisplayAds.checked || facebookAds.checked) && !completeFormValidate.includes(false)) {
 
@@ -1659,6 +1664,39 @@ function calculate() {
         qs('.results-title').innerHTML = 'Resultados:';
         qs('.results-title').style.display = 'block';
         qs('.results-second-title').style.display = 'block';
+
+        /*--Genera el titulo apropiado del cajon de resultados, acorde a que se haya seleccionado--*/
+        if ((googleSearchAds.checked || googleDisplayAds.checked) && !facebookAds.checked) {
+            resultsConversionsSelectedInTitle.innerHTML = 'Google Ads';
+            if (!email.checked) {
+                resultsInvestmentsSelectedInTitle.innerHTML = 'Google Ads';
+                resultsTotalSelectedInTitle.innerHTML = '(Inversión Google Ads)';
+            } else {
+                resultsInvestmentsSelectedInTitle.innerHTML = 'Google Ads + Email Marketing';
+                resultsTotalSelectedInTitle.innerHTML = '(Inversión Google Ads + inversión Email Marketing)';
+            }
+
+        } else if (!googleSearchAds.checked && !googleDisplayAds.checked && facebookAds.checked) {
+            resultsConversionsSelectedInTitle.innerHTML = 'Facebook Ads';
+            if (!email.checked) {
+                resultsInvestmentsSelectedInTitle.innerHTML = 'Facebook Ads';
+                resultsTotalSelectedInTitle.innerHTML = '(Inversión Facebook Ads)';
+            } else {
+                resultsInvestmentsSelectedInTitle.innerHTML = 'Facebook Ads + Email Marketing';
+                resultsTotalSelectedInTitle.innerHTML = '(Inversión Facebook Ads + inversión Email Marketing)';
+            }
+
+        } else if ((googleSearchAds.checked || googleDisplayAds.checked) && facebookAds.checked) {
+            resultsConversionsSelectedInTitle.innerHTML = 'Google Ads + Facebook Ads';
+            if (!email.checked) {
+                resultsInvestmentsSelectedInTitle.innerHTML = 'Google Ads + Facebook Ads';
+                resultsTotalSelectedInTitle.innerHTML = '(Inversión Google Ads + inversión Facebook Ads)';
+            } else {
+                resultsInvestmentsSelectedInTitle.innerHTML = 'Google Ads + Facebook Ads + Email Marketing';
+                resultsTotalSelectedInTitle.innerHTML = '(Inversión Google Ads + inversión Facebook Ads + inversión Email Marketing)';
+            }
+
+        }
 
         if (googleSearchAds.checked) {
             googleSearchAdsResultContainer.style.display = 'block';
@@ -1830,6 +1868,10 @@ function calculate() {
         if (email.checked) {
             /*--Se ocultan los fees de implementacion (por unica vez), ya que este plan no tiene---*/
             resultImplementationContainer.style.display = "none";
+            /*--Se establece el titulo "costo total de inversion" con Email Marketing en caso que no se hayan seleccionado otras inversiones-*/
+            if (!googleSearchAds.checked && !googleDisplayAds.checked && !facebookAds.checked) {
+                resultsInvestmentsSelectedInTitle.innerHTML = 'Email Marketing';
+            }
             /*--Muestra el valor correspondiente a la cantidad de contactos seleccionados---*/
             totalInvestmentMonthly += Number(emailAmmount.value);
             resultInvestmentsMonthlyDetail.innerHTML += `<li style="margin-top: 10px"><strong>‣ Email Marketing</strong> USD ${emailAmmount.value} de inversión mensual <small>(Campaña para ${emailAmmount.options[emailAmmount.selectedIndex].text} contactos)</small></li>`;
@@ -2445,8 +2487,6 @@ function calculate() {
     } else {
         formContainer.style.height = 'auto';
         formContainer.style.opacity = '1';
-        infoExtraBottom.style.height = 'auto';
-        infoExtraBottom.style.opacity = '1';
         infoExtraTop.style.height = 'auto';
         infoExtraTop.style.opacity = '1';
         resultsContainer.style.height = '0';
