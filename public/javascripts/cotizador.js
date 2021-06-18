@@ -1461,7 +1461,7 @@ calculateAgainButton.addEventListener('click', function () {
     resultsContainer.style.opacity = '0';
     infoExtraBottom.style.display = 'none';
     infoExtraTopMessage.style.display = 'block';
-    calculateAgainButton.classList.add("d-none");
+    calculateAgainButton.classList.add('d-none');
     calculateButton.style.display = 'block';
 });
 
@@ -1648,11 +1648,13 @@ function calculate() {
         calculateAgainButton.classList.remove("d-none");
         errorMessages.innerHTML = '';
     }
-
+    /*---Se capturan los titulos principal y secundario de los resultados---*/
+    let resultsFirstTitle = qs('.results-first-title');
+    let resultsSecondTitle = qs('.results-second-title');
     /*---Se capturan los titulos de resultados para inyectar el contenido acorde a lo que se haya seleccionado---*/
-    resultsConversionsSelectedInTitle = qs('#results-conversions-selected');
-    resultsInvestmentsSelectedInTitle = qs('#results-investments-selected');
-    resultsTotalSelectedInTitle = qs('#results-monthly-total-selected');
+    let resultsConversionsSelectedInTitle = qs('#results-conversions-selected');
+    let resultsInvestmentsSelectedInTitle = qs('#results-investments-selected');
+    let resultsTotalSelectedInTitle = qs('#results-monthly-total-selected');
     /*---Se resetea el titulo de "costo total mensual"---*/
     resultsInvestmentsSelectedInTitle.innerHTML = '';
     resultsTotalSelectedInTitle.innerHTML = '(Fee servicios mantenimiento)';
@@ -1661,9 +1663,9 @@ function calculate() {
     if ((googleSearchAds.checked || googleDisplayAds.checked || facebookAds.checked) && !completeFormValidate.includes(false)) {
 
         googleFacebookAdsResultContainer.style.display = 'block';
-        qs('.results-title').innerHTML = 'Resultados:';
-        qs('.results-title').style.display = 'block';
-        qs('.results-second-title').style.display = 'block';
+        resultsFirstTitle.innerHTML = 'Resultados:';
+        resultsFirstTitle.style.display = 'block';
+        resultsSecondTitle.style.display = 'block';
 
         /*--Genera el titulo apropiado del cajon de resultados, acorde a que se haya seleccionado--*/
         if ((googleSearchAds.checked || googleDisplayAds.checked) && !facebookAds.checked) {
@@ -1847,9 +1849,9 @@ function calculate() {
         }
     } else {
         googleFacebookAdsResultContainer.style.display = 'none';
-        qs('.results-title').innerHTML = 'Costos:';
-        qs('.results-title').style.display = 'block';
-        qs('.results-second-title').style.display = 'none';
+        resultsFirstTitle.innerHTML = 'Costos:';
+        resultsFirstTitle.style.display = 'block';
+        resultsSecondTitle.style.display = 'none';
     }
 
     /*---Se inicializan variables para acumular valores totales de IMPLEMENTACION (agencyOnceFeeValue) y MENSUALES (agencyMonthlyFeeValue)---*/
