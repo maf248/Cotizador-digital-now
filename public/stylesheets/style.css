@@ -221,7 +221,6 @@ h4 {
 .investment-google-display-ads input,
 .investment-facebook-ads input,
 .email-ammount-container select {
-  max-width: 230px;
   min-width: fit-content;
   height: fit-content;
   text-align: center;

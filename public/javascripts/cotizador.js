@@ -2531,3 +2531,22 @@ categoryTitles.forEach((category, i) => {
         });
     });
 });
+
+qs('#what-does-tab').addEventListener('click', () => {
+    setTimeout(() => {
+        qs('#what-does').scrollIntoView();
+    }, 500)
+    
+});
+qs('#info-tab').addEventListener('click', () => {
+    setTimeout(() => {
+        qs('#info').scrollIntoView();
+    }, 500)
+    
+});
+qs('#statistics-tab').addEventListener('click', () => {
+    setTimeout(() => {
+        qs('#statistics').scrollIntoView();
+    }, 500)
+    
+});
