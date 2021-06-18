@@ -2495,7 +2495,7 @@ function calculate() {
         calculateButton.style.display = 'block';
     }
 
-    /*--Se inyecta horario real en bubble speech de resultados--*/
+    /*--Se inyecta horario real en bubble speech de resultados p/ mobile--*/
     qs('#bubble-results-timestamp').innerHTML = parseDate();
 
 };
