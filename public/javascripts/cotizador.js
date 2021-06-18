@@ -873,18 +873,6 @@ var logoMarca = qs('#logoMarca');
 /*---Se captura el contenedor de datos extra para suavizar la animación de aparicion/desaparicion---*/
 var servicesExtraContainer = qs('#services-extra-container');
 
-/*---Se capturan los CONTENEDORES de los distintos resultados---*/
-var googleFacebookAdsResultContainer = qs('#result-googleads-facebookads-container');
-
-var googleSearchAdsResultContainer = qs('#result-google-search-ads-container');
-var googleDisplayAdsResultContainer = qs('#result-google-display-ads-container');
-var facebookAdsResultContainer = qs('#result-facebook-ads-container');
-
-var resultImplementationContainer = qs('#result-implementation-container');
-var resultMaintenanceContainer = qs('#result-maintenance-container');
-var resultInvestmentsMonthlyContainer = qs('#result-investments-monthly-container');
-var resultMonthlyTotalContainer = qs('#result-monthly-total-container');
-
 /*---Se captura el bloque CONTENEDOR que pide los PAISES donde se desea ANUNCIAR---*/
 var countryAnnounceContainer = qs('#country-announce-container');
 
@@ -928,6 +916,18 @@ var conversionWebPlanDetails = qs('#conversion-web-plan-details');
 var emailMarketingPlanDetails = qs('#email-marketing-plan-details');
 
 /*---------------------RESULTADOS---------------------*/
+/*---Se capturan los CONTENEDORES de los distintos resultados---*/
+var googleFacebookAdsResultContainer = qs('#result-googleads-facebookads-container');
+
+var googleSearchAdsResultContainer = qs('#result-google-search-ads-container');
+var googleDisplayAdsResultContainer = qs('#result-google-display-ads-container');
+var facebookAdsResultContainer = qs('#result-facebook-ads-container');
+
+var resultImplementationContainer = qs('#result-implementation-container');
+var resultMaintenanceContainer = qs('#result-maintenance-container');
+var resultInvestmentsMonthlyContainer = qs('#result-investments-monthly-container');
+var resultMonthlyTotalContainer = qs('#result-monthly-total-container');
+
 /*---Se capturan los bloques que muestran los RESULTADOS, para inyectar los valores luego de calcular---*/
 var resultGoogleFacebookAds = qs('#result-googleads-facebookads');
 var resultGoogleSearch = qs('#result-google-search');
@@ -2496,7 +2496,6 @@ function calculate() {
     /*--Se inyecta horario real en bubble speech de resultados--*/
     qs('#bubble-results-timestamp').innerHTML = parseDate();
 
-
 };
 
 /*--Sistema para rotar los iconos de cajónes "collapse" al expandirlos o contraerlos--*/
@@ -2532,21 +2531,19 @@ categoryTitles.forEach((category, i) => {
     });
 });
 
+/*---Se ajusta la pantalla al contenido de las pestañas "¿Como obtuvimos estos resultados?" al clickearlas---*/
 qs('#what-does-tab').addEventListener('click', () => {
     setTimeout(() => {
         qs('#what-does').scrollIntoView();
-    }, 500)
-    
+    }, 250);
 });
 qs('#info-tab').addEventListener('click', () => {
     setTimeout(() => {
         qs('#info').scrollIntoView();
-    }, 500)
-    
+    }, 250);
 });
 qs('#statistics-tab').addEventListener('click', () => {
     setTimeout(() => {
         qs('#statistics').scrollIntoView();
-    }, 500)
-    
+    }, 250);
 });
