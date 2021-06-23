@@ -63,6 +63,19 @@ h4 {
   margin-top: 1rem;
 }
 
+.services-extra-container input, .services-extra-container select {
+  background: rgba(232, 232, 232, .1);
+}
+
+.info-extra-titles {
+  font-size: 1.2rem !important;
+  color: white;
+  background: linear-gradient(to right, #00337F, #FF008C);
+  line-height: 2.2rem;
+  margin-bottom: 10px;
+  border-radius: .25rem .25rem 0 0;
+}
+
 .country-announce-container {
   display: none;
   border: 1px solid #888;
@@ -123,10 +136,11 @@ h4 {
 .email-marketing-extra-container {
   display: none;
   flex-direction: column;
+  background: linear-gradient(to right, rgba(255, 255, 255, .5), rgba(232, 232, 232, .5));
 }
 
 .industry-and-country-selectors-container {
-  padding: 25px 0px;
+  padding-bottom: 25px;
 }
 
 .google-search-ads-extra-container,
@@ -138,7 +152,7 @@ h4 {
 .email-marketing-extra-container,
 .email-customer-container {
   border-top: 1px solid rgba(0, 0, 0, .125);
-  padding: 25px 0;
+  padding-bottom: 25px;
 }
 
 .industry-ads-selector-container {
@@ -172,7 +186,8 @@ h4 {
   flex-direction: row;
   align-items: center;
   justify-content: space-around;
-  padding: 25px 0px;
+  padding-bottom: 25px;
+  padding-top: 25px;
 }
 
 .google-search-plan-container select,
@@ -209,6 +224,8 @@ h4 {
   flex-direction: row;
   align-items: center;
   justify-content: space-around;
+  padding-top: 25px;
+  background: linear-gradient(to right, rgba(255, 255, 255, .5), rgba(232, 232, 232, .5));
 }
 
 .email-customer-container input {
