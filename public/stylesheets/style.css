@@ -137,7 +137,11 @@ h4 {
   display: none;
   flex-direction: column;
   background: linear-gradient(to right, rgba(255, 255, 255, .5), rgba(232, 232, 232, .5));
-  /* box-shadow: -10px 10px 10px 3px rgba(100, 100, 100, .8); */
+  /* box-shadow: -10px 10px 10px 3px rgba(100, 100, 100, .8);
+  overflow: visible;
+  position: relative;
+  z-index: 9999;
+  filter: drop-shadow(0 0 30px #333); */
 }
 
 .industry-and-country-selectors-container {
