@@ -137,6 +137,7 @@ h4 {
   display: none;
   flex-direction: column;
   background: linear-gradient(to right, rgba(255, 255, 255, .5), rgba(232, 232, 232, .5));
+  /* box-shadow: -10px 10px 10px 3px rgba(0, 0, 255, 1); */
 }
 
 .industry-and-country-selectors-container {
@@ -248,7 +249,7 @@ h4 {
 }
 
 .info-extra-bottom {
-  margin-top: 25px;
+  margin-top: 10px;
 }
 
 .info-extra-bottom a {
@@ -363,9 +364,23 @@ button:focus {
   background-color: #ddd !important;
 }
 
+.results-first-title, .results-second-title, .results-third-title {
+  background: linear-gradient(to right, #00337F, #FF008C);
+  border-radius: .25rem .25rem 0 0;
+  font-size: calc(1.1rem + .6vw) !important;
+  color: white;
+  padding: 8px 16px;
+  font-weight: bold;
+  margin-top: 15px;
+}
+
+.result-monthly-total-container {
+  margin: 30px 0px;
+}
+
 /*--Burbuja para incitar a hacer click en los cajones de resultados, en mobile---*/
 .bubble-click-results-container {
-  padding: 0 0 20px 0;
+  padding: 0 0 15px 0;
 }
 
 .bubble-click-results-container .bubble-results {

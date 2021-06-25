@@ -1041,8 +1041,6 @@ countrySupplier.addEventListener('change', function () {
         completeFormValidate[0] = false;
     }
 });
-/*--Se da estilo a los resultados totales mensuales---*/
-resultMonthlyTotalContainer.style.marginTop = "40px";
 
 /*---Se capturan los checkboxes en conjunto, de los servicios requeridos---*/
 var checkboxesServices = qsa('input[class=services-check]');
