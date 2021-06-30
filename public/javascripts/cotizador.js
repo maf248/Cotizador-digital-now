@@ -645,7 +645,7 @@ const services = Object.freeze({
                 content: Object.freeze(["<ul><li>Cambios solicitados por el cliente (Sin que supere el tiempo contratado)</li><li>Incluye 2 cambios por mes para intentar mejorar la performance como modificar el presupuesto, url finales, texto de anuncios, audiencia, ubicación geográfica, estrategia de puja y piezas creativas.</li></ul>", "<ul><li>Creación de 2 sets de piezas gráficas en formato cuadrado y vertical.</li></ul>"])
             }),
             advanced: Object.freeze({
-                hours: Object.freeze([4, 4, 2]),
+                hours: Object.freeze([4, 4, 4]),
                 skillsAcquired: Object.freeze(["Analista de Marketing Digital", "Diseñador Gráfico", "Editor de video"]),
                 skillsPrices: Object.freeze([skills.prices[0], skills.prices[5], skills.prices[7]]),
                 content: Object.freeze(["<ul><li>Cambios solicitados por el cliente (Sin que supere el tiempo contratado)</li><li>Incluye 2 cambios por mes para intentar mejorar la performance como modificar el presupuesto, url finales, texto de anuncios, audiencia, ubicación geográfica, estrategia de puja y piezas creativas.</li></ul>", "<ul><li>Creación de 2 sets de piezas gráficas en formato cuadrado y vertical.</li></ul>", "<ul><li>Se hará un video en formato vertical y 4:5 de 15 segundos.</li></ul>"])
