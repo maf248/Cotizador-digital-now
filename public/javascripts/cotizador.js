@@ -574,7 +574,7 @@ const services = Object.freeze({
                 hours: Object.freeze([2, 2]),
                 skillsAcquired: Object.freeze(["Analista de Marketing Digital", "Diseñador Gráfico"]),
                 skillsPrices: Object.freeze([skills.prices[0], skills.prices[5]]),
-                content: Object.freeze(["<ul><li>Creación de cuenta de Google Ads.</li><liCreación de 1 campaña de remarketing (Mostrarle anuncios en sitios web a usuarios que ya entraron a tu sitio web en los últimos 30 días).</li></ul>", "<ul><li>Creación de 1 pieza gráfica en formato cuadrado y horizontal para anuncios responsivos (mezcla de imagen y texto).</li><li><a href='https://drive.google.com/drive/folders/15wF9BY4RxRrQ-vEchJDP4V17rw6hp503?usp=sharing' target='_blank' rel='noreferrer noopener'>Ver suma de piezas creativas</a></li></ul>"])
+                content: Object.freeze(["<ul><li>Creación de cuenta de Google Ads.</li><li>Creación de 1 campaña de remarketing (Mostrarle anuncios en sitios web a usuarios que ya entraron a tu sitio web en los últimos 30 días).</li></ul>", "<ul><li>Creación de 1 pieza gráfica en formato cuadrado y horizontal para anuncios responsivos (mezcla de imagen y texto).</li><li><a href='https://drive.google.com/drive/folders/15wF9BY4RxRrQ-vEchJDP4V17rw6hp503?usp=sharing' target='_blank' rel='noreferrer noopener'>Ver suma de piezas creativas</a></li></ul>"])
             }),
             intermediate: Object.freeze({
                 hours: Object.freeze([4, 2, 2]),
@@ -639,7 +639,7 @@ const services = Object.freeze({
                 content: Object.freeze(["<ul><li>Cambios solicitados por el cliente (Sin que supere el tiempo contratado)</li><li>Incluye 2 cambios por mes para intentar mejorar la performance como modificar el presupuesto, url finales, texto de anuncios, audiencia, ubicación geográfica, estrategia de puja y piezas creativas.</li></ul>"])
             }),
             intermediate: Object.freeze({
-                hours: Object.freeze([2, 2]),
+                hours: Object.freeze([4, 4]),
                 skillsAcquired: Object.freeze(["Analista de Marketing Digital", "Diseñador Gráfico"]),
                 skillsPrices: Object.freeze([skills.prices[0], skills.prices[5]]),
                 content: Object.freeze(["<ul><li>Cambios solicitados por el cliente (Sin que supere el tiempo contratado)</li><li>Incluye 2 cambios por mes para intentar mejorar la performance como modificar el presupuesto, url finales, texto de anuncios, audiencia, ubicación geográfica, estrategia de puja y piezas creativas.</li></ul>", "<ul><li>Creación de 2 sets de piezas gráficas en formato cuadrado y vertical.</li></ul>"])
@@ -648,7 +648,7 @@ const services = Object.freeze({
                 hours: Object.freeze([4, 4, 2]),
                 skillsAcquired: Object.freeze(["Analista de Marketing Digital", "Diseñador Gráfico", "Editor de video"]),
                 skillsPrices: Object.freeze([skills.prices[0], skills.prices[5], skills.prices[7]]),
-                content: Object.freeze(["<ul><li>Cambios solicitados por el cliente (Sin que supere el tiempo contratado)</li><li>Incluye 2 cambios por mes para intentar mejorar la performance como modificaciones en el presupuesto, url finales, texto de anuncios, audiencia, ubicación geográfica, estrategia de puja y piezas creativas. Cada 15 días el cliente recibe un análisis sobre cómo impactó ese cambio.</li></ul>", "<ul><li>Creación de 3 piezas gráficas en formatos cuadrado y vertical.</li></ul>", "<ul><li>Creación de video de menos de 15 seg  en formato vertical (Adaptable a 4:5)</li></ul>"])
+                content: Object.freeze(["<ul><li>Cambios solicitados por el cliente (Sin que supere el tiempo contratado)</li><li>Incluye 2 cambios por mes para intentar mejorar la performance como modificar el presupuesto, url finales, texto de anuncios, audiencia, ubicación geográfica, estrategia de puja y piezas creativas.</li></ul>", "<ul><li>Creación de 2 sets de piezas gráficas en formato cuadrado y vertical.</li></ul>", "<ul><li>Se hará un video en formato vertical y 4:5 de 15 segundos.</li></ul>"])
             })
         })
     }),
