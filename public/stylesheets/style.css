@@ -5,11 +5,11 @@
 p {
   min-width: fit-content;
   display: inline-block;
-  font-size: 1rem;
+  font-size: 1rem !important;
 }
 
 li {
-  font-size: 1rem;
+  font-size: 1rem !important;
 }
 
 h3 {
@@ -20,13 +20,26 @@ h4 {
   font-size: 1rem !important;
 }
 
-.digitalNowLogo:hover {
-  transform: scale(1.2);
-  transition: transform .5s ease-out;
+.section-padding {
+  padding: 25px 0;
+}
+
+.entry-title {
+  text-align: center;
 }
 
 .country-supplier-container {
   margin: 20px;
+  max-width: fit-content;
+}
+
+.country-supplier {
+  margin-bottom: 0px !important;
+  min-width: fit-content;
+  appearance: auto;
+  padding: 10px;
+  color: black;
+  border-radius: 50px;
 }
 
 .services-container {
@@ -63,8 +76,16 @@ h4 {
   margin-top: 1rem;
 }
 
-.services-extra-container input, .services-extra-container select {
+.services-extra-container input,
+.services-extra-container select {
   background: rgba(232, 232, 232, .1);
+  max-width: fit-content;
+  padding: 10px;
+  appearance: auto;
+  color: black;
+  text-align: center;
+  border: 1px solid gray;
+  border-radius: 50px;
 }
 
 .info-extra-titles {
@@ -97,11 +118,16 @@ h4 {
 
 .country-announce-selector {
   text-align: center;
+  margin-top: 15px;
 }
 
 .selected-country-announce {
   text-align: center;
   margin-top: 10px;
+}
+
+#add-country-announce {
+  border-radius: 50px;
 }
 
 .form-calculate-container {
@@ -120,6 +146,7 @@ h4 {
   margin-right: auto;
   font-style: italic;
   text-align: center;
+  font-size: 1rem !important;
 }
 
 .error-border {
@@ -137,11 +164,6 @@ h4 {
   display: none;
   flex-direction: column;
   background: linear-gradient(to right, rgba(255, 255, 255, .5), rgba(232, 232, 232, .5));
-  /* box-shadow: -10px 10px 10px 3px rgba(100, 100, 100, .8);
-  overflow: visible;
-  position: relative;
-  z-index: 9999;
-  filter: drop-shadow(0 0 30px #333); */
 }
 
 .industry-and-country-selectors-container {
@@ -191,7 +213,6 @@ h4 {
   flex-direction: row;
   align-items: center;
   justify-content: space-around;
-  padding-bottom: 25px;
   padding-top: 25px;
 }
 
@@ -207,6 +228,7 @@ h4 {
 .email-plan-container select {
   margin-left: 10px;
   cursor: pointer;
+  min-width: fit-content;
 }
 
 .industry-ads-selector-container label,
@@ -214,6 +236,25 @@ h4 {
 .investment-google-display-ads label,
 .investment-facebook-ads label {
   max-width: 70%;
+}
+
+.google-search-plan-container label,
+.investment-google-search-ads label,
+.google-display-plan-container label,
+.investment-google-display-ads label,
+.facebook-plan-container label,
+.investment-facebook-ads label,
+.community-management-plan-container label,
+.seo-plan-container label,
+.conversion-web-plan-container label,
+.email-plan-container label {
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  min-width: fit-content;
+  width: 45%;
+  justify-content: center;
+  align-items: center;
 }
 
 .email-ammount-container label {
@@ -296,12 +337,17 @@ h4 {
   line-height: 1.6em;
   margin-bottom: 0;
   padding: 2px;
+  font-size: 1rem !important;
 }
 
 .calculateButton,
 .calculateAgainButton {
   width: fit-content;
   white-space: nowrap;
+  padding: 10px 20px;
+  border-radius: 50px;
+  color: white;
+  transition: all .7s ease;
 }
 
 button:focus {
@@ -346,7 +392,7 @@ button:focus {
 .seeDetailsMsg {
   margin-right: 15px;
   margin-left: auto;
-  font-size: 0.9rem;
+  font-size: 0.9rem !important;
   font-style: italic;
   transition: opacity 1.5s ease-out;
   opacity: 0;
@@ -360,15 +406,18 @@ button:focus {
 }
 
 .checkContainer span {
-  padding: 5px;
+  padding: 5px !important;
   font-size: 1.3rem;
+  line-height: 1.8rem;
 }
 
 .checkContainer:hover {
   background-color: #ddd !important;
 }
 
-.results-first-title, .results-second-title, .results-third-title {
+.results-first-title,
+.results-second-title,
+.results-third-title {
   background: linear-gradient(to right, #00337F, #FF008C);
   border-radius: .25rem .25rem 0 0;
   font-size: calc(1.1rem + .6vw) !important;
@@ -380,6 +429,10 @@ button:focus {
 
 .result-monthly-total-container {
   margin: 30px 0px;
+}
+
+.info-extra-tab {
+  list-style: none !important;
 }
 
 /*--Burbuja para incitar a hacer click en los cajones de resultados, en mobile---*/
@@ -401,11 +454,12 @@ button:focus {
 
 .bubble-click-results-container .bubble-results .txt {
   padding: 8px 50px 8px 14px;
+  height: 85px !important;
 }
 
 .bubble-click-results-container .bubble-results .txt .name {
-  font-weight: 600;
-  font-size: 12px;
+  font-weight: 600 !important;
+  font-size: 12px !important;
   margin: 0 0 4px;
   color: #0d6efd;
 }
@@ -416,13 +470,13 @@ button:focus {
 }
 
 .bubble-click-results-container .bubble-results .txt .message {
-  font-size: 13px;
+  font-size: 13px !important;
   margin: 0;
   color: #2b2b2b;
 }
 
 .bubble-click-results-container .bubble-results .txt .timestamp {
-  font-size: 11px;
+  font-size: 11px !important;
   position: absolute;
   bottom: 8px;
   right: 10px;
@@ -459,7 +513,7 @@ button:focus {
 
   p,
   li {
-    font-size: 0.9rem;
+    font-size: 0.9rem !important;
   }
 
   .info-extra-tab a {
@@ -467,7 +521,7 @@ button:focus {
   }
 
   .checkContainer p {
-    font-size: 1rem;
+    font-size: 1rem !important;
   }
 
   .card-header {
@@ -476,6 +530,21 @@ button:focus {
 
   .iconsToRotate {
     margin-left: 0px;
+  }
+
+  .google-search-plan-container,
+  .investment-google-search-ads,
+  .google-display-plan-container,
+  .investment-google-display-ads,
+  .facebook-plan-container,
+  .investment-facebook-ads,
+  .community-management-plan-container,
+  .seo-plan-container,
+  .conversion-web-plan-container,
+  .email-ammount-container,
+  .email-plan-container {
+    flex-direction: column;
+    padding-bottom: 0px;
   }
 
   .industry-ads-selector-container,
@@ -491,10 +560,6 @@ button:focus {
   .investment-google-display-ads input,
   .investment-facebook-ads input,
   .email-ammount-container input {
-    margin-top: 10px;
-  }
-
-  #add-country-announce {
     margin-top: 10px;
   }
 
@@ -555,6 +620,8 @@ button:focus {
   .conversion-web-plan-container label,
   .email-plan-container label {
     text-align: center;
+    display: flex;
+    flex-direction: column;
   }
 
   .google-search-plan-container select,
@@ -575,12 +642,16 @@ button:focus {
     flex-direction: column;
   }
 
+  #add-country-announce {
+    margin-top: 10px !important;
+  }
+
   .short-title-mobile {
     display: none;
   }
 
   .info-extra-tab {
-    font-size: 0.9em;
+    font-size: 0.9em !important;
   }
 
   .email-customer-container input {

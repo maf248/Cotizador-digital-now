@@ -532,19 +532,19 @@ const services = Object.freeze({
                 hours: Object.freeze([4]),
                 skillsAcquired: Object.freeze(["Analista de Marketing Digital"]),
                 skillsPrices: Object.freeze([skills.prices[0]]),
-                content: Object.freeze(["<ul><li>Creación de cuenta de Google Ads.</li><li>Selección de las palabras clave que tengan volumen de búsqueda y sean relevantes para usar en la campaña. Call con el cliente, para determinar inversión mensual y qué búsquedas son relevantes.</li><li>Organización por temas de palabras clave en hasta 5 grupos de anuncios, y creación de 5 anuncios diferentes según el tema.</li><li>Creación de extensiones para las campañas (Por ejemplo, link con la dirección de tu negocio y link para que te llamen por celular, entre otras).</li></ul>"])
+                content: Object.freeze(["<ul><li style='list-style: circle;'>Creación de cuenta de Google Ads.</li><li style='list-style: circle;'>Selección de las palabras clave que tengan volumen de búsqueda y sean relevantes para usar en la campaña. Call con el cliente, para determinar inversión mensual y qué búsquedas son relevantes.</li><li style='list-style: circle;'>Organización por temas de palabras clave en hasta 5 grupos de anuncios, y creación de 5 anuncios diferentes según el tema.</li><li style='list-style: circle;'>Creación de extensiones para las campañas (Por ejemplo, link con la dirección de tu negocio y link para que te llamen por celular, entre otras).</li></ul>"])
             }),
             intermediate: Object.freeze({
                 hours: Object.freeze([8]),
                 skillsAcquired: Object.freeze(["Analista de Marketing Digital"]),
                 skillsPrices: Object.freeze([skills.prices[0]]),
-                content: Object.freeze(["<ul><li>Creación de cuenta de Google Ads.</li><li>Selección de las palabras clave que tengan volumen de búsqueda y sean relevantes para usar en la campaña. Call con el cliente, para determinar inversión mensual y qué búsquedas son relevantes.</li><li>Creación de extensiones para las campañas (Por ejemplo, link con la dirección de tu negocio y link para que te llamen por celular).</li><li>Implementación de Google Analytics y de Google Tag Manager</li><li>Medición de acciones relevantes para tu negocio en tu sitio web (Conversiones) a través de Google Tag Manager y Google Analytics. Por ejemplo, cuando arrancan el carrito, hacen una compra, completan un formulario o te contactan por el chat de la web.</li><li>Creación de dashboard de Google Data Studio (<a href='https://datastudio.google.com/u/0/reporting/0B_U5RNpwhcE6ckdmZEJ0ZDJXUnM/page/VgD/preview' target='_blank' rel='noreferrer noopener'>Ver ejemplo</a>)</li><li>Organización por temas de palabras clave en hasta 10 grupos de anuncios, y creación de 10 anuncios diferentes según el tema.</li></ul>"])
+                content: Object.freeze(["<ul><li style='list-style: circle;'>Creación de cuenta de Google Ads.</li><li style='list-style: circle;'>Selección de las palabras clave que tengan volumen de búsqueda y sean relevantes para usar en la campaña. Call con el cliente, para determinar inversión mensual y qué búsquedas son relevantes.</li><li style='list-style: circle;'>Creación de extensiones para las campañas (Por ejemplo, link con la dirección de tu negocio y link para que te llamen por celular).</li><li style='list-style: circle;'>Implementación de Google Analytics y de Google Tag Manager</li><li style='list-style: circle;'>Medición de acciones relevantes para tu negocio en tu sitio web (Conversiones) a través de Google Tag Manager y Google Analytics. Por ejemplo, cuando arrancan el carrito, hacen una compra, completan un formulario o te contactan por el chat de la web.</li><li style='list-style: circle;'>Creación de dashboard de Google Data Studio (<a href='https://datastudio.google.com/u/0/reporting/0B_U5RNpwhcE6ckdmZEJ0ZDJXUnM/page/VgD/preview' target='_blank' rel='noreferrer noopener'>Ver ejemplo</a>)</li><li style='list-style: circle;'>Organización por temas de palabras clave en hasta 10 grupos de anuncios, y creación de 10 anuncios diferentes según el tema.</li></ul>"])
             }),
             advanced: Object.freeze({
                 hours: Object.freeze([12]),
                 skillsAcquired: Object.freeze(["Analista de Marketing Digital"]),
                 skillsPrices: Object.freeze([skills.prices[0]]),
-                content: Object.freeze(["<ul><li>Creación de cuenta de Google Ads.</li><li>Selección de las palabras clave que tengan volumen de búsqueda y sean relevantes para usar en la campaña. Call con el cliente, para determinar inversión mensual y qué búsquedas son relevantes.</li><li>Creación de extensiones para las campañas (Por ejemplo, link con la dirección de tu negocio y link para que te llamen por celular).</li><li>Implementación de Google Analytics y de Google Tag Manager.</li><li>Medición de acciones relevantes para tu negocio en tu sitio web (Conversiones) a través de Google Tag Manager y Google Analytics. Por ejemplo, cuando arrancan el carrito, hacen una compra, completan un formulario o te contactan por el chat de la web.</li><li>Creación de dashboard de Google Data Studio (<a href='https://datastudio.google.com/u/0/reporting/0B_U5RNpwhcE6ckdmZEJ0ZDJXUnM/page/VgD/preview' target='_blank' rel='noreferrer noopener'>Ver ejemplo</a>)</li><li>Organización por temas de palabras clave en hasta 15 grupos de anuncios, y creación de 15 anuncios diferentes según el tema.</li><li>Implementación de campañas de Google Shopping y campañas dinámicas.</li></ul>"])
+                content: Object.freeze(["<ul><li style='list-style: circle;'>Creación de cuenta de Google Ads.</li><li style='list-style: circle;'>Selección de las palabras clave que tengan volumen de búsqueda y sean relevantes para usar en la campaña. Call con el cliente, para determinar inversión mensual y qué búsquedas son relevantes.</li><li style='list-style: circle;'>Creación de extensiones para las campañas (Por ejemplo, link con la dirección de tu negocio y link para que te llamen por celular).</li><li style='list-style: circle;'>Implementación de Google Analytics y de Google Tag Manager.</li><li style='list-style: circle;'>Medición de acciones relevantes para tu negocio en tu sitio web (Conversiones) a través de Google Tag Manager y Google Analytics. Por ejemplo, cuando arrancan el carrito, hacen una compra, completan un formulario o te contactan por el chat de la web.</li><li style='list-style: circle;'>Creación de dashboard de Google Data Studio (<a href='https://datastudio.google.com/u/0/reporting/0B_U5RNpwhcE6ckdmZEJ0ZDJXUnM/page/VgD/preview' target='_blank' rel='noreferrer noopener'>Ver ejemplo</a>)</li><li style='list-style: circle;'>Organización por temas de palabras clave en hasta 15 grupos de anuncios, y creación de 15 anuncios diferentes según el tema.</li><li style='list-style: circle;'>Implementación de campañas de Google Shopping y campañas dinámicas.</li></ul>"])
             })
         }),
         maintenance: Object.freeze({
@@ -552,19 +552,19 @@ const services = Object.freeze({
                 hours: Object.freeze([4]),
                 skillsAcquired: Object.freeze(["Analista de Marketing Digital"]),
                 skillsPrices: Object.freeze([skills.prices[0]]),
-                content: Object.freeze(["<ul><li>Cambios solicitados por el cliente (Sin que supere el tiempo contratado)</li><li>2 cambios por mes para intentar mejorar la performance como modificar el presupuesto, url finales, texto de anuncios, palabras clave (Búsquedas en las que aparecés), ubicación geográfica y concordancias (qué tan amplio es el abanico de búsquedas similares a tus palabras clave en el cual aparecés).</li><li>Análisis del impacto de los cambios implementados.</li></ul>"])
+                content: Object.freeze(["<ul><li style='list-style: circle;'>Cambios solicitados por el cliente (Sin que supere el tiempo contratado)</li><li style='list-style: circle;'>2 cambios por mes para intentar mejorar la performance como modificar el presupuesto, url finales, texto de anuncios, palabras clave (Búsquedas en las que aparecés), ubicación geográfica y concordancias (qué tan amplio es el abanico de búsquedas similares a tus palabras clave en el cual aparecés).</li><li style='list-style: circle;'>Análisis del impacto de los cambios implementados.</li></ul>"])
             }),
             intermediate: Object.freeze({
                 hours: Object.freeze([8]),
                 skillsAcquired: Object.freeze(["Analista de Marketing Digital"]),
                 skillsPrices: Object.freeze([skills.prices[0]]),
-                content: Object.freeze(["<ul><li>Cambios solicitados por el cliente (Sin que supere el tiempo contratado)</li><li>Incluye 4 cambios por mes para intentar mejorar la performance como modificaciones en el presupuesto, url finales, texto de anuncios, palabras clave (Búsquedas en las que aparecés), ubicación geográfica y concordancias (qué tan amplio es el abanico de búsquedas similares a tus palabras clave en el cual aparecés, podés ver más sobre las concordancias en el siguiente <a href='https://digitalnow.com.ar/google-ads-como-funciona-y-para-que-sirve/' target='_blank' rel='noreferrer noopener'>link</a>).</li><li>Análisis del impacto de los cambios implementados</li></ul>"])
+                content: Object.freeze(["<ul><li style='list-style: circle;'>Cambios solicitados por el cliente (Sin que supere el tiempo contratado)</li><li style='list-style: circle;'>Incluye 4 cambios por mes para intentar mejorar la performance como modificaciones en el presupuesto, url finales, texto de anuncios, palabras clave (Búsquedas en las que aparecés), ubicación geográfica y concordancias (qué tan amplio es el abanico de búsquedas similares a tus palabras clave en el cual aparecés, podés ver más sobre las concordancias en el siguiente <a href='https://digitalnow.com.ar/google-ads-como-funciona-y-para-que-sirve/' target='_blank' rel='noreferrer noopener'>link</a>).</li><li style='list-style: circle;'>Análisis del impacto de los cambios implementados</li></ul>"])
             }),
             advanced: Object.freeze({
                 hours: Object.freeze([12]),
                 skillsAcquired: Object.freeze(["Analista de Marketing Digital"]),
                 skillsPrices: Object.freeze([skills.prices[0]]),
-                content: Object.freeze(["<ul><li>Cambios solicitados por el cliente (Sin que supere el tiempo contratado)</li><li>Incluye 8 cambios por mes para intentar mejorar la performance como modificaciones en el presupuesto, url finales, texto de anuncios, palabras clave (Búsquedas en las que aparecés), ubicación geográfica y concordancias (qué tan amplio es el abanico de búsquedas similares a tus palabras clave en el cual aparecés).</li><li>Análisis del impacto de los cambios implementados.</li></ul>"])
+                content: Object.freeze(["<ul><li style='list-style: circle;'>Cambios solicitados por el cliente (Sin que supere el tiempo contratado)</li><li style='list-style: circle;'>Incluye 8 cambios por mes para intentar mejorar la performance como modificaciones en el presupuesto, url finales, texto de anuncios, palabras clave (Búsquedas en las que aparecés), ubicación geográfica y concordancias (qué tan amplio es el abanico de búsquedas similares a tus palabras clave en el cual aparecés).</li><li style='list-style: circle;'>Análisis del impacto de los cambios implementados.</li></ul>"])
             })
         })
     }),
@@ -574,19 +574,19 @@ const services = Object.freeze({
                 hours: Object.freeze([2, 2]),
                 skillsAcquired: Object.freeze(["Analista de Marketing Digital", "Diseñador Gráfico"]),
                 skillsPrices: Object.freeze([skills.prices[0], skills.prices[5]]),
-                content: Object.freeze(["<ul><li>Creación de cuenta de Google Ads.</li><li>Creación de 1 campaña de remarketing (Mostrarle anuncios en sitios web a usuarios que ya entraron a tu sitio web en los últimos 30 días).</li></ul>", "<ul><li>Creación de 1 pieza gráfica en formato cuadrado y horizontal para anuncios responsivos (mezcla de imagen y texto).</li><li><a href='https://drive.google.com/drive/folders/15wF9BY4RxRrQ-vEchJDP4V17rw6hp503?usp=sharing' target='_blank' rel='noreferrer noopener'>Ver suma de piezas creativas</a></li></ul>"])
+                content: Object.freeze(["<ul><li style='list-style: circle;'>Creación de cuenta de Google Ads.</li><li style='list-style: circle;'>Creación de 1 campaña de remarketing (Mostrarle anuncios en sitios web a usuarios que ya entraron a tu sitio web en los últimos 30 días).</li></ul>", "<ul><li style='list-style: circle;'>Creación de 1 pieza gráfica en formato cuadrado y horizontal para anuncios responsivos (mezcla de imagen y texto).</li><li style='list-style: circle;'><a href='https://drive.google.com/drive/folders/15wF9BY4RxRrQ-vEchJDP4V17rw6hp503?usp=sharing' target='_blank' rel='noreferrer noopener'>Ver suma de piezas creativas</a></li></ul>"])
             }),
             intermediate: Object.freeze({
                 hours: Object.freeze([4, 2, 2]),
                 skillsAcquired: Object.freeze(["Analista de Marketing Digital", "Diseñador Gráfico", "Editor de video"]),
                 skillsPrices: Object.freeze([skills.prices[0], skills.prices[5], skills.prices[7]]),
-                content: Object.freeze(["<ul><li>Creación de cuenta de Google Ads.</li><li>Creación de 1 campaña de remarketing (Mostrarle anuncios en sitios web a usuarios que ya entraron a tu sitio web en los últimos 30 días). (<a href='https://drive.google.com/file/d/1zvy-_UYBC1VWbIqEszWUhvuzPcU3FNXl/view?usp=sharing' target='_blank' rel='noreferrer noopener'>Ver ejemplo</a>)</li><li>Medición de acciones relevantes para tu negocio en tu sitio web (Conversiones). Por ejemplo, cuando arrancan el carrito, hacen una compra, completan un formulario o te contactan por el chat de la web.</li><li>Implementación de Google Analytics y de Google Tag Manager.</li><li>Medición de acciones relevantes para tu negocio en tu sitio web (Conversiones) a través de Google Tag Manager y Google Analytics. Por ejemplo, cuando arrancan el carrito, hacen una compra, completan un formulario o te contactan por el chat de la web.</li><li>Creación de dashboard de Google Data Studio (<a href='https://datastudio.google.com/u/0/reporting/f6da5210-ceff-411f-a088-28943fb6b9d6/page/s16BB/preview' target='_blank' rel='noreferrer noopener'>Ver ejemplo</a>)</li><li>Creación de hasta 5 campañas segmentadas por intereses de los usuarios y temas de sitios web, para distribuir el presupuesto según la que genere más conversiones.</li></ul>", "<ul><li>Creación de 1 pieza gráfica en formato cuadrado y horizontal para anuncios responsivos (mezcla de imagen y texto).</li></ul>", "<ul><li>Creación de video de 30 segundos en formato apaisado que se muestra en sitios web como anuncio (<a href='https://drive.google.com/file/d/1il1GW3U0HTOIy76mtOSmEEwNYXda6_CL/view?usp=sharing' target='_blank' rel='noreferrer noopener'>Ver ejemplo</a>)</li><li><a href='https://drive.google.com/drive/folders/131EO5sr8BXx1si4fRHetLhPWHeNHaZI4?usp=sharing' target='_blank' rel='noreferrer noopener'>Ver ejemplo de piezas creativas que se entregan</a></li></ul>"])
+                content: Object.freeze(["<ul><li style='list-style: circle;'>Creación de cuenta de Google Ads.</li><li style='list-style: circle;'>Creación de 1 campaña de remarketing (Mostrarle anuncios en sitios web a usuarios que ya entraron a tu sitio web en los últimos 30 días). (<a href='https://drive.google.com/file/d/1zvy-_UYBC1VWbIqEszWUhvuzPcU3FNXl/view?usp=sharing' target='_blank' rel='noreferrer noopener'>Ver ejemplo</a>)</li><li style='list-style: circle;'>Medición de acciones relevantes para tu negocio en tu sitio web (Conversiones). Por ejemplo, cuando arrancan el carrito, hacen una compra, completan un formulario o te contactan por el chat de la web.</li><li style='list-style: circle;'>Implementación de Google Analytics y de Google Tag Manager.</li><li style='list-style: circle;'>Medición de acciones relevantes para tu negocio en tu sitio web (Conversiones) a través de Google Tag Manager y Google Analytics. Por ejemplo, cuando arrancan el carrito, hacen una compra, completan un formulario o te contactan por el chat de la web.</li><li style='list-style: circle;'>Creación de dashboard de Google Data Studio (<a href='https://datastudio.google.com/u/0/reporting/f6da5210-ceff-411f-a088-28943fb6b9d6/page/s16BB/preview' target='_blank' rel='noreferrer noopener'>Ver ejemplo</a>)</li><li style='list-style: circle;'>Creación de hasta 5 campañas segmentadas por intereses de los usuarios y temas de sitios web, para distribuir el presupuesto según la que genere más conversiones.</li></ul>", "<ul><li style='list-style: circle;'>Creación de 1 pieza gráfica en formato cuadrado y horizontal para anuncios responsivos (mezcla de imagen y texto).</li></ul>", "<ul><li style='list-style: circle;'>Creación de video de 30 segundos en formato apaisado que se muestra en sitios web como anuncio (<a href='https://drive.google.com/file/d/1il1GW3U0HTOIy76mtOSmEEwNYXda6_CL/view?usp=sharing' target='_blank' rel='noreferrer noopener'>Ver ejemplo</a>)</li><li style='list-style: circle;'><a href='https://drive.google.com/drive/folders/131EO5sr8BXx1si4fRHetLhPWHeNHaZI4?usp=sharing' target='_blank' rel='noreferrer noopener'>Ver ejemplo de piezas creativas que se entregan</a></li></ul>"])
             }),
             advanced: {
                 hours: Object.freeze([4, 4, 4]),
                 skillsAcquired: Object.freeze(["Analista de Marketing Digital", "Diseñador Gráfico", "Editor de video"]),
                 skillsPrices: Object.freeze([skills.prices[0], skills.prices[5], skills.prices[7]]),
-                content: Object.freeze(["<ul><li>Creación de cuenta de Google Ads.</li><li>Creación de 1 campaña de remarketing (Mostrarle anuncios en sitios web a usuarios que ya entraron a tu sitio web en los últimos 30 días). (<a href='https://drive.google.com/file/d/1zvy-_UYBC1VWbIqEszWUhvuzPcU3FNXl/view?usp=sharing' target='_blank' rel='noreferrer noopener'>Ver ejemplo</a>)</li><li>Medición de acciones relevantes para tu negocio en tu sitio web (Conversiones). Por ejemplo, cuando arrancan el carrito, hacen una compra, completan un formulario o te contactan por el chat de la web.</li><li>Implementación de Google Analytics y de Google Tag Manager.</li><li>Medición de acciones relevantes para tu negocio en tu sitio web (Conversiones) a través de Google Tag Manager y Google Analytics. Por ejemplo, cuando arrancan el carrito, hacen una compra, completan un formulario o te contactan por el chat de la web.</li><li>Creación de dashboard de Google Data Studio (<a href='https://datastudio.google.com/u/0/reporting/f6da5210-ceff-411f-a088-28943fb6b9d6/page/s16BB/preview' target='_blank' rel='noreferrer noopener'>Ver ejemplo</a>)</li><li>Creación de hasta 5 campañas segmentadas por intereses de los usuarios y temas de sitios web, para distribuir el presupuesto según la que genere más conversiones.</li></ul>", "<ul><li>Creación de 3 piezas gráficas en formatos cuadrado y horizontal (6 en total) para anuncios responsivos (mezcla de imagen y texto).</li></ul>", "<ul><li>Creación de 2 videos de 30 segundos en formato apaisado y 1 video en formato vertical (Readaptación) que se muestra en sitios web como anuncio (<a href='https://drive.google.com/file/d/1il1GW3U0HTOIy76mtOSmEEwNYXda6_CL/view?usp=sharing' target='_blank' rel='noreferrer noopener'>Ver ejemplo</a>)</li></ul>"])
+                content: Object.freeze(["<ul><li style='list-style: circle;'>Creación de cuenta de Google Ads.</li><li style='list-style: circle;'>Creación de 1 campaña de remarketing (Mostrarle anuncios en sitios web a usuarios que ya entraron a tu sitio web en los últimos 30 días). (<a href='https://drive.google.com/file/d/1zvy-_UYBC1VWbIqEszWUhvuzPcU3FNXl/view?usp=sharing' target='_blank' rel='noreferrer noopener'>Ver ejemplo</a>)</li><li style='list-style: circle;'>Medición de acciones relevantes para tu negocio en tu sitio web (Conversiones). Por ejemplo, cuando arrancan el carrito, hacen una compra, completan un formulario o te contactan por el chat de la web.</li><li style='list-style: circle;'>Implementación de Google Analytics y de Google Tag Manager.</li><li style='list-style: circle;'>Medición de acciones relevantes para tu negocio en tu sitio web (Conversiones) a través de Google Tag Manager y Google Analytics. Por ejemplo, cuando arrancan el carrito, hacen una compra, completan un formulario o te contactan por el chat de la web.</li><li style='list-style: circle;'>Creación de dashboard de Google Data Studio (<a href='https://datastudio.google.com/u/0/reporting/f6da5210-ceff-411f-a088-28943fb6b9d6/page/s16BB/preview' target='_blank' rel='noreferrer noopener'>Ver ejemplo</a>)</li><li style='list-style: circle;'>Creación de hasta 5 campañas segmentadas por intereses de los usuarios y temas de sitios web, para distribuir el presupuesto según la que genere más conversiones.</li></ul>", "<ul><li style='list-style: circle;'>Creación de 3 piezas gráficas en formatos cuadrado y horizontal (6 en total) para anuncios responsivos (mezcla de imagen y texto).</li></ul>", "<ul><li style='list-style: circle;'>Creación de 2 videos de 30 segundos en formato apaisado y 1 video en formato vertical (Readaptación) que se muestra en sitios web como anuncio (<a href='https://drive.google.com/file/d/1il1GW3U0HTOIy76mtOSmEEwNYXda6_CL/view?usp=sharing' target='_blank' rel='noreferrer noopener'>Ver ejemplo</a>)</li></ul>"])
             }
         }),
         maintenance: Object.freeze({
@@ -594,19 +594,19 @@ const services = Object.freeze({
                 hours: Object.freeze([4]),
                 skillsAcquired: Object.freeze(["Analista de Marketing Digital"]),
                 skillsPrices: Object.freeze([skills.prices[0]]),
-                content: Object.freeze(["<ul><li>Cambios solicitados por el cliente (Sin que supere el tiempo contratado)</li><li>Incluye 2 cambios por mes para intentar mejorar la performance como modificar el presupuesto, url finales, texto de anuncios, audiencia, ubicación geográfica y piezas creativas. A fin de mes el cliente recibe un análisis sobre cómo impactó ese cambio.</li></ul>"])
+                content: Object.freeze(["<ul><li style='list-style: circle;'>Cambios solicitados por el cliente (Sin que supere el tiempo contratado)</li><li style='list-style: circle;'>Incluye 2 cambios por mes para intentar mejorar la performance como modificar el presupuesto, url finales, texto de anuncios, audiencia, ubicación geográfica y piezas creativas. A fin de mes el cliente recibe un análisis sobre cómo impactó ese cambio.</li></ul>"])
             }),
             intermediate: Object.freeze({
                 hours: Object.freeze([4, 4]),
                 skillsAcquired: Object.freeze(["Analista de Marketing Digital", "Diseñador Gráfico"]),
                 skillsPrices: Object.freeze([skills.prices[0], skills.prices[5]]),
-                content: Object.freeze(["<ul><li>Cambios solicitados por el cliente (Sin que supere el tiempo contratado)</li><li>Incluye 4 cambios por mes para intentar mejorar la performance como modificaciones en el presupuesto, url finales, texto de anuncios, audiencia, ubicación geográfica y piezas creativas. A fin de mes el cliente recibe un análisis sobre cómo impactó ese cambio.</li></ul>", "<ul><li>Creación de 2 piezas gráficas en formatos cuadrado y horizontal.</li></ul>"])
+                content: Object.freeze(["<ul><li style='list-style: circle;'>Cambios solicitados por el cliente (Sin que supere el tiempo contratado)</li><li style='list-style: circle;'>Incluye 4 cambios por mes para intentar mejorar la performance como modificaciones en el presupuesto, url finales, texto de anuncios, audiencia, ubicación geográfica y piezas creativas. A fin de mes el cliente recibe un análisis sobre cómo impactó ese cambio.</li></ul>", "<ul><li style='list-style: circle;'>Creación de 2 piezas gráficas en formatos cuadrado y horizontal.</li></ul>"])
             }),
             advanced: Object.freeze({
                 hours: [4, 4, 4],
                 skillsAcquired: ["Analista de Marketing Digital", "Diseñador Gráfico", "Editor de video"],
                 skillsPrices: [skills.prices[0], skills.prices[5], skills.prices[7]],
-                content: ["<ul><li>Cambios solicitados por el cliente (Sin que supere el tiempo contratado)</li><li>Incluye 4 cambios por mes para intentar mejorar la performance como modificaciones en el presupuesto, url finales, texto de anuncios, audiencia, ubicación geográfica y piezas creativas. Después de 15 días el cliente recibe un análisis sobre cómo impactó ese cambio.</li></ul>", "<ul><li>Creación de 2 piezas gráficas en formatos cuadrado y horizontal.</li></ul>", "<ul><li>Creación de 2 videos en formato apaisado.</li></ul>"]
+                content: ["<ul><li style='list-style: circle;'>Cambios solicitados por el cliente (Sin que supere el tiempo contratado)</li><li style='list-style: circle;'>Incluye 4 cambios por mes para intentar mejorar la performance como modificaciones en el presupuesto, url finales, texto de anuncios, audiencia, ubicación geográfica y piezas creativas. Después de 15 días el cliente recibe un análisis sobre cómo impactó ese cambio.</li></ul>", "<ul><li style='list-style: circle;'>Creación de 2 piezas gráficas en formatos cuadrado y horizontal.</li></ul>", "<ul><li style='list-style: circle;'>Creación de 2 videos en formato apaisado.</li></ul>"]
             })
         })
     }),
@@ -616,19 +616,19 @@ const services = Object.freeze({
                 hours: Object.freeze([2, 2]),
                 skillsAcquired: Object.freeze(["Analista de Marketing Digital", "Diseñador Gráfico"]),
                 skillsPrices: Object.freeze([skills.prices[0], skills.prices[5]]),
-                content: Object.freeze(["<ul><li>Creación de cuenta de Facebook Ads.</li><li>Implementación de pixel de facebook para usar públicos como usuarios que ya entraron a tu sitio web o usuarios similares a los ya entraron a tu sitio web.</li><li>Creación de estructura de campaña para invertir un 70% en usuarios nuevos (No entraron a tu sitio ni a tus redes sociales) y un 30% en usuarios que ya entraron a tu sitio web o ya interactuaron con tus redes sociales.</li></ul>", "<ul><li>Creación de 1 pieza gráfica en formatos cuadrado (Para feed) y vertical (Para stories) y de un anuncio de texto.</li><li><a href='https://drive.google.com/drive/folders/1zgJiT2dnypW3kAKUDmWyuyEN7zp8KZ47?usp=sharing' target='_blank' rel='noreferrer noopener'>Ver ejemplo de entregables</a></li></ul>"])
+                content: Object.freeze(["<ul><li style='list-style: circle;'>Creación de cuenta de Facebook Ads.</li><li style='list-style: circle;'>Implementación de pixel de facebook para usar públicos como usuarios que ya entraron a tu sitio web o usuarios similares a los ya entraron a tu sitio web.</li><li style='list-style: circle;'>Creación de estructura de campaña para invertir un 70% en usuarios nuevos (No entraron a tu sitio ni a tus redes sociales) y un 30% en usuarios que ya entraron a tu sitio web o ya interactuaron con tus redes sociales.</li></ul>", "<ul><li style='list-style: circle;'>Creación de 1 pieza gráfica en formatos cuadrado (Para feed) y vertical (Para stories) y de un anuncio de texto.</li><li style='list-style: circle;'><a href='https://drive.google.com/drive/folders/1zgJiT2dnypW3kAKUDmWyuyEN7zp8KZ47?usp=sharing' target='_blank' rel='noreferrer noopener'>Ver ejemplo de entregables</a></li></ul>"])
             }),
             intermediate: Object.freeze({
                 hours: Object.freeze([4, 4]),
                 skillsAcquired: Object.freeze(["Analista de Marketing Digital", "Diseñador Gráfico"]),
                 skillsPrices: Object.freeze([skills.prices[0], skills.prices[5]]),
-                content: Object.freeze(["<ul><li>Creación de cuenta de Facebook Ads.</li><li>Implementación de pixel de facebook para usar públicos como usuarios que ya entraron a tu sitio web o usuarios similares a los ya entraron a tu sitio web.</li><li>Creación de estructura de campaña para invertir un 70% en usuarios nuevos (No entraron a tu sitio ni a tus redes sociales) y un 30% en usuarios que ya entraron a tu sitio web o ya interactuaron con tus redes sociales.</li><li>Medición de conversiones (Acciones que querés que el usuario haga en tu sitio web, como una compra online o completar un formulario) con el pixel de Facebook.</li><li>Redacción de textos diferentes de manera estratégica (10 textos en total) teniendo en cuenta si los usuarios ya entraron a la web o no.</li></ul>", "<ul><li>Se harán piezas creativas diferentes (2 sets de piezas gráficas en formatos cuadrado y vertical, 4 en total), teniendo en cuenta si los usuarios ya entraron a la web o no.</li><li><a href='https://drive.google.com/drive/folders/14atx8oJwDeypPzA49ISyET6KsONJZfPk?usp=sharing' target='_blank' rel='noreferrer noopener'>Ver ejemplos de entregables</a></li></ul>"])
+                content: Object.freeze(["<ul><li style='list-style: circle;'>Creación de cuenta de Facebook Ads.</li><li style='list-style: circle;'>Implementación de pixel de facebook para usar públicos como usuarios que ya entraron a tu sitio web o usuarios similares a los ya entraron a tu sitio web.</li><li style='list-style: circle;'>Creación de estructura de campaña para invertir un 70% en usuarios nuevos (No entraron a tu sitio ni a tus redes sociales) y un 30% en usuarios que ya entraron a tu sitio web o ya interactuaron con tus redes sociales.</li><li style='list-style: circle;'>Medición de conversiones (Acciones que querés que el usuario haga en tu sitio web, como una compra online o completar un formulario) con el pixel de Facebook.</li><li style='list-style: circle;'>Redacción de textos diferentes de manera estratégica (10 textos en total) teniendo en cuenta si los usuarios ya entraron a la web o no.</li></ul>", "<ul><li style='list-style: circle;'>Se harán piezas creativas diferentes (2 sets de piezas gráficas en formatos cuadrado y vertical, 4 en total), teniendo en cuenta si los usuarios ya entraron a la web o no.</li><li style='list-style: circle;'><a href='https://drive.google.com/drive/folders/14atx8oJwDeypPzA49ISyET6KsONJZfPk?usp=sharing' target='_blank' rel='noreferrer noopener'>Ver ejemplos de entregables</a></li></ul>"])
             }),
             advanced: Object.freeze({
                 hours: Object.freeze([6, 10, 2]),
                 skillsAcquired: Object.freeze(["Analista de Marketing Digital", "Diseñador Gráfico", "Editor de Video"]),
                 skillsPrices: Object.freeze([skills.prices[0], skills.prices[5], skills.prices[7], skills.prices[3]]),
-                content: Object.freeze(["<ul><li>Creación de cuenta de Facebook Ads.</li><li>Implementación de pixel de facebook para usar públicos como usuarios que ya entraron a tu sitio web o usuarios similares a los ya entraron a tu sitio web.</li><li>Creación de estructura de campaña para invertir un 70% en usuarios nuevos (No entraron a tu sitio ni a tus redes sociales) y un 30% en usuarios que ya entraron a tu sitio web o ya interactuaron con tus redes sociales.</li><li>Medición de conversiones (Acciones que querés que el usuario haga en tu sitio web, como una compra online o completar un formulario) con el pixel de Facebook.</li><li>Implementación de Google Analytics y Google Tag Manager para medir conversiones.</li><li>Creación de dashboard de Google Data Studio</li><li>Redacción de textos diferentes de manera estratégica (10 textos en total) teniendo en cuenta si los usuarios ya entraron a la web o no.</li></ul>", "<ul><li>Se harán 5 sets de piezas gráficas diferentes en formato cuadrado (feed) y vertical (Stories)</li></ul>", "<ul><li>Se hará un video en formato vertical y 4:5 de 15 segundos.</li></ul>"])
+                content: Object.freeze(["<ul><li style='list-style: circle;'>Creación de cuenta de Facebook Ads.</li><li style='list-style: circle;'>Implementación de pixel de facebook para usar públicos como usuarios que ya entraron a tu sitio web o usuarios similares a los ya entraron a tu sitio web.</li><li style='list-style: circle;'>Creación de estructura de campaña para invertir un 70% en usuarios nuevos (No entraron a tu sitio ni a tus redes sociales) y un 30% en usuarios que ya entraron a tu sitio web o ya interactuaron con tus redes sociales.</li><li style='list-style: circle;'>Medición de conversiones (Acciones que querés que el usuario haga en tu sitio web, como una compra online o completar un formulario) con el pixel de Facebook.</li><li style='list-style: circle;'>Implementación de Google Analytics y Google Tag Manager para medir conversiones.</li><li style='list-style: circle;'>Creación de dashboard de Google Data Studio</li><li style='list-style: circle;'>Redacción de textos diferentes de manera estratégica (10 textos en total) teniendo en cuenta si los usuarios ya entraron a la web o no.</li></ul>", "<ul><li style='list-style: circle;'>Se harán 5 sets de piezas gráficas diferentes en formato cuadrado (feed) y vertical (Stories)</li></ul>", "<ul><li style='list-style: circle;'>Se hará un video en formato vertical y 4:5 de 15 segundos.</li></ul>"])
             })
         }),
         maintenance: Object.freeze({
@@ -636,19 +636,19 @@ const services = Object.freeze({
                 hours: Object.freeze([4]),
                 skillsAcquired: Object.freeze(["Analista de Marketing Digital"]),
                 skillsPrices: Object.freeze([skills.prices[0]]),
-                content: Object.freeze(["<ul><li>Cambios solicitados por el cliente (Sin que supere el tiempo contratado)</li><li>Incluye 2 cambios por mes para intentar mejorar la performance como modificar el presupuesto, url finales, texto de anuncios, audiencia, ubicación geográfica, estrategia de puja y piezas creativas.</li></ul>"])
+                content: Object.freeze(["<ul><li style='list-style: circle;'>Cambios solicitados por el cliente (Sin que supere el tiempo contratado)</li><li style='list-style: circle;'>Incluye 2 cambios por mes para intentar mejorar la performance como modificar el presupuesto, url finales, texto de anuncios, audiencia, ubicación geográfica, estrategia de puja y piezas creativas.</li></ul>"])
             }),
             intermediate: Object.freeze({
                 hours: Object.freeze([4, 4]),
                 skillsAcquired: Object.freeze(["Analista de Marketing Digital", "Diseñador Gráfico"]),
                 skillsPrices: Object.freeze([skills.prices[0], skills.prices[5]]),
-                content: Object.freeze(["<ul><li>Cambios solicitados por el cliente (Sin que supere el tiempo contratado)</li><li>Incluye 2 cambios por mes para intentar mejorar la performance como modificar el presupuesto, url finales, texto de anuncios, audiencia, ubicación geográfica, estrategia de puja y piezas creativas.</li></ul>", "<ul><li>Creación de 2 sets de piezas gráficas en formato cuadrado y vertical.</li></ul>"])
+                content: Object.freeze(["<ul><li style='list-style: circle;'>Cambios solicitados por el cliente (Sin que supere el tiempo contratado)</li><li style='list-style: circle;'>Incluye 2 cambios por mes para intentar mejorar la performance como modificar el presupuesto, url finales, texto de anuncios, audiencia, ubicación geográfica, estrategia de puja y piezas creativas.</li></ul>", "<ul><li style='list-style: circle;'>Creación de 2 sets de piezas gráficas en formato cuadrado y vertical.</li></ul>"])
             }),
             advanced: Object.freeze({
                 hours: Object.freeze([4, 4, 4]),
                 skillsAcquired: Object.freeze(["Analista de Marketing Digital", "Diseñador Gráfico", "Editor de video"]),
                 skillsPrices: Object.freeze([skills.prices[0], skills.prices[5], skills.prices[7]]),
-                content: Object.freeze(["<ul><li>Cambios solicitados por el cliente (Sin que supere el tiempo contratado)</li><li>Incluye 2 cambios por mes para intentar mejorar la performance como modificar el presupuesto, url finales, texto de anuncios, audiencia, ubicación geográfica, estrategia de puja y piezas creativas.</li></ul>", "<ul><li>Creación de 2 sets de piezas gráficas en formato cuadrado y vertical.</li></ul>", "<ul><li>Se hará un video en formato vertical y 4:5 de 15 segundos.</li></ul>"])
+                content: Object.freeze(["<ul><li style='list-style: circle;'>Cambios solicitados por el cliente (Sin que supere el tiempo contratado)</li><li style='list-style: circle;'>Incluye 2 cambios por mes para intentar mejorar la performance como modificar el presupuesto, url finales, texto de anuncios, audiencia, ubicación geográfica, estrategia de puja y piezas creativas.</li></ul>", "<ul><li style='list-style: circle;'>Creación de 2 sets de piezas gráficas en formato cuadrado y vertical.</li></ul>", "<ul><li style='list-style: circle;'>Se hará un video en formato vertical y 4:5 de 15 segundos.</li></ul>"])
             })
         })
     }),
@@ -658,19 +658,19 @@ const services = Object.freeze({
                 hours: Object.freeze([2]),
                 skillsAcquired: Object.freeze(["Community Manager"]),
                 skillsPrices: Object.freeze([skills.prices[2]]),
-                content: Object.freeze(["<ul><li>Análisis de competidores y sugerencia de ideas. Se entrega un Google Doc con capturas de imagen de 400 palabras</li><li>1 Call con el cliente de intercambio de opiniones.</li></ul>"])
+                content: Object.freeze(["<ul><li style='list-style: circle;'>Análisis de competidores y sugerencia de ideas. Se entrega un Google Doc con capturas de imagen de 400 palabras</li><li style='list-style: circle;'>1 Call con el cliente de intercambio de opiniones.</li></ul>"])
             }),
             intermediate: Object.freeze({
                 hours: Object.freeze([4]),
                 skillsAcquired: Object.freeze(["Community Manager"]),
                 skillsPrices: Object.freeze([skills.prices[2]]),
-                content: Object.freeze(["<ul><li>Análisis de competidores y sugerencia de ideas. Se entregan 2 Google Doc con capturas de imagen de 400 palabras y se hacen 2 calls de revisión.</li></ul>"])
+                content: Object.freeze(["<ul><li style='list-style: circle;'>Análisis de competidores y sugerencia de ideas. Se entregan 2 Google Doc con capturas de imagen de 400 palabras y se hacen 2 calls de revisión.</li></ul>"])
             }),
             advanced: Object.freeze({
                 hours: Object.freeze([8]),
                 skillsAcquired: Object.freeze(["Community Manager"]),
                 skillsPrices: Object.freeze([skills.prices[2]]),
-                content: Object.freeze(["<ul><li>Análisis de competidores y sugerencia de ideas. Se entregan 3 Google Doc con capturas de imagen de 400 palabras y se hacen 3 calls de revisión.</li></ul>"])
+                content: Object.freeze(["<ul><li style='list-style: circle;'>Análisis de competidores y sugerencia de ideas. Se entregan 3 Google Doc con capturas de imagen de 400 palabras y se hacen 3 calls de revisión.</li></ul>"])
             })
         }),
         maintenance: Object.freeze({
@@ -678,19 +678,19 @@ const services = Object.freeze({
                 hours: Object.freeze([7, 1]),
                 skillsAcquired: Object.freeze(["Community Manager", "Diseñador Gráfico"]),
                 skillsPrices: Object.freeze([skills.prices[2], skills.prices[5]]),
-                content: Object.freeze(["<ul><li>Creación de calendario de 12 publicaciones (<a href='https://docs.google.com/spreadsheets/d/1aXf8BCOerxx0kOKmgUscE4ryAEqYGoaKi2tY-j-nfkU/edit?usp=sharing' target='_blank' rel='noreferrer noopener'>Ver ejemplo</a>), 12 redacciones para feed y publicación de contenido en 1 red social (Si es Instagram, se puede publicar en Instagram y Facebook). Se publicará contenido provisto por el cliente (Fotos, videos), o contenido de Internet con pequeños retoques. Todo el contenido del feed (12 publicaciones) se republicará también en stories con un link que redirecciona al feed. Incluye gestión de la cuenta (Responder comentarios en publicaciones e interactuar con perfiles que interactúan con publicaciones de la competencia).</li></ul>", "<ul><li>Retoques a contenido provisto por el cliente o sacado de internet.</li></ul>"])
+                content: Object.freeze(["<ul><li style='list-style: circle;'>Creación de calendario de 12 publicaciones (<a href='https://docs.google.com/spreadsheets/d/1aXf8BCOerxx0kOKmgUscE4ryAEqYGoaKi2tY-j-nfkU/edit?usp=sharing' target='_blank' rel='noreferrer noopener'>Ver ejemplo</a>), 12 redacciones para feed y publicación de contenido en 1 red social (Si es Instagram, se puede publicar en Instagram y Facebook). Se publicará contenido provisto por el cliente (Fotos, videos), o contenido de Internet con pequeños retoques. Todo el contenido del feed (12 publicaciones) se republicará también en stories con un link que redirecciona al feed. Incluye gestión de la cuenta (Responder comentarios en publicaciones e interactuar con perfiles que interactúan con publicaciones de la competencia).</li></ul>", "<ul><li style='list-style: circle;'>Retoques a contenido provisto por el cliente o sacado de internet.</li></ul>"])
             }),
             intermediate: Object.freeze({
                 hours: Object.freeze([8, 10, 2]),
                 skillsAcquired: Object.freeze(["Community Manager", "Diseñador Gráfico", "Editor de video"]),
                 skillsPrices: Object.freeze([skills.prices[2], skills.prices[5], skills.prices[7]]),
-                content: Object.freeze(["<ul><li>Creación de calendario de 12 publicaciones (<a href='https://docs.google.com/spreadsheets/d/1aXf8BCOerxx0kOKmgUscE4ryAEqYGoaKi2tY-j-nfkU/edit?usp=sharing' target='_blank' rel='noreferrer noopener'>Ver ejemplo</a>), 12 redacciones para feed y publicación de contenido en 1 red social (Si es Instagram, se puede publicar en Instagram y Facebook). Todo el contenido del feed (12 publicaciones) se republicará también en stories con un link que redirecciona al feed. Incluye gestión de la cuenta (Responder comentarios en publicaciones e interactuar con perfiles que interactúan con publicaciones de la competencia).</li></ul>", "<ul><li>Creación de 10 piezas gráficas individuales</li></ul>", "<ul><li>Dos videos en formato vertical para reels (Menos de 30 segundos)</li></ul>"])
+                content: Object.freeze(["<ul><li style='list-style: circle;'>Creación de calendario de 12 publicaciones (<a href='https://docs.google.com/spreadsheets/d/1aXf8BCOerxx0kOKmgUscE4ryAEqYGoaKi2tY-j-nfkU/edit?usp=sharing' target='_blank' rel='noreferrer noopener'>Ver ejemplo</a>), 12 redacciones para feed y publicación de contenido en 1 red social (Si es Instagram, se puede publicar en Instagram y Facebook). Todo el contenido del feed (12 publicaciones) se republicará también en stories con un link que redirecciona al feed. Incluye gestión de la cuenta (Responder comentarios en publicaciones e interactuar con perfiles que interactúan con publicaciones de la competencia).</li></ul>", "<ul><li style='list-style: circle;'>Creación de 10 piezas gráficas individuales</li></ul>", "<ul><li style='list-style: circle;'>Dos videos en formato vertical para reels (Menos de 30 segundos)</li></ul>"])
             }),
             advanced: Object.freeze({
                 hours: Object.freeze([10, 27, 3]),
                 skillsAcquired: Object.freeze(["Community Manager", "Diseñador Gráfico", "Editor de video"]),
                 skillsPrices: Object.freeze([skills.prices[2], skills.prices[5], skills.prices[7]]),
-                content: Object.freeze(["<ul><li>Creación de calendario de 12 publicaciones (<a href='https://docs.google.com/spreadsheets/d/1aXf8BCOerxx0kOKmgUscE4ryAEqYGoaKi2tY-j-nfkU/edit?usp=sharing' target='_blank' rel='noreferrer noopener'>Ver ejemplo</a>), 12 redacciones para feed y publicación de contenido en 1 red social (Si es Instagram, se puede publicar en Instagram y Facebook). Todo el contenido del feed (12 publicaciones) se republicará también en stories con un link que redirecciona al feed y también se publicarán 8 historias adicionales (Encuestas, cuestionarios y piezas gráficas simples). Incluye gestión de la cuenta (Responder comentarios en publicaciones e interactuar con perfiles que interactúan con publicaciones de la competencia).</li></ul>", "<ul><li>Creación de 10 piezas gráficas individuales para feed y 4 piezas gráficas simples para stories.</li><li>Creación de 4 carrousels (Entre 5 y 10 piezas gráficas cada uno)</li></ul>", "<ul><li>Dos videos en formato vertical para reels (Menos de 30 segundos)</li><li>1 video de plantilla para encuestas y cuestionarios en stories</li></ul>"])
+                content: Object.freeze(["<ul><li style='list-style: circle;'>Creación de calendario de 12 publicaciones (<a href='https://docs.google.com/spreadsheets/d/1aXf8BCOerxx0kOKmgUscE4ryAEqYGoaKi2tY-j-nfkU/edit?usp=sharing' target='_blank' rel='noreferrer noopener'>Ver ejemplo</a>), 12 redacciones para feed y publicación de contenido en 1 red social (Si es Instagram, se puede publicar en Instagram y Facebook). Todo el contenido del feed (12 publicaciones) se republicará también en stories con un link que redirecciona al feed y también se publicarán 8 historias adicionales (Encuestas, cuestionarios y piezas gráficas simples). Incluye gestión de la cuenta (Responder comentarios en publicaciones e interactuar con perfiles que interactúan con publicaciones de la competencia).</li></ul>", "<ul><li style='list-style: circle;'>Creación de 10 piezas gráficas individuales para feed y 4 piezas gráficas simples para stories.</li><li style='list-style: circle;'>Creación de 4 carrousels (Entre 5 y 10 piezas gráficas cada uno)</li></ul>", "<ul><li style='list-style: circle;'>Dos videos en formato vertical para reels (Menos de 30 segundos)</li><li style='list-style: circle;'>1 video de plantilla para encuestas y cuestionarios en stories</li></ul>"])
             })
         })
     }),
@@ -700,19 +700,19 @@ const services = Object.freeze({
                 hours: Object.freeze([4]),
                 skillsAcquired: Object.freeze(["Analista SEO"]),
                 skillsPrices: Object.freeze([skills.prices[1]]),
-                content: Object.freeze(["<ul><li>Análisis de búsquedas en las cuales te interesa posicionarte teniendo en cuenta volumen, dificultad de posicionarse, relevancia y costo por clic estimado. Se buscarán palabras clave relevantes, de alto volumen, baja dificultad de posicionarse y costo por clic alto.</li><li>Auditoría técnica general de sitio web usando <a href='https://neilpatel.com/ubersuggest/' target='_blank' rel='noreferrer noopener'>Ubersuggest</a>, que es una herramienta de Neil Patel que analiza hasta 132 aspectos técnicos de tu sitio web como por ejemplo, la velocidad de carga, cantidad de palabras de páginas y cantidad de palabras dentro de etiquetas title. <a href='https://drive.google.com/file/d/1Xi63s89YuZv7v2s-Xc-1H2laM5H0x56-/view?usp=sharing' target='_blank' rel='noreferrer noopener'>Ver ejemplo de auditoría</a></li><li>Implementación de cambios para mejorar la performance según la auditoría técnica.</li><li>Cambio de contenido en etiquetas &lt;title&gt;, &lt;h1&gt; y texto de tu homepage para posicionarte en búsquedas de google de manera estratégica en base al análisis de palabras clave.</li></ul>"])
+                content: Object.freeze(["<ul><li style='list-style: circle;'>Análisis de búsquedas en las cuales te interesa posicionarte teniendo en cuenta volumen, dificultad de posicionarse, relevancia y costo por clic estimado. Se buscarán palabras clave relevantes, de alto volumen, baja dificultad de posicionarse y costo por clic alto.</li><li style='list-style: circle;'>Auditoría técnica general de sitio web usando <a href='https://neilpatel.com/ubersuggest/' target='_blank' rel='noreferrer noopener'>Ubersuggest</a>, que es una herramienta de Neil Patel que analiza hasta 132 aspectos técnicos de tu sitio web como por ejemplo, la velocidad de carga, cantidad de palabras de páginas y cantidad de palabras dentro de etiquetas title. <a href='https://drive.google.com/file/d/1Xi63s89YuZv7v2s-Xc-1H2laM5H0x56-/view?usp=sharing' target='_blank' rel='noreferrer noopener'>Ver ejemplo de auditoría</a></li><li style='list-style: circle;'>Implementación de cambios para mejorar la performance según la auditoría técnica.</li><li style='list-style: circle;'>Cambio de contenido en etiquetas <title>, <h1> y texto de tu homepage para posicionarte en búsquedas de google de manera estratégica en base al análisis de palabras clave.</li></ul>"])
             }),
             intermediate: Object.freeze({
                 hours: Object.freeze([8]),
                 skillsAcquired: Object.freeze(["Analista SEO"]),
                 skillsPrices: Object.freeze([skills.prices[1]]),
-                content: Object.freeze(["<ul><li>Análisis de búsquedas en las cuales te interesa posicionarte teniendo en cuenta volumen, dificultad de posicionarse, relevancia y costo por clic estimado. Se buscarán palabras clave relevantes, de alto volumen, baja dificultad de posicionarse y costo por clic alto.</li><li>Auditoría técnica general de sitio web usando <a href='https://neilpatel.com/ubersuggest/' target='_blank' rel='noreferrer noopener'>Ubersuggest</a>, que es una herramienta de Neil Patel que analiza hasta 132 aspectos técnicos de tu sitio web como por ejemplo, la velocidad de carga, cantidad de palabras de páginas y cantidad de palabras dentro de etiquetas title. <a href='https://drive.google.com/file/d/1Xi63s89YuZv7v2s-Xc-1H2laM5H0x56-/view?usp=sharing' target='_blank' rel='noreferrer noopener'>Ver ejemplo de auditoría</a></li><li>Cambio de contenido en etiquetas &lt;title&gt;, &lt;h1&gt; y texto de tu homepage en hasta 10 páginas de tu sitio web.</li><li>Optimización de alt de imágenes.</li><li>Análisis de palabras clave y secciones web de la competencia que más tráfico generen para copiar lo que funciona (3 competidores)</li><li>Solución de problemas detectados en la auditoría de Ubersuggest de hasta 5 páginas de tu sitio web.</li><ul>"])
+                content: Object.freeze(["<ul><li style='list-style: circle;'>Análisis de búsquedas en las cuales te interesa posicionarte teniendo en cuenta volumen, dificultad de posicionarse, relevancia y costo por clic estimado. Se buscarán palabras clave relevantes, de alto volumen, baja dificultad de posicionarse y costo por clic alto.</li><li style='list-style: circle;'>Auditoría técnica general de sitio web usando <a href='https://neilpatel.com/ubersuggest/' target='_blank' rel='noreferrer noopener'>Ubersuggest</a>, que es una herramienta de Neil Patel que analiza hasta 132 aspectos técnicos de tu sitio web como por ejemplo, la velocidad de carga, cantidad de palabras de páginas y cantidad de palabras dentro de etiquetas title. <a href='https://drive.google.com/file/d/1Xi63s89YuZv7v2s-Xc-1H2laM5H0x56-/view?usp=sharing' target='_blank' rel='noreferrer noopener'>Ver ejemplo de auditoría</a></li><li style='list-style: circle;'>Cambio de contenido en etiquetas <title>, <h1> y texto de tu homepage en hasta 10 páginas de tu sitio web.</li><li style='list-style: circle;'>Optimización de alt de imágenes.</li><li style='list-style: circle;'>Análisis de palabras clave y secciones web de la competencia que más tráfico generen para copiar lo que funciona (3 competidores)</li><li style='list-style: circle;'>Solución de problemas detectados en la auditoría de Ubersuggest de hasta 5 páginas de tu sitio web.</li><ul>"])
             }),
             advanced: Object.freeze({
                 hours: Object.freeze([16]),
                 skillsAcquired: Object.freeze(["Analista SEO"]),
                 skillsPrices: Object.freeze([skills.prices[1]]),
-                content: Object.freeze(["<ul><li>Análisis de búsquedas en las cuales te interesa posicionarte teniendo en cuenta volumen, dificultad de posicionarse, relevancia y costo por clic estimado. Se buscarán palabras clave relevantes, de alto volumen, baja dificultad de posicionarse y costo por clic alto.</li><li>Auditoría técnica general de sitio web usando <a href='https://neilpatel.com/ubersuggest/' target='_blank' rel='noreferrer noopener'>Ubersuggest</a>, que es una herramienta de Neil Patel que analiza hasta 132 aspectos técnicos de tu sitio web como por ejemplo, la velocidad de carga, cantidad de palabras de páginas y cantidad de palabras dentro de etiquetas title. <a href='https://drive.google.com/file/d/1Xi63s89YuZv7v2s-Xc-1H2laM5H0x56-/view?usp=sharing' target='_blank' rel='noreferrer noopener'>Ver ejemplo de auditoría</a></li><li>Cambio de contenido en etiquetas &lt;title&gt;, &lt;h1&gt; y texto de tu homepage en hasta 10 páginas de tu sitio web.</li><li>Optimización de alt de imágenes.</li><li>Análisis de palabras clave y secciones web de la competencia que más tráfico generen para copiar lo que funciona (6 competidores)</li><li>Solución de problemas detectados en la auditoría de Ubersuggest de hasta 10 páginas de tu sitio web.</li><ul>"])
+                content: Object.freeze(["<ul><li style='list-style: circle;'>Análisis de búsquedas en las cuales te interesa posicionarte teniendo en cuenta volumen, dificultad de posicionarse, relevancia y costo por clic estimado. Se buscarán palabras clave relevantes, de alto volumen, baja dificultad de posicionarse y costo por clic alto.</li><li style='list-style: circle;'>Auditoría técnica general de sitio web usando <a href='https://neilpatel.com/ubersuggest/' target='_blank' rel='noreferrer noopener'>Ubersuggest</a>, que es una herramienta de Neil Patel que analiza hasta 132 aspectos técnicos de tu sitio web como por ejemplo, la velocidad de carga, cantidad de palabras de páginas y cantidad de palabras dentro de etiquetas title. <a href='https://drive.google.com/file/d/1Xi63s89YuZv7v2s-Xc-1H2laM5H0x56-/view?usp=sharing' target='_blank' rel='noreferrer noopener'>Ver ejemplo de auditoría</a></li><li style='list-style: circle;'>Cambio de contenido en etiquetas <title>, <h1> y texto de tu homepage en hasta 10 páginas de tu sitio web.</li><li style='list-style: circle;'>Optimización de alt de imágenes.</li><li style='list-style: circle;'>Análisis de palabras clave y secciones web de la competencia que más tráfico generen para copiar lo que funciona (6 competidores)</li><li style='list-style: circle;'>Solución de problemas detectados en la auditoría de Ubersuggest de hasta 10 páginas de tu sitio web.</li><ul>"])
             })
         }),
         maintenance: Object.freeze({
@@ -720,19 +720,19 @@ const services = Object.freeze({
                 hours: Object.freeze([2, 4, 2]),
                 skillsAcquired: Object.freeze(["Analista SEO", "Redactor", "Diseñador Gráfico"]),
                 skillsPrices: Object.freeze([skills.prices[1], skills.prices[3], skills.prices[5]]),
-                content: Object.freeze(["<ul><li>Análisis de búsquedas en las cuales te interesa posicionarte teniendo en cuenta volumen, dificultad de posicionarse, relevancia y costo por clic estimado. Se buscarán palabras clave relevantes, de alto volumen, baja dificultad de posicionarse y costo por clic alto.</li><li>Análisis de palabras clave y contenidos web de la competencia que más tráfico generen para copiar lo que funciona (3 competidores).</li><li>Contacto con blogs de rubros afines buscando hacer colaboraciones usando ONE 2 Lead (Automation tool de linkedin, U$ 15 por mes) para conseguir links a tu sitio web (Link-building)</li></ul>", "<ul><li>Redacción de 1 publicación para blog de 1000 palabras. <a href='https://digitalnow.com.ar/posicionamiento-web-en-google-seo/' target='_blank' rel='noreferrer noopener'>Ver ejemplo</a></li></ul>", "<ul><li>Creación de dos piezas gráficas (1 infografía y portada)</li><li><a href='https://drive.google.com/drive/folders/1rQn2MLzdCdeKNcGda5qajIX1jVZHFtpl?usp=sharing' target='_blank' rel='noreferrer noopener'>Ver ejemplo de infografías</a> ,  <a href='https://drive.google.com/drive/folders/1q0vPeT2uTMWIB1qcGgBh8x7hB7dZkGfr?usp=sharing' target='_blank' rel='noreferrer noopener'>Ver ejemplo de portadas</a></li></ul>"])
+                content: Object.freeze(["<ul><li style='list-style: circle;'>Análisis de búsquedas en las cuales te interesa posicionarte teniendo en cuenta volumen, dificultad de posicionarse, relevancia y costo por clic estimado. Se buscarán palabras clave relevantes, de alto volumen, baja dificultad de posicionarse y costo por clic alto.</li><li style='list-style: circle;'>Análisis de palabras clave y contenidos web de la competencia que más tráfico generen para copiar lo que funciona (3 competidores).</li><li style='list-style: circle;'>Contacto con blogs de rubros afines buscando hacer colaboraciones usando ONE 2 Lead (Automation tool de linkedin, U$ 15 por mes) para conseguir links a tu sitio web (Link-building)</li></ul>", "<ul><li style='list-style: circle;'>Redacción de 1 publicación para blog de 1000 palabras. <a href='https://digitalnow.com.ar/posicionamiento-web-en-google-seo/' target='_blank' rel='noreferrer noopener'>Ver ejemplo</a></li></ul>", "<ul><li style='list-style: circle;'>Creación de dos piezas gráficas (1 infografía y portada)</li><li style='list-style: circle;'><a href='https://drive.google.com/drive/folders/1rQn2MLzdCdeKNcGda5qajIX1jVZHFtpl?usp=sharing' target='_blank' rel='noreferrer noopener'>Ver ejemplo de infografías</a> ,  <a href='https://drive.google.com/drive/folders/1q0vPeT2uTMWIB1qcGgBh8x7hB7dZkGfr?usp=sharing' target='_blank' rel='noreferrer noopener'>Ver ejemplo de portadas</a></li></ul>"])
             }),
             intermediate: Object.freeze({
                 hours: Object.freeze([4, 8, 4]),
                 skillsAcquired: Object.freeze(["Analista SEO", "Redactor", "Diseñador Gráfico"]),
                 skillsPrices: Object.freeze([skills.prices[1], skills.prices[3], skills.prices[5]]),
-                content: Object.freeze(["<ul><li>Análisis de búsquedas en las cuales te interesa posicionarte teniendo en cuenta volumen, dificultad de posicionarse, relevancia y costo por clic estimado. Se buscarán palabras clave relevantes, de alto volumen, baja dificultad de posicionarse y costo por clic alto.</li><li>Análisis de palabras clave y contenidos web de la competencia que más tráfico generen para copiar lo que funciona (6 competidores).</li><li>Contacto con blogs de rubros afines buscando hacer colaboraciones usando ONE 2 Lead (Automation tool de linkedin, U$ 15 por mes) para conseguir links a tu sitio web (Link-building)</li></ul>", "<ul><li>Redacción de 2 publicaciones para blog de 1000 palabras.</li></ul>", "<ul><li>Creación de 4 piezas gráficas (2 infografías y 2 portadas)</li><li>Creación de 2 infografías para que otros blogs de rubros afines puedan incluirla con un link a tu sitio web.</li><li><a href='https://drive.google.com/drive/folders/1rQn2MLzdCdeKNcGda5qajIX1jVZHFtpl?usp=sharing' target='_blank' rel='noreferrer noopener'>Ver ejemplo de infografías</a> ,  <a href='https://drive.google.com/drive/folders/1q0vPeT2uTMWIB1qcGgBh8x7hB7dZkGfr?usp=sharing' target='_blank' rel='noreferrer noopener'>Ver ejemplo de portadas</a></li></ul>"])
+                content: Object.freeze(["<ul><li style='list-style: circle;'>Análisis de búsquedas en las cuales te interesa posicionarte teniendo en cuenta volumen, dificultad de posicionarse, relevancia y costo por clic estimado. Se buscarán palabras clave relevantes, de alto volumen, baja dificultad de posicionarse y costo por clic alto.</li><li style='list-style: circle;'>Análisis de palabras clave y contenidos web de la competencia que más tráfico generen para copiar lo que funciona (6 competidores).</li><li style='list-style: circle;'>Contacto con blogs de rubros afines buscando hacer colaboraciones usando ONE 2 Lead (Automation tool de linkedin, U$ 15 por mes) para conseguir links a tu sitio web (Link-building)</li></ul>", "<ul><li style='list-style: circle;'>Redacción de 2 publicaciones para blog de 1000 palabras.</li></ul>", "<ul><li style='list-style: circle;'>Creación de 4 piezas gráficas (2 infografías y 2 portadas)</li><li style='list-style: circle;'>Creación de 2 infografías para que otros blogs de rubros afines puedan incluirla con un link a tu sitio web.</li><li style='list-style: circle;'><a href='https://drive.google.com/drive/folders/1rQn2MLzdCdeKNcGda5qajIX1jVZHFtpl?usp=sharing' target='_blank' rel='noreferrer noopener'>Ver ejemplo de infografías</a> ,  <a href='https://drive.google.com/drive/folders/1q0vPeT2uTMWIB1qcGgBh8x7hB7dZkGfr?usp=sharing' target='_blank' rel='noreferrer noopener'>Ver ejemplo de portadas</a></li></ul>"])
             }),
             advanced: Object.freeze({
                 hours: Object.freeze([8, 16, 12]),
                 skillsAcquired: Object.freeze(["Analista SEO", "Redactor", "Diseñador Gráfico"]),
                 skillsPrices: Object.freeze([skills.prices[1], skills.prices[3], skills.prices[5]]),
-                content: Object.freeze(["<ul><li>Análisis de búsquedas en las cuales te interesa posicionarte teniendo en cuenta volumen, dificultad de posicionarse, relevancia y costo por clic estimado. Se buscarán palabras clave relevantes, de alto volumen, baja dificultad de posicionarse y costo por clic alto.</li><li>Análisis de palabras clave y contenidos web de la competencia que más tráfico generen para copiar lo que funciona (12 competidores).</li><li>Contacto con blogs de rubros afines buscando hacer colaboraciones usando ONE 2 Lead (Automation tool de linkedin, U$ 15 por mes) para conseguir links a tu sitio web (Link-building)</li></ul>", "<ul><li>Redacción de 4 publicaciones para blog de 1000 palabras.</li></ul>", "<ul><li>Creación de 8 piezas gráficas (4 infografías y 4 portadas)</li><li><a href='https://drive.google.com/drive/folders/1rQn2MLzdCdeKNcGda5qajIX1jVZHFtpl?usp=sharing' target='_blank' rel='noreferrer noopener'>Ver ejemplo de infografías</a> , <a href='https://drive.google.com/drive/folders/1q0vPeT2uTMWIB1qcGgBh8x7hB7dZkGfr?usp=sharing' target='_blank' rel='noreferrer noopener'>Ver ejemplo de portadas</a></li><li>Creación de 2 infografías para que otros blogs de rubros afines puedan incluirla con un link a tu sitio web.</li><li>Creación de 2 gifs para cada publicación para hacer la lectura más amable: <a href='https://digitalnow.com.ar/como-hacer-una-campana-en-google-ads/' target='_blank' rel='noreferrer noopener'>Ver ejemplo</a></li></ul>"])
+                content: Object.freeze(["<ul><li style='list-style: circle;'>Análisis de búsquedas en las cuales te interesa posicionarte teniendo en cuenta volumen, dificultad de posicionarse, relevancia y costo por clic estimado. Se buscarán palabras clave relevantes, de alto volumen, baja dificultad de posicionarse y costo por clic alto.</li><li style='list-style: circle;'>Análisis de palabras clave y contenidos web de la competencia que más tráfico generen para copiar lo que funciona (12 competidores).</li><li style='list-style: circle;'>Contacto con blogs de rubros afines buscando hacer colaboraciones usando ONE 2 Lead (Automation tool de linkedin, U$ 15 por mes) para conseguir links a tu sitio web (Link-building)</li></ul>", "<ul><li style='list-style: circle;'>Redacción de 4 publicaciones para blog de 1000 palabras.</li></ul>", "<ul><li style='list-style: circle;'>Creación de 8 piezas gráficas (4 infografías y 4 portadas)</li><li style='list-style: circle;'><a href='https://drive.google.com/drive/folders/1rQn2MLzdCdeKNcGda5qajIX1jVZHFtpl?usp=sharing' target='_blank' rel='noreferrer noopener'>Ver ejemplo de infografías</a> , <a href='https://drive.google.com/drive/folders/1q0vPeT2uTMWIB1qcGgBh8x7hB7dZkGfr?usp=sharing' target='_blank' rel='noreferrer noopener'>Ver ejemplo de portadas</a></li><li style='list-style: circle;'>Creación de 2 infografías para que otros blogs de rubros afines puedan incluirla con un link a tu sitio web.</li><li style='list-style: circle;'>Creación de 2 gifs para cada publicación para hacer la lectura más amable: <a href='https://digitalnow.com.ar/como-hacer-una-campana-en-google-ads/' target='_blank' rel='noreferrer noopener'>Ver ejemplo</a></li></ul>"])
             })
         })
     }),
@@ -742,13 +742,13 @@ const services = Object.freeze({
                 hours: Object.freeze([4]),
                 skillsAcquired: Object.freeze(["Diseñador Web UX / UI"]),
                 skillsPrices: Object.freeze([skills.prices[4]]),
-                content: Object.freeze(["<ul><li>Diagnóstico de buenas prácticas de usabilidad y accesibilidad haciendo análisis de contenido, análisis de diseño visual, análisis de interacción y análisis de temas técnicos. <a href='https://docs.google.com/spreadsheets/d/1ZlBsT4XKX11L22I8ojC06DcgsJOeAYjOkUmVmv5mcck/edit?usp=sharing' target='_blank' rel='noreferrer noopener'>Ver Plantilla de Diagnóstico</a></li></ul>"])
+                content: Object.freeze(["<ul><li style='list-style: circle;'>Diagnóstico de buenas prácticas de usabilidad y accesibilidad haciendo análisis de contenido, análisis de diseño visual, análisis de interacción y análisis de temas técnicos. <a href='https://docs.google.com/spreadsheets/d/1ZlBsT4XKX11L22I8ojC06DcgsJOeAYjOkUmVmv5mcck/edit?usp=sharing' target='_blank' rel='noreferrer noopener'>Ver Plantilla de Diagnóstico</a></li></ul>"])
             }),
             advanced: Object.freeze({
                 hours: Object.freeze([12]),
                 skillsAcquired: Object.freeze(["Diseñador Web UX / UI"]),
                 skillsPrices: Object.freeze([skills.prices[4]]),
-                content: Object.freeze(["<ul><li>Diagnóstico de buenas prácticas de usabilidad y accesibilidad haciendo análisis de contenido, análisis de diseño visual, análisis de interacción y análisis de temas técnicos. <a href='https://docs.google.com/spreadsheets/d/1ZlBsT4XKX11L22I8ojC06DcgsJOeAYjOkUmVmv5mcck/edit?usp=sharing' target='_blank' rel='noreferrer noopener'>Ver Plantilla de Diagnóstico</a><br>Implementación de mejoras en tu sitio web en base al diagnóstico.</li></ul>"])
+                content: Object.freeze(["<ul><li style='list-style: circle;'>Diagnóstico de buenas prácticas de usabilidad y accesibilidad haciendo análisis de contenido, análisis de diseño visual, análisis de interacción y análisis de temas técnicos. <a href='https://docs.google.com/spreadsheets/d/1ZlBsT4XKX11L22I8ojC06DcgsJOeAYjOkUmVmv5mcck/edit?usp=sharing' target='_blank' rel='noreferrer noopener'>Ver Plantilla de Diagnóstico</a><br>Implementación de mejoras en tu sitio web en base al diagnóstico.</li></ul>"])
             })
         }),
         maintenance: Object.freeze({
@@ -756,19 +756,19 @@ const services = Object.freeze({
                 hours: Object.freeze([2]),
                 skillsAcquired: Object.freeze(["Diseñador Web UX / UI"]),
                 skillsPrices: Object.freeze([skills.prices[4]]),
-                content: Object.freeze(["<ul><li>Implementación de 1 experimento con dos versiones (Una con un cambio que apunta a mejorar la performance y otra sin) de tu sitio web al mismo tiempo usando Google optimize y Google Analytics.</li></ul>"])
+                content: Object.freeze(["<ul><li style='list-style: circle;'>Implementación de 1 experimento con dos versiones (Una con un cambio que apunta a mejorar la performance y otra sin) de tu sitio web al mismo tiempo usando Google optimize y Google Analytics.</li></ul>"])
             }),
             intermediate: Object.freeze({
                 hours: Object.freeze([4]),
                 skillsAcquired: Object.freeze(["Diseñador Web UX / UI"]),
                 skillsPrices: Object.freeze([skills.prices[4]]),
-                content: Object.freeze(["<ul><li>Implementación de 2 experimentos con dos versiones (Una con un cambio que apunta a mejorar la performance y otra sin) de tu sitio web al mismo tiempo usando Google optimize y Google Analytics.</li></ul>"])
+                content: Object.freeze(["<ul><li style='list-style: circle;'>Implementación de 2 experimentos con dos versiones (Una con un cambio que apunta a mejorar la performance y otra sin) de tu sitio web al mismo tiempo usando Google optimize y Google Analytics.</li></ul>"])
             }),
             advanced: Object.freeze({
                 hours: Object.freeze([6]),
                 skillsAcquired: Object.freeze(["Diseñador Web UX / UI"]),
                 skillsPrices: Object.freeze([skills.prices[4]]),
-                content: Object.freeze(["<ul><li>Implementación de 3 experimentos con dos versiones (Una con un cambio que apunta a mejorar la performance y otra sin) de tu sitio web al mismo tiempo usando Google optimize y Google Analytics.</li></ul>"])
+                content: Object.freeze(["<ul><li style='list-style: circle;'>Implementación de 3 experimentos con dos versiones (Una con un cambio que apunta a mejorar la performance y otra sin) de tu sitio web al mismo tiempo usando Google optimize y Google Analytics.</li></ul>"])
             })
         })
     }),
@@ -779,35 +779,35 @@ const services = Object.freeze({
                 skillsAcquired: Object.freeze(["Diseñador Web UX / UI"]),
                 skillsPrices: Object.freeze([skills.prices[4]]),
                 name: Object.freeze("Landing Page"),
-                content: Object.freeze(["<ul><li>Implementación de plantilla prediseñada de 1 sola página usando algún CMS (Content Management System) como Wordpress o Wix, de arrastrar y soltar.</li></ul>"])
+                content: Object.freeze(["<ul><li style='list-style: circle;'>Implementación de plantilla prediseñada de 1 sola página usando algún CMS (Content Management System) como Wordpress o Wix, de arrastrar y soltar.</li></ul>"])
             }),
             intermediate: Object.freeze({
                 hours: Object.freeze([20]),
                 skillsAcquired: Object.freeze(["Diseñador Web UX / UI"]),
                 skillsPrices: Object.freeze([skills.prices[4]]),
                 name: Object.freeze("Sitio web de 5 secciones en base a plantilla prediseñada"),
-                content: Object.freeze(["<ul><li>Implementación de sitio web de 5 secciones usando alguna plantilla prediseñada de Wordpress. Incluye diseño de piezas gráficas que sean necesarias. <a href='https://gaudirjohnson.com.ar/' target='_blank' rel='noreferrer noopener'>Ver ejemplo</a></li></ul>"])
+                content: Object.freeze(["<ul><li style='list-style: circle;'>Implementación de sitio web de 5 secciones usando alguna plantilla prediseñada de Wordpress. Incluye diseño de piezas gráficas que sean necesarias. <a href='https://gaudirjohnson.com.ar/' target='_blank' rel='noreferrer noopener'>Ver ejemplo</a></li></ul>"])
             }),
             advanced: Object.freeze({
                 hours: Object.freeze([50]),
                 skillsAcquired: Object.freeze(["Diseñador Web UX / UI"]),
                 skillsPrices: Object.freeze([skills.prices[4]]),
                 name: Object.freeze("Sitio web con diseño personalizado"),
-                content: Object.freeze(["<ul><li>Diseño de varias versiones de prototipo en Figma <a href='https://www.figma.com/file/UXhBSaXoO8LeMYrQgFYO9F/Burplaza?node-id=0%3A1' target='_blank' rel='noreferrer noopener'>(Ver ejemplo)</a> call con el cliente de revisión e implementación de sitio web en Wordpress con hasta 3 revisiones por parte del cliente.</li></ul>"])
+                content: Object.freeze(["<ul><li style='list-style: circle;'>Diseño de varias versiones de prototipo en Figma <a href='https://www.figma.com/file/UXhBSaXoO8LeMYrQgFYO9F/Burplaza?node-id=0%3A1' target='_blank' rel='noreferrer noopener'>(Ver ejemplo)</a> call con el cliente de revisión e implementación de sitio web en Wordpress con hasta 3 revisiones por parte del cliente.</li></ul>"])
             }),
             ecommerce: Object.freeze({
                 hours: Object.freeze([20]),
                 skillsAcquired: Object.freeze(["Diseñador Web UX / UI"]),
                 skillsPrices: Object.freeze([skills.prices[4]]),
                 name: Object.freeze("Sitio web de Ecommerce simple en CMS como WooCommerce, Tienda Nube o Shopify"),
-                content: Object.freeze(["<ul><li>Carga de hasta 15 productos en el sitio web,</li></ul>"])
+                content: Object.freeze(["<ul><li style='list-style: circle;'>Carga de hasta 15 productos en el sitio web,</li></ul>"])
             }),
             logoYMarca: Object.freeze({
                 hours: Object.freeze([10]),
                 skillsAcquired: Object.freeze(["Diseñador Gráfico"]),
                 skillsPrices: Object.freeze([skills.prices[5]]),
                 name: Object.freeze("Diseño de logo e identidad de marca"),
-                content: Object.freeze(["<ul><li>Tipografía, logo en diferentes formatos, paleta de colores y concepto. Hasta 3 revisiones. <a href='https://drive.google.com/file/d/1gyONia_qKjM6mqoJHe_AnGRGMPbicQnv/view?usp=sharing' target='_blank' rel='noreferrer noopener'>Ver ejemplo</a></li></ul>"])
+                content: Object.freeze(["<ul><li style='list-style: circle;'>Tipografía, logo en diferentes formatos, paleta de colores y concepto. Hasta 3 revisiones. <a href='https://drive.google.com/file/d/1gyONia_qKjM6mqoJHe_AnGRGMPbicQnv/view?usp=sharing' target='_blank' rel='noreferrer noopener'>Ver ejemplo</a></li></ul>"])
             })
         }),
         maintenance: Object.freeze({
@@ -815,7 +815,7 @@ const services = Object.freeze({
                 hours: Object.freeze([2]),
                 skillsAcquired: Object.freeze(["Diseñador Web UX / UI"]),
                 skillsPrices: Object.freeze([skills.prices[4]]),
-                content: Object.freeze(["<ul><li>Actualización de plugins, actualización de contenido en imagen y texto, y arreglo de errores.</li></ul>"])
+                content: Object.freeze(["<ul><li style='list-style: circle;'>Actualización de plugins, actualización de contenido en imagen y texto, y arreglo de errores.</li></ul>"])
             })
         })
     }),
@@ -826,21 +826,21 @@ const services = Object.freeze({
                 deliversPerMonth: Object.freeze(1),
                 skillsAcquired: Object.freeze(["Diseñador Gráfico", "Redactor", "Diseñador Web UX / UI"]),
                 skillsPrices: Object.freeze([skills.prices[5], skills.prices[3], skills.prices[4]]),
-                content: Object.freeze(["<ul><li>1 pieza gráfica en formato estático (JPG) o dinámico (GIF)</li></ul>", "<ul><li>Redacción de textos para envío de email.</li></ul>", "<ul><li>Implementación de imágenes y textos en plantilla prediseñada.</li></ul>"])
+                content: Object.freeze(["<ul><li style='list-style: circle;'>1 pieza gráfica en formato estático (JPG) o dinámico (GIF)</li></ul>", "<ul><li style='list-style: circle;'>Redacción de textos para envío de email.</li></ul>", "<ul><li style='list-style: circle;'>Implementación de imágenes y textos en plantilla prediseñada.</li></ul>"])
             }),
             intermediate: Object.freeze({
                 hours: Object.freeze([2, 1, 1]),
                 deliversPerMonth: Object.freeze(2),
                 skillsAcquired: Object.freeze(["Diseñador Gráfico", "Redactor", "Diseñador Web UX / UI"]),
                 skillsPrices: Object.freeze([skills.prices[5], skills.prices[3], skills.prices[4]]),
-                content: Object.freeze(["<ul><li>2 piezas gráfica en formato estático (JPG) o dinámico (GIF)</li></ul>", "<ul><li>Redacción de textos para envío de email.</li></ul>", "<ul><li>Implementación de imágenes y textos en plantilla prediseñada.</li></ul>"])
+                content: Object.freeze(["<ul><li style='list-style: circle;'>2 piezas gráfica en formato estático (JPG) o dinámico (GIF)</li></ul>", "<ul><li style='list-style: circle;'>Redacción de textos para envío de email.</li></ul>", "<ul><li style='list-style: circle;'>Implementación de imágenes y textos en plantilla prediseñada.</li></ul>"])
             }),
             advanced: Object.freeze({
                 hours: Object.freeze([4, 2, 2]),
                 deliversPerMonth: Object.freeze(4),
                 skillsAcquired: Object.freeze(["Diseñador Gráfico", "Redactor", "Diseñador Web UX / UI"]),
                 skillsPrices: Object.freeze([skills.prices[5], skills.prices[3], skills.prices[4]]),
-                content: Object.freeze(["<ul><li>2 piezas gráfica en formato estático (JPG) o dinámico (GIF)</li></ul>", "<ul><li>Redacción de textos para envío de email.</li></ul>", "<ul><li>Implementación de imágenes y textos en plantilla prediseñada.</li></ul>"])
+                content: Object.freeze(["<ul><li style='list-style: circle;'>2 piezas gráfica en formato estático (JPG) o dinámico (GIF)</li></ul>", "<ul><li style='list-style: circle;'>Redacción de textos para envío de email.</li></ul>", "<ul><li style='list-style: circle;'>Implementación de imágenes y textos en plantilla prediseñada.</li></ul>"])
             })
         })
     })
@@ -1706,16 +1706,16 @@ function calculate() {
                     if (selectedCountriesAnnounceOperate.length == 1) {
                         if (selectedCountry !== "eeuu") {
                             resultGoogleSearch.innerHTML += `<p><b>‣ ${selectedCountriesAnnounceDisplay[i]}</b> en industria <b>${industryAdsSelector.options[industryAdsSelector.selectedIndex].text}</b> ➠ <b>CPA:</b> ${(absoluteStatsCountries.eeuu.googleSearchAds.cpa[industryAdsSelector.value] * relativeStatsCountries[selectedCountry].relativeRateToUSA).toFixed(2).replace(".", ",")}</p>
-                            <ul style="list-style-type: none;"><li>- Inversión elegida: USD ${(investmentGoogleSearchAdsAmmount.value / selectedCountriesAnnounceOperate.length)}</li>
-                            <li>- Numero de conversiones (inversion / CPA):  <strong>${((investmentGoogleSearchAdsAmmount.value / selectedCountriesAnnounceOperate.length) / (absoluteStatsCountries.eeuu.googleSearchAds.cpa[industryAdsSelector.value] * relativeStatsCountries[selectedCountry].relativeRateToUSA)).toFixed(2).replace(".", ",")}</strong></li></ul>`;
+                                <ul><li style='list-style: none;'>- Inversión elegida: USD ${(investmentGoogleSearchAdsAmmount.value / selectedCountriesAnnounceOperate.length)}</li>
+                                <li style='list-style: none;'>- Numero de conversiones (inversion / CPA):  <strong>${((investmentGoogleSearchAdsAmmount.value / selectedCountriesAnnounceOperate.length) / (absoluteStatsCountries.eeuu.googleSearchAds.cpa[industryAdsSelector.value] * relativeStatsCountries[selectedCountry].relativeRateToUSA)).toFixed(2).replace(".", ",")}</strong></li></ul>`;
 
                             let thisConversion = Number((investmentGoogleSearchAdsAmmount.value / selectedCountriesAnnounceOperate.length) / (absoluteStatsCountries.eeuu.googleSearchAds.cpa[industryAdsSelector.value] * relativeStatsCountries[selectedCountry].relativeRateToUSA));
                             googleAdsSearchConversionsValue += thisConversion;
 
                         } else if (selectedCountry === "eeuu") {
                             resultGoogleSearch.innerHTML += `<p><b>‣ ${selectedCountriesAnnounceDisplay[i]}</b> en industria <b>${industryAdsSelector.options[industryAdsSelector.selectedIndex].text}</b> ➠ <b>CPA:</b> ${(absoluteStatsCountries.eeuu.googleSearchAds.cpa[industryAdsSelector.value]).toFixed(2).replace(".", ",")}</p>
-                            <ul style="list-style-type: none;"><li>- Inversión elegida: USD ${(investmentGoogleSearchAdsAmmount.value / selectedCountriesAnnounceOperate.length)}</li>
-                            <li>- Numero de conversiones (inversion / CPA):  <strong>${((investmentGoogleSearchAdsAmmount.value / selectedCountriesAnnounceOperate.length) / absoluteStatsCountries.eeuu.googleSearchAds.cpa[industryAdsSelector.value]).toFixed(2).replace(".", ",")}</strong></li></ul>`;
+                                <ul><li style='list-style: none;'>- Inversión elegida: USD ${(investmentGoogleSearchAdsAmmount.value / selectedCountriesAnnounceOperate.length)}</li>
+                                <li style='list-style: none;'>- Numero de conversiones (inversion / CPA):  <strong>${((investmentGoogleSearchAdsAmmount.value / selectedCountriesAnnounceOperate.length) / absoluteStatsCountries.eeuu.googleSearchAds.cpa[industryAdsSelector.value]).toFixed(2).replace(".", ",")}</strong></li></ul>`;
 
                             let thisConversion = Number((investmentGoogleSearchAdsAmmount.value / selectedCountriesAnnounceOperate.length) / absoluteStatsCountries.eeuu.googleSearchAds.cpa[industryAdsSelector.value]);
                             googleAdsSearchConversionsValue += thisConversion;
@@ -1723,16 +1723,16 @@ function calculate() {
                     } else {
                         if (selectedCountry !== "eeuu") {
                             resultGoogleSearch.innerHTML += `<p><b>‣ ${selectedCountriesAnnounceDisplay[i]}</b> en industria <b>${industryAdsSelector.options[industryAdsSelector.selectedIndex].text}</b> ➠ <b>CPA:</b> ${(absoluteStatsCountries.eeuu.googleSearchAds.cpa[industryAdsSelector.value] * relativeStatsCountries[selectedCountry].relativeRateToUSA).toFixed(2).replace(".", ",")}</p>
-                            <ul style="list-style-type: none;"><li>- Inversión proporcional: USD ${(investmentGoogleSearchAdsAmmount.value / selectedCountriesAnnounceOperate.length)}</li>
-                            <li>- Numero de conversiones (inversion / CPA):  <strong>${((investmentGoogleSearchAdsAmmount.value / selectedCountriesAnnounceOperate.length) / (absoluteStatsCountries.eeuu.googleSearchAds.cpa[industryAdsSelector.value] * relativeStatsCountries[selectedCountry].relativeRateToUSA)).toFixed(2).replace(".", ",")}</strong></li></ul>`;
+                                <ul><li style='list-style: none;'>- Inversión proporcional: USD ${(investmentGoogleSearchAdsAmmount.value / selectedCountriesAnnounceOperate.length)}</li>
+                                <li style='list-style: none;'>- Numero de conversiones (inversion / CPA):  <strong>${((investmentGoogleSearchAdsAmmount.value / selectedCountriesAnnounceOperate.length) / (absoluteStatsCountries.eeuu.googleSearchAds.cpa[industryAdsSelector.value] * relativeStatsCountries[selectedCountry].relativeRateToUSA)).toFixed(2).replace(".", ",")}</strong></li></ul>`;
 
                             let thisConversion = Number((investmentGoogleSearchAdsAmmount.value / selectedCountriesAnnounceOperate.length) / (absoluteStatsCountries.eeuu.googleSearchAds.cpa[industryAdsSelector.value] * relativeStatsCountries[selectedCountry].relativeRateToUSA));
                             googleAdsSearchConversionsValue += thisConversion;
 
                         } else if (selectedCountry === "eeuu") {
                             resultGoogleSearch.innerHTML += `<p><b>‣ ${selectedCountriesAnnounceDisplay[i]}</b> en industria <b>${industryAdsSelector.options[industryAdsSelector.selectedIndex].text}</b> ➠ <b>CPA:</b> ${(absoluteStatsCountries.eeuu.googleSearchAds.cpa[industryAdsSelector.value]).toFixed(2).replace(".", ",")}</p>
-                            <ul style="list-style-type: none;"><li>- Inversión proporcional: USD ${(investmentGoogleSearchAdsAmmount.value / selectedCountriesAnnounceOperate.length)}</li>
-                            <li>- Numero de conversiones (inversion / CPA):  <strong>${((investmentGoogleSearchAdsAmmount.value / selectedCountriesAnnounceOperate.length) / absoluteStatsCountries.eeuu.googleSearchAds.cpa[industryAdsSelector.value]).toFixed(2).replace(".", ",")}</strong></li></ul>`;
+                                <ul><li style='list-style: none;'>- Inversión proporcional: USD ${(investmentGoogleSearchAdsAmmount.value / selectedCountriesAnnounceOperate.length)}</li>
+                                <li style='list-style: none;'>- Numero de conversiones (inversion / CPA):  <strong>${((investmentGoogleSearchAdsAmmount.value / selectedCountriesAnnounceOperate.length) / absoluteStatsCountries.eeuu.googleSearchAds.cpa[industryAdsSelector.value]).toFixed(2).replace(".", ",")}</strong></li></ul>`;
 
                             let thisConversion = Number((investmentGoogleSearchAdsAmmount.value / selectedCountriesAnnounceOperate.length) / absoluteStatsCountries.eeuu.googleSearchAds.cpa[industryAdsSelector.value]);
                             googleAdsSearchConversionsValue += thisConversion;
@@ -1754,16 +1754,16 @@ function calculate() {
                     if (selectedCountriesAnnounceOperate.length == 1) {
                         if (selectedCountry !== "eeuu") {
                             resultGoogleDisplay.innerHTML += `<p><b>‣ ${selectedCountriesAnnounceDisplay[i]}</b> en industria <b>${industryAdsSelector.options[industryAdsSelector.selectedIndex].text}</b> ➠ <b>CPA:</b> ${(absoluteStatsCountries.eeuu.googleDisplayAds.cpa[industryAdsSelector.value] * relativeStatsCountries[selectedCountry].relativeRateToUSA).toFixed(2).replace(".", ",")}</p>
-                            <ul style="list-style-type: none;"><li>- Inversión elegida: USD ${investmentGoogleDisplayAdsAmmount.value / selectedCountriesAnnounceOperate.length}</li>
-                            <li>- Numero de conversiones (inversion / CPA):  <strong>${((investmentGoogleDisplayAdsAmmount.value / selectedCountriesAnnounceOperate.length) / (absoluteStatsCountries.eeuu.googleDisplayAds.cpa[industryAdsSelector.value] * relativeStatsCountries[selectedCountry].relativeRateToUSA) ).toFixed(2).replace(".", ",")}</strong></li></ul>`;
+                                <ul><li style='list-style: none;'>- Inversión elegida: USD ${investmentGoogleDisplayAdsAmmount.value / selectedCountriesAnnounceOperate.length}</li>
+                                <li style='list-style: none;'>- Numero de conversiones (inversion / CPA):  <strong>${((investmentGoogleDisplayAdsAmmount.value / selectedCountriesAnnounceOperate.length) / (absoluteStatsCountries.eeuu.googleDisplayAds.cpa[industryAdsSelector.value] * relativeStatsCountries[selectedCountry].relativeRateToUSA)).toFixed(2).replace(".", ",")}</strong></li></ul>`;
 
                             let thisConversion = Number(((investmentGoogleDisplayAdsAmmount.value / selectedCountriesAnnounceOperate.length) / (absoluteStatsCountries.eeuu.googleDisplayAds.cpa[industryAdsSelector.value] * relativeStatsCountries[selectedCountry].relativeRateToUSA)));
                             googleAdsDisplayConversionsValue += thisConversion;
 
                         } else if (selectedCountry === "eeuu") {
                             resultGoogleDisplay.innerHTML += `<p><b>‣ ${selectedCountriesAnnounceDisplay[i]}</b> en industria <b>${industryAdsSelector.options[industryAdsSelector.selectedIndex].text}</b> ➠ <b>CPA:</b> ${(absoluteStatsCountries.eeuu.googleDisplayAds.cpa[industryAdsSelector.value]).toFixed(2).replace(".", ",")}</p>
-                            <ul style="list-style-type: none;"><li>- Inversión elegida: USD ${investmentGoogleDisplayAdsAmmount.value / selectedCountriesAnnounceOperate.length}</li>
-                            <li>- Numero de conversiones (inversion / CPA):  <strong>${((investmentGoogleDisplayAdsAmmount.value / selectedCountriesAnnounceOperate.length) / absoluteStatsCountries.eeuu.googleDisplayAds.cpa[industryAdsSelector.value]).toFixed(2).replace(".", ",")}</strong></li></ul>`;
+                                <ul><li style='list-style: none;'>- Inversión elegida: USD ${investmentGoogleDisplayAdsAmmount.value / selectedCountriesAnnounceOperate.length}</li>
+                                <li style='list-style: none;'>- Numero de conversiones (inversion / CPA):  <strong>${((investmentGoogleDisplayAdsAmmount.value / selectedCountriesAnnounceOperate.length) / absoluteStatsCountries.eeuu.googleDisplayAds.cpa[industryAdsSelector.value]).toFixed(2).replace(".", ",")}</strong></li></ul>`;
 
                             let thisConversion = Number(((investmentGoogleDisplayAdsAmmount.value / selectedCountriesAnnounceOperate.length) / absoluteStatsCountries.eeuu.googleDisplayAds.cpa[industryAdsSelector.value]));
                             googleAdsDisplayConversionsValue += thisConversion;
@@ -1772,16 +1772,16 @@ function calculate() {
                     } else {
                         if (selectedCountry !== "eeuu") {
                             resultGoogleDisplay.innerHTML += `<p><b>‣ ${selectedCountriesAnnounceDisplay[i]}</b> en industria <b>${industryAdsSelector.options[industryAdsSelector.selectedIndex].text}</b> ➠ <b>CPA:</b> ${(absoluteStatsCountries.eeuu.googleDisplayAds.cpa[industryAdsSelector.value] * relativeStatsCountries[selectedCountry].relativeRateToUSA).toFixed(2).replace(".", ",")}</p>
-                            <ul style="list-style-type: none;"><li>- Inversión proporcional: USD ${investmentGoogleDisplayAdsAmmount.value / selectedCountriesAnnounceOperate.length}</li>
-                            <li>- Numero de conversiones (inversion / CPA):  <strong>${((investmentGoogleDisplayAdsAmmount.value / selectedCountriesAnnounceOperate.length) / (absoluteStatsCountries.eeuu.googleDisplayAds.cpa[industryAdsSelector.value] * relativeStatsCountries[selectedCountry].relativeRateToUSA) ).toFixed(2).replace(".", ",")}</strong></li></ul>`;
+                                <ul><li style='list-style: none;'>- Inversión proporcional: USD ${investmentGoogleDisplayAdsAmmount.value / selectedCountriesAnnounceOperate.length}</li>
+                                <li style='list-style: none;'>- Numero de conversiones (inversion / CPA):  <strong>${((investmentGoogleDisplayAdsAmmount.value / selectedCountriesAnnounceOperate.length) / (absoluteStatsCountries.eeuu.googleDisplayAds.cpa[industryAdsSelector.value] * relativeStatsCountries[selectedCountry].relativeRateToUSA)).toFixed(2).replace(".", ",")}</strong></li></ul>`;
 
                             let thisConversion = Number(((investmentGoogleDisplayAdsAmmount.value / selectedCountriesAnnounceOperate.length) / (absoluteStatsCountries.eeuu.googleDisplayAds.cpa[industryAdsSelector.value] * relativeStatsCountries[selectedCountry].relativeRateToUSA)));
                             googleAdsDisplayConversionsValue += thisConversion;
 
                         } else if (selectedCountry === "eeuu") {
                             resultGoogleDisplay.innerHTML += `<p><b>‣ ${selectedCountriesAnnounceDisplay[i]}</b> en industria <b>${industryAdsSelector.options[industryAdsSelector.selectedIndex].text}</b> ➠ <b>CPA:</b> ${(absoluteStatsCountries.eeuu.googleDisplayAds.cpa[industryAdsSelector.value]).toFixed(2).replace(".", ",")}</p>
-                            <ul style="list-style-type: none;"><li>- Inversión proporcional: USD ${investmentGoogleDisplayAdsAmmount.value / selectedCountriesAnnounceOperate.length}</li>
-                            <li>- Numero de conversiones (inversion / CPA):  <strong>${((investmentGoogleDisplayAdsAmmount.value / selectedCountriesAnnounceOperate.length) / absoluteStatsCountries.eeuu.googleDisplayAds.cpa[industryAdsSelector.value]).toFixed(2).replace(".", ",")}</strong></li></ul>`;
+                                <ul><li style='list-style: none;'>- Inversión proporcional: USD ${investmentGoogleDisplayAdsAmmount.value / selectedCountriesAnnounceOperate.length}</li>
+                                <li style='list-style: none;'>- Numero de conversiones (inversion / CPA):  <strong>${((investmentGoogleDisplayAdsAmmount.value / selectedCountriesAnnounceOperate.length) / absoluteStatsCountries.eeuu.googleDisplayAds.cpa[industryAdsSelector.value]).toFixed(2).replace(".", ",")}</strong></li></ul>`;
 
                             let thisConversion = Number(((investmentGoogleDisplayAdsAmmount.value / selectedCountriesAnnounceOperate.length) / absoluteStatsCountries.eeuu.googleDisplayAds.cpa[industryAdsSelector.value]));
                             googleAdsDisplayConversionsValue += thisConversion;
@@ -1805,16 +1805,16 @@ function calculate() {
                     if (selectedCountriesAnnounceOperate.length == 1) {
                         if (selectedCountry !== "eeuu") {
                             resultFacebookAds.innerHTML += `<p><b>‣ ${selectedCountriesAnnounceDisplay[i]}</b> en industria <b>${industryAdsSelector.options[industryAdsSelector.selectedIndex].text}</b> ➠ <b>CPA:</b> ${(absoluteStatsCountries.eeuu.facebookAds.cpa[industryAdsSelector.value] * relativeStatsCountries[selectedCountry].relativeRateToUSA).toFixed(2).replace(".", ",")}</p>
-                            <ul style="list-style-type: none;"><li>- Inversión elegida: USD ${investmentFacebookAdsAmmount.value / selectedCountriesAnnounceOperate.length}</li>
-                            <li>- Numero de conversiones (inversion / CPA):  <strong>${((investmentFacebookAdsAmmount.value / selectedCountriesAnnounceOperate.length) / (absoluteStatsCountries.eeuu.facebookAds.cpa[industryAdsSelector.value] * relativeStatsCountries[selectedCountry].relativeRateToUSA) ).toFixed(2).replace(".", ",")}</strong></li></ul>`;
+                                <ul><li style='list-style: none;'>- Inversión elegida: USD ${investmentFacebookAdsAmmount.value / selectedCountriesAnnounceOperate.length}</li>
+                                <li style='list-style: none;'>- Numero de conversiones (inversion / CPA):  <strong>${((investmentFacebookAdsAmmount.value / selectedCountriesAnnounceOperate.length) / (absoluteStatsCountries.eeuu.facebookAds.cpa[industryAdsSelector.value] * relativeStatsCountries[selectedCountry].relativeRateToUSA)).toFixed(2).replace(".", ",")}</strong></li></ul>`;
 
                             let thisConversion = Number(((investmentFacebookAdsAmmount.value / selectedCountriesAnnounceOperate.length) / (absoluteStatsCountries.eeuu.facebookAds.cpa[industryAdsSelector.value] * relativeStatsCountries[selectedCountry].relativeRateToUSA)));
                             facebookAdsConversionsValue += thisConversion;
 
                         } else if (selectedCountry === "eeuu") {
                             resultFacebookAds.innerHTML += `<p><b>‣ ${selectedCountriesAnnounceDisplay[i]}</b> en industria <b>${industryAdsSelector.options[industryAdsSelector.selectedIndex].text}</b> ➠ <b>CPA:</b> ${(absoluteStatsCountries.eeuu.facebookAds.cpa[industryAdsSelector.value]).toFixed(2).replace(".", ",")}</p>
-                            <ul style="list-style-type: none;"><li>- Inversión elegida: USD ${investmentFacebookAdsAmmount.value / selectedCountriesAnnounceOperate.length}</li>
-                            <li>- Numero de conversiones (inversion / CPA):  <strong>${((investmentFacebookAdsAmmount.value / selectedCountriesAnnounceOperate.length) / absoluteStatsCountries.eeuu.facebookAds.cpa[industryAdsSelector.value]).toFixed(2).replace(".", ",")}</strong></li></ul>`;
+                                <ul><li style='list-style: none;'>- Inversión elegida: USD ${investmentFacebookAdsAmmount.value / selectedCountriesAnnounceOperate.length}</li>
+                                <li style='list-style: none;'>- Numero de conversiones (inversion / CPA):  <strong>${((investmentFacebookAdsAmmount.value / selectedCountriesAnnounceOperate.length) / absoluteStatsCountries.eeuu.facebookAds.cpa[industryAdsSelector.value]).toFixed(2).replace(".", ",")}</strong></li></ul>`;
 
                             let thisConversion = Number(((investmentFacebookAdsAmmount.value / selectedCountriesAnnounceOperate.length) / absoluteStatsCountries.eeuu.facebookAds.cpa[industryAdsSelector.value]));
                             facebookAdsConversionsValue += thisConversion;
@@ -1823,16 +1823,16 @@ function calculate() {
                     } else {
                         if (selectedCountry !== "eeuu") {
                             resultFacebookAds.innerHTML += `<p><b>‣ ${selectedCountriesAnnounceDisplay[i]}</b> en industria <b>${industryAdsSelector.options[industryAdsSelector.selectedIndex].text}</b> ➠ <b>CPA:</b> ${(absoluteStatsCountries.eeuu.facebookAds.cpa[industryAdsSelector.value] * relativeStatsCountries[selectedCountry].relativeRateToUSA).toFixed(2).replace(".", ",")}</p>
-                            <ul style="list-style-type: none;"><li>- Inversión proporcional: USD ${investmentFacebookAdsAmmount.value / selectedCountriesAnnounceOperate.length}</li>
-                            <li>- Numero de conversiones (inversion / CPA):  <strong>${((investmentFacebookAdsAmmount.value / selectedCountriesAnnounceOperate.length) / (absoluteStatsCountries.eeuu.facebookAds.cpa[industryAdsSelector.value] * relativeStatsCountries[selectedCountry].relativeRateToUSA) ).toFixed(2).replace(".", ",")}</strong></li></ul>`;
+                                <ul><li style='list-style: none;'>- Inversión proporcional: USD ${investmentFacebookAdsAmmount.value / selectedCountriesAnnounceOperate.length}</li>
+                                <li style='list-style: none;'>- Numero de conversiones (inversion / CPA):  <strong>${((investmentFacebookAdsAmmount.value / selectedCountriesAnnounceOperate.length) / (absoluteStatsCountries.eeuu.facebookAds.cpa[industryAdsSelector.value] * relativeStatsCountries[selectedCountry].relativeRateToUSA)).toFixed(2).replace(".", ",")}</strong></li></ul>`;
 
                             let thisConversion = Number(((investmentFacebookAdsAmmount.value / selectedCountriesAnnounceOperate.length) / (absoluteStatsCountries.eeuu.facebookAds.cpa[industryAdsSelector.value] * relativeStatsCountries[selectedCountry].relativeRateToUSA)));
                             facebookAdsConversionsValue += thisConversion;
 
                         } else if (selectedCountry === "eeuu") {
                             resultFacebookAds.innerHTML += `<p><b>‣ ${selectedCountriesAnnounceDisplay[i]}</b> en industria <b>${industryAdsSelector.options[industryAdsSelector.selectedIndex].text}</b> ➠ <b>CPA:</b> ${(absoluteStatsCountries.eeuu.facebookAds.cpa[industryAdsSelector.value]).toFixed(2).replace(".", ",")}</p>
-                            <ul style="list-style-type: none;"><li>- Inversión proporcional: USD ${investmentFacebookAdsAmmount.value / selectedCountriesAnnounceOperate.length}</li>
-                            <li>- Numero de conversiones (inversion / CPA):  <strong>${((investmentFacebookAdsAmmount.value / selectedCountriesAnnounceOperate.length) / absoluteStatsCountries.eeuu.facebookAds.cpa[industryAdsSelector.value]).toFixed(2).replace(".", ",")}</strong></li></ul>`;
+                                <ul><li style='list-style: none;'>- Inversión proporcional: USD ${investmentFacebookAdsAmmount.value / selectedCountriesAnnounceOperate.length}</li>
+                                <li style='list-style: none;'>- Numero de conversiones (inversion / CPA):  <strong>${((investmentFacebookAdsAmmount.value / selectedCountriesAnnounceOperate.length) / absoluteStatsCountries.eeuu.facebookAds.cpa[industryAdsSelector.value]).toFixed(2).replace(".", ",")}</strong></li></ul>`;
 
                             let thisConversion = Number(((investmentFacebookAdsAmmount.value / selectedCountriesAnnounceOperate.length) / absoluteStatsCountries.eeuu.facebookAds.cpa[industryAdsSelector.value]));
                             facebookAdsConversionsValue += thisConversion;
@@ -1874,7 +1874,7 @@ function calculate() {
             }
             /*--Muestra el valor correspondiente a la cantidad de contactos seleccionados---*/
             totalInvestmentMonthly += Number(emailAmmount.value);
-            resultInvestmentsMonthlyDetail.innerHTML += `<li style="margin-top: 10px"><strong>‣ Email Marketing</strong> USD ${emailAmmount.value} de inversión mensual <small>(Campaña para ${emailAmmount.options[emailAmmount.selectedIndex].text} contactos)</small></li>`;
+            resultInvestmentsMonthlyDetail.innerHTML += `<li style="list-style: none; margin-top: 10px"><strong>‣ Email Marketing</strong> USD ${emailAmmount.value} de inversión mensual <small>(Campaña para ${emailAmmount.options[emailAmmount.selectedIndex].text} contactos)</small></li>`;
 
             maintenanceContent = '';
             emailMarketingValueToPush = 0;
@@ -2092,7 +2092,7 @@ function calculate() {
             googleSearchAdsConversions.innerHTML = `${googleAdsSearchConversionsValue.toFixed(2).replace(".", ",")} conversiones`;
             /*-Se completa el cajón "costo de inversion en medios mensual total"-*/
             totalInvestmentMonthly += Number(investmentGoogleSearchAdsAmmount.value);
-            resultInvestmentsMonthlyDetail.innerHTML += `<li style="margin-top: 10px"><strong>‣ Google Ads Red de Busquedas:</strong> USD ${investmentGoogleSearchAdsAmmount.value} de inversión mensual</li>`;
+            resultInvestmentsMonthlyDetail.innerHTML += `<li style="list-style: none; margin-top: 10px"><strong>‣ Google Ads Red de Busquedas:</strong> USD ${investmentGoogleSearchAdsAmmount.value} de inversión mensual</li>`;
 
         } else {
             resultMaintenanceGoogleSearchAdsContainer.style.display = "none";
@@ -2146,7 +2146,7 @@ function calculate() {
             googleDisplayAdsConversions.innerHTML = `${googleAdsDisplayConversionsValue.toFixed(2).replace(".", ",")} conversiones`;
             /*-Se completa el cajón "costo de inversion en medios mensual total"-*/
             totalInvestmentMonthly += Number(investmentGoogleDisplayAdsAmmount.value);
-            resultInvestmentsMonthlyDetail.innerHTML += `<li style="margin-top: 10px"><strong>‣ Google Ads Red de Display:</strong> USD ${investmentGoogleDisplayAdsAmmount.value} de inversión mensual</li>`;
+            resultInvestmentsMonthlyDetail.innerHTML += `<li style="list-style: none; margin-top: 10px"><strong>‣ Google Ads Red de Display:</strong> USD ${investmentGoogleDisplayAdsAmmount.value} de inversión mensual</li>`;
 
         } else {
             resultMaintenanceGoogleDisplayAdsContainer.style.display = "none";
@@ -2200,7 +2200,7 @@ function calculate() {
             facebookAdsConversions.innerHTML = `${facebookAdsConversionsValue.toFixed(2).replace(".", ",")} conversiones`;
             /*-Se completa el cajón "costo de inversion en medios mensual total"-*/
             totalInvestmentMonthly += Number(investmentFacebookAdsAmmount.value);
-            resultInvestmentsMonthlyDetail.innerHTML += `<li style="margin-top: 10px"><strong>‣ Facebook Ads:</strong> USD ${investmentFacebookAdsAmmount.value} de inversión mensual</li>`;
+            resultInvestmentsMonthlyDetail.innerHTML += `<li style="list-style: none; margin-top: 10px"><strong>‣ Facebook Ads:</strong> USD ${investmentFacebookAdsAmmount.value} de inversión mensual</li>`;
 
         } else {
             resultMaintenanceFacebookAdsContainer.style.display = "none";
@@ -2460,7 +2460,7 @@ function calculate() {
 
         /*---Carca el mensaje de NO se seleccionaron inversiones si se da el caso---*/
         if (!email.checked && !googleSearchAds.checked && !googleDisplayAds.checked && !facebookAds.checked) {
-            resultInvestmentsMonthlyDetail.innerHTML = '<li>No has seleccionado ninguna inversión en medios digitales. <small>(Ej: Google Ads Red de Busquedas, Google Ads Red de Display, Facebook Ads o Email Marketing)</small></li>'
+            resultInvestmentsMonthlyDetail.innerHTML = "<li style='list-style: circle;'>No has seleccionado ninguna inversión en medios digitales. <small>(Ej: Google Ads Red de Busquedas, Google Ads Red de Display, Facebook Ads o Email Marketing)</small></li>";
         }
         /*---Se destaca la implementación en el cajon final, si SOLO se seleccionaron servicios "Diseño Web"---*/
         if (disenoWeb.checked && (!googleSearchAds.checked && !googleDisplayAds.checked && !facebookAds.checked && !communityManagement.checked && !seo.checked && !conversionWeb.checked && !email.checked)) {
@@ -2534,16 +2534,16 @@ categoryTitles.forEach((category, i) => {
 /*---Se ajusta la pantalla al contenido de las pestañas "¿Como obtuvimos estos resultados?" al clickearlas---*/
 qs('#what-does-tab').addEventListener('click', () => {
     setTimeout(() => {
-        qs('#what-does').scrollIntoView();
+        qs('#what-does').scrollIntoView(true);
     }, 250);
 });
 qs('#info-tab').addEventListener('click', () => {
     setTimeout(() => {
-        qs('#info').scrollIntoView();
+        qs('#info').scrollIntoView(true);
     }, 250);
 });
 qs('#statistics-tab').addEventListener('click', () => {
     setTimeout(() => {
-        qs('#statistics').scrollIntoView();
+        qs('#statistics').scrollIntoView(true);
     }, 250);
 });
