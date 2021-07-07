@@ -889,13 +889,12 @@ var investmentGoogleSearchAdsAmmount = qs('#investment-google-search-ads-value')
 var investmentGoogleDisplayAdsAmmount = qs('#investment-google-display-ads-value');
 var investmentFacebookAdsAmmount = qs('#investment-facebook-ads-value');
 
-/*--Se captura el input de email del usuario para validarlo con el siguiente Regex--*/
-var emailCustomerInput = qs('#email-customer');
-var mailFormat = /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/g;
-
 /*---Se captura el bloque que pide cantidad de contactos EMAIL y el menu desplegable con valores---*/
 var emailMarketingContainer = qs('#email-marketing-extra-container');
 var emailAmmount = qs('#email-ammount');
+
+var emailCustomerInput = null;
+var mailFormat = /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/g;
 
 /*---Se capturan los selectores de planes para cada servicio---*/
 var googleSearchAdsPlan = qs('#google-search-ads-plan');
@@ -1283,28 +1282,6 @@ investmentFacebookAdsAmmount.addEventListener('change', function () {
         this.classList.add('error-border');
     }
 });
-/*--Se valida el email cada vez que es cambiado--*/
-let emailCustomerCheck = false;
-emailCustomerInput.addEventListener('change', function () {
-
-    if (emailCustomerInput.value.match(mailFormat)) {
-        emailCustomerCheck = true;
-        this.classList.remove('error-border');
-        /*-Desctiva el mensaje de error tipo 8-*/
-        if (errorType == 9) {
-            errorMessages.innerHTML = '';
-        }
-    } else {
-        emailCustomerCheck = false;
-        this.classList.add('error-border');
-    }
-});
-emailCustomerInput.addEventListener('keyup', function (event) {
-    if (event.keyCode == 13) {
-        event.preventDefault();
-        calculate();
-    }
-}, false);
 
 /*---Se captura el menu desplegable de los paises para anunciarse---*/
 var countryAnnounce = qs('#country-announce');
@@ -1337,7 +1314,6 @@ function deleteCountry(countryPosition) {
     for (let i = 0; i < selectedCountriesAnnounceDisplay.length; i++) {
         listSelectedCountriesAnnounce.innerHTML += `<li>${selectedCountriesAnnounceDisplay[i]}  <i class="fas fa-trash-alt" aria-label="Eliminar país de la lista de selección" onClick="deleteCountry(${i}); return false;"></i></li>`;
     }
-
 }
 
 /*--Funcion que agrega paises a la lista al ser ejecutada (por boton "agregar pais" o al presionar enter)--*/
@@ -1442,6 +1418,34 @@ countryAnnounce.addEventListener('keyup', function (event) {
     }
 }, false);
 
+/*---Evento control email custom p/ Perfit---*/
+var optinCheck = qs('#optin-okXxFSTU');
+optinCheck.addEventListener('change', (e) => {
+    emailCustomerInput = qsa('#optin-okXxFSTU input')[1];
+    if (emailCustomerInput.value.match(mailFormat)) {
+        emailCustomerInput.classList.remove('error-border');
+
+    } else {
+        emailCustomerInput.classList.add('error-border');
+    }
+});
+/*---Evento para eliminar el label externo al completarse el ingreso OK de mail Perfit---*/
+optinCheck.addEventListener('click', () => {
+    setTimeout(() => {
+        if (qs('.p-success') !== null) {
+            qs('.email-customer-container label').classList.add('animated-toggle-base');
+            qs('.email-customer-container label').classList.add('animated-toggle-hide');
+            if (errorType == 9) {
+                errorMessages.innerHTML = '';
+            }
+        } else if (qs('.p-error-message') !== null) {
+            if (errorType == 9) {
+                errorMessages.innerHTML = '';
+            }
+        }
+    }, 2500);
+});
+
 /*---Se captura el bloque que muestra los resultados, y se muestra solamente al seleccionar todas las opciones requeridas---*/
 var formContainer = qs('#form-calculate-container');
 var resultsContainer = qs('#results-container');
@@ -1531,8 +1535,11 @@ function calculate() {
 
     resultInvestmentsMonthlyDetail.innerHTML = '';
 
+    /*---Captura el input de email Optin---*/
+    emailCustomerInput = qsa('#optin-okXxFSTU input')[1];
+
     /*---Se valida que esten todas las etapas seleccionadas, para mostrar los resultados u ocultarlos---*/
-    if (completeFormValidate.includes(false) || !emailCustomerCheck) {
+    if (completeFormValidate.includes(false) || qs('.p-success') == null) {
 
         resultsContainer.style.height = '0';
         resultsContainer.style.opacity = '0';
@@ -1544,7 +1551,7 @@ function calculate() {
             errorMessages.innerHTML = 'Debes seleccionar la cantidad de contactos para Email Marketing';
             emailAmmount.classList.add('error-border');
             errorType = 3;
-            if (emailCustomerCheck == false) {
+            if (qs('.p-success') == null) {
                 emailCustomerInput.classList.add('error-border');
             }
         } else if (completeFormValidate[3] == false && completeFormValidate[4] == false) {
@@ -1561,7 +1568,7 @@ function calculate() {
             if (completeFormValidate[7] == false) {
                 investmentFacebookAdsAmmount.classList.add('error-border');
             }
-            if (emailCustomerCheck == false) {
+            if (qs('.p-success') == null) {
                 emailCustomerInput.classList.add('error-border');
             }
         } else if (completeFormValidate[3] == false) {
@@ -1591,7 +1598,7 @@ function calculate() {
             if (completeFormValidate[7] == false) {
                 investmentFacebookAdsAmmount.classList.add('error-border');
             }
-            if (emailCustomerCheck == false) {
+            if (qs('.p-success') == null) {
                 emailCustomerInput.classList.add('error-border');
             }
         } else if (completeFormValidate[6] == false) {
@@ -1604,7 +1611,7 @@ function calculate() {
             if (completeFormValidate[7] == false) {
                 investmentFacebookAdsAmmount.classList.add('error-border');
             }
-            if (emailCustomerCheck == false) {
+            if (qs('.p-success') == null) {
                 emailCustomerInput.classList.add('error-border');
             }
         } else if (completeFormValidate[7] == false) {
@@ -1617,20 +1624,25 @@ function calculate() {
             if (completeFormValidate[6] == false) {
                 investmentGoogleDisplayAdsAmmount.classList.add('error-border');
             }
-            if (emailCustomerCheck == false) {
+            if (qs('.p-success') == null) {
                 emailCustomerInput.classList.add('error-border');
             }
 
-        } else if (emailCustomerCheck == false) {
-            errorMessages.innerHTML = 'Debes introducir un formato de email valido';
-            emailCustomerInput.classList.add('error-border');
-            errorType = 9;
+        } else if (qs('.p-success') == null) {
+            if (qs('.p-error-message') != null) {
+
+            } else {
+                errorMessages.innerHTML = 'Debes completar tu dirección de email';
+                emailCustomerInput.classList.add('error-border');
+                errorType = 9;
+            }
+
         }
 
     } else if (disenoWeb.checked && (!landingPage.checked && !wordpress.checked && !customWebsite.checked && !ecommerceWeb.checked && !logoMarca.checked)) {
         errorMessages.innerHTML = 'Debes seleccionar un sub-servicio de Diseño Web';
         disenoWebServicesContainer.childNodes[1].classList.add('error-border');
-        if (emailCustomerCheck == false) {
+        if (qs('.p-success') == null) {
             emailCustomerInput.classList.add('error-border');
         }
 
@@ -1643,7 +1655,7 @@ function calculate() {
         resultsContainer.style.height = 'auto';
         resultsContainer.style.opacity = '1';
         calculateButton.style.display = 'none';
-        calculateAgainButton.classList.remove("d-none");
+        calculateAgainButton.classList.remove('d-none');
         errorMessages.innerHTML = '';
     }
     /*---Se capturan los titulos principal y secundario de los resultados---*/
@@ -2489,7 +2501,7 @@ function calculate() {
         formContainer.style.opacity = '1';
         resultsContainer.style.height = '0';
         resultsContainer.style.opacity = '0';
-        calculateAgainButton.classList.add("d-none");
+        calculateAgainButton.classList.add('d-none');
         calculateButton.style.display = 'block';
     }
 

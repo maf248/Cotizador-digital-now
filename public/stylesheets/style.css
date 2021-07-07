@@ -119,6 +119,10 @@ h4 {
 .country-announce-selector {
   text-align: center;
   margin-top: 15px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 }
 
 .selected-country-announce {
@@ -128,6 +132,7 @@ h4 {
 
 #add-country-announce {
   border-radius: 50px;
+  margin-left: 10px;
 }
 
 .form-calculate-container {
@@ -267,17 +272,77 @@ h4 {
 
 .email-customer-container {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   align-items: center;
-  justify-content: space-around;
   padding-top: 25px;
   background: linear-gradient(to right, rgba(255, 255, 255, .5), rgba(232, 232, 232, .5));
 }
 
-.email-customer-container input {
+/*---Estilos de Email Optin de My Perfit---*/
+#optin-okXxFSTU {
+  width: 70%;
+}
+
+.email-customer-container label {
   text-align: center;
-  min-width: 230px;
-  max-width: fit-content;
+}
+
+.email-customer-container .p-body {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  text-align: center;
+  align-items: center;
+  min-height: fit-content !important;
+}
+
+.email-customer-container .p-close {
+  display: none;
+}
+
+.p-optin .p-field label {
+  display: none;
+}
+
+.p-optin .p-field input[type=text].p-error,
+.p-optin .p-field select.p-error {
+  border-color: #FF0000;
+}
+
+.p-optin .p-field .p-error-message {
+  color: #FF0000;
+  font-style: italic;
+  font-size: 0.9em;
+  display: inline-block;
+  margin-top: 5px;
+}
+
+.p-optin .p-success {
+  text-align: center;
+  font-weight: lighter;
+  font-size: 1.4em;
+  color: #00AEEB;
+  margin-top: 10px;
+}
+
+.p-optin .p-interests {
+  display: none;
+}
+
+.email-customer-container button {
+  width: fit-content;
+  white-space: nowrap;
+  padding: 10px 20px;
+  border-radius: 50px;
+  color: white;
+  transition: all .7s ease;
+  color: #0d6efd;
+  border-color: #0d6efd;
+}
+
+.email-customer-container button:hover {
+  color: white;
+  background-color: #0d6efd;
 }
 
 .investment-google-search-ads input,
