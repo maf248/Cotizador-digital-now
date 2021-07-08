@@ -1443,7 +1443,7 @@ optinCheck.addEventListener('click', () => {
                 errorMessages.innerHTML = '';
             }
         }
-    }, 2500);
+    }, 3000);
 });
 
 /*---Se captura el bloque que muestra los resultados, y se muestra solamente al seleccionar todas las opciones requeridas---*/
