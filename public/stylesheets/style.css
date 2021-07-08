@@ -120,7 +120,7 @@ h4 {
   text-align: center;
   margin-top: 15px;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
@@ -595,6 +595,10 @@ button:focus {
     font-size: 0.9rem !important;
   }
 
+  .country-announce-container {
+    width: 90%;
+  }
+
   .info-extra-tab a {
     font-size: 0.75rem !important;
   }
@@ -668,6 +672,10 @@ button:focus {
   .investment-facebook-ads label,
   .email-ammount-container label {
     margin-right: 25px;
+  }
+
+  .country-announce-selector {
+    flex-direction: row;
   }
 
   .seeDetailsMsg {
