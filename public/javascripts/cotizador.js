@@ -1538,6 +1538,9 @@ function calculate() {
     /*---Captura el input de email Optin---*/
     emailCustomerInput = qsa('#optin-okXxFSTU input')[1];
 
+    /*---Se scrollea hacia arriba de todo al calcular---*/
+    window.scroll(0,0);
+
     /*---Se valida que esten todas las etapas seleccionadas, para mostrar los resultados u ocultarlos---*/
     if (completeFormValidate.includes(false) || qs('.p-success') == null) {
 
