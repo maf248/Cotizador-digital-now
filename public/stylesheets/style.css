@@ -20,6 +20,33 @@ h4 {
   font-size: 1rem !important;
 }
 
+.language-selector {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  padding: 0.5em 0.7em;
+  background: rgba(220, 220, 220, .8);
+  display: block;
+  width: auto;
+  height: auto;
+  z-index: 99;
+  border-radius: 0 0 0 10px;
+}
+.language-selector:hover {
+  background: rgba(220, 220, 220, 1);
+}
+
+.language-selector a {
+  color: black;
+  margin: 0;
+  text-align: center;
+  text-decoration: none;
+}
+
+.language-selector a:hover {
+  text-decoration: underline;
+}
+
 .section-padding {
   padding: 25px 0;
 }
@@ -353,6 +380,7 @@ h4 {
   text-indent: -9999px;
   line-height: 0;
 }
+
 .email-customer-container button::after {
   content: '✓';
   text-indent: 0;
@@ -600,7 +628,14 @@ button:focus {
   li {
     font-size: 0.9rem !important;
   }
-
+  .language-selector {
+    width: 3em;
+    font-size: 0.8rem;
+  }
+  .language-selector i {
+    width: 100%;
+    text-align: center;
+  }
   .country-announce-container {
     width: 90%;
   }

@@ -1,0 +1,1379 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>
+        <%= title %>
+    </title>
+    <link rel="icon" href="favicon.ico">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Kodchasan&display=swap" rel="stylesheet">
+    <link rel='stylesheet' media='all' href='/stylesheets/style.css' />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Cotizador marketing digital - Digital Now Argentina">
+    <!-- -jQuery 3.6.0- -->
+    <script src="https://code.jquery.com/jquery-3.6.0.js"
+        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous" defer></script>
+    <!---Bootstrap 5.0.0--->
+    <link rel="stylesheet" media='all'
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css"
+        integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js"
+        integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous"
+        defer>
+        </script>
+    <!---Font Awesome--->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!---Main Script--->
+    <script src="/javascripts/calculator.js" defer></script>
+
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div id="language-selector" class="language-selector">
+            <a href="/esp"><i class="fas fa-globe-americas"></i> ESP</a>
+          </div>
+        <div class="row">
+            <div class="col-3 col-md-2 col-lg-1">
+                <a href="https://digitalnow.com.ar/">
+                    <img src="./images/Logo-Digital-now.png"
+                        alt="Digital Now | Online Marketing Agency - Argentina" class="digitalNowLogo">
+                </a>
+            </div>
+            <div class="col-9 col-md-10 col-lg-11">
+                <h1 class="text-center mb-3">
+                    <%= title %>
+                </h1>
+            </div>
+            <h4 class="mt-4 mb-3" id="info-extra-top-message" style="font-size: 18px !important; font-weight: bold;">
+                Select your
+                answers from the list to get your digital marketing campaign cost estimate...</h4>
+            <section class="form-calculate-container animated-toggle-base" id="form-calculate-container">
+                <h3 class="mt-3 mb-3">From which country are the service providers you want to hire?</h3>
+                <div class="country-supplier-container"> <select name="country-supplier" id="country-supplier"
+                        class="country-supplier">
+                        <option value="argentina">Argentina</option>
+                        <option value="australia">Australia</option>
+                        <option value="bangladesh">Bangladesh</option>
+                        <option value="colombia">Colombia</option>
+                        <option value="inglaterra">England</option>
+                        <option value="india">India</option>
+                        <option value="mexico">Mexico</option>
+                        <option value="filipinas">Philippines</option>
+                        <option value="espana">Spain</option>
+                        <option value="sudafrica">South Africa</option>
+                        <option value="ucrania">Ukraine</option>
+                        <option value="eeuu">United States</option>
+                        <option value="venezuela">Venezuela</option>
+                    </select></div>
+                <h3>Choose the required services:</h3>
+                <div class="services-container card">
+                    <div> <label for="google-search-ads"> <input type="checkbox" name="google-search-ads"
+                                id="google-search-ads" class="services-check"> Google Ads Search Network <small>(Ads
+                                appearing next to search results
+                                in Google)</small> </label></div>
+                    <div> <label for="google-display-ads"> <input type="checkbox" name="google-display-ads"
+                                id="google-display-ads" class="services-check"> Google Display Ads <small>(Ads appearing
+                                in
+                                websites)</small> </label></div>
+                    <div> <label for="facebook-ads"> <input type="checkbox" name="facebook-ads" id="facebook-ads"
+                                class="services-check"> Facebook Ads <small>(Ads in Facebook and Instagram)</small>
+                        </label>
+                    </div>
+                    <div> <label for="communityManagement"> <input type="checkbox" name="community-management"
+                                id="communityManagement" class="services-check"> Social Media Manager </label></div>
+                    <div> <label for="seo"> <input type="checkbox" name="seo" id="seo" class="services-check"> SEO
+                            <small>(Search Engine Optimization)</small> </label></div>
+                    <div> <label for="conversionWeb"> <input type="checkbox" name="conversionWeb" id="conversionWeb"
+                                class="services-check"> Conversion Rate Optimization (CRO) </label></div>
+                    <div> <label for="disenoWeb"> <input type="checkbox" name="disenoWeb" id="disenoWeb"
+                                class="services-check">
+                            Web Design and Development </label></div>
+                    <fieldset id="disenoWebServicesContainer"
+                        class="disenoWebServicesContainer animated-toggle-base animated-toggle-hide"
+                        style="display: none;">
+                        <div class="card" style="flex-direction: column; align-items: flex-start;">
+                            <div> <label for="landingPage"> <input type="checkbox" name="landing-page" id="landingPage"
+                                        class="services-check"> Basic Plan for Landing Page <small>(10 hours)</small>
+                                </label>
+                            </div>
+                            <div> <label for="wordpress"> <input type="checkbox" name="wordpress" id="wordpress"
+                                        class="services-check"> Standard Plan for Website with 5 pages and a pre-design
+                                    template
+                                    <small>(20 hours)</small> </label></div>
+                            <div> <label for="customWebsite"> <input type="checkbox" name="custom-website"
+                                        id="customWebsite" class="services-check"> Premium Plan: Website with a
+                                    personalized design <small>(50
+                                        horas)</small> </label></div>
+                            <div> <label for="ecommerceWeb"> <input type="checkbox" name="ecommerce-web"
+                                        id="ecommerceWeb" class="services-check"> Ecommerce simple website with CMS,
+                                    like WooCommerce, Tienda Nube
+                                    or Shopify
+                                    <small>(20 hours)</small> </label></div>
+                            <div> <label for="logoMarca"> <input type="checkbox" name="logo-marca" id="logoMarca"
+                                        class="services-check"> Logo design and Brand Identity <small>(10 hours)</small>
+                                </label></div>
+                        </div>
+                    </fieldset>
+                    <div> <label for="email"> <input type="checkbox" name="email" id="email" class="services-check">
+                            Email
+                            Marketing </label></div>
+                </div>
+                <div class="services-extra-container card animated-toggle-base animated-toggle-hide"
+                    id="services-extra-container">
+                    <div id="industry-and-country-selectors-container" class="industry-and-country-selectors-container">
+                        <h4 class="text-center info-extra-titles"><strong>Ads:</strong></h4>
+                        <div class="country-announce-container" id="country-announce-container">
+                            <h5 style="text-align: center;">¿En qué país querés que aparezcan tus anuncios?</h5>
+                            <div class="country-announce-selector"> <input list="country-announce-list"
+                                    id="country-announce" />
+                                <datalist name="country-announce-list" id="country-announce-list">
+                                    <option value="Albania" data-value="albania">
+                                    <option value="Algeria" data-value="argelia">
+                                    <option value="Arab Emirates" data-value="emiratosArabes">
+                                    <option value="Argentina" data-value="argentina">
+                                    <option value="Armenia" data-value="armenia">
+                                    <option value="Australia" data-value="australia">
+                                    <option value="Austria" data-value="austria">
+                                    <option value="Bahamas" data-value="bahamas">
+                                    <option value="Bahrain" data-value="barein">
+                                    <option value="Bangladesh" data-value="bangladesh">
+                                    <option value="Belgium" data-value="belgica">
+                                    <option value="Belize" data-value="belice">
+                                    <option value="Bolivia" data-value="bolivia">
+                                    <option value="Brazil" data-value="brasil">
+                                    <option value="Bulgaria" data-value="bulgaria">
+                                    <option value="Cambodia" data-value="camboya">
+                                    <option value="Canada" data-value="canada">
+                                    <option value="Chile" data-value="chile">
+                                    <option value="Colombia" data-value="colombia">
+                                    <option value="Costa Rica" data-value="costaRica">
+                                    <option value="Croatia" data-value="croacia">
+                                    <option value="Czech Republic" data-value="republicaCheca">
+                                    <option value="Denmark" data-value="dinamarca">
+                                    <option value="Dominican Republic" data-value="republicaDominicana">
+                                    <option value="Ecuador" data-value="ecuador">
+                                    <option value="Egypt" data-value="egipto">
+                                    <option value="England" data-value="inglaterra">
+                                    <option value="Finland" data-value="finlandia">
+                                    <option value="France" data-value="francia">
+                                    <option value="Germany" data-value="alemania">
+                                    <option value="Greece" data-value="grecia">
+                                    <option value="Guyana" data-value="guyana">
+                                    <option value="Holland" data-value="holanda">
+                                    <option value="Hungary" data-value="hungria">
+                                    <option value="Iceland" data-value="islandia">
+                                    <option value="India" data-value="india">
+                                    <option value="Indonesia" data-value="indonesia">
+                                    <option value="Ireland" data-value="irlanda">
+                                    <option value="Israel" data-value="israel">
+                                    <option value="Italy" data-value="italia">
+                                    <option value="Jamaica" data-value="jamaica">
+                                    <option value="Japan" data-value="japon">
+                                    <option value="Jordan" data-value="jordania">
+                                    <option value="Kenya" data-value="kenia">
+                                    <option value="Kuwait" data-value="kuwait">
+                                    <option value="Latvia" data-value="letonia">
+                                    <option value="Lebanon" data-value="libano">
+                                    <option value="Liberia" data-value="liberia">
+                                    <option value="Libya" data-value="libia">
+                                    <option value="Lithuania" data-value="lituania">
+                                    <option value="Luxembourg" data-value="luxemburgo">
+                                    <option value="Macedonia" data-value="macedonia">
+                                    <option value="Malaysia" data-value="malasia">
+                                    <option value="Maurice Island" data-value="islaMauricio">
+                                    <option value="Mexico" data-value="mexico">
+                                    <option value="Morocco" data-value="marruecos">
+                                    <option value="Moldova" data-value="moldova">
+                                    <option value="Montenegro" data-value="montenegro">
+                                    <option value="Namibia" data-value="namibia">
+                                    <option value="Nepal" data-value="nepal">
+                                    <option value="New Zealand" data-value="nuevaZelanda">
+                                    <option value="Nicaragua" data-value="nicaragua">
+                                    <option value="Noruega" data-value="noruega">
+                                    <option value="Oman" data-value="oman">
+                                    <option value="Pakistan" data-value="pakistan">
+                                    <option value="Panama" data-value="panama">
+                                    <option value="Peru" data-value="peru">
+                                    <option value="Philippines" data-value="filipinas">
+                                    <option value="Poland" data-value="polonia">
+                                    <option value="Portugal" data-value="portugal">
+                                    <option value="Qatar" data-value="qatar">
+                                    <option value="Romania" data-value="rumania">
+                                    <option value="Rwanda" data-value="ruanda">
+                                    <option value="Russia" data-value="rusia">
+                                    <option value="Salvador" data-value="elSalvador">
+                                    <option value="Saudi Arabia" data-value="arabiaSaudita">
+                                    <option value="Servia" data-value="servia">
+                                    <option value="Singapur" data-value="singapur">
+                                    <option value="Slovakia" data-value="eslovaquia">
+                                    <option value="Slovenia" data-value="eslovenia">
+                                    <option value="Somalia" data-value="somalia">
+                                    <option value="South Korea" data-value="coreaDelSur">
+                                    <option value="South Africa" data-value="sudafrica">
+                                    <option value="Spain" data-value="espana">
+                                    <option value="Sri Lanka" data-value="sriLanka">
+                                    <option value="Sweden" data-value="suecia">
+                                    <option value="Swiss" data-value="suiza">
+                                    <option value="Thailand" data-value="tailandia">
+                                    <option value="Tanzania" data-value="tanzania">
+                                    <option value="Trinidad and Tobago" data-value="trinidadYTobago">
+                                    <option value="Tunisia" data-value="tunez">
+                                    <option value="Turkey" data-value="turquia">
+                                    <option value="Ukraine" data-value="ucrania">
+                                    <option value="Uganda" data-value="uganda">
+                                    <option value="United States" data-value="eeuu">
+                                    <option value="Uruguay" data-value="uruguay">
+                                    <option value="Venezuela" data-value="venezuela">
+                                    <option value="Vietnam" data-value="vietnam">
+                                    <option value="Zimbabwe" data-value="zimbabue">
+                                </datalist>
+                                <form> <button type="button" class="btn btn-outline-primary" id="add-country-announce"
+                                        aria-label="Agregar país a la lista">Add country</button></form>
+                            </div>
+                            <div class="selected-country-announce" id="selected-country-announce"></div>
+                            <div id="country-selection-errors">
+                                <p class="error-messages">Add one or more countries to the list</p>
+                            </div>
+                        </div>
+                        <div id="industry-ads-selector-container" class="industry-ads-selector-container"> <label
+                                for="industry-ads-selector">Selecciona la categoría que más represente tu
+                                industria:</label>
+                            <select name="industry-ads-selector" id="industry-ads-selector">
+                                <option value="">-</option>
+                                <option value="autos">Autos</option>
+                                <option value="negocioANegocio">Negocio a negocio (B2B)</option>
+                                <option value="serviciosAlConsumidor">Servicios al consumidor</option>
+                                <option value="citas">Citas</option>
+                                <option value="eCommerce">E-Commerce</option>
+                                <option value="educacion">Educación</option>
+                                <option value="serviciosDeEmpleos">Servicios de Empleos</option>
+                                <option value="finanzasYSeguros">Finanzas y Seguros</option>
+                                <option value="salud">Salud</option>
+                                <option value="articulosParaElHogar">Artículos para el Hogar</option>
+                                <option value="serviciosIndustriales">Servicios industriales</option>
+                                <option value="serviciosLegales">Servicios Legales</option>
+                                <option value="realEstate">Real Estate</option>
+                                <option value="tecnologia">Tecnología</option>
+                                <option value="viajes">Viajes</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div id="google-search-ads-extra-container" class="google-search-ads-extra-container">
+                        <h4 class="text-center info-extra-titles"><strong>Google Ads Search Network:</strong></h4>
+                        <div class="google-search-plan-container"> <label for="google-search-plan">Select your
+                                plan:<select name="google-search-plan" id="google-search-ads-plan">
+                                    <option value="basic">Basic</option>
+                                    <option value="intermediate">Standard</option>
+                                    <option value="advanced">Premium</option>
+                                </select> </label>
+                            <ul id="google-search-plan-details" style="list-style-type: circle !important;">
+                                <u>Incluye:</u>
+                                <li>4hs de implementación (por única vez)</li>
+                                <li>4hs de mantenimiento mensual</li>
+                            </ul>
+                        </div>
+                        <div id="investment-google-search-ads" class="investment-google-search-ads"> <label
+                                for="investment-google-search-ads-value">Selecciona tus montos deseados de
+                                inversion:</label>
+                            <input type="number" placeholder="Ej: USD $ 100" name="investment-google-search-ads-value"
+                                id="investment-google-search-ads-value">
+                        </div>
+                    </div>
+                    <div id="google-display-ads-extra-container" class="google-display-ads-extra-container">
+                        <h4 class="text-center info-extra-titles"><strong>Google Display Ads:</strong></h4>
+                        <div class="google-display-plan-container"> <label for="google-display-plan">Select your
+                                plan:<select name="google-display-plan" id="google-display-ads-plan">
+                                    <option value="basic">Basic</option>
+                                    <option value="intermediate">Standard</option>
+                                    <option value="advanced">Premium</option>
+                                </select> </label>
+                            <ul id="google-display-plan-details" style="list-style-type: circle !important;">
+                                <u>Incluye:</u>
+                                <li>4hs de implementación (por única vez)</li>
+                                <li>4hs de mantenimiento mensual</li>
+                            </ul>
+                        </div>
+                        <div id="investment-google-display-ads" class="investment-google-display-ads"> <label
+                                for="investment-google-display-ads-value">Selecciona tus montos deseados de
+                                inversion:</label>
+                            <input type="number" placeholder="Ej: USD $ 100" name="investment-google-display-ads-value"
+                                id="investment-google-display-ads-value">
+                        </div>
+                    </div>
+                    <div id="facebook-ads-extra-container" class="facebook-ads-extra-container">
+                        <h4 class="text-center info-extra-titles"><strong>Facebook Ads:</strong></h4>
+                        <div class="facebook-plan-container"> <label for="facebook-ads-plan">Select your plan:<select
+                                    name="facebook-ads-plan" id="facebook-ads-plan">
+                                    <option value="basic">Basic</option>
+                                    <option value="intermediate">Standard</option>
+                                    <option value="advanced">Premium</option>
+                                </select> </label>
+                            <ul id="facebook-ads-plan-details" style="list-style-type: circle !important;">
+                                <u>Incluye:</u>
+                                <li>4hs de implementación (por única vez)</li>
+                                <li>4hs de mantenimiento mensual</li>
+                            </ul>
+                        </div>
+                        <div id="investment-facebook-ads" class="investment-facebook-ads"> <label
+                                for="investment-facebook-ads-value">Selecciona tus montos deseados de inversion:</label>
+                            <input type="number" placeholder="Ej: USD $ 100" name="investment-facebook-ads-value"
+                                id="investment-facebook-ads-value"></div>
+                    </div>
+                    <div class="community-management-extra-container" id="community-management-extra-container">
+                        <h4 class="text-center info-extra-titles"><strong>Social Media Manager:</strong></h4>
+                        <div class="community-management-plan-container"> <label
+                                for="community-management-plan">Select your plan:<select name="community-management-plan" id="community-management-plan">
+                                    <option value="basic">Basic</option>
+                                    <option value="intermediate">Standard</option>
+                                    <option value="advanced">Premium</option>
+                                </select> </label>
+                            <ul id="community-management-plan-details" style="list-style-type: circle !important;">
+                                <u>Incluye:</u>
+                                <li>2hs de implementación (por única vez)</li>
+                                <li>8hs de mantenimiento mensual</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="seo-extra-container" id="seo-extra-container">
+                        <h4 class="text-center info-extra-titles"><strong>SEO <small>Search Engine Optimization</small>:</strong></h4>
+                        <div class="seo-plan-container"> <label for="seo-plan">Select your plan:<select name="seo-plan"
+                                    id="seo-plan">
+                                    <option value="basic">Basic</option>
+                                    <option value="intermediate">Standard</option>
+                                    <option value="advanced">Premium</option>
+                                </select> </label>
+                            <ul id="seo-plan-details" style="list-style-type: circle !important;"><u>Incluye:</u>
+                                <li>4hs de implementación (por única vez)</li>
+                                <li>8hs de mantenimiento mensual</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="conversion-web-extra-container" id="conversion-web-extra-container">
+                        <h4 class="text-center info-extra-titles"><strong>Conversion Rate Optimization (CRO):</strong></h4>
+                        <div class="conversion-web-plan-container"> <label for="conversion-web-plan">Select your
+                                plan:<select name="conversion-web-plan" id="conversion-web-plan">
+                                    <option value="basic">Basic</option>
+                                    <option value="intermediate">Standard</option>
+                                    <option value="advanced">Premium</option>
+                                </select> </label>
+                            <ul id="conversion-web-plan-details" style="list-style-type: circle !important;">
+                                <u>Incluye:</u>
+                                <li>4hs de implementación (por única vez)</li>
+                                <li>4hs de mantenimiento mensual</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="email-marketing-extra-container" id="email-marketing-extra-container">
+                        <h4 class="text-center info-extra-titles"><strong>Email Marketing:</strong></h4>
+                        <div class="email-plan-container"> <label for="email-marketing-plan">Select your plan:<select
+                                    name="email-marketing-plan" id="email-marketing-plan">
+                                    <option value="basic">Basic</option>
+                                    <option value="intermediate">Standard</option>
+                                    <option value="advanced">Premium</option>
+                                </select> </label>
+                            <ul id="email-marketing-plan-details" style="list-style-type: circle !important;">
+                                <u>Incluye:</u>
+                                <li>1 Envio mensual (2hs de mantenimiento)</li>
+                            </ul>
+                        </div>
+                        <div class="email-ammount-container"> <label for="email-ammount">Selecciona la cantidad deseada
+                                de
+                                contactos para tus campañas, se estimará el costo mensual de la plataforma de
+                                envíos:</label>
+                            <select name="email-ammount" id="email-ammount">
+                                <option value="">-</option>
+                                <option value="12">1.000</option>
+                                <option value="25">2.500</option>
+                                <option value="44">5.000</option>
+                                <option value="54">7.500</option>
+                                <option value="65">10.000</option>
+                                <option value="83">15.000</option>
+                                <option value="101">20.000</option>
+                                <option value="119">25.000</option>
+                                <option value="137">30.000</option>
+                                <option value="155">35.000</option>
+                                <option value="173">40.000</option>
+                                <option value="191">45.000</option>
+                                <option value="210">50.000</option>
+                                <option value="229">55.000</option>
+                                <option value="248">60.000</option>
+                                <option value="267">65.000</option>
+                                <option value="286">70.000</option>
+                                <option value="305">75.000</option>
+                                <option value="324">80.000</option>
+                                <option value="343">85.000</option>
+                                <option value="362">90.000</option>
+                                <option value="381">95.000</option>
+                                <option value="400">100.000</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="email-customer-container"> <label for="fields[3]">Ingresá tu email para ver los
+                            resultados:</label>
+                        <div id="optin-okXxFSTU" data-type="inline"></div>
+                        <script type="text/javascript"
+                            src="https://optin.myperfit.com/res/js/digitalnow/okXxFSTU.js"></script>
+                    </div>
+                </div>
+                <p id="error-messages" class="error-messages" style="margin-top: 15px;"></p>
+                <div class="d-flex mb-2 justify-content-center"><button type="submit"
+                        class="calculateButton btn-secondary" id="calculateButton" aria-label="Calcular resultados"><i
+                            class="fas fa-calculator"></i>
+                        Calculate</button></div>
+            </section>
+            <section class="animated-toggle-hide" id="results-container">
+                <div class="d-flex mb-2 justify-content-center"> <button type="reset"
+                        class="calculateAgainButton btn-secondary d-none" id="calculateAgainButton"
+                        aria-label="Volver a calcular nuevamente"><i class="fas fa-undo-alt"></i> Calculate
+                        again</button>
+                </div>
+                <h2 class="results-first-title" style="display: none;">Results:</h2>
+                <div class="bubble-click-results-container" id="bubble-click-results-container">
+                    <div class="bubble-results">
+                        <div class="txt">
+                            <p class="name">Digital Now<span> ~ Help</span></p>
+                            <p class="message" id="bubble-results-message">¡Hacé click en los cajones para ver más
+                                detalles!</p>
+                            <span class="timestamp" id="bubble-results-timestamp"></span>
+                        </div>
+                        <div class="bubble-arrow"></div>
+                    </div>
+                </div>
+                <div id="result-googleads-facebookads-container" style="display: none;">
+                    <div id="accordionMonthlyTotals">
+                        <div class="card">
+                            <div class="card-header results-collapsible result-category-titles"
+                                id="headingMonthlyTotals" data-toggle="collapse" data-target="#collapseMonthlyTotals"
+                                aria-expanded="false" aria-controls="collapseMonthlyTotals">
+                                <h3 class="titlesCollapse"> <i class="iconsToRotate fas fa-angle-double-down"></i>
+                                    <p><u>Monthly results <span id="results-conversions-selected"></span>:</u>
+                                        <strong id="total-conversions"></strong> total conversions</p>
+                                    <p class="seeDetailsMsg"><i class="far fa-hand-pointer"></i> Click to see more...
+                                    </p>
+                                </h3>
+                            </div>
+                            <div id="collapseMonthlyTotals" class="collapse" aria-labelledby="headingMonthlyTotals"
+                                data-parent="#accordionMonthlyTotals">
+                                <div class="card-body">
+                                    <div id="result-google-search-ads-container" style="display: none">
+                                        <div id="accordionGSAds">
+                                            <div class="card">
+                                                <div class="card-header results-collapsible result-service-titles"
+                                                    id="headingGSAds" data-toggle="collapse"
+                                                    data-target="#collapseGSAds" aria-expanded="false"
+                                                    aria-controls="collapseGSAds">
+                                                    <h4 class="titlesCollapse"> <i
+                                                            class="iconsToRotate fas fa-angle-down"></i>
+                                                        <p><u><strong>Google Ads Search Network:</strong></u>
+                                                            <nobr> <span id="google-search-ads-conversions"></span>
+                                                            </nobr>
+                                                        </p>
+                                                        <p class="seeDetailsMsg"><i class="far fa-hand-pointer"></i>
+                                                            Click to
+                                                            see more...</p>
+                                                    </h4>
+                                                </div>
+                                                <div id="collapseGSAds" class="collapse" aria-labelledby="headingGSAds"
+                                                    data-parent="#accordionGSAds">
+                                                    <div class="card-body">
+                                                        <div id="result-google-search" style="margin: 10px"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div id="result-google-display-ads-container" style="display: none">
+                                        <div id="accordionGDAds">
+                                            <div class="card">
+                                                <div class="card-header results-collapsible result-service-titles"
+                                                    id="headingGDAds" data-toggle="collapse"
+                                                    data-target="#collapseGDAds" aria-expanded="false"
+                                                    aria-controls="collapseGDAds">
+                                                    <h4 class="titlesCollapse"> <i
+                                                            class="iconsToRotate fas fa-angle-down"></i>
+                                                        <p><u><strong>Google Display Ads:</strong></u>
+                                                            <nobr> <span id="google-display-ads-conversions"></span>
+                                                            </nobr>
+                                                        </p>
+                                                        <p class="seeDetailsMsg"><i class="far fa-hand-pointer"></i>
+                                                            Click to
+                                                            see more...</p>
+                                                    </h4>
+                                                </div>
+                                                <div id="collapseGDAds" class="collapse" aria-labelledby="headingGDAds"
+                                                    data-parent="#accordionGDAds">
+                                                    <div class="card-body">
+                                                        <div id="result-google-display" style="margin: 10px"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div id="result-facebook-ads-container" style="display: none">
+                                        <div id="accordionFbAds">
+                                            <div class="card">
+                                                <div class="card-header results-collapsible result-service-titles"
+                                                    id="headingFbAds" data-toggle="collapse"
+                                                    data-target="#collapseFbAds" aria-expanded="false"
+                                                    aria-controls="collapseFbAds">
+                                                    <h4 class="titlesCollapse"> <i
+                                                            class="iconsToRotate fas fa-angle-down"></i>
+                                                        <p><u><strong>Facebook Ads:</strong></u>
+                                                            <nobr> <span id="facebook-ads-conversions"></span> </nobr>
+                                                        </p>
+                                                        <p class="seeDetailsMsg"><i class="far fa-hand-pointer"></i>
+                                                            Click to
+                                                            see more...</p>
+                                                    </h4>
+                                                </div>
+                                                <div id="collapseFbAds" class="collapse" aria-labelledby="headingFbAds"
+                                                    data-parent="#accordionFbAds">
+                                                    <div class="card-body">
+                                                        <div id="result-facebook-ads" style="margin: 10px"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <h2 class="results-second-title">Costs:</h2>
+                <div id="result-implementation-container">
+                    <div id="accordionOne">
+                        <div class="card">
+                            <div class="card-header results-collapsible result-category-titles" id="headingOne"
+                                data-toggle="collapse" data-target="#collapseOne" aria-expanded="false"
+                                aria-controls="collapseOne">
+                                <h3 class="titlesCollapse"> <i class="iconsToRotate fas fa-angle-double-down"></i>
+                                    <p><u>Costo de servicios de implementación (1 vez):</u>
+                                        <nobr> <span id="result-implementation-fee"></span> </nobr>
+                                    </p>
+                                    <p class="seeDetailsMsg"><i class="far fa-hand-pointer"></i> Click to see more...
+                                    </p>
+                                </h3>
+                            </div>
+                            <div id="collapseOne" class="collapse" aria-labelledby="headingOne"
+                                data-parent="#accordionOne">
+                                <div class="card-body">
+                                    <div id="result-implementation-conversionWeb-container" style="display: none">
+                                        <div id="accordion-implementation-conversionWeb">
+                                            <div class="card">
+                                                <div class="card-header results-collapsible result-service-titles"
+                                                    id="heading-implementation-conversionWeb" data-toggle="collapse"
+                                                    data-target="#collapse-implementation-conversionWeb"
+                                                    aria-expanded="false"
+                                                    aria-controls="collapse-implementation-conversionWeb">
+                                                    <h4 class="titlesCollapse"> <i
+                                                            class="iconsToRotate fas fa-angle-down"></i>
+                                                        <p id="title-implementation-conversionWeb"></p>
+                                                        <p class="seeDetailsMsg"><i class="far fa-hand-pointer"></i>
+                                                            Click to
+                                                            see more...</p>
+                                                    </h4>
+                                                </div>
+                                                <div id="collapse-implementation-conversionWeb" class="collapse"
+                                                    aria-labelledby="heading-implementation-conversionWeb"
+                                                    data-parent="#accordion-implementation-conversionWeb">
+                                                    <div class="card-body">
+                                                        <div id="result-implementation-conversionWeb"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div id="result-implementation-seo-container" style="display: none">
+                                        <div id="accordion-implementation-seo">
+                                            <div class="card">
+                                                <div class="card-header results-collapsible result-service-titles"
+                                                    id="heading-implementation-seo" data-toggle="collapse"
+                                                    data-target="#collapse-implementation-seo" aria-expanded="false"
+                                                    aria-controls="collapse-implementation-seo">
+                                                    <h4 class="titlesCollapse"> <i
+                                                            class="iconsToRotate fas fa-angle-down"></i>
+                                                        <p id="title-implementation-seo"></p>
+                                                        <p class="seeDetailsMsg"><i class="far fa-hand-pointer"></i>
+                                                            Click to
+                                                            see more...</p>
+                                                    </h4>
+                                                </div>
+                                                <div id="collapse-implementation-seo" class="collapse"
+                                                    aria-labelledby="heading-implementation-seo"
+                                                    data-parent="#accordion-implementation-seo">
+                                                    <div class="card-body">
+                                                        <div id="result-implementation-seo"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div id="result-implementation-communityManagement-container" style="display: none">
+                                        <div id="accordion-implementation-communityManagement">
+                                            <div class="card">
+                                                <div class="card-header results-collapsible result-service-titles"
+                                                    id="heading-implementation-communityManagement"
+                                                    data-toggle="collapse"
+                                                    data-target="#collapse-implementation-communityManagement"
+                                                    aria-expanded="false"
+                                                    aria-controls="collapse-implementation-communityManagement">
+                                                    <h4 class="titlesCollapse"> <i
+                                                            class="iconsToRotate fas fa-angle-down"></i>
+                                                        <p id="title-implementation-communityManagement"></p>
+                                                        <p class="seeDetailsMsg"><i class="far fa-hand-pointer"></i>
+                                                            Click to
+                                                            see more...</p>
+                                                    </h4>
+                                                </div>
+                                                <div id="collapse-implementation-communityManagement" class="collapse"
+                                                    aria-labelledby="heading-implementation-communityManagement"
+                                                    data-parent="#accordion-implementation-communityManagement">
+                                                    <div class="card-body">
+                                                        <div id="result-implementation-communityManagement"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div id="result-implementation-googleSearchAds-container" style="display: none">
+                                        <div id="accordion-implementation-googleSearchAds">
+                                            <div class="card">
+                                                <div class="card-header results-collapsible result-service-titles"
+                                                    id="heading-implementation-googleSearchAds" data-toggle="collapse"
+                                                    data-target="#collapse-implementation-googleSearchAds"
+                                                    aria-expanded="false"
+                                                    aria-controls="collapse-implementation-googleSearchAds">
+                                                    <h4 class="titlesCollapse"> <i
+                                                            class="iconsToRotate fas fa-angle-down"></i>
+                                                        <p id="title-implementation-googleSearchAds"></p>
+                                                        <p class="seeDetailsMsg"><i class="far fa-hand-pointer"></i>
+                                                            Click to
+                                                            see more...</p>
+                                                    </h4>
+                                                </div>
+                                                <div id="collapse-implementation-googleSearchAds" class="collapse"
+                                                    aria-labelledby="heading-implementation-googleSearchAds"
+                                                    data-parent="#accordion-implementation-googleSearchAds">
+                                                    <div class="card-body">
+                                                        <div id="result-implementation-googleSearchAds"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div id="result-implementation-googleDisplayAds-container" style="display: none">
+                                        <div id="accordion-implementation-googleDisplayAds">
+                                            <div class="card">
+                                                <div class="card-header results-collapsible result-service-titles"
+                                                    id="heading-implementation-googleDisplayAds" data-toggle="collapse"
+                                                    data-target="#collapse-implementation-googleDisplayAds"
+                                                    aria-expanded="false"
+                                                    aria-controls="collapse-implementation-googleDisplayAds">
+                                                    <h4 class="titlesCollapse"> <i
+                                                            class="iconsToRotate fas fa-angle-down"></i>
+                                                        <p id="title-implementation-googleDisplayAds"></p>
+                                                        <p class="seeDetailsMsg"><i class="far fa-hand-pointer"></i>
+                                                            Click to
+                                                            see more...</p>
+                                                    </h4>
+                                                </div>
+                                                <div id="collapse-implementation-googleDisplayAds" class="collapse"
+                                                    aria-labelledby="heading-implementation-googleDisplayAds"
+                                                    data-parent="#accordion-implementation-googleDisplayAds">
+                                                    <div class="card-body">
+                                                        <div id="result-implementation-googleDisplayAds"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div id="result-implementation-facebookAds-container" style="display: none">
+                                        <div id="accordion-implementation-facebookAds">
+                                            <div class="card">
+                                                <div class="card-header results-collapsible result-service-titles"
+                                                    id="heading-implementation-facebookAds" data-toggle="collapse"
+                                                    data-target="#collapse-implementation-facebookAds"
+                                                    aria-expanded="false"
+                                                    aria-controls="collapse-implementation-facebookAds">
+                                                    <h4 class="titlesCollapse"> <i
+                                                            class="iconsToRotate fas fa-angle-down"></i>
+                                                        <p id="title-implementation-facebookAds"></p>
+                                                        <p class="seeDetailsMsg"><i class="far fa-hand-pointer"></i>
+                                                            Click to
+                                                            see more...</p>
+                                                    </h4>
+                                                </div>
+                                                <div id="collapse-implementation-facebookAds" class="collapse"
+                                                    aria-labelledby="heading-implementation-facebookAds"
+                                                    data-parent="#accordion-implementation-facebookAds">
+                                                    <div class="card-body">
+                                                        <div id="result-implementation-facebookAds"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div id="result-implementation-landingPage-container" style="display: none">
+                                        <div id="accordion-implementation-landingPage">
+                                            <div class="card">
+                                                <div class="card-header results-collapsible result-service-titles"
+                                                    id="heading-implementation-landingPage" data-toggle="collapse"
+                                                    data-target="#collapse-implementation-landingPage"
+                                                    aria-expanded="false"
+                                                    aria-controls="collapse-implementation-landingPage">
+                                                    <h4 class="titlesCollapse"> <i
+                                                            class="iconsToRotate fas fa-angle-down"></i>
+                                                        <p id="title-implementation-landingPage"></p>
+                                                        <p class="seeDetailsMsg"><i class="far fa-hand-pointer"></i>
+                                                            Click to
+                                                            see more...</p>
+                                                    </h4>
+                                                </div>
+                                                <div id="collapse-implementation-landingPage" class="collapse"
+                                                    aria-labelledby="heading-implementation-landingPage"
+                                                    data-parent="#accordion-implementation-landingPage">
+                                                    <div class="card-body">
+                                                        <div id="result-implementation-landingPage"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div id="result-implementation-wordpress-container" style="display: none">
+                                        <div id="accordion-implementation-wordpress">
+                                            <div class="card">
+                                                <div class="card-header results-collapsible result-service-titles"
+                                                    id="heading-implementation-wordpress" data-toggle="collapse"
+                                                    data-target="#collapse-implementation-wordpress"
+                                                    aria-expanded="false"
+                                                    aria-controls="collapse-implementation-wordpress">
+                                                    <h4 class="titlesCollapse"> <i
+                                                            class="iconsToRotate fas fa-angle-down"></i>
+                                                        <p id="title-implementation-wordpress"></p>
+                                                        <p class="seeDetailsMsg"><i class="far fa-hand-pointer"></i>
+                                                            Click to
+                                                            see more...</p>
+                                                    </h4>
+                                                </div>
+                                                <div id="collapse-implementation-wordpress" class="collapse"
+                                                    aria-labelledby="heading-implementation-wordpress"
+                                                    data-parent="#accordion-implementation-wordpress">
+                                                    <div class="card-body">
+                                                        <div id="result-implementation-wordpress"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div id="result-implementation-customWebsite-container" style="display: none">
+                                        <div id="accordion-implementation-customWebsite">
+                                            <div class="card">
+                                                <div class="card-header results-collapsible result-service-titles"
+                                                    id="heading-implementation-customWebsite" data-toggle="collapse"
+                                                    data-target="#collapse-implementation-customWebsite"
+                                                    aria-expanded="false"
+                                                    aria-controls="collapse-implementation-customWebsite">
+                                                    <h4 class="titlesCollapse"> <i
+                                                            class="iconsToRotate fas fa-angle-down"></i>
+                                                        <p id="title-implementation-customWebsite"></p>
+                                                        <p class="seeDetailsMsg"><i class="far fa-hand-pointer"></i>
+                                                            Click to
+                                                            see more...</p>
+                                                    </h4>
+                                                </div>
+                                                <div id="collapse-implementation-customWebsite" class="collapse"
+                                                    aria-labelledby="heading-implementation-customWebsite"
+                                                    data-parent="#accordion-implementation-customWebsite">
+                                                    <div class="card-body">
+                                                        <div id="result-implementation-customWebsite"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div id="result-implementation-ecommerceWeb-container" style="display: none">
+                                        <div id="accordion-implementation-ecommerceWeb">
+                                            <div class="card">
+                                                <div class="card-header results-collapsible result-service-titles"
+                                                    id="heading-implementation-ecommerceWeb" data-toggle="collapse"
+                                                    data-target="#collapse-implementation-ecommerceWeb"
+                                                    aria-expanded="false"
+                                                    aria-controls="collapse-implementation-ecommerceWeb">
+                                                    <h4 class="titlesCollapse"> <i
+                                                            class="iconsToRotate fas fa-angle-down"></i>
+                                                        <p id="title-implementation-ecommerceWeb"></p>
+                                                        <p class="seeDetailsMsg"><i class="far fa-hand-pointer"></i>
+                                                            Click to
+                                                            see more...</p>
+                                                    </h4>
+                                                </div>
+                                                <div id="collapse-implementation-ecommerceWeb" class="collapse"
+                                                    aria-labelledby="heading-implementation-ecommerceWeb"
+                                                    data-parent="#accordion-implementation-ecommerceWeb">
+                                                    <div class="card-body">
+                                                        <div id="result-implementation-ecommerceWeb"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div id="result-implementation-logoYMarca-container" style="display: none">
+                                        <div id="accordion-implementation-logoYMarca">
+                                            <div class="card">
+                                                <div class="card-header results-collapsible result-service-titles"
+                                                    id="heading-implementation-logoYMarca" data-toggle="collapse"
+                                                    data-target="#collapse-implementation-logoYmarca"
+                                                    aria-expanded="false"
+                                                    aria-controls="collapse-implementation-logoYmarca">
+                                                    <h4 class="titlesCollapse"> <i
+                                                            class="iconsToRotate fas fa-angle-down"></i>
+                                                        <p id="title-implementation-logoYMarca"></p>
+                                                        <p class="seeDetailsMsg"><i class="far fa-hand-pointer"></i>
+                                                            Click to
+                                                            see more...</p>
+                                                    </h4>
+                                                </div>
+                                                <div id="collapse-implementation-logoYmarca" class="collapse"
+                                                    aria-labelledby="heading-implementation-logoYMarca"
+                                                    data-parent="#accordion-implementation-logoYMarca">
+                                                    <div class="card-body">
+                                                        <div id="result-implementation-logoYMarca"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="result-maintenance-container">
+                    <div id="accordionTwo">
+                        <div class="card">
+                            <div class="card-header results-collapsible result-category-titles" id="headingTwo"
+                                data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false"
+                                aria-controls="collapseTwo">
+                                <h3 class="titlesCollapse"> <i class="iconsToRotate fas fa-angle-double-down"></i>
+                                    <p><u>Costo mensual de servicios de mantenimiento:</u>
+                                        <nobr> <span id="result-maintenance-fee"></span> </nobr>
+                                    </p>
+                                    <p class="seeDetailsMsg"><i class="far fa-hand-pointer"></i> Click to see more...
+                                    </p>
+                                </h3>
+                            </div>
+                            <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo"
+                                data-parent="#accordionTwo">
+                                <div class="card-body">
+                                    <div id="result-maintenance-email-container" style="display: none">
+                                        <div id="accordion-maintenance-email">
+                                            <div class="card">
+                                                <div class="card-header results-collapsible result-service-titles"
+                                                    id="heading-maintenance-email" data-toggle="collapse"
+                                                    data-target="#collapse-maintenance-email" aria-expanded="false"
+                                                    aria-controls="collapse-maintenance-email">
+                                                    <h4 class="titlesCollapse"> <i
+                                                            class="iconsToRotate fas fa-angle-down"></i>
+                                                        <p id="title-maintenance-email"></p>
+                                                        <p class="seeDetailsMsg"><i class="far fa-hand-pointer"></i>
+                                                            Click to
+                                                            see more...</p>
+                                                    </h4>
+                                                </div>
+                                                <div id="collapse-maintenance-email" class="collapse"
+                                                    aria-labelledby="heading-maintenance-email"
+                                                    data-parent="#accordion-maintenance-email">
+                                                    <div class="card-body">
+                                                        <div id="result-maintenance-email"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div id="result-maintenance-conversionWeb-container" style="display: none">
+                                        <div id="accordion-maintenance-conversionWeb">
+                                            <div class="card">
+                                                <div class="card-header results-collapsible result-service-titles"
+                                                    id="heading-maintenance-conversionWeb" data-toggle="collapse"
+                                                    data-target="#collapse-maintenance-conversionWeb"
+                                                    aria-expanded="false"
+                                                    aria-controls="collapse-maintenance-conversionWeb">
+                                                    <h4 class="titlesCollapse"> <i
+                                                            class="iconsToRotate fas fa-angle-down"></i>
+                                                        <p id="title-maintenance-conversionWeb"></p>
+                                                        <p class="seeDetailsMsg"><i class="far fa-hand-pointer"></i>
+                                                            Click to
+                                                            see more...</p>
+                                                    </h4>
+                                                </div>
+                                                <div id="collapse-maintenance-conversionWeb" class="collapse"
+                                                    aria-labelledby="heading-maintenance-conversionWeb"
+                                                    data-parent="#accordion-maintenance-conversionWeb">
+                                                    <div class="card-body">
+                                                        <div id="result-maintenance-conversionWeb"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div id="result-maintenance-seo-container" style="display: none">
+                                        <div id="accordion-maintenance-seo">
+                                            <div class="card">
+                                                <div class="card-header results-collapsible result-service-titles"
+                                                    id="heading-maintenance-seo" data-toggle="collapse"
+                                                    data-target="#collapse-maintenance-seo" aria-expanded="false"
+                                                    aria-controls="collapse-maintenance-seo">
+                                                    <h4 class="titlesCollapse"> <i
+                                                            class="iconsToRotate fas fa-angle-down"></i>
+                                                        <p id="title-maintenance-seo"></p>
+                                                        <p class="seeDetailsMsg"><i class="far fa-hand-pointer"></i>
+                                                            Click to
+                                                            see more...</p>
+                                                    </h4>
+                                                </div>
+                                                <div id="collapse-maintenance-seo" class="collapse"
+                                                    aria-labelledby="heading-maintenance-seo"
+                                                    data-parent="#accordion-maintenance-seo">
+                                                    <div class="card-body">
+                                                        <div id="result-maintenance-seo"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div id="result-maintenance-communityManagement-container" style="display: none">
+                                        <div id="accordion-maintenance-communityManagement">
+                                            <div class="card">
+                                                <div class="card-header results-collapsible result-service-titles"
+                                                    id="heading-maintenance-communityManagement" data-toggle="collapse"
+                                                    data-target="#collapse-maintenance-communityManagement"
+                                                    aria-expanded="false"
+                                                    aria-controls="collapse-maintenance-communityManagement">
+                                                    <h4 class="titlesCollapse"> <i
+                                                            class="iconsToRotate fas fa-angle-down"></i>
+                                                        <p id="title-maintenance-communityManagement"></p>
+                                                        <p class="seeDetailsMsg"><i class="far fa-hand-pointer"></i>
+                                                            Click to
+                                                            see more...</p>
+                                                    </h4>
+                                                </div>
+                                                <div id="collapse-maintenance-communityManagement" class="collapse"
+                                                    aria-labelledby="heading-maintenance-communityManagement"
+                                                    data-parent="#accordion-maintenance-communityManagement">
+                                                    <div class="card-body">
+                                                        <div id="result-maintenance-communityManagement"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div id="result-maintenance-googleSearchAds-container" style="display: none">
+                                        <div id="accordion-maintenance-googleSearchAds">
+                                            <div class="card">
+                                                <div class="card-header results-collapsible result-service-titles"
+                                                    id="heading-maintenance-googleSearchAds" data-toggle="collapse"
+                                                    data-target="#collapse-maintenance-googleSearchAds"
+                                                    aria-expanded="false"
+                                                    aria-controls="collapse-maintenance-googleSearchAds">
+                                                    <h4 class="titlesCollapse"> <i
+                                                            class="iconsToRotate fas fa-angle-down"></i>
+                                                        <p id="title-maintenance-googleSearchAds"></p>
+                                                        <p class="seeDetailsMsg"><i class="far fa-hand-pointer"></i>
+                                                            Click to
+                                                            see more...</p>
+                                                    </h4>
+                                                </div>
+                                                <div id="collapse-maintenance-googleSearchAds" class="collapse"
+                                                    aria-labelledby="heading-maintenance-googleSearchAds"
+                                                    data-parent="#accordion-maintenance-googleSearchAds">
+                                                    <div class="card-body">
+                                                        <div id="result-maintenance-googleSearchAds"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div id="result-maintenance-googleDisplayAds-container" style="display: none">
+                                        <div id="accordion-maintenance-googleDisplayAds">
+                                            <div class="card">
+                                                <div class="card-header results-collapsible result-service-titles"
+                                                    id="heading-maintenance-googleDisplayAds" data-toggle="collapse"
+                                                    data-target="#collapse-maintenance-googleDisplayAds"
+                                                    aria-expanded="false"
+                                                    aria-controls="collapse-maintenance-googleDisplayAds">
+                                                    <h4 class="titlesCollapse"> <i
+                                                            class="iconsToRotate fas fa-angle-down"></i>
+                                                        <p id="title-maintenance-googleDisplayAds"></p>
+                                                        <p class="seeDetailsMsg"><i class="far fa-hand-pointer"></i>
+                                                            Click to
+                                                            see more...</p>
+                                                    </h4>
+                                                </div>
+                                                <div id="collapse-maintenance-googleDisplayAds" class="collapse"
+                                                    aria-labelledby="heading-maintenance-googleDisplayAds"
+                                                    data-parent="#accordion-maintenance-googleDisplayAds">
+                                                    <div class="card-body">
+                                                        <div id="result-maintenance-googleDisplayAds"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div id="result-maintenance-facebookAds-container" style="display: none">
+                                        <div id="accordion-maintenance-facebookAds">
+                                            <div class="card">
+                                                <div class="card-header results-collapsible result-service-titles"
+                                                    id="heading-maintenance-facebookAds" data-toggle="collapse"
+                                                    data-target="#collapse-maintenance-facebookAds"
+                                                    aria-expanded="false"
+                                                    aria-controls="collapse-maintenance-facebookAds">
+                                                    <h4 class="titlesCollapse"> <i
+                                                            class="iconsToRotate fas fa-angle-down"></i>
+                                                        <p id="title-maintenance-facebookAds"></p>
+                                                        <p class="seeDetailsMsg"><i class="far fa-hand-pointer"></i>
+                                                            Click to
+                                                            see more...</p>
+                                                    </h4>
+                                                </div>
+                                                <div id="collapse-maintenance-facebookAds" class="collapse"
+                                                    aria-labelledby="heading-maintenance-facebookAds"
+                                                    data-parent="#accordion-maintenance-facebookAds">
+                                                    <div class="card-body">
+                                                        <div id="result-maintenance-facebookAds"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div id="result-maintenance-landingPage-container" style="display: none">
+                                        <div id="accordion-maintenance-landingPage">
+                                            <div class="card">
+                                                <div class="card-header results-collapsible result-service-titles"
+                                                    id="heading-maintenance-landingPage" data-toggle="collapse"
+                                                    data-target="#collapse-maintenance-landingPage"
+                                                    aria-expanded="false"
+                                                    aria-controls="collapse-maintenance-landingPage">
+                                                    <h4 class="titlesCollapse"> <i
+                                                            class="iconsToRotate fas fa-angle-down"></i>
+                                                        <p id="title-maintenance-landingPage"></p>
+                                                        <p class="seeDetailsMsg"><i class="far fa-hand-pointer"></i>
+                                                            Click to
+                                                            see more...</p>
+                                                    </h4>
+                                                </div>
+                                                <div id="collapse-maintenance-landingPage" class="collapse"
+                                                    aria-labelledby="heading-maintenance-landingPage"
+                                                    data-parent="#accordion-maintenance-landingPage">
+                                                    <div class="card-body">
+                                                        <div id="result-maintenance-landingPage"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div id="result-maintenance-wordpress-container" style="display: none">
+                                        <div id="accordion-maintenance-wordpress">
+                                            <div class="card">
+                                                <div class="card-header results-collapsible result-service-titles"
+                                                    id="heading-maintenance-wordpress" data-toggle="collapse"
+                                                    data-target="#collapse-maintenance-wordpress" aria-expanded="false"
+                                                    aria-controls="collapse-maintenance-wordpress">
+                                                    <h4 class="titlesCollapse"> <i
+                                                            class="iconsToRotate fas fa-angle-down"></i>
+                                                        <p id="title-maintenance-wordpress"></p>
+                                                        <p class="seeDetailsMsg"><i class="far fa-hand-pointer"></i>
+                                                            Click to
+                                                            see more...</p>
+                                                    </h4>
+                                                </div>
+                                                <div id="collapse-maintenance-wordpress" class="collapse"
+                                                    aria-labelledby="heading-maintenance-wordpress"
+                                                    data-parent="#accordion-maintenance-wordpress">
+                                                    <div class="card-body">
+                                                        <div id="result-maintenance-wordpress"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div id="result-maintenance-customWebsite-container" style="display: none">
+                                        <div id="accordion-maintenance-customWebsite">
+                                            <div class="card">
+                                                <div class="card-header results-collapsible result-service-titles"
+                                                    id="heading-maintenance-customWebsite" data-toggle="collapse"
+                                                    data-target="#collapse-maintenance-customWebsite"
+                                                    aria-expanded="false"
+                                                    aria-controls="collapse-maintenance-customWebsite">
+                                                    <h4 class="titlesCollapse"> <i
+                                                            class="iconsToRotate fas fa-angle-down"></i>
+                                                        <p id="title-maintenance-customWebsite"></p>
+                                                        <p class="seeDetailsMsg"><i class="far fa-hand-pointer"></i>
+                                                            Click to
+                                                            see more...</p>
+                                                    </h4>
+                                                </div>
+                                                <div id="collapse-maintenance-customWebsite" class="collapse"
+                                                    aria-labelledby="heading-maintenance-customWebsite"
+                                                    data-parent="#accordion-maintenance-customWebsite">
+                                                    <div class="card-body">
+                                                        <div id="result-maintenance-customWebsite"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div id="result-maintenance-ecommerceWeb-container" style="display: none">
+                                        <div id="accordion-maintenance-ecommerceWeb">
+                                            <div class="card">
+                                                <div class="card-header results-collapsible result-service-titles"
+                                                    id="heading-maintenance-ecommerceWeb" data-toggle="collapse"
+                                                    data-target="#collapse-maintenance-ecommerceWeb"
+                                                    aria-expanded="false"
+                                                    aria-controls="collapse-maintenance-ecommerceWeb">
+                                                    <h4 class="titlesCollapse"> <i
+                                                            class="iconsToRotate fas fa-angle-down"></i>
+                                                        <p id="title-maintenance-ecommerceWeb"></p>
+                                                        <p class="seeDetailsMsg"><i class="far fa-hand-pointer"></i>
+                                                            Click to
+                                                            see more...</p>
+                                                    </h4>
+                                                </div>
+                                                <div id="collapse-maintenance-ecommerceWeb" class="collapse"
+                                                    aria-labelledby="heading-maintenance-ecommerceWeb"
+                                                    data-parent="#accordion-maintenance-ecommerceWeb">
+                                                    <div class="card-body">
+                                                        <div id="result-maintenance-ecommerceWeb"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div id="result-maintenance-logoYMarca-container" style="display: none">
+                                        <div id="accordion-maintenance-logoYMarca">
+                                            <div class="card">
+                                                <div class="card-header results-collapsible result-service-titles"
+                                                    id="heading-maintenance-logoYMarca" data-toggle="collapse"
+                                                    data-target="#collapse-maintenance-logoYmarca" aria-expanded="false"
+                                                    aria-controls="collapse-maintenance-logoYmarca">
+                                                    <h4 class="titlesCollapse"> <i
+                                                            class="iconsToRotate fas fa-angle-down"></i>
+                                                        <p id="title-maintenance-logoYMarca"></p>
+                                                        <p class="seeDetailsMsg"><i class="far fa-hand-pointer"></i>
+                                                            Click to
+                                                            see more...</p>
+                                                    </h4>
+                                                </div>
+                                                <div id="collapse-maintenance-logoYmarca" class="collapse"
+                                                    aria-labelledby="heading-maintenance-logoYMarca"
+                                                    data-parent="#accordion-maintenance-logoYMarca">
+                                                    <div class="card-body">
+                                                        <div id="result-maintenance-logoYMarca"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="result-investments-monthly-container">
+                    <div id="accordionThree">
+                        <div class="card">
+                            <div class="card-header results-collapsible result-category-titles" id="headingThree"
+                                data-toggle="collapse" data-target="#collapseThree" aria-expanded="false"
+                                aria-controls="collapseThree">
+                                <h3 class="titlesCollapse"> <i class="iconsToRotate fas fa-angle-double-down"></i>
+                                    <p><u>Costo mensual de inversión <span
+                                                id="results-investments-selected"></span>:</u>
+                                        <nobr> <span id="result-investments-monthly"></span> </nobr>
+                                    </p>
+                                    <p class="seeDetailsMsg"><i class="far fa-hand-pointer"></i> Click to see more...
+                                    </p>
+                                </h3>
+                            </div>
+                            <div id="collapseThree" class="collapse" aria-labelledby="headingThree"
+                                data-parent="#accordionThree">
+                                <div class="card-body">
+                                    <ul id="result-investments-monthly-details"
+                                        style="list-style-type: none !important"></ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="result-monthly-total-container" class="result-monthly-total-container">
+                    <div class="checkContainer" id="headingFour">
+                        <h2 class="titlesCollapse"><i class="iconCheck fas fa-check"></i><span
+                                id="implementation-cost-message" style="display: none;"><u>Costo total de servicios de
+                                    implementación (1 vez):</u><strong>
+                                    <nobr><span id="implementation-cost-total" style="display: none;"></span></nobr>
+                                </strong></span> <span id="monthly-total-cost-message"><u>Costo total mensual <span
+                                        id="results-monthly-total-selected" style="padding: 0px;"></span>:</u> <strong>
+                                    <nobr> <span id="result-monthly-total"></span></nobr>
+                                </strong></span></h2>
+                    </div>
+                </div>
+                <h2 class="results-third-title">¿Cómo obtuvimos estos datos?</h2>
+                <div class="card text-center info-extra-bottom" id="info-extra-bottom">
+                    <div class="card-header">
+                        <ul class="nav nav-tabs card-header-tabs" id="myTab" role="tablist">
+                            <li class="nav-item info-extra-tab"> <a class="nav-link" id="what-does-tab"
+                                    data-toggle="tab" href="" data-target="#what-does" role="tab"
+                                    aria-controls="what-does" aria-selected="false"><i class="fas fa-info-circle"></i>
+                                    ¿Qué hace?</a></li>
+                            <li class="nav-item info-extra-tab"> <a class="nav-link" id="info-tab" data-toggle="tab"
+                                    href="" data-target="#info" role="tab" aria-controls="info" aria-selected="false"><i
+                                        class="fa fa-usd"></i> Precios de servicios <span class="short-title-mobile">de
+                                        Marketing Digital</span></a></li>
+                            <li class="nav-item info-extra-tab"> <a class="nav-link" id="statistics-tab"
+                                    data-toggle="tab" href="" data-target="#statistics" role="tab"
+                                    aria-controls="statistics" aria-selected="false"><i class="fa fa-line-chart"></i>
+                                    <span class="short-title-mobile">Precio de</span> Google <span
+                                        class="short-title-mobile">Ads
+                                    </span>y Facebook Ads</a></li>
+                        </ul>
+                    </div>
+                    <div class="card-body">
+                        <div class="tab-content" id="myTabContent">
+                            <div class="tab-pane fade" id="what-does" role="tabpanel" aria-labelledby="what-does-tab">
+                                <h2 class="what-does-extra-bottom-card-titles">¿Qué hace?</h2>
+                                <p class="card-text" style="text-align: start;">Usando este cotizador online vas a poder
+                                    estimar
+                                    lo siguiente:</p>
+                                <ul style="list-style-type: circle !important; text-align: start;">
+                                    <li>Precio de tus proveedores de servicios de marketing digital según el país, según
+                                        el tipo
+                                        de servicio (Gestión de Google Ads, SEO, Gestión de Redes Sociales, etc.) y
+                                        según el
+                                        tipo de plan (Basic, Intermedio, Avanzado).</li>
+                                    <li>Precio de Google Ads y Facebook Ads: Cuánto cuesta y qué resultados podés
+                                        obtener en
+                                        términos de ventas, consultas, u alguna otra acción en tu web (Conversiones).
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="tab-pane fade" id="info" role="tabpanel" aria-labelledby="info-tab">
+                                <h2 class="info-extra-bottom-card-titles">Precios de servicios de Marketing Digital:
+                                </h2>
+                                <p class="card-text" style="text-align: start;">El cotizador usa el precio por hora
+                                    promedio de
+                                    todos los freelancers disponibles en la plataforma <a href="https://www.upwork.com/"
+                                        target="_blank" rel="noreferrer noopener">Upwork</a> para cada país (13 países)
+                                    para los
+                                    siguientes skills:</p>
+                                <ul style="text-align: start; list-style-type: circle !important;">
+                                    <li>Digital Marketing Analyst</li>
+                                    <li>SEO Analyst</li>
+                                    <li>Community Manager</li>
+                                    <li>Content Writer</li>
+                                    <li>UX / UI Designer</li>
+                                    <li>Graphic Designer</li>
+                                    <li>Programmer</li>
+                                    <li>Video Editor</li>
+                                </ul>
+                                <p class="card-text" style="text-align: start;">Teniendo en cuenta estos precios por
+                                    hora, el
+                                    cotizador calcula el precio de tu plan, teniendo en cuenta cuántas horas hacen falta
+                                    de cada
+                                    skill para ejecutar el plan. La cantidad de horas de cada skill es lo que
+                                    consideramos en
+                                    Digital Now que hace falta.<br><br>Por ejemplo, para un plan de Gestión de Redes
+                                    Sociales
+                                    intermedio consideramos que hacen falta los siguientes skills que le dediquen esta
+                                    cantidad
+                                    de tiempo por mes:<br><br><i>- 8 horas de Community Manager a 16 USD la hora
+                                        <small>(Precio
+                                            promedio de freelancers que dan el servicio de Gestión de Redes Sociales de
+                                            Argentina)</small><br><br>- 10 horas de Diseñador Gráfico a 27 USD la hora
+                                        <small>(Precio promedio de freelancers que dan el servicio de Diseño Gráfico de
+                                            Argentina)</small><br><br>- 2 horas de Editor de video a 20 USD la hora
+                                        <small>(Precio promedio de freelancers que dan el servicio de Edición de video
+                                            de
+                                            Argentina)</small><br><br>Precio mensual del plan=8 * 16 + 10 * 27 + 2 *
+                                        20=US $
+                                        438</i></p>
+                            </div>
+                            <div class="tab-pane fade" id="statistics" role="tabpanel" aria-labelledby="statistics-tab">
+                                <h2 class="info-extra-bottom-card-titles">Precio de Google Ads y Facebook Ads:</h2>
+                                <p class="card-text" style="text-align: start;">Usamos datos de <a
+                                        href="https://www.wordstream.com" target="_blank"
+                                        rel="noreferrer noopener">Wordstream</a>, para tener costos por conversión por
+                                    industria
+                                    (Autos, Servicio al consumidor, B2B, Citas, etc.), por red (Google Ads Search,
+                                    Google Ads
+                                    Display y Facebook Ads), y por país, para 98 países.<br>Primero es importante
+                                    entender qué
+                                    son las conversiones.<br>Una conversión es una acción valiosa para el usuario en tu
+                                    sitio
+                                    web (Ventas o consultas, en general). Por lo tanto, el costo por conversión para
+                                    diferentes
+                                    industrias, es el costo por venta o el costo por consulta para diferentes
+                                    industrias.<br>Para calcular estos precios y resultados estimados, el cotizador
+                                    tiene en
+                                    cuenta los siguientes datos de <a href="https://www.wordstream.com" target="_blank"
+                                        rel="noreferrer noopener">Wordstream</a>:</p>
+                                <ul style="text-align: start; list-style-type: circle !important;">
+                                    <li style="margin-bottom: 0.8rem;"> <a
+                                            href="https://www.wordstream.com/blog/ws/2015/07/06/average-cost-per-click"
+                                            target="_blank" rel="noreferrer noopener">Costo por clic por País:</a> De
+                                        esta
+                                        publicación usamos cuánto es el costo por clic para cada país, comparado con el
+                                        de
+                                        Estados Unidos. Por ejemplo, el costo por clic de Colombia, es un 83% menor al
+                                        de
+                                        Estados Unidos.</li>
+                                    <li style="margin-bottom: 0.8rem;"> <a
+                                            href="https://www.wordstream.com/blog/ws/2016/02/29/google-adwords-industry-benchmarks"
+                                            target="_blank" rel="noreferrer noopener">Benchmarks de Google Ads por
+                                            industria en
+                                            EEUU:</a> De esta publicación usamos el CPA (Costo por conversión) de Google
+                                        Ads en
+                                        EEUU para diferentes industrias.</li>
+                                    <li style="margin-bottom: 0.8rem;"> <a
+                                            href="https://www.wordstream.com/blog/ws/2017/02/28/facebook-advertising-benchmarks"
+                                            target="_blank" rel="noreferrer noopener">Benchmarks de Facebook Ads por
+                                            industria
+                                            en EEUU:</a> De esta publicación usamos el CPA (Costo por conversión) de
+                                        Facebook
+                                        Ads en EEUU para diferentes industrias.</li>
+                                </ul>
+                                <p class="card-text" style="text-align: start;">Lo que hacemos para calcular el costo de
+                                    conversión por industria para cada país, es usar los datos de cómo varían los costos
+                                    por
+                                    clic entre EEUU y otros países. Por ejemplo, si el costo por clic de Colombia es un
+                                    83%
+                                    menor al de Estados Unidos, estamos asumiendo que el costo por conversión de
+                                    Colombia
+                                    también va a ser un 83% menor al de Estados Unidos. Entonces, si sabemos por ejemplo
+                                    que el
+                                    costo de conversión de Google Ads Red de Búsqueda para E-Commerce en Estados Unidos
+                                    es de US
+                                    $ 45,27 (Data de Wordstream), podemos multiplicar este valor por (1 - 0,83), y
+                                    estimar el
+                                    costo por conversión de E-Commerce para Colombia (US $ 7.70). Una vez que sabemos
+                                    esto,
+                                    podemos estimar qué cantidad de conversiones podríamos obtener (Por ejemplo,
+                                    invirtiendo US
+                                    $ 100 por mes en Google Ads Red de Búsqueda, en Colombia, podríamos obtener
+                                    aproximadamente
+                                    13 ventas (100 / 7.7=12.98).<br>De esta forma, tenemos costos por conversión por
+                                    industria
+                                    (Autos, Servicio al consumidor, B2B, Citas, etc.), por red (Google Ads Search,
+                                    Google Ads
+                                    Display y Facebook Ads), y por país, para 98 países.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+</body>
+
+</html>
