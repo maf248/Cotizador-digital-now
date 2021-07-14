@@ -2540,7 +2540,7 @@ function closeBubbleSpeechResults() {
 /*--Detecta click en cajon de categoria y cambia el mensaje del bubble, luego detecta click en sub-cajon de servicio y desaparece--*/
 categoryTitles.forEach((category, i) => {
     category.addEventListener('click', function () {
-        qs('#bubble-results-message').innerHTML = 'Hace click en un sub-cajón de servicio para ver más...';
+        qs('#bubble-results-message').innerHTML = 'Click in each sub-category of services to see more...';
 
         serviceTitles.forEach((service, i) => {
             service.addEventListener('click', function () {
