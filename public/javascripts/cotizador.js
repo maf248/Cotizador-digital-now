@@ -658,19 +658,19 @@ const services = Object.freeze({
                 hours: Object.freeze([2]),
                 skillsAcquired: Object.freeze(["Community Manager"]),
                 skillsPrices: Object.freeze([skills.prices[2]]),
-                content: Object.freeze(["<ul><li style='list-style: circle;'>Análisis de competidores y sugerencia de ideas. Se entrega un Google Doc con capturas de imagen de 400 palabras</li><li style='list-style: circle;'>1 Call con el cliente de intercambio de opiniones.</li></ul>"])
+                content: Object.freeze(["<ul><li style='list-style: circle;'>Análisis de competidores y sugerencia de ideas. Se entrega un Google Doc con capturas de imagen de 400 palabras.</li><li style='list-style: circle;'>1 Call con el cliente de intercambio de opiniones.</li></ul>"])
             }),
             intermediate: Object.freeze({
                 hours: Object.freeze([4]),
                 skillsAcquired: Object.freeze(["Community Manager"]),
                 skillsPrices: Object.freeze([skills.prices[2]]),
-                content: Object.freeze(["<ul><li style='list-style: circle;'>Análisis de competidores y sugerencia de ideas. Se entregan 2 Google Doc con capturas de imagen de 400 palabras y se hacen 2 calls de revisión.</li></ul>"])
+                content: Object.freeze(["<ul><li style='list-style: circle;'>Análisis de competidores y sugerencia de ideas. Se entregan 2 Google Doc con capturas de imagen de 400 palabras.</li><li>Se hacen 2 calls de revisión.</li></ul>"])
             }),
             advanced: Object.freeze({
                 hours: Object.freeze([8]),
                 skillsAcquired: Object.freeze(["Community Manager"]),
                 skillsPrices: Object.freeze([skills.prices[2]]),
-                content: Object.freeze(["<ul><li style='list-style: circle;'>Análisis de competidores y sugerencia de ideas. Se entregan 3 Google Doc con capturas de imagen de 400 palabras y se hacen 3 calls de revisión.</li></ul>"])
+                content: Object.freeze(["<ul><li style='list-style: circle;'>Análisis de competidores y sugerencia de ideas. Se entregan 3 Google Doc con capturas de imagen de 400 palabras.</li><li>Se hacen 3 calls de revisión.</li></ul>"])
             })
         }),
         maintenance: Object.freeze({
@@ -706,7 +706,7 @@ const services = Object.freeze({
                 hours: Object.freeze([8]),
                 skillsAcquired: Object.freeze(["Analista SEO"]),
                 skillsPrices: Object.freeze([skills.prices[1]]),
-                content: Object.freeze(["<ul><li style='list-style: circle;'>Análisis de búsquedas en las cuales te interesa posicionarte teniendo en cuenta volumen, dificultad de posicionarse, relevancia y costo por clic estimado. Se buscarán palabras clave relevantes, de alto volumen, baja dificultad de posicionarse y costo por clic alto.</li><li style='list-style: circle;'>Auditoría técnica general de sitio web usando <a href='https://neilpatel.com/ubersuggest/' target='_blank' rel='noreferrer noopener'>Ubersuggest</a>, que es una herramienta de Neil Patel que analiza hasta 132 aspectos técnicos de tu sitio web como por ejemplo, la velocidad de carga, cantidad de palabras de páginas y cantidad de palabras dentro de etiquetas title. <a href='https://drive.google.com/file/d/1Xi63s89YuZv7v2s-Xc-1H2laM5H0x56-/view?usp=sharing' target='_blank' rel='noreferrer noopener'>Ver ejemplo de auditoría</a></li><li style='list-style: circle;'>Cambio de contenido en etiquetas <title>, <h1> y texto de tu homepage en hasta 10 páginas de tu sitio web.</li><li style='list-style: circle;'>Optimización de alt de imágenes.</li><li style='list-style: circle;'>Análisis de palabras clave y secciones web de la competencia que más tráfico generen para copiar lo que funciona (3 competidores)</li><li style='list-style: circle;'>Solución de problemas detectados en la auditoría de Ubersuggest de hasta 5 páginas de tu sitio web.</li><ul>"])
+                content: Object.freeze(["<ul><li style='list-style: circle;'>Análisis de búsquedas en las cuales te interesa posicionarte teniendo en cuenta volumen, dificultad de posicionarse, relevancia y costo por clic estimado. Se buscarán palabras clave relevantes, de alto volumen, baja dificultad de posicionarse y costo por clic alto.</li><li style='list-style: circle;'>Auditoría técnica general de sitio web usando <a href='https://neilpatel.com/ubersuggest/' target='_blank' rel='noreferrer noopener'>Ubersuggest</a>, que es una herramienta de Neil Patel que analiza hasta 132 aspectos técnicos de tu sitio web como por ejemplo, la velocidad de carga, cantidad de palabras de páginas y cantidad de palabras dentro de etiquetas title. <a href='https://drive.google.com/file/d/1Xi63s89YuZv7v2s-Xc-1H2laM5H0x56-/view?usp=sharing' target='_blank' rel='noreferrer noopener'>Ver ejemplo de auditoría</a></li><li style='list-style: circle;'>Cambio de contenido en etiquetas <title>, <h1> y texto de tu homepage en hasta 10 páginas de tu sitio web.</li><li style='list-style: circle;'>Análisis de palabras clave y secciones web de la competencia que más tráfico generen para copiar lo que funciona (3 competidores)</li><li style='list-style: circle;'>Solución de problemas detectados en la auditoría de Ubersuggest de hasta 5 páginas de tu sitio web.</li><ul>"])
             }),
             advanced: Object.freeze({
                 hours: Object.freeze([16]),
@@ -748,7 +748,7 @@ const services = Object.freeze({
                 hours: Object.freeze([12]),
                 skillsAcquired: Object.freeze(["Diseñador Web UX / UI"]),
                 skillsPrices: Object.freeze([skills.prices[4]]),
-                content: Object.freeze(["<ul><li style='list-style: circle;'>Diagnóstico de buenas prácticas de usabilidad y accesibilidad haciendo análisis de contenido, análisis de diseño visual, análisis de interacción y análisis de temas técnicos. <a href='https://docs.google.com/spreadsheets/d/1ZlBsT4XKX11L22I8ojC06DcgsJOeAYjOkUmVmv5mcck/edit?usp=sharing' target='_blank' rel='noreferrer noopener'>Ver Plantilla de Diagnóstico</a><br>Implementación de mejoras en tu sitio web en base al diagnóstico.</li></ul>"])
+                content: Object.freeze(["<ul><li style='list-style: circle;'>Diagnóstico de buenas prácticas de usabilidad y accesibilidad haciendo análisis de contenido, análisis de diseño visual, análisis de interacción y análisis de temas técnicos. <a href='https://docs.google.com/spreadsheets/d/1ZlBsT4XKX11L22I8ojC06DcgsJOeAYjOkUmVmv5mcck/edit?usp=sharing' target='_blank' rel='noreferrer noopener'>Ver Plantilla de Diagnóstico</a></li><li>Implementación de mejoras en tu sitio web en base al diagnóstico.</li></ul>"])
             })
         }),
         maintenance: Object.freeze({
@@ -756,19 +756,19 @@ const services = Object.freeze({
                 hours: Object.freeze([2]),
                 skillsAcquired: Object.freeze(["Diseñador Web UX / UI"]),
                 skillsPrices: Object.freeze([skills.prices[4]]),
-                content: Object.freeze(["<ul><li style='list-style: circle;'>Implementación de 1 experimento con dos versiones (Una con un cambio que apunta a mejorar la performance y otra sin) de tu sitio web al mismo tiempo usando Google optimize y Google Analytics.</li></ul>"])
+                content: Object.freeze(["<ul><li style='list-style: circle;'>Implementación de 1 experimento con dos versiones (Una con un cambio que apunta a mejorar la performance y otra sin) de tu sitio web al mismo tiempo usando Google optimize y Google Analytics.</li><li>Reporte al cliente.</li></ul>"])
             }),
             intermediate: Object.freeze({
                 hours: Object.freeze([4]),
                 skillsAcquired: Object.freeze(["Diseñador Web UX / UI"]),
                 skillsPrices: Object.freeze([skills.prices[4]]),
-                content: Object.freeze(["<ul><li style='list-style: circle;'>Implementación de 2 experimentos con dos versiones (Una con un cambio que apunta a mejorar la performance y otra sin) de tu sitio web al mismo tiempo usando Google optimize y Google Analytics.</li></ul>"])
+                content: Object.freeze(["<ul><li style='list-style: circle;'>Implementación de 2 experimentos con dos versiones (Una con un cambio que apunta a mejorar la performance y otra sin) de tu sitio web al mismo tiempo usando Google optimize y Google Analytics.</li><li>Reporte al cliente.</li></ul>"])
             }),
             advanced: Object.freeze({
                 hours: Object.freeze([6]),
                 skillsAcquired: Object.freeze(["Diseñador Web UX / UI"]),
                 skillsPrices: Object.freeze([skills.prices[4]]),
-                content: Object.freeze(["<ul><li style='list-style: circle;'>Implementación de 3 experimentos con dos versiones (Una con un cambio que apunta a mejorar la performance y otra sin) de tu sitio web al mismo tiempo usando Google optimize y Google Analytics.</li></ul>"])
+                content: Object.freeze(["<ul><li style='list-style: circle;'>Implementación de 3 experimentos con dos versiones (Una con un cambio que apunta a mejorar la performance y otra sin) de tu sitio web al mismo tiempo usando Google optimize y Google Analytics.</li><li>Reporte al cliente.</li></ul>"])
             })
         })
     }),
@@ -800,7 +800,7 @@ const services = Object.freeze({
                 skillsAcquired: Object.freeze(["Diseñador Web UX / UI"]),
                 skillsPrices: Object.freeze([skills.prices[4]]),
                 name: Object.freeze("Sitio web de Ecommerce simple en CMS como WooCommerce, Tienda Nube o Shopify"),
-                content: Object.freeze(["<ul><li style='list-style: circle;'>Carga de hasta 15 productos en el sitio web,</li></ul>"])
+                content: Object.freeze(["<ul><li style='list-style: circle;'>Carga de hasta 15 productos en el sitio web.</li></ul>"])
             }),
             logoYMarca: Object.freeze({
                 hours: Object.freeze([10]),
