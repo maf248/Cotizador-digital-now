@@ -2,6 +2,10 @@
   font-family: 'Kodchasan', sans-serif;
 }
 
+input:focus, select:focus {
+  outline: none;
+}
+
 p {
   min-width: fit-content;
   display: inline-block;
