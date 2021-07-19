@@ -59,6 +59,7 @@ h4 {
 
 .entry-title {
   text-align: center;
+  margin-right: 55px;
 }
 
 .country-supplier-container {
@@ -640,6 +641,10 @@ button:focus {
   .language-selector {
     width: 3em;
     font-size: 0.8rem;
+  }
+
+  .entry-title {
+    margin-right: 25px;
   }
 
   .language-selector i {
