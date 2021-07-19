@@ -1421,9 +1421,9 @@ countryAnnounce.addEventListener('keyup', function (event) {
 }, false);
 
 /*---Evento control email custom p/ Perfit---*/
-var optinCheck = qs('#optin-okXxFSTU');
+var optinCheck = qs('#optin-TMQ2knsn');
 optinCheck.addEventListener('change', (e) => {
-    emailCustomerInput = qsa('#optin-okXxFSTU input')[1];
+    emailCustomerInput = qsa('#optin-TMQ2knsn input')[1];
     if (emailCustomerInput.value.match(mailFormat)) {
         emailCustomerInput.classList.remove('error-border');
 

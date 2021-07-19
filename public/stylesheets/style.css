@@ -306,11 +306,11 @@ h4 {
 }
 
 /*---Estilos de Email Optin de My Perfit---*/
-#optin-okXxFSTU {
+#optin-okXxFSTU, #optin-TMQ2knsn {
   width: 70%;
 }
 
-#optin-okXxFSTU input {
+#optin-okXxFSTU input, #optin-TMQ2knsn input {
   max-width: fit-content;
   width: 100%;
   min-width: 250px;
