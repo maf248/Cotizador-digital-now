@@ -4,7 +4,7 @@ const indexController = {
   },
   esp: function (req, res, next) {
     res.render('index-esp', {
-      title: "Cotizador: Precios de Marketing Digital"
+      title: "Estimador de precios de marketing digital"
     });
   },
   eng: function (req, res, next) {
