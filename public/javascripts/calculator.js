@@ -528,248 +528,86 @@ const skills = Object.freeze({
 const services = Object.freeze({
     googleSearchAds: Object.freeze({
         implementation: Object.freeze({
-            basic: Object.freeze({
-                hours: Object.freeze([4]),
-                skillsAcquired: Object.freeze(["Digital Marketing Analyst"]),
-                skillsPrices: Object.freeze([skills.prices[0]]),
-                content: Object.freeze(["<ul><li style='list-style: circle;'>Creating a Google Ads account.</li><li style='list-style: circle;'>Selection of Keywords for the target audience and relevant for the campaign. Call with the client, to discuss the monthly budget and which type of searches are relevant for the established objective.</li><li style='list-style: circle;'>OOrganizing the keyword themes in 5 ad groups and creating 5 different ads for each topic.</li><li style='list-style: circle;'>Creating the link extensions for the campaign (for example: a link that redirects to your website or get phone calls to your business).</li></ul>"])
-            }),
-            intermediate: Object.freeze({
-                hours: Object.freeze([8]),
-                skillsAcquired: Object.freeze(["Digital Marketing Analyst"]),
-                skillsPrices: Object.freeze([skills.prices[0]]),
-                content: Object.freeze(["<ul><li style='list-style: circle;'>Creating a Google Ads account.</li><li style='list-style: circle;'>Selection of Keywords for the target audience and relevant for the campaign. Call with the client, to discuss the monthly budget and which type of searches are relevant for the established objective.</li><li style='list-style: circle;'>Creating the link extensions for the campaign (for example: a link that redirects to your website or get phone calls to your business).</li><li style='list-style: circle;'>The Implementation of Google Analytics and Google Tag Manager.</li><li style='list-style: circle;'>Conversion analysis for your business and measuring relevant action on your website using Google Tag Manager and Google Analytics. For example: when they add an item to the kart, make a purchase, fill a form, or contact you through the website chat.</li><li style='list-style: circle;'>The Creating a dashboard in Google Data Studio (<a href='https://datastudio.google.com/u/0/reporting/0B_U5RNpwhcE6ckdmZEJ0ZDJXUnM/page/VgD/preview' target='_blank' rel='noreferrer noopener'>Click here</a> for an example).</li><li style='list-style: circle;'>Organizing the keyword themes in 10 ad groups and creating 10 different ads for each topic.</li></ul>"])
-            }),
-            advanced: Object.freeze({
-                hours: Object.freeze([12]),
-                skillsAcquired: Object.freeze(["Digital Marketing Analyst"]),
-                skillsPrices: Object.freeze([skills.prices[0]]),
-                content: Object.freeze(["<ul><li style='list-style: circle;'>Creating a Google Ads account.</li><li style='list-style: circle;'>Selection of Keywords for the target audience and relevant for the campaign. Call with the client, to discuss the monthly budget and which type of searches are relevant for the established objective.</li><li style='list-style: circle;'>Creating the link extensions for the campaign (for example: a link that redirects to your website or get phone calls to your business).</li><li style='list-style: circle;'>The implementation of Google Analytics and Google Tag Manager.</li><li style='list-style: circle;'>Conversion analysis for your business and measuring relevant action on your website using Google Tag Manager and Google Analytics. For example: when they add an item to the kart, make a purchase, fill a form, or contact you through the website chat.</li><li style='list-style: circle;'>The Creating a dashboard in Google Data Studio (<a href='https://datastudio.google.com/u/0/reporting/0B_U5RNpwhcE6ckdmZEJ0ZDJXUnM/page/VgD/preview' target='_blank' rel='noreferrer noopener'>Click here</a> for an example).</li><li style='list-style: circle;'>Organizing the keyword themes in 15 ad groups and creating 15 different ads for each topic.</li><li style='list-style: circle;'>Implementation of Google Shopping campaigns and dynamic campaigns.</li></ul>"])
-            })
+            hours: Object.freeze([8]),
+            skillsAcquired: Object.freeze(["Digital Marketing Analyst"]),
+            skillsPrices: Object.freeze([skills.prices[0]]),
+            content: Object.freeze(["<ul><li style='list-style: circle;'>Creating a Google Ads account.</li><li style='list-style: circle;'>Selection of Keywords for the target audience and relevant for the campaign. Call with the client, to discuss the monthly budget and which type of searches are relevant for the established objective.</li><li style='list-style: circle;'>Creating the link extensions for the campaign (for example: a link that redirects to your website or get phone calls to your business).</li><li style='list-style: circle;'>The Implementation of Google Analytics and Google Tag Manager.</li><li style='list-style: circle;'>Conversion analysis for your business and measuring relevant action on your website using Google Tag Manager and Google Analytics. For example: when they add an item to the kart, make a purchase, fill a form, or contact you through the website chat.</li><li style='list-style: circle;'>The Creating a dashboard in Google Data Studio (<a href='https://datastudio.google.com/u/0/reporting/0B_U5RNpwhcE6ckdmZEJ0ZDJXUnM/page/VgD/preview' target='_blank' rel='noreferrer noopener'>Click here</a> for an example).</li><li style='list-style: circle;'>Organizing the keyword themes in 10 ad groups and creating 10 different ads for each topic.</li></ul>"])
         }),
         maintenance: Object.freeze({
-            basic: Object.freeze({
-                hours: Object.freeze([4]),
-                skillsAcquired: Object.freeze(["Digital Marketing Analyst"]),
-                skillsPrices: Object.freeze([skills.prices[0]]),
-                content: Object.freeze(["<ul><li style='list-style: circle;'>Making any modification by the client request (respecting the accorded schedule).</li><li style='list-style: circle;'>Includes 2 changes each month to optimize the performance like budget modification, final url, texts in ads, keywords (searches in which you appear), location, and keyword matching options (how wide is the umbrella of similar searches to your keywords in which you appear).</li><li style='list-style: circle;'>Analysis of every implemented change and their impact.</li></ul>"])
-            }),
-            intermediate: Object.freeze({
-                hours: Object.freeze([8]),
-                skillsAcquired: Object.freeze(["Digital Marketing Analyst"]),
-                skillsPrices: Object.freeze([skills.prices[0]]),
-                content: Object.freeze(["<ul><li style='list-style: circle;'>Making any modification by the client request (respecting the accorded schedule).</li><li style='list-style: circle;'>Includes 4 changes each month to optimize the performance like budget modification, final url, texts in ads, keywords (searches in which you appear), location, and keyword matching options (how wide is the umbrella of similar searches to your keywords in which you appear).</li><li style='list-style: circle;'>Analysis of every implemented change and their impact.</li></ul>"])
-            }),
-            advanced: Object.freeze({
-                hours: Object.freeze([12]),
-                skillsAcquired: Object.freeze(["Digital Marketing Analyst"]),
-                skillsPrices: Object.freeze([skills.prices[0]]),
-                content: Object.freeze(["<ul><li style='list-style: circle;'>Making any modification by the client request (respecting the accorded schedule).</li><li style='list-style: circle;'>Includes 8 changes each month to optimize the performance like budget modification, final url, texts in ads, keywords (searches in which you appear), location, and keyword matching options (how wide is the umbrella of similar searches to your keywords in which you appear).</li><li style='list-style: circle;'>Analysis of every implemented change and their impact.</li></ul>"])
-            })
+            hours: Object.freeze([8]),
+            skillsAcquired: Object.freeze(["Digital Marketing Analyst"]),
+            skillsPrices: Object.freeze([skills.prices[0]]),
+            content: Object.freeze(["<ul><li style='list-style: circle;'>Making any modification by the client request (respecting the accorded schedule).</li><li style='list-style: circle;'>Includes 4 changes each month to optimize the performance like budget modification, final url, texts in ads, keywords (searches in which you appear), location, and keyword matching options (how wide is the umbrella of similar searches to your keywords in which you appear).</li><li style='list-style: circle;'>Analysis of every implemented change and their impact.</li></ul>"])
         })
     }),
     googleDisplayAds: Object.freeze({
         implementation: Object.freeze({
-            basic: Object.freeze({
-                hours: Object.freeze([2, 2]),
-                skillsAcquired: Object.freeze(["Digital Marketing Analyst", "Graphic Designer"]),
-                skillsPrices: Object.freeze([skills.prices[0], skills.prices[5]]),
-                content: Object.freeze(["<ul><li style='list-style: circle;'>Creating a Google Ads account.</li><li style='list-style: circle;'>Creating a 1 Remarketing campaign (showing ads on different websites to users who visited your business website in the last 30 days).</li></ul>", "<ul><li style='list-style: circle;'>Creating a 1 banner in a square and horizontal format for responsive ads (a mix between image and text).</li><li style='list-style: circle;'><a href='https://drive.google.com/drive/folders/15wF9BY4RxRrQ-vEchJDP4V17rw6hp503?usp=sharing' target='_blank' rel='noreferrer noopener'>See sum of creative pieces</a></li></ul>"])
-            }),
-            intermediate: Object.freeze({
-                hours: Object.freeze([4, 2, 2]),
-                skillsAcquired: Object.freeze(["Digital Marketing Analyst", "Graphic Designer", "Video Editor   "]),
-                skillsPrices: Object.freeze([skills.prices[0], skills.prices[5], skills.prices[7]]),
-                content: Object.freeze(["<ul><li style='list-style: circle;'>Creating a Google Ads account.</li><li style='list-style: circle;'>Creating a 1 Remarketing campaign (showing ads on different websites to users who visited your business website in the last 30 days). (<a href='https://drive.google.com/file/d/1zvy-_UYBC1VWbIqEszWUhvuzPcU3FNXl/view?usp=sharing' target='_blank' rel='noreferrer noopener'>Click here</a> for an example)</li><li style='list-style: circle;'>Measuring relevant actions on your business website (conversions). For example: when they add an item to the kart, make a purchase, fill a form, or contact you through the website chat.</li><li style='list-style: circle;'>Implementation of Google Analytics and Google Tag Manager.</li><li style='list-style: circle;'>Conversion analysis for your business and measuring relevant action on your website using Google Tag Manager and Google Analytics.</li><li style='list-style: circle;'>Creating a Google Data Studio dashboard (<a href='https://datastudio.google.com/u/0/reporting/f6da5210-ceff-411f-a088-28943fb6b9d6/page/s16BB/preview' target='_blank' rel='noreferrer noopener'>Click here</a> for an example)</li><li style='list-style: circle;'>Creating up to 5 campaigns, all segmented by user interests and website themes, and distribute the budget to optimize conversions.</li></ul>", "<ul><li style='list-style: circle;'>Designing 1 banner in a square and horizontal format for responsive ads (a mix between image and text).</li></ul>", "<ul><li style='list-style: circle;'>Creating a 30 second video in horizontal format for ads in different websites (<a href='https://drive.google.com/file/d/1il1GW3U0HTOIy76mtOSmEEwNYXda6_CL/view?usp=sharing' target='_blank' rel='noreferrer noopener'>Click here</a> for an example)</li><li style='list-style: circle;'><a href='https://drive.google.com/drive/folders/131EO5sr8BXx1si4fRHetLhPWHeNHaZI4?usp=sharing' target='_blank' rel='noreferrer noopener'>See example of creative pieces delivered</a></li></ul>"])
-            }),
-            advanced: {
-                hours: Object.freeze([4, 4, 4]),
-                skillsAcquired: Object.freeze(["Digital Marketing Analyst", "Graphic Designer", "Video Editor   "]),
-                skillsPrices: Object.freeze([skills.prices[0], skills.prices[5], skills.prices[7]]),
-                content: Object.freeze(["<ul><li style='list-style: circle;'>Creating a Google Ads account.</li><li style='list-style: circle;'>Creating 1 Remarketing campaign (showing ads on different websites to users who visited your business website in the last 30 days). (<a href='https://drive.google.com/file/d/1zvy-_UYBC1VWbIqEszWUhvuzPcU3FNXl/view?usp=sharing' target='_blank' rel='noreferrer noopener'>Click here</a> for an example)</li><li style='list-style: circle;'>Measuring relevant actions on your business website (conversions). For example: when they add an item to the kart, make a purchase, fill a form, or contact you through the website chat.</li><li style='list-style: circle;'>Implementation of Google Analytics and Google Tag Manager.</li><li style='list-style: circle;'>Conversion analysis for your business and measuring relevant action on your website using Google Tag Manager and Google Analytics.</li><li style='list-style: circle;'>Creating a Google Data Studio dashboard. (<a href='https://datastudio.google.com/u/0/reporting/f6da5210-ceff-411f-a088-28943fb6b9d6/page/s16BB/preview' target='_blank' rel='noreferrer noopener'>Click here</a> for an example)</li><li style='list-style: circle;'>Creating up to 5 campaigns, all segmented by user interests and website themes, and distribute the budget to optimize conversions.</li></ul>", "<ul><li style='list-style: circle;'>Designing 3 banners in a square and horizontal format for responsive ads (a mix between image and text).</li></ul>", "<ul><li style='list-style: circle;'>Creating 2 videos ads of 30 seconds, in landscape format and 1 video in portrait format (Readaptation) that is displayed on websites as an advertisement (<a href='https://drive.google.com/file/d/1il1GW3U0HTOIy76mtOSmEEwNYXda6_CL/view?usp=sharing' target='_blank' rel='noreferrer noopener'>Click here</a> for an example)</li></ul>"])
-            }
+            hours: Object.freeze([4, 2, 2]),
+            skillsAcquired: Object.freeze(["Digital Marketing Analyst", "Graphic Designer", "Video Editor   "]),
+            skillsPrices: Object.freeze([skills.prices[0], skills.prices[5], skills.prices[7]]),
+            content: Object.freeze(["<ul><li style='list-style: circle;'>Creating a Google Ads account.</li><li style='list-style: circle;'>Creating a 1 Remarketing campaign (showing ads on different websites to users who visited your business website in the last 30 days). (<a href='https://drive.google.com/file/d/1zvy-_UYBC1VWbIqEszWUhvuzPcU3FNXl/view?usp=sharing' target='_blank' rel='noreferrer noopener'>Click here</a> for an example)</li><li style='list-style: circle;'>Measuring relevant actions on your business website (conversions). For example: when they add an item to the kart, make a purchase, fill a form, or contact you through the website chat.</li><li style='list-style: circle;'>Implementation of Google Analytics and Google Tag Manager.</li><li style='list-style: circle;'>Conversion analysis for your business and measuring relevant action on your website using Google Tag Manager and Google Analytics.</li><li style='list-style: circle;'>Creating a Google Data Studio dashboard (<a href='https://datastudio.google.com/u/0/reporting/f6da5210-ceff-411f-a088-28943fb6b9d6/page/s16BB/preview' target='_blank' rel='noreferrer noopener'>Click here</a> for an example)</li><li style='list-style: circle;'>Creating up to 5 campaigns, all segmented by user interests and website themes, and distribute the budget to optimize conversions.</li></ul>", "<ul><li style='list-style: circle;'>Designing 1 banner in a square and horizontal format for responsive ads (a mix between image and text).</li></ul>", "<ul><li style='list-style: circle;'>Creating a 30 second video in horizontal format for ads in different websites (<a href='https://drive.google.com/file/d/1il1GW3U0HTOIy76mtOSmEEwNYXda6_CL/view?usp=sharing' target='_blank' rel='noreferrer noopener'>Click here</a> for an example)</li><li style='list-style: circle;'><a href='https://drive.google.com/drive/folders/131EO5sr8BXx1si4fRHetLhPWHeNHaZI4?usp=sharing' target='_blank' rel='noreferrer noopener'>See example of creative pieces delivered</a></li></ul>"])
         }),
         maintenance: Object.freeze({
-            basic: Object.freeze({
-                hours: Object.freeze([4]),
-                skillsAcquired: Object.freeze(["Digital Marketing Analyst"]),
-                skillsPrices: Object.freeze([skills.prices[0]]),
-                content: Object.freeze(["<ul><li style='list-style: circle;'>Making any modification by the client request (always respecting the accorded schedule).</li><li style='list-style: circle;'>Includes 2 changes a month to optimize performance. For example: modifying budget, final url, ads copy, location and creative pieces. By the end of the month, the client will receive a review analyzing how the changes impacted the campaign.</li></ul>"])
-            }),
-            intermediate: Object.freeze({
-                hours: Object.freeze([4, 4]),
-                skillsAcquired: Object.freeze(["Digital Marketing Analyst", "Graphic Designer"]),
-                skillsPrices: Object.freeze([skills.prices[0], skills.prices[5]]),
-                content: Object.freeze(["<ul><li style='list-style: circle;'>Making any modification by the client request (always respecting the accorded schedule).</li><li style='list-style: circle;'>Includes 4 changes a month to optimize performance. For example: modifying budget, final url, ads copy, location and creative pieces. By the end of the month, the client will receive a review analyzing how the changes impacted the campaign.</li></ul>", "<ul><li style='list-style: circle;'>Creation of 2 graphic pieces in a square and horizontal format.</li></ul>"])
-            }),
-            advanced: Object.freeze({
-                hours: [4, 4, 4],
-                skillsAcquired: ["Digital Marketing Analyst", "Graphic Designer", "Video Editor "],
-                skillsPrices: [skills.prices[0], skills.prices[5], skills.prices[7]],
-                content: ["<ul><li style='list-style: circle;'>Making any modification by the client request (always respecting the accorded schedule).</li><li style='list-style: circle;'>Includes 4 changes a month to optimize performance. For example: modifying budget, final url, ads copy, location and creative pieces. By the end of the month, the client will receive a review analyzing how the changes impacted the campaign.</li></ul>", "<ul><li style='list-style: circle;'>Creation of 2 graphic pieces in a square and horizontal format.</li></ul>", "<ul><li style='list-style: circle;'>Creation of 2 videos in horizontal format.</li></ul>"]
-            })
+            hours: Object.freeze([4, 4]),
+            skillsAcquired: Object.freeze(["Digital Marketing Analyst", "Graphic Designer"]),
+            skillsPrices: Object.freeze([skills.prices[0], skills.prices[5]]),
+            content: Object.freeze(["<ul><li style='list-style: circle;'>Making any modification by the client request (always respecting the accorded schedule).</li><li style='list-style: circle;'>Includes 4 changes a month to optimize performance. For example: modifying budget, final url, ads copy, location and creative pieces. By the end of the month, the client will receive a review analyzing how the changes impacted the campaign.</li></ul>", "<ul><li style='list-style: circle;'>Creation of 2 graphic pieces in a square and horizontal format.</li></ul>"])
         })
     }),
     facebookAds: Object.freeze({
         implementation: Object.freeze({
-            basic: Object.freeze({
-                hours: Object.freeze([2, 2]),
-                skillsAcquired: Object.freeze(["Digital Marketing Analyst", "Graphic Designer"]),
-                skillsPrices: Object.freeze([skills.prices[0], skills.prices[5]]),
-                content: Object.freeze(["<ul><li style='list-style: circle;'>Creating a Facebook Ads account.</li><li style='list-style: circle;'>Facebook Pixel implementation for targets like users  who visited your business website or similar users who visited your business website.</li><li style='list-style: circle;'>Creation of a campaign structure with an investment of 70% on new users (users who hadn’t visited your website or your social media). An investment of 30% on users who visited your website or interacted with your social media.</li></ul>", "<ul><li style='list-style: circle;'>Creation of 1 social media graphic image in square format (for feed) and vertical format (for story) and for a text ad.</li><li style='list-style: circle;'><a href='https://drive.google.com/drive/folders/1zgJiT2dnypW3kAKUDmWyuyEN7zp8KZ47?usp=sharing' target='_blank' rel='noreferrer noopener'>Click here</a> for an example.</li></ul>"])
-            }),
-            intermediate: Object.freeze({
-                hours: Object.freeze([4, 4]),
-                skillsAcquired: Object.freeze(["Digital Marketing Analyst", "Graphic Designer"]),
-                skillsPrices: Object.freeze([skills.prices[0], skills.prices[5]]),
-                content: Object.freeze(["<ul><li style='list-style: circle;'>Creating a Facebook Ads account.</li><li style='list-style: circle;'>Facebook Pixel implementation for targets like users  who visited your business website or similar users who visited your business website.</li><li style='list-style: circle;'>Creation of a campaign structure with an investment of 70% on new users (users who hadn’t visited your website or your social media). An investment of 30% on users who visited your website or interacted with your social media.</li><li style='list-style: circle;'>Conversion Rate with Facebook Pixel (number of users who take action on a page like making an online purchase or filling a form).</li><li style='list-style: circle;'>Copywriting services (10 strategic texts in total) being aware if the users visited the business website or not./li></ul>", "<ul><li style='list-style: circle;'>Different graphic sets (2 sets of graphic images in square and vertical format, 4 total), taking into account if users visited the business website or not.</li><li style='list-style: circle;'><a href='https://drive.google.com/drive/folders/14atx8oJwDeypPzA49ISyET6KsONJZfPk?usp=sharing' target='_blank' rel='noreferrer noopener'>Click here</a> for an example.</li></ul>"])
-            }),
-            advanced: Object.freeze({
-                hours: Object.freeze([6, 10, 2]),
-                skillsAcquired: Object.freeze(["Digital Marketing Analyst", "Graphic Designer", "Video Editor   "]),
-                skillsPrices: Object.freeze([skills.prices[0], skills.prices[5], skills.prices[7], skills.prices[3]]),
-                content: Object.freeze(["<ul><li style='list-style: circle;'>Creating a Facebook Ads account.</li><li style='list-style: circle;'>Facebook Pixel implementation for targets like users  who visited your business website or similar users who visited your business website.</li><li style='list-style: circle;'>Creation of a campaign structure with an investment of 70% on new users (users who hadn’t visited your website or your social media). An investment of 30% on users who visited your website or interacted with your social media.</li><li style='list-style: circle;'>Conversion Rate with Facebook Pixel (number of users who take action on a page like making an online purchase or filling a form).</li><li style='list-style: circle;'>Implementación de Google Analytics y Google Tag Manager para medir conversiones.</li><li style='list-style: circle;'>Creación de dashboard de Google Data Studio</li><li style='list-style: circle;'>Copywriting services (10 strategic texts in total) being aware if the users visited the business website or not./li></ul>", "<ul><li style='list-style: circle;'>5 sets of social media graphic images in square format (for feed) and vertical format (for story).</li></ul>", "<ul><li style='list-style: circle;'>1 Video in vertical format and 4:5 format of 15 seconds.</li></ul>"])
-            })
+            hours: Object.freeze([4, 4]),
+            skillsAcquired: Object.freeze(["Digital Marketing Analyst", "Graphic Designer"]),
+            skillsPrices: Object.freeze([skills.prices[0], skills.prices[5]]),
+            content: Object.freeze(["<ul><li style='list-style: circle;'>Creating a Facebook Ads account.</li><li style='list-style: circle;'>Facebook Pixel implementation for targets like users  who visited your business website or similar users who visited your business website.</li><li style='list-style: circle;'>Creation of a campaign structure with an investment of 70% on new users (users who hadn’t visited your website or your social media). An investment of 30% on users who visited your website or interacted with your social media.</li><li style='list-style: circle;'>Conversion Rate with Facebook Pixel (number of users who take action on a page like making an online purchase or filling a form).</li><li style='list-style: circle;'>Copywriting services (10 strategic texts in total) being aware if the users visited the business website or not./li></ul>", "<ul><li style='list-style: circle;'>Different graphic sets (2 sets of graphic images in square and vertical format, 4 total), taking into account if users visited the business website or not.</li><li style='list-style: circle;'><a href='https://drive.google.com/drive/folders/14atx8oJwDeypPzA49ISyET6KsONJZfPk?usp=sharing' target='_blank' rel='noreferrer noopener'>Click here</a> for an example.</li></ul>"])
         }),
         maintenance: Object.freeze({
-            basic: Object.freeze({
-                hours: Object.freeze([4]),
-                skillsAcquired: Object.freeze(["Digital Marketing Analyst"]),
-                skillsPrices: Object.freeze([skills.prices[0]]),
-                content: Object.freeze(["<ul><li style='list-style: circle;'>Making any modification by the client request (always respecting the accorded schedule).</li><li style='list-style: circle;'>Includes 2 changes a month to optimize performance. For example: modifying budget, final url, ads copy, target, location, bidding strategies, and creative pieces.</li></ul>"])
-            }),
-            intermediate: Object.freeze({
-                hours: Object.freeze([4, 4]),
-                skillsAcquired: Object.freeze(["Digital Marketing Analyst", "Graphic Designer"]),
-                skillsPrices: Object.freeze([skills.prices[0], skills.prices[5]]),
-                content: Object.freeze(["<ul><li style='list-style: circle;'>Making any modification by the client request (always respecting the accorded schedule).</li><li style='list-style: circle;'>Includes 2 changes a month to optimize performance. For example: modifying budget, final url, ads copy, target, location, bidding strategies, and creative pieces.</li></ul>", "<ul><li style='list-style: circle;'>2 social media graphic images in square and vertical format.</li></ul>"])
-            }),
-            advanced: Object.freeze({
-                hours: Object.freeze([4, 4, 4]),
-                skillsAcquired: Object.freeze(["Digital Marketing Analyst", "Graphic Designer", "Video Editor   "]),
-                skillsPrices: Object.freeze([skills.prices[0], skills.prices[5], skills.prices[7]]),
-                content: Object.freeze(["<ul><li style='list-style: circle;'>Making any modification by the client request (always respecting the accorded schedule).</li><li style='list-style: circle;'>Includes 2 changes a month to optimize performance. For example: modifying budget, final url, ads copy, target, location, bidding strategies, and creative pieces.</li></ul>", "<ul><li style='list-style: circle;'>2 social media graphic images in square and vertical format.</li></ul>", "<ul><li style='list-style: circle;'>1 Video in vertical format and 4:5 format of 15 seconds.</li></ul>"])
-            })
+            hours: Object.freeze([4, 4]),
+            skillsAcquired: Object.freeze(["Digital Marketing Analyst", "Graphic Designer"]),
+            skillsPrices: Object.freeze([skills.prices[0], skills.prices[5]]),
+            content: Object.freeze(["<ul><li style='list-style: circle;'>Making any modification by the client request (always respecting the accorded schedule).</li><li style='list-style: circle;'>Includes 2 changes a month to optimize performance. For example: modifying budget, final url, ads copy, target, location, bidding strategies, and creative pieces.</li></ul>", "<ul><li style='list-style: circle;'>2 social media graphic images in square and vertical format.</li></ul>"])
         })
     }),
     communityManagement: Object.freeze({
         implementation: Object.freeze({
-            basic: Object.freeze({
-                hours: Object.freeze([2]),
-                skillsAcquired: Object.freeze(["Community Manager"]),
-                skillsPrices: Object.freeze([skills.prices[2]]),
-                content: Object.freeze(["<ul><li style='list-style: circle;'>Completing a marketing competitor analysis and pitching new ideas for your social media. All would be delivered in a Google Document with images of 400 words.</li><li style='list-style: circle;'>1 call with the client for feedback.</li></ul>"])
-            }),
-            intermediate: Object.freeze({
-                hours: Object.freeze([4]),
-                skillsAcquired: Object.freeze(["Community Manager"]),
-                skillsPrices: Object.freeze([skills.prices[2]]),
-                content: Object.freeze(["<ul><li style='list-style: circle;'>Completing a marketing competitor analysis and pitching new ideas for your social media. All would be delivered in 2 Google Documents with images of 400 words.</li><li>2   call with client for feedback.</li></ul>"])
-            }),
-            advanced: Object.freeze({
-                hours: Object.freeze([8]),
-                skillsAcquired: Object.freeze(["Community Manager"]),
-                skillsPrices: Object.freeze([skills.prices[2]]),
-                content: Object.freeze(["<ul><li style='list-style: circle;'>Completing a marketing competitor analysis and pitching new ideas for your social media. All would be delivered in 2 Google Documents with images of 400 words.</li><li>3 call with client for feedback.</li></ul>"])
-            })
+            hours: Object.freeze([4]),
+            skillsAcquired: Object.freeze(["Community Manager"]),
+            skillsPrices: Object.freeze([skills.prices[2]]),
+            content: Object.freeze(["<ul><li style='list-style: circle;'>Completing a marketing competitor analysis and pitching new ideas for your social media. All would be delivered in 2 Google Documents with images of 400 words.</li><li>2   call with client for feedback.</li></ul>"])
         }),
         maintenance: Object.freeze({
-            basic: Object.freeze({
-                hours: Object.freeze([7, 1]),
-                skillsAcquired: Object.freeze(["Community Manager", "Graphic Designer"]),
-                skillsPrices: Object.freeze([skills.prices[2], skills.prices[5]]),
-                content: Object.freeze(["<ul><li style='list-style: circle;'>Social media content calendar for 12 posts (<a href='https://docs.google.com/spreadsheets/d/1aXf8BCOerxx0kOKmgUscE4ryAEqYGoaKi2tY-j-nfkU/edit?usp=sharing' target='_blank' rel='noreferrer noopener'>Click here</a> for an example), 12 copies for feed and content on 1 social media (if it’s Instagram, it can be for both Instagram and Facebook). Content provided by the client would be posted (pictures, videos), or Internet content with modifications. All feed content (12 posts) would also be shared as stories with a link that would redirect the user to the feed. Includes the account management (responding comments on posts, interacting with profiles that interact with the competitor posts).</li></ul>", "<ul><li style='list-style: circle;'>Improvements to content provided by the client or taken from the internet.</li></ul>"])
-            }),
-            intermediate: Object.freeze({
-                hours: Object.freeze([8, 10, 2]),
-                skillsAcquired: Object.freeze(["Community Manager", "Graphic Designer", "Video Editor   "]),
-                skillsPrices: Object.freeze([skills.prices[2], skills.prices[5], skills.prices[7]]),
-                content: Object.freeze(["<ul><li style='list-style: circle;'>Social media content calendar for 12 posts (<a href='https://docs.google.com/spreadsheets/d/1aXf8BCOerxx0kOKmgUscE4ryAEqYGoaKi2tY-j-nfkU/edit?usp=sharing' target='_blank' rel='noreferrer noopener'>Click here</a> for an example), 12 copies for feed and content on 1 social media (if it’s Instagram, it can be for both Instagram and Facebook). All feed content (12 posts) would also be shared as stories with a link that would redirect the user to the feed. Includes the account management (responding comments on posts, interacting with profiles that interact with the competitor posts).</li></ul>", "<ul><li style='list-style: circle;'>10 individual graphics</li></ul>", "<ul><li style='list-style: circle;'>2 videos for reels (less than 30 seconds)</li></ul>"])
-            }),
-            advanced: Object.freeze({
-                hours: Object.freeze([10, 27, 3]),
-                skillsAcquired: Object.freeze(["Community Manager", "Graphic Designer", "Video Editor   "]),
-                skillsPrices: Object.freeze([skills.prices[2], skills.prices[5], skills.prices[7]]),
-                content: Object.freeze(["<ul><li style='list-style: circle;'>Social media content calendar for 12 posts (<a href='https://docs.google.com/spreadsheets/d/1aXf8BCOerxx0kOKmgUscE4ryAEqYGoaKi2tY-j-nfkU/edit?usp=sharing' target='_blank' rel='noreferrer noopener'>Click here</a> for an example), 12 copies for feed and content on 1 social media (if it’s Instagram, it can be for both Instagram and Facebook). Content provided by the client would be posted (pictures, videos), or Internet content with modifications. All feed content (12 posts) would also be shared as stories with a link that would redirect the user to the feed. Includes the account management (responding comments on posts, interacting with profiles that interact with the competitor posts).</li></ul>", "<ul><li style='list-style: circle;'>10 social media graphic images for feed and 4 social media graphic images for stories.</li><li style='list-style: circle;'>4 Carousel creations (in between 5 to 10 graphic images each set).</li></ul>", "<ul><li style='list-style: circle;'>2 videos in vertical format for reels (less than 30 seconds)</li><li style='list-style: circle;'>1 video template for questionnaires and surveys.</li></ul>"])
-            })
+            hours: Object.freeze([8, 10, 2]),
+            skillsAcquired: Object.freeze(["Community Manager", "Graphic Designer", "Video Editor   "]),
+            skillsPrices: Object.freeze([skills.prices[2], skills.prices[5], skills.prices[7]]),
+            content: Object.freeze(["<ul><li style='list-style: circle;'>Social media content calendar for 12 posts (<a href='https://docs.google.com/spreadsheets/d/1aXf8BCOerxx0kOKmgUscE4ryAEqYGoaKi2tY-j-nfkU/edit?usp=sharing' target='_blank' rel='noreferrer noopener'>Click here</a> for an example), 12 copies for feed and content on 1 social media (if it’s Instagram, it can be for both Instagram and Facebook). All feed content (12 posts) would also be shared as stories with a link that would redirect the user to the feed. Includes the account management (responding comments on posts, interacting with profiles that interact with the competitor posts).</li></ul>", "<ul><li style='list-style: circle;'>10 individual graphics</li></ul>", "<ul><li style='list-style: circle;'>2 videos for reels (less than 30 seconds)</li></ul>"])
         })
     }),
     seo: Object.freeze({
         implementation: Object.freeze({
-            basic: Object.freeze({
-                hours: Object.freeze([4]),
-                skillsAcquired: Object.freeze(["SEO Analyst"]),
-                skillsPrices: Object.freeze([skills.prices[1]]),
-                content: Object.freeze(["<ul><li style='list-style: circle;'>Search Analysis to determine which searches are valuable for your objectives (taking into account Cost per Click, competition, etc.). Implementation of relevant keywords with high traffic and Cost per Click.</li><li style='list-style: circle;'>Technical audit for your business website using <a href='https://neilpatel.com/ubersuggest/' target='_blank' rel='noreferrer noopener'>Ubersuggest</a>, a tool created by Neil Patel that analyzes up to 132 technical aspects of a website. For example: loading time, words per page and much more. <a href='https://drive.google.com/file/d/1Xi63s89YuZv7v2s-Xc-1H2laM5H0x56-/view?usp=sharing' target='_blank' rel='noreferrer noopener'>Click here</a> for an example.</li><li style='list-style: circle;'>Implementing changes from the technical audit.</li><li style='list-style: circle;'>Changing content to tags <title>, <h1>, and text from the homepage for strategic positioning in Google Searches, based on keyword analysis.</li></ul>"])
-            }),
-            intermediate: Object.freeze({
-                hours: Object.freeze([8]),
-                skillsAcquired: Object.freeze(["SEO Analyst"]),
-                skillsPrices: Object.freeze([skills.prices[1]]),
-                content: Object.freeze(["<ul><li style='list-style: circle;'>Search Analysis to determine which searches are valuable for your objectives (taking into account Cost per Click, competition, etc.). Implementation of relevant keywords with high traffic and Cost per Click.</li><li style='list-style: circle;'>Technical audit for your business website using <a href='https://neilpatel.com/ubersuggest/' target='_blank' rel='noreferrer noopener'>Ubersuggest</a>, a tool created by Neil Patel that analyzes up to 132 technical aspects of a website. For example: loading time, words per page and much more. <a href='https://drive.google.com/file/d/1Xi63s89YuZv7v2s-Xc-1H2laM5H0x56-/view?usp=sharing' target='_blank' rel='noreferrer noopener'>Click here</a> for an example</li><li style='list-style: circle;'>Changing content to tags <title>, <h1>, and text from the homepage up to 5 pages from your website.</li><li style='list-style: circle;'>Keyword analysis and web pages from your competitor, analyzing which pages get more traffic (3 competitors).</li><li style='list-style: circle;'>Problem solving from any inconvenience detected during the technical auditory with Ubersuggest, up to 5 pages from your business website.</li><ul>"])
-            }),
-            advanced: Object.freeze({
-                hours: Object.freeze([16]),
-                skillsAcquired: Object.freeze(["SEO Analyst"]),
-                skillsPrices: Object.freeze([skills.prices[1]]),
-                content: Object.freeze(["<ul><li style='list-style: circle;'>Search Analysis to determine which searches are valuable for your objectives (taking into account Cost per Click, competition, etc.). Implementation of relevant keywords with high traffic and Cost per Click.</li><li style='list-style: circle;'>Technical audit for your business website using <a href='https://neilpatel.com/ubersuggest/' target='_blank' rel='noreferrer noopener'>Ubersuggest</a>, a tool created by Neil Patel that analyzes up to 132 technical aspects of a website. For example: loading time, words per page and much more. <a href='https://drive.google.com/file/d/1Xi63s89YuZv7v2s-Xc-1H2laM5H0x56-/view?usp=sharing' target='_blank' rel='noreferrer noopener'>Click here</a> for an example</li><li style='list-style: circle;'>Changing content to tags <title>, <h1>, and text from the homepage up to 5 pages from your website.</li><li style='list-style: circle;'>Image alt attribute optimization.</li><li style='list-style: circle;'>Keyword analysis and web pages from your competitor, analyzing which pages get more traffic (6 competitors).</li><li style='list-style: circle;'>Problem solving from any inconvenience detected during the technical auditory with Ubersuggest, up to 10 pages from your business website.</li><ul>"])
-            })
+            hours: Object.freeze([8]),
+            skillsAcquired: Object.freeze(["SEO Analyst"]),
+            skillsPrices: Object.freeze([skills.prices[1]]),
+            content: Object.freeze(["<ul><li style='list-style: circle;'>Search Analysis to determine which searches are valuable for your objectives (taking into account Cost per Click, competition, etc.). Implementation of relevant keywords with high traffic and Cost per Click.</li><li style='list-style: circle;'>Technical audit for your business website using <a href='https://neilpatel.com/ubersuggest/' target='_blank' rel='noreferrer noopener'>Ubersuggest</a>, a tool created by Neil Patel that analyzes up to 132 technical aspects of a website. For example: loading time, words per page and much more. <a href='https://drive.google.com/file/d/1Xi63s89YuZv7v2s-Xc-1H2laM5H0x56-/view?usp=sharing' target='_blank' rel='noreferrer noopener'>Click here</a> for an example</li><li style='list-style: circle;'>Changing content to tags <title>, <h1>, and text from the homepage up to 5 pages from your website.</li><li style='list-style: circle;'>Keyword analysis and web pages from your competitor, analyzing which pages get more traffic (3 competitors).</li><li style='list-style: circle;'>Problem solving from any inconvenience detected during the technical auditory with Ubersuggest, up to 5 pages from your business website.</li><ul>"])
         }),
         maintenance: Object.freeze({
-            basic: Object.freeze({
-                hours: Object.freeze([2, 4, 2]),
-                skillsAcquired: Object.freeze(["SEO Analyst", "Content Writer", "Graphic Designer"]),
-                skillsPrices: Object.freeze([skills.prices[1], skills.prices[3], skills.prices[5]]),
-                content: Object.freeze(["<ul><li style='list-style: circle;'>Search Analysis to determine which searches are valuable for your objectives (taking into account Cost per Click, competition, etc.). Implementation of relevant keywords with high traffic and Cost per Click.</li><li style='list-style: circle;'>Keyword analysis and web pages from your competitor, analyzing which pages get more traffic (3 competitors).</li><li style='list-style: circle;'>Contacting other blogs within the industry to make collabs using ONE 2 LEAD (Automation tool from Linkedin, U$ 15 a month) for Link-building (getting links for your website).</li></ul>", "<ul><li style='list-style: circle;'>1 blog post of 1000 words. <a href='https://digitalnow.com.ar/posicionamiento-web-en-google-seo/' target='_blank' rel='noreferrer noopener'>Click here</a> for an example</li></ul>", "<ul><li style='list-style: circle;'>2 graphics (1 infographic and cover).</li><li style='list-style: circle;'><a href='https://drive.google.com/drive/folders/1rQn2MLzdCdeKNcGda5qajIX1jVZHFtpl?usp=sharing' target='_blank' rel='noreferrer noopener'>Click here</a> for an infographic example,  <a href='https://drive.google.com/drive/folders/1q0vPeT2uTMWIB1qcGgBh8x7hB7dZkGfr?usp=sharing' target='_blank' rel='noreferrer noopener'>Click here</a> for a cover example.</li></ul>"])
-            }),
-            intermediate: Object.freeze({
-                hours: Object.freeze([4, 8, 4]),
-                skillsAcquired: Object.freeze(["SEO Analyst", "Content Writer", "Graphic Designer"]),
-                skillsPrices: Object.freeze([skills.prices[1], skills.prices[3], skills.prices[5]]),
-                content: Object.freeze(["<ul><li style='list-style: circle;'>Search Analysis to determine which searches are valuable for your objectives (taking into account Cost per Click, competition, etc.). Implementation of relevant keywords with high traffic and Cost per Click.</li><li style='list-style: circle;'>Keyword analysis and web pages from your competitor, analyzing which pages get more traffic (6 competitors).</li><li style='list-style: circle;'>Contacting other blogs within the industry to make collabs using ONE 2 LEAD (Automation tool from Linkedin, U$ 15 a month) for Link-building (getting links for your website).</li></ul>", "<ul><li style='list-style: circle;'>2 blog posts of 1000 words each.</li></ul>", "<ul><li style='list-style: circle;'>4 Graphic Images (2 infographics and 2 covers).</li><li style='list-style: circle;'>2 infographics for other blogs from similar industries to include a link to your business website.</li><li style='list-style: circle;'><a href='https://drive.google.com/drive/folders/1rQn2MLzdCdeKNcGda5qajIX1jVZHFtpl?usp=sharing' target='_blank' rel='noreferrer noopener'>Click here</a> for an infographic example,  <a href='https://drive.google.com/drive/folders/1q0vPeT2uTMWIB1qcGgBh8x7hB7dZkGfr?usp=sharing' target='_blank' rel='noreferrer noopener'>Click here</a> for a cover example.</li></ul>"])
-            }),
-            advanced: Object.freeze({
-                hours: Object.freeze([8, 16, 12]),
-                skillsAcquired: Object.freeze(["SEO Analyst", "Content Writer", "Graphic Designer"]),
-                skillsPrices: Object.freeze([skills.prices[1], skills.prices[3], skills.prices[5]]),
-                content: Object.freeze(["<ul><li style='list-style: circle;'>Search Analysis to determine which searches are valuable for your objectives (taking into account Cost per Click, competition, etc.). Implementation of relevant keywords with high traffic and Cost per Click.</li><li style='list-style: circle;'>Keyword analysis and web pages from your competitor, analyzing which pages get more traffic (12 competitors).</li><li style='list-style: circle;'>Contacting other blogs within the industry to make collabs using ONE 2 LEAD (Automation tool from Linkedin, U$ 15 a month) for Link-building (getting links for your website).</li></ul>", "<ul><li style='list-style: circle;'>4 blog posts of 1000 words each.</li></ul>", "<ul><li style='list-style: circle;'>8 graphics (4 infographics and 4 covers)</li><li style='list-style: circle;'><a href='https://drive.google.com/drive/folders/1rQn2MLzdCdeKNcGda5qajIX1jVZHFtpl?usp=sharing' target='_blank' rel='noreferrer noopener'>Click here</a> for an infographic example, <a href='https://drive.google.com/drive/folders/1q0vPeT2uTMWIB1qcGgBh8x7hB7dZkGfr?usp=sharing' target='_blank' rel='noreferrer noopener'>Click here</a> for a cover example.</li><li style='list-style: circle;'>2 infographics for other blogs within the same industry to include a link redirecting the user to your business website.</li><li style='list-style: circle;'>2 GIFS for each post to create a friendlier reading experience. <a href='https://digitalnow.com.ar/como-hacer-una-campana-en-google-ads/' target='_blank' rel='noreferrer noopener'>Click here</a> for an example.</li></ul>"])
-            })
+            hours: Object.freeze([4, 8, 4]),
+            skillsAcquired: Object.freeze(["SEO Analyst", "Content Writer", "Graphic Designer"]),
+            skillsPrices: Object.freeze([skills.prices[1], skills.prices[3], skills.prices[5]]),
+            content: Object.freeze(["<ul><li style='list-style: circle;'>Search Analysis to determine which searches are valuable for your objectives (taking into account Cost per Click, competition, etc.). Implementation of relevant keywords with high traffic and Cost per Click.</li><li style='list-style: circle;'>Keyword analysis and web pages from your competitor, analyzing which pages get more traffic (6 competitors).</li><li style='list-style: circle;'>Contacting other blogs within the industry to make collabs using ONE 2 LEAD (Automation tool from Linkedin, U$ 15 a month) for Link-building (getting links for your website).</li></ul>", "<ul><li style='list-style: circle;'>2 blog posts of 1000 words each.</li></ul>", "<ul><li style='list-style: circle;'>4 Graphic Images (2 infographics and 2 covers).</li><li style='list-style: circle;'>2 infographics for other blogs from similar industries to include a link to your business website.</li><li style='list-style: circle;'><a href='https://drive.google.com/drive/folders/1rQn2MLzdCdeKNcGda5qajIX1jVZHFtpl?usp=sharing' target='_blank' rel='noreferrer noopener'>Click here</a> for an infographic example,  <a href='https://drive.google.com/drive/folders/1q0vPeT2uTMWIB1qcGgBh8x7hB7dZkGfr?usp=sharing' target='_blank' rel='noreferrer noopener'>Click here</a> for a cover example.</li></ul>"])
         })
     }),
     conversionWeb: Object.freeze({
         implementation: Object.freeze({
-            basic: Object.freeze({
-                hours: Object.freeze([4]),
-                skillsAcquired: Object.freeze(["UX / UI Designer"]),
-                skillsPrices: Object.freeze([skills.prices[4]]),
-                content: Object.freeze(["<ul><li style='list-style: circle;'>Diagnose of good practices to improve the usability and accessibility of your website, making a content analysis, visual design analysis, interaction analysis and theme analysis. <a href='https://docs.google.com/spreadsheets/d/1ZlBsT4XKX11L22I8ojC06DcgsJOeAYjOkUmVmv5mcck/edit?usp=sharing' target='_blank' rel='noreferrer noopener'>Click here</a> for an example.</li></ul>"])
-            }),
-            advanced: Object.freeze({
-                hours: Object.freeze([12]),
-                skillsAcquired: Object.freeze(["UX / UI Designer"]),
-                skillsPrices: Object.freeze([skills.prices[4]]),
-                content: Object.freeze(["<ul><li style='list-style: circle;'>Diagnose of good practices to improve the usability and accessibility of your website, making a content analysis, visual design analysis, interaction analysis and theme analysis. <a href='https://docs.google.com/spreadsheets/d/1ZlBsT4XKX11L22I8ojC06DcgsJOeAYjOkUmVmv5mcck/edit?usp=sharing' target='_blank' rel='noreferrer noopener'>Click here</a> for an example.</li><li>Implementing improvements using the preview analysis.</li></ul>"])
-            })
+            hours: Object.freeze([4]),
+            skillsAcquired: Object.freeze(["UX / UI Designer"]),
+            skillsPrices: Object.freeze([skills.prices[4]]),
+            content: Object.freeze(["<ul><li style='list-style: circle;'>Diagnose of good practices to improve the usability and accessibility of your website, making a content analysis, visual design analysis, interaction analysis and theme analysis. <a href='https://docs.google.com/spreadsheets/d/1ZlBsT4XKX11L22I8ojC06DcgsJOeAYjOkUmVmv5mcck/edit?usp=sharing' target='_blank' rel='noreferrer noopener'>Click here</a> for an example.</li></ul>"])
         }),
         maintenance: Object.freeze({
-            basic: Object.freeze({
-                hours: Object.freeze([2]),
-                skillsAcquired: Object.freeze(["UX / UI Designer"]),
-                skillsPrices: Object.freeze([skills.prices[4]]),
-                content: Object.freeze(["<ul><li style='list-style: circle;'>Implementing 1 A/B test (one version with a modification to improve performance and other without modification) for your website using Google Optimize and Google Analytics.</li><li>Review report for the client.</li></ul>"])
-            }),
-            intermediate: Object.freeze({
-                hours: Object.freeze([4]),
-                skillsAcquired: Object.freeze(["UX / UI Designer"]),
-                skillsPrices: Object.freeze([skills.prices[4]]),
-                content: Object.freeze(["<ul><li style='list-style: circle;'>Implementing 2 A/B tests (one version with a modification to improve performance and other without modification) for your website using Google Optimize and Google Analytics.</li><li>Review report for the client.</li></ul>"])
-            }),
-            advanced: Object.freeze({
-                hours: Object.freeze([6]),
-                skillsAcquired: Object.freeze(["UX / UI Designer"]),
-                skillsPrices: Object.freeze([skills.prices[4]]),
-                content: Object.freeze(["<ul><li style='list-style: circle;'>Implementing 3  A/B tests (one version with a modification to improve performance and other without modification) for your website using Google Optimize and Google Analytics.</li><li>Review report for the client.</li></ul>"])
-            })
+            hours: Object.freeze([4]),
+            skillsAcquired: Object.freeze(["UX / UI Designer"]),
+            skillsPrices: Object.freeze([skills.prices[4]]),
+            content: Object.freeze(["<ul><li style='list-style: circle;'>Implementing 2 A/B tests (one version with a modification to improve performance and other without modification) for your website using Google Optimize and Google Analytics.</li><li>Review report for the client.</li></ul>"])
         })
     }),
     disenoWeb: Object.freeze({
@@ -821,27 +659,11 @@ const services = Object.freeze({
     }),
     emailMarketing: Object.freeze({
         maintenance: Object.freeze({
-            basic: Object.freeze({
-                hours: Object.freeze([1, 0.5, 0.5]),
-                deliversPerMonth: Object.freeze(1),
-                skillsAcquired: Object.freeze(["Graphic Designer", "Content Writer", "UX / UI Designer"]),
-                skillsPrices: Object.freeze([skills.prices[5], skills.prices[3], skills.prices[4]]),
-                content: Object.freeze(["<ul><li style='list-style: circle;'>1 graphic in a static format (JPG) or animated (GIF).</li></ul>", "<ul><li style='list-style: circle;'>Writing the content of the email.</li></ul>", "<ul><li style='list-style: circle;'>Implementation of texts and images in a predesigned template.</li></ul>"])
-            }),
-            intermediate: Object.freeze({
-                hours: Object.freeze([2, 1, 1]),
-                deliversPerMonth: Object.freeze(2),
-                skillsAcquired: Object.freeze(["Graphic Designer", "Content Writer", "UX / UI Designer"]),
-                skillsPrices: Object.freeze([skills.prices[5], skills.prices[3], skills.prices[4]]),
-                content: Object.freeze(["<ul><li style='list-style: circle;'>2 graphics in a static format (JPG) or animated (GIF).</li></ul>", "<ul><li style='list-style: circle;'>Writing the content of the email.</li></ul>", "<ul><li style='list-style: circle;'>Implementing texts and images in a predesigned template.</li></ul>"])
-            }),
-            advanced: Object.freeze({
-                hours: Object.freeze([4, 2, 2]),
-                deliversPerMonth: Object.freeze(4),
-                skillsAcquired: Object.freeze(["Graphic Designer", "Content Writer", "UX / UI Designer"]),
-                skillsPrices: Object.freeze([skills.prices[5], skills.prices[3], skills.prices[4]]),
-                content: Object.freeze(["<ul><li style='list-style: circle;'>2 graphics in a static format (JPG) or animated (GIF).</li></ul>", "<ul><li style='list-style: circle;'>Writing the content of the email.</li></ul>", "<ul><li style='list-style: circle;'>Implementing texts and images in a predesigned template.</li></ul>"])
-            })
+            hours: Object.freeze([2, 1, 1]),
+            deliversPerMonth: Object.freeze(2),
+            skillsAcquired: Object.freeze(["Graphic Designer", "Content Writer", "UX / UI Designer"]),
+            skillsPrices: Object.freeze([skills.prices[5], skills.prices[3], skills.prices[4]]),
+            content: Object.freeze(["<ul><li style='list-style: circle;'>2 graphics in a static format (JPG) or animated (GIF).</li></ul>", "<ul><li style='list-style: circle;'>Writing the content of the email.</li></ul>", "<ul><li style='list-style: circle;'>Implementing texts and images in a predesigned template.</li></ul>"])
         })
     })
 })
@@ -872,6 +694,7 @@ var logoMarca = qs('#logoMarca');
 
 /*---Se captura el selector de idioma---*/
 var languageSelector = qs('#language-selector');
+
 /*---Se captura el contenedor de datos extra para suavizar la animación de aparicion/desaparicion---*/
 var servicesExtraContainer = qs('#services-extra-container');
 
@@ -882,9 +705,6 @@ var countryAnnounceContainer = qs('#country-announce-container');
 var googleSearchAdsExtraContainer = qs('#google-search-ads-extra-container');
 var googleDisplayAdsExtraContainer = qs('#google-display-ads-extra-container');
 var facebookAdsExtraContainer = qs('#facebook-ads-extra-container');
-var communityManagementExtraContainer = qs('#community-management-extra-container');
-var conversionWebExtraContainer = qs('#conversion-web-extra-container');
-var seoExtraContainer = qs('#seo-extra-container');
 
 /*--Se capturan los MONTOS de inversion introducidos---*/
 var investmentGoogleSearchAdsAmmount = qs('#investment-google-search-ads-value');
@@ -897,24 +717,6 @@ var emailAmmount = qs('#email-ammount');
 
 var emailCustomerInput = null;
 var mailFormat = /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/g;
-
-/*---Se capturan los selectores de planes para cada servicio---*/
-var googleSearchAdsPlan = qs('#google-search-ads-plan');
-var googleDisplayAdsPlan = qs('#google-display-ads-plan');
-var facebookAdsPlan = qs('#facebook-ads-plan');
-var communityManagementPlan = qs('#community-management-plan');
-var seoPlan = qs('#seo-plan');
-var conversionWebPlan = qs('#conversion-web-plan');
-var emailMarketingPlan = qs('#email-marketing-plan');
-
-/*---Se capturan los detalles de cada plan para mostrar dinamicamente---*/
-var googleSearchAdsPlanDetails = qs('#google-search-plan-details');
-var googleDisplayAdsPlanDetails = qs('#google-display-plan-details');
-var facebookAdsPlanDetails = qs('#facebook-ads-plan-details');
-var communityManagementPlanDetails = qs('#community-management-plan-details');
-var seoPlanDetails = qs('#seo-plan-details');
-var conversionWebPlanDetails = qs('#conversion-web-plan-details');
-var emailMarketingPlanDetails = qs('#email-marketing-plan-details');
 
 /*---------------------RESULTADOS---------------------*/
 /*---Se capturan los CONTENEDORES de los distintos resultados---*/
@@ -1083,9 +885,7 @@ checkboxesServices.forEach((checkboxService, i) => {
             /*--Muestra según el caso : Inversión en Google Ads Search, Inversión en Google Ads Display e Inversión en Facebook Ads--*/
             if (checkboxesServicesValidate[0]) {
                 googleSearchAdsExtraContainer.style.display = "flex";
-                googleSearchAdsPlan.addEventListener('change', function () {
-                    googleSearchAdsPlanDetails.innerHTML = `<u>Includes:</u> <li>${services.googleSearchAds.implementation[googleSearchAdsPlan.value].hours.reduce((a, b) => a + b, 0)} hours of implementation (one time only)</li> <li>${services.googleSearchAds.maintenance[googleSearchAdsPlan.value].hours.reduce((a, b) => a + b, 0)} hours of monthly maintenance</li>`;
-                });
+
                 /*-Valida true / false el monto google search ads en caso de estar completado o no-*/
                 if (investmentGoogleSearchAdsAmmount.value == '') {
                     completeFormValidate[5] = false;
@@ -1098,9 +898,7 @@ checkboxesServices.forEach((checkboxService, i) => {
             }
             if (checkboxesServicesValidate[1]) {
                 googleDisplayAdsExtraContainer.style.display = "flex";
-                googleDisplayAdsPlan.addEventListener('change', function () {
-                    googleDisplayAdsPlanDetails.innerHTML = `<u>Includes:</u> <li>${services.googleDisplayAds.implementation[googleDisplayAdsPlan.value].hours.reduce((a, b) => a + b, 0)} hours of implementation (one time only)</li> <li>${services.googleDisplayAds.maintenance[googleDisplayAdsPlan.value].hours.reduce((a, b) => a + b, 0)}hours of monthly maintenance</li>`;
-                });
+
                 /*-Valida true / false el monto google display ads en caso de estar completado o no-*/
                 if (investmentGoogleDisplayAdsAmmount.value == '') {
                     completeFormValidate[6] = false;
@@ -1113,9 +911,7 @@ checkboxesServices.forEach((checkboxService, i) => {
             }
             if (checkboxesServicesValidate[2]) {
                 facebookAdsExtraContainer.style.display = "flex";
-                facebookAdsPlan.addEventListener('change', function () {
-                    facebookAdsPlanDetails.innerHTML = `<u>Includes:</u> <li>${services.facebookAds.implementation[facebookAdsPlan.value].hours.reduce((a, b) => a + b, 0)} hours of implementation (one time only)</li> <li>${services.facebookAds.maintenance[facebookAdsPlan.value].hours.reduce((a, b) => a + b, 0)} hours of monthly maintenance</li>`;
-                });
+
                 /*-Valida true / false el monto facebook ads en caso de estar completado o no-*/
                 if (investmentFacebookAdsAmmount.value.length == '') {
                     completeFormValidate[7] = false;
@@ -1151,38 +947,6 @@ checkboxesServices.forEach((checkboxService, i) => {
             facebookAdsExtraContainer.style.display = "none";
 
         }
-        /*--Muestra la selección de plan de Community Management--*/
-        if (checkboxesServicesValidate[3]) {
-            communityManagementExtraContainer.style.display = "block";
-            communityManagementPlan.addEventListener('change', function () {
-                communityManagementPlanDetails.innerHTML = `<u>Includes:</u> <li>${services.communityManagement.implementation[communityManagementPlan.value].hours.reduce((a, b) => a + b, 0)} hours of implementation (one time only)</li> <li>${services.communityManagement.maintenance[communityManagementPlan.value].hours.reduce((a, b) => a + b, 0)} hours of monthly maintenance</li>`;
-            });
-        } else {
-            communityManagementExtraContainer.style.display = "none"
-        }
-        /*--Muestra la selección de plan de SEO--*/
-        if (checkboxesServicesValidate[4]) {
-            seoExtraContainer.style.display = "block";
-            seoPlan.addEventListener('change', function () {
-                seoPlanDetails.innerHTML = `<u>Includes:</u> <li>${services.seo.implementation[seoPlan.value].hours.reduce((a, b) => a + b, 0)} hours of implementation (one time only)</li> <li>${services.seo.maintenance[seoPlan.value].hours.reduce((a, b) => a + b, 0)} hours of monthly maintenance</li>`;
-            });
-        } else {
-            seoExtraContainer.style.display = "none";
-        }
-        /*--Muestra la selección de plan de Optimización de conversion web--*/
-        if (checkboxesServicesValidate[5]) {
-            conversionWebExtraContainer.style.display = "block";
-            conversionWebPlan.addEventListener('change', function () {
-                if (conversionWebPlan.value == "basic" || conversionWebPlan.value == "advanced") {
-                    conversionWebPlanDetails.innerHTML = `<u>Includes:</u> <li>${services.conversionWeb.implementation[conversionWebPlan.value].hours.reduce((a, b) => a + b, 0)} hours of implementation (one time only)</li> <li>${services.conversionWeb.maintenance[conversionWebPlan.value].hours.reduce((a, b) => a + b, 0)}hs de mantenimiento mensual</li>`;
-                } else {
-                    conversionWebPlanDetails.innerHTML = `<u>Incluye:</u> <li>${services.conversionWeb.maintenance[conversionWebPlan.value].hours.reduce((a, b) => a + b, 0)} hours of monthly maintenance</li>`;
-                }
-
-            });
-        } else {
-            conversionWebExtraContainer.style.display = "none";
-        }
     });
 });
 
@@ -1190,13 +954,7 @@ checkboxesServices.forEach((checkboxService, i) => {
 email.addEventListener('change', function () {
     if (this.checked) {
         emailMarketingContainer.style.display = 'flex';
-        emailMarketingPlan.addEventListener('change', function () {
-            if (emailMarketingPlan.value == 'basic') {
-                emailMarketingPlanDetails.innerHTML = `<u>Includes:</u> <li>${services.emailMarketing.maintenance[emailMarketingPlan.value].deliversPerMonth} email a month (${services.emailMarketing.maintenance[emailMarketingPlan.value].hours.reduce((a, b) => a + b, 0)} hours of maintenance)</li>`;
-            } else {
-                emailMarketingPlanDetails.innerHTML = `<u>Includes:</u> <li>${services.emailMarketing.maintenance[emailMarketingPlan.value].deliversPerMonth} emails a month (${services.emailMarketing.maintenance[emailMarketingPlan.value].hours.reduce((a, b) => a + b, 0)} hours of maintenance)</li>`;
-            }
-        });
+
         if (emailAmmount.value == '') {
             completeFormValidate[2] = false;
         } else {
@@ -1896,18 +1654,18 @@ function calculate() {
 
             maintenanceContent = '';
             emailMarketingValueToPush = 0;
-            services.emailMarketing.maintenance[emailMarketingPlan.value].skillsAcquired.forEach((skill, i) => {
+            services.emailMarketing.maintenance.skillsAcquired.forEach((skill, i) => {
                 skills.names.forEach((name, j) => {
                     if (skill == name) {
-                        emailMarketingValueToPush += services.emailMarketing.maintenance[emailMarketingPlan.value].hours[i] * skills.prices[j][countrySupplier.value];
+                        emailMarketingValueToPush += services.emailMarketing.maintenance.hours[i] * skills.prices[j][countrySupplier.value];
                     }
                 })
                 /*--Se genera la descripcion de mantenimiento mensual para este servicio en el plan seleccionado---*/
-                maintenanceContent += `<ul><li>${services.emailMarketing.maintenance[emailMarketingPlan.value].hours[i]} hours of work from a ${services.emailMarketing.maintenance[emailMarketingPlan.value].skillsAcquired[i]} with a USD $${services.emailMarketing.maintenance[emailMarketingPlan.value].skillsPrices[i][countrySupplier.value]} hourly rate, to do the following:</li> ${services.emailMarketing.maintenance[emailMarketingPlan.value].content[i]}</ul>`;
+                maintenanceContent += `<ul><li>${services.emailMarketing.maintenance.hours[i]} hours of work from a ${services.emailMarketing.maintenance.skillsAcquired[i]} with a USD $${services.emailMarketing.maintenance.skillsPrices[i][countrySupplier.value]} hourly rate, to do the following:</li> ${services.emailMarketing.maintenance.content[i]}</ul>`;
             })
             /*--Se activa el cajon de mantenimiento con el sub-cajon de email marketing, inyectando titulo y contenido--*/
             resultMaintenanceEmailContainer.style.display = "block";
-            titleMaintenanceEmail.innerHTML = `<u><strong>Email Marketing</strong> (${services.emailMarketing.maintenance[emailMarketingPlan.value].deliversPerMonth} ${services.emailMarketing.maintenance[emailMarketingPlan.value].deliversPerMonth <= 1 ? 'monthly delivery' : 'monthly deliveries'}) :</u> USD ${emailMarketingValueToPush}`;
+            titleMaintenanceEmail.innerHTML = `<u><strong>Email Marketing</strong> (${services.emailMarketing.maintenance.deliversPerMonth} ${services.emailMarketing.maintenance.deliversPerMonth <= 1 ? 'monthly delivery' : 'monthly deliveries'}) :</u> USD ${emailMarketingValueToPush}`;
             resultMaintenanceEmail.innerHTML += `${maintenanceContent}`;
 
             agencyMonthlyFeeValue += emailMarketingValueToPush;
@@ -1921,14 +1679,14 @@ function calculate() {
             /*-para MANTENIMIENTO-*/
             let maintenanceContent = '';
             var conversionWebManteinanceValue = 0;
-            services.conversionWeb.maintenance[conversionWebPlan.value].skillsAcquired.forEach((skill, i) => {
+            services.conversionWeb.maintenance.skillsAcquired.forEach((skill, i) => {
                 skills.names.forEach((name, j) => {
                     if (skill == name) {
-                        conversionWebManteinanceValue += services.conversionWeb.maintenance[conversionWebPlan.value].hours[i] * skills.prices[j][countrySupplier.value];
+                        conversionWebManteinanceValue += services.conversionWeb.maintenance.hours[i] * skills.prices[j][countrySupplier.value];
                     }
                 })
                 /*--Se genera la descripcion de mantenimiento mensual para este servicio en el plan seleccionado---*/
-                maintenanceContent += `<ul><li>${services.conversionWeb.maintenance[conversionWebPlan.value].hours[i]} hours of work from a ${services.conversionWeb.maintenance[conversionWebPlan.value].skillsAcquired[i]} with a USD $${services.conversionWeb.maintenance[conversionWebPlan.value].skillsPrices[i][countrySupplier.value]} hourly rate, to do the following:</li> ${services.conversionWeb.maintenance[conversionWebPlan.value].content[i]}</ul>`;
+                maintenanceContent += `<ul><li>${services.conversionWeb.maintenance.hours[i]} hours of work from a ${services.conversionWeb.maintenance.skillsAcquired[i]} with a USD $${services.conversionWeb.maintenance.skillsPrices[i][countrySupplier.value]} hourly rate, to do the following:</li> ${services.conversionWeb.maintenance.content[i]}</ul>`;
             })
             /*--Se activa el cajon de mantenimiento con el sub-cajon de conversion web, inyectando titulo y contenido para el plan seleccionado--*/
             resultMaintenanceConversionWebContainer.style.display = "block";
@@ -1940,29 +1698,22 @@ function calculate() {
             /*-para IMPLEMENTACIÓN-*/
             let implementationContent = '';
             var conversionWebImplementationValue = 0;
-            if (conversionWebPlan.value == 'basic' || conversionWebPlan.value == 'advanced') {
-                resultImplementationContainer.style.display = "block";
 
-                services.conversionWeb.implementation[conversionWebPlan.value].skillsAcquired.forEach((skill, i) => {
-                    skills.names.forEach((name, j) => {
-                        if (skill == name) {
-                            conversionWebImplementationValue += services.conversionWeb.implementation[conversionWebPlan.value].hours[i] * skills.prices[j][countrySupplier.value];
-                        }
-                    })
-                    /*--Se genera la descripcion de implementación para este servicio en el plan seleccionado---*/
-                    implementationContent += `<ul><li>${services.conversionWeb.implementation[conversionWebPlan.value].hours[i]} hours of work from a ${services.conversionWeb.implementation[conversionWebPlan.value].skillsAcquired[i]} with a USD $${services.conversionWeb.implementation[conversionWebPlan.value].skillsPrices[i][countrySupplier.value]} hourly rate, to do the following:</li> ${services.conversionWeb.implementation[conversionWebPlan.value].content[i]}</ul>`;
+            services.conversionWeb.implementation.skillsAcquired.forEach((skill, i) => {
+                skills.names.forEach((name, j) => {
+                    if (skill == name) {
+                        conversionWebImplementationValue += services.conversionWeb.implementation.hours[i] * skills.prices[j][countrySupplier.value];
+                    }
                 })
-                /*--Se activa el cajon de implementación con el sub-cajon de conversion web, inyectando titulo y contenido para el plan seleccionado--*/
-                resultImplementationConversionWebContainer.style.display = "block";
-                titleImplementationConversionWeb.innerHTML = `<u><strong>Conversion Rate Optimization</strong>:</u> USD ${conversionWebImplementationValue}`;
-                resultImplementationConversionWeb.innerHTML = `${implementationContent}`;
+                /*--Se genera la descripcion de implementación para este servicio en el plan seleccionado---*/
+                implementationContent += `<ul><li>${services.conversionWeb.implementation.hours[i]} hours of work from a ${services.conversionWeb.implementation.skillsAcquired[i]} with a USD $${services.conversionWeb.implementation.skillsPrices[i][countrySupplier.value]} hourly rate, to do the following:</li> ${services.conversionWeb.implementation.content[i]}</ul>`;
+            })
+            /*--Se activa el cajon de implementación con el sub-cajon de conversion web, inyectando titulo y contenido para el plan seleccionado--*/
+            resultImplementationConversionWebContainer.style.display = "block";
+            titleImplementationConversionWeb.innerHTML = `<u><strong>Conversion Rate Optimization</strong>:</u> USD ${conversionWebImplementationValue}`;
+            resultImplementationConversionWeb.innerHTML = `${implementationContent}`;
 
-                agencyOnceFeeValue += conversionWebImplementationValue;
-
-            } else {
-                resultImplementationContainer.style.display = "none";
-                resultImplementationConversionWebContainer.style.display = "none";
-            }
+            agencyOnceFeeValue += conversionWebImplementationValue;
 
         } else {
             resultMaintenanceConversionWebContainer.style.display = "none";
@@ -1976,14 +1727,14 @@ function calculate() {
             /*-para MANTENIMIENTO-*/
             let maintenanceContent = '';
             var seoManteinanceValue = 0;
-            services.seo.maintenance[seoPlan.value].skillsAcquired.forEach((skill, i) => {
+            services.seo.maintenance.skillsAcquired.forEach((skill, i) => {
                 skills.names.forEach((name, j) => {
                     if (skill == name) {
-                        seoManteinanceValue += services.seo.maintenance[seoPlan.value].hours[i] * skills.prices[j][countrySupplier.value];
+                        seoManteinanceValue += services.seo.maintenance.hours[i] * skills.prices[j][countrySupplier.value];
                     }
                 })
                 /*--Se genera la descripcion de mantenimiento mensual para este servicio en el plan seleccionado---*/
-                maintenanceContent += `<ul><li>${services.seo.maintenance[seoPlan.value].hours[i]} hours of work from a ${services.seo.maintenance[seoPlan.value].skillsAcquired[i]} with a USD $${services.seo.maintenance[seoPlan.value].skillsPrices[i][countrySupplier.value]} hourly rate, to do the following:</li> ${services.seo.maintenance[seoPlan.value].content[i]}</ul>`;
+                maintenanceContent += `<ul><li>${services.seo.maintenance.hours[i]} hours of work from a ${services.seo.maintenance.skillsAcquired[i]} with a USD $${services.seo.maintenance.skillsPrices[i][countrySupplier.value]} hourly rate, to do the following:</li> ${services.seo.maintenance.content[i]}</ul>`;
             })
             /*--Se activa el cajon de mantenimiento con el sub-cajon de SEO, inyectando titulo y contenido para el plan seleccionado--*/
             resultMaintenanceSeoContainer.style.display = "block";
@@ -1995,14 +1746,14 @@ function calculate() {
             /*-para IMPLEMENTACIÓN-*/
             let implementationContent = '';
             var seoImplementationValue = 0;
-            services.seo.implementation[seoPlan.value].skillsAcquired.forEach((skill, i) => {
+            services.seo.implementation.skillsAcquired.forEach((skill, i) => {
                 skills.names.forEach((name, j) => {
                     if (skill == name) {
-                        seoImplementationValue += services.seo.implementation[seoPlan.value].hours[i] * skills.prices[j][countrySupplier.value];
+                        seoImplementationValue += services.seo.implementation.hours[i] * skills.prices[j][countrySupplier.value];
                     }
                 })
                 /*--Se genera la descripcion de implementación para este servicio en el plan seleccionado---*/
-                implementationContent += `<ul><li>${services.seo.implementation[seoPlan.value].hours[i]} hours of work from a ${services.seo.implementation[seoPlan.value].skillsAcquired[i]} with a USD $${services.seo.implementation[seoPlan.value].skillsPrices[i][countrySupplier.value]} hourly rate, to do the following:</li> ${services.seo.implementation[seoPlan.value].content[i]}</ul>`;
+                implementationContent += `<ul><li>${services.seo.implementation.hours[i]} hours of work from a ${services.seo.implementation.skillsAcquired[i]} with a USD $${services.seo.implementation.skillsPrices[i][countrySupplier.value]} hourly rate, to do the following:</li> ${services.seo.implementation.content[i]}</ul>`;
             })
             /*--Se activa el cajon de implementación con el sub-cajon de SEO, inyectando titulo y contenido para el plan seleccionado--*/
             resultImplementationSeoContainer.style.display = "block";
@@ -2023,14 +1774,14 @@ function calculate() {
             /*-para MANTENIMIENTO-*/
             let maintenanceContent = '';
             var communityManagementManteinanceValue = 0;
-            services.communityManagement.maintenance[communityManagementPlan.value].skillsAcquired.forEach((skill, i) => {
+            services.communityManagement.maintenance.skillsAcquired.forEach((skill, i) => {
                 skills.names.forEach((name, j) => {
                     if (skill == name) {
-                        communityManagementManteinanceValue += services.communityManagement.maintenance[communityManagementPlan.value].hours[i] * skills.prices[j][countrySupplier.value];
+                        communityManagementManteinanceValue += services.communityManagement.maintenance.hours[i] * skills.prices[j][countrySupplier.value];
                     }
                 })
                 /*--Se genera la descripcion de mantenimiento mensual para este servicio en el plan seleccionado---*/
-                maintenanceContent += `<ul><li>${services.communityManagement.maintenance[communityManagementPlan.value].hours[i]} hours of work from a ${services.communityManagement.maintenance[communityManagementPlan.value].skillsAcquired[i]} with a USD $${services.communityManagement.maintenance[communityManagementPlan.value].skillsPrices[i][countrySupplier.value]} hourly rate, to do the following:</li> ${services.communityManagement.maintenance[communityManagementPlan.value].content[i]}</ul>`;
+                maintenanceContent += `<ul><li>${services.communityManagement.maintenance.hours[i]} hours of work from a ${services.communityManagement.maintenance.skillsAcquired[i]} with a USD $${services.communityManagement.maintenance.skillsPrices[i][countrySupplier.value]} hourly rate, to do the following:</li> ${services.communityManagement.maintenance.content[i]}</ul>`;
             })
             /*--Se activa el cajon de mantenimiento con el sub-cajon de Community Management, inyectando titulo y contenido para el plan seleccionado--*/
             resultMaintenanceCommunityManagementContainer.style.display = "block";
@@ -2042,14 +1793,14 @@ function calculate() {
             /*-para IMPLEMENTACIÓN-*/
             let implementationContent = '';
             var communityManagementImplementationValue = 0;
-            services.communityManagement.implementation[communityManagementPlan.value].skillsAcquired.forEach((skill, i) => {
+            services.communityManagement.implementation.skillsAcquired.forEach((skill, i) => {
                 skills.names.forEach((name, j) => {
                     if (skill == name) {
-                        communityManagementImplementationValue += services.communityManagement.implementation[communityManagementPlan.value].hours[i] * skills.prices[j][countrySupplier.value];
+                        communityManagementImplementationValue += services.communityManagement.implementation.hours[i] * skills.prices[j][countrySupplier.value];
                     }
                 })
                 /*--Se genera la descripcion de implementación para este servicio en el plan seleccionado---*/
-                implementationContent += `<ul><li>${services.communityManagement.implementation[communityManagementPlan.value].hours[i]} hours of work from a ${services.communityManagement.implementation[communityManagementPlan.value].skillsAcquired[i]} with a USD $${services.communityManagement.implementation[communityManagementPlan.value].skillsPrices[i][countrySupplier.value]} hourly rate, to do the following:</li> ${services.communityManagement.implementation[communityManagementPlan.value].content[i]}</ul>`;
+                implementationContent += `<ul><li>${services.communityManagement.implementation.hours[i]} hours of work from a ${services.communityManagement.implementation.skillsAcquired[i]} with a USD $${services.communityManagement.implementation.skillsPrices[i][countrySupplier.value]} hourly rate, to do the following:</li> ${services.communityManagement.implementation.content[i]}</ul>`;
             })
             /*--Se activa el cajon de implementación con el sub-cajon de Community Management, inyectando titulo y contenido para el plan seleccionado--*/
             resultImplementationCommunityManagementContainer.style.display = "block";
@@ -2070,14 +1821,14 @@ function calculate() {
             /*-para MANTENIMIENTO-*/
             let maintenanceContent = '';
             var googleSearchAdsManteinanceValue = 0;
-            services.googleSearchAds.maintenance[googleSearchAdsPlan.value].skillsAcquired.forEach((skill, i) => {
+            services.googleSearchAds.maintenance.skillsAcquired.forEach((skill, i) => {
                 skills.names.forEach((name, j) => {
                     if (skill == name) {
-                        googleSearchAdsManteinanceValue += services.googleSearchAds.maintenance[googleSearchAdsPlan.value].hours[i] * skills.prices[j][countrySupplier.value];
+                        googleSearchAdsManteinanceValue += services.googleSearchAds.maintenance.hours[i] * skills.prices[j][countrySupplier.value];
                     }
                 })
                 /*--Se genera la descripcion de mantenimiento mensual para este servicio en el plan seleccionado---*/
-                maintenanceContent += `<ul><li>${services.googleSearchAds.maintenance[googleSearchAdsPlan.value].hours[i]} hours of work from a ${services.googleSearchAds.maintenance[googleSearchAdsPlan.value].skillsAcquired[i]} with a USD $${services.googleSearchAds.maintenance[googleSearchAdsPlan.value].skillsPrices[i][countrySupplier.value]} hourly rate, to do the following:</li> ${services.googleSearchAds.maintenance[googleSearchAdsPlan.value].content[i]}</ul>`;
+                maintenanceContent += `<ul><li>${services.googleSearchAds.maintenance.hours[i]} hours of work from a ${services.googleSearchAds.maintenance.skillsAcquired[i]} with a USD $${services.googleSearchAds.maintenance.skillsPrices[i][countrySupplier.value]} hourly rate, to do the following:</li> ${services.googleSearchAds.maintenance.content[i]}</ul>`;
             })
             /*--Se activa el cajon de mantenimiento con el sub-cajon de Google Search Ads, inyectando titulo y contenido para el plan seleccionado--*/
             resultMaintenanceGoogleSearchAdsContainer.style.display = "block";
@@ -2089,14 +1840,14 @@ function calculate() {
             /*-para IMPLEMENTACIÓN-*/
             let implementationContent = '';
             var googleSearchAdsImplementationValue = 0;
-            services.googleSearchAds.implementation[googleSearchAdsPlan.value].skillsAcquired.forEach((skill, i) => {
+            services.googleSearchAds.implementation.skillsAcquired.forEach((skill, i) => {
                 skills.names.forEach((name, j) => {
                     if (skill == name) {
-                        googleSearchAdsImplementationValue += services.googleSearchAds.implementation[googleSearchAdsPlan.value].hours[i] * skills.prices[j][countrySupplier.value];
+                        googleSearchAdsImplementationValue += services.googleSearchAds.implementation.hours[i] * skills.prices[j][countrySupplier.value];
                     }
                 })
                 /*--Se genera la descripcion de implementación para este servicio en el plan seleccionado---*/
-                implementationContent += `<ul><li>${services.googleSearchAds.implementation[googleSearchAdsPlan.value].hours[i]} hours of work from a ${services.googleSearchAds.implementation[googleSearchAdsPlan.value].skillsAcquired[i]} with a USD $${services.googleSearchAds.implementation[googleSearchAdsPlan.value].skillsPrices[i][countrySupplier.value]} hourly rate, to do the following:</li> ${services.googleSearchAds.implementation[googleSearchAdsPlan.value].content[i]}</ul>`;
+                implementationContent += `<ul><li>${services.googleSearchAds.implementation.hours[i]} hours of work from a ${services.googleSearchAds.implementation.skillsAcquired[i]} with a USD $${services.googleSearchAds.implementation.skillsPrices[i][countrySupplier.value]} hourly rate, to do the following:</li> ${services.googleSearchAds.implementation.content[i]}</ul>`;
             })
             /*--Se activa el cajon de implementación con el sub-cajon de Google Search Ads, inyectando titulo y contenido para el plan seleccionado--*/
             resultImplementationGoogleSearchAdsContainer.style.display = "block";
@@ -2124,14 +1875,14 @@ function calculate() {
             /*-para MANTENIMIENTO-*/
             let maintenanceContent = '';
             var googleDisplayAdsManteinanceValue = 0;
-            services.googleDisplayAds.maintenance[googleDisplayAdsPlan.value].skillsAcquired.forEach((skill, i) => {
+            services.googleDisplayAds.maintenance.skillsAcquired.forEach((skill, i) => {
                 skills.names.forEach((name, j) => {
                     if (skill == name) {
-                        googleDisplayAdsManteinanceValue += services.googleDisplayAds.maintenance[googleDisplayAdsPlan.value].hours[i] * skills.prices[j][countrySupplier.value];
+                        googleDisplayAdsManteinanceValue += services.googleDisplayAds.maintenance.hours[i] * skills.prices[j][countrySupplier.value];
                     }
                 })
                 /*--Se genera la descripcion de mantenimiento mensual para este servicio en el plan seleccionado---*/
-                maintenanceContent += `<ul><li>${services.googleDisplayAds.maintenance[googleDisplayAdsPlan.value].hours[i]} hours of work from a ${services.googleDisplayAds.maintenance[googleDisplayAdsPlan.value].skillsAcquired[i]} with a USD $${services.googleDisplayAds.maintenance[googleDisplayAdsPlan.value].skillsPrices[i][countrySupplier.value]} hourly rate, to do the following:</li> ${services.googleDisplayAds.maintenance[googleDisplayAdsPlan.value].content[i]}</ul>`;
+                maintenanceContent += `<ul><li>${services.googleDisplayAds.maintenance.hours[i]} hours of work from a ${services.googleDisplayAds.maintenance.skillsAcquired[i]} with a USD $${services.googleDisplayAds.maintenance.skillsPrices[i][countrySupplier.value]} hourly rate, to do the following:</li> ${services.googleDisplayAds.maintenance.content[i]}</ul>`;
             })
             /*--Se activa el cajon de mantenimiento con el sub-cajon de Google Display Ads, inyectando titulo y contenido para el plan seleccionado--*/
             resultMaintenanceGoogleDisplayAdsContainer.style.display = "block";
@@ -2143,14 +1894,14 @@ function calculate() {
             /*-para IMPLEMENTACIÓN-*/
             let implementationContent = '';
             var googleDisplayAdsImplementationValue = 0;
-            services.googleDisplayAds.implementation[googleDisplayAdsPlan.value].skillsAcquired.forEach((skill, i) => {
+            services.googleDisplayAds.implementation.skillsAcquired.forEach((skill, i) => {
                 skills.names.forEach((name, j) => {
                     if (skill == name) {
-                        googleDisplayAdsImplementationValue += services.googleDisplayAds.implementation[googleDisplayAdsPlan.value].hours[i] * skills.prices[j][countrySupplier.value];
+                        googleDisplayAdsImplementationValue += services.googleDisplayAds.implementation.hours[i] * skills.prices[j][countrySupplier.value];
                     }
                 })
                 /*--Se genera la descripcion de implementación para este servicio en el plan seleccionado---*/
-                implementationContent += `<ul><li>${services.googleDisplayAds.implementation[googleDisplayAdsPlan.value].hours[i]} hours of work from a ${services.googleDisplayAds.implementation[googleDisplayAdsPlan.value].skillsAcquired[i]} with a USD $${services.googleDisplayAds.implementation[googleDisplayAdsPlan.value].skillsPrices[i][countrySupplier.value]} hourly rate, to do the following:</li> ${services.googleDisplayAds.implementation[googleDisplayAdsPlan.value].content[i]}</ul>`;
+                implementationContent += `<ul><li>${services.googleDisplayAds.implementation.hours[i]} hours of work from a ${services.googleDisplayAds.implementation.skillsAcquired[i]} with a USD $${services.googleDisplayAds.implementation.skillsPrices[i][countrySupplier.value]} hourly rate, to do the following:</li> ${services.googleDisplayAds.implementation.content[i]}</ul>`;
             })
             /*--Se activa el cajon de implementación con el sub-cajon de Google Display Ads, inyectando titulo y contenido para el plan seleccionado--*/
             resultImplementationGoogleDisplayAdsContainer.style.display = "block";
@@ -2178,14 +1929,14 @@ function calculate() {
             /*-para MANTENIMIENTO-*/
             let maintenanceContent = '';
             var facebookAdsManteinanceValue = 0;
-            services.facebookAds.maintenance[facebookAdsPlan.value].skillsAcquired.forEach((skill, i) => {
+            services.facebookAds.maintenance.skillsAcquired.forEach((skill, i) => {
                 skills.names.forEach((name, j) => {
                     if (skill == name) {
-                        facebookAdsManteinanceValue += services.facebookAds.maintenance[facebookAdsPlan.value].hours[i] * skills.prices[j][countrySupplier.value];
+                        facebookAdsManteinanceValue += services.facebookAds.maintenance.hours[i] * skills.prices[j][countrySupplier.value];
                     }
                 })
                 /*--Se genera la descripcion de mantenimiento mensual para este servicio en el plan seleccionado---*/
-                maintenanceContent += `<ul><li>${services.facebookAds.maintenance[facebookAdsPlan.value].hours[i]} hours of work from a ${services.facebookAds.maintenance[facebookAdsPlan.value].skillsAcquired[i]} with a USD $${services.facebookAds.maintenance[facebookAdsPlan.value].skillsPrices[i][countrySupplier.value]} hourly rate, to do the following:</li> ${services.facebookAds.maintenance[facebookAdsPlan.value].content[i]}</ul>`;
+                maintenanceContent += `<ul><li>${services.facebookAds.maintenance.hours[i]} hours of work from a ${services.facebookAds.maintenance.skillsAcquired[i]} with a USD $${services.facebookAds.maintenance.skillsPrices[i][countrySupplier.value]} hourly rate, to do the following:</li> ${services.facebookAds.maintenance.content[i]}</ul>`;
             })
             /*--Se activa el cajon de mantenimiento con el sub-cajon de Facebook Ads, inyectando titulo y contenido para el plan seleccionado--*/
             resultMaintenanceFacebookAdsContainer.style.display = "block";
@@ -2197,14 +1948,14 @@ function calculate() {
             /*-para IMPLEMENTACIÓN-*/
             let implementationContent = '';
             var facebookAdsImplementationValue = 0;
-            services.facebookAds.implementation[facebookAdsPlan.value].skillsAcquired.forEach((skill, i) => {
+            services.facebookAds.implementation.skillsAcquired.forEach((skill, i) => {
                 skills.names.forEach((name, j) => {
                     if (skill == name) {
-                        facebookAdsImplementationValue += services.facebookAds.implementation[facebookAdsPlan.value].hours[i] * skills.prices[j][countrySupplier.value];
+                        facebookAdsImplementationValue += services.facebookAds.implementation.hours[i] * skills.prices[j][countrySupplier.value];
                     }
                 })
                 /*--Se genera la descripcion de implementación para este servicio en el plan seleccionado---*/
-                implementationContent += `<ul><li>${services.facebookAds.implementation[facebookAdsPlan.value].hours[i]} hours of work from a ${services.facebookAds.implementation[facebookAdsPlan.value].skillsAcquired[i]} with a USD $${services.facebookAds.implementation[facebookAdsPlan.value].skillsPrices[i][countrySupplier.value]} hourly rate, to do the following:</li> ${services.facebookAds.implementation[facebookAdsPlan.value].content[i]}</ul>`;
+                implementationContent += `<ul><li>${services.facebookAds.implementation.hours[i]} hours of work from a ${services.facebookAds.implementation.skillsAcquired[i]} with a USD $${services.facebookAds.implementation.skillsPrices[i][countrySupplier.value]} hourly rate, to do the following:</li> ${services.facebookAds.implementation.content[i]}</ul>`;
             })
             /*--Se activa el cajon de implementación con el sub-cajon de Facebook Ads, inyectando titulo y contenido para el plan seleccionado--*/
             resultImplementationFacebookAdsContainer.style.display = "block";
