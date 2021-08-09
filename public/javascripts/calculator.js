@@ -532,46 +532,46 @@ const services = Object.freeze({
             skillsAcquired: Object.freeze(["Digital Marketing Analyst"]),
             idSkillsAcquired: Object.freeze([0]),
             skillsPrices: Object.freeze([skills.prices[0]]),
-            content: Object.freeze(["<ul><li style='list-style: circle;'>Creating a Google Ads account.</li><li style='list-style: circle;'>Selection of Keywords for the target audience and relevant for the campaign. Call with the client, to discuss the monthly budget and which type of searches are relevant for the established objective.</li><li style='list-style: circle;'>Creating the link extensions for the campaign (for example: a link that redirects to your website or get phone calls to your business).</li><li style='list-style: circle;'>The Implementation of Google Analytics and Google Tag Manager.</li><li style='list-style: circle;'>Conversion analysis for your business and measuring relevant action on your website using Google Tag Manager and Google Analytics. For example: when they add an item to the kart, make a purchase, fill a form, or contact you through the website chat.</li><li style='list-style: circle;'>The Creating a dashboard in Google Data Studio (<a href='https://datastudio.google.com/u/0/reporting/0B_U5RNpwhcE6ckdmZEJ0ZDJXUnM/page/VgD/preview' target='_blank' rel='noreferrer noopener'>Click here</a> for an example).</li><li style='list-style: circle;'>Organizing the keyword themes in 10 ad groups and creating 10 different ads for each topic.</li></ul>"])
+            content: Object.freeze(["<ul><li style='list-style: circle;'>Selection of Keywords for the target audience and relevant for the campaign. Call with the client, to discuss the monthly budget and which type of searches are relevant for the established objective.</li><li style='list-style: circle;'>Conversion analysis for your business and measuring relevant action on your website using Google Tag Manager and Google Analytics. For example: when they add an item to the kart, make a purchase, fill a form, or contact you through the website chat.</li><li style='list-style: circle;'>The Creating a dashboard in Google Data Studio (<a href='https://datastudio.google.com/u/0/reporting/0B_U5RNpwhcE6ckdmZEJ0ZDJXUnM/page/VgD/preview' target='_blank' rel='noreferrer noopener'>Click here</a> for an example).</li><li style='list-style: circle;'>Organización por temas de palabras clave para controlar la inversión para diferentes temas y hacer anuncios específicos para diferentes temas.</li></ul>"])
         }),
         maintenance: Object.freeze({
-            hours: Object.freeze([8]),
+            hours: Object.freeze([6]),
             skillsAcquired: Object.freeze(["Digital Marketing Analyst"]),
             idSkillsAcquired: Object.freeze([0]),
             skillsPrices: Object.freeze([skills.prices[0]]),
-            content: Object.freeze(["<ul><li style='list-style: circle;'>Making any modification by the client request (respecting the accorded schedule).</li><li style='list-style: circle;'>Includes 4 changes each month to optimize the performance like budget modification, final url, texts in ads, keywords (searches in which you appear), location, and keyword matching options (how wide is the umbrella of similar searches to your keywords in which you appear).</li><li style='list-style: circle;'>Analysis of every implemented change and their impact.</li></ul>"])
+            content: Object.freeze(["<ul><li style='list-style: circle;'>Making any modification by the client request (respecting the accorded schedule).</li><li style='list-style: circle;'>1 cambio por semana para intentar mejorar la performance como modificar el presupuesto, url finales, texto de anuncios, palabras clave (Búsquedas en las que aparecés), ubicación geográfica y concordancias (qué tan amplio es el abanico de búsquedas similares a tus palabras clave en el cual aparecés).</li><li style='list-style: circle;'>Análisis semanal del impacto de los cambios implementados usando el dashboard de Google Data Studio.</li></ul>"])
         })
     }),
     googleDisplayAds: Object.freeze({
         implementation: Object.freeze({
-            hours: Object.freeze([4, 2, 2]),
-            skillsAcquired: Object.freeze(["Digital Marketing Analyst", "Graphic Designer", "Video Editor"]),
-            idSkillsAcquired: Object.freeze([0, 5, 7]),
-            skillsPrices: Object.freeze([skills.prices[0], skills.prices[5], skills.prices[7]]),
-            content: Object.freeze(["<ul><li style='list-style: circle;'>Creating a Google Ads account.</li><li style='list-style: circle;'>Creating a 1 Remarketing campaign (showing ads on different websites to users who visited your business website in the last 30 days). (<a href='https://drive.google.com/file/d/1zvy-_UYBC1VWbIqEszWUhvuzPcU3FNXl/view?usp=sharing' target='_blank' rel='noreferrer noopener'>Click here</a> for an example)</li><li style='list-style: circle;'>Measuring relevant actions on your business website (conversions). For example: when they add an item to the kart, make a purchase, fill a form, or contact you through the website chat.</li><li style='list-style: circle;'>Implementation of Google Analytics and Google Tag Manager.</li><li style='list-style: circle;'>Conversion analysis for your business and measuring relevant action on your website using Google Tag Manager and Google Analytics.</li><li style='list-style: circle;'>Creating a Google Data Studio dashboard (<a href='https://datastudio.google.com/u/0/reporting/f6da5210-ceff-411f-a088-28943fb6b9d6/page/s16BB/preview' target='_blank' rel='noreferrer noopener'>Click here</a> for an example)</li><li style='list-style: circle;'>Creating up to 5 campaigns, all segmented by user interests and website themes, and distribute the budget to optimize conversions.</li></ul>", "<ul><li style='list-style: circle;'>Designing 1 banner in a square and horizontal format for responsive ads (a mix between image and text).</li></ul>", "<ul><li style='list-style: circle;'>Creating a 30 second video in horizontal format for ads in different websites (<a href='https://drive.google.com/file/d/1il1GW3U0HTOIy76mtOSmEEwNYXda6_CL/view?usp=sharing' target='_blank' rel='noreferrer noopener'>Click here</a> for an example)</li><li style='list-style: circle;'><a href='https://drive.google.com/drive/folders/131EO5sr8BXx1si4fRHetLhPWHeNHaZI4?usp=sharing' target='_blank' rel='noreferrer noopener'>See example of creative pieces delivered</a></li></ul>"])
-        }),
-        maintenance: Object.freeze({
-            hours: Object.freeze([4, 4]),
+            hours: Object.freeze([2, 2]),
             skillsAcquired: Object.freeze(["Digital Marketing Analyst", "Graphic Designer"]),
             idSkillsAcquired: Object.freeze([0, 5]),
             skillsPrices: Object.freeze([skills.prices[0], skills.prices[5]]),
-            content: Object.freeze(["<ul><li style='list-style: circle;'>Making any modification by the client request (always respecting the accorded schedule).</li><li style='list-style: circle;'>Includes 4 changes a month to optimize performance. For example: modifying budget, final url, ads copy, location and creative pieces. By the end of the month, the client will receive a review analyzing how the changes impacted the campaign.</li></ul>", "<ul><li style='list-style: circle;'>Creation of 2 graphic pieces in a square and horizontal format.</li></ul>"])
+            content: Object.freeze(["<ul>Creación de campañas que le muestren anuncios de imagen en sitios web a un público relevante. Por ejemplo, visitantes de tu sitio web en los últimos 30 días o gente interesada en tu producto o servicio según Google.</li></ul>", "<ul><li style='list-style: circle;'>Designing 1 banner in a square and horizontal format for responsive ads (a mix between image and text).</li><li style='list-style: circle;'><a href='https://drive.google.com/drive/folders/15wF9BY4RxRrQ-vEchJDP4V17rw6hp503?usp=sharing' target='_blank' rel='noreferrer noopener'>Ver suma de piezas creativas</a></li></ul>"])
+        }),
+        maintenance: Object.freeze({
+            hours: Object.freeze([4, 2]),
+            skillsAcquired: Object.freeze(["Digital Marketing Analyst", "Graphic Designer"]),
+            idSkillsAcquired: Object.freeze([0, 5]),
+            skillsPrices: Object.freeze([skills.prices[0], skills.prices[5]]),
+            content: Object.freeze(["<ul><li style='list-style: circle;'>Making any modification by the client request (always respecting the accorded schedule).</li><li style='list-style: circle;'>Incluye 1 cambio semanal para intentar mejorar la performance como modificar el presupuesto, url finales, texto de anuncios, audiencia, ubicación geográfica y piezas creativas.</li><li style='list-style: circle;'>Análisis semanal del impacto de los cambios implementados usando el dashboard de Google Data Studio.</li></ul>", "<ul><li style='list-style: circle;'>Creation of 1 graphic piece in a square and horizontal format.</li></ul>"])
         })
     }),
     facebookAds: Object.freeze({
         implementation: Object.freeze({
-            hours: Object.freeze([4, 4]),
+            hours: Object.freeze([2, 6]),
             skillsAcquired: Object.freeze(["Digital Marketing Analyst", "Graphic Designer"]),
             idSkillsAcquired: Object.freeze([0, 5]),
             skillsPrices: Object.freeze([skills.prices[0], skills.prices[5]]),
-            content: Object.freeze(["<ul><li style='list-style: circle;'>Creating a Facebook Ads account.</li><li style='list-style: circle;'>Facebook Pixel implementation for targets like users  who visited your business website or similar users who visited your business website.</li><li style='list-style: circle;'>Creation of a campaign structure with an investment of 70% on new users (users who hadn’t visited your website or your social media). An investment of 30% on users who visited your website or interacted with your social media.</li><li style='list-style: circle;'>Conversion Rate with Facebook Pixel (number of users who take action on a page like making an online purchase or filling a form).</li><li style='list-style: circle;'>Copywriting services (10 strategic texts in total) being aware if the users visited the business website or not./li></ul>", "<ul><li style='list-style: circle;'>Different graphic sets (2 sets of graphic images in square and vertical format, 4 total), taking into account if users visited the business website or not.</li><li style='list-style: circle;'><a href='https://drive.google.com/drive/folders/14atx8oJwDeypPzA49ISyET6KsONJZfPk?usp=sharing' target='_blank' rel='noreferrer noopener'>Click here</a> for an example.</li></ul>"])
+            content: Object.freeze(["<ul><li style='list-style: circle;'>Creación de campañas que le muestren anuncios de imagen en Facebook e Instagram a un público relevante. Por ejemplo, visitantes de tu sitio web en los últimos 30 días o gente interesada en tu producto o servicio según Facebook.</li><li style='list-style: circle;'>Medición de acciones relevantes para tu negocio en tu sitio web (Conversiones). Por ejemplo, cuando arrancan el carrito, hacen una compra, completan un formulario o te contactan por el chat de la web.</li></ul>", "<ul><li style='list-style: circle;'>Creación de 3 piezas gráficas en formatos cuadrado (Para feed) y vertical (Para stories) <a href='https://drive.google.com/drive/folders/1_rdQGGkJ41WnMRd9iRbHo44DZ7mu3_bc?usp=sharing' target='_blank' rel='noreferrer noopener'>Click here</a> for an example.</li></ul>"])
         }),
         maintenance: Object.freeze({
-            hours: Object.freeze([4, 4]),
+            hours: Object.freeze([4, 2]),
             skillsAcquired: Object.freeze(["Digital Marketing Analyst", "Graphic Designer"]),
             idSkillsAcquired: Object.freeze([0, 5]),
             skillsPrices: Object.freeze([skills.prices[0], skills.prices[5]]),
-            content: Object.freeze(["<ul><li style='list-style: circle;'>Making any modification by the client request (always respecting the accorded schedule).</li><li style='list-style: circle;'>Includes 2 changes a month to optimize performance. For example: modifying budget, final url, ads copy, target, location, bidding strategies, and creative pieces.</li></ul>", "<ul><li style='list-style: circle;'>2 social media graphic images in square and vertical format.</li></ul>"])
+            content: Object.freeze(["<ul><li style='list-style: circle;'>Making any modification by the client request (always respecting the accorded schedule).</li><li style='list-style: circle;'>Incluye 1 cambio por semana para intentar mejorar la performance como modificar el presupuesto, url finales, texto de anuncios, audiencia, ubicación geográfica, estrategia de puja y piezas creativas.</li></ul>", "<ul><li style='list-style: circle;'>2 social media graphic images in square and vertical format.</li></ul>"])
         })
     }),
     conversionWeb: Object.freeze({
@@ -622,7 +622,7 @@ const services = Object.freeze({
                 idSkillsAcquired: Object.freeze([4]),
                 skillsPrices: Object.freeze([skills.prices[4]]),
                 name: Object.freeze("Ecommerce simple website with CMS, like WooCommerce, Tienda Nube or Shopify"),
-                content: Object.freeze(["<ul><li style='list-style: circle;'>Uploading 15 products on the website.</li></ul>"])
+                content: Object.freeze(["<ul><li style='list-style: circle;'>Uploading up to 15 products on the website.</li></ul>"])
             }),
             logoYMarca: Object.freeze({
                 hours: Object.freeze([10]),
@@ -1558,12 +1558,9 @@ function calculate() {
             /*-para MANTENIMIENTO-*/
             let maintenanceContent = '';
             var conversionWebManteinanceValue = 0;
-            services.conversionWeb.maintenance.skillsAcquired.forEach((skill, i) => {
-                skills.names.forEach((name, j) => {
-                    if (skill == name) {
-                        conversionWebManteinanceValue += services.conversionWeb.maintenance.hours[i] * skills.prices[j][countrySupplier.value];
-                    }
-                })
+            services.conversionWeb.maintenance.idSkillsAcquired.forEach((skill, i) => {
+                conversionWebManteinanceValue += services.conversionWeb.maintenance.hours[i] * skills.prices[skill][countrySupplier.value];
+                
                 /*--Se genera la descripcion de mantenimiento mensual para este servicio en el plan seleccionado---*/
                 maintenanceContent += `<ul><li>${services.conversionWeb.maintenance.hours[i]} hours of work from a ${services.conversionWeb.maintenance.skillsAcquired[i]} with a USD $${services.conversionWeb.maintenance.skillsPrices[i][countrySupplier.value]} hourly rate, to do the following:</li> ${services.conversionWeb.maintenance.content[i]}</ul>`;
             })
@@ -1578,12 +1575,9 @@ function calculate() {
             let implementationContent = '';
             var conversionWebImplementationValue = 0;
 
-            services.conversionWeb.implementation.skillsAcquired.forEach((skill, i) => {
-                skills.names.forEach((name, j) => {
-                    if (skill == name) {
-                        conversionWebImplementationValue += services.conversionWeb.implementation.hours[i] * skills.prices[j][countrySupplier.value];
-                    }
-                })
+            services.conversionWeb.implementation.idSkillsAcquired.forEach((skill, i) => {
+                conversionWebImplementationValue += services.conversionWeb.implementation.hours[i] * skills.prices[skill][countrySupplier.value];
+
                 /*--Se genera la descripcion de implementación para este servicio en el plan seleccionado---*/
                 implementationContent += `<ul><li>${services.conversionWeb.implementation.hours[i]} hours of work from a ${services.conversionWeb.implementation.skillsAcquired[i]} with a USD $${services.conversionWeb.implementation.skillsPrices[i][countrySupplier.value]} hourly rate, to do the following:</li> ${services.conversionWeb.implementation.content[i]}</ul>`;
             })
@@ -1606,12 +1600,9 @@ function calculate() {
             /*-para MANTENIMIENTO-*/
             let maintenanceContent = '';
             var googleSearchAdsManteinanceValue = 0;
-            services.googleSearchAds.maintenance.skillsAcquired.forEach((skill, i) => {
-                skills.names.forEach((name, j) => {
-                    if (skill == name) {
-                        googleSearchAdsManteinanceValue += services.googleSearchAds.maintenance.hours[i] * skills.prices[j][countrySupplier.value];
-                    }
-                })
+            services.googleSearchAds.maintenance.idSkillsAcquired.forEach((skill, i) => {
+                googleSearchAdsManteinanceValue += services.googleSearchAds.maintenance.hours[i] * skills.prices[skill][countrySupplier.value];
+
                 /*--Se genera la descripcion de mantenimiento mensual para este servicio en el plan seleccionado---*/
                 maintenanceContent += `<ul><li>${services.googleSearchAds.maintenance.hours[i]} hours of work from a ${services.googleSearchAds.maintenance.skillsAcquired[i]} with a USD $${services.googleSearchAds.maintenance.skillsPrices[i][countrySupplier.value]} hourly rate, to do the following:</li> ${services.googleSearchAds.maintenance.content[i]}</ul>`;
             })
@@ -1625,12 +1616,9 @@ function calculate() {
             /*-para IMPLEMENTACIÓN-*/
             let implementationContent = '';
             var googleSearchAdsImplementationValue = 0;
-            services.googleSearchAds.implementation.skillsAcquired.forEach((skill, i) => {
-                skills.names.forEach((name, j) => {
-                    if (skill == name) {
-                        googleSearchAdsImplementationValue += services.googleSearchAds.implementation.hours[i] * skills.prices[j][countrySupplier.value];
-                    }
-                })
+            services.googleSearchAds.implementation.idSkillsAcquired.forEach((skill, i) => {
+                googleSearchAdsImplementationValue += services.googleSearchAds.implementation.hours[i] * skills.prices[skill][countrySupplier.value];
+
                 /*--Se genera la descripcion de implementación para este servicio en el plan seleccionado---*/
                 implementationContent += `<ul><li>${services.googleSearchAds.implementation.hours[i]} hours of work from a ${services.googleSearchAds.implementation.skillsAcquired[i]} with a USD $${services.googleSearchAds.implementation.skillsPrices[i][countrySupplier.value]} hourly rate, to do the following:</li> ${services.googleSearchAds.implementation.content[i]}</ul>`;
             })
@@ -1660,12 +1648,9 @@ function calculate() {
             /*-para MANTENIMIENTO-*/
             let maintenanceContent = '';
             var googleDisplayAdsManteinanceValue = 0;
-            services.googleDisplayAds.maintenance.skillsAcquired.forEach((skill, i) => {
-                skills.names.forEach((name, j) => {
-                    if (skill == name) {
-                        googleDisplayAdsManteinanceValue += services.googleDisplayAds.maintenance.hours[i] * skills.prices[j][countrySupplier.value];
-                    }
-                })
+            services.googleDisplayAds.maintenance.idSkillsAcquired.forEach((skill, i) => {
+                googleDisplayAdsManteinanceValue += services.googleDisplayAds.maintenance.hours[i] * skills.prices[skill][countrySupplier.value];
+
                 /*--Se genera la descripcion de mantenimiento mensual para este servicio en el plan seleccionado---*/
                 maintenanceContent += `<ul><li>${services.googleDisplayAds.maintenance.hours[i]} hours of work from a ${services.googleDisplayAds.maintenance.skillsAcquired[i]} with a USD $${services.googleDisplayAds.maintenance.skillsPrices[i][countrySupplier.value]} hourly rate, to do the following:</li> ${services.googleDisplayAds.maintenance.content[i]}</ul>`;
             })
@@ -1679,12 +1664,9 @@ function calculate() {
             /*-para IMPLEMENTACIÓN-*/
             let implementationContent = '';
             var googleDisplayAdsImplementationValue = 0;
-            services.googleDisplayAds.implementation.skillsAcquired.forEach((skill, i) => {
-                skills.names.forEach((name, j) => {
-                    if (skill == name) {
-                        googleDisplayAdsImplementationValue += services.googleDisplayAds.implementation.hours[i] * skills.prices[j][countrySupplier.value];
-                    }
-                })
+            services.googleDisplayAds.implementation.idSkillsAcquired.forEach((skill, i) => {
+                googleDisplayAdsImplementationValue += services.googleDisplayAds.implementation.hours[i] * skills.prices[skill][countrySupplier.value];
+
                 /*--Se genera la descripcion de implementación para este servicio en el plan seleccionado---*/
                 implementationContent += `<ul><li>${services.googleDisplayAds.implementation.hours[i]} hours of work from a ${services.googleDisplayAds.implementation.skillsAcquired[i]} with a USD $${services.googleDisplayAds.implementation.skillsPrices[i][countrySupplier.value]} hourly rate, to do the following:</li> ${services.googleDisplayAds.implementation.content[i]}</ul>`;
             })
@@ -1714,12 +1696,9 @@ function calculate() {
             /*-para MANTENIMIENTO-*/
             let maintenanceContent = '';
             var facebookAdsManteinanceValue = 0;
-            services.facebookAds.maintenance.skillsAcquired.forEach((skill, i) => {
-                skills.names.forEach((name, j) => {
-                    if (skill == name) {
-                        facebookAdsManteinanceValue += services.facebookAds.maintenance.hours[i] * skills.prices[j][countrySupplier.value];
-                    }
-                })
+            services.facebookAds.maintenance.idSkillsAcquired.forEach((skill, i) => {
+                facebookAdsManteinanceValue += services.facebookAds.maintenance.hours[i] * skills.prices[skill][countrySupplier.value];
+
                 /*--Se genera la descripcion de mantenimiento mensual para este servicio en el plan seleccionado---*/
                 maintenanceContent += `<ul><li>${services.facebookAds.maintenance.hours[i]} hours of work from a ${services.facebookAds.maintenance.skillsAcquired[i]} with a USD $${services.facebookAds.maintenance.skillsPrices[i][countrySupplier.value]} hourly rate, to do the following:</li> ${services.facebookAds.maintenance.content[i]}</ul>`;
             })
@@ -1733,12 +1712,9 @@ function calculate() {
             /*-para IMPLEMENTACIÓN-*/
             let implementationContent = '';
             var facebookAdsImplementationValue = 0;
-            services.facebookAds.implementation.skillsAcquired.forEach((skill, i) => {
-                skills.names.forEach((name, j) => {
-                    if (skill == name) {
-                        facebookAdsImplementationValue += services.facebookAds.implementation.hours[i] * skills.prices[j][countrySupplier.value];
-                    }
-                })
+            services.facebookAds.implementation.idSkillsAcquired.forEach((skill, i) => {
+                facebookAdsImplementationValue += services.facebookAds.implementation.hours[i] * skills.prices[skill][countrySupplier.value];
+
                 /*--Se genera la descripcion de implementación para este servicio en el plan seleccionado---*/
                 implementationContent += `<ul><li>${services.facebookAds.implementation.hours[i]} hours of work from a ${services.facebookAds.implementation.skillsAcquired[i]} with a USD $${services.facebookAds.implementation.skillsPrices[i][countrySupplier.value]} hourly rate, to do the following:</li> ${services.facebookAds.implementation.content[i]}</ul>`;
             })
@@ -1775,12 +1751,9 @@ function calculate() {
                 /*-para MANTENIMIENTO-*/
                 let maintenanceContent = '';
                 var landingPageManteinanceValue = 0;
-                services.disenoWeb.maintenance.basic.skillsAcquired.forEach((skill, i) => {
-                    skills.names.forEach((name, j) => {
-                        if (skill == name) {
-                            landingPageManteinanceValue += services.disenoWeb.maintenance.basic.hours[i] * skills.prices[j][countrySupplier.value];
-                        }
-                    })
+                services.disenoWeb.maintenance.basic.idSkillsAcquired.forEach((skill, i) => {
+                    landingPageManteinanceValue += services.disenoWeb.maintenance.basic.hours[i] * skills.prices[skill][countrySupplier.value];
+
                     /*--Se genera la descripcion de mantenimiento mensual para este servicio en el plan seleccionado---*/
                     maintenanceContent += `<ul><li>${services.disenoWeb.maintenance.basic.hours[i]} hours of work from a ${services.disenoWeb.maintenance.basic.skillsAcquired[i]} with a USD $${services.disenoWeb.maintenance.basic.skillsPrices[i][countrySupplier.value]} hourly rate, to do the following:</li> ${services.disenoWeb.maintenance.basic.content[i]}</ul>`;
                 })
@@ -1794,12 +1767,9 @@ function calculate() {
                 /*-para IMPLEMENTACIÓN-*/
                 let implementationContent = '';
                 var landingPageImplementationValue = 0;
-                services.disenoWeb.implementation.basic.skillsAcquired.forEach((skill, i) => {
-                    skills.names.forEach((name, j) => {
-                        if (skill == name) {
-                            landingPageImplementationValue += services.disenoWeb.implementation.basic.hours[i] * skills.prices[j][countrySupplier.value];
-                        }
-                    })
+                services.disenoWeb.implementation.basic.idSkillsAcquired.forEach((skill, i) => {
+                    landingPageImplementationValue += services.disenoWeb.implementation.basic.hours[i] * skills.prices[skill][countrySupplier.value];
+
                     /*--Se genera la descripcion de implementación para este servicio en el plan seleccionado---*/
                     implementationContent += `<ul><li>${services.disenoWeb.implementation.basic.hours[i]} hours of work from a ${services.disenoWeb.implementation.basic.skillsAcquired[i]} with a USD $${services.disenoWeb.implementation.basic.skillsPrices[i][countrySupplier.value]} hourly rate, to do the following:</li> ${services.disenoWeb.implementation.basic.content[i]}</ul>`;
                 })
@@ -1821,12 +1791,9 @@ function calculate() {
                 /*-para MANTENIMIENTO-*/
                 let maintenanceContent = '';
                 var wordpressManteinanceValue = 0;
-                services.disenoWeb.maintenance.basic.skillsAcquired.forEach((skill, i) => {
-                    skills.names.forEach((name, j) => {
-                        if (skill == name) {
-                            wordpressManteinanceValue += services.disenoWeb.maintenance.basic.hours[i] * skills.prices[j][countrySupplier.value];
-                        }
-                    })
+                services.disenoWeb.maintenance.basic.idSkillsAcquired.forEach((skill, i) => {
+                    wordpressManteinanceValue += services.disenoWeb.maintenance.basic.hours[i] * skills.prices[skill][countrySupplier.value];
+
                     /*--Se genera la descripcion de mantenimiento mensual para este servicio en el plan seleccionado---*/
                     maintenanceContent += `<ul><li>${services.disenoWeb.maintenance.basic.hours[i]} hours of work from a ${services.disenoWeb.maintenance.basic.skillsAcquired[i]} with a USD $${services.disenoWeb.maintenance.basic.skillsPrices[i][countrySupplier.value]} hourly rate, to do the following:</li> ${services.disenoWeb.maintenance.basic.content[i]}</ul>`;
                 })
@@ -1840,12 +1807,9 @@ function calculate() {
                 /*-para IMPLEMENTACIÓN-*/
                 let implementationContent = '';
                 var wordpressImplementationValue = 0;
-                services.disenoWeb.implementation.intermediate.skillsAcquired.forEach((skill, i) => {
-                    skills.names.forEach((name, j) => {
-                        if (skill == name) {
-                            wordpressImplementationValue += services.disenoWeb.implementation.intermediate.hours[i] * skills.prices[j][countrySupplier.value];
-                        }
-                    })
+                services.disenoWeb.implementation.intermediate.idSkillsAcquired.forEach((skill, i) => {
+                    wordpressImplementationValue += services.disenoWeb.implementation.intermediate.hours[i] * skills.prices[skill][countrySupplier.value];
+
                     /*--Se genera la descripcion de implementación para este servicio en el plan seleccionado---*/
                     implementationContent += `<ul><li>${services.disenoWeb.implementation.intermediate.hours[i]} hours of work from a ${services.disenoWeb.implementation.intermediate.skillsAcquired[i]} with a USD $${services.disenoWeb.implementation.intermediate.skillsPrices[i][countrySupplier.value]} hourly rate, to do the following:</li> ${services.disenoWeb.implementation.intermediate.content[i]}</ul>`;
                 })
@@ -1867,12 +1831,9 @@ function calculate() {
                 /*-para MANTENIMIENTO-*/
                 let maintenanceContent = '';
                 var customWebsiteManteinanceValue = 0;
-                services.disenoWeb.maintenance.basic.skillsAcquired.forEach((skill, i) => {
-                    skills.names.forEach((name, j) => {
-                        if (skill == name) {
-                            customWebsiteManteinanceValue += services.disenoWeb.maintenance.basic.hours[i] * skills.prices[j][countrySupplier.value];
-                        }
-                    })
+                services.disenoWeb.maintenance.basic.idSkillsAcquired.forEach((skill, i) => {
+                    customWebsiteManteinanceValue += services.disenoWeb.maintenance.basic.hours[i] * skills.prices[skill][countrySupplier.value];
+
                     /*--Se genera la descripcion de mantenimiento mensual para este servicio en el plan seleccionado---*/
                     maintenanceContent += `<ul><li>${services.disenoWeb.maintenance.basic.hours[i]} hours of work from a ${services.disenoWeb.maintenance.basic.skillsAcquired[i]} with a USD $${services.disenoWeb.maintenance.basic.skillsPrices[i][countrySupplier.value]} hourly rate, to do the following:</li> ${services.disenoWeb.maintenance.basic.content[i]}</ul>`;
                 })
@@ -1886,12 +1847,9 @@ function calculate() {
                 /*-para IMPLEMENTACIÓN-*/
                 let implementationContent = '';
                 var customWebsiteImplementationValue = 0;
-                services.disenoWeb.implementation.advanced.skillsAcquired.forEach((skill, i) => {
-                    skills.names.forEach((name, j) => {
-                        if (skill == name) {
-                            customWebsiteImplementationValue += services.disenoWeb.implementation.advanced.hours[i] * skills.prices[j][countrySupplier.value];
-                        }
-                    })
+                services.disenoWeb.implementation.advanced.idSkillsAcquired.forEach((skill, i) => {
+                    customWebsiteImplementationValue += services.disenoWeb.implementation.advanced.hours[i] * skills.prices[skill][countrySupplier.value];
+
                     /*--Se genera la descripcion de implementación para este servicio en el plan seleccionado---*/
                     implementationContent += `<ul><li>${services.disenoWeb.implementation.advanced.hours[i]} hours of work from a ${services.disenoWeb.implementation.advanced.skillsAcquired[i]} with a USD $${services.disenoWeb.implementation.advanced.skillsPrices[i][countrySupplier.value]} hourly rate, to do the following:</li> ${services.disenoWeb.implementation.advanced.content[i]}</ul>`;
                 })
@@ -1913,12 +1871,9 @@ function calculate() {
                 /*-para MANTENIMIENTO-*/
                 let maintenanceContent = '';
                 var ecommerceWebManteinanceValue = 0;
-                services.disenoWeb.maintenance.basic.skillsAcquired.forEach((skill, i) => {
-                    skills.names.forEach((name, j) => {
-                        if (skill == name) {
-                            ecommerceWebManteinanceValue += services.disenoWeb.maintenance.basic.hours[i] * skills.prices[j][countrySupplier.value];
-                        }
-                    })
+                services.disenoWeb.maintenance.basic.idSkillsAcquired.forEach((skill, i) => {
+                    ecommerceWebManteinanceValue += services.disenoWeb.maintenance.basic.hours[i] * skills.prices[skill][countrySupplier.value];
+
                     /*--Se genera la descripcion de mantenimiento mensual para este servicio en el plan seleccionado---*/
                     maintenanceContent += `<ul><li>${services.disenoWeb.maintenance.basic.hours[i]} hours of work from a ${services.disenoWeb.maintenance.basic.skillsAcquired[i]} with a USD $${services.disenoWeb.maintenance.basic.skillsPrices[i][countrySupplier.value]} hourly rate, to do the following:</li> ${services.disenoWeb.maintenance.basic.content[i]}</ul>`;
                 })
@@ -1932,12 +1887,9 @@ function calculate() {
                 /*-para IMPLEMENTACIÓN-*/
                 let implementationContent = '';
                 var ecommerceWebImplementationValue = 0;
-                services.disenoWeb.implementation.ecommerce.skillsAcquired.forEach((skill, i) => {
-                    skills.names.forEach((name, j) => {
-                        if (skill == name) {
-                            ecommerceWebImplementationValue += services.disenoWeb.implementation.ecommerce.hours[i] * skills.prices[j][countrySupplier.value];
-                        }
-                    })
+                services.disenoWeb.implementation.ecommerce.idSkillsAcquired.forEach((skill, i) => {
+                    ecommerceWebImplementationValue += services.disenoWeb.implementation.ecommerce.hours[i] * skills.prices[skill][countrySupplier.value];
+
                     /*--Se genera la descripcion de implementación para este servicio en el plan seleccionado---*/
                     implementationContent += `<ul><li>${services.disenoWeb.implementation.ecommerce.hours[i]} hours of work from a ${services.disenoWeb.implementation.ecommerce.skillsAcquired[i]} with a USD $${services.disenoWeb.implementation.ecommerce.skillsPrices[i][countrySupplier.value]} hourly rate, to do the following:</li> ${services.disenoWeb.implementation.ecommerce.content[i]}</ul>`;
                 })
@@ -1959,12 +1911,9 @@ function calculate() {
                 /*-para MANTENIMIENTO-*/
                 let maintenanceContent = '';
                 var logoMarcaManteinanceValue = 0;
-                services.disenoWeb.maintenance.basic.skillsAcquired.forEach((skill, i) => {
-                    skills.names.forEach((name, j) => {
-                        if (skill == name) {
-                            logoMarcaManteinanceValue += services.disenoWeb.maintenance.basic.hours[i] * skills.prices[j][countrySupplier.value];
-                        }
-                    })
+                services.disenoWeb.maintenance.basic.idSkillsAcquired.forEach((skill, i) => {
+                    logoMarcaManteinanceValue += services.disenoWeb.maintenance.basic.hours[i] * skills.prices[skill][countrySupplier.value];
+
                     /*--Se genera la descripcion de mantenimiento mensual para este servicio en el plan seleccionado---*/
                     maintenanceContent += `<ul><li>${services.disenoWeb.maintenance.basic.hours[i]} hours of work from a ${services.disenoWeb.maintenance.basic.skillsAcquired[i]} with a USD $${services.disenoWeb.maintenance.basic.skillsPrices[i][countrySupplier.value]} hourly rate, to do the following:</li> ${services.disenoWeb.maintenance.basic.content[i]}</ul>`;
                 })
@@ -1978,12 +1927,9 @@ function calculate() {
                 /*-para IMPLEMENTACIÓN-*/
                 let implementationContent = '';
                 var logoMarcaImplementationValue = 0;
-                services.disenoWeb.implementation.logoYMarca.skillsAcquired.forEach((skill, i) => {
-                    skills.names.forEach((name, j) => {
-                        if (skill == name) {
-                            logoMarcaImplementationValue += services.disenoWeb.implementation.logoYMarca.hours[i] * skills.prices[j][countrySupplier.value];
-                        }
-                    })
+                services.disenoWeb.implementation.logoYMarca.idSkillsAcquired.forEach((skill, i) => {
+                    logoMarcaImplementationValue += services.disenoWeb.implementation.logoYMarca.hours[i] * skills.prices[skill][countrySupplier.value];
+
                     /*--Se genera la descripcion de implementación para este servicio en el plan seleccionado---*/
                     implementationContent += `<ul><li>${services.disenoWeb.implementation.logoYMarca.hours[i]} hours of work from a ${services.disenoWeb.implementation.logoYMarca.skillsAcquired[i]} a ${services.disenoWeb.implementation.logoYMarca.skillsPrices[i][countrySupplier.value]} hourly rate, to do the following:</li> ${services.disenoWeb.implementation.logoYMarca.content[i]}</ul>`;
                 })
@@ -2014,7 +1960,7 @@ function calculate() {
 
         /*---Carca el mensaje de NO se seleccionaron inversiones si se da el caso---*/
         if (!googleSearchAds.checked && !googleDisplayAds.checked && !facebookAds.checked) {
-            resultInvestmentsMonthlyDetail.innerHTML = "<li style='list-style: circle;'>You have not selected any investment in digital media. <small>(e.g.: Google Ads Search Network, Google Ads Display Network, Facebook Ads or Email Marketing)</small></li>";
+            resultInvestmentsMonthlyDetail.innerHTML = "<li style='list-style: circle;'>You have not selected any investment in digital media. <small>(e.g.: Google Ads Search Network, Google Ads Display Network or Facebook Ads)</small></li>";
         }
         /*---Se destaca la implementación en el cajon final, si SOLO se seleccionaron servicios "Diseño Web"---*/
         if (disenoWeb.checked && (!googleSearchAds.checked && !googleDisplayAds.checked && !facebookAds.checked && !conversionWeb.checked)) {
