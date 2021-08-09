@@ -409,7 +409,7 @@ const relativeStatsCountries = Object.freeze({
 
 /*---Datos de los SKILLS con precios por hora---*/
 const skills = Object.freeze({
-    names: Object.freeze(["Digital Marketing Analyst", "SEO Analyst", "Community Manager", "Content Writer", "UX / UI Designer", "Graphic Designer", "Programmer", "Video Editor    "]),
+    names: Object.freeze(["Digital Marketing Analyst", "SEO Analyst", "Community Manager", "Content Writer", "UX / UI Designer", "Graphic Designer", "Programmer", "Video Editor"]),
     prices: [{
         argentina: 30,
         australia: 50,
@@ -530,12 +530,14 @@ const services = Object.freeze({
         implementation: Object.freeze({
             hours: Object.freeze([8]),
             skillsAcquired: Object.freeze(["Digital Marketing Analyst"]),
+            idSkillsAcquired: Object.freeze([0]),
             skillsPrices: Object.freeze([skills.prices[0]]),
             content: Object.freeze(["<ul><li style='list-style: circle;'>Creating a Google Ads account.</li><li style='list-style: circle;'>Selection of Keywords for the target audience and relevant for the campaign. Call with the client, to discuss the monthly budget and which type of searches are relevant for the established objective.</li><li style='list-style: circle;'>Creating the link extensions for the campaign (for example: a link that redirects to your website or get phone calls to your business).</li><li style='list-style: circle;'>The Implementation of Google Analytics and Google Tag Manager.</li><li style='list-style: circle;'>Conversion analysis for your business and measuring relevant action on your website using Google Tag Manager and Google Analytics. For example: when they add an item to the kart, make a purchase, fill a form, or contact you through the website chat.</li><li style='list-style: circle;'>The Creating a dashboard in Google Data Studio (<a href='https://datastudio.google.com/u/0/reporting/0B_U5RNpwhcE6ckdmZEJ0ZDJXUnM/page/VgD/preview' target='_blank' rel='noreferrer noopener'>Click here</a> for an example).</li><li style='list-style: circle;'>Organizing the keyword themes in 10 ad groups and creating 10 different ads for each topic.</li></ul>"])
         }),
         maintenance: Object.freeze({
             hours: Object.freeze([8]),
             skillsAcquired: Object.freeze(["Digital Marketing Analyst"]),
+            idSkillsAcquired: Object.freeze([0]),
             skillsPrices: Object.freeze([skills.prices[0]]),
             content: Object.freeze(["<ul><li style='list-style: circle;'>Making any modification by the client request (respecting the accorded schedule).</li><li style='list-style: circle;'>Includes 4 changes each month to optimize the performance like budget modification, final url, texts in ads, keywords (searches in which you appear), location, and keyword matching options (how wide is the umbrella of similar searches to your keywords in which you appear).</li><li style='list-style: circle;'>Analysis of every implemented change and their impact.</li></ul>"])
         })
@@ -543,13 +545,15 @@ const services = Object.freeze({
     googleDisplayAds: Object.freeze({
         implementation: Object.freeze({
             hours: Object.freeze([4, 2, 2]),
-            skillsAcquired: Object.freeze(["Digital Marketing Analyst", "Graphic Designer", "Video Editor   "]),
+            skillsAcquired: Object.freeze(["Digital Marketing Analyst", "Graphic Designer", "Video Editor"]),
+            idSkillsAcquired: Object.freeze([0, 5, 7]),
             skillsPrices: Object.freeze([skills.prices[0], skills.prices[5], skills.prices[7]]),
             content: Object.freeze(["<ul><li style='list-style: circle;'>Creating a Google Ads account.</li><li style='list-style: circle;'>Creating a 1 Remarketing campaign (showing ads on different websites to users who visited your business website in the last 30 days). (<a href='https://drive.google.com/file/d/1zvy-_UYBC1VWbIqEszWUhvuzPcU3FNXl/view?usp=sharing' target='_blank' rel='noreferrer noopener'>Click here</a> for an example)</li><li style='list-style: circle;'>Measuring relevant actions on your business website (conversions). For example: when they add an item to the kart, make a purchase, fill a form, or contact you through the website chat.</li><li style='list-style: circle;'>Implementation of Google Analytics and Google Tag Manager.</li><li style='list-style: circle;'>Conversion analysis for your business and measuring relevant action on your website using Google Tag Manager and Google Analytics.</li><li style='list-style: circle;'>Creating a Google Data Studio dashboard (<a href='https://datastudio.google.com/u/0/reporting/f6da5210-ceff-411f-a088-28943fb6b9d6/page/s16BB/preview' target='_blank' rel='noreferrer noopener'>Click here</a> for an example)</li><li style='list-style: circle;'>Creating up to 5 campaigns, all segmented by user interests and website themes, and distribute the budget to optimize conversions.</li></ul>", "<ul><li style='list-style: circle;'>Designing 1 banner in a square and horizontal format for responsive ads (a mix between image and text).</li></ul>", "<ul><li style='list-style: circle;'>Creating a 30 second video in horizontal format for ads in different websites (<a href='https://drive.google.com/file/d/1il1GW3U0HTOIy76mtOSmEEwNYXda6_CL/view?usp=sharing' target='_blank' rel='noreferrer noopener'>Click here</a> for an example)</li><li style='list-style: circle;'><a href='https://drive.google.com/drive/folders/131EO5sr8BXx1si4fRHetLhPWHeNHaZI4?usp=sharing' target='_blank' rel='noreferrer noopener'>See example of creative pieces delivered</a></li></ul>"])
         }),
         maintenance: Object.freeze({
             hours: Object.freeze([4, 4]),
             skillsAcquired: Object.freeze(["Digital Marketing Analyst", "Graphic Designer"]),
+            idSkillsAcquired: Object.freeze([0, 5]),
             skillsPrices: Object.freeze([skills.prices[0], skills.prices[5]]),
             content: Object.freeze(["<ul><li style='list-style: circle;'>Making any modification by the client request (always respecting the accorded schedule).</li><li style='list-style: circle;'>Includes 4 changes a month to optimize performance. For example: modifying budget, final url, ads copy, location and creative pieces. By the end of the month, the client will receive a review analyzing how the changes impacted the campaign.</li></ul>", "<ul><li style='list-style: circle;'>Creation of 2 graphic pieces in a square and horizontal format.</li></ul>"])
         })
@@ -558,54 +562,30 @@ const services = Object.freeze({
         implementation: Object.freeze({
             hours: Object.freeze([4, 4]),
             skillsAcquired: Object.freeze(["Digital Marketing Analyst", "Graphic Designer"]),
+            idSkillsAcquired: Object.freeze([0, 5]),
             skillsPrices: Object.freeze([skills.prices[0], skills.prices[5]]),
             content: Object.freeze(["<ul><li style='list-style: circle;'>Creating a Facebook Ads account.</li><li style='list-style: circle;'>Facebook Pixel implementation for targets like users  who visited your business website or similar users who visited your business website.</li><li style='list-style: circle;'>Creation of a campaign structure with an investment of 70% on new users (users who hadn’t visited your website or your social media). An investment of 30% on users who visited your website or interacted with your social media.</li><li style='list-style: circle;'>Conversion Rate with Facebook Pixel (number of users who take action on a page like making an online purchase or filling a form).</li><li style='list-style: circle;'>Copywriting services (10 strategic texts in total) being aware if the users visited the business website or not./li></ul>", "<ul><li style='list-style: circle;'>Different graphic sets (2 sets of graphic images in square and vertical format, 4 total), taking into account if users visited the business website or not.</li><li style='list-style: circle;'><a href='https://drive.google.com/drive/folders/14atx8oJwDeypPzA49ISyET6KsONJZfPk?usp=sharing' target='_blank' rel='noreferrer noopener'>Click here</a> for an example.</li></ul>"])
         }),
         maintenance: Object.freeze({
             hours: Object.freeze([4, 4]),
             skillsAcquired: Object.freeze(["Digital Marketing Analyst", "Graphic Designer"]),
+            idSkillsAcquired: Object.freeze([0, 5]),
             skillsPrices: Object.freeze([skills.prices[0], skills.prices[5]]),
             content: Object.freeze(["<ul><li style='list-style: circle;'>Making any modification by the client request (always respecting the accorded schedule).</li><li style='list-style: circle;'>Includes 2 changes a month to optimize performance. For example: modifying budget, final url, ads copy, target, location, bidding strategies, and creative pieces.</li></ul>", "<ul><li style='list-style: circle;'>2 social media graphic images in square and vertical format.</li></ul>"])
-        })
-    }),
-    communityManagement: Object.freeze({
-        implementation: Object.freeze({
-            hours: Object.freeze([4]),
-            skillsAcquired: Object.freeze(["Community Manager"]),
-            skillsPrices: Object.freeze([skills.prices[2]]),
-            content: Object.freeze(["<ul><li style='list-style: circle;'>Completing a marketing competitor analysis and pitching new ideas for your social media. All would be delivered in 2 Google Documents with images of 400 words.</li><li style='list-style: circle;>2 call with client for feedback.</li></ul>"])
-        }),
-        maintenance: Object.freeze({
-            hours: Object.freeze([8, 10, 2]),
-            skillsAcquired: Object.freeze(["Community Manager", "Graphic Designer", "Video Editor   "]),
-            skillsPrices: Object.freeze([skills.prices[2], skills.prices[5], skills.prices[7]]),
-            content: Object.freeze(["<ul><li style='list-style: circle;'>Social media content calendar for 12 posts (<a href='https://docs.google.com/spreadsheets/d/1aXf8BCOerxx0kOKmgUscE4ryAEqYGoaKi2tY-j-nfkU/edit?usp=sharing' target='_blank' rel='noreferrer noopener'>Click here</a> for an example), 12 copies for feed and content on 1 social media (if it’s Instagram, it can be for both Instagram and Facebook). All feed content (12 posts) would also be shared as stories with a link that would redirect the user to the feed. Includes the account management (responding comments on posts, interacting with profiles that interact with the competitor posts).</li></ul>", "<ul><li style='list-style: circle;'>10 individual graphics</li></ul>", "<ul><li style='list-style: circle;'>2 videos for reels (less than 30 seconds)</li></ul>"])
-        })
-    }),
-    seo: Object.freeze({
-        implementation: Object.freeze({
-            hours: Object.freeze([8]),
-            skillsAcquired: Object.freeze(["SEO Analyst"]),
-            skillsPrices: Object.freeze([skills.prices[1]]),
-            content: Object.freeze(["<ul><li style='list-style: circle;'>Search Analysis to determine which searches are valuable for your objectives (taking into account Cost per Click, competition, etc.). Implementation of relevant keywords with high traffic and Cost per Click.</li><li style='list-style: circle;'>Technical audit for your business website using <a href='https://neilpatel.com/ubersuggest/' target='_blank' rel='noreferrer noopener'>Ubersuggest</a>, a tool created by Neil Patel that analyzes up to 132 technical aspects of a website. For example: loading time, words per page and much more. <a href='https://drive.google.com/file/d/1Xi63s89YuZv7v2s-Xc-1H2laM5H0x56-/view?usp=sharing' target='_blank' rel='noreferrer noopener'>Click here</a> for an example</li><li style='list-style: circle;'>Changing content to tags <title>, <h1>, and text from the homepage up to 5 pages from your website.</li><li style='list-style: circle;'>Keyword analysis and web pages from your competitor, analyzing which pages get more traffic (3 competitors).</li><li style='list-style: circle;'>Problem solving from any inconvenience detected during the technical auditory with Ubersuggest, up to 5 pages from your business website.</li><ul>"])
-        }),
-        maintenance: Object.freeze({
-            hours: Object.freeze([4, 8, 4]),
-            skillsAcquired: Object.freeze(["SEO Analyst", "Content Writer", "Graphic Designer"]),
-            skillsPrices: Object.freeze([skills.prices[1], skills.prices[3], skills.prices[5]]),
-            content: Object.freeze(["<ul><li style='list-style: circle;'>Search Analysis to determine which searches are valuable for your objectives (taking into account Cost per Click, competition, etc.). Implementation of relevant keywords with high traffic and Cost per Click.</li><li style='list-style: circle;'>Keyword analysis and web pages from your competitor, analyzing which pages get more traffic (6 competitors).</li><li style='list-style: circle;'>Contacting other blogs within the industry to make collabs using ONE 2 LEAD (Automation tool from Linkedin, U$ 15 a month) for Link-building (getting links for your website).</li></ul>", "<ul><li style='list-style: circle;'>2 blog posts of 1000 words each.</li></ul>", "<ul><li style='list-style: circle;'>4 Graphic Images (2 infographics and 2 covers).</li><li style='list-style: circle;'>2 infographics for other blogs from similar industries to include a link to your business website.</li><li style='list-style: circle;'><a href='https://drive.google.com/drive/folders/1rQn2MLzdCdeKNcGda5qajIX1jVZHFtpl?usp=sharing' target='_blank' rel='noreferrer noopener'>Click here</a> for an infographic example,  <a href='https://drive.google.com/drive/folders/1q0vPeT2uTMWIB1qcGgBh8x7hB7dZkGfr?usp=sharing' target='_blank' rel='noreferrer noopener'>Click here</a> for a cover example.</li></ul>"])
         })
     }),
     conversionWeb: Object.freeze({
         implementation: Object.freeze({
             hours: Object.freeze([4]),
             skillsAcquired: Object.freeze(["UX / UI Designer"]),
+            idSkillsAcquired: Object.freeze([4]),
             skillsPrices: Object.freeze([skills.prices[4]]),
             content: Object.freeze(["<ul><li style='list-style: circle;'>Diagnose of good practices to improve the usability and accessibility of your website, making a content analysis, visual design analysis, interaction analysis and theme analysis. <a href='https://docs.google.com/spreadsheets/d/1ZlBsT4XKX11L22I8ojC06DcgsJOeAYjOkUmVmv5mcck/edit?usp=sharing' target='_blank' rel='noreferrer noopener'>Click here</a> for an example.</li></ul>"])
         }),
         maintenance: Object.freeze({
             hours: Object.freeze([4]),
             skillsAcquired: Object.freeze(["UX / UI Designer"]),
+            idSkillsAcquired: Object.freeze([4]),
             skillsPrices: Object.freeze([skills.prices[4]]),
             content: Object.freeze(["<ul><li style='list-style: circle;'>Implementing 2 A/B tests (one version with a modification to improve performance and other without modification) for your website using Google Optimize and Google Analytics.</li><li>Review report for the client.</li></ul>"])
         })
@@ -615,6 +595,7 @@ const services = Object.freeze({
             basic: Object.freeze({
                 hours: Object.freeze([10]),
                 skillsAcquired: Object.freeze(["UX / UI Designer"]),
+                idSkillsAcquired: Object.freeze([4]),
                 skillsPrices: Object.freeze([skills.prices[4]]),
                 name: Object.freeze("Landing Page"),
                 content: Object.freeze(["<ul><li style='list-style: circle;'>Implementation of a predesigned template for 1 page using CMS (Content Management System) like Wordpress or Wix, to drag and drop.</li></ul>"])
@@ -622,6 +603,7 @@ const services = Object.freeze({
             intermediate: Object.freeze({
                 hours: Object.freeze([20]),
                 skillsAcquired: Object.freeze(["UX / UI Designer"]),
+                idSkillsAcquired: Object.freeze([4]),
                 skillsPrices: Object.freeze([skills.prices[4]]),
                 name: Object.freeze("Sitio web de 5 secciones en base a plantilla prediseñada"),
                 content: Object.freeze(["<ul><li style='list-style: circle;'>Implementation of a predesigned template for 5 pages using Wordpress. Includes any graphic needed. <a href='https://gaudirjohnson.com.ar/' target='_blank' rel='noreferrer noopener'>Click here</a> for an example.</li></ul>"])
@@ -629,6 +611,7 @@ const services = Object.freeze({
             advanced: Object.freeze({
                 hours: Object.freeze([50]),
                 skillsAcquired: Object.freeze(["UX / UI Designer"]),
+                idSkillsAcquired: Object.freeze([4]),
                 skillsPrices: Object.freeze([skills.prices[4]]),
                 name: Object.freeze("Website with a personalized design"),
                 content: Object.freeze(["<ul><li style='list-style: circle;'>Different prototype designs using Figma (<a href='https://www.figma.com/file/UXhBSaXoO8LeMYrQgFYO9F/Burplaza?node-id=0%3A1' target='_blank' rel='noreferrer noopener'>Click here</a> for an example). Call with the client for revision and changes to the website in Wordpress. Up to 3 revisions by the client.</li></ul>"])
@@ -636,6 +619,7 @@ const services = Object.freeze({
             ecommerce: Object.freeze({
                 hours: Object.freeze([20]),
                 skillsAcquired: Object.freeze(["UX / UI Designer"]),
+                idSkillsAcquired: Object.freeze([4]),
                 skillsPrices: Object.freeze([skills.prices[4]]),
                 name: Object.freeze("Ecommerce simple website with CMS, like WooCommerce, Tienda Nube or Shopify"),
                 content: Object.freeze(["<ul><li style='list-style: circle;'>Uploading 15 products on the website.</li></ul>"])
@@ -643,6 +627,7 @@ const services = Object.freeze({
             logoYMarca: Object.freeze({
                 hours: Object.freeze([10]),
                 skillsAcquired: Object.freeze(["Graphic Designer"]),
+                idSkillsAcquired: Object.freeze([5]),
                 skillsPrices: Object.freeze([skills.prices[5]]),
                 name: Object.freeze("Logo design and Brand Identity"),
                 content: Object.freeze(["<ul><li style='list-style: circle;'>Fonts, logo in different formats, color palette and concept. Up to 3 revisions. <a href='https://drive.google.com/file/d/1gyONia_qKjM6mqoJHe_AnGRGMPbicQnv/view?usp=sharing' target='_blank' rel='noreferrer noopener'>Click here</a> for an example.</li></ul>"])
@@ -652,18 +637,10 @@ const services = Object.freeze({
             basic: Object.freeze({
                 hours: Object.freeze([2]),
                 skillsAcquired: Object.freeze(["UX / UI Designer"]),
+                idSkillsAcquired: Object.freeze([4]),
                 skillsPrices: Object.freeze([skills.prices[4]]),
                 content: Object.freeze(["<ul><li style='list-style: circle;'>Plugin update, image and text content update, and bug fixes.</li></ul>"])
             })
-        })
-    }),
-    emailMarketing: Object.freeze({
-        maintenance: Object.freeze({
-            hours: Object.freeze([2, 1, 1]),
-            deliversPerMonth: Object.freeze(2),
-            skillsAcquired: Object.freeze(["Graphic Designer", "Content Writer", "UX / UI Designer"]),
-            skillsPrices: Object.freeze([skills.prices[5], skills.prices[3], skills.prices[4]]),
-            content: Object.freeze(["<ul><li style='list-style: circle;'>2 graphics in a static format (JPG) or animated (GIF).</li></ul>", "<ul><li style='list-style: circle;'>Writing the content of the email.</li></ul>", "<ul><li style='list-style: circle;'>Implementing texts and images in a predesigned template.</li></ul>"])
         })
     })
 })
@@ -679,11 +656,8 @@ var errorType = 0;
 var googleSearchAds = qs('#google-search-ads');
 var googleDisplayAds = qs('#google-display-ads');
 var facebookAds = qs('#facebook-ads');
-var communityManagement = qs('#communityManagement');
-var seo = qs('#seo');
 var conversionWeb = qs('#conversionWeb');
 var disenoWeb = qs('#disenoWeb')
-var email = qs('#email');
 /*--Contenedor de servicios disenoWeb--*/
 var disenoWebServicesContainer = qs('#disenoWebServicesContainer');
 var landingPage = qs('#landingPage');
@@ -711,10 +685,7 @@ var investmentGoogleSearchAdsAmmount = qs('#investment-google-search-ads-value')
 var investmentGoogleDisplayAdsAmmount = qs('#investment-google-display-ads-value');
 var investmentFacebookAdsAmmount = qs('#investment-facebook-ads-value');
 
-/*---Se captura el bloque que pide cantidad de contactos EMAIL y el menu desplegable con valores---*/
-var emailMarketingContainer = qs('#email-marketing-extra-container');
-var emailAmmount = qs('#email-ammount');
-
+/*--Se captura el email del usuario y se valida c/ Regex---*/
 var emailCustomerInput = null;
 var mailFormat = /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/g;
 
@@ -738,8 +709,6 @@ var resultGoogleDisplay = qs('#result-google-display');
 var resultFacebookAds = qs('#result-facebook-ads');
 /*--Se capturan los bloques que muestran RESULTADOS, los sub-cajones de implementación--*/
 var resultImplementationConversionWebContainer = qs('#result-implementation-conversionWeb-container');
-var resultImplementationSeoContainer = qs('#result-implementation-seo-container');
-var resultImplementationCommunityManagementContainer = qs('#result-implementation-communityManagement-container');
 var resultImplementationGoogleSearchAdsContainer = qs('#result-implementation-googleSearchAds-container');
 var resultImplementationGoogleDisplayAdsContainer = qs('#result-implementation-googleDisplayAds-container');
 var resultImplementationFacebookAdsContainer = qs('#result-implementation-facebookAds-container');
@@ -749,10 +718,7 @@ var resultImplementationCustomWebsiteContainer = qs('#result-implementation-cust
 var resultImplementationEcommerceWebContainer = qs('#result-implementation-ecommerceWeb-container');
 var resultImplementationLogoYMarcaContainer = qs('#result-implementation-logoYMarca-container');
 /*--Se capturan los bloques que muestran RESULTADOS, los sub-cajones de implementación--*/
-var resultMaintenanceEmailContainer = qs('#result-maintenance-email-container');
 var resultMaintenanceConversionWebContainer = qs('#result-maintenance-conversionWeb-container');
-var resultMaintenanceSeoContainer = qs('#result-maintenance-seo-container');
-var resultMaintenanceCommunityManagementContainer = qs('#result-maintenance-communityManagement-container');
 var resultMaintenanceGoogleSearchAdsContainer = qs('#result-maintenance-googleSearchAds-container');
 var resultMaintenanceGoogleDisplayAdsContainer = qs('#result-maintenance-googleDisplayAds-container');
 var resultMaintenanceFacebookAdsContainer = qs('#result-maintenance-facebookAds-container');
@@ -763,8 +729,6 @@ var resultMaintenanceEcommerceWebContainer = qs('#result-maintenance-ecommerceWe
 var resultMaintenanceLogoYMarcaContainer = qs('#result-maintenance-logoYMarca-container');
 /*--Se capturan los TITULOS de los Sub-cajones de implementación--*/
 var titleImplementationConversionWeb = qs('#title-implementation-conversionWeb');
-var titleImplementationSeo = qs('#title-implementation-seo');
-var titleImplementationCommunityManagement = qs('#title-implementation-communityManagement');
 var titleImplementationGoogleSearchAds = qs('#title-implementation-googleSearchAds');
 var titleImplementationGoogleDisplayAds = qs('#title-implementation-googleDisplayAds');
 var titleImplementationFacebookAds = qs('#title-implementation-facebookAds');
@@ -774,10 +738,7 @@ var titleImplementationCustomWebsite = qs('#title-implementation-customWebsite')
 var titleImplementationEcommerceWeb = qs('#title-implementation-ecommerceWeb');
 var titleImplementationLogoYMarca = qs('#title-implementation-logoYMarca');
 /*--Se capturan los TITULOS de los Sub-cajones de mantenimiento--*/
-var titleMaintenanceEmail = qs('#title-maintenance-email');
 var titleMaintenanceConversionWeb = qs('#title-maintenance-conversionWeb');
-var titleMaintenanceSeo = qs('#title-maintenance-seo');
-var titleMaintenanceCommunityManagement = qs('#title-maintenance-communityManagement');
 var titleMaintenanceGoogleSearchAds = qs('#title-maintenance-googleSearchAds');
 var titleMaintenanceGoogleDisplayAds = qs('#title-maintenance-googleDisplayAds');
 var titleMaintenanceFacebookAds = qs('#title-maintenance-facebookAds');
@@ -788,8 +749,6 @@ var titleMaintenanceEcommerceWeb = qs('#title-maintenance-ecommerceWeb');
 var titleMaintenanceLogoYMarca = qs('#title-maintenance-logoYMarca');
 /*--Se capturan los CONTENIDOS de los Sub-cajones de implementación--*/
 var resultImplementationConversionWeb = qs('#result-implementation-conversionWeb');
-var resultImplementationSeo = qs('#result-implementation-seo');
-var resultImplementationCommunityManagement = qs('#result-implementation-communityManagement');
 var resultImplementationGoogleSearchAds = qs('#result-implementation-googleSearchAds');
 var resultImplementationGoogleDisplayAds = qs('#result-implementation-googleDisplayAds');
 var resultImplementationFacebookAds = qs('#result-implementation-facebookAds');
@@ -799,10 +758,7 @@ var resultImplementationCustomWebsite = qs('#result-implementation-customWebsite
 var resultImplementationEcommerceWeb = qs('#result-implementation-ecommerceWeb');
 var resultImplementationLogoYMarca = qs('#result-implementation-logoYMarca');
 /*--Se capturan los CONTENIDOS de los Sub-cajones de mantenimiento--*/
-var resultMaintenanceEmail = qs('#result-maintenance-email');
 var resultMaintenanceConversionWeb = qs('#result-maintenance-conversionWeb');
-var resultMaintenanceSeo = qs('#result-maintenance-seo');
-var resultMaintenanceCommunityManagement = qs('#result-maintenance-communityManagement');
 var resultMaintenanceGoogleSearchAds = qs('#result-maintenance-googleSearchAds');
 var resultMaintenanceGoogleDisplayAds = qs('#result-maintenance-googleDisplayAds');
 var resultMaintenanceFacebookAds = qs('#result-maintenance-facebookAds');
@@ -847,7 +803,7 @@ countrySupplier.addEventListener('change', function () {
 
 /*---Se capturan los checkboxes en conjunto, de los servicios requeridos---*/
 var checkboxesServices = qsa('input[class=services-check]');
-var checkboxesServicesValidate = [false, false, false, false, false, false, false, false, false, false, false];
+var checkboxesServicesValidate = [false, false, false, false, false, false, false, false, false, false];
 
 checkboxesServices.forEach((checkboxService, i) => {
     checkboxService.addEventListener('change', function () {
@@ -861,7 +817,7 @@ checkboxesServices.forEach((checkboxService, i) => {
             checkboxesServicesValidate[i] = false;
         }
         /*--Chequea si algun servicio fue seleccionado, y muestra u oculta el contenedor correspondiente--*/
-        if (checkboxesServicesValidate.slice(0, 7).includes(true) || checkboxesServicesValidate[12] === true) {
+        if (checkboxesServicesValidate.slice(0, 5).includes(true)) {
 
             completeFormValidate[1] = true;
 
@@ -948,37 +904,6 @@ checkboxesServices.forEach((checkboxService, i) => {
 
         }
     });
-});
-
-/*---Se piden cantidad de mails en caso de tildar "Email Marketing"---*/
-email.addEventListener('change', function () {
-    if (this.checked) {
-        emailMarketingContainer.style.display = 'flex';
-
-        if (emailAmmount.value == '') {
-            completeFormValidate[2] = false;
-        } else {
-            completeFormValidate[2] = true;
-        }
-    } else {
-        emailMarketingContainer.style.display = 'none';
-        /*-Elimina la posicion 2 del array de validacion, correspondiente a la seleccion de cantidad de mails marketing-*/
-        completeFormValidate.splice(2, 3)
-    }
-});
-emailAmmount.addEventListener('change', function () {
-    /*-Valida true / false la cantidad de mails en caso de estar seleccionados o no-*/
-    if (this.value == '') {
-        completeFormValidate[2] = false;
-        this.classList.add('error-border');
-    } else {
-        completeFormValidate[2] = true;
-        this.classList.remove('error-border');
-        /*-Desctiva el mensaje de error tipo 5 seleccionar cantidad de contactos email marketing-*/
-        if (errorType == 3) {
-            errorMessages.innerHTML = '';
-        }
-    }
 });
 
 /*---Se captura la industria seleccionada para calcular google/facebook ads---*/
@@ -1444,33 +1369,21 @@ function calculate() {
         /*--Genera el titulo apropiado del cajon de resultados, acorde a que se haya seleccionado--*/
         if ((googleSearchAds.checked || googleDisplayAds.checked) && !facebookAds.checked) {
             resultsConversionsSelectedInTitle.innerHTML = 'Google Ads';
-            if (!email.checked) {
-                resultsInvestmentsSelectedInTitle.innerHTML = ' - Google Ads';
-                resultsTotalSelectedInTitle.innerHTML = '(Maintenance service fee + Google Ads investment)';
-            } else {
-                resultsInvestmentsSelectedInTitle.innerHTML = ' - Google Ads + Email Marketing';
-                resultsTotalSelectedInTitle.innerHTML = '(Maintenance service fee + Google Ads investment + Email Marketing investment)';
-            }
+            resultsInvestmentsSelectedInTitle.innerHTML = ' - Google Ads';
+            resultsTotalSelectedInTitle.innerHTML = '(Maintenance service fee + Google Ads investment)';
+
 
         } else if (!googleSearchAds.checked && !googleDisplayAds.checked && facebookAds.checked) {
             resultsConversionsSelectedInTitle.innerHTML = 'Facebook Ads';
-            if (!email.checked) {
-                resultsInvestmentsSelectedInTitle.innerHTML = ' - Facebook Ads';
-                resultsTotalSelectedInTitle.innerHTML = '(Maintenance service fee + Facebook Ads investment)';
-            } else {
-                resultsInvestmentsSelectedInTitle.innerHTML = ' - Facebook Ads + Email Marketing';
-                resultsTotalSelectedInTitle.innerHTML = '(Maintenance service fee + Facebook Ads investment + Email Marketing investment)';
-            }
+            resultsInvestmentsSelectedInTitle.innerHTML = ' - Facebook Ads';
+            resultsTotalSelectedInTitle.innerHTML = '(Maintenance service fee + Facebook Ads investment)';
+
 
         } else if ((googleSearchAds.checked || googleDisplayAds.checked) && facebookAds.checked) {
             resultsConversionsSelectedInTitle.innerHTML = 'Google Ads + Facebook Ads';
-            if (!email.checked) {
-                resultsInvestmentsSelectedInTitle.innerHTML = ' - Google Ads + Facebook Ads';
-                resultsTotalSelectedInTitle.innerHTML = '(Maintenance service fee + Google Ads investment + Facebook Ads investment)';
-            } else {
-                resultsInvestmentsSelectedInTitle.innerHTML = '- Google Ads + Facebook Ads + Email Marketing';
-                resultsTotalSelectedInTitle.innerHTML = '(Maintenance service fee + Google Ads investment + Facebook Ads investment + Email Marketing investment)';
-            }
+            resultsInvestmentsSelectedInTitle.innerHTML = ' - Google Ads + Facebook Ads';
+            resultsTotalSelectedInTitle.innerHTML = '(Maintenance service fee + Google Ads investment + Facebook Ads investment)';
+
         }
 
         if (googleSearchAds.checked) {
@@ -1637,42 +1550,8 @@ function calculate() {
     /*--Ya calculadas las conversiones particulares (google display, google search y facebook), se suman en conversion total--*/
     totalConversionsValue = googleAdsSearchConversionsValue + googleAdsDisplayConversionsValue + facebookAdsConversionsValue;
 
-    if ((googleSearchAds.checked || googleDisplayAds.checked || facebookAds.checked || communityManagement.checked || seo.checked || conversionWeb.checked || email.checked || (disenoWeb.checked && (landingPage.checked || wordpress.checked || customWebsite.checked || ecommerceWeb.checked || logoMarca.checked))) && !completeFormValidate.includes(false)) {
+    if ((googleSearchAds.checked || googleDisplayAds.checked || facebookAds.checked || conversionWeb.checked || (disenoWeb.checked && (landingPage.checked || wordpress.checked || customWebsite.checked || ecommerceWeb.checked || logoMarca.checked))) && !completeFormValidate.includes(false)) {
 
-        /*---Se muestran los resultados particulares de email marketing solamente si esta opcion fue seleccionada---*/
-        if (email.checked) {
-            /*--Se ocultan los fees de implementacion (por unica vez), ya que este plan no tiene---*/
-            resultImplementationContainer.style.display = "none";
-            /*--Se establece el titulo "costo total de inversion" con Email Marketing en caso que no se hayan seleccionado otras inversiones-*/
-            if (!googleSearchAds.checked && !googleDisplayAds.checked && !facebookAds.checked) {
-                resultsInvestmentsSelectedInTitle.innerHTML = ' - Email Marketing';
-                resultsTotalSelectedInTitle.innerHTML = '(Maintenance service fee + Email Marketing investment)';
-            }
-            /*--Muestra el valor correspondiente a la cantidad de contactos seleccionados---*/
-            totalInvestmentMonthly += Number(emailAmmount.value);
-            resultInvestmentsMonthlyDetail.innerHTML += `<li style="list-style: none; margin-top: 10px"><strong>‣ Email Marketing</strong> USD ${emailAmmount.value} of monthly investment <small>(Campaing for ${emailAmmount.options[emailAmmount.selectedIndex].text} contacts)</small></li>`;
-
-            maintenanceContent = '';
-            emailMarketingValueToPush = 0;
-            services.emailMarketing.maintenance.skillsAcquired.forEach((skill, i) => {
-                skills.names.forEach((name, j) => {
-                    if (skill == name) {
-                        emailMarketingValueToPush += services.emailMarketing.maintenance.hours[i] * skills.prices[j][countrySupplier.value];
-                    }
-                })
-                /*--Se genera la descripcion de mantenimiento mensual para este servicio en el plan seleccionado---*/
-                maintenanceContent += `<ul><li>${services.emailMarketing.maintenance.hours[i]} hours of work from a ${services.emailMarketing.maintenance.skillsAcquired[i]} with a USD $${services.emailMarketing.maintenance.skillsPrices[i][countrySupplier.value]} hourly rate, to do the following:</li> ${services.emailMarketing.maintenance.content[i]}</ul>`;
-            })
-            /*--Se activa el cajon de mantenimiento con el sub-cajon de email marketing, inyectando titulo y contenido--*/
-            resultMaintenanceEmailContainer.style.display = "block";
-            titleMaintenanceEmail.innerHTML = `<u><strong>Email Marketing</strong> (${services.emailMarketing.maintenance.deliversPerMonth} ${services.emailMarketing.maintenance.deliversPerMonth <= 1 ? 'monthly delivery' : 'monthly deliveries'}) :</u> USD ${emailMarketingValueToPush}`;
-            resultMaintenanceEmail.innerHTML += `${maintenanceContent}`;
-
-            agencyMonthlyFeeValue += emailMarketingValueToPush;
-
-        } else {
-            resultMaintenanceEmailContainer.style.display = "none";
-        }
         /*---Se muestran los resultados particulares de conversion web solamente si esta opcion fue seleccionada---*/
         if (conversionWeb.checked) {
             /*--Se guardan los detalles de skills que incluye este servicio---*/
@@ -1718,100 +1597,6 @@ function calculate() {
         } else {
             resultMaintenanceConversionWebContainer.style.display = "none";
             resultImplementationConversionWebContainer.style.display = "none";
-        }
-        /*---Se muestran los resultados particulares de SEO solamente si esta opcion fue seleccionada---*/
-        if (seo.checked) {
-            /*--Se muestran los fees de implementacion (por unica vez)---*/
-            resultImplementationContainer.style.display = "block";
-            /*--Se guardan los detalles de skills que incluye este servicio---*/
-            /*-para MANTENIMIENTO-*/
-            let maintenanceContent = '';
-            var seoManteinanceValue = 0;
-            services.seo.maintenance.skillsAcquired.forEach((skill, i) => {
-                skills.names.forEach((name, j) => {
-                    if (skill == name) {
-                        seoManteinanceValue += services.seo.maintenance.hours[i] * skills.prices[j][countrySupplier.value];
-                    }
-                })
-                /*--Se genera la descripcion de mantenimiento mensual para este servicio en el plan seleccionado---*/
-                maintenanceContent += `<ul><li>${services.seo.maintenance.hours[i]} hours of work from a ${services.seo.maintenance.skillsAcquired[i]} with a USD $${services.seo.maintenance.skillsPrices[i][countrySupplier.value]} hourly rate, to do the following:</li> ${services.seo.maintenance.content[i]}</ul>`;
-            })
-            /*--Se activa el cajon de mantenimiento con el sub-cajon de SEO, inyectando titulo y contenido para el plan seleccionado--*/
-            resultMaintenanceSeoContainer.style.display = "block";
-            titleMaintenanceSeo.innerHTML = `<u><strong>Search Engine Optimization</strong>:</u> USD ${seoManteinanceValue}`;
-            resultMaintenanceSeo.innerHTML = `${maintenanceContent}`;
-
-            agencyMonthlyFeeValue += seoManteinanceValue;
-
-            /*-para IMPLEMENTACIÓN-*/
-            let implementationContent = '';
-            var seoImplementationValue = 0;
-            services.seo.implementation.skillsAcquired.forEach((skill, i) => {
-                skills.names.forEach((name, j) => {
-                    if (skill == name) {
-                        seoImplementationValue += services.seo.implementation.hours[i] * skills.prices[j][countrySupplier.value];
-                    }
-                })
-                /*--Se genera la descripcion de implementación para este servicio en el plan seleccionado---*/
-                implementationContent += `<ul><li>${services.seo.implementation.hours[i]} hours of work from a ${services.seo.implementation.skillsAcquired[i]} with a USD $${services.seo.implementation.skillsPrices[i][countrySupplier.value]} hourly rate, to do the following:</li> ${services.seo.implementation.content[i]}</ul>`;
-            })
-            /*--Se activa el cajon de implementación con el sub-cajon de SEO, inyectando titulo y contenido para el plan seleccionado--*/
-            resultImplementationSeoContainer.style.display = "block";
-            titleImplementationSeo.innerHTML = `<u><strong>SEO</strong>:</u> USD ${seoImplementationValue}`;
-            resultImplementationSeo.innerHTML = `${implementationContent}`;
-
-            agencyOnceFeeValue += seoImplementationValue;
-
-        } else {
-            resultMaintenanceSeoContainer.style.display = "none";
-            resultImplementationSeoContainer.style.display = "none";
-        }
-        /*---Se muestran los resultados particulares de Community Management solamente si esta opcion fue seleccionada---*/
-        if (communityManagement.checked) {
-            /*--Se muestran los fees de implementacion (por unica vez)---*/
-            resultImplementationContainer.style.display = "block";
-            /*--Se guardan los detalles de skills que incluye este servicio---*/
-            /*-para MANTENIMIENTO-*/
-            let maintenanceContent = '';
-            var communityManagementManteinanceValue = 0;
-            services.communityManagement.maintenance.skillsAcquired.forEach((skill, i) => {
-                skills.names.forEach((name, j) => {
-                    if (skill == name) {
-                        communityManagementManteinanceValue += services.communityManagement.maintenance.hours[i] * skills.prices[j][countrySupplier.value];
-                    }
-                })
-                /*--Se genera la descripcion de mantenimiento mensual para este servicio en el plan seleccionado---*/
-                maintenanceContent += `<ul><li>${services.communityManagement.maintenance.hours[i]} hours of work from a ${services.communityManagement.maintenance.skillsAcquired[i]} with a USD $${services.communityManagement.maintenance.skillsPrices[i][countrySupplier.value]} hourly rate, to do the following:</li> ${services.communityManagement.maintenance.content[i]}</ul>`;
-            })
-            /*--Se activa el cajon de mantenimiento con el sub-cajon de Community Management, inyectando titulo y contenido para el plan seleccionado--*/
-            resultMaintenanceCommunityManagementContainer.style.display = "block";
-            titleMaintenanceCommunityManagement.innerHTML = `<u><strong>Community Management</strong>:</u> USD ${communityManagementManteinanceValue}`;
-            resultMaintenanceCommunityManagement.innerHTML = ` ${maintenanceContent}`;
-
-            agencyMonthlyFeeValue += communityManagementManteinanceValue;
-
-            /*-para IMPLEMENTACIÓN-*/
-            let implementationContent = '';
-            var communityManagementImplementationValue = 0;
-            services.communityManagement.implementation.skillsAcquired.forEach((skill, i) => {
-                skills.names.forEach((name, j) => {
-                    if (skill == name) {
-                        communityManagementImplementationValue += services.communityManagement.implementation.hours[i] * skills.prices[j][countrySupplier.value];
-                    }
-                })
-                /*--Se genera la descripcion de implementación para este servicio en el plan seleccionado---*/
-                implementationContent += `<ul><li>${services.communityManagement.implementation.hours[i]} hours of work from a ${services.communityManagement.implementation.skillsAcquired[i]} with a USD $${services.communityManagement.implementation.skillsPrices[i][countrySupplier.value]} hourly rate, to do the following:</li> ${services.communityManagement.implementation.content[i]}</ul>`;
-            })
-            /*--Se activa el cajon de implementación con el sub-cajon de Community Management, inyectando titulo y contenido para el plan seleccionado--*/
-            resultImplementationCommunityManagementContainer.style.display = "block";
-            titleImplementationCommunityManagement.innerHTML = `<u><strong>Community Management</strong>:</u> USD ${communityManagementImplementationValue}`;
-            resultImplementationCommunityManagement.innerHTML = `${implementationContent}`;
-
-            agencyOnceFeeValue += communityManagementImplementationValue;
-
-        } else {
-            resultMaintenanceCommunityManagementContainer.style.display = "none";
-            resultImplementationCommunityManagementContainer.style.display = "none";
         }
         /*---Se muestran los resultados particulares de Google Search Ads solamente si esta opcion fue seleccionada---*/
         if (googleSearchAds.checked) {
@@ -2228,11 +2013,11 @@ function calculate() {
         }
 
         /*---Carca el mensaje de NO se seleccionaron inversiones si se da el caso---*/
-        if (!email.checked && !googleSearchAds.checked && !googleDisplayAds.checked && !facebookAds.checked) {
+        if (!googleSearchAds.checked && !googleDisplayAds.checked && !facebookAds.checked) {
             resultInvestmentsMonthlyDetail.innerHTML = "<li style='list-style: circle;'>You have not selected any investment in digital media. <small>(e.g.: Google Ads Search Network, Google Ads Display Network, Facebook Ads or Email Marketing)</small></li>";
         }
         /*---Se destaca la implementación en el cajon final, si SOLO se seleccionaron servicios "Diseño Web"---*/
-        if (disenoWeb.checked && (!googleSearchAds.checked && !googleDisplayAds.checked && !facebookAds.checked && !communityManagement.checked && !seo.checked && !conversionWeb.checked && !email.checked)) {
+        if (disenoWeb.checked && (!googleSearchAds.checked && !googleDisplayAds.checked && !facebookAds.checked && !conversionWeb.checked)) {
             monthlyTotalCostMessage.style.display = 'none';
             resultMonthlyTotal.style.display = 'none';
 
@@ -2302,18 +2087,35 @@ categoryTitles.forEach((category, i) => {
 });
 
 /*---Se ajusta la pantalla al contenido de las pestañas "¿Como obtuvimos estos resultados?" al clickearlas---*/
+function _scrollTo(selector, yOffset = 0) {
+    const el = document.querySelector(selector);
+    const y = el.getBoundingClientRect().top + window.pageYOffset + yOffset;
+
+    window.scrollTo({
+        top: y,
+        behavior: 'smooth'
+    });
+}
 qs('#what-does-tab').addEventListener('click', () => {
     setTimeout(() => {
-        qs('#what-does').scrollIntoView(true);
+        if ($(window).width() <= 500) {
+            _scrollTo('#what-does', -100);
+        } else {
+            _scrollTo('#what-does');
+        }
     }, 250);
 });
 qs('#info-tab').addEventListener('click', () => {
     setTimeout(() => {
-        qs('#info').scrollIntoView(true);
+        _scrollTo('#info', -130)
     }, 250);
 });
 qs('#statistics-tab').addEventListener('click', () => {
     setTimeout(() => {
-        qs('#statistics').scrollIntoView(true);
+        _scrollTo('#statistics', -130)
     }, 250);
 });
+// /*---Se agrega subrayado animado al titulo del cotizador---*/
+// var entryHeader = qs('.entry-header');
+// entryHeader.classList.add('crumina-heading');
+// entryHeader.innerHTML += '<div class="heading-decoration align-center"><span class="first"></span><span class="second"></span></div>';

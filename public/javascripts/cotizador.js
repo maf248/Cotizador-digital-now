@@ -530,12 +530,14 @@ const services = Object.freeze({
         implementation: Object.freeze({
             hours: Object.freeze([8]),
             skillsAcquired: Object.freeze(["Analista de Marketing Digital"]),
+            idSkillsAcquired: Object.freeze([0]),
             skillsPrices: Object.freeze([skills.prices[0]]),
             content: Object.freeze(["<ul><li style='list-style: circle;'>Creación de cuenta de Google Ads.</li><li style='list-style: circle;'>Selección de las palabras clave que tengan volumen de búsqueda y sean relevantes para usar en la campaña. Call con el cliente, para determinar inversión mensual y qué búsquedas son relevantes.</li><li style='list-style: circle;'>Creación de extensiones para las campañas (Por ejemplo, link con la dirección de tu negocio y link para que te llamen por celular).</li><li style='list-style: circle;'>Implementación de Google Analytics y de Google Tag Manager</li><li style='list-style: circle;'>Medición de acciones relevantes para tu negocio en tu sitio web (Conversiones) a través de Google Tag Manager y Google Analytics. Por ejemplo, cuando arrancan el carrito, hacen una compra, completan un formulario o te contactan por el chat de la web.</li><li style='list-style: circle;'>Creación de dashboard de Google Data Studio (<a href='https://datastudio.google.com/u/0/reporting/0B_U5RNpwhcE6ckdmZEJ0ZDJXUnM/page/VgD/preview' target='_blank' rel='noreferrer noopener'>Ver ejemplo</a>)</li><li style='list-style: circle;'>Organización por temas de palabras clave en hasta 10 grupos de anuncios, y creación de 10 anuncios diferentes según el tema.</li></ul>"])
         }),
         maintenance: Object.freeze({
             hours: Object.freeze([8]),
             skillsAcquired: Object.freeze(["Analista de Marketing Digital"]),
+            idSkillsAcquired: Object.freeze([0]),
             skillsPrices: Object.freeze([skills.prices[0]]),
             content: Object.freeze(["<ul><li style='list-style: circle;'>Cambios solicitados por el cliente (Sin que supere el tiempo contratado)</li><li style='list-style: circle;'>Incluye 4 cambios por mes para intentar mejorar la performance como modificaciones en el presupuesto, url finales, texto de anuncios, palabras clave (Búsquedas en las que aparecés), ubicación geográfica y concordancias (qué tan amplio es el abanico de búsquedas similares a tus palabras clave en el cual aparecés, podés ver más sobre las concordancias en el siguiente <a href='https://digitalnow.com.ar/google-ads-como-funciona-y-para-que-sirve/' target='_blank' rel='noreferrer noopener'>link</a>).</li><li style='list-style: circle;'>Análisis del impacto de los cambios implementados</li></ul>"])
         })
@@ -544,12 +546,14 @@ const services = Object.freeze({
         implementation: Object.freeze({
             hours: Object.freeze([4, 2, 2]),
             skillsAcquired: Object.freeze(["Analista de Marketing Digital", "Diseñador Gráfico", "Editor de video"]),
+            idSkillsAcquired: Object.freeze([0, 5, 7]),
             skillsPrices: Object.freeze([skills.prices[0], skills.prices[5], skills.prices[7]]),
             content: Object.freeze(["<ul><li style='list-style: circle;'>Creación de cuenta de Google Ads.</li><li style='list-style: circle;'>Creación de 1 campaña de remarketing (Mostrarle anuncios en sitios web a usuarios que ya entraron a tu sitio web en los últimos 30 días). (<a href='https://drive.google.com/file/d/1zvy-_UYBC1VWbIqEszWUhvuzPcU3FNXl/view?usp=sharing' target='_blank' rel='noreferrer noopener'>Ver ejemplo</a>)</li><li style='list-style: circle;'>Medición de acciones relevantes para tu negocio en tu sitio web (Conversiones). Por ejemplo, cuando arrancan el carrito, hacen una compra, completan un formulario o te contactan por el chat de la web.</li><li style='list-style: circle;'>Implementación de Google Analytics y de Google Tag Manager.</li><li style='list-style: circle;'>Medición de acciones relevantes para tu negocio en tu sitio web (Conversiones) a través de Google Tag Manager y Google Analytics. Por ejemplo, cuando arrancan el carrito, hacen una compra, completan un formulario o te contactan por el chat de la web.</li><li style='list-style: circle;'>Creación de dashboard de Google Data Studio (<a href='https://datastudio.google.com/u/0/reporting/f6da5210-ceff-411f-a088-28943fb6b9d6/page/s16BB/preview' target='_blank' rel='noreferrer noopener'>Ver ejemplo</a>)</li><li style='list-style: circle;'>Creación de hasta 5 campañas segmentadas por intereses de los usuarios y temas de sitios web, para distribuir el presupuesto según la que genere más conversiones.</li></ul>", "<ul><li style='list-style: circle;'>Creación de 1 pieza gráfica en formato cuadrado y horizontal para anuncios responsivos (mezcla de imagen y texto).</li></ul>", "<ul><li style='list-style: circle;'>Creación de video de 30 segundos en formato apaisado que se muestra en sitios web como anuncio (<a href='https://drive.google.com/file/d/1il1GW3U0HTOIy76mtOSmEEwNYXda6_CL/view?usp=sharing' target='_blank' rel='noreferrer noopener'>Ver ejemplo</a>)</li><li style='list-style: circle;'><a href='https://drive.google.com/drive/folders/131EO5sr8BXx1si4fRHetLhPWHeNHaZI4?usp=sharing' target='_blank' rel='noreferrer noopener'>Ver ejemplo de piezas creativas que se entregan</a></li></ul>"])
         }),
         maintenance: Object.freeze({
             hours: Object.freeze([4, 4]),
             skillsAcquired: Object.freeze(["Analista de Marketing Digital", "Diseñador Gráfico"]),
+            idSkillsAcquired: Object.freeze([0, 5]),
             skillsPrices: Object.freeze([skills.prices[0], skills.prices[5]]),
             content: Object.freeze(["<ul><li style='list-style: circle;'>Cambios solicitados por el cliente (Sin que supere el tiempo contratado)</li><li style='list-style: circle;'>Incluye 4 cambios por mes para intentar mejorar la performance como modificaciones en el presupuesto, url finales, texto de anuncios, audiencia, ubicación geográfica y piezas creativas. A fin de mes el cliente recibe un análisis sobre cómo impactó ese cambio.</li></ul>", "<ul><li style='list-style: circle;'>Creación de 2 piezas gráficas en formatos cuadrado y horizontal.</li></ul>"])
         })
@@ -558,54 +562,30 @@ const services = Object.freeze({
         implementation: Object.freeze({
             hours: Object.freeze([4, 4]),
             skillsAcquired: Object.freeze(["Analista de Marketing Digital", "Diseñador Gráfico"]),
+            idSkillsAcquired: Object.freeze([0, 5]),
             skillsPrices: Object.freeze([skills.prices[0], skills.prices[5]]),
             content: Object.freeze(["<ul><li style='list-style: circle;'>Creación de cuenta de Facebook Ads.</li><li style='list-style: circle;'>Implementación de pixel de facebook para usar públicos como usuarios que ya entraron a tu sitio web o usuarios similares a los ya entraron a tu sitio web.</li><li style='list-style: circle;'>Creación de estructura de campaña para invertir un 70% en usuarios nuevos (No entraron a tu sitio ni a tus redes sociales) y un 30% en usuarios que ya entraron a tu sitio web o ya interactuaron con tus redes sociales.</li><li style='list-style: circle;'>Medición de conversiones (Acciones que querés que el usuario haga en tu sitio web, como una compra online o completar un formulario) con el pixel de Facebook.</li><li style='list-style: circle;'>Redacción de textos diferentes de manera estratégica (10 textos en total) teniendo en cuenta si los usuarios ya entraron a la web o no.</li></ul>", "<ul><li style='list-style: circle;'>Se harán piezas creativas diferentes (2 sets de piezas gráficas en formatos cuadrado y vertical, 4 en total), teniendo en cuenta si los usuarios ya entraron a la web o no.</li><li style='list-style: circle;'><a href='https://drive.google.com/drive/folders/14atx8oJwDeypPzA49ISyET6KsONJZfPk?usp=sharing' target='_blank' rel='noreferrer noopener'>Ver ejemplos de entregables</a></li></ul>"])
         }),
         maintenance: Object.freeze({
             hours: Object.freeze([4, 4]),
             skillsAcquired: Object.freeze(["Analista de Marketing Digital", "Diseñador Gráfico"]),
+            idSkillsAcquired: Object.freeze([0, 5]),
             skillsPrices: Object.freeze([skills.prices[0], skills.prices[5]]),
             content: Object.freeze(["<ul><li style='list-style: circle;'>Cambios solicitados por el cliente (Sin que supere el tiempo contratado)</li><li style='list-style: circle;'>Incluye 2 cambios por mes para intentar mejorar la performance como modificar el presupuesto, url finales, texto de anuncios, audiencia, ubicación geográfica, estrategia de puja y piezas creativas.</li></ul>", "<ul><li style='list-style: circle;'>Creación de 2 sets de piezas gráficas en formato cuadrado y vertical.</li></ul>"])
-        })
-    }),
-    communityManagement: Object.freeze({
-        implementation: Object.freeze({
-            hours: Object.freeze([4]),
-            skillsAcquired: Object.freeze(["Community Manager"]),
-            skillsPrices: Object.freeze([skills.prices[2]]),
-            content: Object.freeze(["<ul><li style='list-style: circle;'>Análisis de competidores y sugerencia de ideas. Se entregan 2 Google Doc con capturas de imagen de 400 palabras.</li><li style='list-style: circle;'>Se hacen 2 calls de revisión.</li></ul>"])
-        }),
-        maintenance: Object.freeze({
-            hours: Object.freeze([8, 10, 2]),
-            skillsAcquired: Object.freeze(["Community Manager", "Diseñador Gráfico", "Editor de video"]),
-            skillsPrices: Object.freeze([skills.prices[2], skills.prices[5], skills.prices[7]]),
-            content: Object.freeze(["<ul><li style='list-style: circle;'>Creación de calendario de 12 publicaciones (<a href='https://docs.google.com/spreadsheets/d/1aXf8BCOerxx0kOKmgUscE4ryAEqYGoaKi2tY-j-nfkU/edit?usp=sharing' target='_blank' rel='noreferrer noopener'>Ver ejemplo</a>), 12 redacciones para feed y publicación de contenido en 1 red social (Si es Instagram, se puede publicar en Instagram y Facebook). Todo el contenido del feed (12 publicaciones) se republicará también en stories con un link que redirecciona al feed. Incluye gestión de la cuenta (Responder comentarios en publicaciones e interactuar con perfiles que interactúan con publicaciones de la competencia).</li></ul>", "<ul><li style='list-style: circle;'>Creación de 10 piezas gráficas individuales</li></ul>", "<ul><li style='list-style: circle;'>Dos videos en formato vertical para reels (Menos de 30 segundos)</li></ul>"])
-        })
-    }),
-    seo: Object.freeze({
-        implementation: Object.freeze({
-            hours: Object.freeze([8]),
-            skillsAcquired: Object.freeze(["Analista SEO"]),
-            skillsPrices: Object.freeze([skills.prices[1]]),
-            content: Object.freeze(["<ul><li style='list-style: circle;'>Análisis de búsquedas en las cuales te interesa posicionarte teniendo en cuenta volumen, dificultad de posicionarse, relevancia y costo por clic estimado. Se buscarán palabras clave relevantes, de alto volumen, baja dificultad de posicionarse y costo por clic alto.</li><li style='list-style: circle;'>Auditoría técnica general de sitio web usando <a href='https://neilpatel.com/ubersuggest/' target='_blank' rel='noreferrer noopener'>Ubersuggest</a>, que es una herramienta de Neil Patel que analiza hasta 132 aspectos técnicos de tu sitio web como por ejemplo, la velocidad de carga, cantidad de palabras de páginas y cantidad de palabras dentro de etiquetas title. <a href='https://drive.google.com/file/d/1Xi63s89YuZv7v2s-Xc-1H2laM5H0x56-/view?usp=sharing' target='_blank' rel='noreferrer noopener'>Ver ejemplo de auditoría</a></li><li style='list-style: circle;'>Cambio de contenido en etiquetas <title>, <h1> y texto de tu homepage en hasta 10 páginas de tu sitio web.</li><li style='list-style: circle;'>Análisis de palabras clave y secciones web de la competencia que más tráfico generen para copiar lo que funciona (3 competidores)</li><li style='list-style: circle;'>Solución de problemas detectados en la auditoría de Ubersuggest de hasta 5 páginas de tu sitio web.</li><ul>"])
-        }),
-        maintenance: Object.freeze({
-            hours: Object.freeze([4, 8, 4]),
-            skillsAcquired: Object.freeze(["Analista SEO", "Redactor", "Diseñador Gráfico"]),
-            skillsPrices: Object.freeze([skills.prices[1], skills.prices[3], skills.prices[5]]),
-            content: Object.freeze(["<ul><li style='list-style: circle;'>Análisis de búsquedas en las cuales te interesa posicionarte teniendo en cuenta volumen, dificultad de posicionarse, relevancia y costo por clic estimado. Se buscarán palabras clave relevantes, de alto volumen, baja dificultad de posicionarse y costo por clic alto.</li><li style='list-style: circle;'>Análisis de palabras clave y contenidos web de la competencia que más tráfico generen para copiar lo que funciona (6 competidores).</li><li style='list-style: circle;'>Contacto con blogs de rubros afines buscando hacer colaboraciones usando ONE 2 Lead (Automation tool de linkedin, U$ 15 por mes) para conseguir links a tu sitio web (Link-building)</li></ul>", "<ul><li style='list-style: circle;'>Redacción de 2 publicaciones para blog de 1000 palabras.</li></ul>", "<ul><li style='list-style: circle;'>Creación de 4 piezas gráficas (2 infografías y 2 portadas)</li><li style='list-style: circle;'>Creación de 2 infografías para que otros blogs de rubros afines puedan incluirla con un link a tu sitio web.</li><li style='list-style: circle;'><a href='https://drive.google.com/drive/folders/1rQn2MLzdCdeKNcGda5qajIX1jVZHFtpl?usp=sharing' target='_blank' rel='noreferrer noopener'>Ver ejemplo de infografías</a> ,  <a href='https://drive.google.com/drive/folders/1q0vPeT2uTMWIB1qcGgBh8x7hB7dZkGfr?usp=sharing' target='_blank' rel='noreferrer noopener'>Ver ejemplo de portadas</a></li></ul>"])
         })
     }),
     conversionWeb: Object.freeze({
         implementation: Object.freeze({
             hours: Object.freeze([4]),
             skillsAcquired: Object.freeze(["Diseñador Web UX / UI"]),
+            idSkillsAcquired: Object.freeze([4]),
             skillsPrices: Object.freeze([skills.prices[4]]),
             content: Object.freeze(["<ul><li style='list-style: circle;'>Diagnóstico de buenas prácticas de usabilidad y accesibilidad haciendo análisis de contenido, análisis de diseño visual, análisis de interacción y análisis de temas técnicos. <a href='https://docs.google.com/spreadsheets/d/1ZlBsT4XKX11L22I8ojC06DcgsJOeAYjOkUmVmv5mcck/edit?usp=sharing' target='_blank' rel='noreferrer noopener'>Ver Plantilla de Diagnóstico</a></li></ul>"])
         }),
         maintenance: Object.freeze({
             hours: Object.freeze([4]),
             skillsAcquired: Object.freeze(["Diseñador Web UX / UI"]),
+            idSkillsAcquired: Object.freeze([4]),
             skillsPrices: Object.freeze([skills.prices[4]]),
             content: Object.freeze(["<ul><li style='list-style: circle;'>Implementación de 2 experimentos con dos versiones (Una con un cambio que apunta a mejorar la performance y otra sin) de tu sitio web al mismo tiempo usando Google optimize y Google Analytics.</li><li>Reporte al cliente.</li></ul>"])
         })
@@ -615,6 +595,7 @@ const services = Object.freeze({
             basic: Object.freeze({
                 hours: Object.freeze([10]),
                 skillsAcquired: Object.freeze(["Diseñador Web UX / UI"]),
+                idSkillsAcquired: Object.freeze([4]),
                 skillsPrices: Object.freeze([skills.prices[4]]),
                 name: Object.freeze("Landing Page"),
                 content: Object.freeze(["<ul><li style='list-style: circle;'>Implementación de plantilla prediseñada de 1 sola página usando algún CMS (Content Management System) como Wordpress o Wix, de arrastrar y soltar.</li></ul>"])
@@ -622,6 +603,7 @@ const services = Object.freeze({
             intermediate: Object.freeze({
                 hours: Object.freeze([20]),
                 skillsAcquired: Object.freeze(["Diseñador Web UX / UI"]),
+                idSkillsAcquired: Object.freeze([4]),
                 skillsPrices: Object.freeze([skills.prices[4]]),
                 name: Object.freeze("Sitio web de 5 secciones en base a plantilla prediseñada"),
                 content: Object.freeze(["<ul><li style='list-style: circle;'>Implementación de sitio web de 5 secciones usando alguna plantilla prediseñada de Wordpress. Incluye diseño de piezas gráficas que sean necesarias. <a href='https://gaudirjohnson.com.ar/' target='_blank' rel='noreferrer noopener'>Ver ejemplo</a></li></ul>"])
@@ -629,6 +611,7 @@ const services = Object.freeze({
             advanced: Object.freeze({
                 hours: Object.freeze([50]),
                 skillsAcquired: Object.freeze(["Diseñador Web UX / UI"]),
+                idSkillsAcquired: Object.freeze([4]),
                 skillsPrices: Object.freeze([skills.prices[4]]),
                 name: Object.freeze("Sitio web con diseño personalizado"),
                 content: Object.freeze(["<ul><li style='list-style: circle;'>Diseño de varias versiones de prototipo en Figma <a href='https://www.figma.com/file/UXhBSaXoO8LeMYrQgFYO9F/Burplaza?node-id=0%3A1' target='_blank' rel='noreferrer noopener'>(Ver ejemplo)</a> call con el cliente de revisión e implementación de sitio web en Wordpress con hasta 3 revisiones por parte del cliente.</li></ul>"])
@@ -636,6 +619,7 @@ const services = Object.freeze({
             ecommerce: Object.freeze({
                 hours: Object.freeze([20]),
                 skillsAcquired: Object.freeze(["Diseñador Web UX / UI"]),
+                idSkillsAcquired: Object.freeze([4]),
                 skillsPrices: Object.freeze([skills.prices[4]]),
                 name: Object.freeze("Sitio web de Ecommerce simple en CMS como WooCommerce, Tienda Nube o Shopify"),
                 content: Object.freeze(["<ul><li style='list-style: circle;'>Carga de hasta 15 productos en el sitio web.</li></ul>"])
@@ -643,6 +627,7 @@ const services = Object.freeze({
             logoYMarca: Object.freeze({
                 hours: Object.freeze([10]),
                 skillsAcquired: Object.freeze(["Diseñador Gráfico"]),
+                idSkillsAcquired: Object.freeze([5]),
                 skillsPrices: Object.freeze([skills.prices[5]]),
                 name: Object.freeze("Diseño de logo e identidad de marca"),
                 content: Object.freeze(["<ul><li style='list-style: circle;'>Tipografía, logo en diferentes formatos, paleta de colores y concepto. Hasta 3 revisiones. <a href='https://drive.google.com/file/d/1gyONia_qKjM6mqoJHe_AnGRGMPbicQnv/view?usp=sharing' target='_blank' rel='noreferrer noopener'>Ver ejemplo</a></li></ul>"])
@@ -651,17 +636,9 @@ const services = Object.freeze({
         maintenance: Object.freeze({
             hours: Object.freeze([2]),
             skillsAcquired: Object.freeze(["Diseñador Web UX / UI"]),
+            idSkillsAcquired: Object.freeze([4]),
             skillsPrices: Object.freeze([skills.prices[4]]),
             content: Object.freeze(["<ul><li style='list-style: circle;'>Actualización de plugins, actualización de contenido en imagen y texto, y arreglo de errores.</li></ul>"])
-        })
-    }),
-    emailMarketing: Object.freeze({
-        maintenance: Object.freeze({
-            hours: Object.freeze([2, 1, 1]),
-            deliversPerMonth: Object.freeze(2),
-            skillsAcquired: Object.freeze(["Diseñador Gráfico", "Redactor", "Diseñador Web UX / UI"]),
-            skillsPrices: Object.freeze([skills.prices[5], skills.prices[3], skills.prices[4]]),
-            content: Object.freeze(["<ul><li style='list-style: circle;'>2 piezas gráfica en formato estático (JPG) o dinámico (GIF)</li></ul>", "<ul><li style='list-style: circle;'>Redacción de textos para envío de email.</li></ul>", "<ul><li style='list-style: circle;'>Implementación de imágenes y textos en plantilla prediseñada.</li></ul>"])
         })
     })
 })
@@ -677,11 +654,8 @@ var errorType = 0;
 var googleSearchAds = qs('#google-search-ads');
 var googleDisplayAds = qs('#google-display-ads');
 var facebookAds = qs('#facebook-ads');
-var communityManagement = qs('#communityManagement');
-var seo = qs('#seo');
 var conversionWeb = qs('#conversionWeb');
 var disenoWeb = qs('#disenoWeb')
-var email = qs('#email');
 /*--Contenedor de servicios disenoWeb--*/
 var disenoWebServicesContainer = qs('#disenoWebServicesContainer');
 var landingPage = qs('#landingPage');
@@ -709,10 +683,7 @@ var investmentGoogleSearchAdsAmmount = qs('#investment-google-search-ads-value')
 var investmentGoogleDisplayAdsAmmount = qs('#investment-google-display-ads-value');
 var investmentFacebookAdsAmmount = qs('#investment-facebook-ads-value');
 
-/*---Se captura el bloque que pide cantidad de contactos EMAIL y el menu desplegable con valores---*/
-var emailMarketingContainer = qs('#email-marketing-extra-container');
-var emailAmmount = qs('#email-ammount');
-
+/*--Se captura el email del usuario y se valida c/ Regex---*/
 var emailCustomerInput = null;
 var mailFormat = /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/g;
 
@@ -736,8 +707,6 @@ var resultGoogleDisplay = qs('#result-google-display');
 var resultFacebookAds = qs('#result-facebook-ads');
 /*--Se capturan los bloques que muestran RESULTADOS, los sub-cajones de implementación--*/
 var resultImplementationConversionWebContainer = qs('#result-implementation-conversionWeb-container');
-var resultImplementationSeoContainer = qs('#result-implementation-seo-container');
-var resultImplementationCommunityManagementContainer = qs('#result-implementation-communityManagement-container');
 var resultImplementationGoogleSearchAdsContainer = qs('#result-implementation-googleSearchAds-container');
 var resultImplementationGoogleDisplayAdsContainer = qs('#result-implementation-googleDisplayAds-container');
 var resultImplementationFacebookAdsContainer = qs('#result-implementation-facebookAds-container');
@@ -747,10 +716,7 @@ var resultImplementationCustomWebsiteContainer = qs('#result-implementation-cust
 var resultImplementationEcommerceWebContainer = qs('#result-implementation-ecommerceWeb-container');
 var resultImplementationLogoYMarcaContainer = qs('#result-implementation-logoYMarca-container');
 /*--Se capturan los bloques que muestran RESULTADOS, los sub-cajones de implementación--*/
-var resultMaintenanceEmailContainer = qs('#result-maintenance-email-container');
 var resultMaintenanceConversionWebContainer = qs('#result-maintenance-conversionWeb-container');
-var resultMaintenanceSeoContainer = qs('#result-maintenance-seo-container');
-var resultMaintenanceCommunityManagementContainer = qs('#result-maintenance-communityManagement-container');
 var resultMaintenanceGoogleSearchAdsContainer = qs('#result-maintenance-googleSearchAds-container');
 var resultMaintenanceGoogleDisplayAdsContainer = qs('#result-maintenance-googleDisplayAds-container');
 var resultMaintenanceFacebookAdsContainer = qs('#result-maintenance-facebookAds-container');
@@ -761,8 +727,6 @@ var resultMaintenanceEcommerceWebContainer = qs('#result-maintenance-ecommerceWe
 var resultMaintenanceLogoYMarcaContainer = qs('#result-maintenance-logoYMarca-container');
 /*--Se capturan los TITULOS de los Sub-cajones de implementación--*/
 var titleImplementationConversionWeb = qs('#title-implementation-conversionWeb');
-var titleImplementationSeo = qs('#title-implementation-seo');
-var titleImplementationCommunityManagement = qs('#title-implementation-communityManagement');
 var titleImplementationGoogleSearchAds = qs('#title-implementation-googleSearchAds');
 var titleImplementationGoogleDisplayAds = qs('#title-implementation-googleDisplayAds');
 var titleImplementationFacebookAds = qs('#title-implementation-facebookAds');
@@ -772,10 +736,7 @@ var titleImplementationCustomWebsite = qs('#title-implementation-customWebsite')
 var titleImplementationEcommerceWeb = qs('#title-implementation-ecommerceWeb');
 var titleImplementationLogoYMarca = qs('#title-implementation-logoYMarca');
 /*--Se capturan los TITULOS de los Sub-cajones de mantenimiento--*/
-var titleMaintenanceEmail = qs('#title-maintenance-email');
 var titleMaintenanceConversionWeb = qs('#title-maintenance-conversionWeb');
-var titleMaintenanceSeo = qs('#title-maintenance-seo');
-var titleMaintenanceCommunityManagement = qs('#title-maintenance-communityManagement');
 var titleMaintenanceGoogleSearchAds = qs('#title-maintenance-googleSearchAds');
 var titleMaintenanceGoogleDisplayAds = qs('#title-maintenance-googleDisplayAds');
 var titleMaintenanceFacebookAds = qs('#title-maintenance-facebookAds');
@@ -786,8 +747,6 @@ var titleMaintenanceEcommerceWeb = qs('#title-maintenance-ecommerceWeb');
 var titleMaintenanceLogoYMarca = qs('#title-maintenance-logoYMarca');
 /*--Se capturan los CONTENIDOS de los Sub-cajones de implementación--*/
 var resultImplementationConversionWeb = qs('#result-implementation-conversionWeb');
-var resultImplementationSeo = qs('#result-implementation-seo');
-var resultImplementationCommunityManagement = qs('#result-implementation-communityManagement');
 var resultImplementationGoogleSearchAds = qs('#result-implementation-googleSearchAds');
 var resultImplementationGoogleDisplayAds = qs('#result-implementation-googleDisplayAds');
 var resultImplementationFacebookAds = qs('#result-implementation-facebookAds');
@@ -797,10 +756,7 @@ var resultImplementationCustomWebsite = qs('#result-implementation-customWebsite
 var resultImplementationEcommerceWeb = qs('#result-implementation-ecommerceWeb');
 var resultImplementationLogoYMarca = qs('#result-implementation-logoYMarca');
 /*--Se capturan los CONTENIDOS de los Sub-cajones de mantenimiento--*/
-var resultMaintenanceEmail = qs('#result-maintenance-email');
 var resultMaintenanceConversionWeb = qs('#result-maintenance-conversionWeb');
-var resultMaintenanceSeo = qs('#result-maintenance-seo');
-var resultMaintenanceCommunityManagement = qs('#result-maintenance-communityManagement');
 var resultMaintenanceGoogleSearchAds = qs('#result-maintenance-googleSearchAds');
 var resultMaintenanceGoogleDisplayAds = qs('#result-maintenance-googleDisplayAds');
 var resultMaintenanceFacebookAds = qs('#result-maintenance-facebookAds');
@@ -845,7 +801,7 @@ countrySupplier.addEventListener('change', function () {
 
 /*---Se capturan los checkboxes en conjunto, de los servicios requeridos---*/
 var checkboxesServices = qsa('input[class=services-check]');
-var checkboxesServicesValidate = [false, false, false, false, false, false, false, false, false, false, false];
+var checkboxesServicesValidate = [false, false, false, false, false, false, false, false, false, false];
 
 checkboxesServices.forEach((checkboxService, i) => {
     checkboxService.addEventListener('change', function () {
@@ -859,7 +815,7 @@ checkboxesServices.forEach((checkboxService, i) => {
             checkboxesServicesValidate[i] = false;
         }
         /*--Chequea si algun servicio fue seleccionado, y muestra u oculta el contenedor correspondiente--*/
-        if (checkboxesServicesValidate.slice(0, 7).includes(true) || checkboxesServicesValidate[12] === true) {
+        if (checkboxesServicesValidate.slice(0, 5).includes(true)) {
 
             completeFormValidate[1] = true;
 
@@ -945,37 +901,6 @@ checkboxesServices.forEach((checkboxService, i) => {
             facebookAdsExtraContainer.style.display = "none";
         }
     });
-});
-
-/*---Se piden cantidad de mails en caso de tildar "Email Marketing"---*/
-email.addEventListener('change', function () {
-    if (this.checked) {
-        emailMarketingContainer.style.display = 'flex';
-
-        if (emailAmmount.value == '') {
-            completeFormValidate[2] = false;
-        } else {
-            completeFormValidate[2] = true;
-        }
-    } else {
-        emailMarketingContainer.style.display = 'none';
-        /*-Elimina la posicion 2 del array de validacion, correspondiente a la seleccion de cantidad de mails marketing-*/
-        completeFormValidate.splice(2, 3)
-    }
-});
-emailAmmount.addEventListener('change', function () {
-    /*-Valida true / false la cantidad de mails en caso de estar seleccionados o no-*/
-    if (this.value == '') {
-        completeFormValidate[2] = false;
-        this.classList.add('error-border');
-    } else {
-        completeFormValidate[2] = true;
-        this.classList.remove('error-border');
-        /*-Desctiva el mensaje de error tipo 5 seleccionar cantidad de contactos email marketing-*/
-        if (errorType == 3) {
-            errorMessages.innerHTML = '';
-        }
-    }
 });
 
 /*---Se captura la industria seleccionada para calcular google/facebook ads---*/
@@ -1268,6 +1193,18 @@ logoMarca.addEventListener('change', function () {
     }
 });
 
+// /*----Se obtienen los datos de freelancers para el pais seleccionado----*/
+// var responseApi;
+// fetch(`https://digitalnow.com.ar/wp-json/freelancer-api/${countrySupplier.value}`)
+// .then(response => response.json())
+// .then(data => responseApi = data);
+
+// countrySupplier.addEventListener('change', function () {
+// fetch(`https://digitalnow.com.ar/wp-json/freelancer-api/${countrySupplier.value}`)
+// .then(response => response.json())
+// .then(data => responseApi = data);
+// });
+
 calculateButton.addEventListener('click', function () {
     calculate();
 });
@@ -1441,33 +1378,21 @@ function calculate() {
         /*--Genera el titulo apropiado del cajon de resultados, acorde a que se haya seleccionado--*/
         if ((googleSearchAds.checked || googleDisplayAds.checked) && !facebookAds.checked) {
             resultsConversionsSelectedInTitle.innerHTML = 'Google Ads';
-            if (!email.checked) {
-                resultsInvestmentsSelectedInTitle.innerHTML = ' - Google Ads';
-                resultsTotalSelectedInTitle.innerHTML = '(Fee servicios mantenimiento + Inversión Google Ads)';
-            } else {
-                resultsInvestmentsSelectedInTitle.innerHTML = ' - Google Ads + Email Marketing';
-                resultsTotalSelectedInTitle.innerHTML = '(Fee servicios mantenimiento + inversión Google Ads + inversión Email Marketing)';
-            }
+            resultsInvestmentsSelectedInTitle.innerHTML = ' - Google Ads';
+            resultsTotalSelectedInTitle.innerHTML = '(Fee servicios mantenimiento + Inversión Google Ads)';
+
 
         } else if (!googleSearchAds.checked && !googleDisplayAds.checked && facebookAds.checked) {
             resultsConversionsSelectedInTitle.innerHTML = 'Facebook Ads';
-            if (!email.checked) {
-                resultsInvestmentsSelectedInTitle.innerHTML = ' - Facebook Ads';
-                resultsTotalSelectedInTitle.innerHTML = '(Fee servicios mantenimiento + inversión Facebook Ads)';
-            } else {
-                resultsInvestmentsSelectedInTitle.innerHTML = ' - Facebook Ads + Email Marketing';
-                resultsTotalSelectedInTitle.innerHTML = '(Fee servicios mantenimiento + inversión Facebook Ads + inversión Email Marketing)';
-            }
+            resultsInvestmentsSelectedInTitle.innerHTML = ' - Facebook Ads';
+            resultsTotalSelectedInTitle.innerHTML = '(Fee servicios mantenimiento + inversión Facebook Ads)';
+
 
         } else if ((googleSearchAds.checked || googleDisplayAds.checked) && facebookAds.checked) {
             resultsConversionsSelectedInTitle.innerHTML = 'Google Ads + Facebook Ads';
-            if (!email.checked) {
-                resultsInvestmentsSelectedInTitle.innerHTML = ' - Google Ads + Facebook Ads';
-                resultsTotalSelectedInTitle.innerHTML = '(Fee servicios mantenimiento + inversión Google Ads + inversión Facebook Ads)';
-            } else {
-                resultsInvestmentsSelectedInTitle.innerHTML = ' - Google Ads + Facebook Ads + Email Marketing';
-                resultsTotalSelectedInTitle.innerHTML = '(Fee servicios mantenimiento + inversión Google Ads + inversión Facebook Ads + inversión Email Marketing)';
-            }
+            resultsInvestmentsSelectedInTitle.innerHTML = ' - Google Ads + Facebook Ads';
+            resultsTotalSelectedInTitle.innerHTML = '(Fee servicios mantenimiento + inversión Google Ads + inversión Facebook Ads)';
+
         }
 
         if (googleSearchAds.checked) {
@@ -1634,54 +1559,17 @@ function calculate() {
     /*--Ya calculadas las conversiones particulares (google display, google search y facebook), se suman en conversion total--*/
     totalConversionsValue = googleAdsSearchConversionsValue + googleAdsDisplayConversionsValue + facebookAdsConversionsValue;
 
-    if ((googleSearchAds.checked || googleDisplayAds.checked || facebookAds.checked || communityManagement.checked || seo.checked || conversionWeb.checked || email.checked || (disenoWeb.checked && (landingPage.checked || wordpress.checked || customWebsite.checked || ecommerceWeb.checked || logoMarca.checked))) && !completeFormValidate.includes(false)) {
+    if ((googleSearchAds.checked || googleDisplayAds.checked || facebookAds.checked || conversionWeb.checked || (disenoWeb.checked && (landingPage.checked || wordpress.checked || customWebsite.checked || ecommerceWeb.checked || logoMarca.checked))) && !completeFormValidate.includes(false)) {
 
-        /*---Se muestran los resultados particulares de email marketing solamente si esta opcion fue seleccionada---*/
-        if (email.checked) {
-            /*--Se ocultan los fees de implementacion (por unica vez), ya que este plan no tiene---*/
-            resultImplementationContainer.style.display = "none";
-            /*--Se establece el titulo "costo total de inversion" con Email Marketing en caso que no se hayan seleccionado otras inversiones-*/
-            if (!googleSearchAds.checked && !googleDisplayAds.checked && !facebookAds.checked) {
-                resultsInvestmentsSelectedInTitle.innerHTML = ' - Email Marketing';
-                resultsTotalSelectedInTitle.innerHTML = '(Fee servicios mantenimiento + inversión Email Marketing)';
-            }
-            /*--Muestra el valor correspondiente a la cantidad de contactos seleccionados---*/
-            totalInvestmentMonthly += Number(emailAmmount.value);
-            resultInvestmentsMonthlyDetail.innerHTML += `<li style="list-style: none; margin-top: 10px"><strong>‣ Email Marketing</strong> USD ${emailAmmount.value} de inversión mensual <small>(Campaña para ${emailAmmount.options[emailAmmount.selectedIndex].text} contactos)</small></li>`;
-
-            maintenanceContent = '';
-            emailMarketingValueToPush = 0;
-            services.emailMarketing.maintenance.skillsAcquired.forEach((skill, i) => {
-                skills.names.forEach((name, j) => {
-                    if (skill == name) {
-                        emailMarketingValueToPush += services.emailMarketing.maintenance.hours[i] * skills.prices[j][countrySupplier.value];
-                    }
-                })
-                /*--Se genera la descripcion de mantenimiento mensual para este servicio en el plan seleccionado---*/
-                maintenanceContent += `<ul><li>${services.emailMarketing.maintenance.hours[i]} horas de ${services.emailMarketing.maintenance.skillsAcquired[i]} a ${services.emailMarketing.maintenance.skillsPrices[i][countrySupplier.value]} USD la hora, que hace lo siguiente:</li> ${services.emailMarketing.maintenance.content[i]}</ul>`;
-            })
-            /*--Se activa el cajon de mantenimiento con el sub-cajon de email marketing, inyectando titulo y contenido--*/
-            resultMaintenanceEmailContainer.style.display = "block";
-            titleMaintenanceEmail.innerHTML = `<u><strong>Email Marketing </strong> (${services.emailMarketing.maintenance.deliversPerMonth} ${services.emailMarketing.maintenance.deliversPerMonth <= 1 ? 'envío mensual' : 'envíos mensuales'}):</u> USD ${emailMarketingValueToPush}`;
-            resultMaintenanceEmail.innerHTML += `${maintenanceContent}`;
-
-            agencyMonthlyFeeValue += emailMarketingValueToPush;
-
-        } else {
-            resultMaintenanceEmailContainer.style.display = "none";
-        }
         /*---Se muestran los resultados particulares de conversion web solamente si esta opcion fue seleccionada---*/
         if (conversionWeb.checked) {
             /*--Se guardan los detalles de skills que incluye este servicio---*/
             /*-para MANTENIMIENTO-*/
             let maintenanceContent = '';
             var conversionWebManteinanceValue = 0;
-            services.conversionWeb.maintenance.skillsAcquired.forEach((skill, i) => {
-                skills.names.forEach((name, j) => {
-                    if (skill == name) {
-                        conversionWebManteinanceValue += services.conversionWeb.maintenance.hours[i] * skills.prices[j][countrySupplier.value];
-                    }
-                })
+            services.conversionWeb.maintenance.idSkillsAcquired.forEach((skill, i) => {
+                conversionWebManteinanceValue += services.conversionWeb.maintenance.hours[i] * skills.prices[skill][countrySupplier.value];
+
                 /*--Se genera la descripcion de mantenimiento mensual para este servicio en el plan seleccionado---*/
                 maintenanceContent += `<ul><li>${services.conversionWeb.maintenance.hours[i]} horas de ${services.conversionWeb.maintenance.skillsAcquired[i]} a ${services.conversionWeb.maintenance.skillsPrices[i][countrySupplier.value]} USD la hora, que hace lo siguiente:</li> ${services.conversionWeb.maintenance.content[i]}</ul>`;
             })
@@ -1698,12 +1586,9 @@ function calculate() {
 
             resultImplementationContainer.style.display = "block";
 
-            services.conversionWeb.implementation.skillsAcquired.forEach((skill, i) => {
-                skills.names.forEach((name, j) => {
-                    if (skill == name) {
-                        conversionWebImplementationValue += services.conversionWeb.implementation.hours[i] * skills.prices[j][countrySupplier.value];
-                    }
-                })
+            services.conversionWeb.implementation.idSkillsAcquired.forEach((skill, i) => {
+                conversionWebImplementationValue += services.conversionWeb.implementation.hours[i] * skills.prices[skill][countrySupplier.value];
+
                 /*--Se genera la descripcion de implementación para este servicio en el plan seleccionado---*/
                 implementationContent += `<ul><li>${services.conversionWeb.implementation.hours[i]} horas de ${services.conversionWeb.implementation.skillsAcquired[i]} a ${services.conversionWeb.implementation.skillsPrices[i][countrySupplier.value]} USD la hora, que hace lo siguiente:</li> ${services.conversionWeb.implementation.content[i]}</ul>`;
             })
@@ -1718,100 +1603,6 @@ function calculate() {
             resultMaintenanceConversionWebContainer.style.display = "none";
             resultImplementationConversionWebContainer.style.display = "none";
         }
-        /*---Se muestran los resultados particulares de SEO solamente si esta opcion fue seleccionada---*/
-        if (seo.checked) {
-            /*--Se muestran los fees de implementacion (por unica vez)---*/
-            resultImplementationContainer.style.display = "block";
-            /*--Se guardan los detalles de skills que incluye este servicio---*/
-            /*-para MANTENIMIENTO-*/
-            let maintenanceContent = '';
-            var seoManteinanceValue = 0;
-            services.seo.maintenance.skillsAcquired.forEach((skill, i) => {
-                skills.names.forEach((name, j) => {
-                    if (skill == name) {
-                        seoManteinanceValue += services.seo.maintenance.hours[i] * skills.prices[j][countrySupplier.value];
-                    }
-                })
-                /*--Se genera la descripcion de mantenimiento mensual para este servicio en el plan seleccionado---*/
-                maintenanceContent += `<ul><li>${services.seo.maintenance.hours[i]} horas de ${services.seo.maintenance.skillsAcquired[i]} a ${services.seo.maintenance.skillsPrices[i][countrySupplier.value]} USD la hora, que hace lo siguiente:</li> ${services.seo.maintenance.content[i]}</ul>`;
-            })
-            /*--Se activa el cajon de mantenimiento con el sub-cajon de SEO, inyectando titulo y contenido para el plan seleccionado--*/
-            resultMaintenanceSeoContainer.style.display = "block";
-            titleMaintenanceSeo.innerHTML = `<u><strong>SEO</strong>:</u> USD ${seoManteinanceValue}`;
-            resultMaintenanceSeo.innerHTML = `${maintenanceContent}`;
-
-            agencyMonthlyFeeValue += seoManteinanceValue;
-
-            /*-para IMPLEMENTACIÓN-*/
-            let implementationContent = '';
-            var seoImplementationValue = 0;
-            services.seo.implementation.skillsAcquired.forEach((skill, i) => {
-                skills.names.forEach((name, j) => {
-                    if (skill == name) {
-                        seoImplementationValue += services.seo.implementation.hours[i] * skills.prices[j][countrySupplier.value];
-                    }
-                })
-                /*--Se genera la descripcion de implementación para este servicio en el plan seleccionado---*/
-                implementationContent += `<ul><li>${services.seo.implementation.hours[i]} horas de ${services.seo.implementation.skillsAcquired[i]} a ${services.seo.implementation.skillsPrices[i][countrySupplier.value]} USD la hora, que hace lo siguiente:</li> ${services.seo.implementation.content[i]}</ul>`;
-            })
-            /*--Se activa el cajon de implementación con el sub-cajon de SEO, inyectando titulo y contenido para el plan seleccionado--*/
-            resultImplementationSeoContainer.style.display = "block";
-            titleImplementationSeo.innerHTML = `<u><strong>SEO</strong>:</u> USD ${seoImplementationValue}`;
-            resultImplementationSeo.innerHTML = `${implementationContent}`;
-
-            agencyOnceFeeValue += seoImplementationValue;
-
-        } else {
-            resultMaintenanceSeoContainer.style.display = "none";
-            resultImplementationSeoContainer.style.display = "none";
-        }
-        /*---Se muestran los resultados particulares de Community Management solamente si esta opcion fue seleccionada---*/
-        if (communityManagement.checked) {
-            /*--Se muestran los fees de implementacion (por unica vez)---*/
-            resultImplementationContainer.style.display = "block";
-            /*--Se guardan los detalles de skills que incluye este servicio---*/
-            /*-para MANTENIMIENTO-*/
-            let maintenanceContent = '';
-            var communityManagementManteinanceValue = 0;
-            services.communityManagement.maintenance.skillsAcquired.forEach((skill, i) => {
-                skills.names.forEach((name, j) => {
-                    if (skill == name) {
-                        communityManagementManteinanceValue += services.communityManagement.maintenance.hours[i] * skills.prices[j][countrySupplier.value];
-                    }
-                })
-                /*--Se genera la descripcion de mantenimiento mensual para este servicio en el plan seleccionado---*/
-                maintenanceContent += `<ul><li>${services.communityManagement.maintenance.hours[i]} horas de ${services.communityManagement.maintenance.skillsAcquired[i]} a ${services.communityManagement.maintenance.skillsPrices[i][countrySupplier.value]} USD la hora, que hace lo siguiente:</li> ${services.communityManagement.maintenance.content[i]}</ul>`;
-            })
-            /*--Se activa el cajon de mantenimiento con el sub-cajon de Community Management, inyectando titulo y contenido para el plan seleccionado--*/
-            resultMaintenanceCommunityManagementContainer.style.display = "block";
-            titleMaintenanceCommunityManagement.innerHTML = `<u><strong>Community Management</strong>:</u> USD ${communityManagementManteinanceValue}`;
-            resultMaintenanceCommunityManagement.innerHTML = ` ${maintenanceContent}`;
-
-            agencyMonthlyFeeValue += communityManagementManteinanceValue;
-
-            /*-para IMPLEMENTACIÓN-*/
-            let implementationContent = '';
-            var communityManagementImplementationValue = 0;
-            services.communityManagement.implementation.skillsAcquired.forEach((skill, i) => {
-                skills.names.forEach((name, j) => {
-                    if (skill == name) {
-                        communityManagementImplementationValue += services.communityManagement.implementation.hours[i] * skills.prices[j][countrySupplier.value];
-                    }
-                })
-                /*--Se genera la descripcion de implementación para este servicio en el plan seleccionado---*/
-                implementationContent += `<ul><li>${services.communityManagement.implementation.hours[i]} horas de ${services.communityManagement.implementation.skillsAcquired[i]} a ${services.communityManagement.implementation.skillsPrices[i][countrySupplier.value]} USD la hora, que hace lo siguiente:</li> ${services.communityManagement.implementation.content[i]}</ul>`;
-            })
-            /*--Se activa el cajon de implementación con el sub-cajon de Community Management, inyectando titulo y contenido para el plan seleccionado--*/
-            resultImplementationCommunityManagementContainer.style.display = "block";
-            titleImplementationCommunityManagement.innerHTML = `<u><strong>Community Management</strong>:</u> USD ${communityManagementImplementationValue}`;
-            resultImplementationCommunityManagement.innerHTML = `${implementationContent}`;
-
-            agencyOnceFeeValue += communityManagementImplementationValue;
-
-        } else {
-            resultMaintenanceCommunityManagementContainer.style.display = "none";
-            resultImplementationCommunityManagementContainer.style.display = "none";
-        }
         /*---Se muestran los resultados particulares de Google Search Ads solamente si esta opcion fue seleccionada---*/
         if (googleSearchAds.checked) {
             /*--Se muestran los fees de implementacion (por unica vez)---*/
@@ -1820,12 +1611,9 @@ function calculate() {
             /*-para MANTENIMIENTO-*/
             let maintenanceContent = '';
             var googleSearchAdsManteinanceValue = 0;
-            services.googleSearchAds.maintenance.skillsAcquired.forEach((skill, i) => {
-                skills.names.forEach((name, j) => {
-                    if (skill == name) {
-                        googleSearchAdsManteinanceValue += services.googleSearchAds.maintenance.hours[i] * skills.prices[j][countrySupplier.value];
-                    }
-                })
+            services.googleSearchAds.maintenance.idSkillsAcquired.forEach((skill, i) => {
+                googleSearchAdsManteinanceValue += services.googleSearchAds.maintenance.hours[i] * skills.prices[skill][countrySupplier.value];
+
                 /*--Se genera la descripcion de mantenimiento mensual para este servicio en el plan seleccionado---*/
                 maintenanceContent += `<ul><li>${services.googleSearchAds.maintenance.hours[i]} horas de ${services.googleSearchAds.maintenance.skillsAcquired[i]} a ${services.googleSearchAds.maintenance.skillsPrices[i][countrySupplier.value]} USD la hora, que hace lo siguiente:</li> ${services.googleSearchAds.maintenance.content[i]}</ul>`;
             })
@@ -1839,12 +1627,9 @@ function calculate() {
             /*-para IMPLEMENTACIÓN-*/
             let implementationContent = '';
             var googleSearchAdsImplementationValue = 0;
-            services.googleSearchAds.implementation.skillsAcquired.forEach((skill, i) => {
-                skills.names.forEach((name, j) => {
-                    if (skill == name) {
-                        googleSearchAdsImplementationValue += services.googleSearchAds.implementation.hours[i] * skills.prices[j][countrySupplier.value];
-                    }
-                })
+            services.googleSearchAds.implementation.idSkillsAcquired.forEach((skill, i) => {
+                googleSearchAdsImplementationValue += services.googleSearchAds.implementation.hours[i] * skills.prices[skill][countrySupplier.value];
+
                 /*--Se genera la descripcion de implementación para este servicio en el plan seleccionado---*/
                 implementationContent += `<ul><li>${services.googleSearchAds.implementation.hours[i]} horas de ${services.googleSearchAds.implementation.skillsAcquired[i]} a ${services.googleSearchAds.implementation.skillsPrices[i][countrySupplier.value]} USD la hora, que hace lo siguiente:</li> ${services.googleSearchAds.implementation.content[i]}</ul>`;
             })
@@ -1874,12 +1659,9 @@ function calculate() {
             /*-para MANTENIMIENTO-*/
             let maintenanceContent = '';
             var googleDisplayAdsManteinanceValue = 0;
-            services.googleDisplayAds.maintenance.skillsAcquired.forEach((skill, i) => {
-                skills.names.forEach((name, j) => {
-                    if (skill == name) {
-                        googleDisplayAdsManteinanceValue += services.googleDisplayAds.maintenance.hours[i] * skills.prices[j][countrySupplier.value];
-                    }
-                })
+            services.googleDisplayAds.maintenance.idSkillsAcquired.forEach((skill, i) => {
+                googleDisplayAdsManteinanceValue += services.googleDisplayAds.maintenance.hours[i] * skills.prices[skill][countrySupplier.value];
+
                 /*--Se genera la descripcion de mantenimiento mensual para este servicio en el plan seleccionado---*/
                 maintenanceContent += `<ul><li>${services.googleDisplayAds.maintenance.hours[i]} horas de ${services.googleDisplayAds.maintenance.skillsAcquired[i]} a ${services.googleDisplayAds.maintenance.skillsPrices[i][countrySupplier.value]} USD la hora, que hace lo siguiente:</li> ${services.googleDisplayAds.maintenance.content[i]}</ul>`;
             })
@@ -1893,12 +1675,9 @@ function calculate() {
             /*-para IMPLEMENTACIÓN-*/
             let implementationContent = '';
             var googleDisplayAdsImplementationValue = 0;
-            services.googleDisplayAds.implementation.skillsAcquired.forEach((skill, i) => {
-                skills.names.forEach((name, j) => {
-                    if (skill == name) {
-                        googleDisplayAdsImplementationValue += services.googleDisplayAds.implementation.hours[i] * skills.prices[j][countrySupplier.value];
-                    }
-                })
+            services.googleDisplayAds.implementation.idSkillsAcquired.forEach((skill, i) => {
+                googleDisplayAdsImplementationValue += services.googleDisplayAds.implementation.hours[i] * skills.prices[skill][countrySupplier.value];
+
                 /*--Se genera la descripcion de implementación para este servicio en el plan seleccionado---*/
                 implementationContent += `<ul><li>${services.googleDisplayAds.implementation.hours[i]} horas de ${services.googleDisplayAds.implementation.skillsAcquired[i]} a ${services.googleDisplayAds.implementation.skillsPrices[i][countrySupplier.value]} USD la hora, que hace lo siguiente:</li> ${services.googleDisplayAds.implementation.content[i]}</ul>`;
             })
@@ -1928,12 +1707,9 @@ function calculate() {
             /*-para MANTENIMIENTO-*/
             let maintenanceContent = '';
             var facebookAdsManteinanceValue = 0;
-            services.facebookAds.maintenance.skillsAcquired.forEach((skill, i) => {
-                skills.names.forEach((name, j) => {
-                    if (skill == name) {
-                        facebookAdsManteinanceValue += services.facebookAds.maintenance.hours[i] * skills.prices[j][countrySupplier.value];
-                    }
-                })
+            services.facebookAds.maintenance.idSkillsAcquired.forEach((skill, i) => {
+                facebookAdsManteinanceValue += services.facebookAds.maintenance.hours[i] * skills.prices[skill][countrySupplier.value];
+
                 /*--Se genera la descripcion de mantenimiento mensual para este servicio en el plan seleccionado---*/
                 maintenanceContent += `<ul><li>${services.facebookAds.maintenance.hours[i]} horas de ${services.facebookAds.maintenance.skillsAcquired[i]} a ${services.facebookAds.maintenance.skillsPrices[i][countrySupplier.value]} USD la hora, que hace lo siguiente:</li> ${services.facebookAds.maintenance.content[i]}</ul>`;
             })
@@ -1947,12 +1723,9 @@ function calculate() {
             /*-para IMPLEMENTACIÓN-*/
             let implementationContent = '';
             var facebookAdsImplementationValue = 0;
-            services.facebookAds.implementation.skillsAcquired.forEach((skill, i) => {
-                skills.names.forEach((name, j) => {
-                    if (skill == name) {
-                        facebookAdsImplementationValue += services.facebookAds.implementation.hours[i] * skills.prices[j][countrySupplier.value];
-                    }
-                })
+            services.facebookAds.implementation.idSkillsAcquired.forEach((skill, i) => {
+                facebookAdsImplementationValue += services.facebookAds.implementation.hours[i] * skills.prices[skill][countrySupplier.value];
+
                 /*--Se genera la descripcion de implementación para este servicio en el plan seleccionado---*/
                 implementationContent += `<ul><li>${services.facebookAds.implementation.hours[i]} horas de ${services.facebookAds.implementation.skillsAcquired[i]} a ${services.facebookAds.implementation.skillsPrices[i][countrySupplier.value]} USD la hora, que hace lo siguiente:</li> ${services.facebookAds.implementation.content[i]}</ul>`;
             })
@@ -1989,12 +1762,9 @@ function calculate() {
                 /*-para MANTENIMIENTO-*/
                 let maintenanceContent = '';
                 var landingPageManteinanceValue = 0;
-                services.disenoWeb.maintenance.skillsAcquired.forEach((skill, i) => {
-                    skills.names.forEach((name, j) => {
-                        if (skill == name) {
-                            landingPageManteinanceValue += services.disenoWeb.maintenance.hours[i] * skills.prices[j][countrySupplier.value];
-                        }
-                    })
+                services.disenoWeb.maintenance.idSkillsAcquired.forEach((skill, i) => {
+                    landingPageManteinanceValue += services.disenoWeb.maintenance.hours[i] * skills.prices[skill][countrySupplier.value];
+
                     /*--Se genera la descripcion de mantenimiento mensual para este servicio en el plan seleccionado---*/
                     maintenanceContent += `<ul><li>${services.disenoWeb.maintenance.hours[i]} horas de ${services.disenoWeb.maintenance.skillsAcquired[i]} a ${services.disenoWeb.maintenance.skillsPrices[i][countrySupplier.value]} USD la hora, que hace lo siguiente:</li> ${services.disenoWeb.maintenance.content[i]}</ul>`;
                 })
@@ -2008,12 +1778,9 @@ function calculate() {
                 /*-para IMPLEMENTACIÓN-*/
                 let implementationContent = '';
                 var landingPageImplementationValue = 0;
-                services.disenoWeb.implementation.basic.skillsAcquired.forEach((skill, i) => {
-                    skills.names.forEach((name, j) => {
-                        if (skill == name) {
-                            landingPageImplementationValue += services.disenoWeb.implementation.basic.hours[i] * skills.prices[j][countrySupplier.value];
-                        }
-                    })
+                services.disenoWeb.implementation.basic.idSkillsAcquired.forEach((skill, i) => {
+                    landingPageImplementationValue += services.disenoWeb.implementation.basic.hours[i] * skills.prices[skill][countrySupplier.value];
+
                     /*--Se genera la descripcion de implementación para este servicio en el plan seleccionado---*/
                     implementationContent += `<ul><li>${services.disenoWeb.implementation.basic.hours[i]} horas de ${services.disenoWeb.implementation.basic.skillsAcquired[i]} a ${services.disenoWeb.implementation.basic.skillsPrices[i][countrySupplier.value]} USD la hora, que hace lo siguiente:</li> ${services.disenoWeb.implementation.basic.content[i]}</ul>`;
                 })
@@ -2035,12 +1802,9 @@ function calculate() {
                 /*-para MANTENIMIENTO-*/
                 let maintenanceContent = '';
                 var wordpressManteinanceValue = 0;
-                services.disenoWeb.maintenance.skillsAcquired.forEach((skill, i) => {
-                    skills.names.forEach((name, j) => {
-                        if (skill == name) {
-                            wordpressManteinanceValue += services.disenoWeb.maintenance.hours[i] * skills.prices[j][countrySupplier.value];
-                        }
-                    })
+                services.disenoWeb.maintenance.idSkillsAcquired.forEach((skill, i) => {
+                    wordpressManteinanceValue += services.disenoWeb.maintenance.hours[i] * skills.prices[skill][countrySupplier.value];
+
                     /*--Se genera la descripcion de mantenimiento mensual para este servicio en el plan seleccionado---*/
                     maintenanceContent += `<ul><li>${services.disenoWeb.maintenance.hours[i]} horas de ${services.disenoWeb.maintenance.skillsAcquired[i]} a ${services.disenoWeb.maintenance.skillsPrices[i][countrySupplier.value]} USD la hora, que hace lo siguiente:</li> ${services.disenoWeb.maintenance.content[i]}</ul>`;
                 })
@@ -2054,12 +1818,9 @@ function calculate() {
                 /*-para IMPLEMENTACIÓN-*/
                 let implementationContent = '';
                 var wordpressImplementationValue = 0;
-                services.disenoWeb.implementation.intermediate.skillsAcquired.forEach((skill, i) => {
-                    skills.names.forEach((name, j) => {
-                        if (skill == name) {
-                            wordpressImplementationValue += services.disenoWeb.implementation.intermediate.hours[i] * skills.prices[j][countrySupplier.value];
-                        }
-                    })
+                services.disenoWeb.implementation.intermediate.idSkillsAcquired.forEach((skill, i) => {
+                    wordpressImplementationValue += services.disenoWeb.implementation.intermediate.hours[i] * skills.prices[skill][countrySupplier.value];
+
                     /*--Se genera la descripcion de implementación para este servicio en el plan seleccionado---*/
                     implementationContent += `<ul><li>${services.disenoWeb.implementation.intermediate.hours[i]} horas de ${services.disenoWeb.implementation.intermediate.skillsAcquired[i]} a ${services.disenoWeb.implementation.intermediate.skillsPrices[i][countrySupplier.value]} USD la hora, que hace lo siguiente:</li> ${services.disenoWeb.implementation.intermediate.content[i]}</ul>`;
                 })
@@ -2081,12 +1842,9 @@ function calculate() {
                 /*-para MANTENIMIENTO-*/
                 let maintenanceContent = '';
                 var customWebsiteManteinanceValue = 0;
-                services.disenoWeb.maintenance.skillsAcquired.forEach((skill, i) => {
-                    skills.names.forEach((name, j) => {
-                        if (skill == name) {
-                            customWebsiteManteinanceValue += services.disenoWeb.maintenance.hours[i] * skills.prices[j][countrySupplier.value];
-                        }
-                    })
+                services.disenoWeb.maintenance.idSkillsAcquired.forEach((skill, i) => {
+                    customWebsiteManteinanceValue += services.disenoWeb.maintenance.hours[i] * skills.prices[skill][countrySupplier.value];
+
                     /*--Se genera la descripcion de mantenimiento mensual para este servicio en el plan seleccionado---*/
                     maintenanceContent += `<ul><li>${services.disenoWeb.maintenance.hours[i]} horas de ${services.disenoWeb.maintenance.skillsAcquired[i]} a ${services.disenoWeb.maintenance.skillsPrices[i][countrySupplier.value]} USD la hora, que hace lo siguiente:</li> ${services.disenoWeb.maintenance.content[i]}</ul>`;
                 })
@@ -2100,12 +1858,9 @@ function calculate() {
                 /*-para IMPLEMENTACIÓN-*/
                 let implementationContent = '';
                 var customWebsiteImplementationValue = 0;
-                services.disenoWeb.implementation.advanced.skillsAcquired.forEach((skill, i) => {
-                    skills.names.forEach((name, j) => {
-                        if (skill == name) {
-                            customWebsiteImplementationValue += services.disenoWeb.implementation.advanced.hours[i] * skills.prices[j][countrySupplier.value];
-                        }
-                    })
+                services.disenoWeb.implementation.advanced.idSkillsAcquired.forEach((skill, i) => {
+                    customWebsiteImplementationValue += services.disenoWeb.implementation.advanced.hours[i] * skills.prices[skill][countrySupplier.value];
+
                     /*--Se genera la descripcion de implementación para este servicio en el plan seleccionado---*/
                     implementationContent += `<ul><li>${services.disenoWeb.implementation.advanced.hours[i]} horas de ${services.disenoWeb.implementation.advanced.skillsAcquired[i]} a ${services.disenoWeb.implementation.advanced.skillsPrices[i][countrySupplier.value]} USD la hora, que hace lo siguiente:</li> ${services.disenoWeb.implementation.advanced.content[i]}</ul>`;
                 })
@@ -2127,12 +1882,9 @@ function calculate() {
                 /*-para MANTENIMIENTO-*/
                 let maintenanceContent = '';
                 var ecommerceWebManteinanceValue = 0;
-                services.disenoWeb.maintenance.skillsAcquired.forEach((skill, i) => {
-                    skills.names.forEach((name, j) => {
-                        if (skill == name) {
-                            ecommerceWebManteinanceValue += services.disenoWeb.maintenance.hours[i] * skills.prices[j][countrySupplier.value];
-                        }
-                    })
+                services.disenoWeb.maintenance.idSkillsAcquired.forEach((skill, i) => {
+                    ecommerceWebManteinanceValue += services.disenoWeb.maintenance.hours[i] * skills.prices[skill][countrySupplier.value];
+
                     /*--Se genera la descripcion de mantenimiento mensual para este servicio en el plan seleccionado---*/
                     maintenanceContent += `<ul><li>${services.disenoWeb.maintenance.hours[i]} horas de ${services.disenoWeb.maintenance.skillsAcquired[i]} a ${services.disenoWeb.maintenance.skillsPrices[i][countrySupplier.value]} USD la hora, que hace lo siguiente:</li> ${services.disenoWeb.maintenance.content[i]}</ul>`;
                 })
@@ -2146,12 +1898,9 @@ function calculate() {
                 /*-para IMPLEMENTACIÓN-*/
                 let implementationContent = '';
                 var ecommerceWebImplementationValue = 0;
-                services.disenoWeb.implementation.ecommerce.skillsAcquired.forEach((skill, i) => {
-                    skills.names.forEach((name, j) => {
-                        if (skill == name) {
-                            ecommerceWebImplementationValue += services.disenoWeb.implementation.ecommerce.hours[i] * skills.prices[j][countrySupplier.value];
-                        }
-                    })
+                services.disenoWeb.implementation.ecommerce.idSkillsAcquired.forEach((skill, i) => {
+                    ecommerceWebImplementationValue += services.disenoWeb.implementation.ecommerce.hours[i] * skills.prices[skill][countrySupplier.value];
+
                     /*--Se genera la descripcion de implementación para este servicio en el plan seleccionado---*/
                     implementationContent += `<ul><li>${services.disenoWeb.implementation.ecommerce.hours[i]} horas de ${services.disenoWeb.implementation.ecommerce.skillsAcquired[i]} a ${services.disenoWeb.implementation.ecommerce.skillsPrices[i][countrySupplier.value]} USD la hora, que hace lo siguiente:</li> ${services.disenoWeb.implementation.ecommerce.content[i]}</ul>`;
                 })
@@ -2173,12 +1922,9 @@ function calculate() {
                 /*-para MANTENIMIENTO-*/
                 let maintenanceContent = '';
                 var logoMarcaManteinanceValue = 0;
-                services.disenoWeb.maintenance.skillsAcquired.forEach((skill, i) => {
-                    skills.names.forEach((name, j) => {
-                        if (skill == name) {
-                            logoMarcaManteinanceValue += services.disenoWeb.maintenance.hours[i] * skills.prices[j][countrySupplier.value];
-                        }
-                    })
+                services.disenoWeb.maintenance.idSkillsAcquired.forEach((skill, i) => {
+                    logoMarcaManteinanceValue += services.disenoWeb.maintenance.hours[i] * skills.prices[skill][countrySupplier.value];
+
                     /*--Se genera la descripcion de mantenimiento mensual para este servicio en el plan seleccionado---*/
                     maintenanceContent += `<ul><li>${services.disenoWeb.maintenance.hours[i]} horas de ${services.disenoWeb.maintenance.skillsAcquired[i]} a ${services.disenoWeb.maintenance.skillsPrices[i][countrySupplier.value]} USD la hora, que hace lo siguiente:</li> ${services.disenoWeb.maintenance.content[i]}</ul>`;
                 })
@@ -2192,12 +1938,9 @@ function calculate() {
                 /*-para IMPLEMENTACIÓN-*/
                 let implementationContent = '';
                 var logoMarcaImplementationValue = 0;
-                services.disenoWeb.implementation.logoYMarca.skillsAcquired.forEach((skill, i) => {
-                    skills.names.forEach((name, j) => {
-                        if (skill == name) {
-                            logoMarcaImplementationValue += services.disenoWeb.implementation.logoYMarca.hours[i] * skills.prices[j][countrySupplier.value];
-                        }
-                    })
+                services.disenoWeb.implementation.logoYMarca.idSkillsAcquired.forEach((skill, i) => {
+                    logoMarcaImplementationValue += services.disenoWeb.implementation.logoYMarca.hours[i] * skills.prices[skill][countrySupplier.value];
+
                     /*--Se genera la descripcion de implementación para este servicio en el plan seleccionado---*/
                     implementationContent += `<ul><li>${services.disenoWeb.implementation.logoYMarca.hours[i]} horas de ${services.disenoWeb.implementation.logoYMarca.skillsAcquired[i]} a ${services.disenoWeb.implementation.logoYMarca.skillsPrices[i][countrySupplier.value]} USD la hora, que hace lo siguiente:</li> ${services.disenoWeb.implementation.logoYMarca.content[i]}</ul>`;
                 })
@@ -2227,11 +1970,11 @@ function calculate() {
         }
 
         /*---Carca el mensaje de NO se seleccionaron inversiones si se da el caso---*/
-        if (!email.checked && !googleSearchAds.checked && !googleDisplayAds.checked && !facebookAds.checked) {
+        if (!googleSearchAds.checked && !googleDisplayAds.checked && !facebookAds.checked) {
             resultInvestmentsMonthlyDetail.innerHTML = "<li style='list-style: circle;'>No has seleccionado ninguna inversión en medios digitales. <small>(Ej: Google Ads Red de Busquedas, Google Ads Red de Display, Facebook Ads o Email Marketing)</small></li>";
         }
         /*---Se destaca la implementación en el cajon final, si SOLO se seleccionaron servicios "Diseño Web"---*/
-        if (disenoWeb.checked && (!googleSearchAds.checked && !googleDisplayAds.checked && !facebookAds.checked && !communityManagement.checked && !seo.checked && !conversionWeb.checked && !email.checked)) {
+        if (disenoWeb.checked && (!googleSearchAds.checked && !googleDisplayAds.checked && !facebookAds.checked && !conversionWeb.checked)) {
             monthlyTotalCostMessage.style.display = 'none';
             resultMonthlyTotal.style.display = 'none';
 
@@ -2301,18 +2044,35 @@ categoryTitles.forEach((category, i) => {
 });
 
 /*---Se ajusta la pantalla al contenido de las pestañas "¿Como obtuvimos estos resultados?" al clickearlas---*/
+function _scrollTo(selector, yOffset = 0) {
+    const el = document.querySelector(selector);
+    const y = el.getBoundingClientRect().top + window.pageYOffset + yOffset;
+
+    window.scrollTo({
+        top: y,
+        behavior: 'smooth'
+    });
+}
 qs('#what-does-tab').addEventListener('click', () => {
     setTimeout(() => {
-        qs('#what-does').scrollIntoView(true);
+        if ($(window).width() <= 500) {
+            _scrollTo('#what-does', -100);
+        } else {
+            _scrollTo('#what-does');
+        }
     }, 250);
 });
 qs('#info-tab').addEventListener('click', () => {
     setTimeout(() => {
-        qs('#info').scrollIntoView(true);
+        _scrollTo('#info', -130)
     }, 250);
 });
 qs('#statistics-tab').addEventListener('click', () => {
     setTimeout(() => {
-        qs('#statistics').scrollIntoView(true);
+        _scrollTo('#statistics', -130)
     }, 250);
 });
+// /*---Se agrega subrayado animado al titulo del cotizador---*/
+// var entryHeader = qs('.entry-header');
+// entryHeader.classList.add('crumina-heading');
+// entryHeader.innerHTML += '<div class="heading-decoration align-center"><span class="first"></span><span class="second"></span></div>';
