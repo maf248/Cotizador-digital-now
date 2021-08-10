@@ -462,14 +462,14 @@ const services = Object.freeze({
             skillsAcquired: Object.freeze(["Digital Marketing Analyst"]),
             idSkillsAcquired: Object.freeze([0]),
             skillsPrices: Object.freeze([skills.prices[0]]),
-            content: Object.freeze(["<ul><li style='list-style: circle;'>Selection of Keywords for the target audience and relevant for the campaign. Call with the client, to discuss the monthly budget and which type of searches are relevant for the established objective.</li><li style='list-style: circle;'>Conversion analysis for your business and measuring relevant action on your website using Google Tag Manager and Google Analytics. For example: when they add an item to the kart, make a purchase, fill a form, or contact you through the website chat.</li><li style='list-style: circle;'>The Creating a dashboard in Google Data Studio (<a href='https://datastudio.google.com/u/0/reporting/0B_U5RNpwhcE6ckdmZEJ0ZDJXUnM/page/VgD/preview' target='_blank' rel='noreferrer noopener'>Click here</a> for an example).</li><li style='list-style: circle;'>Organización por temas de palabras clave para controlar la inversión para diferentes temas y hacer anuncios específicos para diferentes temas.</li></ul>"])
+            content: Object.freeze(["<ul><li style='list-style: circle;'>Selection of Keywords for the target audience and relevant for the campaign. Call with the client, to discuss the monthly budget and which type of searches are relevant for the established objective.</li><li style='list-style: circle;'>Conversion analysis for your business and measuring relevant action on your website using Google Tag Manager and Google Analytics. For example: when they add an item to the kart, make a purchase, fill a form, or contact you through the website chat.</li><li style='list-style: circle;'>The Creating a dashboard in Google Data Studio (<a href='https://datastudio.google.com/u/0/reporting/0B_U5RNpwhcE6ckdmZEJ0ZDJXUnM/page/VgD/preview' target='_blank' rel='noreferrer noopener'>Click here</a> for an example).</li><li style='list-style: circle;'>Organizing by keyword theme to control the investment in each topic and create specific ads for different topics. </li></ul>"])
         }),
         maintenance: Object.freeze({
             hours: Object.freeze([6]),
             skillsAcquired: Object.freeze(["Digital Marketing Analyst"]),
             idSkillsAcquired: Object.freeze([0]),
             skillsPrices: Object.freeze([skills.prices[0]]),
-            content: Object.freeze(["<ul><li style='list-style: circle;'>Making any modification by the client request (respecting the accorded schedule).</li><li style='list-style: circle;'>1 cambio por semana para intentar mejorar la performance como modificar el presupuesto, url finales, texto de anuncios, palabras clave (Búsquedas en las que aparecés), ubicación geográfica y concordancias (qué tan amplio es el abanico de búsquedas similares a tus palabras clave en el cual aparecés).</li><li style='list-style: circle;'>Análisis semanal del impacto de los cambios implementados usando el dashboard de Google Data Studio.</li></ul>"])
+            content: Object.freeze(["<ul><li style='list-style: circle;'>Making any modification by the client request (respecting the accorded schedule).</li><li style='list-style: circle;'>1 change per week to improve performance like: Modify the budget, Final URL, Ad text, Keywords (searches which your business shows), Geographic location and Similar Keywords (how big is  the similar searches that are related to your keyword, in which you show on searches)</li><li style='list-style: circle;'>Weekly analysis of the impact with the implemented changes by using the dashboard of Google Data Studio.</li></ul>"])
         })
     }),
     googleDisplayAds: Object.freeze({
@@ -478,14 +478,14 @@ const services = Object.freeze({
             skillsAcquired: Object.freeze(["Digital Marketing Analyst", "Graphic Designer"]),
             idSkillsAcquired: Object.freeze([0, 2]),
             skillsPrices: Object.freeze([skills.prices[0], skills.prices[2]]),
-            content: Object.freeze(["<ul>Creación de campañas que le muestren anuncios de imagen en sitios web a un público relevante. Por ejemplo, visitantes de tu sitio web en los últimos 30 días o gente interesada en tu producto o servicio según Google.</li></ul>", "<ul><li style='list-style: circle;'>Designing 1 banner in a square and horizontal format for responsive ads (a mix between image and text).</li><li style='list-style: circle;'><a href='https://drive.google.com/drive/folders/15wF9BY4RxRrQ-vEchJDP4V17rw6hp503?usp=sharing' target='_blank' rel='noreferrer noopener'>Ver suma de piezas creativas</a></li></ul>"])
+            content: Object.freeze(["<ul>Setting up a campaign which shows your ads with images in websites to a relevant audience. For example: any visitor of your website in the last 30 days or people interested in your product or service according to Google.</li></ul>", "<ul><li style='list-style: circle;'>Designing 1 banner in a square and horizontal format for responsive ads (a mix between image and text).</li><li style='list-style: circle;'><a href='https://drive.google.com/drive/folders/15wF9BY4RxRrQ-vEchJDP4V17rw6hp503?usp=sharing' target='_blank' rel='noreferrer noopener'>See the sum of creative pieces</a></li></ul>"])
         }),
         maintenance: Object.freeze({
             hours: Object.freeze([4, 2]),
             skillsAcquired: Object.freeze(["Digital Marketing Analyst", "Graphic Designer"]),
             idSkillsAcquired: Object.freeze([0, 2]),
             skillsPrices: Object.freeze([skills.prices[0], skills.prices[2]]),
-            content: Object.freeze(["<ul><li style='list-style: circle;'>Making any modification by the client request (always respecting the accorded schedule).</li><li style='list-style: circle;'>Incluye 1 cambio semanal para intentar mejorar la performance como modificar el presupuesto, url finales, texto de anuncios, audiencia, ubicación geográfica y piezas creativas.</li><li style='list-style: circle;'>Análisis semanal del impacto de los cambios implementados usando el dashboard de Google Data Studio.</li></ul>", "<ul><li style='list-style: circle;'>Creation of 1 graphic piece in a square and horizontal format.</li></ul>"])
+            content: Object.freeze(["<ul><li style='list-style: circle;'>Making any modification by the client request (always respecting the accorded schedule).</li><li style='list-style: circle;'>Includes 1 change per week to improve performance like: Modify the budget, Final URL, Ad text, Audience, Geographic location and Creative Pieces</li><li style='list-style: circle;'>Weekly analysis of the impact with the implemented changes by using the dashboard of Google Data Studio.</li></ul>", "<ul><li style='list-style: circle;'>Creation of 1 graphic piece in a square and horizontal format.</li></ul>"])
         })
     }),
     facebookAds: Object.freeze({
@@ -494,14 +494,14 @@ const services = Object.freeze({
             skillsAcquired: Object.freeze(["Digital Marketing Analyst", "Graphic Designer"]),
             idSkillsAcquired: Object.freeze([0, 2]),
             skillsPrices: Object.freeze([skills.prices[0], skills.prices[2]]),
-            content: Object.freeze(["<ul><li style='list-style: circle;'>Creación de campañas que le muestren anuncios de imagen en Facebook e Instagram a un público relevante. Por ejemplo, visitantes de tu sitio web en los últimos 30 días o gente interesada en tu producto o servicio según Facebook.</li><li style='list-style: circle;'>Medición de acciones relevantes para tu negocio en tu sitio web (Conversiones). Por ejemplo, cuando arrancan el carrito, hacen una compra, completan un formulario o te contactan por el chat de la web.</li></ul>", "<ul><li style='list-style: circle;'>Creación de 3 piezas gráficas en formatos cuadrado (Para feed) y vertical (Para stories) <a href='https://drive.google.com/drive/folders/1_rdQGGkJ41WnMRd9iRbHo44DZ7mu3_bc?usp=sharing' target='_blank' rel='noreferrer noopener'>Click here</a> for an example.</li></ul>"])
+            content: Object.freeze(["<ul><li style='list-style: circle;'>Setting up a campaign which shows an ad with an image in Facebook and Instagram to a relevant audience. For example: any visitor of your website in the last 30 days or people interested in your product or service according to Facebook.</li><li style='list-style: circle;'>Measuring the relevant actions for your business website (conversions). For example: when the user puts an item in the cart, makes a purchase, fill a form or by contacting the chat from the website.</li></ul>", "<ul><li style='list-style: circle;'>Creating 3 graphic pieces in square format (for feed), and vertical format (for stories). <a href='https://drive.google.com/drive/folders/1_rdQGGkJ41WnMRd9iRbHo44DZ7mu3_bc?usp=sharing' target='_blank' rel='noreferrer noopener'>Click here</a> for an example.</li></ul>"])
         }),
         maintenance: Object.freeze({
             hours: Object.freeze([4, 2]),
             skillsAcquired: Object.freeze(["Digital Marketing Analyst", "Graphic Designer"]),
             idSkillsAcquired: Object.freeze([0, 2]),
             skillsPrices: Object.freeze([skills.prices[0], skills.prices[2]]),
-            content: Object.freeze(["<ul><li style='list-style: circle;'>Making any modification by the client request (always respecting the accorded schedule).</li><li style='list-style: circle;'>Incluye 1 cambio por semana para intentar mejorar la performance como modificar el presupuesto, url finales, texto de anuncios, audiencia, ubicación geográfica, estrategia de puja y piezas creativas.</li></ul>", "<ul><li style='list-style: circle;'>2 social media graphic images in square and vertical format.</li></ul>"])
+            content: Object.freeze(["<ul><li style='list-style: circle;'>Making any modification by the client request (always respecting the accorded schedule).</li><li style='list-style: circle;'>Includes 1 change per week to improve performance like: Modify the budget, Final URL, Ad text, Audience, Geographic location, Bidding strategy and Creative Pieces.</li></ul>", "<ul><li style='list-style: circle;'>2 social media graphic images in square and vertical format.</li></ul>"])
         })
     }),
     conversionWeb: Object.freeze({
@@ -513,7 +513,7 @@ const services = Object.freeze({
             content: Object.freeze(["<ul><li style='list-style: circle;'>Diagnose of good practices to improve the usability and accessibility of your website, making a content analysis, visual design analysis, interaction analysis and theme analysis. <a href='https://docs.google.com/spreadsheets/d/1ZlBsT4XKX11L22I8ojC06DcgsJOeAYjOkUmVmv5mcck/edit?usp=sharing' target='_blank' rel='noreferrer noopener'>Click here</a> for an example.</li></ul>"])
         }),
         maintenance: Object.freeze({
-            hours: Object.freeze([4]),
+            hours: Object.freeze([6]),
             skillsAcquired: Object.freeze(["UX / UI Designer"]),
             idSkillsAcquired: Object.freeze([1]),
             skillsPrices: Object.freeze([skills.prices[1]]),
@@ -535,7 +535,7 @@ const services = Object.freeze({
                 skillsAcquired: Object.freeze(["UX / UI Designer"]),
                 idSkillsAcquired: Object.freeze([1]),
                 skillsPrices: Object.freeze([skills.prices[1]]),
-                name: Object.freeze("Sitio web de 5 secciones en base a plantilla prediseñada"),
+                name: Object.freeze("Website with 5 base sections with a pre-designed template"),
                 content: Object.freeze(["<ul><li style='list-style: circle;'>Implementation of a predesigned template for 5 pages using Wordpress. Includes any graphic needed. <a href='https://gaudirjohnson.com.ar/' target='_blank' rel='noreferrer noopener'>Click here</a> for an example.</li></ul>"])
             }),
             advanced: Object.freeze({

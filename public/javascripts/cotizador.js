@@ -513,7 +513,7 @@ const services = Object.freeze({
             content: Object.freeze(["<ul><li style='list-style: circle;'>Diagnóstico de buenas prácticas de usabilidad y accesibilidad haciendo análisis de contenido, análisis de diseño visual, análisis de interacción y análisis de temas técnicos. <a href='https://docs.google.com/spreadsheets/d/1ZlBsT4XKX11L22I8ojC06DcgsJOeAYjOkUmVmv5mcck/edit?usp=sharing' target='_blank' rel='noreferrer noopener'>Ver Plantilla de Diagnóstico</a></li></ul>"])
         }),
         maintenance: Object.freeze({
-            hours: Object.freeze([4]),
+            hours: Object.freeze([6]),
             skillsAcquired: Object.freeze(["Diseñador Web UX / UI"]),
             idSkillsAcquired: Object.freeze([1]),
             skillsPrices: Object.freeze([skills.prices[1]]),
