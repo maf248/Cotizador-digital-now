@@ -409,7 +409,7 @@ const relativeStatsCountries = Object.freeze({
 
 /*---Datos de los SKILLS con precios por hora---*/
 const skills = Object.freeze({
-    names: Object.freeze(["Digital Marketing Analyst", "SEO Analyst", "Community Manager", "Content Writer", "UX / UI Designer", "Graphic Designer", "Programmer", "Video Editor"]),
+    names: Object.freeze(["Digital Marketing Analyst", "UX / UI Designer", "Graphic Designer"]),
     prices: [{
         argentina: 30,
         australia: 50,
@@ -424,48 +424,6 @@ const skills = Object.freeze({
         southafrica: 30,
         ukraine: 33,
         venezuela: 8
-    }, {
-        argentina: 26,
-        australia: 52,
-        bangladesh: 13,
-        colombia: 14,
-        spain: 28,
-        eeuu: 70,
-        philippines: 21,
-        india: 13,
-        england: 45,
-        mexico: 19,
-        southafrica: 32,
-        ukraine: 32,
-        venezuela: 9
-    }, {
-        argentina: 16,
-        australia: 41,
-        bangladesh: 41,
-        colombia: 34,
-        spain: 46,
-        eeuu: 39,
-        philippines: 12,
-        india: 31,
-        england: 44,
-        mexico: 16,
-        southafrica: 19,
-        ukraine: 30,
-        venezuela: 9
-    }, {
-        argentina: 19,
-        australia: 57,
-        bangladesh: 17,
-        colombia: 22,
-        spain: 39,
-        eeuu: 62,
-        philippines: 14,
-        india: 21,
-        england: 54,
-        mexico: 38,
-        southafrica: 33,
-        ukraine: 18,
-        venezuela: 15
     }, {
         argentina: 35,
         australia: 54,
@@ -494,34 +452,6 @@ const skills = Object.freeze({
         southafrica: 38,
         ukraine: 25,
         venezuela: 21
-    }, {
-        argentina: 28,
-        australia: 47,
-        bangladesh: 18,
-        colombia: 24,
-        spain: 34,
-        eeuu: 59,
-        philippines: 21,
-        india: 19,
-        england: 47,
-        mexico: 35,
-        southafrica: 22,
-        ukraine: 32,
-        venezuela: 12
-    }, {
-        argentina: 20,
-        australia: 40,
-        bangladesh: 16,
-        colombia: 28,
-        spain: 26,
-        eeuu: 54,
-        philippines: 16,
-        india: 24,
-        england: 30,
-        mexico: 25,
-        southafrica: 29,
-        ukraine: 26,
-        venezuela: 20
     }]
 })
 /*---Datos de los SERVICIOS brindados, organizado para programación orientada a objetos---*/
@@ -546,15 +476,15 @@ const services = Object.freeze({
         implementation: Object.freeze({
             hours: Object.freeze([2, 2]),
             skillsAcquired: Object.freeze(["Digital Marketing Analyst", "Graphic Designer"]),
-            idSkillsAcquired: Object.freeze([0, 5]),
-            skillsPrices: Object.freeze([skills.prices[0], skills.prices[5]]),
+            idSkillsAcquired: Object.freeze([0, 2]),
+            skillsPrices: Object.freeze([skills.prices[0], skills.prices[2]]),
             content: Object.freeze(["<ul>Creación de campañas que le muestren anuncios de imagen en sitios web a un público relevante. Por ejemplo, visitantes de tu sitio web en los últimos 30 días o gente interesada en tu producto o servicio según Google.</li></ul>", "<ul><li style='list-style: circle;'>Designing 1 banner in a square and horizontal format for responsive ads (a mix between image and text).</li><li style='list-style: circle;'><a href='https://drive.google.com/drive/folders/15wF9BY4RxRrQ-vEchJDP4V17rw6hp503?usp=sharing' target='_blank' rel='noreferrer noopener'>Ver suma de piezas creativas</a></li></ul>"])
         }),
         maintenance: Object.freeze({
             hours: Object.freeze([4, 2]),
             skillsAcquired: Object.freeze(["Digital Marketing Analyst", "Graphic Designer"]),
-            idSkillsAcquired: Object.freeze([0, 5]),
-            skillsPrices: Object.freeze([skills.prices[0], skills.prices[5]]),
+            idSkillsAcquired: Object.freeze([0, 2]),
+            skillsPrices: Object.freeze([skills.prices[0], skills.prices[2]]),
             content: Object.freeze(["<ul><li style='list-style: circle;'>Making any modification by the client request (always respecting the accorded schedule).</li><li style='list-style: circle;'>Incluye 1 cambio semanal para intentar mejorar la performance como modificar el presupuesto, url finales, texto de anuncios, audiencia, ubicación geográfica y piezas creativas.</li><li style='list-style: circle;'>Análisis semanal del impacto de los cambios implementados usando el dashboard de Google Data Studio.</li></ul>", "<ul><li style='list-style: circle;'>Creation of 1 graphic piece in a square and horizontal format.</li></ul>"])
         })
     }),
@@ -562,15 +492,15 @@ const services = Object.freeze({
         implementation: Object.freeze({
             hours: Object.freeze([2, 6]),
             skillsAcquired: Object.freeze(["Digital Marketing Analyst", "Graphic Designer"]),
-            idSkillsAcquired: Object.freeze([0, 5]),
-            skillsPrices: Object.freeze([skills.prices[0], skills.prices[5]]),
+            idSkillsAcquired: Object.freeze([0, 2]),
+            skillsPrices: Object.freeze([skills.prices[0], skills.prices[2]]),
             content: Object.freeze(["<ul><li style='list-style: circle;'>Creación de campañas que le muestren anuncios de imagen en Facebook e Instagram a un público relevante. Por ejemplo, visitantes de tu sitio web en los últimos 30 días o gente interesada en tu producto o servicio según Facebook.</li><li style='list-style: circle;'>Medición de acciones relevantes para tu negocio en tu sitio web (Conversiones). Por ejemplo, cuando arrancan el carrito, hacen una compra, completan un formulario o te contactan por el chat de la web.</li></ul>", "<ul><li style='list-style: circle;'>Creación de 3 piezas gráficas en formatos cuadrado (Para feed) y vertical (Para stories) <a href='https://drive.google.com/drive/folders/1_rdQGGkJ41WnMRd9iRbHo44DZ7mu3_bc?usp=sharing' target='_blank' rel='noreferrer noopener'>Click here</a> for an example.</li></ul>"])
         }),
         maintenance: Object.freeze({
             hours: Object.freeze([4, 2]),
             skillsAcquired: Object.freeze(["Digital Marketing Analyst", "Graphic Designer"]),
-            idSkillsAcquired: Object.freeze([0, 5]),
-            skillsPrices: Object.freeze([skills.prices[0], skills.prices[5]]),
+            idSkillsAcquired: Object.freeze([0, 2]),
+            skillsPrices: Object.freeze([skills.prices[0], skills.prices[2]]),
             content: Object.freeze(["<ul><li style='list-style: circle;'>Making any modification by the client request (always respecting the accorded schedule).</li><li style='list-style: circle;'>Incluye 1 cambio por semana para intentar mejorar la performance como modificar el presupuesto, url finales, texto de anuncios, audiencia, ubicación geográfica, estrategia de puja y piezas creativas.</li></ul>", "<ul><li style='list-style: circle;'>2 social media graphic images in square and vertical format.</li></ul>"])
         })
     }),
@@ -578,15 +508,15 @@ const services = Object.freeze({
         implementation: Object.freeze({
             hours: Object.freeze([4]),
             skillsAcquired: Object.freeze(["UX / UI Designer"]),
-            idSkillsAcquired: Object.freeze([4]),
-            skillsPrices: Object.freeze([skills.prices[4]]),
+            idSkillsAcquired: Object.freeze([1]),
+            skillsPrices: Object.freeze([skills.prices[1]]),
             content: Object.freeze(["<ul><li style='list-style: circle;'>Diagnose of good practices to improve the usability and accessibility of your website, making a content analysis, visual design analysis, interaction analysis and theme analysis. <a href='https://docs.google.com/spreadsheets/d/1ZlBsT4XKX11L22I8ojC06DcgsJOeAYjOkUmVmv5mcck/edit?usp=sharing' target='_blank' rel='noreferrer noopener'>Click here</a> for an example.</li></ul>"])
         }),
         maintenance: Object.freeze({
             hours: Object.freeze([4]),
             skillsAcquired: Object.freeze(["UX / UI Designer"]),
-            idSkillsAcquired: Object.freeze([4]),
-            skillsPrices: Object.freeze([skills.prices[4]]),
+            idSkillsAcquired: Object.freeze([1]),
+            skillsPrices: Object.freeze([skills.prices[1]]),
             content: Object.freeze(["<ul><li style='list-style: circle;'>Implementing 2 A/B tests (one version with a modification to improve performance and other without modification) for your website using Google Optimize and Google Analytics.</li><li>Review report for the client.</li></ul>"])
         })
     }),
@@ -595,40 +525,40 @@ const services = Object.freeze({
             basic: Object.freeze({
                 hours: Object.freeze([10]),
                 skillsAcquired: Object.freeze(["UX / UI Designer"]),
-                idSkillsAcquired: Object.freeze([4]),
-                skillsPrices: Object.freeze([skills.prices[4]]),
+                idSkillsAcquired: Object.freeze([1]),
+                skillsPrices: Object.freeze([skills.prices[1]]),
                 name: Object.freeze("Landing Page"),
                 content: Object.freeze(["<ul><li style='list-style: circle;'>Implementation of a predesigned template for 1 page using CMS (Content Management System) like Wordpress or Wix, to drag and drop.</li></ul>"])
             }),
             intermediate: Object.freeze({
                 hours: Object.freeze([20]),
                 skillsAcquired: Object.freeze(["UX / UI Designer"]),
-                idSkillsAcquired: Object.freeze([4]),
-                skillsPrices: Object.freeze([skills.prices[4]]),
+                idSkillsAcquired: Object.freeze([1]),
+                skillsPrices: Object.freeze([skills.prices[1]]),
                 name: Object.freeze("Sitio web de 5 secciones en base a plantilla prediseñada"),
                 content: Object.freeze(["<ul><li style='list-style: circle;'>Implementation of a predesigned template for 5 pages using Wordpress. Includes any graphic needed. <a href='https://gaudirjohnson.com.ar/' target='_blank' rel='noreferrer noopener'>Click here</a> for an example.</li></ul>"])
             }),
             advanced: Object.freeze({
                 hours: Object.freeze([50]),
                 skillsAcquired: Object.freeze(["UX / UI Designer"]),
-                idSkillsAcquired: Object.freeze([4]),
-                skillsPrices: Object.freeze([skills.prices[4]]),
+                idSkillsAcquired: Object.freeze([1]),
+                skillsPrices: Object.freeze([skills.prices[1]]),
                 name: Object.freeze("Website with a personalized design"),
                 content: Object.freeze(["<ul><li style='list-style: circle;'>Different prototype designs using Figma (<a href='https://www.figma.com/file/UXhBSaXoO8LeMYrQgFYO9F/Burplaza?node-id=0%3A1' target='_blank' rel='noreferrer noopener'>Click here</a> for an example). Call with the client for revision and changes to the website in Wordpress. Up to 3 revisions by the client.</li></ul>"])
             }),
             ecommerce: Object.freeze({
                 hours: Object.freeze([20]),
                 skillsAcquired: Object.freeze(["UX / UI Designer"]),
-                idSkillsAcquired: Object.freeze([4]),
-                skillsPrices: Object.freeze([skills.prices[4]]),
+                idSkillsAcquired: Object.freeze([1]),
+                skillsPrices: Object.freeze([skills.prices[1]]),
                 name: Object.freeze("Ecommerce simple website with CMS, like WooCommerce, Tienda Nube or Shopify"),
                 content: Object.freeze(["<ul><li style='list-style: circle;'>Uploading up to 15 products on the website.</li></ul>"])
             }),
             logoYMarca: Object.freeze({
                 hours: Object.freeze([10]),
                 skillsAcquired: Object.freeze(["Graphic Designer"]),
-                idSkillsAcquired: Object.freeze([5]),
-                skillsPrices: Object.freeze([skills.prices[5]]),
+                idSkillsAcquired: Object.freeze([2]),
+                skillsPrices: Object.freeze([skills.prices[2]]),
                 name: Object.freeze("Logo design and Brand Identity"),
                 content: Object.freeze(["<ul><li style='list-style: circle;'>Fonts, logo in different formats, color palette and concept. Up to 3 revisions. <a href='https://drive.google.com/file/d/1gyONia_qKjM6mqoJHe_AnGRGMPbicQnv/view?usp=sharing' target='_blank' rel='noreferrer noopener'>Click here</a> for an example.</li></ul>"])
             })
@@ -637,8 +567,8 @@ const services = Object.freeze({
             basic: Object.freeze({
                 hours: Object.freeze([2]),
                 skillsAcquired: Object.freeze(["UX / UI Designer"]),
-                idSkillsAcquired: Object.freeze([4]),
-                skillsPrices: Object.freeze([skills.prices[4]]),
+                idSkillsAcquired: Object.freeze([1]),
+                skillsPrices: Object.freeze([skills.prices[1]]),
                 content: Object.freeze(["<ul><li style='list-style: circle;'>Plugin update, image and text content update, and bug fixes.</li></ul>"])
             })
         })
