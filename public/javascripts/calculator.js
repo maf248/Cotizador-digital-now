@@ -740,7 +740,6 @@ const skills = Object.freeze({
         }
     }]
 })
-
 /*---Datos de los SERVICIOS brindados, organizado para programación orientada a objetos---*/
 const services = Object.freeze({
     googleSearchAds: Object.freeze({
@@ -1413,6 +1412,19 @@ logoMarca.addEventListener('change', function () {
     }
 });
 
+/*----Se obtienen los datos de freelancers para el pais seleccionado----*/
+var responseApi;
+fetch(`https://digitalnow.com.ar/wp-json/freelancer-api/${countrySupplier.value}`)
+.then(response => response.json())
+.then(data => responseApi = data);
+
+countrySupplier.addEventListener('change', function () {
+responseApi = null;
+fetch(`https://digitalnow.com.ar/wp-json/freelancer-api/${countrySupplier.value}`)
+.then(response => response.json())
+.then(data => responseApi = data);
+});
+
 calculateButton.addEventListener('click', function () {
     calculate();
 });
@@ -1442,7 +1454,7 @@ function calculate() {
     emailCustomerInput = qsa('#optin-okXxFSTU input')[1];
 
     /*---Se valida que esten todas las etapas seleccionadas, para mostrar los resultados u ocultarlos---*/
-    if (completeFormValidate.includes(false) || qs('.p-success') == null) {
+    if (completeFormValidate.includes(false) || qs('.p-success') == null || responseApi == null) {
 
         resultsContainer.style.height = '0';
         resultsContainer.style.opacity = '0';

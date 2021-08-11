@@ -1409,19 +1409,18 @@ logoMarca.addEventListener('change', function () {
     }
 });
 
-// /*----Se obtienen los datos de freelancers para el pais seleccionado----*/
-// var responseApi;
-// fetch(`https://digitalnow.com.ar/wp-json/freelancer-api/${countrySupplier.value}`)
-// .then(response => response.json())
-// .then(data => responseApi = data)
-// .then(data => console.log(data));
+/*----Se obtienen los datos de freelancers para el pais seleccionado----*/
+var responseApi;
+fetch(`https://digitalnow.com.ar/wp-json/freelancer-api/${countrySupplier.value}`)
+.then(response => response.json())
+.then(data => responseApi = data);
 
-// countrySupplier.addEventListener('change', function () {
-// fetch(`https://digitalnow.com.ar/wp-json/freelancer-api/${countrySupplier.value}`)
-// .then(response => response.json())
-// .then(data => responseApi = data)
-// .then(data => console.log(data));
-// });
+countrySupplier.addEventListener('change', function () {
+responseApi = null;
+fetch(`https://digitalnow.com.ar/wp-json/freelancer-api/${countrySupplier.value}`)
+.then(response => response.json())
+.then(data => responseApi = data);
+});
 
 calculateButton.addEventListener('click', function () {
     calculate();
@@ -1452,7 +1451,7 @@ function calculate() {
     emailCustomerInput = qsa('#optin-okXxFSTU input')[1];
 
     /*---Se valida que esten todas las etapas seleccionadas, para mostrar los resultados u ocultarlos---*/
-    if (completeFormValidate.includes(false) || qs('.p-success') == null) {
+    if (completeFormValidate.includes(false) || qs('.p-success') == null || responseApi == null) {
 
         resultsContainer.style.height = '0';
         resultsContainer.style.opacity = '0';
@@ -1789,7 +1788,7 @@ function calculate() {
                 conversionWebManteinanceValue += services.conversionWeb.maintenance.hours[i] * skills.averages[skill][countrySupplier.value].averagePrice;
 
                 /*--Se genera la descripcion de mantenimiento mensual para este servicio en el plan seleccionado---*/
-                maintenanceContent += `<ul><li>${services.conversionWeb.maintenance.hours[i]} horas de ${services.conversionWeb.maintenance.skillsAcquired[i]} a ${services.conversionWeb.maintenance.skillsPrices[i][countrySupplier.value].averagePrice} USD la hora, que hace lo siguiente:</li> ${services.conversionWeb.maintenance.content[i]}</ul>`;
+                maintenanceContent += `<ul><li>${services.conversionWeb.maintenance.hours[i]} horas de ${services.conversionWeb.maintenance.skillsAcquired[i]} a ${services.conversionWeb.maintenance.skillsPrices[i][countrySupplier.value].averagePrice} USD la hora <small>(Precio promedio obtenido en base a ${services.conversionWeb.maintenance.skillsPrices[i][countrySupplier.value].averageTotal} freelancers de ${countrySupplier.value} de la plataforma <a href='https://www.freelancer.com' target='_blank' rel='noreferrer noopener'>freelancer.com</a>)</small>, que hace lo siguiente:</li> ${services.conversionWeb.maintenance.content[i]}</ul>`;
             })
             /*--Se activa el cajon de mantenimiento con el sub-cajon de conversion web, inyectando titulo y contenido para el plan seleccionado--*/
             resultMaintenanceConversionWebContainer.style.display = "block";
@@ -1808,7 +1807,7 @@ function calculate() {
                 conversionWebImplementationValue += services.conversionWeb.implementation.hours[i] * skills.averages[skill][countrySupplier.value].averagePrice;
 
                 /*--Se genera la descripcion de implementación para este servicio en el plan seleccionado---*/
-                implementationContent += `<ul><li>${services.conversionWeb.implementation.hours[i]} horas de ${services.conversionWeb.implementation.skillsAcquired[i]} a ${services.conversionWeb.implementation.skillsPrices[i][countrySupplier.value].averagePrice} USD la hora, que hace lo siguiente:</li> ${services.conversionWeb.implementation.content[i]}</ul>`;
+                implementationContent += `<ul><li>${services.conversionWeb.implementation.hours[i]} horas de ${services.conversionWeb.implementation.skillsAcquired[i]} a ${services.conversionWeb.implementation.skillsPrices[i][countrySupplier.value].averagePrice} USD la hora <small>(Precio promedio obtenido en base a ${services.conversionWeb.implementation.skillsPrices[i][countrySupplier.value].averageTotal} freelancers de ${countrySupplier.value} de la plataforma <a href='https://www.freelancer.com' target='_blank' rel='noreferrer noopener'>freelancer.com</a>)</small>, que hace lo siguiente:</li> ${services.conversionWeb.implementation.content[i]}</ul>`;
             })
             /*--Se activa el cajon de implementación con el sub-cajon de conversion web, inyectando titulo y contenido para el plan seleccionado--*/
             resultImplementationConversionWebContainer.style.display = "block";
@@ -1833,7 +1832,7 @@ function calculate() {
                 googleSearchAdsManteinanceValue += services.googleSearchAds.maintenance.hours[i] * skills.averages[skill][countrySupplier.value].averagePrice;
 
                 /*--Se genera la descripcion de mantenimiento mensual para este servicio en el plan seleccionado---*/
-                maintenanceContent += `<ul><li>${services.googleSearchAds.maintenance.hours[i]} horas de ${services.googleSearchAds.maintenance.skillsAcquired[i]} a ${services.googleSearchAds.maintenance.skillsPrices[i][countrySupplier.value].averagePrice} USD la hora, que hace lo siguiente:</li> ${services.googleSearchAds.maintenance.content[i]}</ul>`;
+                maintenanceContent += `<ul><li>${services.googleSearchAds.maintenance.hours[i]} horas de ${services.googleSearchAds.maintenance.skillsAcquired[i]} a ${services.googleSearchAds.maintenance.skillsPrices[i][countrySupplier.value].averagePrice} USD la hora <small>(Precio promedio obtenido en base a ${services.googleSearchAds.maintenance.skillsPrices[i][countrySupplier.value].averageTotal} freelancers de ${countrySupplier.value} de la plataforma <a href='https://www.freelancer.com' target='_blank' rel='noreferrer noopener'>freelancer.com</a>)</small>, que hace lo siguiente:</li> ${services.googleSearchAds.maintenance.content[i]}</ul>`;
             })
             /*--Se activa el cajon de mantenimiento con el sub-cajon de Google Search Ads, inyectando titulo y contenido para el plan seleccionado--*/
             resultMaintenanceGoogleSearchAdsContainer.style.display = "block";
@@ -1849,7 +1848,7 @@ function calculate() {
                 googleSearchAdsImplementationValue += services.googleSearchAds.implementation.hours[i] * skills.averages[skill][countrySupplier.value].averagePrice;
 
                 /*--Se genera la descripcion de implementación para este servicio en el plan seleccionado---*/
-                implementationContent += `<ul><li>${services.googleSearchAds.implementation.hours[i]} horas de ${services.googleSearchAds.implementation.skillsAcquired[i]} a ${services.googleSearchAds.implementation.skillsPrices[i][countrySupplier.value].averagePrice} USD la hora, que hace lo siguiente:</li> ${services.googleSearchAds.implementation.content[i]}</ul>`;
+                implementationContent += `<ul><li>${services.googleSearchAds.implementation.hours[i]} horas de ${services.googleSearchAds.implementation.skillsAcquired[i]} a ${services.googleSearchAds.implementation.skillsPrices[i][countrySupplier.value].averagePrice} USD la hora <small>(Precio promedio obtenido en base a ${services.googleSearchAds.implementation.skillsPrices[i][countrySupplier.value].averageTotal} freelancers de ${countrySupplier.value} de la plataforma <a href='https://www.freelancer.com' target='_blank' rel='noreferrer noopener'>freelancer.com</a>)</small>, que hace lo siguiente:</li> ${services.googleSearchAds.implementation.content[i]}</ul>`;
             })
             /*--Se activa el cajon de implementación con el sub-cajon de Google Search Ads, inyectando titulo y contenido para el plan seleccionado--*/
             resultImplementationGoogleSearchAdsContainer.style.display = "block";
@@ -1881,7 +1880,7 @@ function calculate() {
                 googleDisplayAdsManteinanceValue += services.googleDisplayAds.maintenance.hours[i] * skills.averages[skill][countrySupplier.value].averagePrice;
 
                 /*--Se genera la descripcion de mantenimiento mensual para este servicio en el plan seleccionado---*/
-                maintenanceContent += `<ul><li>${services.googleDisplayAds.maintenance.hours[i]} horas de ${services.googleDisplayAds.maintenance.skillsAcquired[i]} a ${services.googleDisplayAds.maintenance.skillsPrices[i][countrySupplier.value].averagePrice} USD la hora, que hace lo siguiente:</li> ${services.googleDisplayAds.maintenance.content[i]}</ul>`;
+                maintenanceContent += `<ul><li>${services.googleDisplayAds.maintenance.hours[i]} horas de ${services.googleDisplayAds.maintenance.skillsAcquired[i]} a ${services.googleDisplayAds.maintenance.skillsPrices[i][countrySupplier.value].averagePrice} USD la hora <small>(Precio promedio obtenido en base a ${services.googleDisplayAds.maintenance.skillsPrices[i][countrySupplier.value].averageTotal} freelancers de ${countrySupplier.value} de la plataforma <a href='https://www.freelancer.com' target='_blank' rel='noreferrer noopener'>freelancer.com</a>)</small>, que hace lo siguiente:</li> ${services.googleDisplayAds.maintenance.content[i]}</ul>`;
             })
             /*--Se activa el cajon de mantenimiento con el sub-cajon de Google Display Ads, inyectando titulo y contenido para el plan seleccionado--*/
             resultMaintenanceGoogleDisplayAdsContainer.style.display = "block";
@@ -1897,7 +1896,7 @@ function calculate() {
                 googleDisplayAdsImplementationValue += services.googleDisplayAds.implementation.hours[i] * skills.averages[skill][countrySupplier.value].averagePrice;
 
                 /*--Se genera la descripcion de implementación para este servicio en el plan seleccionado---*/
-                implementationContent += `<ul><li>${services.googleDisplayAds.implementation.hours[i]} horas de ${services.googleDisplayAds.implementation.skillsAcquired[i]} a ${services.googleDisplayAds.implementation.skillsPrices[i][countrySupplier.value].averagePrice} USD la hora, que hace lo siguiente:</li> ${services.googleDisplayAds.implementation.content[i]}</ul>`;
+                implementationContent += `<ul><li>${services.googleDisplayAds.implementation.hours[i]} horas de ${services.googleDisplayAds.implementation.skillsAcquired[i]} a ${services.googleDisplayAds.implementation.skillsPrices[i][countrySupplier.value].averagePrice} USD la hora <small>(Precio promedio obtenido en base a ${services.googleDisplayAds.implementation.skillsPrices[i][countrySupplier.value].averageTotal} freelancers de ${countrySupplier.value} de la plataforma <a href='https://www.freelancer.com' target='_blank' rel='noreferrer noopener'>freelancer.com</a>)</small>, que hace lo siguiente:</li> ${services.googleDisplayAds.implementation.content[i]}</ul>`;
             })
             /*--Se activa el cajon de implementación con el sub-cajon de Google Display Ads, inyectando titulo y contenido para el plan seleccionado--*/
             resultImplementationGoogleDisplayAdsContainer.style.display = "block";
@@ -1929,7 +1928,7 @@ function calculate() {
                 facebookAdsManteinanceValue += services.facebookAds.maintenance.hours[i] * skills.averages[skill][countrySupplier.value].averagePrice;
 
                 /*--Se genera la descripcion de mantenimiento mensual para este servicio en el plan seleccionado---*/
-                maintenanceContent += `<ul><li>${services.facebookAds.maintenance.hours[i]} horas de ${services.facebookAds.maintenance.skillsAcquired[i]} a ${services.facebookAds.maintenance.skillsPrices[i][countrySupplier.value].averagePrice} USD la hora, que hace lo siguiente:</li> ${services.facebookAds.maintenance.content[i]}</ul>`;
+                maintenanceContent += `<ul><li>${services.facebookAds.maintenance.hours[i]} horas de ${services.facebookAds.maintenance.skillsAcquired[i]} a ${services.facebookAds.maintenance.skillsPrices[i][countrySupplier.value].averagePrice} USD la hora <small>(Precio promedio obtenido en base a ${services.facebookAds.maintenance.skillsPrices[i][countrySupplier.value].averageTotal} freelancers de ${countrySupplier.value} de la plataforma <a href='https://www.freelancer.com' target='_blank' rel='noreferrer noopener'>freelancer.com</a>)</small>, que hace lo siguiente:</li> ${services.facebookAds.maintenance.content[i]}</ul>`;
             })
             /*--Se activa el cajon de mantenimiento con el sub-cajon de Facebook Ads, inyectando titulo y contenido para el plan seleccionado--*/
             resultMaintenanceFacebookAdsContainer.style.display = "block";
@@ -1945,7 +1944,7 @@ function calculate() {
                 facebookAdsImplementationValue += services.facebookAds.implementation.hours[i] * skills.averages[skill][countrySupplier.value].averagePrice;
 
                 /*--Se genera la descripcion de implementación para este servicio en el plan seleccionado---*/
-                implementationContent += `<ul><li>${services.facebookAds.implementation.hours[i]} horas de ${services.facebookAds.implementation.skillsAcquired[i]} a ${services.facebookAds.implementation.skillsPrices[i][countrySupplier.value].averagePrice} USD la hora, que hace lo siguiente:</li> ${services.facebookAds.implementation.content[i]}</ul>`;
+                implementationContent += `<ul><li>${services.facebookAds.implementation.hours[i]} horas de ${services.facebookAds.implementation.skillsAcquired[i]} a ${services.facebookAds.implementation.skillsPrices[i][countrySupplier.value].averagePrice} USD la hora <small>(Precio promedio obtenido en base a ${services.facebookAds.implementation.skillsPrices[i][countrySupplier.value].averageTotal} freelancers de ${countrySupplier.value} de la plataforma <a href='https://www.freelancer.com' target='_blank' rel='noreferrer noopener'>freelancer.com</a>)</small>, que hace lo siguiente:</li> ${services.facebookAds.implementation.content[i]}</ul>`;
             })
             /*--Se activa el cajon de implementación con el sub-cajon de Facebook Ads, inyectando titulo y contenido para el plan seleccionado--*/
             resultImplementationFacebookAdsContainer.style.display = "block";
@@ -1984,7 +1983,7 @@ function calculate() {
                     landingPageManteinanceValue += services.disenoWeb.maintenance.hours[i] * skills.averages[skill][countrySupplier.value].averagePrice;
 
                     /*--Se genera la descripcion de mantenimiento mensual para este servicio en el plan seleccionado---*/
-                    maintenanceContent += `<ul><li>${services.disenoWeb.maintenance.hours[i]} horas de ${services.disenoWeb.maintenance.skillsAcquired[i]} a ${services.disenoWeb.maintenance.skillsPrices[i][countrySupplier.value].averagePrice} USD la hora, que hace lo siguiente:</li> ${services.disenoWeb.maintenance.content[i]}</ul>`;
+                    maintenanceContent += `<ul><li>${services.disenoWeb.maintenance.hours[i]} horas de ${services.disenoWeb.maintenance.skillsAcquired[i]} a ${services.disenoWeb.maintenance.skillsPrices[i][countrySupplier.value].averagePrice} USD la hora <small>(Precio promedio obtenido en base a ${services.disenoWeb.maintenance.skillsPrices[i][countrySupplier.value].averageTotal} freelancers de ${countrySupplier.value} de la plataforma <a href='https://www.freelancer.com' target='_blank' rel='noreferrer noopener'>freelancer.com</a>)</small>, que hace lo siguiente:</li> ${services.disenoWeb.maintenance.content[i]}</ul>`;
                 })
                 /*--Se activa el cajon de mantenimiento con el sub-cajon de Landing Page, inyectando titulo y contenido para el plan seleccionado--*/
                 resultMaintenanceLandingPageContainer.style.display = "block";
@@ -2000,7 +1999,7 @@ function calculate() {
                     landingPageImplementationValue += services.disenoWeb.implementation.basic.hours[i] * skills.averages[skill][countrySupplier.value].averagePrice;
 
                     /*--Se genera la descripcion de implementación para este servicio en el plan seleccionado---*/
-                    implementationContent += `<ul><li>${services.disenoWeb.implementation.basic.hours[i]} horas de ${services.disenoWeb.implementation.basic.skillsAcquired[i]} a ${services.disenoWeb.implementation.basic.skillsPrices[i][countrySupplier.value].averagePrice} USD la hora, que hace lo siguiente:</li> ${services.disenoWeb.implementation.basic.content[i]}</ul>`;
+                    implementationContent += `<ul><li>${services.disenoWeb.implementation.basic.hours[i]} horas de ${services.disenoWeb.implementation.basic.skillsAcquired[i]} a ${services.disenoWeb.implementation.basic.skillsPrices[i][countrySupplier.value].averagePrice} USD la hora <small>(Precio promedio obtenido en base a ${services.disenoWeb.implementation.basic.skillsPrices[i][countrySupplier.value].averageTotal} freelancers de ${countrySupplier.value} de la plataforma <a href='https://www.freelancer.com' target='_blank' rel='noreferrer noopener'>freelancer.com</a>)</small>, que hace lo siguiente:</li> ${services.disenoWeb.implementation.basic.content[i]}</ul>`;
                 })
                 /*--Se activa el cajon de implementación con el sub-cajon de Landing Page, inyectando titulo y contenido para el plan seleccionado--*/
                 resultImplementationLandingPageContainer.style.display = "block";
@@ -2024,7 +2023,7 @@ function calculate() {
                     wordpressManteinanceValue += services.disenoWeb.maintenance.hours[i] * skills.averages[skill][countrySupplier.value].averagePrice;
 
                     /*--Se genera la descripcion de mantenimiento mensual para este servicio en el plan seleccionado---*/
-                    maintenanceContent += `<ul><li>${services.disenoWeb.maintenance.hours[i]} horas de ${services.disenoWeb.maintenance.skillsAcquired[i]} a ${services.disenoWeb.maintenance.skillsPrices[i][countrySupplier.value].averagePrice} USD la hora, que hace lo siguiente:</li> ${services.disenoWeb.maintenance.content[i]}</ul>`;
+                    maintenanceContent += `<ul><li>${services.disenoWeb.maintenance.hours[i]} horas de ${services.disenoWeb.maintenance.skillsAcquired[i]} a ${services.disenoWeb.maintenance.skillsPrices[i][countrySupplier.value].averagePrice} USD la hora <small>(Precio promedio obtenido en base a ${services.disenoWeb.maintenance.skillsPrices[i][countrySupplier.value].averageTotal} freelancers de ${countrySupplier.value} de la plataforma <a href='https://www.freelancer.com' target='_blank' rel='noreferrer noopener'>freelancer.com</a>)</small>, que hace lo siguiente:</li> ${services.disenoWeb.maintenance.content[i]}</ul>`;
                 })
                 /*--Se activa el cajon de mantenimiento con el sub-cajon de Wordpress, inyectando titulo y contenido para el plan seleccionado--*/
                 resultMaintenanceWordpressContainer.style.display = "block";
@@ -2040,7 +2039,7 @@ function calculate() {
                     wordpressImplementationValue += services.disenoWeb.implementation.intermediate.hours[i] * skills.averages[skill][countrySupplier.value].averagePrice;
 
                     /*--Se genera la descripcion de implementación para este servicio en el plan seleccionado---*/
-                    implementationContent += `<ul><li>${services.disenoWeb.implementation.intermediate.hours[i]} horas de ${services.disenoWeb.implementation.intermediate.skillsAcquired[i]} a ${services.disenoWeb.implementation.intermediate.skillsPrices[i][countrySupplier.value].averagePrice} USD la hora, que hace lo siguiente:</li> ${services.disenoWeb.implementation.intermediate.content[i]}</ul>`;
+                    implementationContent += `<ul><li>${services.disenoWeb.implementation.intermediate.hours[i]} horas de ${services.disenoWeb.implementation.intermediate.skillsAcquired[i]} a ${services.disenoWeb.implementation.intermediate.skillsPrices[i][countrySupplier.value].averagePrice} USD la hora <small>(Precio promedio obtenido en base a ${services.disenoWeb.implementation.intermediate.skillsPrices[i][countrySupplier.value].averageTotal} freelancers de ${countrySupplier.value} de la plataforma <a href='https://www.freelancer.com' target='_blank' rel='noreferrer noopener'>freelancer.com</a>)</small>, que hace lo siguiente:</li> ${services.disenoWeb.implementation.intermediate.content[i]}</ul>`;
                 })
                 /*--Se activa el cajon de implementación con el sub-cajon de Wordpress, inyectando titulo y contenido para el plan seleccionado--*/
                 resultImplementationWordpressContainer.style.display = "block";
@@ -2064,7 +2063,7 @@ function calculate() {
                     customWebsiteManteinanceValue += services.disenoWeb.maintenance.hours[i] * skills.averages[skill][countrySupplier.value].averagePrice;
 
                     /*--Se genera la descripcion de mantenimiento mensual para este servicio en el plan seleccionado---*/
-                    maintenanceContent += `<ul><li>${services.disenoWeb.maintenance.hours[i]} horas de ${services.disenoWeb.maintenance.skillsAcquired[i]} a ${services.disenoWeb.maintenance.skillsPrices[i][countrySupplier.value].averagePrice} USD la hora, que hace lo siguiente:</li> ${services.disenoWeb.maintenance.content[i]}</ul>`;
+                    maintenanceContent += `<ul><li>${services.disenoWeb.maintenance.hours[i]} horas de ${services.disenoWeb.maintenance.skillsAcquired[i]} a ${services.disenoWeb.maintenance.skillsPrices[i][countrySupplier.value].averagePrice} USD la hora <small>(Precio promedio obtenido en base a ${services.disenoWeb.maintenance.skillsPrices[i][countrySupplier.value].averageTotal} freelancers de ${countrySupplier.value} de la plataforma <a href='https://www.freelancer.com' target='_blank' rel='noreferrer noopener'>freelancer.com</a>)</small>, que hace lo siguiente:</li> ${services.disenoWeb.maintenance.content[i]}</ul>`;
                 })
                 /*--Se activa el cajon de mantenimiento con el sub-cajon de Custom Website, inyectando titulo y contenido para el plan seleccionado--*/
                 resultMaintenanceCustomWebsiteContainer.style.display = "block";
@@ -2080,7 +2079,7 @@ function calculate() {
                     customWebsiteImplementationValue += services.disenoWeb.implementation.advanced.hours[i] * skills.averages[skill][countrySupplier.value].averagePrice;
 
                     /*--Se genera la descripcion de implementación para este servicio en el plan seleccionado---*/
-                    implementationContent += `<ul><li>${services.disenoWeb.implementation.advanced.hours[i]} horas de ${services.disenoWeb.implementation.advanced.skillsAcquired[i]} a ${services.disenoWeb.implementation.advanced.skillsPrices[i][countrySupplier.value].averagePrice} USD la hora, que hace lo siguiente:</li> ${services.disenoWeb.implementation.advanced.content[i]}</ul>`;
+                    implementationContent += `<ul><li>${services.disenoWeb.implementation.advanced.hours[i]} horas de ${services.disenoWeb.implementation.advanced.skillsAcquired[i]} a ${services.disenoWeb.implementation.advanced.skillsPrices[i][countrySupplier.value].averagePrice} USD la hora <small>(Precio promedio obtenido en base a ${services.disenoWeb.implementation.advanced.skillsPrices[i][countrySupplier.value].averageTotal} freelancers de ${countrySupplier.value} de la plataforma <a href='https://www.freelancer.com' target='_blank' rel='noreferrer noopener'>freelancer.com</a>)</small>, que hace lo siguiente:</li> ${services.disenoWeb.implementation.advanced.content[i]}</ul>`;
                 })
                 /*--Se activa el cajon de implementación con el sub-cajon de Custom Website, inyectando titulo y contenido para el plan seleccionado--*/
                 resultImplementationCustomWebsiteContainer.style.display = "block";
@@ -2104,7 +2103,7 @@ function calculate() {
                     ecommerceWebManteinanceValue += services.disenoWeb.maintenance.hours[i] * skills.averages[skill][countrySupplier.value].averagePrice;
 
                     /*--Se genera la descripcion de mantenimiento mensual para este servicio en el plan seleccionado---*/
-                    maintenanceContent += `<ul><li>${services.disenoWeb.maintenance.hours[i]} horas de ${services.disenoWeb.maintenance.skillsAcquired[i]} a ${services.disenoWeb.maintenance.skillsPrices[i][countrySupplier.value].averagePrice} USD la hora, que hace lo siguiente:</li> ${services.disenoWeb.maintenance.content[i]}</ul>`;
+                    maintenanceContent += `<ul><li>${services.disenoWeb.maintenance.hours[i]} horas de ${services.disenoWeb.maintenance.skillsAcquired[i]} a ${services.disenoWeb.maintenance.skillsPrices[i][countrySupplier.value].averagePrice} USD la hora <small>(Precio promedio obtenido en base a ${services.disenoWeb.maintenance.skillsPrices[i][countrySupplier.value].averageTotal} freelancers de ${countrySupplier.value} de la plataforma <a href='https://www.freelancer.com' target='_blank' rel='noreferrer noopener'>freelancer.com</a>)</small>, que hace lo siguiente:</li> ${services.disenoWeb.maintenance.content[i]}</ul>`;
                 })
                 /*--Se activa el cajon de mantenimiento con el sub-cajon de Ecommerce, inyectando titulo y contenido para el plan seleccionado--*/
                 resultMaintenanceEcommerceWebContainer.style.display = "block";
@@ -2120,7 +2119,7 @@ function calculate() {
                     ecommerceWebImplementationValue += services.disenoWeb.implementation.ecommerce.hours[i] * skills.averages[skill][countrySupplier.value].averagePrice;
 
                     /*--Se genera la descripcion de implementación para este servicio en el plan seleccionado---*/
-                    implementationContent += `<ul><li>${services.disenoWeb.implementation.ecommerce.hours[i]} horas de ${services.disenoWeb.implementation.ecommerce.skillsAcquired[i]} a ${services.disenoWeb.implementation.ecommerce.skillsPrices[i][countrySupplier.value].averagePrice} USD la hora, que hace lo siguiente:</li> ${services.disenoWeb.implementation.ecommerce.content[i]}</ul>`;
+                    implementationContent += `<ul><li>${services.disenoWeb.implementation.ecommerce.hours[i]} horas de ${services.disenoWeb.implementation.ecommerce.skillsAcquired[i]} a ${services.disenoWeb.implementation.ecommerce.skillsPrices[i][countrySupplier.value].averagePrice} USD la hora <small>(Precio promedio obtenido en base a ${services.disenoWeb.implementation.ecommerce.skillsPrices[i][countrySupplier.value].averageTotal} freelancers de ${countrySupplier.value} de la plataforma <a href='https://www.freelancer.com' target='_blank' rel='noreferrer noopener'>freelancer.com</a>)</small>, que hace lo siguiente:</li> ${services.disenoWeb.implementation.ecommerce.content[i]}</ul>`;
                 })
                 /*--Se activa el cajon de implementación con el sub-cajon de Ecommerce, inyectando titulo y contenido para el plan seleccionado--*/
                 resultImplementationEcommerceWebContainer.style.display = "block";
@@ -2144,7 +2143,7 @@ function calculate() {
                     logoMarcaManteinanceValue += services.disenoWeb.maintenance.hours[i] * skills.averages[skill][countrySupplier.value].averagePrice;
 
                     /*--Se genera la descripcion de mantenimiento mensual para este servicio en el plan seleccionado---*/
-                    maintenanceContent += `<ul><li>${services.disenoWeb.maintenance.hours[i]} horas de ${services.disenoWeb.maintenance.skillsAcquired[i]} a ${services.disenoWeb.maintenance.skillsPrices[i][countrySupplier.value].averagePrice} USD la hora, que hace lo siguiente:</li> ${services.disenoWeb.maintenance.content[i]}</ul>`;
+                    maintenanceContent += `<ul><li>${services.disenoWeb.maintenance.hours[i]} horas de ${services.disenoWeb.maintenance.skillsAcquired[i]} a ${services.disenoWeb.maintenance.skillsPrices[i][countrySupplier.value].averagePrice} USD la hora <small>(Precio promedio obtenido en base a ${services.disenoWeb.maintenance.skillsPrices[i][countrySupplier.value].averagePrice} freelancers de ${countrySupplier.value} de la plataforma <a href='https://www.freelancer.com' target='_blank' rel='noreferrer noopener'>freelancer.com</a>)</small>, que hace lo siguiente:</li> ${services.disenoWeb.maintenance.content[i]}</ul>`;
                 })
                 /*--Se activa el cajon de mantenimiento con el sub-cajon de Logo y Marca, inyectando titulo y contenido para el plan seleccionado--*/
                 resultMaintenanceLogoYMarcaContainer.style.display = "block";
@@ -2160,7 +2159,7 @@ function calculate() {
                     logoMarcaImplementationValue += services.disenoWeb.implementation.logoYMarca.hours[i] * skills.averages[skill][countrySupplier.value].averagePrice;
 
                     /*--Se genera la descripcion de implementación para este servicio en el plan seleccionado---*/
-                    implementationContent += `<ul><li>${services.disenoWeb.implementation.logoYMarca.hours[i]} horas de ${services.disenoWeb.implementation.logoYMarca.skillsAcquired[i]} a ${services.disenoWeb.implementation.logoYMarca.skillsPrices[i][countrySupplier.value].averagePrice} USD la hora, que hace lo siguiente:</li> ${services.disenoWeb.implementation.logoYMarca.content[i]}</ul>`;
+                    implementationContent += `<ul><li>${services.disenoWeb.implementation.logoYMarca.hours[i]} horas de ${services.disenoWeb.implementation.logoYMarca.skillsAcquired[i]} a ${services.disenoWeb.implementation.logoYMarca.skillsPrices[i][countrySupplier.value].averagePrice} USD la hora <small>(Precio promedio obtenido en base a ${services.disenoWeb.implementation.logoYMarca.skillsPrices[i][countrySupplier.value].averageTotal} freelancers de ${countrySupplier.value} de la plataforma <a href='https://www.freelancer.com' target='_blank' rel='noreferrer noopener'>freelancer.com</a>)</small>, que hace lo siguiente:</li> ${services.disenoWeb.implementation.logoYMarca.content[i]}</ul>`;
                 })
                 /*--Se activa el cajon de implementación con el sub-cajon de Logo y Marca, inyectando titulo y contenido para el plan seleccionado--*/
                 resultImplementationLogoYMarcaContainer.style.display = "block";
