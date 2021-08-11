@@ -1783,7 +1783,7 @@ function calculate() {
             })
             /*--Se activa el cajon de mantenimiento con el sub-cajon de conversion web, inyectando titulo y contenido para el plan seleccionado--*/
             resultMaintenanceConversionWebContainer.style.display = "block";
-            titleMaintenanceConversionWeb.innerHTML = `<u><strong>Conversion Rate Optimization</strong>:</u> USD ${conversionWebManteinanceValue.toFixed(2).replace(".", ",")}`;
+            titleMaintenanceConversionWeb.innerHTML = `<u><strong>Conversion Rate Optimization</strong>:</u> USD ${Math.round(conversionWebManteinanceValue)}`;
             resultMaintenanceConversionWeb.innerHTML = `${maintenanceContent}`;
 
             agencyMonthlyFeeValue += conversionWebManteinanceValue;
@@ -1800,7 +1800,7 @@ function calculate() {
             })
             /*--Se activa el cajon de implementación con el sub-cajon de conversion web, inyectando titulo y contenido para el plan seleccionado--*/
             resultImplementationConversionWebContainer.style.display = "block";
-            titleImplementationConversionWeb.innerHTML = `<u><strong>Conversion Rate Optimization</strong>:</u> USD ${conversionWebImplementationValue.toFixed(2).replace(".", ",")}`;
+            titleImplementationConversionWeb.innerHTML = `<u><strong>Conversion Rate Optimization</strong>:</u> USD ${Math.round(conversionWebImplementationValue)}`;
             resultImplementationConversionWeb.innerHTML = `${implementationContent}`;
 
             agencyOnceFeeValue += conversionWebImplementationValue;
@@ -1825,7 +1825,7 @@ function calculate() {
             })
             /*--Se activa el cajon de mantenimiento con el sub-cajon de Google Search Ads, inyectando titulo y contenido para el plan seleccionado--*/
             resultMaintenanceGoogleSearchAdsContainer.style.display = "block";
-            titleMaintenanceGoogleSearchAds.innerHTML = `<u><strong>Google Ads Search Network</strong>:</u> USD ${googleSearchAdsManteinanceValue.toFixed(2).replace(".", ",")}`;
+            titleMaintenanceGoogleSearchAds.innerHTML = `<u><strong>Google Ads Search Network</strong>:</u> USD ${Math.round(googleSearchAdsManteinanceValue)}`;
             resultMaintenanceGoogleSearchAds.innerHTML = `${maintenanceContent}`;
 
             agencyMonthlyFeeValue += googleSearchAdsManteinanceValue;
@@ -1841,7 +1841,7 @@ function calculate() {
             })
             /*--Se activa el cajon de implementación con el sub-cajon de Google Search Ads, inyectando titulo y contenido para el plan seleccionado--*/
             resultImplementationGoogleSearchAdsContainer.style.display = "block";
-            titleImplementationGoogleSearchAds.innerHTML = `<u><strong>Google Ads Search Network</strong>:</u> USD ${googleSearchAdsImplementationValue.toFixed(2).replace(".", ",")}`;
+            titleImplementationGoogleSearchAds.innerHTML = `<u><strong>Google Ads Search Network</strong>:</u> USD ${Math.round(googleSearchAdsImplementationValue)}`;
             resultImplementationGoogleSearchAds.innerHTML = `${implementationContent}`;
 
             agencyOnceFeeValue += googleSearchAdsImplementationValue;
@@ -1873,7 +1873,7 @@ function calculate() {
             })
             /*--Se activa el cajon de mantenimiento con el sub-cajon de Google Display Ads, inyectando titulo y contenido para el plan seleccionado--*/
             resultMaintenanceGoogleDisplayAdsContainer.style.display = "block";
-            titleMaintenanceGoogleDisplayAds.innerHTML = `<u><strong>Google Display Ads</strong>:</u> USD ${googleDisplayAdsManteinanceValue.toFixed(2).replace(".", ",")}`;
+            titleMaintenanceGoogleDisplayAds.innerHTML = `<u><strong>Google Display Ads</strong>:</u> USD ${Math.round(googleDisplayAdsManteinanceValue)}`;
             resultMaintenanceGoogleDisplayAds.innerHTML = `${maintenanceContent}`;
 
             agencyMonthlyFeeValue += googleDisplayAdsManteinanceValue;
@@ -1889,7 +1889,7 @@ function calculate() {
             })
             /*--Se activa el cajon de implementación con el sub-cajon de Google Display Ads, inyectando titulo y contenido para el plan seleccionado--*/
             resultImplementationGoogleDisplayAdsContainer.style.display = "block";
-            titleImplementationGoogleDisplayAds.innerHTML = `<u><strong>Google Display Ads</strong>:</u> USD ${googleDisplayAdsImplementationValue.toFixed(2).replace(".", ",")}`;
+            titleImplementationGoogleDisplayAds.innerHTML = `<u><strong>Google Display Ads</strong>:</u> USD ${Math.round(googleDisplayAdsImplementationValue)}`;
             resultImplementationGoogleDisplayAds.innerHTML = `${implementationContent}`;
 
             agencyOnceFeeValue += googleDisplayAdsImplementationValue;
@@ -1921,7 +1921,7 @@ function calculate() {
             })
             /*--Se activa el cajon de mantenimiento con el sub-cajon de Facebook Ads, inyectando titulo y contenido para el plan seleccionado--*/
             resultMaintenanceFacebookAdsContainer.style.display = "block";
-            titleMaintenanceFacebookAds.innerHTML = `<u><strong>Facebook Ads</strong>:</u> USD ${facebookAdsManteinanceValue.toFixed(2).replace(".", ",")}`;
+            titleMaintenanceFacebookAds.innerHTML = `<u><strong>Facebook Ads</strong>:</u> USD ${Math.round(facebookAdsManteinanceValue)}`;
             resultMaintenanceFacebookAds.innerHTML = `${maintenanceContent}`;
 
             agencyMonthlyFeeValue += facebookAdsManteinanceValue;
@@ -1937,7 +1937,7 @@ function calculate() {
             })
             /*--Se activa el cajon de implementación con el sub-cajon de Facebook Ads, inyectando titulo y contenido para el plan seleccionado--*/
             resultImplementationFacebookAdsContainer.style.display = "block";
-            titleImplementationFacebookAds.innerHTML = `<u><strong>Facebook Ads</strong>:</u> USD ${facebookAdsImplementationValue.toFixed(2).replace(".", ",")}`;
+            titleImplementationFacebookAds.innerHTML = `<u><strong>Facebook Ads</strong>:</u> USD ${Math.round(facebookAdsImplementationValue)}`;
             resultImplementationFacebookAds.innerHTML = `${implementationContent}`;
 
             agencyOnceFeeValue += facebookAdsImplementationValue;
@@ -1976,7 +1976,7 @@ function calculate() {
                 })
                 /*--Se activa el cajon de mantenimiento con el sub-cajon de Landing Page, inyectando titulo y contenido para el plan seleccionado--*/
                 resultMaintenanceLandingPageContainer.style.display = "block";
-                titleMaintenanceLandingPage.innerHTML = `<u><strong>${services.disenoWeb.implementation.basic.name}</strong>:</u> USD ${landingPageManteinanceValue.toFixed(2).replace(".", ",")}`;
+                titleMaintenanceLandingPage.innerHTML = `<u><strong>${services.disenoWeb.implementation.basic.name}</strong>:</u> USD ${Math.round(landingPageManteinanceValue)}`;
                 resultMaintenanceLandingPage.innerHTML = `${maintenanceContent}`;
 
                 agencyMonthlyFeeValue += landingPageManteinanceValue;
@@ -1992,7 +1992,7 @@ function calculate() {
                 })
                 /*--Se activa el cajon de implementación con el sub-cajon de Landing Page, inyectando titulo y contenido para el plan seleccionado--*/
                 resultImplementationLandingPageContainer.style.display = "block";
-                titleImplementationLandingPage.innerHTML = `<u><strong>${services.disenoWeb.implementation.basic.name}</strong>:</u> USD ${landingPageImplementationValue.toFixed(2).replace(".", ",")}`;
+                titleImplementationLandingPage.innerHTML = `<u><strong>${services.disenoWeb.implementation.basic.name}</strong>:</u> USD ${Math.round(landingPageImplementationValue)}`;
                 resultImplementationLandingPage.innerHTML = `${implementationContent}`;
 
                 agencyOnceFeeValue += landingPageImplementationValue;
@@ -2016,7 +2016,7 @@ function calculate() {
                 })
                 /*--Se activa el cajon de mantenimiento con el sub-cajon de Wordpress, inyectando titulo y contenido para el plan seleccionado--*/
                 resultMaintenanceWordpressContainer.style.display = "block";
-                titleMaintenanceWordpress.innerHTML = `<u><strong>${services.disenoWeb.implementation.intermediate.name}</strong>:</u> USD ${wordpressManteinanceValue.toFixed(2).replace(".", ",")}`;
+                titleMaintenanceWordpress.innerHTML = `<u><strong>${services.disenoWeb.implementation.intermediate.name}</strong>:</u> USD ${Math.round(wordpressManteinanceValue)}`;
                 resultMaintenanceWordpress.innerHTML = `${maintenanceContent}`;
 
                 agencyMonthlyFeeValue += wordpressManteinanceValue;
@@ -2032,7 +2032,7 @@ function calculate() {
                 })
                 /*--Se activa el cajon de implementación con el sub-cajon de Wordpress, inyectando titulo y contenido para el plan seleccionado--*/
                 resultImplementationWordpressContainer.style.display = "block";
-                titleImplementationWordpress.innerHTML = `<u><strong>${services.disenoWeb.implementation.intermediate.name}</strong>:</u> USD ${wordpressImplementationValue.toFixed(2).replace(".", ",")}`;
+                titleImplementationWordpress.innerHTML = `<u><strong>${services.disenoWeb.implementation.intermediate.name}</strong>:</u> USD ${Math.round(wordpressImplementationValue)}`;
                 resultImplementationWordpress.innerHTML = `${implementationContent}`;
 
                 agencyOnceFeeValue += wordpressImplementationValue;
@@ -2056,7 +2056,7 @@ function calculate() {
                 })
                 /*--Se activa el cajon de mantenimiento con el sub-cajon de Custom Website, inyectando titulo y contenido para el plan seleccionado--*/
                 resultMaintenanceCustomWebsiteContainer.style.display = "block";
-                titleMaintenanceCustomWebsite.innerHTML = `<u><strong>${services.disenoWeb.implementation.advanced.name}</strong>:</u> USD ${customWebsiteManteinanceValue.toFixed(2).replace(".", ",")}`;
+                titleMaintenanceCustomWebsite.innerHTML = `<u><strong>${services.disenoWeb.implementation.advanced.name}</strong>:</u> USD ${Math.round(customWebsiteManteinanceValue)}`;
                 resultMaintenanceCustomWebsite.innerHTML = `${maintenanceContent}`;
 
                 agencyMonthlyFeeValue += customWebsiteManteinanceValue;
@@ -2072,7 +2072,7 @@ function calculate() {
                 })
                 /*--Se activa el cajon de implementación con el sub-cajon de Custom Website, inyectando titulo y contenido para el plan seleccionado--*/
                 resultImplementationCustomWebsiteContainer.style.display = "block";
-                titleImplementationCustomWebsite.innerHTML = `<u><strong>${services.disenoWeb.implementation.advanced.name}</strong>:</u> USD ${customWebsiteImplementationValue.toFixed(2).replace(".", ",")}`;
+                titleImplementationCustomWebsite.innerHTML = `<u><strong>${services.disenoWeb.implementation.advanced.name}</strong>:</u> USD ${Math.round(customWebsiteImplementationValue)}`;
                 resultImplementationCustomWebsite.innerHTML = `${implementationContent}`;
 
                 agencyOnceFeeValue += customWebsiteImplementationValue;
@@ -2096,7 +2096,7 @@ function calculate() {
                 })
                 /*--Se activa el cajon de mantenimiento con el sub-cajon de Ecommerce, inyectando titulo y contenido para el plan seleccionado--*/
                 resultMaintenanceEcommerceWebContainer.style.display = "block";
-                titleMaintenanceEcommerceWeb.innerHTML = `<u><strong>${services.disenoWeb.implementation.ecommerce.name}</strong>:</u> USD ${ecommerceWebManteinanceValue.toFixed(2).replace(".", ",")}`;
+                titleMaintenanceEcommerceWeb.innerHTML = `<u><strong>${services.disenoWeb.implementation.ecommerce.name}</strong>:</u> USD ${Math.round(ecommerceWebManteinanceValue)}`;
                 resultMaintenanceEcommerceWeb.innerHTML = `${maintenanceContent}`;
 
                 agencyMonthlyFeeValue += ecommerceWebManteinanceValue;
@@ -2112,7 +2112,7 @@ function calculate() {
                 })
                 /*--Se activa el cajon de implementación con el sub-cajon de Ecommerce, inyectando titulo y contenido para el plan seleccionado--*/
                 resultImplementationEcommerceWebContainer.style.display = "block";
-                titleImplementationEcommerceWeb.innerHTML = `<u><strong>${services.disenoWeb.implementation.ecommerce.name}</strong>:</u> USD ${ecommerceWebImplementationValue.toFixed(2).replace(".", ",")}`;
+                titleImplementationEcommerceWeb.innerHTML = `<u><strong>${services.disenoWeb.implementation.ecommerce.name}</strong>:</u> USD ${Math.round(ecommerceWebImplementationValue)}`;
                 resultImplementationEcommerceWeb.innerHTML = `${implementationContent}`;
 
                 agencyOnceFeeValue += ecommerceWebImplementationValue;
@@ -2136,7 +2136,7 @@ function calculate() {
                 })
                 /*--Se activa el cajon de mantenimiento con el sub-cajon de Logo y Marca, inyectando titulo y contenido para el plan seleccionado--*/
                 resultMaintenanceLogoYMarcaContainer.style.display = "block";
-                titleMaintenanceLogoYMarca.innerHTML = `<u><strong>${services.disenoWeb.implementation.logoYMarca.name}</strong>:</u> USD ${logoMarcaManteinanceValue.toFixed(2).replace(".", ",")}`;
+                titleMaintenanceLogoYMarca.innerHTML = `<u><strong>${services.disenoWeb.implementation.logoYMarca.name}</strong>:</u> USD ${Math.round(logoMarcaManteinanceValue)}`;
                 resultMaintenanceLogoYMarca.innerHTML = `${maintenanceContent}`;
 
                 agencyMonthlyFeeValue += logoMarcaManteinanceValue;
@@ -2152,7 +2152,7 @@ function calculate() {
                 })
                 /*--Se activa el cajon de implementación con el sub-cajon de Logo y Marca, inyectando titulo y contenido para el plan seleccionado--*/
                 resultImplementationLogoYMarcaContainer.style.display = "block";
-                titleImplementationLogoYMarca.innerHTML = `<u><strong>${services.disenoWeb.implementation.logoYMarca.name}</strong>:</u> USD ${logoMarcaImplementationValue.toFixed(2).replace(".", ",")}`;
+                titleImplementationLogoYMarca.innerHTML = `<u><strong>${services.disenoWeb.implementation.logoYMarca.name}</strong>:</u> USD ${Math.round(logoMarcaImplementationValue)}`;
                 resultImplementationLogoYMarca.innerHTML = `${implementationContent}`;
 
                 agencyOnceFeeValue += logoMarcaImplementationValue;
@@ -2196,10 +2196,10 @@ function calculate() {
 
         }
         /*---Se setean los valores totales de los cajónes, es decir las sumas de valores de c/u---*/
-        resultImplementationFee.innerHTML = `USD ${agencyOnceFeeValue.toFixed(2).replace(".", ",")}`;
-        resultMaintenanceFee.innerHTML = `USD ${agencyMonthlyFeeValue.toFixed(2).replace(".", ",")}`;
+        resultImplementationFee.innerHTML = `USD ${Math.round(agencyOnceFeeValue)}`;
+        resultMaintenanceFee.innerHTML = `USD ${Math.round(agencyMonthlyFeeValue)}`;
         resultInvestmentsMonthly.innerHTML = ` USD ${totalInvestmentMonthly}`;
-        resultMonthlyTotal.innerHTML = `USD ${(totalInvestmentMonthly + agencyMonthlyFeeValue).toFixed(2).replace(".", ",")}`;
+        resultMonthlyTotal.innerHTML = `USD ${Math.round(totalInvestmentMonthly + agencyMonthlyFeeValue)}`;
 
     } else {
         formContainer.style.height = 'auto';
