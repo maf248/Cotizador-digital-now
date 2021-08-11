@@ -410,92 +410,337 @@ const relativeStatsCountries = Object.freeze({
 /*---Datos de los SKILLS con precios por hora---*/
 const skills = Object.freeze({
     names: Object.freeze(["Digital Marketing Analyst", "UX / UI Designer", "Graphic Designer"]),
-    prices: [{
-        argentina: 0,
-        australia: 0,
-        bangladesh: 0,
-        colombia: 0,
-        spain: 0,
-        eeuu: 0,
-        philippines: 0,
-        india: 0,
-        england: 0,
-        mexico: 0,
-        southafrica: 0,
-        ukraine: 0,
-        venezuela: 0,
-        brazil: 0,
-        bolivia: 0,
-        chile: 0,
-        costarica: 0,
-        ecuador: 0,
-        elsalvador: 0,
-        guatemala: 0,
-        honduras: 0,
-        nicaragua: 0,
-        panama: 0,
-        paraguay: 0,
-        peru: 0,
-        dominicanrepublic: 0,
-        uruguay: 0
+    ids: Object.freeze([0, 1, 2]),
+    averages: [{
+        argentina: {
+            averagePrice: 16.64,
+            averageTotal: 100
+        },
+        australia: {
+            averagePrice: 42.73,
+            averageTotal: 100
+        },
+        bangladesh: {
+            averagePrice: 15.14,
+            averageTotal: 100
+        },
+        colombia: {
+            averagePrice: 17.23,
+            averageTotal: 100
+        },
+        spain: {
+            averagePrice: 19.82,
+            averageTotal: 100
+        },
+        eeuu: {
+            averagePrice: 51.24,
+            averageTotal: 100
+        },
+        philippines: {
+            averagePrice: 14.63,
+            averageTotal: 100
+        },
+        india: {
+            averagePrice: 11.66,
+            averageTotal: 100
+        },
+        england: {
+            averagePrice: 37.32,
+            averageTotal: 100
+        },
+        mexico: {
+            averagePrice: 20.87,
+            averageTotal: 100
+        },
+        southafrica: {
+            averagePrice: 31.77,
+            averageTotal: 100
+        },
+        ukraine: {
+            averagePrice: 35.39,
+            averageTotal: 100
+        },
+        venezuela: {
+            averagePrice: 11.18,
+            averageTotal: 100
+        },
+        brazil: {
+            averagePrice: 33.18,
+            averageTotal: 100
+        },
+        bolivia: {
+            averagePrice: 21.84,
+            averageTotal: 68
+        },
+        chile: {
+            averagePrice: 24.18,
+            averageTotal: 100
+        },
+        costarica: {
+            averagePrice: 22.31,
+            averageTotal: 100
+        },
+        ecuador: {
+            averagePrice: 20.82,
+            averageTotal: 100
+        },
+        elsalvador: {
+            averagePrice: 19.45,
+            averageTotal: 100
+        },
+        guatemala: {
+            averagePrice: 38.59,
+            averageTotal: 73
+        },
+        honduras: {
+            averagePrice: 18.60,
+            averageTotal: 43
+        },
+        nicaragua: {
+            averagePrice: 28.62,
+            averageTotal: 53
+        },
+        panama: {
+            averagePrice: 15.49,
+            averageTotal: 79
+        },
+        paraguay: {
+            averagePrice: 20.94,
+            averageTotal: 33
+        },
+        peru: {
+            averagePrice: 22.71,
+            averageTotal: 100
+        },
+        dominicanrepublic: {
+            averagePrice: 21.42,
+            averageTotal: 100
+        },
+        uruguay: {
+            averagePrice: 23.18,
+            averageTotal: 100
+        }
     }, {
-        argentina: 0,
-        australia: 0,
-        bangladesh: 0,
-        colombia: 0,
-        spain: 0,
-        eeuu: 0,
-        philippines: 0,
-        india: 0,
-        england: 0,
-        mexico: 0,
-        southafrica: 0,
-        ukraine: 0,
-        venezuela: 0,
-        brazil: 0,
-        bolivia: 0,
-        chile: 0,
-        costarica: 0,
-        ecuador: 0,
-        elsalvador: 0,
-        guatemala: 0,
-        honduras: 0,
-        nicaragua: 0,
-        panama: 0,
-        paraguay: 0,
-        peru: 0,
-        dominicanrepublic: 0,
-        uruguay: 0
+        argentina: {
+            averagePrice: 21.17,
+            averageTotal: 100
+        },
+        australia: {
+            averagePrice: 45.92,
+            averageTotal: 100
+        },
+        bangladesh: {
+            averagePrice: 19.72,
+            averageTotal: 100
+        },
+        colombia: {
+            averagePrice: 26.59,
+            averageTotal: 100
+        },
+        spain: {
+            averagePrice: 38.03,
+            averageTotal: 100
+        },
+        eeuu: {
+            averagePrice: 65.34,
+            averageTotal: 100
+        },
+        philippines: {
+            averagePrice: 22.19,
+            averageTotal: 100
+        },
+        india: {
+            averagePrice: 23.69,
+            averageTotal: 100
+        },
+        england: {
+            averagePrice: 42.67,
+            averageTotal: 100
+        },
+        mexico: {
+            averagePrice: 22.73,
+            averageTotal: 100
+        },
+        southafrica: {
+            averagePrice: 36.97,
+            averageTotal: 100
+        },
+        ukraine: {
+            averagePrice: 41.61,
+            averageTotal: 100
+        },
+        venezuela: {
+            averagePrice: 21.94,
+            averageTotal: 100
+        },
+        brazil: {
+            averagePrice: 25.74,
+            averageTotal: 100
+        },
+        bolivia: {
+            averagePrice: 18.48,
+            averageTotal: 100
+        },
+        chile: {
+            averagePrice: 18.81,
+            averageTotal: 100
+        },
+        costarica: {
+            averagePrice: 20.72,
+            averageTotal: 100
+        },
+        ecuador: {
+            averagePrice: 19.74,
+            averageTotal: 100
+        },
+        elsalvador: {
+            averagePrice: 16.86,
+            averageTotal: 100
+        },
+        guatemala: {
+            averagePrice: 18.69,
+            averageTotal: 100
+        },
+        honduras: {
+            averagePrice: 22.88,
+            averageTotal: 100
+        },
+        nicaragua: {
+            averagePrice: 15.68,
+            averageTotal: 100
+        },
+        panama: {
+            averagePrice: 19.45,
+            averageTotal: 100
+        },
+        paraguay: {
+            averagePrice: 17.74,
+            averageTotal: 100
+        },
+        peru: {
+            averagePrice: 22.46,
+            averageTotal: 100
+        },
+        dominicanrepublic: {
+            averagePrice: 22.69,
+            averageTotal: 100
+        },
+        uruguay: {
+            averagePrice: 20.81,
+            averageTotal: 100
+        }
     }, {
-        argentina: 0,
-        australia: 0,
-        bangladesh: 0,
-        colombia: 0,
-        spain: 0,
-        eeuu: 0,
-        philippines: 0,
-        india: 0,
-        england: 0,
-        mexico: 0,
-        southafrica: 0,
-        ukraine: 0,
-        venezuela: 0,
-        brazil: 0,
-        bolivia: 0,
-        chile: 0,
-        costarica: 0,
-        ecuador: 0,
-        elsalvador: 0,
-        guatemala: 0,
-        honduras: 0,
-        nicaragua: 0,
-        panama: 0,
-        paraguay: 0,
-        peru: 0,
-        dominicanrepublic: 0,
-        uruguay: 0
+        argentina: {
+            averagePrice: 19.97,
+            averageTotal: 100
+        },
+        australia: {
+            averagePrice: 34.66,
+            averageTotal: 100
+        },
+        bangladesh: {
+            averagePrice: 19.50,
+            averageTotal: 100
+        },
+        colombia: {
+            averagePrice: 22.11,
+            averageTotal: 100
+        },
+        spain: {
+            averagePrice: 20.98,
+            averageTotal: 100
+        },
+        eeuu: {
+            averagePrice: 33.02,
+            averageTotal: 100
+        },
+        philippines: {
+            averagePrice: 19.56,
+            averageTotal: 100
+        },
+        india: {
+            averagePrice: 22.56,
+            averageTotal: 100
+        },
+        england: {
+            averagePrice: 30.74,
+            averageTotal: 100
+        },
+        mexico: {
+            averagePrice: 21.29,
+            averageTotal: 100
+        },
+        southafrica: {
+            averagePrice: 33.91,
+            averageTotal: 100
+        },
+        ukraine: {
+            averagePrice: 23.60,
+            averageTotal: 100
+        },
+        venezuela: {
+            averagePrice: 17.92,
+            averageTotal: 100
+        },
+        brazil: {
+            averagePrice: 25.25,
+            averageTotal: 100
+        },
+        bolivia: {
+            averagePrice: 20.18,
+            averageTotal: 100
+        },
+        chile: {
+            averagePrice: 21.28,
+            averageTotal: 100
+        },
+        costarica: {
+            averagePrice: 19.38,
+            averageTotal: 100
+        },
+        ecuador: {
+            averagePrice: 17.93,
+            averageTotal: 100
+        },
+        elsalvador: {
+            averagePrice: 16.74,
+            averageTotal: 100
+        },
+        guatemala: {
+            averagePrice: 30.64,
+            averageTotal: 100
+        },
+        honduras: {
+            averagePrice: 26.12,
+            averageTotal: 100
+        },
+        nicaragua: {
+            averagePrice: 23.09,
+            averageTotal: 100
+        },
+        panama: {
+            averagePrice: 24.59,
+            averageTotal: 100
+        },
+        paraguay: {
+            averagePrice: 18.34,
+            averageTotal: 100
+        },
+        peru: {
+            averagePrice: 22.20,
+            averageTotal: 100
+        },
+        dominicanrepublic: {
+            averagePrice: 19.11,
+            averageTotal: 100
+        },
+        uruguay: {
+            averagePrice: 22.48,
+            averageTotal: 100
+        }
     }]
 })
+
 /*---Datos de los SERVICIOS brindados, organizado para programación orientada a objetos---*/
 const services = Object.freeze({
     googleSearchAds: Object.freeze({
@@ -503,14 +748,14 @@ const services = Object.freeze({
             hours: Object.freeze([8]),
             skillsAcquired: Object.freeze(["Digital Marketing Analyst"]),
             idSkillsAcquired: Object.freeze([0]),
-            skillsPrices: Object.freeze([skills.prices[0]]),
+            skillsPrices: Object.freeze([skills.averages[0]]),
             content: Object.freeze(["<ul><li style='list-style: circle;'>Selection of Keywords for the target audience and relevant for the campaign. Call with the client, to discuss the monthly budget and which type of searches are relevant for the established objective.</li><li style='list-style: circle;'>Conversion analysis for your business and measuring relevant action on your website using Google Tag Manager and Google Analytics. For example: when they add an item to the kart, make a purchase, fill a form, or contact you through the website chat.</li><li style='list-style: circle;'>The Creating a dashboard in Google Data Studio (<a href='https://datastudio.google.com/u/0/reporting/0B_U5RNpwhcE6ckdmZEJ0ZDJXUnM/page/VgD/preview' target='_blank' rel='noreferrer noopener'>Click here</a> for an example).</li><li style='list-style: circle;'>Organizing by keyword theme to control the investment in each topic and create specific ads for different topics. </li></ul>"])
         }),
         maintenance: Object.freeze({
             hours: Object.freeze([6]),
             skillsAcquired: Object.freeze(["Digital Marketing Analyst"]),
             idSkillsAcquired: Object.freeze([0]),
-            skillsPrices: Object.freeze([skills.prices[0]]),
+            skillsPrices: Object.freeze([skills.averages[0]]),
             content: Object.freeze(["<ul><li style='list-style: circle;'>Making any modification by the client request (respecting the accorded schedule).</li><li style='list-style: circle;'>1 change per week to improve performance like: Modify the budget, Final URL, Ad text, Keywords (searches which your business shows), Geographic location and Similar Keywords (how big is  the similar searches that are related to your keyword, in which you show on searches)</li><li style='list-style: circle;'>Weekly analysis of the impact with the implemented changes by using the dashboard of Google Data Studio.</li></ul>"])
         })
     }),
@@ -519,14 +764,14 @@ const services = Object.freeze({
             hours: Object.freeze([2, 2]),
             skillsAcquired: Object.freeze(["Digital Marketing Analyst", "Graphic Designer"]),
             idSkillsAcquired: Object.freeze([0, 2]),
-            skillsPrices: Object.freeze([skills.prices[0], skills.prices[2]]),
+            skillsPrices: Object.freeze([skills.averages[0], skills.averages[2]]),
             content: Object.freeze(["<ul>Setting up a campaign which shows your ads with images in websites to a relevant audience. For example: any visitor of your website in the last 30 days or people interested in your product or service according to Google.</li></ul>", "<ul><li style='list-style: circle;'>Designing 1 banner in a square and horizontal format for responsive ads (a mix between image and text).</li><li style='list-style: circle;'><a href='https://drive.google.com/drive/folders/15wF9BY4RxRrQ-vEchJDP4V17rw6hp503?usp=sharing' target='_blank' rel='noreferrer noopener'>See the sum of creative pieces</a></li></ul>"])
         }),
         maintenance: Object.freeze({
             hours: Object.freeze([4, 2]),
             skillsAcquired: Object.freeze(["Digital Marketing Analyst", "Graphic Designer"]),
             idSkillsAcquired: Object.freeze([0, 2]),
-            skillsPrices: Object.freeze([skills.prices[0], skills.prices[2]]),
+            skillsPrices: Object.freeze([skills.averages[0], skills.averages[2]]),
             content: Object.freeze(["<ul><li style='list-style: circle;'>Making any modification by the client request (always respecting the accorded schedule).</li><li style='list-style: circle;'>Includes 1 change per week to improve performance like: Modify the budget, Final URL, Ad text, Audience, Geographic location and Creative Pieces</li><li style='list-style: circle;'>Weekly analysis of the impact with the implemented changes by using the dashboard of Google Data Studio.</li></ul>", "<ul><li style='list-style: circle;'>Creation of 1 graphic piece in a square and horizontal format.</li></ul>"])
         })
     }),
@@ -535,14 +780,14 @@ const services = Object.freeze({
             hours: Object.freeze([2, 6]),
             skillsAcquired: Object.freeze(["Digital Marketing Analyst", "Graphic Designer"]),
             idSkillsAcquired: Object.freeze([0, 2]),
-            skillsPrices: Object.freeze([skills.prices[0], skills.prices[2]]),
+            skillsPrices: Object.freeze([skills.averages[0], skills.averages[2]]),
             content: Object.freeze(["<ul><li style='list-style: circle;'>Setting up a campaign which shows an ad with an image in Facebook and Instagram to a relevant audience. For example: any visitor of your website in the last 30 days or people interested in your product or service according to Facebook.</li><li style='list-style: circle;'>Measuring the relevant actions for your business website (conversions). For example: when the user puts an item in the cart, makes a purchase, fill a form or by contacting the chat from the website.</li></ul>", "<ul><li style='list-style: circle;'>Creating 3 graphic pieces in square format (for feed), and vertical format (for stories). <a href='https://drive.google.com/drive/folders/1_rdQGGkJ41WnMRd9iRbHo44DZ7mu3_bc?usp=sharing' target='_blank' rel='noreferrer noopener'>Click here</a> for an example.</li></ul>"])
         }),
         maintenance: Object.freeze({
             hours: Object.freeze([4, 2]),
             skillsAcquired: Object.freeze(["Digital Marketing Analyst", "Graphic Designer"]),
             idSkillsAcquired: Object.freeze([0, 2]),
-            skillsPrices: Object.freeze([skills.prices[0], skills.prices[2]]),
+            skillsPrices: Object.freeze([skills.averages[0], skills.averages[2]]),
             content: Object.freeze(["<ul><li style='list-style: circle;'>Making any modification by the client request (always respecting the accorded schedule).</li><li style='list-style: circle;'>Includes 1 change per week to improve performance like: Modify the budget, Final URL, Ad text, Audience, Geographic location, Bidding strategy and Creative Pieces.</li></ul>", "<ul><li style='list-style: circle;'>2 social media graphic images in square and vertical format.</li></ul>"])
         })
     }),
@@ -551,14 +796,14 @@ const services = Object.freeze({
             hours: Object.freeze([4]),
             skillsAcquired: Object.freeze(["UX / UI Designer"]),
             idSkillsAcquired: Object.freeze([1]),
-            skillsPrices: Object.freeze([skills.prices[1]]),
+            skillsPrices: Object.freeze([skills.averages[1]]),
             content: Object.freeze(["<ul><li style='list-style: circle;'>Diagnose of good practices to improve the usability and accessibility of your website, making a content analysis, visual design analysis, interaction analysis and theme analysis. <a href='https://docs.google.com/spreadsheets/d/1ZlBsT4XKX11L22I8ojC06DcgsJOeAYjOkUmVmv5mcck/edit?usp=sharing' target='_blank' rel='noreferrer noopener'>Click here</a> for an example.</li></ul>"])
         }),
         maintenance: Object.freeze({
             hours: Object.freeze([6]),
             skillsAcquired: Object.freeze(["UX / UI Designer"]),
             idSkillsAcquired: Object.freeze([1]),
-            skillsPrices: Object.freeze([skills.prices[1]]),
+            skillsPrices: Object.freeze([skills.averages[1]]),
             content: Object.freeze(["<ul><li style='list-style: circle;'>Implementing 2 A/B tests (one version with a modification to improve performance and other without modification) for your website using Google Optimize and Google Analytics.</li><li>Review report for the client.</li></ul>"])
         })
     }),
@@ -568,7 +813,7 @@ const services = Object.freeze({
                 hours: Object.freeze([10]),
                 skillsAcquired: Object.freeze(["UX / UI Designer"]),
                 idSkillsAcquired: Object.freeze([1]),
-                skillsPrices: Object.freeze([skills.prices[1]]),
+                skillsPrices: Object.freeze([skills.averages[1]]),
                 name: Object.freeze("Landing Page"),
                 content: Object.freeze(["<ul><li style='list-style: circle;'>Implementation of a predesigned template for 1 page using CMS (Content Management System) like Wordpress or Wix, to drag and drop.</li></ul>"])
             }),
@@ -576,7 +821,7 @@ const services = Object.freeze({
                 hours: Object.freeze([20]),
                 skillsAcquired: Object.freeze(["UX / UI Designer"]),
                 idSkillsAcquired: Object.freeze([1]),
-                skillsPrices: Object.freeze([skills.prices[1]]),
+                skillsPrices: Object.freeze([skills.averages[1]]),
                 name: Object.freeze("Website with 5 base sections with a pre-designed template"),
                 content: Object.freeze(["<ul><li style='list-style: circle;'>Implementation of a predesigned template for 5 pages using Wordpress. Includes any graphic needed. <a href='https://gaudirjohnson.com.ar/' target='_blank' rel='noreferrer noopener'>Click here</a> for an example.</li></ul>"])
             }),
@@ -584,7 +829,7 @@ const services = Object.freeze({
                 hours: Object.freeze([50]),
                 skillsAcquired: Object.freeze(["UX / UI Designer"]),
                 idSkillsAcquired: Object.freeze([1]),
-                skillsPrices: Object.freeze([skills.prices[1]]),
+                skillsPrices: Object.freeze([skills.averages[1]]),
                 name: Object.freeze("Website with a personalized design"),
                 content: Object.freeze(["<ul><li style='list-style: circle;'>Different prototype designs using Figma (<a href='https://www.figma.com/file/UXhBSaXoO8LeMYrQgFYO9F/Burplaza?node-id=0%3A1' target='_blank' rel='noreferrer noopener'>Click here</a> for an example). Call with the client for revision and changes to the website in Wordpress. Up to 3 revisions by the client.</li></ul>"])
             }),
@@ -592,7 +837,7 @@ const services = Object.freeze({
                 hours: Object.freeze([20]),
                 skillsAcquired: Object.freeze(["UX / UI Designer"]),
                 idSkillsAcquired: Object.freeze([1]),
-                skillsPrices: Object.freeze([skills.prices[1]]),
+                skillsPrices: Object.freeze([skills.averages[1]]),
                 name: Object.freeze("Ecommerce simple website with CMS, like WooCommerce, Tienda Nube or Shopify"),
                 content: Object.freeze(["<ul><li style='list-style: circle;'>Uploading up to 15 products on the website.</li></ul>"])
             }),
@@ -600,7 +845,7 @@ const services = Object.freeze({
                 hours: Object.freeze([10]),
                 skillsAcquired: Object.freeze(["Graphic Designer"]),
                 idSkillsAcquired: Object.freeze([2]),
-                skillsPrices: Object.freeze([skills.prices[2]]),
+                skillsPrices: Object.freeze([skills.averages[2]]),
                 name: Object.freeze("Logo design and Brand Identity"),
                 content: Object.freeze(["<ul><li style='list-style: circle;'>Fonts, logo in different formats, color palette and concept. Up to 3 revisions. <a href='https://drive.google.com/file/d/1gyONia_qKjM6mqoJHe_AnGRGMPbicQnv/view?usp=sharing' target='_blank' rel='noreferrer noopener'>Click here</a> for an example.</li></ul>"])
             })
@@ -610,7 +855,7 @@ const services = Object.freeze({
                 hours: Object.freeze([2]),
                 skillsAcquired: Object.freeze(["UX / UI Designer"]),
                 idSkillsAcquired: Object.freeze([1]),
-                skillsPrices: Object.freeze([skills.prices[1]]),
+                skillsPrices: Object.freeze([skills.averages[1]]),
                 content: Object.freeze(["<ul><li style='list-style: circle;'>Plugin update, image and text content update, and bug fixes.</li></ul>"])
             })
         })
@@ -1531,14 +1776,14 @@ function calculate() {
             let maintenanceContent = '';
             var conversionWebManteinanceValue = 0;
             services.conversionWeb.maintenance.idSkillsAcquired.forEach((skill, i) => {
-                conversionWebManteinanceValue += services.conversionWeb.maintenance.hours[i] * skills.prices[skill][countrySupplier.value];
+                conversionWebManteinanceValue += services.conversionWeb.maintenance.hours[i] * skills.averages[skill][countrySupplier.value].averagePrice;
 
                 /*--Se genera la descripcion de mantenimiento mensual para este servicio en el plan seleccionado---*/
-                maintenanceContent += `<ul><li>${services.conversionWeb.maintenance.hours[i]} hours of work from a ${services.conversionWeb.maintenance.skillsAcquired[i]} with a USD $${services.conversionWeb.maintenance.skillsPrices[i][countrySupplier.value]} hourly rate, to do the following:</li> ${services.conversionWeb.maintenance.content[i]}</ul>`;
+                maintenanceContent += `<ul><li>${services.conversionWeb.maintenance.hours[i]} hours of work from a ${services.conversionWeb.maintenance.skillsAcquired[i]} with a USD $${services.conversionWeb.maintenance.skillsPrices[i][countrySupplier.value].averagePrice} hourly rate, to do the following:</li> ${services.conversionWeb.maintenance.content[i]}</ul>`;
             })
             /*--Se activa el cajon de mantenimiento con el sub-cajon de conversion web, inyectando titulo y contenido para el plan seleccionado--*/
             resultMaintenanceConversionWebContainer.style.display = "block";
-            titleMaintenanceConversionWeb.innerHTML = `<u><strong>Conversion Rate Optimization</strong>:</u> USD ${conversionWebManteinanceValue}`;
+            titleMaintenanceConversionWeb.innerHTML = `<u><strong>Conversion Rate Optimization</strong>:</u> USD ${conversionWebManteinanceValue.toFixed(2).replace(".", ",")}`;
             resultMaintenanceConversionWeb.innerHTML = `${maintenanceContent}`;
 
             agencyMonthlyFeeValue += conversionWebManteinanceValue;
@@ -1548,14 +1793,14 @@ function calculate() {
             var conversionWebImplementationValue = 0;
 
             services.conversionWeb.implementation.idSkillsAcquired.forEach((skill, i) => {
-                conversionWebImplementationValue += services.conversionWeb.implementation.hours[i] * skills.prices[skill][countrySupplier.value];
+                conversionWebImplementationValue += services.conversionWeb.implementation.hours[i] * skills.averages[skill][countrySupplier.value].averagePrice;
 
                 /*--Se genera la descripcion de implementación para este servicio en el plan seleccionado---*/
-                implementationContent += `<ul><li>${services.conversionWeb.implementation.hours[i]} hours of work from a ${services.conversionWeb.implementation.skillsAcquired[i]} with a USD $${services.conversionWeb.implementation.skillsPrices[i][countrySupplier.value]} hourly rate, to do the following:</li> ${services.conversionWeb.implementation.content[i]}</ul>`;
+                implementationContent += `<ul><li>${services.conversionWeb.implementation.hours[i]} hours of work from a ${services.conversionWeb.implementation.skillsAcquired[i]} with a USD $${services.conversionWeb.implementation.skillsPrices[i][countrySupplier.value].averagePrice} hourly rate, to do the following:</li> ${services.conversionWeb.implementation.content[i]}</ul>`;
             })
             /*--Se activa el cajon de implementación con el sub-cajon de conversion web, inyectando titulo y contenido para el plan seleccionado--*/
             resultImplementationConversionWebContainer.style.display = "block";
-            titleImplementationConversionWeb.innerHTML = `<u><strong>Conversion Rate Optimization</strong>:</u> USD ${conversionWebImplementationValue}`;
+            titleImplementationConversionWeb.innerHTML = `<u><strong>Conversion Rate Optimization</strong>:</u> USD ${conversionWebImplementationValue.toFixed(2).replace(".", ",")}`;
             resultImplementationConversionWeb.innerHTML = `${implementationContent}`;
 
             agencyOnceFeeValue += conversionWebImplementationValue;
@@ -1573,14 +1818,14 @@ function calculate() {
             let maintenanceContent = '';
             var googleSearchAdsManteinanceValue = 0;
             services.googleSearchAds.maintenance.idSkillsAcquired.forEach((skill, i) => {
-                googleSearchAdsManteinanceValue += services.googleSearchAds.maintenance.hours[i] * skills.prices[skill][countrySupplier.value];
+                googleSearchAdsManteinanceValue += services.googleSearchAds.maintenance.hours[i] * skills.averages[skill][countrySupplier.value].averagePrice;
 
                 /*--Se genera la descripcion de mantenimiento mensual para este servicio en el plan seleccionado---*/
-                maintenanceContent += `<ul><li>${services.googleSearchAds.maintenance.hours[i]} hours of work from a ${services.googleSearchAds.maintenance.skillsAcquired[i]} with a USD $${services.googleSearchAds.maintenance.skillsPrices[i][countrySupplier.value]} hourly rate, to do the following:</li> ${services.googleSearchAds.maintenance.content[i]}</ul>`;
+                maintenanceContent += `<ul><li>${services.googleSearchAds.maintenance.hours[i]} hours of work from a ${services.googleSearchAds.maintenance.skillsAcquired[i]} with a USD $${services.googleSearchAds.maintenance.skillsPrices[i][countrySupplier.value].averagePrice} hourly rate, to do the following:</li> ${services.googleSearchAds.maintenance.content[i]}</ul>`;
             })
             /*--Se activa el cajon de mantenimiento con el sub-cajon de Google Search Ads, inyectando titulo y contenido para el plan seleccionado--*/
             resultMaintenanceGoogleSearchAdsContainer.style.display = "block";
-            titleMaintenanceGoogleSearchAds.innerHTML = `<u><strong>Google Ads Search Network</strong>:</u> USD ${googleSearchAdsManteinanceValue}`;
+            titleMaintenanceGoogleSearchAds.innerHTML = `<u><strong>Google Ads Search Network</strong>:</u> USD ${googleSearchAdsManteinanceValue.toFixed(2).replace(".", ",")}`;
             resultMaintenanceGoogleSearchAds.innerHTML = `${maintenanceContent}`;
 
             agencyMonthlyFeeValue += googleSearchAdsManteinanceValue;
@@ -1589,14 +1834,14 @@ function calculate() {
             let implementationContent = '';
             var googleSearchAdsImplementationValue = 0;
             services.googleSearchAds.implementation.idSkillsAcquired.forEach((skill, i) => {
-                googleSearchAdsImplementationValue += services.googleSearchAds.implementation.hours[i] * skills.prices[skill][countrySupplier.value];
+                googleSearchAdsImplementationValue += services.googleSearchAds.implementation.hours[i] * skills.averages[skill][countrySupplier.value].averagePrice;
 
                 /*--Se genera la descripcion de implementación para este servicio en el plan seleccionado---*/
-                implementationContent += `<ul><li>${services.googleSearchAds.implementation.hours[i]} hours of work from a ${services.googleSearchAds.implementation.skillsAcquired[i]} with a USD $${services.googleSearchAds.implementation.skillsPrices[i][countrySupplier.value]} hourly rate, to do the following:</li> ${services.googleSearchAds.implementation.content[i]}</ul>`;
+                implementationContent += `<ul><li>${services.googleSearchAds.implementation.hours[i]} hours of work from a ${services.googleSearchAds.implementation.skillsAcquired[i]} with a USD $${services.googleSearchAds.implementation.skillsPrices[i][countrySupplier.value].averagePrice} hourly rate, to do the following:</li> ${services.googleSearchAds.implementation.content[i]}</ul>`;
             })
             /*--Se activa el cajon de implementación con el sub-cajon de Google Search Ads, inyectando titulo y contenido para el plan seleccionado--*/
             resultImplementationGoogleSearchAdsContainer.style.display = "block";
-            titleImplementationGoogleSearchAds.innerHTML = `<u><strong>Google Ads Search Network</strong>:</u> USD ${googleSearchAdsImplementationValue}`;
+            titleImplementationGoogleSearchAds.innerHTML = `<u><strong>Google Ads Search Network</strong>:</u> USD ${googleSearchAdsImplementationValue.toFixed(2).replace(".", ",")}`;
             resultImplementationGoogleSearchAds.innerHTML = `${implementationContent}`;
 
             agencyOnceFeeValue += googleSearchAdsImplementationValue;
@@ -1621,14 +1866,14 @@ function calculate() {
             let maintenanceContent = '';
             var googleDisplayAdsManteinanceValue = 0;
             services.googleDisplayAds.maintenance.idSkillsAcquired.forEach((skill, i) => {
-                googleDisplayAdsManteinanceValue += services.googleDisplayAds.maintenance.hours[i] * skills.prices[skill][countrySupplier.value];
+                googleDisplayAdsManteinanceValue += services.googleDisplayAds.maintenance.hours[i] * skills.averages[skill][countrySupplier.value].averagePrice;
 
                 /*--Se genera la descripcion de mantenimiento mensual para este servicio en el plan seleccionado---*/
-                maintenanceContent += `<ul><li>${services.googleDisplayAds.maintenance.hours[i]} hours of work from a ${services.googleDisplayAds.maintenance.skillsAcquired[i]} with a USD $${services.googleDisplayAds.maintenance.skillsPrices[i][countrySupplier.value]} hourly rate, to do the following:</li> ${services.googleDisplayAds.maintenance.content[i]}</ul>`;
+                maintenanceContent += `<ul><li>${services.googleDisplayAds.maintenance.hours[i]} hours of work from a ${services.googleDisplayAds.maintenance.skillsAcquired[i]} with a USD $${services.googleDisplayAds.maintenance.skillsPrices[i][countrySupplier.value].averagePrice} hourly rate, to do the following:</li> ${services.googleDisplayAds.maintenance.content[i]}</ul>`;
             })
             /*--Se activa el cajon de mantenimiento con el sub-cajon de Google Display Ads, inyectando titulo y contenido para el plan seleccionado--*/
             resultMaintenanceGoogleDisplayAdsContainer.style.display = "block";
-            titleMaintenanceGoogleDisplayAds.innerHTML = `<u><strong>Google Display Ads</strong>:</u> USD ${googleDisplayAdsManteinanceValue}`;
+            titleMaintenanceGoogleDisplayAds.innerHTML = `<u><strong>Google Display Ads</strong>:</u> USD ${googleDisplayAdsManteinanceValue.toFixed(2).replace(".", ",")}`;
             resultMaintenanceGoogleDisplayAds.innerHTML = `${maintenanceContent}`;
 
             agencyMonthlyFeeValue += googleDisplayAdsManteinanceValue;
@@ -1637,14 +1882,14 @@ function calculate() {
             let implementationContent = '';
             var googleDisplayAdsImplementationValue = 0;
             services.googleDisplayAds.implementation.idSkillsAcquired.forEach((skill, i) => {
-                googleDisplayAdsImplementationValue += services.googleDisplayAds.implementation.hours[i] * skills.prices[skill][countrySupplier.value];
+                googleDisplayAdsImplementationValue += services.googleDisplayAds.implementation.hours[i] * skills.averages[skill][countrySupplier.value].averagePrice;
 
                 /*--Se genera la descripcion de implementación para este servicio en el plan seleccionado---*/
-                implementationContent += `<ul><li>${services.googleDisplayAds.implementation.hours[i]} hours of work from a ${services.googleDisplayAds.implementation.skillsAcquired[i]} with a USD $${services.googleDisplayAds.implementation.skillsPrices[i][countrySupplier.value]} hourly rate, to do the following:</li> ${services.googleDisplayAds.implementation.content[i]}</ul>`;
+                implementationContent += `<ul><li>${services.googleDisplayAds.implementation.hours[i]} hours of work from a ${services.googleDisplayAds.implementation.skillsAcquired[i]} with a USD $${services.googleDisplayAds.implementation.skillsPrices[i][countrySupplier.value].averagePrice} hourly rate, to do the following:</li> ${services.googleDisplayAds.implementation.content[i]}</ul>`;
             })
             /*--Se activa el cajon de implementación con el sub-cajon de Google Display Ads, inyectando titulo y contenido para el plan seleccionado--*/
             resultImplementationGoogleDisplayAdsContainer.style.display = "block";
-            titleImplementationGoogleDisplayAds.innerHTML = `<u><strong>Google Display Ads</strong>:</u> USD ${googleDisplayAdsImplementationValue}`;
+            titleImplementationGoogleDisplayAds.innerHTML = `<u><strong>Google Display Ads</strong>:</u> USD ${googleDisplayAdsImplementationValue.toFixed(2).replace(".", ",")}`;
             resultImplementationGoogleDisplayAds.innerHTML = `${implementationContent}`;
 
             agencyOnceFeeValue += googleDisplayAdsImplementationValue;
@@ -1669,14 +1914,14 @@ function calculate() {
             let maintenanceContent = '';
             var facebookAdsManteinanceValue = 0;
             services.facebookAds.maintenance.idSkillsAcquired.forEach((skill, i) => {
-                facebookAdsManteinanceValue += services.facebookAds.maintenance.hours[i] * skills.prices[skill][countrySupplier.value];
+                facebookAdsManteinanceValue += services.facebookAds.maintenance.hours[i] * skills.averages[skill][countrySupplier.value].averagePrice;
 
                 /*--Se genera la descripcion de mantenimiento mensual para este servicio en el plan seleccionado---*/
-                maintenanceContent += `<ul><li>${services.facebookAds.maintenance.hours[i]} hours of work from a ${services.facebookAds.maintenance.skillsAcquired[i]} with a USD $${services.facebookAds.maintenance.skillsPrices[i][countrySupplier.value]} hourly rate, to do the following:</li> ${services.facebookAds.maintenance.content[i]}</ul>`;
+                maintenanceContent += `<ul><li>${services.facebookAds.maintenance.hours[i]} hours of work from a ${services.facebookAds.maintenance.skillsAcquired[i]} with a USD $${services.facebookAds.maintenance.skillsPrices[i][countrySupplier.value].averagePrice} hourly rate, to do the following:</li> ${services.facebookAds.maintenance.content[i]}</ul>`;
             })
             /*--Se activa el cajon de mantenimiento con el sub-cajon de Facebook Ads, inyectando titulo y contenido para el plan seleccionado--*/
             resultMaintenanceFacebookAdsContainer.style.display = "block";
-            titleMaintenanceFacebookAds.innerHTML = `<u><strong>Facebook Ads</strong>:</u> USD ${facebookAdsManteinanceValue}`;
+            titleMaintenanceFacebookAds.innerHTML = `<u><strong>Facebook Ads</strong>:</u> USD ${facebookAdsManteinanceValue.toFixed(2).replace(".", ",")}`;
             resultMaintenanceFacebookAds.innerHTML = `${maintenanceContent}`;
 
             agencyMonthlyFeeValue += facebookAdsManteinanceValue;
@@ -1685,14 +1930,14 @@ function calculate() {
             let implementationContent = '';
             var facebookAdsImplementationValue = 0;
             services.facebookAds.implementation.idSkillsAcquired.forEach((skill, i) => {
-                facebookAdsImplementationValue += services.facebookAds.implementation.hours[i] * skills.prices[skill][countrySupplier.value];
+                facebookAdsImplementationValue += services.facebookAds.implementation.hours[i] * skills.averages[skill][countrySupplier.value].averagePrice;
 
                 /*--Se genera la descripcion de implementación para este servicio en el plan seleccionado---*/
-                implementationContent += `<ul><li>${services.facebookAds.implementation.hours[i]} hours of work from a ${services.facebookAds.implementation.skillsAcquired[i]} with a USD $${services.facebookAds.implementation.skillsPrices[i][countrySupplier.value]} hourly rate, to do the following:</li> ${services.facebookAds.implementation.content[i]}</ul>`;
+                implementationContent += `<ul><li>${services.facebookAds.implementation.hours[i]} hours of work from a ${services.facebookAds.implementation.skillsAcquired[i]} with a USD $${services.facebookAds.implementation.skillsPrices[i][countrySupplier.value].averagePrice} hourly rate, to do the following:</li> ${services.facebookAds.implementation.content[i]}</ul>`;
             })
             /*--Se activa el cajon de implementación con el sub-cajon de Facebook Ads, inyectando titulo y contenido para el plan seleccionado--*/
             resultImplementationFacebookAdsContainer.style.display = "block";
-            titleImplementationFacebookAds.innerHTML = `<u><strong>Facebook Ads</strong>:</u> USD ${facebookAdsImplementationValue}`;
+            titleImplementationFacebookAds.innerHTML = `<u><strong>Facebook Ads</strong>:</u> USD ${facebookAdsImplementationValue.toFixed(2).replace(".", ",")}`;
             resultImplementationFacebookAds.innerHTML = `${implementationContent}`;
 
             agencyOnceFeeValue += facebookAdsImplementationValue;
@@ -1724,14 +1969,14 @@ function calculate() {
                 let maintenanceContent = '';
                 var landingPageManteinanceValue = 0;
                 services.disenoWeb.maintenance.basic.idSkillsAcquired.forEach((skill, i) => {
-                    landingPageManteinanceValue += services.disenoWeb.maintenance.basic.hours[i] * skills.prices[skill][countrySupplier.value];
+                    landingPageManteinanceValue += services.disenoWeb.maintenance.basic.hours[i] * skills.averages[skill][countrySupplier.value].averagePrice;
 
                     /*--Se genera la descripcion de mantenimiento mensual para este servicio en el plan seleccionado---*/
-                    maintenanceContent += `<ul><li>${services.disenoWeb.maintenance.basic.hours[i]} hours of work from a ${services.disenoWeb.maintenance.basic.skillsAcquired[i]} with a USD $${services.disenoWeb.maintenance.basic.skillsPrices[i][countrySupplier.value]} hourly rate, to do the following:</li> ${services.disenoWeb.maintenance.basic.content[i]}</ul>`;
+                    maintenanceContent += `<ul><li>${services.disenoWeb.maintenance.basic.hours[i]} hours of work from a ${services.disenoWeb.maintenance.basic.skillsAcquired[i]} with a USD $${services.disenoWeb.maintenance.basic.skillsPrices[i][countrySupplier.value].averagePrice} hourly rate, to do the following:</li> ${services.disenoWeb.maintenance.basic.content[i]}</ul>`;
                 })
                 /*--Se activa el cajon de mantenimiento con el sub-cajon de Landing Page, inyectando titulo y contenido para el plan seleccionado--*/
                 resultMaintenanceLandingPageContainer.style.display = "block";
-                titleMaintenanceLandingPage.innerHTML = `<u><strong>${services.disenoWeb.implementation.basic.name}</strong>:</u> USD ${landingPageManteinanceValue}`;
+                titleMaintenanceLandingPage.innerHTML = `<u><strong>${services.disenoWeb.implementation.basic.name}</strong>:</u> USD ${landingPageManteinanceValue.toFixed(2).replace(".", ",")}`;
                 resultMaintenanceLandingPage.innerHTML = `${maintenanceContent}`;
 
                 agencyMonthlyFeeValue += landingPageManteinanceValue;
@@ -1740,14 +1985,14 @@ function calculate() {
                 let implementationContent = '';
                 var landingPageImplementationValue = 0;
                 services.disenoWeb.implementation.basic.idSkillsAcquired.forEach((skill, i) => {
-                    landingPageImplementationValue += services.disenoWeb.implementation.basic.hours[i] * skills.prices[skill][countrySupplier.value];
+                    landingPageImplementationValue += services.disenoWeb.implementation.basic.hours[i] * skills.averages[skill][countrySupplier.value].averagePrice;
 
                     /*--Se genera la descripcion de implementación para este servicio en el plan seleccionado---*/
-                    implementationContent += `<ul><li>${services.disenoWeb.implementation.basic.hours[i]} hours of work from a ${services.disenoWeb.implementation.basic.skillsAcquired[i]} with a USD $${services.disenoWeb.implementation.basic.skillsPrices[i][countrySupplier.value]} hourly rate, to do the following:</li> ${services.disenoWeb.implementation.basic.content[i]}</ul>`;
+                    implementationContent += `<ul><li>${services.disenoWeb.implementation.basic.hours[i]} hours of work from a ${services.disenoWeb.implementation.basic.skillsAcquired[i]} with a USD $${services.disenoWeb.implementation.basic.skillsPrices[i][countrySupplier.value].averagePrice} hourly rate, to do the following:</li> ${services.disenoWeb.implementation.basic.content[i]}</ul>`;
                 })
                 /*--Se activa el cajon de implementación con el sub-cajon de Landing Page, inyectando titulo y contenido para el plan seleccionado--*/
                 resultImplementationLandingPageContainer.style.display = "block";
-                titleImplementationLandingPage.innerHTML = `<u><strong>${services.disenoWeb.implementation.basic.name}</strong>:</u> USD ${landingPageImplementationValue}`;
+                titleImplementationLandingPage.innerHTML = `<u><strong>${services.disenoWeb.implementation.basic.name}</strong>:</u> USD ${landingPageImplementationValue.toFixed(2).replace(".", ",")}`;
                 resultImplementationLandingPage.innerHTML = `${implementationContent}`;
 
                 agencyOnceFeeValue += landingPageImplementationValue;
@@ -1764,14 +2009,14 @@ function calculate() {
                 let maintenanceContent = '';
                 var wordpressManteinanceValue = 0;
                 services.disenoWeb.maintenance.basic.idSkillsAcquired.forEach((skill, i) => {
-                    wordpressManteinanceValue += services.disenoWeb.maintenance.basic.hours[i] * skills.prices[skill][countrySupplier.value];
+                    wordpressManteinanceValue += services.disenoWeb.maintenance.basic.hours[i] * skills.averages[skill][countrySupplier.value].averagePrice;
 
                     /*--Se genera la descripcion de mantenimiento mensual para este servicio en el plan seleccionado---*/
-                    maintenanceContent += `<ul><li>${services.disenoWeb.maintenance.basic.hours[i]} hours of work from a ${services.disenoWeb.maintenance.basic.skillsAcquired[i]} with a USD $${services.disenoWeb.maintenance.basic.skillsPrices[i][countrySupplier.value]} hourly rate, to do the following:</li> ${services.disenoWeb.maintenance.basic.content[i]}</ul>`;
+                    maintenanceContent += `<ul><li>${services.disenoWeb.maintenance.basic.hours[i]} hours of work from a ${services.disenoWeb.maintenance.basic.skillsAcquired[i]} with a USD $${services.disenoWeb.maintenance.basic.skillsPrices[i][countrySupplier.value].averagePrice} hourly rate, to do the following:</li> ${services.disenoWeb.maintenance.basic.content[i]}</ul>`;
                 })
                 /*--Se activa el cajon de mantenimiento con el sub-cajon de Wordpress, inyectando titulo y contenido para el plan seleccionado--*/
                 resultMaintenanceWordpressContainer.style.display = "block";
-                titleMaintenanceWordpress.innerHTML = `<u><strong>${services.disenoWeb.implementation.intermediate.name}</strong>:</u> USD ${wordpressManteinanceValue}`;
+                titleMaintenanceWordpress.innerHTML = `<u><strong>${services.disenoWeb.implementation.intermediate.name}</strong>:</u> USD ${wordpressManteinanceValue.toFixed(2).replace(".", ",")}`;
                 resultMaintenanceWordpress.innerHTML = `${maintenanceContent}`;
 
                 agencyMonthlyFeeValue += wordpressManteinanceValue;
@@ -1780,14 +2025,14 @@ function calculate() {
                 let implementationContent = '';
                 var wordpressImplementationValue = 0;
                 services.disenoWeb.implementation.intermediate.idSkillsAcquired.forEach((skill, i) => {
-                    wordpressImplementationValue += services.disenoWeb.implementation.intermediate.hours[i] * skills.prices[skill][countrySupplier.value];
+                    wordpressImplementationValue += services.disenoWeb.implementation.intermediate.hours[i] * skills.averages[skill][countrySupplier.value].averagePrice;
 
                     /*--Se genera la descripcion de implementación para este servicio en el plan seleccionado---*/
-                    implementationContent += `<ul><li>${services.disenoWeb.implementation.intermediate.hours[i]} hours of work from a ${services.disenoWeb.implementation.intermediate.skillsAcquired[i]} with a USD $${services.disenoWeb.implementation.intermediate.skillsPrices[i][countrySupplier.value]} hourly rate, to do the following:</li> ${services.disenoWeb.implementation.intermediate.content[i]}</ul>`;
+                    implementationContent += `<ul><li>${services.disenoWeb.implementation.intermediate.hours[i]} hours of work from a ${services.disenoWeb.implementation.intermediate.skillsAcquired[i]} with a USD $${services.disenoWeb.implementation.intermediate.skillsPrices[i][countrySupplier.value].averagePrice} hourly rate, to do the following:</li> ${services.disenoWeb.implementation.intermediate.content[i]}</ul>`;
                 })
                 /*--Se activa el cajon de implementación con el sub-cajon de Wordpress, inyectando titulo y contenido para el plan seleccionado--*/
                 resultImplementationWordpressContainer.style.display = "block";
-                titleImplementationWordpress.innerHTML = `<u><strong>${services.disenoWeb.implementation.intermediate.name}</strong>:</u> USD ${wordpressImplementationValue}`;
+                titleImplementationWordpress.innerHTML = `<u><strong>${services.disenoWeb.implementation.intermediate.name}</strong>:</u> USD ${wordpressImplementationValue.toFixed(2).replace(".", ",")}`;
                 resultImplementationWordpress.innerHTML = `${implementationContent}`;
 
                 agencyOnceFeeValue += wordpressImplementationValue;
@@ -1804,14 +2049,14 @@ function calculate() {
                 let maintenanceContent = '';
                 var customWebsiteManteinanceValue = 0;
                 services.disenoWeb.maintenance.basic.idSkillsAcquired.forEach((skill, i) => {
-                    customWebsiteManteinanceValue += services.disenoWeb.maintenance.basic.hours[i] * skills.prices[skill][countrySupplier.value];
+                    customWebsiteManteinanceValue += services.disenoWeb.maintenance.basic.hours[i] * skills.averages[skill][countrySupplier.value].averagePrice;
 
                     /*--Se genera la descripcion de mantenimiento mensual para este servicio en el plan seleccionado---*/
-                    maintenanceContent += `<ul><li>${services.disenoWeb.maintenance.basic.hours[i]} hours of work from a ${services.disenoWeb.maintenance.basic.skillsAcquired[i]} with a USD $${services.disenoWeb.maintenance.basic.skillsPrices[i][countrySupplier.value]} hourly rate, to do the following:</li> ${services.disenoWeb.maintenance.basic.content[i]}</ul>`;
+                    maintenanceContent += `<ul><li>${services.disenoWeb.maintenance.basic.hours[i]} hours of work from a ${services.disenoWeb.maintenance.basic.skillsAcquired[i]} with a USD $${services.disenoWeb.maintenance.basic.skillsPrices[i][countrySupplier.value].averagePrice} hourly rate, to do the following:</li> ${services.disenoWeb.maintenance.basic.content[i]}</ul>`;
                 })
                 /*--Se activa el cajon de mantenimiento con el sub-cajon de Custom Website, inyectando titulo y contenido para el plan seleccionado--*/
                 resultMaintenanceCustomWebsiteContainer.style.display = "block";
-                titleMaintenanceCustomWebsite.innerHTML = `<u><strong>${services.disenoWeb.implementation.advanced.name}</strong>:</u> USD ${customWebsiteManteinanceValue}`;
+                titleMaintenanceCustomWebsite.innerHTML = `<u><strong>${services.disenoWeb.implementation.advanced.name}</strong>:</u> USD ${customWebsiteManteinanceValue.toFixed(2).replace(".", ",")}`;
                 resultMaintenanceCustomWebsite.innerHTML = `${maintenanceContent}`;
 
                 agencyMonthlyFeeValue += customWebsiteManteinanceValue;
@@ -1820,14 +2065,14 @@ function calculate() {
                 let implementationContent = '';
                 var customWebsiteImplementationValue = 0;
                 services.disenoWeb.implementation.advanced.idSkillsAcquired.forEach((skill, i) => {
-                    customWebsiteImplementationValue += services.disenoWeb.implementation.advanced.hours[i] * skills.prices[skill][countrySupplier.value];
+                    customWebsiteImplementationValue += services.disenoWeb.implementation.advanced.hours[i] * skills.averages[skill][countrySupplier.value].averagePrice;
 
                     /*--Se genera la descripcion de implementación para este servicio en el plan seleccionado---*/
-                    implementationContent += `<ul><li>${services.disenoWeb.implementation.advanced.hours[i]} hours of work from a ${services.disenoWeb.implementation.advanced.skillsAcquired[i]} with a USD $${services.disenoWeb.implementation.advanced.skillsPrices[i][countrySupplier.value]} hourly rate, to do the following:</li> ${services.disenoWeb.implementation.advanced.content[i]}</ul>`;
+                    implementationContent += `<ul><li>${services.disenoWeb.implementation.advanced.hours[i]} hours of work from a ${services.disenoWeb.implementation.advanced.skillsAcquired[i]} with a USD $${services.disenoWeb.implementation.advanced.skillsPrices[i][countrySupplier.value].averagePrice} hourly rate, to do the following:</li> ${services.disenoWeb.implementation.advanced.content[i]}</ul>`;
                 })
                 /*--Se activa el cajon de implementación con el sub-cajon de Custom Website, inyectando titulo y contenido para el plan seleccionado--*/
                 resultImplementationCustomWebsiteContainer.style.display = "block";
-                titleImplementationCustomWebsite.innerHTML = `<u><strong>${services.disenoWeb.implementation.advanced.name}</strong>:</u> USD ${customWebsiteImplementationValue}`;
+                titleImplementationCustomWebsite.innerHTML = `<u><strong>${services.disenoWeb.implementation.advanced.name}</strong>:</u> USD ${customWebsiteImplementationValue.toFixed(2).replace(".", ",")}`;
                 resultImplementationCustomWebsite.innerHTML = `${implementationContent}`;
 
                 agencyOnceFeeValue += customWebsiteImplementationValue;
@@ -1844,14 +2089,14 @@ function calculate() {
                 let maintenanceContent = '';
                 var ecommerceWebManteinanceValue = 0;
                 services.disenoWeb.maintenance.basic.idSkillsAcquired.forEach((skill, i) => {
-                    ecommerceWebManteinanceValue += services.disenoWeb.maintenance.basic.hours[i] * skills.prices[skill][countrySupplier.value];
+                    ecommerceWebManteinanceValue += services.disenoWeb.maintenance.basic.hours[i] * skills.averages[skill][countrySupplier.value].averagePrice;
 
                     /*--Se genera la descripcion de mantenimiento mensual para este servicio en el plan seleccionado---*/
-                    maintenanceContent += `<ul><li>${services.disenoWeb.maintenance.basic.hours[i]} hours of work from a ${services.disenoWeb.maintenance.basic.skillsAcquired[i]} with a USD $${services.disenoWeb.maintenance.basic.skillsPrices[i][countrySupplier.value]} hourly rate, to do the following:</li> ${services.disenoWeb.maintenance.basic.content[i]}</ul>`;
+                    maintenanceContent += `<ul><li>${services.disenoWeb.maintenance.basic.hours[i]} hours of work from a ${services.disenoWeb.maintenance.basic.skillsAcquired[i]} with a USD $${services.disenoWeb.maintenance.basic.skillsPrices[i][countrySupplier.value].averagePrice} hourly rate, to do the following:</li> ${services.disenoWeb.maintenance.basic.content[i]}</ul>`;
                 })
                 /*--Se activa el cajon de mantenimiento con el sub-cajon de Ecommerce, inyectando titulo y contenido para el plan seleccionado--*/
                 resultMaintenanceEcommerceWebContainer.style.display = "block";
-                titleMaintenanceEcommerceWeb.innerHTML = `<u><strong>${services.disenoWeb.implementation.ecommerce.name}</strong>:</u> USD ${ecommerceWebManteinanceValue}`;
+                titleMaintenanceEcommerceWeb.innerHTML = `<u><strong>${services.disenoWeb.implementation.ecommerce.name}</strong>:</u> USD ${ecommerceWebManteinanceValue.toFixed(2).replace(".", ",")}`;
                 resultMaintenanceEcommerceWeb.innerHTML = `${maintenanceContent}`;
 
                 agencyMonthlyFeeValue += ecommerceWebManteinanceValue;
@@ -1860,14 +2105,14 @@ function calculate() {
                 let implementationContent = '';
                 var ecommerceWebImplementationValue = 0;
                 services.disenoWeb.implementation.ecommerce.idSkillsAcquired.forEach((skill, i) => {
-                    ecommerceWebImplementationValue += services.disenoWeb.implementation.ecommerce.hours[i] * skills.prices[skill][countrySupplier.value];
+                    ecommerceWebImplementationValue += services.disenoWeb.implementation.ecommerce.hours[i] * skills.averages[skill][countrySupplier.value].averagePrice;
 
                     /*--Se genera la descripcion de implementación para este servicio en el plan seleccionado---*/
-                    implementationContent += `<ul><li>${services.disenoWeb.implementation.ecommerce.hours[i]} hours of work from a ${services.disenoWeb.implementation.ecommerce.skillsAcquired[i]} with a USD $${services.disenoWeb.implementation.ecommerce.skillsPrices[i][countrySupplier.value]} hourly rate, to do the following:</li> ${services.disenoWeb.implementation.ecommerce.content[i]}</ul>`;
+                    implementationContent += `<ul><li>${services.disenoWeb.implementation.ecommerce.hours[i]} hours of work from a ${services.disenoWeb.implementation.ecommerce.skillsAcquired[i]} with a USD $${services.disenoWeb.implementation.ecommerce.skillsPrices[i][countrySupplier.value].averagePrice} hourly rate, to do the following:</li> ${services.disenoWeb.implementation.ecommerce.content[i]}</ul>`;
                 })
                 /*--Se activa el cajon de implementación con el sub-cajon de Ecommerce, inyectando titulo y contenido para el plan seleccionado--*/
                 resultImplementationEcommerceWebContainer.style.display = "block";
-                titleImplementationEcommerceWeb.innerHTML = `<u><strong>${services.disenoWeb.implementation.ecommerce.name}</strong>:</u> USD ${ecommerceWebImplementationValue}`;
+                titleImplementationEcommerceWeb.innerHTML = `<u><strong>${services.disenoWeb.implementation.ecommerce.name}</strong>:</u> USD ${ecommerceWebImplementationValue.toFixed(2).replace(".", ",")}`;
                 resultImplementationEcommerceWeb.innerHTML = `${implementationContent}`;
 
                 agencyOnceFeeValue += ecommerceWebImplementationValue;
@@ -1884,14 +2129,14 @@ function calculate() {
                 let maintenanceContent = '';
                 var logoMarcaManteinanceValue = 0;
                 services.disenoWeb.maintenance.basic.idSkillsAcquired.forEach((skill, i) => {
-                    logoMarcaManteinanceValue += services.disenoWeb.maintenance.basic.hours[i] * skills.prices[skill][countrySupplier.value];
+                    logoMarcaManteinanceValue += services.disenoWeb.maintenance.basic.hours[i] * skills.averages[skill][countrySupplier.value].averagePrice;
 
                     /*--Se genera la descripcion de mantenimiento mensual para este servicio en el plan seleccionado---*/
-                    maintenanceContent += `<ul><li>${services.disenoWeb.maintenance.basic.hours[i]} hours of work from a ${services.disenoWeb.maintenance.basic.skillsAcquired[i]} with a USD $${services.disenoWeb.maintenance.basic.skillsPrices[i][countrySupplier.value]} hourly rate, to do the following:</li> ${services.disenoWeb.maintenance.basic.content[i]}</ul>`;
+                    maintenanceContent += `<ul><li>${services.disenoWeb.maintenance.basic.hours[i]} hours of work from a ${services.disenoWeb.maintenance.basic.skillsAcquired[i]} with a USD $${services.disenoWeb.maintenance.basic.skillsPrices[i][countrySupplier.value].averagePrice} hourly rate, to do the following:</li> ${services.disenoWeb.maintenance.basic.content[i]}</ul>`;
                 })
                 /*--Se activa el cajon de mantenimiento con el sub-cajon de Logo y Marca, inyectando titulo y contenido para el plan seleccionado--*/
                 resultMaintenanceLogoYMarcaContainer.style.display = "block";
-                titleMaintenanceLogoYMarca.innerHTML = `<u><strong>${services.disenoWeb.implementation.logoYMarca.name}</strong>:</u> USD ${logoMarcaManteinanceValue}`;
+                titleMaintenanceLogoYMarca.innerHTML = `<u><strong>${services.disenoWeb.implementation.logoYMarca.name}</strong>:</u> USD ${logoMarcaManteinanceValue.toFixed(2).replace(".", ",")}`;
                 resultMaintenanceLogoYMarca.innerHTML = `${maintenanceContent}`;
 
                 agencyMonthlyFeeValue += logoMarcaManteinanceValue;
@@ -1900,14 +2145,14 @@ function calculate() {
                 let implementationContent = '';
                 var logoMarcaImplementationValue = 0;
                 services.disenoWeb.implementation.logoYMarca.idSkillsAcquired.forEach((skill, i) => {
-                    logoMarcaImplementationValue += services.disenoWeb.implementation.logoYMarca.hours[i] * skills.prices[skill][countrySupplier.value];
+                    logoMarcaImplementationValue += services.disenoWeb.implementation.logoYMarca.hours[i] * skills.averages[skill][countrySupplier.value].averagePrice;
 
                     /*--Se genera la descripcion de implementación para este servicio en el plan seleccionado---*/
-                    implementationContent += `<ul><li>${services.disenoWeb.implementation.logoYMarca.hours[i]} hours of work from a ${services.disenoWeb.implementation.logoYMarca.skillsAcquired[i]} a ${services.disenoWeb.implementation.logoYMarca.skillsPrices[i][countrySupplier.value]} hourly rate, to do the following:</li> ${services.disenoWeb.implementation.logoYMarca.content[i]}</ul>`;
+                    implementationContent += `<ul><li>${services.disenoWeb.implementation.logoYMarca.hours[i]} hours of work from a ${services.disenoWeb.implementation.logoYMarca.skillsAcquired[i]} a ${services.disenoWeb.implementation.logoYMarca.skillsPrices[i][countrySupplier.value].averagePrice} hourly rate, to do the following:</li> ${services.disenoWeb.implementation.logoYMarca.content[i]}</ul>`;
                 })
                 /*--Se activa el cajon de implementación con el sub-cajon de Logo y Marca, inyectando titulo y contenido para el plan seleccionado--*/
                 resultImplementationLogoYMarcaContainer.style.display = "block";
-                titleImplementationLogoYMarca.innerHTML = `<u><strong>${services.disenoWeb.implementation.logoYMarca.name}</strong>:</u> USD ${logoMarcaImplementationValue}`;
+                titleImplementationLogoYMarca.innerHTML = `<u><strong>${services.disenoWeb.implementation.logoYMarca.name}</strong>:</u> USD ${logoMarcaImplementationValue.toFixed(2).replace(".", ",")}`;
                 resultImplementationLogoYMarca.innerHTML = `${implementationContent}`;
 
                 agencyOnceFeeValue += logoMarcaImplementationValue;
@@ -1951,10 +2196,10 @@ function calculate() {
 
         }
         /*---Se setean los valores totales de los cajónes, es decir las sumas de valores de c/u---*/
-        resultImplementationFee.innerHTML = `USD ${agencyOnceFeeValue}`;
-        resultMaintenanceFee.innerHTML = `USD ${agencyMonthlyFeeValue}`;
+        resultImplementationFee.innerHTML = `USD ${agencyOnceFeeValue.toFixed(2).replace(".", ",")}`;
+        resultMaintenanceFee.innerHTML = `USD ${agencyMonthlyFeeValue.toFixed(2).replace(".", ",")}`;
         resultInvestmentsMonthly.innerHTML = ` USD ${totalInvestmentMonthly}`;
-        resultMonthlyTotal.innerHTML = `USD ${totalInvestmentMonthly + agencyMonthlyFeeValue}`;
+        resultMonthlyTotal.innerHTML = `USD ${(totalInvestmentMonthly + agencyMonthlyFeeValue).toFixed(2).replace(".", ",")}`;
 
     } else {
         formContainer.style.height = 'auto';
