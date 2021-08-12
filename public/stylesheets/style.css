@@ -29,6 +29,10 @@ h4 {
   opacity: 1 !important;
 }
 
+.collapse.in {
+  display: block !important;
+}
+
 .language-selector {
   position: absolute;
   top: 0px;
