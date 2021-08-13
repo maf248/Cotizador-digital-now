@@ -1413,9 +1413,11 @@ logoMarca.addEventListener('change', function () {
 
 /*----Se obtienen los datos de freelancers para el pais seleccionado----*/
 var responseApi;
+var responseOk;
 fetch(`https://digitalnow.com.ar/wp-json/freelancer-api/${countrySupplier.value}`)
     .then((response) => {
         if (response.ok) {
+            responseOk = true;
             return response.json();
         } else {
             responseApi = undefined;
@@ -1429,6 +1431,7 @@ countrySupplier.addEventListener('change', function () {
     fetch(`https://digitalnow.com.ar/wp-json/freelancer-api/${countrySupplier.value}`)
         .then((response) => {
             if (response.ok) {
+                responseOk = true;
                 completeFormValidate[2] = true;
                 return response.json();
             } else {
@@ -1477,8 +1480,19 @@ function calculate() {
             errorMessages.innerHTML = 'You must select at least one service';
             errorType = 1;
         } else if (completeFormValidate[2] == false) {
-            errorMessages.innerHTML = 'Receiving data...wait a few seconds and retry please.';
-            errorType = 3;
+            errorMessages.innerHTML = 'Receiving data...wait a few seconds please.';
+
+            function isApiDataReady() {
+                setTimeout(function () {
+                    if (responseOk) {
+                        errorMessages.innerHTML = '';
+                        calculate();
+                    } else {
+                        isApiDataReady();
+                    }
+                }, 500);
+            }
+            isApiDataReady()
             if (qs('.p-success') == null) {
                 emailCustomerInput.classList.add('error-border');
             }
