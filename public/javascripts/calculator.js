@@ -1382,31 +1382,31 @@ disenoWeb.addEventListener('change', function () {
 /*--Eventos sobre checkboxes de sub-servicios de DISEÑO WEB---*/
 landingPage.addEventListener('change', function () {
     if (this.checked) {
-        disenoWebServicesContainer.childNodes[1].classList.remove('error-border');
+        disenoWebServicesContainer.querySelector('.card').classList.remove('error-border');
         errorMessages.innerHTML = '';
     }
 });
 wordpress.addEventListener('change', function () {
     if (this.checked) {
-        disenoWebServicesContainer.childNodes[1].classList.remove('error-border');
+        disenoWebServicesContainer.querySelector('.card').classList.remove('error-border');
         errorMessages.innerHTML = '';
     }
 });
 customWebsite.addEventListener('change', function () {
     if (this.checked) {
-        disenoWebServicesContainer.childNodes[1].classList.remove('error-border');
+        disenoWebServicesContainer.querySelector('.card').classList.remove('error-border');
         errorMessages.innerHTML = '';
     }
 });
 ecommerceWeb.addEventListener('change', function () {
     if (this.checked) {
-        disenoWebServicesContainer.childNodes[1].classList.remove('error-border');
+        disenoWebServicesContainer.querySelector('.card').classList.remove('error-border');
         errorMessages.innerHTML = '';
     }
 });
 logoMarca.addEventListener('change', function () {
     if (this.checked) {
-        disenoWebServicesContainer.childNodes[1].classList.remove('error-border');
+        disenoWebServicesContainer.querySelector('.card').classList.remove('error-border');
         errorMessages.innerHTML = '';
     }
 });
@@ -1583,7 +1583,7 @@ function calculate() {
 
     } else if (disenoWeb.checked && (!landingPage.checked && !wordpress.checked && !customWebsite.checked && !ecommerceWeb.checked && !logoMarca.checked)) {
         errorMessages.innerHTML = 'You must select a Web Design sub-service';
-        disenoWebServicesContainer.childNodes[1].classList.add('error-border');
+        disenoWebServicesContainer.querySelector('.card').classList.add('error-border');
         if (qs('.p-success') == null) {
             emailCustomerInput.classList.add('error-border');
         }
