@@ -861,9 +861,12 @@ const services = Object.freeze({
 const qs = (text) => document.querySelector(text);
 const qsa = (text) => document.querySelectorAll(text);
 
-/*---Array de validación de las 3 etapas---*/
+/*---Array de validación de las 2 etapas---*/
 var completeFormValidate = [false, false];
 var errorType = 0;
+
+/*---Se captura contenedor de servicios---*/
+var servicesContainer = qs('.services-container');
 
 /*---Se capturan los checkboxes individualmente, de los servicios requeridos---*/
 var googleSearchAds = qs('#google-search-ads');
@@ -897,10 +900,6 @@ var facebookAdsExtraContainer = qs('#facebook-ads-extra-container');
 var investmentGoogleSearchAdsAmmount = qs('#investment-google-search-ads-value');
 var investmentGoogleDisplayAdsAmmount = qs('#investment-google-display-ads-value');
 var investmentFacebookAdsAmmount = qs('#investment-facebook-ads-value');
-
-/*--Se captura el email del usuario y se valida c/ Regex---*/
-var emailCustomerInput = null;
-var mailFormat = /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/g;
 
 /*---------------------RESULTADOS---------------------*/
 /*---Se capturan los CONTENEDORES de los distintos resultados---*/
@@ -1022,6 +1021,7 @@ checkboxesServices.forEach((checkboxService, i) => {
         if (checkboxesServicesValidate.slice(0, 5).includes(true)) {
 
             completeFormValidate[1] = true;
+            servicesContainer.classList.remove('error-border');
 
             servicesExtraContainer.style.display = "flex";
             setTimeout(function () {
@@ -1304,34 +1304,6 @@ countryAnnounce.addEventListener('keyup', function (event) {
     }
 }, false);
 
-/*---Evento control email custom p/ Perfit---*/
-var optinCheck = qs('#optin-okXxFSTU');
-optinCheck.addEventListener('change', (e) => {
-    emailCustomerInput = qsa('#optin-okXxFSTU input')[1];
-    if (emailCustomerInput.value.match(mailFormat)) {
-        emailCustomerInput.classList.remove('error-border');
-
-    } else {
-        emailCustomerInput.classList.add('error-border');
-    }
-});
-/*---Evento para eliminar el label externo al completarse el ingreso OK de mail Perfit---*/
-optinCheck.addEventListener('click', () => {
-    setTimeout(() => {
-        if (qs('.p-success') !== null) {
-            qs('.email-customer-container label').classList.add('animated-toggle-base');
-            qs('.email-customer-container label').classList.add('animated-toggle-hide');
-            if (errorType == 9) {
-                errorMessages.innerHTML = '';
-            }
-        } else if (qs('.p-error-message') !== null) {
-            if (errorType == 9) {
-                errorMessages.innerHTML = '';
-            }
-        }
-    }, 3000);
-});
-
 /*---Se captura el bloque que muestra los resultados, y se muestra solamente al seleccionar todas las opciones requeridas---*/
 var formContainer = qs('#form-calculate-container');
 var resultsContainer = qs('#results-container');
@@ -1450,19 +1422,23 @@ function calculate() {
 
     resultInvestmentsMonthlyDetail.innerHTML = '';
 
-    /*---Captura el input de email Optin---*/
-    emailCustomerInput = qsa('#optin-okXxFSTU input')[1];
-
     /*---Se valida que esten todas las etapas seleccionadas, para mostrar los resultados u ocultarlos---*/
-    if (completeFormValidate.includes(false) || qs('.p-success') == null || responseApi == false) {
+    if (completeFormValidate.includes(false) || responseApi == false) {
 
         resultsContainer.style.height = '0';
         resultsContainer.style.opacity = '0';
-        if (completeFormValidate[0] == false) {
+
+        if (completeFormValidate[0] == false && completeFormValidate[1] == false) {
+            errorMessages.innerHTML = 'Debes seleccionar un país de proveedores de servicios y como mínimo un servicio';
+            countrySupplier.classList.add('error-border');
+            servicesContainer.classList.add('error-border');
+            errorType = 1;
+        } else if (completeFormValidate[0] == false) {
             errorMessages.innerHTML = 'Debes seleccionar un país de proveedores de servicios';
             countrySupplier.classList.add('error-border');
         } else if (completeFormValidate[1] == false) {
             errorMessages.innerHTML = 'Debes seleccionar mínimo un servicio';
+            servicesContainer.classList.add('error-border');
             errorType = 1;
         } else if (completeFormValidate[2] == false) {
             errorMessages.innerHTML = 'Recibiendo información...espere unos segundos';
@@ -1478,9 +1454,7 @@ function calculate() {
                 }, 500);
             }
             isApiDataReady()
-            if (qs('.p-success') == null) {
-                emailCustomerInput.classList.add('error-border');
-            }
+
         } else if (completeFormValidate[3] == false && completeFormValidate[4] == false) {
             errorMessages.innerHTML = 'Debes agregar mínimo un país a la lista y seleccionar a que categoría corresponde tu industria';
             countryAnnounce.classList.add('error-border');
@@ -1494,9 +1468,6 @@ function calculate() {
             }
             if (completeFormValidate[7] == false) {
                 investmentFacebookAdsAmmount.classList.add('error-border');
-            }
-            if (qs('.p-success') == null) {
-                emailCustomerInput.classList.add('error-border');
             }
         } else if (completeFormValidate[3] == false) {
             errorMessages.innerHTML = 'Debes seleccionar a que categoría corresponde tu industria, para poder calcular los anuncios';
@@ -1525,9 +1496,6 @@ function calculate() {
             if (completeFormValidate[7] == false) {
                 investmentFacebookAdsAmmount.classList.add('error-border');
             }
-            if (qs('.p-success') == null) {
-                emailCustomerInput.classList.add('error-border');
-            }
         } else if (completeFormValidate[6] == false) {
             errorMessages.innerHTML = 'Debes introducir el monto a invertir en Google Ads Red de Display';
             investmentGoogleDisplayAdsAmmount.classList.add('error-border');
@@ -1537,9 +1505,6 @@ function calculate() {
             }
             if (completeFormValidate[7] == false) {
                 investmentFacebookAdsAmmount.classList.add('error-border');
-            }
-            if (qs('.p-success') == null) {
-                emailCustomerInput.classList.add('error-border');
             }
         } else if (completeFormValidate[7] == false) {
             errorMessages.innerHTML = 'Debes introducir el monto a invertir en Facebook Ads';
@@ -1551,27 +1516,12 @@ function calculate() {
             if (completeFormValidate[6] == false) {
                 investmentGoogleDisplayAdsAmmount.classList.add('error-border');
             }
-            if (qs('.p-success') == null) {
-                emailCustomerInput.classList.add('error-border');
-            }
-
-        } else if (qs('.p-success') == null) {
-            if (qs('.p-error-message') != null) {
-
-            } else {
-                errorMessages.innerHTML = 'Debes completar tu dirección de email';
-                emailCustomerInput.classList.add('error-border');
-                errorType = 9;
-            }
 
         }
 
     } else if (disenoWeb.checked && (!landingPage.checked && !wordpress.checked && !customWebsite.checked && !ecommerceWeb.checked && !logoMarca.checked)) {
         errorMessages.innerHTML = 'Debes seleccionar un sub-servicio de Diseño Web';
         disenoWebServicesContainer.querySelector('.card').classList.add('error-border');
-        if (qs('.p-success') == null) {
-            emailCustomerInput.classList.add('error-border');
-        }
 
     } else {
         /*--Se cambia la vista, mostrando los resultados---*/
