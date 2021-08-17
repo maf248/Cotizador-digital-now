@@ -1172,7 +1172,7 @@ investmentFacebookAdsAmmount.addEventListener('change', function () {
 /*---Se captura el menu desplegable de los paises para anunciarse---*/
 var countryAnnounce = qs('#country-announce-list');
 
-/*---Se capturan los botones y lista para agregar países de anuncios dinamicamente---*/
+/*---Se captura el listado de pais agregados y el mensaje de error de los mismos---*/
 var listSelectedCountriesAnnounce = qs('#selected-country-announce');
 var countrySelectionErrors = qs('#country-selection-errors');
 /*--Array con nombre de paises formateados para mostrar en la lista---*/

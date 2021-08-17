@@ -172,11 +172,6 @@ h4 {
   margin-top: 10px;
 }
 
-#add-country-announce {
-  border-radius: 50px;
-  margin-left: 10px;
-}
-
 .form-calculate-container {
   display: flex;
   flex-direction: column;
@@ -617,10 +612,6 @@ button:focus {
   .investment-facebook-ads select {
     margin-left: 0px;
     margin-top: 10px;
-  }
-
-  #add-country-announce {
-    margin-top: 10px !important;
   }
 
   .short-title-mobile {
