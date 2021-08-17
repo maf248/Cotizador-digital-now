@@ -1441,7 +1441,7 @@ function calculate() {
             servicesContainer.classList.add('error-border');
             errorType = 1;
         } else if (completeFormValidate[2] == false) {
-            errorMessages.innerHTML = 'Recibiendo información...espere unos segundos';
+            errorMessages.innerHTML = '<div class="spinner-border text-primary" role="status"></div><br><span class="text-primary">Recibiendo información...espere unos segundos</span>';
 
             function isApiDataReady() {
                 setTimeout(function () {
