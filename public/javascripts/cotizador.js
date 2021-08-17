@@ -1001,18 +1001,7 @@ var errorMessages = qs('#error-messages');
 
 /*---Se captura el selector de país de los proveedores--*/
 var countrySupplier = qs('#country-supplier');
-if (countrySupplier.value != '') {
-    completeFormValidate[0] = true;
-}
-
-countrySupplier.addEventListener('change', function () {
-
-    if (countrySupplier.value != '') {
-        completeFormValidate[0] = true;
-    } else {
-        completeFormValidate[0] = false;
-    }
-});
+completeFormValidate[0] = false;
 
 /*---Se capturan los checkboxes en conjunto, de los servicios requeridos---*/
 var checkboxesServices = qsa('input[class=services-check]');
@@ -1411,32 +1400,29 @@ logoMarca.addEventListener('change', function () {
 /*----Se obtienen los datos de freelancers para el pais seleccionado----*/
 var responseApi;
 var responseOk;
-fetch(`https://digitalnow.com.ar/wp-json/freelancer-api/${countrySupplier.value}`)
-    .then((response) => {
-        if (response.ok) {
-            responseOk = true;
-            return response.json();
-        } else {
-            responseApi = undefined;
-        }
-    })
-    .then(data => responseApi = data);
-
 countrySupplier.addEventListener('change', function () {
-    responseApi = false;
-    completeFormValidate[2] = false;
-    fetch(`https://digitalnow.com.ar/wp-json/freelancer-api/${countrySupplier.value}`)
-        .then((response) => {
-            if (response.ok) {
-                responseOk = true;
-                completeFormValidate[2] = true;
-                return response.json();
-            } else {
-                completeFormValidate[2] = true;
-                responseApi = undefined;
-            }
-        })
-        .then(data => responseApi = data);
+    if (this.value !== '') {
+        responseApi = false;
+        // Valida que se seleccionó un pais proveedor correcto
+        completeFormValidate[0] = true;
+        countrySupplier.classList.remove('error-border');
+        // Valida que aún no se recibió información de dicho pais
+        completeFormValidate[2] = false;
+        fetch(`https://digitalnow.com.ar/wp-json/freelancer-api/${countrySupplier.value}`)
+            .then((response) => {
+                if (response.ok) {
+                    responseOk = true;
+                    completeFormValidate[2] = true;
+                    return response.json();
+                } else {
+                    completeFormValidate[2] = true;
+                    responseApi = undefined;
+                }
+            })
+            .then(data => responseApi = data);
+    } else {
+        completeFormValidate[0] = false;
+    }
 });
 
 calculateButton.addEventListener('click', function () {
@@ -1472,12 +1458,14 @@ function calculate() {
 
         resultsContainer.style.height = '0';
         resultsContainer.style.opacity = '0';
-
-        if (completeFormValidate[1] == false) {
+        if (completeFormValidate[0] == false) {
+            errorMessages.innerHTML = 'Debes seleccionar un país de proveedores de servicios';
+            countrySupplier.classList.add('error-border');
+        } else if (completeFormValidate[1] == false) {
             errorMessages.innerHTML = 'Debes seleccionar mínimo un servicio';
             errorType = 1;
         } else if (completeFormValidate[2] == false) {
-            errorMessages.innerHTML = 'Recibiendo información...espere unos segundos.';
+            errorMessages.innerHTML = 'Recibiendo información...espere unos segundos';
 
             function isApiDataReady() {
                 setTimeout(function () {
