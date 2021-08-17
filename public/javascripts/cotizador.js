@@ -1440,21 +1440,6 @@ function calculate() {
             errorMessages.innerHTML = 'Debes seleccionar mínimo un servicio';
             servicesContainer.classList.add('error-border');
             errorType = 1;
-        } else if (completeFormValidate[2] == false) {
-            errorMessages.innerHTML = '<div class="spinner-border text-primary" role="status"></div><br><span class="text-primary">Recibiendo información...espere unos segundos</span>';
-
-            function isApiDataReady() {
-                setTimeout(function () {
-                    if (responseOk) {
-                        errorMessages.innerHTML = '';
-                        calculate();
-                    } else {
-                        isApiDataReady();
-                    }
-                }, 500);
-            }
-            isApiDataReady()
-
         } else if (completeFormValidate[3] == false && completeFormValidate[4] == false) {
             errorMessages.innerHTML = 'Debes agregar mínimo un país a la lista y seleccionar a que categoría corresponde tu industria';
             countryAnnounce.classList.add('error-border');
@@ -1516,6 +1501,21 @@ function calculate() {
             if (completeFormValidate[6] == false) {
                 investmentGoogleDisplayAdsAmmount.classList.add('error-border');
             }
+
+        } else if (completeFormValidate[2] == false) {
+            errorMessages.innerHTML = '<div class="spinner-border text-primary" role="status"></div><br><span class="text-primary">Recibiendo información...espere unos segundos</span>';
+
+            function isApiDataReady() {
+                setTimeout(function () {
+                    if (responseOk) {
+                        errorMessages.innerHTML = '';
+                        calculate();
+                    } else {
+                        isApiDataReady();
+                    }
+                }, 500);
+            }
+            isApiDataReady()
 
         }
 

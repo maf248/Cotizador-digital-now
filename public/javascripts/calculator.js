@@ -1443,21 +1443,6 @@ function calculate() {
             errorMessages.innerHTML = 'You must select at least one service';
             servicesContainer.classList.add('error-border');
             errorType = 1;
-        } else if (completeFormValidate[2] == false) {
-            errorMessages.innerHTML = '<div class="spinner-border text-primary" role="status"></div><br><span class="text-primary">Receiving data...wait a few seconds please</span>';
-
-            function isApiDataReady() {
-                setTimeout(function () {
-                    if (responseOk) {
-                        errorMessages.innerHTML = '';
-                        calculate();
-                    } else {
-                        isApiDataReady();
-                    }
-                }, 500);
-            }
-            isApiDataReady()
-
         } else if (completeFormValidate[3] == false && completeFormValidate[4] == false) {
             errorMessages.innerHTML = 'Add at least one country to the list and select which category your industry corresponds to';
             countryAnnounce.classList.add('error-border');
@@ -1519,6 +1504,21 @@ function calculate() {
             if (completeFormValidate[6] == false) {
                 investmentGoogleDisplayAdsAmmount.classList.add('error-border');
             }
+        } else if (completeFormValidate[2] == false) {
+            errorMessages.innerHTML = '<div class="spinner-border text-primary" role="status"></div><br><span class="text-primary">Receiving data...wait a few seconds please</span>';
+
+            function isApiDataReady() {
+                setTimeout(function () {
+                    if (responseOk) {
+                        errorMessages.innerHTML = '';
+                        calculate();
+                    } else {
+                        isApiDataReady();
+                    }
+                }, 500);
+            }
+            isApiDataReady()
+
         }
 
     } else if (disenoWeb.checked && (!landingPage.checked && !wordpress.checked && !customWebsite.checked && !ecommerceWeb.checked && !logoMarca.checked)) {
