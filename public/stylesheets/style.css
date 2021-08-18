@@ -76,12 +76,8 @@ h4 {
 }
 
 .country-supplier {
-  margin-bottom: 0px !important;
   min-width: fit-content;
-  appearance: auto;
-  padding: 10px;
-  color: black;
-  border-radius: 50px;
+  border-radius: 50px !important;
 }
 
 .services-container {
@@ -118,15 +114,27 @@ h4 {
   margin-top: 1rem;
 }
 
-.services-extra-container input,
-.services-extra-container select {
-  background: rgba(232, 232, 232, .1);
+.services-extra-container input {
+  background-color: rgba(232, 232, 232, .1);
   max-width: fit-content;
-  padding: 10px;
+  padding: 5px 10px;
   appearance: auto;
   color: black;
   text-align: center;
   border: 1px solid gray;
+  border-radius: 50px;
+}
+
+.services-extra-container input:focus {
+  border-color: #86b7fe;
+  outline: 0;
+  box-shadow: 0 0 0 0.25rem rgb(13 110 253 / 25%);
+}
+
+.services-extra-container select {
+  background-color: rgba(232, 232, 232, .1);
+  border: 1px solid gray !important;
+  max-width: fit-content;
   border-radius: 50px;
 }
 
