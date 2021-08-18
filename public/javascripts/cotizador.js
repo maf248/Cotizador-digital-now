@@ -1437,7 +1437,7 @@ function calculate() {
                     } else {
                         isApiDataReady();
                     }
-                }, 500);
+                }, 750);
             }
             isApiDataReady()
 
