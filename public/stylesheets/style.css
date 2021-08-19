@@ -326,7 +326,7 @@ h4 {
   padding-right: 2px;
 }
 
-.titlesCollapse p {
+.paragraphTitlesCollapse {
   flex-wrap: wrap;
   overflow-wrap: normal;
   line-height: 1.6em;
@@ -375,6 +375,7 @@ button:focus {
 .result-category-titles,
 .result-service-titles {
   cursor: pointer;
+  overflow: hidden;
 }
 
 .result-category-titles:hover,
@@ -385,7 +386,8 @@ button:focus {
 }
 
 .seeDetailsMsg {
-  margin-right: 15px;
+  margin-bottom: 0px;
+  margin-right: 5px;
   margin-left: auto;
   font-size: 0.9rem !important;
   font-style: italic;
