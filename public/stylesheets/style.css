@@ -11,9 +11,14 @@ p {
   min-width: fit-content;
   display: inline-block;
   font-size: 1rem !important;
+  margin-bottom: 0 !important;
 }
 
 li {
+  font-size: 1rem !important;
+}
+
+.container-fluid p, .container-fluid li {
   font-size: 1rem !important;
 }
 
