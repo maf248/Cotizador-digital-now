@@ -11,14 +11,9 @@ p {
   min-width: fit-content;
   display: inline-block;
   font-size: 1rem !important;
-  margin-bottom: 0 !important;
 }
 
 li {
-  font-size: 1rem !important;
-}
-
-.container-fluid p, .container-fluid li {
   font-size: 1rem !important;
 }
 
@@ -28,14 +23,6 @@ h3 {
 
 h4 {
   font-size: 1rem !important;
-}
-
-.tab-pane {
-  opacity: 1 !important;
-}
-
-.collapse.in {
-  display: block !important;
 }
 
 .language-selector {
@@ -81,8 +68,12 @@ h4 {
 }
 
 .country-supplier {
+  margin-bottom: 0px !important;
   min-width: fit-content;
-  border-radius: 50px !important;
+  appearance: auto;
+  padding: 10px;
+  color: black;
+  border-radius: 50px;
 }
 
 .services-container {
@@ -119,27 +110,15 @@ h4 {
   margin-top: 1rem;
 }
 
-.services-extra-container input {
-  background-color: rgba(232, 232, 232, .1);
+.services-extra-container input,
+.services-extra-container select {
+  background: rgba(232, 232, 232, .1);
   max-width: fit-content;
-  padding: 5px 10px;
+  padding: 10px;
   appearance: auto;
   color: black;
   text-align: center;
   border: 1px solid gray;
-  border-radius: 50px;
-}
-
-.services-extra-container input:focus {
-  border-color: #86b7fe;
-  outline: 0;
-  box-shadow: 0 0 0 0.25rem rgb(13 110 253 / 25%);
-}
-
-.services-extra-container select {
-  background-color: rgba(232, 232, 232, .1);
-  border: 1px solid gray !important;
-  max-width: fit-content;
   border-radius: 50px;
 }
 
@@ -185,6 +164,11 @@ h4 {
   margin-top: 10px;
 }
 
+#add-country-announce {
+  border-radius: 50px;
+  margin-left: 10px;
+}
+
 .form-calculate-container {
   display: flex;
   flex-direction: column;
@@ -193,8 +177,8 @@ h4 {
 
 .error-messages {
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  flex-direction: row;
+  justify-content: center;
   color: red;
   width: 100%;
   margin-left: auto;
@@ -211,7 +195,11 @@ h4 {
 .google-search-ads-extra-container,
 .google-display-ads-extra-container,
 .facebook-ads-extra-container,
-.industry-and-country-selectors-container {
+.industry-and-country-selectors-container,
+.community-management-extra-container,
+.seo-extra-container,
+.conversion-web-extra-container,
+.email-marketing-extra-container {
   display: none;
   flex-direction: column;
   background: linear-gradient(to right, rgba(255, 255, 255, .5), rgba(232, 232, 232, .5));
@@ -223,7 +211,12 @@ h4 {
 
 .google-search-ads-extra-container,
 .google-display-ads-extra-container,
-.facebook-ads-extra-container {
+.facebook-ads-extra-container,
+.community-management-extra-container,
+.seo-extra-container,
+.conversion-web-extra-container,
+.email-marketing-extra-container,
+.email-customer-container {
   border-top: 1px solid rgba(0, 0, 0, .125);
   padding-bottom: 25px;
 }
@@ -244,9 +237,17 @@ h4 {
   cursor: pointer;
 }
 
+.google-search-plan-container,
 .investment-google-search-ads,
+.google-display-plan-container,
 .investment-google-display-ads,
-.investment-facebook-ads {
+.facebook-plan-container,
+.investment-facebook-ads,
+.community-management-plan-container,
+.seo-plan-container,
+.conversion-web-plan-container,
+.email-ammount-container,
+.email-plan-container {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -254,9 +255,16 @@ h4 {
   padding-top: 25px;
 }
 
+.google-search-plan-container select,
 .investment-google-search-ads select,
+.google-display-plan-container select,
 .investment-google-display-ads select,
-.investment-facebook-ads select {
+.facebook-plan-container select,
+.investment-facebook-ads select,
+.community-management-plan-container select,
+.seo-plan-container select,
+.conversion-web-plan-container select,
+.email-plan-container select {
   margin-left: 10px;
   cursor: pointer;
   min-width: fit-content;
@@ -269,9 +277,16 @@ h4 {
   max-width: 70%;
 }
 
+.google-search-plan-container label,
 .investment-google-search-ads label,
+.google-display-plan-container label,
 .investment-google-display-ads label,
-.investment-facebook-ads label {
+.facebook-plan-container label,
+.investment-facebook-ads label,
+.community-management-plan-container label,
+.seo-plan-container label,
+.conversion-web-plan-container label,
+.email-plan-container label {
   text-align: center;
   display: flex;
   flex-direction: row;
@@ -281,9 +296,116 @@ h4 {
   align-items: center;
 }
 
+.email-ammount-container label {
+  max-width: 65%;
+}
+
+.email-ammount-container select {
+  cursor: pointer;
+}
+
+.email-customer-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 25px;
+  background: linear-gradient(to right, rgba(255, 255, 255, .5), rgba(232, 232, 232, .5));
+}
+
+/*---Estilos de Email Optin de My Perfit---*/
+#optin-okXxFSTU,
+#optin-TMQ2knsn {
+  width: 70%;
+}
+
+#optin-okXxFSTU input,
+#optin-TMQ2knsn input {
+  max-width: fit-content;
+  width: 100%;
+  min-width: 250px;
+}
+
+.email-customer-container label {
+  text-align: center;
+}
+
+.email-customer-container .p-body {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  text-align: center;
+  align-items: center;
+  min-height: fit-content !important;
+}
+
+.email-customer-container .p-close {
+  display: none;
+}
+
+.p-optin .p-field {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.p-optin .p-field label {
+  display: none;
+}
+
+.p-optin .p-field input[type=text].p-error,
+.p-optin .p-field select.p-error {
+  border-color: #FF0000;
+}
+
+.p-optin .p-field .p-error-message {
+  color: #FF0000;
+  font-style: italic;
+  font-size: 0.9em;
+  display: inline-block;
+  margin-top: 5px;
+}
+
+.p-optin .p-success {
+  text-align: center;
+  font-weight: lighter;
+  font-size: 1.4em;
+  color: #00AEEB;
+  margin-top: 10px;
+}
+
+.p-optin .p-interests {
+  display: none;
+}
+
+.email-customer-container button {
+  width: fit-content;
+  white-space: nowrap;
+  padding: 10px 20px;
+  border-radius: 50px;
+  transition: all .7s ease;
+  background-color: white !important;
+  color: #0d6efd !important;
+  border-color: #0d6efd !important;
+  text-indent: -9999px;
+  line-height: 0;
+}
+
+.email-customer-container button::after {
+  content: '✓';
+  text-indent: 0;
+  display: block;
+  line-height: initial;
+}
+
+.email-customer-container button:hover {
+  color: white !important;
+  background-color: #0d6efd !important;
+}
+
 .investment-google-search-ads input,
 .investment-google-display-ads input,
-.investment-facebook-ads input {
+.investment-facebook-ads input,
+.email-ammount-container select {
   min-width: fit-content;
   height: fit-content;
   text-align: center;
@@ -331,12 +453,12 @@ h4 {
   padding-right: 2px;
 }
 
-.paragraphTitlesCollapse {
+.titlesCollapse p {
   flex-wrap: wrap;
   overflow-wrap: normal;
   line-height: 1.6em;
   margin-bottom: 0;
-  padding: 2px 7px 2px 2px;
+  padding: 2px;
   font-size: 1rem !important;
 }
 
@@ -380,7 +502,6 @@ button:focus {
 .result-category-titles,
 .result-service-titles {
   cursor: pointer;
-  overflow: hidden;
 }
 
 .result-category-titles:hover,
@@ -391,8 +512,7 @@ button:focus {
 }
 
 .seeDetailsMsg {
-  margin-bottom: 0px;
-  margin-right: 5px;
+  margin-right: 15px;
   margin-left: auto;
   font-size: 0.9rem !important;
   font-style: italic;
@@ -552,9 +672,17 @@ button:focus {
     margin-left: 0px;
   }
 
+  .google-search-plan-container,
   .investment-google-search-ads,
+  .google-display-plan-container,
   .investment-google-display-ads,
-  .investment-facebook-ads {
+  .facebook-plan-container,
+  .investment-facebook-ads,
+  .community-management-plan-container,
+  .seo-plan-container,
+  .conversion-web-plan-container,
+  .email-ammount-container,
+  .email-plan-container {
     flex-direction: column;
     padding-bottom: 0px;
   }
@@ -562,20 +690,30 @@ button:focus {
   .industry-ads-selector-container,
   .investment-google-search-ads,
   .investment-google-display-ads,
-  .investment-facebook-ads {
+  .investment-facebook-ads,
+  .email-ammount-container {
     flex-direction: column;
   }
 
   .industry-ads-selector-container input,
   .investment-google-search-ads input,
   .investment-google-display-ads input,
-  .investment-facebook-ads input {
+  .investment-facebook-ads input,
+  .email-ammount-container input {
     margin-top: 10px;
   }
 
   .industry-ads-selector-container select {
     margin-left: 0px;
     margin-top: 15px;
+  }
+
+  .email-ammount-container select {
+    margin-top: 15px;
+  }
+
+  .email-ammount-container label {
+    max-width: 90%;
   }
 
 }
@@ -588,7 +726,8 @@ button:focus {
   .industry-ads-selector-container label,
   .investment-google-search-ads label,
   .investment-google-display-ads label,
-  .investment-facebook-ads label {
+  .investment-facebook-ads label,
+  .email-ammount-container label {
     margin-right: 25px;
   }
 
@@ -614,19 +753,41 @@ button:focus {
     padding: 30px 15px;
   }
 
+  .google-search-plan-container label,
   .investment-google-search-ads label,
+  .google-display-plan-container label,
   .investment-google-display-ads label,
-  .investment-facebook-ads label {
+  .facebook-plan-container label,
+  .investment-facebook-ads label,
+  .community-management-plan-container label,
+  .seo-plan-container label,
+  .conversion-web-plan-container label,
+  .email-plan-container label {
     text-align: center;
     display: flex;
     flex-direction: column;
   }
 
+  .google-search-plan-container select,
   .investment-google-search-ads select,
+  .google-display-plan-container select,
   .investment-google-display-ads select,
-  .investment-facebook-ads select {
+  .facebook-plan-container select,
+  .investment-facebook-ads select,
+  .community-management-plan-container select,
+  .seo-plan-container select,
+  .conversion-web-plan-container select,
+  .email-plan-container select {
     margin-left: 0px;
     margin-top: 10px;
+  }
+
+  .email-customer-container {
+    flex-direction: column;
+  }
+
+  #add-country-announce {
+    margin-top: 10px !important;
   }
 
   .short-title-mobile {
@@ -635,6 +796,10 @@ button:focus {
 
   .info-extra-tab {
     font-size: 0.9em !important;
+  }
+
+  .email-customer-container input {
+    margin-top: 10px;
   }
 
   .checkContainer {
@@ -656,4 +821,7 @@ button:focus {
     width: 60% !important;
   }
 
+  .email-ammount-container label {
+    max-width: 40%;
+  }
 }

@@ -47,40 +47,23 @@
           <%= title %>
         </h1>
       </div>
-      <h4 class="mt-4 mb-4" id="info-extra-top-message" style="font-size: 18px !important; font-weight: bold;">Completá
-        los campos para estimar costos de servicios de marketing digital y resultados que podrías obtener con valores
-        promedio del mercado...</h4>
+      <h4 class="mt-4 mb-4" id="info-extra-top-message" style="font-size: 18px !important; font-weight: bold;">Completá los campos para estimar costos de servicios de marketing digital y resultados que podrías obtener con valores promedio del mercado...</h4>
       <section class="form-calculate-container animated-toggle-base" id="form-calculate-container">
         <h3 class="mt-3 mb-3">¿De qué país es el proveedor de servicios que querés contratar?</h3>
-        <div class="country-supplier-container">
-          <select class="form-select country-supplier" id="country-supplier">
-            <option value="" default>-</option>
+        <div class="country-supplier-container"> <select name="country-supplier" id="country-supplier"
+            class="country-supplier">
             <option value="argentina">Argentina</option>
             <option value="australia">Australia</option>
             <option value="bangladesh">Bangladesh</option>
-            <option value="bolivia">Bolivia</option>
-            <option value="brazil">Brasil</option>
-            <option value="chile">Chile</option>
             <option value="colombia">Colombia</option>
-            <option value="costarica">Costa Rica</option>
-            <option value="ecuador">Ecuador</option>
-            <option value="elsalvador">El salvador</option>
-            <option value="spain">España</option>
+            <option value="espana">España</option>
             <option value="eeuu">Estados Unidos</option>
-            <option value="philippines">Filipinas</option>
-            <option value="guatemala">Guatemala</option>
-            <option value="honduras">Honduras</option>
+            <option value="filipinas">Filipinas</option>
             <option value="india">India</option>
-            <option value="england">Inglaterra</option>
+            <option value="inglaterra">Inglaterra</option>
             <option value="mexico">México</option>
-            <option value="nicaragua">Nicaragua</option>
-            <option value="panama">Panamá</option>
-            <option value="paraguay">Paraguay</option>
-            <option value="peru">Perú</option>
-            <option value="dominicanrepublic">Republica Dominicana</option>
-            <option value="southafrica">Sudafrica</option>
-            <option value="ukraine">Ucrania</option>
-            <option value="uruguay">Uruguay</option>
+            <option value="sudafrica">Sudafrica</option>
+            <option value="ucrania">Ucrania</option>
             <option value="venezuela">Venezuela</option>
           </select></div>
         <h3>Elegí los servicios requeridos:</h3>
@@ -94,6 +77,10 @@
           <div> <label for="facebook-ads"> <input type="checkbox" name="facebook-ads" id="facebook-ads"
                 class="services-check"> Facebook Ads <small>(Anuncios en Facebook e Instagram)</small> </label>
           </div>
+          <div> <label for="communityManagement"> <input type="checkbox" name="community-management"
+                id="communityManagement" class="services-check"> Gestión de Redes Sociales </label></div>
+          <div> <label for="seo"> <input type="checkbox" name="seo" id="seo" class="services-check"> SEO
+              <small>(Posicionamiento orgánico en Google)</small> </label></div>
           <div> <label for="conversionWeb"> <input type="checkbox" name="conversionWeb" id="conversionWeb"
                 class="services-check"> Optimización de tasa de conversión web </label></div>
           <div> <label for="disenoWeb"> <input type="checkbox" name="disenoWeb" id="disenoWeb" class="services-check">
@@ -118,6 +105,8 @@
                 </label></div>
             </div>
           </fieldset>
+          <div> <label for="email"> <input type="checkbox" name="email" id="email" class="services-check"> Email
+              Marketing </label></div>
         </div>
         <div class="services-extra-container card animated-toggle-base animated-toggle-hide"
           id="services-extra-container">
@@ -125,109 +114,110 @@
             <h4 class="text-center info-extra-titles"><strong>Anuncios:</strong></h4>
             <div class="country-announce-container" id="country-announce-container">
               <h5 style="text-align: center;">¿En qué país querés que aparezcan tus anuncios?</h5>
-              <div class="country-announce-selector">
-                <select class="form-select" id="country-announce-list">
-                  <option value="" default>-</option>
-                  <option value="albania">Albania</option>
-                  <option value="alemania">Alemania</option>
-                  <option value="arabiaSaudita">Arabia Saudita</option>
-                  <option value="argelia">Argelia</option>
-                  <option value="argentina">Argentina</option>
-                  <option value="armenia">Armenia</option>
-                  <option value="australia">Australia</option>
-                  <option value="austria">Austria</option>
-                  <option value="bahamas">Bahamas</option>
-                  <option value="bangladesh">Bangladesh</option>
-                  <option value="barein">Barein</option>
-                  <option value="belgica">Bélgica</option>
-                  <option value="belice">Belice</option>
-                  <option value="bolivia">Bolivia</option>
-                  <option value="brasil">Brasil</option>
-                  <option value="bulgaria">Bulgaria</option>
-                  <option value="camboya">Camboya</option>
-                  <option value="canada">Canadá</option>
-                  <option value="chile">Chile</option>
-                  <option value="colombia">Colombia</option>
-                  <option value="coreaDelSur">Corea del Sur</option>
-                  <option value="costaRica">Costa Rica</option>
-                  <option value="croacia">Croacia</option>
-                  <option value="dinamarca">Dinamarca</option>
-                  <option value="ecuador">Ecuador</option>
-                  <option value="egipto">Egipto</option>
-                  <option value="emiratosArabes">Emiratos Arabes</option>
-                  <option value="espana">España</option>
-                  <option value="eslovaquia">Eslovaquia</option>
-                  <option value="eslovenia">Eslovenia</option>
-                  <option value="eeuu">Estados Unidos</option>
-                  <option value="filipinas">Filipinas</option>
-                  <option value="finlandia">Finlandia</option>
-                  <option value="francia">Francia</option>
-                  <option value="grecia">Grecia</option>
-                  <option value="guyana">Guyana</option>
-                  <option value="holanda">Holanda</option>
-                  <option value="hungria">Hungría</option>
-                  <option value="india">India</option>
-                  <option value="indonesia">Indonesia</option>
-                  <option value="inglaterra">Inglaterra</option>
-                  <option value="irlanda">Irlanda</option>
-                  <option value="islaMauricio">Isla Mauricio</option>
-                  <option value="islandia">Islandia</option>
-                  <option value="israel">Israel</option>
-                  <option value="italia">Italia</option>
-                  <option value="jamaica">Jamaica</option>
-                  <option value="japon">Japón</option>
-                  <option value="jordania">Jordania</option>
-                  <option value="kenia">Kenia</option>
-                  <option value="kuwait">Kuwait</option>
-                  <option value="letonia">Letonia</option>
-                  <option value="libano">Libano</option>
-                  <option value="liberia">Liberia</option>
-                  <option value="libia">Libia</option>
-                  <option value="lituania">Lituania</option>
-                  <option value="luxemburgo">Luxemburgo</option>
-                  <option value="macedonia">Macedonia</option>
-                  <option value="malasia">Malasia</option>
-                  <option value="marruecos">Marruecos</option>
-                  <option value="mexico">México</option>
-                  <option value="moldova">Moldova</option>
-                  <option value="montenegro">Montenegro</option>
-                  <option value="namibia">Namibia</option>
-                  <option value="nepal">Nepal</option>
-                  <option value="nicaragua">Nicaragua</option>
-                  <option value="noruega">Noruega</option>
-                  <option value="nuevaZelanda">Nueva Zelanda</option>
-                  <option value="oman">Oman</option>
-                  <option value="pakistan">Pakistán</option>
-                  <option value="panama">Panamá</option>
-                  <option value="peru">Perú</option>
-                  <option value="polonia">Polonia</option>
-                  <option value="portugal">Portugal</option>
-                  <option value="qatar">Qatar</option>
-                  <option value="republicaCheca">República Checa</option>
-                  <option value="republicaDominicana">República Dominicana</option>
-                  <option value="ruanda">Ruanda</option>
-                  <option value="rumania">Rumania</option>
-                  <option value="rusia">Rusia</option>
-                  <option value="elSalvador">Salvador</option>
-                  <option value="servia">Servia</option>
-                  <option value="singapur">Singapur</option>
-                  <option value="somalia">Somalia</option>
-                  <option value="sudafrica">Sudafrica</option>
-                  <option value="suecia">Suecia</option>
-                  <option value="suiza">Suiza</option>
-                  <option value="sriLanka">Sri Lanka</option>
-                  <option value="tailandia">Tailandia</option>
-                  <option value="tanzania">Tanzania</option>
-                  <option value="trinidadYTobago">Trinidad y Tobago</option>
-                  <option value="tunez">Túnez</option>
-                  <option value="turquia">Turquía</option>
-                  <option value="ucrania">Ucrania</option>
-                  <option value="uganda">Uganda</option>
-                  <option value="uruguay">Uruguay</option>
-                  <option value="venezuela">Venezuela</option>
-                  <option value="vietnam">Vietnam</option>
-                  <option value="zimbabue">Zimbabue</option>
-                  </select>
+              <div class="country-announce-selector"> <input list="country-announce-list" id="country-announce" />
+                <datalist name="country-announce-list" id="country-announce-list">
+                  <option value="Albania" data-value="albania">
+                  <option value="Alemania" data-value="alemania">
+                  <option value="Arabia Saudita" data-value="arabiaSaudita">
+                  <option value="Argelia" data-value="argelia">
+                  <option value="Argentina" data-value="argentina">
+                  <option value="Armenia" data-value="armenia">
+                  <option value="Australia" data-value="australia">
+                  <option value="Austria" data-value="austria">
+                  <option value="Bahamas" data-value="bahamas">
+                  <option value="Bangladesh" data-value="bangladesh">
+                  <option value="Barein" data-value="barein">
+                  <option value="Bélgica" data-value="belgica">
+                  <option value="Belice" data-value="belice">
+                  <option value="Bolivia" data-value="bolivia">
+                  <option value="Brasil" data-value="brasil">
+                  <option value="Bulgaria" data-value="bulgaria">
+                  <option value="Camboya" data-value="camboya">
+                  <option value="Canadá" data-value="canada">
+                  <option value="Chile" data-value="chile">
+                  <option value="Colombia" data-value="colombia">
+                  <option value="Corea del Sur" data-value="coreaDelSur">
+                  <option value="Costa Rica" data-value="costaRica">
+                  <option value="Croacia" data-value="croacia">
+                  <option value="Dinamarca" data-value="dinamarca">
+                  <option value="Ecuador" data-value="ecuador">
+                  <option value="Egipto" data-value="egipto">
+                  <option value="Emiratos Arabes" data-value="emiratosArabes">
+                  <option value="España" data-value="espana">
+                  <option value="Eslovaquia" data-value="eslovaquia">
+                  <option value="Eslovenia" data-value="eslovenia">
+                  <option value="Estados Unidos" data-value="eeuu">
+                  <option value="Filipinas" data-value="filipinas">
+                  <option value="Finlandia" data-value="finlandia">
+                  <option value="Francia" data-value="francia">
+                  <option value="Grecia" data-value="grecia">
+                  <option value="Guyana" data-value="guyana">
+                  <option value="Holanda" data-value="holanda">
+                  <option value="Hungría" data-value="hungria">
+                  <option value="India" data-value="india">
+                  <option value="Indonesia" data-value="indonesia">
+                  <option value="Inglaterra" data-value="inglaterra">
+                  <option value="Irlanda" data-value="irlanda">
+                  <option value="Isla Mauricio" data-value="islaMauricio">
+                  <option value="Islandia" data-value="islandia">
+                  <option value="Israel" data-value="israel">
+                  <option value="Italia" data-value="italia">
+                  <option value="Jamaica" data-value="jamaica">
+                  <option value="Japón" data-value="japon">
+                  <option value="Jordania" data-value="jordania">
+                  <option value="Kenia" data-value="kenia">
+                  <option value="Kuwait" data-value="kuwait">
+                  <option value="Letonia" data-value="letonia">
+                  <option value="Libano" data-value="libano">
+                  <option value="Liberia" data-value="liberia">
+                  <option value="Libia" data-value="libia">
+                  <option value="Lituania" data-value="lituania">
+                  <option value="Luxemburgo" data-value="luxemburgo">
+                  <option value="Macedonia" data-value="macedonia">
+                  <option value="Malasia" data-value="malasia">
+                  <option value="Marruecos" data-value="marruecos">
+                  <option value="México" data-value="mexico">
+                  <option value="Moldova" data-value="moldova">
+                  <option value="Montenegro" data-value="montenegro">
+                  <option value="Namibia" data-value="namibia">
+                  <option value="Nepal" data-value="nepal">
+                  <option value="Nicaragua" data-value="nicaragua">
+                  <option value="Noruega" data-value="noruega">
+                  <option value="Nueva Zelanda" data-value="nuevaZelanda">
+                  <option value="Oman" data-value="oman">
+                  <option value="Pakistán" data-value="pakistan">
+                  <option value="Panamá" data-value="panama">
+                  <option value="Perú" data-value="peru">
+                  <option value="Polonia" data-value="polonia">
+                  <option value="Portugal" data-value="portugal">
+                  <option value="Qatar" data-value="qatar">
+                  <option value="República Checa" data-value="republicaCheca">
+                  <option value="República Dominicana" data-value="republicaDominicana">
+                  <option value="Ruanda" data-value="ruanda">
+                  <option value="Rumania" data-value="rumania">
+                  <option value="Rusia" data-value="rusia">
+                  <option value="Salvador" data-value="elSalvador">
+                  <option value="Servia" data-value="servia">
+                  <option value="Singapur" data-value="singapur">
+                  <option value="Somalia" data-value="somalia">
+                  <option value="Sudafrica" data-value="sudafrica">
+                  <option value="Suecia" data-value="suecia">
+                  <option value="Suiza" data-value="suiza">
+                  <option value="Sri Lanka" data-value="sriLanka">
+                  <option value="Tailandia" data-value="tailandia">
+                  <option value="Tanzania" data-value="tanzania">
+                  <option value="Trinidad y Tobago" data-value="trinidadYTobago">
+                  <option value="Túnez" data-value="tunez">
+                  <option value="Turquía" data-value="turquia">
+                  <option value="Ucrania" data-value="ucrania">
+                  <option value="Uganda" data-value="uganda">
+                  <option value="Uruguay" data-value="uruguay">
+                  <option value="Venezuela" data-value="venezuela">
+                  <option value="Vietnam" data-value="vietnam">
+                  <option value="Zimbabue" data-value="zimbabue">
+                </datalist>
+                <form> <button type="button" class="btn btn-outline-primary" id="add-country-announce"
+                    aria-label="Agregar país a la lista">Agregar país</button></form>
               </div>
               <div class="selected-country-announce" id="selected-country-announce"></div>
               <div id="country-selection-errors">
@@ -236,8 +226,8 @@
             </div>
             <div id="industry-ads-selector-container" class="industry-ads-selector-container"> <label
                 for="industry-ads-selector">Selecciona la categoría que más represente tu industria:</label>
-              <select class="form-select" id="industry-ads-selector">
-                <option value="" default>-</option>
+              <select name="industry-ads-selector" id="industry-ads-selector">
+                <option value="">-</option>
                 <option value="autos">Autos</option>
                 <option value="negocioANegocio">Negocio a negocio (B2B)</option>
                 <option value="serviciosAlConsumidor">Servicios al consumidor</option>
@@ -258,6 +248,17 @@
           </div>
           <div id="google-search-ads-extra-container" class="google-search-ads-extra-container">
             <h4 class="text-center info-extra-titles"><strong>Google Ads Red de Busquedas:</strong></h4>
+            <div class="google-search-plan-container"> <label for="google-search-plan">Selecciona tu plan:<select
+                  name="google-search-plan" id="google-search-ads-plan">
+                  <option value="basic">Básico</option>
+                  <option value="intermediate">Intermedio</option>
+                  <option value="advanced">Avanzado</option>
+                </select> </label>
+              <ul id="google-search-plan-details" style="list-style-type: circle !important;"><u>Incluye:</u>
+                <li>4hs de implementación (por única vez)</li>
+                <li>4hs de mantenimiento mensual</li>
+              </ul>
+            </div>
             <div id="investment-google-search-ads" class="investment-google-search-ads"> <label
                 for="investment-google-search-ads-value">Selecciona tus montos deseados de inversión:</label>
               <input type="number" placeholder="Ej: USD $ 100" name="investment-google-search-ads-value"
@@ -266,6 +267,17 @@
           </div>
           <div id="google-display-ads-extra-container" class="google-display-ads-extra-container">
             <h4 class="text-center info-extra-titles"><strong>Google Ads Red de Display:</strong></h4>
+            <div class="google-display-plan-container"> <label for="google-display-plan">Selecciona tu plan:<select
+                  name="google-display-plan" id="google-display-ads-plan">
+                  <option value="basic">Básico</option>
+                  <option value="intermediate">Intermedio</option>
+                  <option value="advanced">Avanzado</option>
+                </select> </label>
+              <ul id="google-display-plan-details" style="list-style-type: circle !important;"><u>Incluye:</u>
+                <li>4hs de implementación (por única vez)</li>
+                <li>4hs de mantenimiento mensual</li>
+              </ul>
+            </div>
             <div id="investment-google-display-ads" class="investment-google-display-ads"> <label
                 for="investment-google-display-ads-value">Selecciona tus montos deseados de inversión:</label>
               <input type="number" placeholder="Ej: USD $ 100" name="investment-google-display-ads-value"
@@ -274,13 +286,115 @@
           </div>
           <div id="facebook-ads-extra-container" class="facebook-ads-extra-container">
             <h4 class="text-center info-extra-titles"><strong>Facebook Ads:</strong></h4>
+            <div class="facebook-plan-container"> <label for="facebook-ads-plan">Selecciona tu plan:<select
+                  name="facebook-ads-plan" id="facebook-ads-plan">
+                  <option value="basic">Básico</option>
+                  <option value="intermediate">Intermedio</option>
+                  <option value="advanced">Avanzado</option>
+                </select> </label>
+              <ul id="facebook-ads-plan-details" style="list-style-type: circle !important;"><u>Incluye:</u>
+                <li>4hs de implementación (por única vez)</li>
+                <li>4hs de mantenimiento mensual</li>
+              </ul>
+            </div>
             <div id="investment-facebook-ads" class="investment-facebook-ads"> <label
                 for="investment-facebook-ads-value">Selecciona tus montos deseados de inversión:</label> <input
                 type="number" placeholder="Ej: USD $ 100" name="investment-facebook-ads-value"
                 id="investment-facebook-ads-value"></div>
           </div>
+          <div class="community-management-extra-container" id="community-management-extra-container">
+            <h4 class="text-center info-extra-titles"><strong>Gestión de Redes Sociales:</strong></h4>
+            <div class="community-management-plan-container"> <label for="community-management-plan">Selecciona tu
+                plan:<select name="community-management-plan" id="community-management-plan">
+                  <option value="basic">Básico</option>
+                  <option value="intermediate">Intermedio</option>
+                  <option value="advanced">Avanzado</option>
+                </select> </label>
+              <ul id="community-management-plan-details" style="list-style-type: circle !important;">
+                <u>Incluye:</u>
+                <li>2hs de implementación (por única vez)</li>
+                <li>8hs de mantenimiento mensual</li>
+              </ul>
+            </div>
+          </div>
+          <div class="seo-extra-container" id="seo-extra-container">
+            <h4 class="text-center info-extra-titles"><strong>SEO:</strong></h4>
+            <div class="seo-plan-container"> <label for="seo-plan">Selecciona tu plan:<select name="seo-plan"
+                  id="seo-plan">
+                  <option value="basic">Básico</option>
+                  <option value="intermediate">Intermedio</option>
+                  <option value="advanced">Avanzado</option>
+                </select> </label>
+              <ul id="seo-plan-details" style="list-style-type: circle !important;"><u>Incluye:</u>
+                <li>4hs de implementación (por única vez)</li>
+                <li>8hs de mantenimiento mensual</li>
+              </ul>
+            </div>
+          </div>
+          <div class="conversion-web-extra-container" id="conversion-web-extra-container">
+            <h4 class="text-center info-extra-titles"><strong>Optimización de tasa de conversion web:</strong></h4>
+            <div class="conversion-web-plan-container"> <label for="conversion-web-plan">Selecciona tu plan:<select
+                  name="conversion-web-plan" id="conversion-web-plan">
+                  <option value="basic">Básico</option>
+                  <option value="intermediate">Intermedio</option>
+                  <option value="advanced">Avanzado</option>
+                </select> </label>
+              <ul id="conversion-web-plan-details" style="list-style-type: circle !important;"><u>Incluye:</u>
+                <li>4hs de implementación (por única vez)</li>
+                <li>4hs de mantenimiento mensual</li>
+              </ul>
+            </div>
+          </div>
+          <div class="email-marketing-extra-container" id="email-marketing-extra-container">
+            <h4 class="text-center info-extra-titles"><strong>Email Marketing:</strong></h4>
+            <div class="email-plan-container"> <label for="email-marketing-plan">Selecciona tu plan:<select
+                  name="email-marketing-plan" id="email-marketing-plan">
+                  <option value="basic">Básico</option>
+                  <option value="intermediate">Intermedio</option>
+                  <option value="advanced">Avanzado</option>
+                </select> </label>
+              <ul id="email-marketing-plan-details" style="list-style-type: circle !important;"><u>Incluye:</u>
+                <li>1 Envio mensual (2hs de mantenimiento)</li>
+              </ul>
+            </div>
+            <div class="email-ammount-container"> <label for="email-ammount">Selecciona la cantidad deseada de
+                contactos para tus campañas, se estimará el costo mensual de la plataforma de envíos:</label>
+              <select name="email-ammount" id="email-ammount">
+                <option value="">-</option>
+                <option value="12">1.000</option>
+                <option value="25">2.500</option>
+                <option value="44">5.000</option>
+                <option value="54">7.500</option>
+                <option value="65">10.000</option>
+                <option value="83">15.000</option>
+                <option value="101">20.000</option>
+                <option value="119">25.000</option>
+                <option value="137">30.000</option>
+                <option value="155">35.000</option>
+                <option value="173">40.000</option>
+                <option value="191">45.000</option>
+                <option value="210">50.000</option>
+                <option value="229">55.000</option>
+                <option value="248">60.000</option>
+                <option value="267">65.000</option>
+                <option value="286">70.000</option>
+                <option value="305">75.000</option>
+                <option value="324">80.000</option>
+                <option value="343">85.000</option>
+                <option value="362">90.000</option>
+                <option value="381">95.000</option>
+                <option value="400">100.000</option>
+              </select>
+            </div>
+          </div>
+          <div class="email-customer-container"> <label for="fields[3]">Ingresá tu email para ver los
+              resultados:</label> <!-- Optin - Inicio -->
+            <div id="optin-okXxFSTU" data-type="inline"></div>
+            <script type="text/javascript" src="https://optin.myperfit.com/res/js/digitalnow/okXxFSTU.js"></script>
+            <!-- Optin - Fin -->
+          </div>
         </div>
-        <p id="error-messages" class="error-messages" style="padding-top: 15px; padding-bottom: 15px;"></p>
+        <p id="error-messages" class="error-messages" style="margin-top: 15px;"></p>
         <div class="d-flex mb-2 justify-content-center">
           <button type="submit" class="calculateButton btn-secondary" id="calculateButton"
             aria-label="Calcular resultados"><i class="fas fa-calculator"></i> Calcular</button>
@@ -309,8 +423,8 @@
               <div class="card-header results-collapsible result-category-titles" id="headingMonthlyTotals"
                 data-toggle="collapse" data-target="#collapseMonthlyTotals" aria-expanded="false"
                 aria-controls="collapseMonthlyTotals">
-                <h3 class="titlesCollapse"><i class="iconsToRotate fas fa-angle-double-down"></i>
-                  <p class="paragraphTitlesCollapse"><u>Resultados <span id="results-conversions-selected"></span> por mes:</u> <strong
+                <h3 class="titlesCollapse"> <i class="iconsToRotate fas fa-angle-double-down"></i>
+                  <p><u>Resultados <span id="results-conversions-selected"></span> por mes:</u> <strong
                       id="total-conversions"></strong> conversiones totales</p>
                   <p class="seeDetailsMsg"><i class="far fa-hand-pointer"></i> Click para ver más...</p>
                 </h3>
@@ -324,8 +438,8 @@
                         <div class="card-header results-collapsible result-service-titles" id="headingGSAds"
                           data-toggle="collapse" data-target="#collapseGSAds" aria-expanded="false"
                           aria-controls="collapseGSAds">
-                          <h4 class="titlesCollapse"><i class="iconsToRotate fas fa-angle-down"></i>
-                            <p class="paragraphTitlesCollapse"><u><strong>Google Ads Red de Busquedas:</strong></u>
+                          <h4 class="titlesCollapse"> <i class="iconsToRotate fas fa-angle-down"></i>
+                            <p><u><strong>Google Ads Red de Busquedas:</strong></u>
                               <nobr> <span id="google-search-ads-conversions"></span> </nobr>
                             </p>
                             <p class="seeDetailsMsg"><i class="far fa-hand-pointer"></i> Click para
@@ -347,8 +461,8 @@
                         <div class="card-header results-collapsible result-service-titles" id="headingGDAds"
                           data-toggle="collapse" data-target="#collapseGDAds" aria-expanded="false"
                           aria-controls="collapseGDAds">
-                          <h4 class="titlesCollapse"><i class="iconsToRotate fas fa-angle-down"></i>
-                            <p class="paragraphTitlesCollapse"><u><strong>Google Ads Red de Display:</strong></u>
+                          <h4 class="titlesCollapse"> <i class="iconsToRotate fas fa-angle-down"></i>
+                            <p><u><strong>Google Ads Red de Display:</strong></u>
                               <nobr> <span id="google-display-ads-conversions"></span> </nobr>
                             </p>
                             <p class="seeDetailsMsg"><i class="far fa-hand-pointer"></i> Click para
@@ -370,8 +484,8 @@
                         <div class="card-header results-collapsible result-service-titles" id="headingFbAds"
                           data-toggle="collapse" data-target="#collapseFbAds" aria-expanded="false"
                           aria-controls="collapseFbAds">
-                          <h4 class="titlesCollapse"><i class="iconsToRotate fas fa-angle-down"></i>
-                            <p class="paragraphTitlesCollapse"><u><strong>Facebook Ads:</strong></u>
+                          <h4 class="titlesCollapse"> <i class="iconsToRotate fas fa-angle-down"></i>
+                            <p><u><strong>Facebook Ads:</strong></u>
                               <nobr> <span id="facebook-ads-conversions"></span> </nobr>
                             </p>
                             <p class="seeDetailsMsg"><i class="far fa-hand-pointer"></i> Click para
@@ -398,8 +512,8 @@
             <div class="card">
               <div class="card-header results-collapsible result-category-titles" id="headingOne" data-toggle="collapse"
                 data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
-                <h3 class="titlesCollapse"><i class="iconsToRotate fas fa-angle-double-down"></i>
-                  <p class="paragraphTitlesCollapse"><u>Costo de servicios de implementación (1 vez):</u>
+                <h3 class="titlesCollapse"> <i class="iconsToRotate fas fa-angle-double-down"></i>
+                  <p><u>Costo de servicios de implementación (1 vez):</u>
                     <nobr> <span id="result-implementation-fee"></span> </nobr>
                   </p>
                   <p class="seeDetailsMsg"><i class="far fa-hand-pointer"></i> Click para ver más...</p>
@@ -414,8 +528,8 @@
                           id="heading-implementation-conversionWeb" data-toggle="collapse"
                           data-target="#collapse-implementation-conversionWeb" aria-expanded="false"
                           aria-controls="collapse-implementation-conversionWeb">
-                          <h4 class="titlesCollapse"><i class="iconsToRotate fas fa-angle-down"></i>
-                            <p id="title-implementation-conversionWeb" class="paragraphTitlesCollapse"></p>
+                          <h4 class="titlesCollapse"> <i class="iconsToRotate fas fa-angle-down"></i>
+                            <p id="title-implementation-conversionWeb"></p>
                             <p class="seeDetailsMsg"><i class="far fa-hand-pointer"></i> Click para
                               ver más...</p>
                           </h4>
@@ -430,6 +544,51 @@
                       </div>
                     </div>
                   </div>
+                  <div id="result-implementation-seo-container" style="display: none">
+                    <div id="accordion-implementation-seo">
+                      <div class="card">
+                        <div class="card-header results-collapsible result-service-titles"
+                          id="heading-implementation-seo" data-toggle="collapse"
+                          data-target="#collapse-implementation-seo" aria-expanded="false"
+                          aria-controls="collapse-implementation-seo">
+                          <h4 class="titlesCollapse"> <i class="iconsToRotate fas fa-angle-down"></i>
+                            <p id="title-implementation-seo"></p>
+                            <p class="seeDetailsMsg"><i class="far fa-hand-pointer"></i> Click para
+                              ver más...</p>
+                          </h4>
+                        </div>
+                        <div id="collapse-implementation-seo" class="collapse"
+                          aria-labelledby="heading-implementation-seo" data-parent="#accordion-implementation-seo">
+                          <div class="card-body">
+                            <div id="result-implementation-seo"></div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div id="result-implementation-communityManagement-container" style="display: none">
+                    <div id="accordion-implementation-communityManagement">
+                      <div class="card">
+                        <div class="card-header results-collapsible result-service-titles"
+                          id="heading-implementation-communityManagement" data-toggle="collapse"
+                          data-target="#collapse-implementation-communityManagement" aria-expanded="false"
+                          aria-controls="collapse-implementation-communityManagement">
+                          <h4 class="titlesCollapse"> <i class="iconsToRotate fas fa-angle-down"></i>
+                            <p id="title-implementation-communityManagement"></p>
+                            <p class="seeDetailsMsg"><i class="far fa-hand-pointer"></i> Click para
+                              ver más...</p>
+                          </h4>
+                        </div>
+                        <div id="collapse-implementation-communityManagement" class="collapse"
+                          aria-labelledby="heading-implementation-communityManagement"
+                          data-parent="#accordion-implementation-communityManagement">
+                          <div class="card-body">
+                            <div id="result-implementation-communityManagement"></div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                   <div id="result-implementation-googleSearchAds-container" style="display: none">
                     <div id="accordion-implementation-googleSearchAds">
                       <div class="card">
@@ -437,8 +596,8 @@
                           id="heading-implementation-googleSearchAds" data-toggle="collapse"
                           data-target="#collapse-implementation-googleSearchAds" aria-expanded="false"
                           aria-controls="collapse-implementation-googleSearchAds">
-                          <h4 class="titlesCollapse"><i class="iconsToRotate fas fa-angle-down"></i>
-                            <p id="title-implementation-googleSearchAds" class="paragraphTitlesCollapse"></p>
+                          <h4 class="titlesCollapse"> <i class="iconsToRotate fas fa-angle-down"></i>
+                            <p id="title-implementation-googleSearchAds"></p>
                             <p class="seeDetailsMsg"><i class="far fa-hand-pointer"></i> Click para
                               ver más...</p>
                           </h4>
@@ -460,8 +619,8 @@
                           id="heading-implementation-googleDisplayAds" data-toggle="collapse"
                           data-target="#collapse-implementation-googleDisplayAds" aria-expanded="false"
                           aria-controls="collapse-implementation-googleDisplayAds">
-                          <h4 class="titlesCollapse"><i class="iconsToRotate fas fa-angle-down"></i>
-                            <p id="title-implementation-googleDisplayAds" class="paragraphTitlesCollapse"></p>
+                          <h4 class="titlesCollapse"> <i class="iconsToRotate fas fa-angle-down"></i>
+                            <p id="title-implementation-googleDisplayAds"></p>
                             <p class="seeDetailsMsg"><i class="far fa-hand-pointer"></i> Click para
                               ver más...</p>
                           </h4>
@@ -483,8 +642,8 @@
                           id="heading-implementation-facebookAds" data-toggle="collapse"
                           data-target="#collapse-implementation-facebookAds" aria-expanded="false"
                           aria-controls="collapse-implementation-facebookAds">
-                          <h4 class="titlesCollapse"><i class="iconsToRotate fas fa-angle-down"></i>
-                            <p id="title-implementation-facebookAds" class="paragraphTitlesCollapse"></p>
+                          <h4 class="titlesCollapse"> <i class="iconsToRotate fas fa-angle-down"></i>
+                            <p id="title-implementation-facebookAds"></p>
                             <p class="seeDetailsMsg"><i class="far fa-hand-pointer"></i> Click para
                               ver más...</p>
                           </h4>
@@ -506,8 +665,8 @@
                           id="heading-implementation-landingPage" data-toggle="collapse"
                           data-target="#collapse-implementation-landingPage" aria-expanded="false"
                           aria-controls="collapse-implementation-landingPage">
-                          <h4 class="titlesCollapse"><i class="iconsToRotate fas fa-angle-down"></i>
-                            <p id="title-implementation-landingPage" class="paragraphTitlesCollapse"></p>
+                          <h4 class="titlesCollapse"> <i class="iconsToRotate fas fa-angle-down"></i>
+                            <p id="title-implementation-landingPage"></p>
                             <p class="seeDetailsMsg"><i class="far fa-hand-pointer"></i> Click para
                               ver más...</p>
                           </h4>
@@ -529,8 +688,8 @@
                           id="heading-implementation-wordpress" data-toggle="collapse"
                           data-target="#collapse-implementation-wordpress" aria-expanded="false"
                           aria-controls="collapse-implementation-wordpress">
-                          <h4 class="titlesCollapse"><i class="iconsToRotate fas fa-angle-down"></i>
-                            <p id="title-implementation-wordpress" class="paragraphTitlesCollapse"></p>
+                          <h4 class="titlesCollapse"> <i class="iconsToRotate fas fa-angle-down"></i>
+                            <p id="title-implementation-wordpress"></p>
                             <p class="seeDetailsMsg"><i class="far fa-hand-pointer"></i> Click para
                               ver más...</p>
                           </h4>
@@ -552,8 +711,8 @@
                           id="heading-implementation-customWebsite" data-toggle="collapse"
                           data-target="#collapse-implementation-customWebsite" aria-expanded="false"
                           aria-controls="collapse-implementation-customWebsite">
-                          <h4 class="titlesCollapse"><i class="iconsToRotate fas fa-angle-down"></i>
-                            <p id="title-implementation-customWebsite" class="paragraphTitlesCollapse"></p>
+                          <h4 class="titlesCollapse"> <i class="iconsToRotate fas fa-angle-down"></i>
+                            <p id="title-implementation-customWebsite"></p>
                             <p class="seeDetailsMsg"><i class="far fa-hand-pointer"></i> Click para
                               ver más...</p>
                           </h4>
@@ -575,8 +734,8 @@
                           id="heading-implementation-ecommerceWeb" data-toggle="collapse"
                           data-target="#collapse-implementation-ecommerceWeb" aria-expanded="false"
                           aria-controls="collapse-implementation-ecommerceWeb">
-                          <h4 class="titlesCollapse"><i class="iconsToRotate fas fa-angle-down"></i>
-                            <p id="title-implementation-ecommerceWeb" class="paragraphTitlesCollapse"></p>
+                          <h4 class="titlesCollapse"> <i class="iconsToRotate fas fa-angle-down"></i>
+                            <p id="title-implementation-ecommerceWeb"></p>
                             <p class="seeDetailsMsg"><i class="far fa-hand-pointer"></i> Click para
                               ver más...</p>
                           </h4>
@@ -598,8 +757,8 @@
                           id="heading-implementation-logoYMarca" data-toggle="collapse"
                           data-target="#collapse-implementation-logoYmarca" aria-expanded="false"
                           aria-controls="collapse-implementation-logoYmarca">
-                          <h4 class="titlesCollapse"><i class="iconsToRotate fas fa-angle-down"></i>
-                            <p id="title-implementation-logoYMarca" class="paragraphTitlesCollapse"></p>
+                          <h4 class="titlesCollapse"> <i class="iconsToRotate fas fa-angle-down"></i>
+                            <p id="title-implementation-logoYMarca"></p>
                             <p class="seeDetailsMsg"><i class="far fa-hand-pointer"></i> Click para
                               ver más...</p>
                           </h4>
@@ -624,8 +783,8 @@
             <div class="card">
               <div class="card-header results-collapsible result-category-titles" id="headingTwo" data-toggle="collapse"
                 data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                <h3 class="titlesCollapse"><i class="iconsToRotate fas fa-angle-double-down"></i>
-                  <p class="paragraphTitlesCollapse"><u>Costo mensual de servicios de mantenimiento:</u>
+                <h3 class="titlesCollapse"> <i class="iconsToRotate fas fa-angle-double-down"></i>
+                  <p><u>Costo mensual de servicios de mantenimiento:</u>
                     <nobr> <span id="result-maintenance-fee"></span> </nobr>
                   </p>
                   <p class="seeDetailsMsg"><i class="far fa-hand-pointer"></i> Click para ver más...</p>
@@ -633,6 +792,28 @@
               </div>
               <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionTwo">
                 <div class="card-body">
+                  <div id="result-maintenance-email-container" style="display: none">
+                    <div id="accordion-maintenance-email">
+                      <div class="card">
+                        <div class="card-header results-collapsible result-service-titles"
+                          id="heading-maintenance-email" data-toggle="collapse"
+                          data-target="#collapse-maintenance-email" aria-expanded="false"
+                          aria-controls="collapse-maintenance-email">
+                          <h4 class="titlesCollapse"> <i class="iconsToRotate fas fa-angle-down"></i>
+                            <p id="title-maintenance-email"></p>
+                            <p class="seeDetailsMsg"><i class="far fa-hand-pointer"></i> Click para
+                              ver más...</p>
+                          </h4>
+                        </div>
+                        <div id="collapse-maintenance-email" class="collapse"
+                          aria-labelledby="heading-maintenance-email" data-parent="#accordion-maintenance-email">
+                          <div class="card-body">
+                            <div id="result-maintenance-email"></div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                   <div id="result-maintenance-conversionWeb-container" style="display: none">
                     <div id="accordion-maintenance-conversionWeb">
                       <div class="card">
@@ -640,8 +821,8 @@
                           id="heading-maintenance-conversionWeb" data-toggle="collapse"
                           data-target="#collapse-maintenance-conversionWeb" aria-expanded="false"
                           aria-controls="collapse-maintenance-conversionWeb">
-                          <h4 class="titlesCollapse"><i class="iconsToRotate fas fa-angle-down"></i>
-                            <p id="title-maintenance-conversionWeb" class="paragraphTitlesCollapse"></p>
+                          <h4 class="titlesCollapse"> <i class="iconsToRotate fas fa-angle-down"></i>
+                            <p id="title-maintenance-conversionWeb"></p>
                             <p class="seeDetailsMsg"><i class="far fa-hand-pointer"></i> Click para
                               ver más...</p>
                           </h4>
@@ -656,6 +837,50 @@
                       </div>
                     </div>
                   </div>
+                  <div id="result-maintenance-seo-container" style="display: none">
+                    <div id="accordion-maintenance-seo">
+                      <div class="card">
+                        <div class="card-header results-collapsible result-service-titles" id="heading-maintenance-seo"
+                          data-toggle="collapse" data-target="#collapse-maintenance-seo" aria-expanded="false"
+                          aria-controls="collapse-maintenance-seo">
+                          <h4 class="titlesCollapse"> <i class="iconsToRotate fas fa-angle-down"></i>
+                            <p id="title-maintenance-seo"></p>
+                            <p class="seeDetailsMsg"><i class="far fa-hand-pointer"></i> Click para
+                              ver más...</p>
+                          </h4>
+                        </div>
+                        <div id="collapse-maintenance-seo" class="collapse" aria-labelledby="heading-maintenance-seo"
+                          data-parent="#accordion-maintenance-seo">
+                          <div class="card-body">
+                            <div id="result-maintenance-seo"></div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div id="result-maintenance-communityManagement-container" style="display: none">
+                    <div id="accordion-maintenance-communityManagement">
+                      <div class="card">
+                        <div class="card-header results-collapsible result-service-titles"
+                          id="heading-maintenance-communityManagement" data-toggle="collapse"
+                          data-target="#collapse-maintenance-communityManagement" aria-expanded="false"
+                          aria-controls="collapse-maintenance-communityManagement">
+                          <h4 class="titlesCollapse"> <i class="iconsToRotate fas fa-angle-down"></i>
+                            <p id="title-maintenance-communityManagement"></p>
+                            <p class="seeDetailsMsg"><i class="far fa-hand-pointer"></i> Click para
+                              ver más...</p>
+                          </h4>
+                        </div>
+                        <div id="collapse-maintenance-communityManagement" class="collapse"
+                          aria-labelledby="heading-maintenance-communityManagement"
+                          data-parent="#accordion-maintenance-communityManagement">
+                          <div class="card-body">
+                            <div id="result-maintenance-communityManagement"></div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                   <div id="result-maintenance-googleSearchAds-container" style="display: none">
                     <div id="accordion-maintenance-googleSearchAds">
                       <div class="card">
@@ -663,8 +888,8 @@
                           id="heading-maintenance-googleSearchAds" data-toggle="collapse"
                           data-target="#collapse-maintenance-googleSearchAds" aria-expanded="false"
                           aria-controls="collapse-maintenance-googleSearchAds">
-                          <h4 class="titlesCollapse"><i class="iconsToRotate fas fa-angle-down"></i>
-                            <p id="title-maintenance-googleSearchAds" class="paragraphTitlesCollapse"></p>
+                          <h4 class="titlesCollapse"> <i class="iconsToRotate fas fa-angle-down"></i>
+                            <p id="title-maintenance-googleSearchAds"></p>
                             <p class="seeDetailsMsg"><i class="far fa-hand-pointer"></i> Click para
                               ver más...</p>
                           </h4>
@@ -686,8 +911,8 @@
                           id="heading-maintenance-googleDisplayAds" data-toggle="collapse"
                           data-target="#collapse-maintenance-googleDisplayAds" aria-expanded="false"
                           aria-controls="collapse-maintenance-googleDisplayAds">
-                          <h4 class="titlesCollapse"><i class="iconsToRotate fas fa-angle-down"></i>
-                            <p id="title-maintenance-googleDisplayAds" class="paragraphTitlesCollapse"></p>
+                          <h4 class="titlesCollapse"> <i class="iconsToRotate fas fa-angle-down"></i>
+                            <p id="title-maintenance-googleDisplayAds"></p>
                             <p class="seeDetailsMsg"><i class="far fa-hand-pointer"></i> Click para
                               ver más...</p>
                           </h4>
@@ -709,8 +934,8 @@
                           id="heading-maintenance-facebookAds" data-toggle="collapse"
                           data-target="#collapse-maintenance-facebookAds" aria-expanded="false"
                           aria-controls="collapse-maintenance-facebookAds">
-                          <h4 class="titlesCollapse"><i class="iconsToRotate fas fa-angle-down"></i>
-                            <p id="title-maintenance-facebookAds" class="paragraphTitlesCollapse"></p>
+                          <h4 class="titlesCollapse"> <i class="iconsToRotate fas fa-angle-down"></i>
+                            <p id="title-maintenance-facebookAds"></p>
                             <p class="seeDetailsMsg"><i class="far fa-hand-pointer"></i> Click para
                               ver más...</p>
                           </h4>
@@ -732,8 +957,8 @@
                           id="heading-maintenance-landingPage" data-toggle="collapse"
                           data-target="#collapse-maintenance-landingPage" aria-expanded="false"
                           aria-controls="collapse-maintenance-landingPage">
-                          <h4 class="titlesCollapse"><i class="iconsToRotate fas fa-angle-down"></i>
-                            <p id="title-maintenance-landingPage" class="paragraphTitlesCollapse"></p>
+                          <h4 class="titlesCollapse"> <i class="iconsToRotate fas fa-angle-down"></i>
+                            <p id="title-maintenance-landingPage"></p>
                             <p class="seeDetailsMsg"><i class="far fa-hand-pointer"></i> Click para
                               ver más...</p>
                           </h4>
@@ -755,8 +980,8 @@
                           id="heading-maintenance-wordpress" data-toggle="collapse"
                           data-target="#collapse-maintenance-wordpress" aria-expanded="false"
                           aria-controls="collapse-maintenance-wordpress">
-                          <h4 class="titlesCollapse"><i class="iconsToRotate fas fa-angle-down"></i>
-                            <p id="title-maintenance-wordpress" class="paragraphTitlesCollapse"></p>
+                          <h4 class="titlesCollapse"> <i class="iconsToRotate fas fa-angle-down"></i>
+                            <p id="title-maintenance-wordpress"></p>
                             <p class="seeDetailsMsg"><i class="far fa-hand-pointer"></i> Click para
                               ver más...</p>
                           </h4>
@@ -778,8 +1003,8 @@
                           id="heading-maintenance-customWebsite" data-toggle="collapse"
                           data-target="#collapse-maintenance-customWebsite" aria-expanded="false"
                           aria-controls="collapse-maintenance-customWebsite">
-                          <h4 class="titlesCollapse"><i class="iconsToRotate fas fa-angle-down"></i>
-                            <p id="title-maintenance-customWebsite" class="paragraphTitlesCollapse"></p>
+                          <h4 class="titlesCollapse"> <i class="iconsToRotate fas fa-angle-down"></i>
+                            <p id="title-maintenance-customWebsite"></p>
                             <p class="seeDetailsMsg"><i class="far fa-hand-pointer"></i> Click para
                               ver más...</p>
                           </h4>
@@ -801,8 +1026,8 @@
                           id="heading-maintenance-ecommerceWeb" data-toggle="collapse"
                           data-target="#collapse-maintenance-ecommerceWeb" aria-expanded="false"
                           aria-controls="collapse-maintenance-ecommerceWeb">
-                          <h4 class="titlesCollapse"><i class="iconsToRotate fas fa-angle-down"></i>
-                            <p id="title-maintenance-ecommerceWeb" class="paragraphTitlesCollapse"></p>
+                          <h4 class="titlesCollapse"> <i class="iconsToRotate fas fa-angle-down"></i>
+                            <p id="title-maintenance-ecommerceWeb"></p>
                             <p class="seeDetailsMsg"><i class="far fa-hand-pointer"></i> Click para
                               ver más...</p>
                           </h4>
@@ -824,8 +1049,8 @@
                           id="heading-maintenance-logoYMarca" data-toggle="collapse"
                           data-target="#collapse-maintenance-logoYmarca" aria-expanded="false"
                           aria-controls="collapse-maintenance-logoYmarca">
-                          <h4 class="titlesCollapse"><i class="iconsToRotate fas fa-angle-down"></i>
-                            <p id="title-maintenance-logoYMarca" class="paragraphTitlesCollapse"></p>
+                          <h4 class="titlesCollapse"> <i class="iconsToRotate fas fa-angle-down"></i>
+                            <p id="title-maintenance-logoYMarca"></p>
                             <p class="seeDetailsMsg"><i class="far fa-hand-pointer"></i> Click para
                               ver más...</p>
                           </h4>
@@ -850,8 +1075,8 @@
             <div class="card">
               <div class="card-header results-collapsible result-category-titles" id="headingThree"
                 data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                <h3 class="titlesCollapse"><i class="iconsToRotate fas fa-angle-double-down"></i>
-                  <p class="paragraphTitlesCollapse"><u>Costo mensual de inversión<span id="results-investments-selected"></span>:</u>
+                <h3 class="titlesCollapse"> <i class="iconsToRotate fas fa-angle-double-down"></i>
+                  <p><u>Costo mensual de inversión <span id="results-investments-selected"></span>:</u>
                     <nobr> <span id="result-investments-monthly"></span> </nobr>
                   </p>
                   <p class="seeDetailsMsg"><i class="far fa-hand-pointer"></i> Click para ver más...</p>
@@ -867,10 +1092,10 @@
         </div>
         <div id="result-monthly-total-container" class="result-monthly-total-container">
           <div class="checkContainer" id="headingFour">
-            <h2 class="titlesCollapse"><i class="iconCheck fas fa-check"></i><p id="implementation-cost-message"
-                style="display: none;" class="paragraphTitlesCollapse"><u>Costo total de servicios de implementación (1 vez):</u><strong>
+            <h2 class="titlesCollapse"><i class="iconCheck fas fa-check"></i><span id="implementation-cost-message"
+                style="display: none;"><u>Costo total de servicios de implementación (1 vez):</u><strong>
                   <nobr><span id="implementation-cost-total" style="display: none;"></span></nobr>
-                </strong></p> <span id="monthly-total-cost-message"><u>Costo total mensual <span
+                </strong></span> <span id="monthly-total-cost-message"><u>Costo total mensual <span
                     id="results-monthly-total-selected" style="padding: 0px;"></span>:</u> <strong>
                   <nobr> <span id="result-monthly-total"></span></nobr>
                 </strong></span></h2>
@@ -901,38 +1126,42 @@
                 <p class="card-text" style="text-align: start;">Usando este cotizador online vas a poder estimar
                   lo siguiente:</p>
                 <ul style="list-style-type: circle !important; text-align: start;">
-                  <li>Precio de tus proveedores de servicios de marketing digital según el país, según el tipo de
-                    servicio (Gestión de campañas de Google Ads y Facebook Ads, optimización de la tasa de conversión y
-                    diseño web).</li>
+                  <li>Precio de tus proveedores de servicios de marketing digital según el país, según el tipo
+                    de servicio (Gestión de Google Ads, SEO, Gestión de Redes Sociales, etc.) y según el
+                    tipo de plan (Básico, Intermedio, Avanzado).</li>
                   <li>Precio de Google Ads y Facebook Ads: Cuánto cuesta y qué resultados podés obtener en
                     términos de ventas, consultas, u alguna otra acción en tu web (Conversiones).</li>
                 </ul>
               </div>
               <div class="tab-pane fade" id="info" role="tabpanel" aria-labelledby="info-tab">
                 <h2 class="info-extra-bottom-card-titles">Precios de servicios de Marketing Digital:</h2>
-                <p class="card-text" style="text-align: start;">El cotizador hace un llamado a la API de la plataforma
-                  <a href="https://www.freelancer.com/" target="_blank" rel="noreferrer noopener">freelancer.com</a> y
-                  usa el precio por hora promedio de 100 freelancers (O todos los que haya si no llegan
-                  a 100) disponibles en la plataforma freelancer.com para cada país (27 países) para los siguientes
-                  skills (Filtros de la plataforma):
-                </p>
+                <p class="card-text" style="text-align: start;">El cotizador usa el precio por hora promedio de
+                  todos los freelancers disponibles en la plataforma <a href="https://www.upwork.com/" target="_blank"
+                    rel="noreferrer noopener">Upwork</a> para cada país (13 países) para los
+                  siguientes skills:</p>
                 <ul style="text-align: start; list-style-type: circle !important;">
                   <li>Analista de Marketing Digital</li>
+                  <li>Analista SEO</li>
+                  <li>Community Manager</li>
+                  <li>Redactor</li>
                   <li>Diseñador Web UX / UI</li>
                   <li>Diseñador Gráfico</li>
+                  <li>Programador</li>
+                  <li>Editor de Video</li>
                 </ul>
-                <p class="card-text" style="text-align: start;">Teniendo en cuenta estos precios por hora, el cotizador
-                  calcula el precio de tu plan, teniendo en cuenta cuántas horas hacen falta de cada skill para ejecutar
-                  el plan. La cantidad de horas de cada skill es lo que consideramos en Digital Now que hace
-                  falta.<br><br>Por ejemplo, para el mantenimiento de un plan de gestión de Facebook Ads consideramos
-                  que hacen faltan las siguientes horas de los siguientes skills:<br>
-                <ul>
-                  <li style="list-style-type: none;">- 4 horas de Analista de Marketing Digital a 16.73 USD la hora</li>
-                  <li style="list-style-type: none;">- 2 horas de Diseñador Gráfico a 19.90 USD la hora</li>
-                  <li style="list-style-type: none;">Costo mensual de servicios de mantenimiento = 4 * 16.73 + 2 * 19.90
-                    = US $ 107</li>
-                </ul>
-                </p>
+                <p class="card-text" style="text-align: start;">Teniendo en cuenta estos precios por hora, el
+                  cotizador calcula el precio de tu plan, teniendo en cuenta cuántas horas hacen falta de cada
+                  skill para ejecutar el plan. La cantidad de horas de cada skill es lo que consideramos en
+                  Digital Now que hace falta.<br><br>Por ejemplo, para un plan de Gestión de Redes Sociales
+                  intermedio consideramos que hacen falta los siguientes skills que le dediquen esta cantidad
+                  de tiempo por mes:<br><br><i>- 8 horas de Community Manager a 16 USD la hora <small>(Precio
+                      promedio de freelancers que dan el servicio de Gestión de Redes Sociales de
+                      Argentina)</small><br><br>- 10 horas de Diseñador Gráfico a 27 USD la hora
+                    <small>(Precio promedio de freelancers que dan el servicio de Diseño Gráfico de
+                      Argentina)</small><br><br>- 2 horas de Editor de video a 20 USD la hora
+                    <small>(Precio promedio de freelancers que dan el servicio de Edición de video de
+                      Argentina)</small><br><br>Precio mensual del plan=8 * 16 + 10 * 27 + 2 * 20=US $
+                    438</i></p>
               </div>
               <div class="tab-pane fade" id="statistics" role="tabpanel" aria-labelledby="statistics-tab">
                 <h2 class="info-extra-bottom-card-titles">Precio de Google Ads y Facebook Ads:</h2>
