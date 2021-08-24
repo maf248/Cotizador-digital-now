@@ -11,18 +11,16 @@ Base realizada en Node.js con Express. Utilizando herramientas front-end para ad
 - Google Ads Search
 - Google Ads Display
 - Facebook Ads
+- Email Marketing
 
 #### ○ Cotizador de servicios de medios digitales:
+- Manejo de Redes Sociales
+- SEO (Posicionamiento orgánico en Google)
 - Optimización de tasa de conversión web
 - Diseño de sitio web standard con 5 secciones en Wordpress.
 - Diseño de sitio web de E-commerce (Carga de 50 productos)
 - Diseño de Landing page
 - Diseño de Logo y Manual de Marca
-
-#### ○ Obtiene mediante la API de freelancer.com, valores de precio por hora y realiza un promedio en el país seleccionado, sobre los siguientes skills:
-- Analista de Marketing Digital
-- Diseñador Web UX/UI
-- Diseñador Gráfico
 
 ## [★ Live version:](https://cotizador-digital-now.herokuapp.com)
 
