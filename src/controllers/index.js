@@ -9,7 +9,7 @@ const indexController = {
   },
   eng: function (req, res, next) {
     res.render('index-eng', {
-      title: "Digital marketing cost calculator"
+      title: "Digital Marketing Budget Calculator"
     });
   }
 
