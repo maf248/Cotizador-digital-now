@@ -412,329 +412,438 @@ const skills = Object.freeze({
     names: Object.freeze(["Digital Marketing Analyst", "UX / UI Designer", "Graphic Designer", "Video Editor"]),
     averages: [{
         argentina: {
-            averagePrice: 16.64,
+            averagePrice: 26.44,
             averageTotal: 100
         },
         australia: {
-            averagePrice: 42.73,
+            averagePrice: 42.02,
             averageTotal: 100
         },
         bangladesh: {
-            averagePrice: 15.14,
-            averageTotal: 100
-        },
-        colombia: {
-            averagePrice: 17.23,
-            averageTotal: 100
-        },
-        spain: {
-            averagePrice: 19.82,
-            averageTotal: 100
-        },
-        eeuu: {
-            averagePrice: 51.24,
-            averageTotal: 100
-        },
-        philippines: {
-            averagePrice: 14.63,
-            averageTotal: 100
-        },
-        india: {
-            averagePrice: 11.66,
-            averageTotal: 100
-        },
-        england: {
-            averagePrice: 37.32,
-            averageTotal: 100
-        },
-        mexico: {
-            averagePrice: 20.87,
-            averageTotal: 100
-        },
-        southafrica: {
-            averagePrice: 31.77,
-            averageTotal: 100
-        },
-        ukraine: {
-            averagePrice: 35.39,
-            averageTotal: 100
-        },
-        venezuela: {
-            averagePrice: 11.18,
-            averageTotal: 100
-        },
-        brazil: {
-            averagePrice: 33.18,
+            averagePrice: 14.26,
             averageTotal: 100
         },
         bolivia: {
-            averagePrice: 21.84,
-            averageTotal: 68
+            averagePrice: 27.26,
+            averageTotal: 23
+        },
+        brazil: {
+            averagePrice: 24.83,
+            averageTotal: 100
         },
         chile: {
-            averagePrice: 24.18,
+            averagePrice: 28.91,
+            averageTotal: 100
+        },
+        colombia: {
+            averagePrice: 19.02,
+            averageTotal: 100
+        },
+        spain: {
+            averagePrice: 21.77,
+            averageTotal: 100
+        },
+        eeuu: {
+            averagePrice: 50.65,
+            averageTotal: 100
+        },
+        philippines: {
+            averagePrice: 11.34,
+            averageTotal: 100
+        },
+        india: {
+            averagePrice: 13.42,
+            averageTotal: 100
+        },
+        england: {
+            averagePrice: 36.50,
+            averageTotal: 100
+        },
+        mexico: {
+            averagePrice: 22.60,
+            averageTotal: 100
+        },
+        southafrica: {
+            averagePrice: 40.37,
+            averageTotal: 100
+        },
+        ukraine: {
+            averagePrice: 32.91,
+            averageTotal: 95
+        },
+        venezuela: {
+            averagePrice: 13.98,
             averageTotal: 100
         },
         costarica: {
-            averagePrice: 22.31,
-            averageTotal: 100
+            averagePrice: 26.50,
+            averageTotal: 38
         },
         ecuador: {
-            averagePrice: 20.82,
+            averagePrice: 24.26,
             averageTotal: 100
         },
         elsalvador: {
-            averagePrice: 19.45,
-            averageTotal: 100
+            averagePrice: 21.67,
+            averageTotal: 45
         },
         guatemala: {
-            averagePrice: 38.59,
-            averageTotal: 73
+            averagePrice: 24.21,
+            averageTotal: 34
         },
         honduras: {
-            averagePrice: 18.60,
-            averageTotal: 43
+            averagePrice: 16.20,
+            averageTotal: 25
         },
         nicaragua: {
-            averagePrice: 28.62,
-            averageTotal: 53
+            averagePrice: 19.96,
+            averageTotal: 26
         },
         panama: {
-            averagePrice: 15.49,
-            averageTotal: 79
+            averagePrice: 17,
+            averageTotal: 29
         },
         paraguay: {
-            averagePrice: 20.94,
-            averageTotal: 33
+            averagePrice: 12.57,
+            averageTotal: 14
         },
         peru: {
-            averagePrice: 22.71,
+            averagePrice: 26.86,
             averageTotal: 100
         },
         dominicanrepublic: {
-            averagePrice: 21.42,
+            averagePrice: 23.56,
+            averageTotal: 85
+        },
+        uruguay: {
+            averagePrice: 33.36,
+            averageTotal: 59
+        }
+    }, {
+        argentina: {
+            averagePrice: 28.55,
+            averageTotal: 100
+        },
+        australia: {
+            averagePrice: 43.16,
+            averageTotal: 100
+        },
+        bangladesh: {
+            averagePrice: 19.71,
+            averageTotal: 100
+        },
+        bolivia: {
+            averagePrice: 19.04,
+            averageTotal: 23
+        },
+        brazil: {
+            averagePrice: 25.53,
+            averageTotal: 100
+        },
+        chile: {
+            averagePrice: 20.12,
+            averageTotal: 100
+        },
+        colombia: {
+            averagePrice: 26.50,
+            averageTotal: 100
+        },
+        spain: {
+            averagePrice: 37.39,
+            averageTotal: 100
+        },
+        eeuu: {
+            averagePrice: 66.94,
+            averageTotal: 100
+        },
+        philippines: {
+            averagePrice: 22.48,
+            averageTotal: 100
+        },
+        india: {
+            averagePrice: 24.01,
+            averageTotal: 100
+        },
+        england: {
+            averagePrice: 42.39,
+            averageTotal: 100
+        },
+        mexico: {
+            averagePrice: 22.02,
+            averageTotal: 100
+        },
+        southafrica: {
+            averagePrice: 37.71,
+            averageTotal: 100
+        },
+        ukraine: {
+            averagePrice: 41.14,
+            averageTotal: 100
+        },
+        venezuela: {
+            averagePrice: 21.04,
+            averageTotal: 100
+        },
+        costarica: {
+            averagePrice: 22.22,
+            averageTotal: 100
+        },
+        ecuador: {
+            averagePrice: 19.04,
+            averageTotal: 100
+        },
+        elsalvador: {
+            averagePrice: 17.47,
+            averageTotal: 100
+        },
+        guatemala: {
+            averagePrice: 19.96,
+            averageTotal: 100
+        },
+        honduras: {
+            averagePrice: 26.56,
+            averageTotal: 100
+        },
+        nicaragua: {
+            averagePrice: 15.92,
+            averageTotal: 100
+        },
+        panama: {
+            averagePrice: 20.11,
+            averageTotal: 100
+        },
+        paraguay: {
+            averagePrice: 16.16,
+            averageTotal: 100
+        },
+        peru: {
+            averagePrice: 22.54,
+            averageTotal: 100
+        },
+        dominicanrepublic: {
+            averagePrice: 31.74,
             averageTotal: 100
         },
         uruguay: {
-            averagePrice: 23.18,
+            averagePrice: 21.80,
             averageTotal: 100
         }
     }, {
         argentina: {
-            averagePrice: 21.17,
+            averagePrice: 20.36,
             averageTotal: 100
         },
         australia: {
-            averagePrice: 45.92,
+            averagePrice: 35.89,
             averageTotal: 100
         },
         bangladesh: {
-            averagePrice: 19.72,
-            averageTotal: 100
-        },
-        colombia: {
-            averagePrice: 26.59,
-            averageTotal: 100
-        },
-        spain: {
-            averagePrice: 38.03,
-            averageTotal: 100
-        },
-        eeuu: {
-            averagePrice: 65.34,
-            averageTotal: 100
-        },
-        philippines: {
-            averagePrice: 22.19,
-            averageTotal: 100
-        },
-        india: {
-            averagePrice: 23.69,
-            averageTotal: 100
-        },
-        england: {
-            averagePrice: 42.67,
-            averageTotal: 100
-        },
-        mexico: {
-            averagePrice: 22.73,
-            averageTotal: 100
-        },
-        southafrica: {
-            averagePrice: 36.97,
-            averageTotal: 100
-        },
-        ukraine: {
-            averagePrice: 41.61,
-            averageTotal: 100
-        },
-        venezuela: {
-            averagePrice: 21.94,
-            averageTotal: 100
-        },
-        brazil: {
-            averagePrice: 25.74,
+            averagePrice: 22.12,
             averageTotal: 100
         },
         bolivia: {
-            averagePrice: 18.48,
+            averagePrice: 21.44,
+            averageTotal: 23
+        },
+        brazil: {
+            averagePrice: 22.08,
             averageTotal: 100
         },
         chile: {
+            averagePrice: 30.04,
+            averageTotal: 100
+        },
+        colombia: {
+            averagePrice: 21.54,
+            averageTotal: 100
+        },
+        spain: {
+            averagePrice: 23.43,
+            averageTotal: 100
+        },
+        eeuu: {
+            averagePrice: 31.78,
+            averageTotal: 100
+        },
+        philippines: {
+            averagePrice: 18.77,
+            averageTotal: 100
+        },
+        india: {
+            averagePrice: 21.96,
+            averageTotal: 100
+        },
+        england: {
+            averagePrice: 32.36,
+            averageTotal: 100
+        },
+        mexico: {
+            averagePrice: 18.89,
+            averageTotal: 100
+        },
+        southafrica: {
+            averagePrice: 37.42,
+            averageTotal: 100
+        },
+        ukraine: {
+            averagePrice: 22.18,
+            averageTotal: 100
+        },
+        venezuela: {
+            averagePrice: 18.25,
+            averageTotal: 100
+        },
+        costarica: {
+            averagePrice: 22.82,
+            averageTotal: 100
+        },
+        ecuador: {
+            averagePrice: 16.51,
+            averageTotal: 100
+        },
+        elsalvador: {
+            averagePrice: 23.53,
+            averageTotal: 100
+        },
+        guatemala: {
+            averagePrice: 40.30,
+            averageTotal: 100
+        },
+        honduras: {
+            averagePrice: 25.71,
+            averageTotal: 100
+        },
+        nicaragua: {
+            averagePrice: 25.92,
+            averageTotal: 100
+        },
+        panama: {
+            averagePrice: 22.44,
+            averageTotal: 100
+        },
+        paraguay: {
+            averagePrice: 18.53,
+            averageTotal: 100
+        },
+        peru: {
+            averagePrice: 23.32,
+            averageTotal: 100
+        },
+        dominicanrepublic: {
+            averagePrice: 18.68,
+            averageTotal: 100
+        },
+        uruguay: {
+            averagePrice: 21.59,
+            averageTotal: 100
+        }
+    },{
+        argentina: {
             averagePrice: 18.81,
             averageTotal: 100
         },
-        costarica: {
-            averagePrice: 20.72,
-            averageTotal: 100
-        },
-        ecuador: {
-            averagePrice: 19.74,
-            averageTotal: 100
-        },
-        elsalvador: {
-            averagePrice: 16.86,
-            averageTotal: 100
-        },
-        guatemala: {
-            averagePrice: 18.69,
-            averageTotal: 100
-        },
-        honduras: {
-            averagePrice: 22.88,
-            averageTotal: 100
-        },
-        nicaragua: {
-            averagePrice: 15.68,
-            averageTotal: 100
-        },
-        panama: {
-            averagePrice: 19.45,
-            averageTotal: 100
-        },
-        paraguay: {
-            averagePrice: 17.74,
-            averageTotal: 100
-        },
-        peru: {
-            averagePrice: 22.46,
-            averageTotal: 100
-        },
-        dominicanrepublic: {
-            averagePrice: 22.69,
-            averageTotal: 100
-        },
-        uruguay: {
-            averagePrice: 20.81,
-            averageTotal: 100
-        }
-    }, {
-        argentina: {
-            averagePrice: 19.97,
-            averageTotal: 100
-        },
         australia: {
-            averagePrice: 34.66,
+            averagePrice: 44.57,
             averageTotal: 100
         },
         bangladesh: {
-            averagePrice: 19.50,
-            averageTotal: 100
-        },
-        colombia: {
-            averagePrice: 22.11,
-            averageTotal: 100
-        },
-        spain: {
-            averagePrice: 20.98,
-            averageTotal: 100
-        },
-        eeuu: {
-            averagePrice: 33.02,
-            averageTotal: 100
-        },
-        philippines: {
-            averagePrice: 19.56,
-            averageTotal: 100
-        },
-        india: {
-            averagePrice: 22.56,
-            averageTotal: 100
-        },
-        england: {
-            averagePrice: 30.74,
-            averageTotal: 100
-        },
-        mexico: {
-            averagePrice: 21.29,
-            averageTotal: 100
-        },
-        southafrica: {
-            averagePrice: 33.91,
-            averageTotal: 100
-        },
-        ukraine: {
-            averagePrice: 23.60,
-            averageTotal: 100
-        },
-        venezuela: {
-            averagePrice: 17.92,
-            averageTotal: 100
-        },
-        brazil: {
-            averagePrice: 25.25,
+            averagePrice: 16.89,
             averageTotal: 100
         },
         bolivia: {
-            averagePrice: 20.18,
+            averagePrice: 25.06,
+            averageTotal: 23
+        },
+        brazil: {
+            averagePrice: 20.02,
             averageTotal: 100
         },
         chile: {
-            averagePrice: 21.28,
+            averagePrice: 22.97,
+            averageTotal: 100
+        },
+        colombia: {
+            averagePrice: 17.04,
+            averageTotal: 100
+        },
+        spain: {
+            averagePrice: 22.33,
+            averageTotal: 100
+        },
+        eeuu: {
+            averagePrice: 52.33,
+            averageTotal: 100
+        },
+        philippines: {
+            averagePrice: 14.76,
+            averageTotal: 100
+        },
+        india: {
+            averagePrice: 22.99,
+            averageTotal: 100
+        },
+        england: {
+            averagePrice: 31.19,
+            averageTotal: 100
+        },
+        mexico: {
+            averagePrice: 19.81,
+            averageTotal: 100
+        },
+        southafrica: {
+            averagePrice: 27.95,
+            averageTotal: 100
+        },
+        ukraine: {
+            averagePrice: 32.64,
+            averageTotal: 100
+        },
+        venezuela: {
+            averagePrice: 15.66,
             averageTotal: 100
         },
         costarica: {
-            averagePrice: 19.38,
+            averagePrice: 21.90,
             averageTotal: 100
         },
         ecuador: {
-            averagePrice: 17.93,
+            averagePrice: 29.59,
             averageTotal: 100
         },
         elsalvador: {
-            averagePrice: 16.74,
+            averagePrice: 17.96,
             averageTotal: 100
         },
         guatemala: {
-            averagePrice: 30.64,
-            averageTotal: 100
+            averagePrice: 31.52,
+            averageTotal: 73
         },
         honduras: {
-            averagePrice: 26.12,
-            averageTotal: 100
+            averagePrice: 22.45,
+            averageTotal: 43
         },
         nicaragua: {
-            averagePrice: 23.09,
-            averageTotal: 100
+            averagePrice: 26.63,
+            averageTotal: 76
         },
         panama: {
-            averagePrice: 24.59,
-            averageTotal: 100
+            averagePrice: 17.87,
+            averageTotal: 79
         },
         paraguay: {
-            averagePrice: 18.34,
-            averageTotal: 100
+            averagePrice: 13.92,
+            averageTotal: 64
         },
         peru: {
-            averagePrice: 22.20,
+            averagePrice: 21.86,
             averageTotal: 100
         },
         dominicanrepublic: {
-            averagePrice: 19.11,
+            averagePrice: 19.97,
             averageTotal: 100
         },
         uruguay: {
-            averagePrice: 22.48,
+            averagePrice: 39.29,
             averageTotal: 100
         }
     }]
