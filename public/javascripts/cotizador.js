@@ -759,14 +759,14 @@ const services = Object.freeze({
     }),
     googleDisplayAds: Object.freeze({
         implementation: Object.freeze({
-            hours: Object.freeze([2, 2]),
+            hours: Object.freeze([4, 2]),
             skillsAcquired: Object.freeze(["Analista de Marketing Digital", "Diseñador Gráfico"]),
             idSkillsAcquired: Object.freeze([0, 2]),
             skillsPrices: Object.freeze([skills.averages[0], skills.averages[2]]),
             content: Object.freeze(["<ul><li style='list-style: circle;'>Creación de campañas que le muestren anuncios de imagen en sitios web a un público relevante. Por ejemplo, visitantes de tu sitio web en los últimos 30 días o gente interesada en tu producto o servicio según Google.</li></ul>", "<ul><li style='list-style: circle;'>Creación de piezas gráficas para anuncios.</li></ul>"])
         }),
         maintenance: Object.freeze({
-            hours: Object.freeze([4, 2]),
+            hours: Object.freeze([3, 1.5]),
             skillsAcquired: Object.freeze(["Analista de Marketing Digital", "Diseñador Gráfico"]),
             idSkillsAcquired: Object.freeze([0, 2]),
             skillsPrices: Object.freeze([skills.averages[0], skills.averages[2]]),
