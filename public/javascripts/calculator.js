@@ -409,7 +409,7 @@ const relativeStatsCountries = Object.freeze({
 
 /*---Datos de los SKILLS con precios por hora---*/
 const skills = Object.freeze({
-    names: Object.freeze(["Digital Marketing Analyst", "UX / UI Designer", "Graphic Designer"]),
+    names: Object.freeze(["Digital Marketing Analyst", "UX / UI Designer", "Graphic Designer", "Video Editor"]),
     averages: [{
         argentina: {
             averagePrice: 16.64,
@@ -759,18 +759,18 @@ const services = Object.freeze({
     }),
     googleDisplayAds: Object.freeze({
         implementation: Object.freeze({
-            hours: Object.freeze([4, 2]),
-            skillsAcquired: Object.freeze(["Digital Marketing Analyst", "Graphic Designer"]),
-            idSkillsAcquired: Object.freeze([0, 2]),
-            skillsPrices: Object.freeze([skills.averages[0], skills.averages[2]]),
-            content: Object.freeze(["<ul>Setting up a campaign which shows your ads with images in websites to a relevant audience. For example: any visitor of your website in the last 30 days or people interested in your product or service according to Google.</li></ul>", "<ul><li style='list-style: circle;'>Creation of graphic pieces for advertisements.</li></ul>"])
+            hours: Object.freeze([4, 2, 2]),
+            skillsAcquired: Object.freeze(["Digital Marketing Analyst", "Graphic Designer", "Video Editor"]),
+            idSkillsAcquired: Object.freeze([0, 2, 3]),
+            skillsPrices: Object.freeze([skills.averages[0], skills.averages[2], skills.averages[3]]),
+            content: Object.freeze(["<ul>Setting up a campaign which shows your ads with images in websites to a relevant audience. For example: any visitor of your website in the last 30 days or people interested in your product or service according to Google.</li></ul>", "<ul><li style='list-style: circle;'>Creation of graphic pieces for advertisements.</li></ul>", "<ul><li style='list-style: circle;'>Creation of videos for advertisements.</li></ul>"])
         }),
         maintenance: Object.freeze({
-            hours: Object.freeze([3, 1.5]),
-            skillsAcquired: Object.freeze(["Digital Marketing Analyst", "Graphic Designer"]),
-            idSkillsAcquired: Object.freeze([0, 2]),
-            skillsPrices: Object.freeze([skills.averages[0], skills.averages[2]]),
-            content: Object.freeze(["<ul><li style='list-style: circle;'>Making any modification by the client request (always respecting the accorded schedule).</li><li style='list-style: circle;'>Weekly changes to improve performance like: Modify the budget, Final URL, Ad text, Audience, Geographic location and Creative Pieces</li><li style='list-style: circle;'>Weekly analysis of the impact with the implemented changes by using the dashboard of Google Data Studio.</li></ul>", "<ul><li style='list-style: circle;'>Creation of graphic pieces for advertisements.</li></ul>"])
+            hours: Object.freeze([3, 1.5, 1.5]),
+            skillsAcquired: Object.freeze(["Digital Marketing Analyst", "Graphic Designer", "Video Editor"]),
+            idSkillsAcquired: Object.freeze([0, 2, 3]),
+            skillsPrices: Object.freeze([skills.averages[0], skills.averages[2], skills.averages[3]]),
+            content: Object.freeze(["<ul><li style='list-style: circle;'>Making any modification by the client request (always respecting the accorded schedule).</li><li style='list-style: circle;'>Weekly changes to improve performance like: Modify the budget, Final URL, Ad text, Audience, Geographic location and Creative Pieces</li><li style='list-style: circle;'>Weekly analysis of the impact with the implemented changes by using the dashboard of Google Data Studio.</li></ul>", "<ul><li style='list-style: circle;'>Creation of graphic pieces for advertisements.</li></ul>", "<ul><li style='list-style: circle;'>Creation of graphic pieces for advertisements.</li></ul>", "<ul><li style='list-style: circle;'>Creation of videos for advertisements.</li></ul>"])
         })
     }),
     facebookAds: Object.freeze({
